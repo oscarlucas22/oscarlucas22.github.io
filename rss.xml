@@ -6,8 +6,8 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Thu, 19 Jan 2023 18:07:47 GMT</pubDate>
-    <lastBuildDate>Thu, 19 Jan 2023 18:07:47 GMT</lastBuildDate>
+    <pubDate>Fri, 20 Jan 2023 07:37:34 GMT</pubDate>
+    <lastBuildDate>Fri, 20 Jan 2023 07:37:34 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
@@ -391,14 +391,14 @@ De manera que tendremos que verificar la firma con el uso de la opcion '--verify
 <p><font color="#00ff00"><strong>1.</strong></font> <strong>Una vez que hayas obtenido tu certificado, explica brevemente como se instala en tu navegador favorito.</strong></p>
 <p>En mi caso lo hare en Firefox.
 Nos iremos a los 3 puntos o las 3 rayas que nos aparecen en el firefox y ahi pincharemos en &quot;Ajustes&quot;</p>
-<p>![image]</p>
+<p><img src="./../images/SAD/cripto III/1-1.png" alt="image"></p>
 <p>Luego nos iremos a la parte de &quot;Privacidad y Seguridad&quot; y nos iremos alfinal del todo donde se encuentra los certificados.</p>
 <p><img src="./../images/SAD/cripto III/1.1-1.png" alt="image"></p>
 <p>Picharemos en &quot;Ver certificados&quot;, nos iremos a &quot;Sus Certificados&quot;, y le daremos a &quot;Importar&quot; importaremos nuestro certificado, nos pedira nuestra contraseña y una vez hecho esto ya estaria instalado.</p>
 <p><img src="./../images/SAD/cripto III/1.2-1.png" alt="image"></p>
 <p><img src="./../images/SAD/cripto III/1.3-1.png" alt="image"></p>
 <p><font color="#00ff00"><strong>2.</strong></font> <strong>Muestra una captura de pantalla donde se vea las preferencias del navegador donde se ve instalado tu certificado.</strong></p>
-<p>![image]</p>
+<p><img src="./../images/SAD/cripto III/2-1.png" alt="image"></p>
 <p><font color="#00ff00"><strong>3.</strong></font> <strong>¿Cómo puedes hacer una copia de tu certificado?, ¿Como vas a realizar la copia de seguridad de tu certificado?. Razona la respuesta.</strong></p>
 <p>Nos hiremos a la misma parte donde hemos importado nuestro certificado y le daremos donde pone &quot;Hacer una copia...&quot;. Nos pedira una conyraseña y una ruta donde guardarlo.</p>
 <p><img src="./../images/SAD/cripto III/3-1.png" alt="image"></p>
@@ -617,12 +617,96 @@ export SAN=DNS:$URL
 <p>Después de esto, si se añade el certificado de la autoridad de certificación (CA) al navegador, se podrá acceder al sitio web de Alfonso y comprobar que su certificado es válido.</p>
 <p><img src="./../images/SAD/cripto III/3-1-ssl.png" alt="image"></p>
 <hr>
+<p>Antes de empezar este tema, configuré un servidor web Apache2 en Proxmox con una página de prueba que utiliza el virtualhost olucas.iesgn.org.</p>
+<div><pre><code>sudo apt update
+sudo apt install apache2
+sudo a2dissite 000-default.conf
+sudo nano -cl /etc/apache2/sites-available/juanjesus.iesgn.org.conf
+</code></pre>
+</div><p>Contenido del fichero olucas.iesgn.org.conf:</p>
+<div><pre><code>&lt;VirtualHost *:80&gt;
+    ServerName olucas.iesgn.org
+    DocumentRoot /var/www/html/olucas.iesgn.org
+    ErrorLog ${APACHE_LOG_DIR}/error-olucas.log
+    CustomLog ${APACHE_LOG_DIR}/access-olucas.log combined
+&lt;/VirtualHost&gt;
+</code></pre>
+</div><p>Para la web de prueba, he creado un fichero index.html en /var/www/html/olucas.iesgn.org:</p>
+<div><pre><code>sudo mkdir /var/www/html/olucas.iesgn.org
+sudo nano -cl /var/www/html/olucas.iesgn.org/index.html
+</code></pre>
+</div><p>Contenido del fichero index.html:</p>
+<div><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;olucas.iesgn.org&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;olucas.iesgn.org&lt;/h1&gt;
+        &lt;p&gt;Web de prueba para cifrado III - HTTPS&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+</div><p>Ahora activo el virtualhost:</p>
+<div><pre><code>sudo a2ensite olucas.iesgn.org.conf
+sudo systemctl reload apache2
+</code></pre>
+</div><p>En mi máquina cliente, agrego la IP de la máquina servidor en el fichero /etc/hosts:</p>
+<div><pre><code>172.22.2.141 olucas.iesgn.org
+</code></pre>
+</div><p>Y compruebo que puedo acceder a la web:</p>
 <p><font color="#00ff00"><strong>1.</strong></font> <strong>Crea una clave privada RSA de 4096 bits para identificar el servidor.</strong></p>
+<div><pre><code>sudo openssl genrsa -aes256 -out /etc/ssl/private/olucas-privada.key 4096
+sudo chmod 400 /etc/ssl/private/olucas-privada.key
+</code></pre>
+</div><p><img src="./../images/SAD/cripto III/1-2-https.png" alt="image"></p>
 <p><font color="#00ff00"><strong>2.</strong></font> <strong>Utiliza la clave anterior para generar un CSR, considerando que deseas acceder al servidor con el FQDN (tunombre.iesgn.org).</strong></p>
+<div><pre><code>sudo openssl req -new -sha256 -key /etc/ssl/private/olucas-privada.key -out olucas.csr
+</code></pre>
+</div><p><img src="./../images/SAD/cripto III/2-2-https.png" alt="image"></p>
 <p><font color="#00ff00"><strong>3.</strong></font> <strong>Envía la solicitud de firma a la entidad certificadora (su compañero).</strong></p>
+<p>Le envio el fichero &quot;csr&quot; a Alfonso</p>
 <p><font color="#00ff00"><strong>4.</strong></font> <strong>Recibe como respuesta un certificado X.509 para el servidor firmado y el certificado de la autoridad certificadora.</strong></p>
+<p>Alfonso me ha enviado los ficheros olucas.crt y cacert.crt, esto son mi certificado firmado por su CA y el certificado autofirmado de su CA:</p>
+<p><img src="./../images/SAD/cripto III/4-2-https.png" alt="image"></p>
 <p><font color="#00ff00"><strong>5.</strong></font> <strong>Configura tu servidor web con https en el puerto 443, haciendo que las peticiones http se redireccionen a https (forzar https).</strong></p>
-<p><font color="#00ff00"><strong>6.</strong></font> <strong>Instala ahora un servidor nginx, y realiza la misma configuración que anteriormente para que se sirva la página con HTTPS.</strong></p>
+<p>El primer paso es crear el VirtualHost para el puerto 443:</p>
+<div><pre><code>sudo nano -cl /etc/apache2/sites-available/ssl-olucas.iesgn.org.conf
+</code></pre>
+</div><p>Contenido del fichero ssl-olucas.iesgn.org.conf:</p>
+<div><pre><code>&lt;IfModule mod_ssl.c&gt;
+    &lt;VirtualHost *:443&gt;
+        ServerName olucas.iesgn.org
+        DocumentRoot /var/www/html/olucas.iesgn.org
+        ErrorLog ${APACHE_LOG_DIR}/error-olucas.log
+        CustomLog ${APACHE_LOG_DIR}/access-olucas.log combined
+        SSLEngine on
+        SSLCertificateFile /etc/ssl/certs/olucas.crt
+        SSLCertificateKeyFile /etc/ssl/private/olucas-privada.key
+        SSLCertificateChainFile /etc/ssl/certs/cacert.crt
+        &lt;Directory /var/www/html/olucas.iesgn.org&gt;
+            Options Indexes FollowSymLinks
+            AllowOverride None
+            Require all granted
+        &lt;/Directory&gt;
+    &lt;/VirtualHost&gt;
+&lt;/IfModule&gt;
+</code></pre>
+</div><p>Ahora coloco los archivos olucas.crt y cacert.crt en los directorios correspondientes. El fichero olucas-
+privada.key ya estaba en su sitio.</p>
+<div><pre><code>sudo mv olucas.crt /etc/ssl/certs/
+sudo mv cacert.crt /etc/ssl/certs/
+sudo chown root:root /etc/ssl/certs/olucas.crt
+sudo chown root:root /etc/ssl/certs/cacert.crt
+sudo chmod 644 /etc/ssl/certs/olucas.crt
+sudo chmod 644 /etc/ssl/certs/cacert.crt
+</code></pre>
+</div><p>Ahora activo el módulo &quot;ssl&quot; de Apache, el VirtualHost nuevo y reinicio el servicio:</p>
+<div><pre><code>sudo a2enmod ssl
+sudo a2ensite ssl-olucas.iesgn.org.conf
+sudo systemctl reload apache2
+</code></pre>
+</div><p><font color="#00ff00"><strong>6.</strong></font> <strong>Instala ahora un servidor nginx, y realiza la misma configuración que anteriormente para que se sirva la página con HTTPS.</strong></p>
 ]]></content:encoded>
     </item>
     <item>
