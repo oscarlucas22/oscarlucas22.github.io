@@ -6,8 +6,8 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Tue, 24 Jan 2023 03:12:57 GMT</pubDate>
-    <lastBuildDate>Tue, 24 Jan 2023 03:12:57 GMT</lastBuildDate>
+    <pubDate>Tue, 24 Jan 2023 17:37:01 GMT</pubDate>
+    <lastBuildDate>Tue, 24 Jan 2023 17:37:01 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
@@ -108,7 +108,12 @@
       <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
       <content:encoded><![CDATA[<h1 id="sri"> SRI</h1>
 <ul>
-<li><a href="/practicas/openstack.html">Práctica: Escenario en OpenStack</a></li>
+<li>
+<p><a href="/practicas/openstack.html">Práctica: Escenario en OpenStack</a></p>
+</li>
+<li>
+<p><a href="/practicas/correos.html">Instalación y configuración de un servidor de correos en el VPS</a></p>
+</li>
 </ul>
 ]]></content:encoded>
     </item>
@@ -1160,7 +1165,27 @@ PrivateTmp=true
 </div><p>Y por ultimo reiniciamos nginx</p>
 <div><pre><code>sudo systemctl restart nginx
 </code></pre>
-</div><ul>
+</div><p><em><strong>Nota</strong></em>: Si no ttenemos nuestro certificado lo generaremos de la siguiente manera:</p>
+<div><pre><code>sudo apt remove certbo
+sudo apt install snap
+snap install --classic certbot
+ln -s /snap/bin/certbot /usr/bin/certbot
+snap install core; sudo snap refresh core
+</code></pre>
+</div><hr>
+<div><pre><code>cd /etc/nginx/site-available/
+</code></pre>
+</div><hr>
+<div><pre><code>certbot certonly \
+--manual \
+--preferred-challenges=dns \
+--email oscarlucasleo124@gmail.com \
+--server https://acme-v02.api.letsencrypt.org/directory \
+--agree-tos \
+-d *.olucass.com
+</code></pre>
+</div><p>Nos hiremos en mi caso a Piensasolutions, nos hiremos a la zona del dominio, añadiremos una nueva entrada DNS y añadiremos lo que nos mostro en pantall cuando ejecutamos el comando de generación.</p>
+<ul>
 <li><strong>Muestra la página funcionando. En la zona de administración se debe ver de forma adecuada la hoja de estilo.</strong></li>
 </ul>
 <p><img src="./../images/IAW/django/1-21_django.png" alt="image"></p>
@@ -1352,9 +1377,6 @@ PrivateTmp=true
     }
 
 }
-</code></pre>
-</div><p>Habilitaremos el proxy_http</p>
-<div><pre><code>sudo a2enmod proxy proxy_http
 </code></pre>
 </div><p>Habilitaremos nuestro virtual host</p>
 <div><pre><code>cd /etc/nginx/site-enabled
@@ -3127,6 +3149,108 @@ fetch first 1 row only;
 <p>La idea principal de este blog es subir algunas de las tareas que vaya realizando a lo largo de mi curso de ASIR.</p>
 <p>Espero que os guste y os sirva de ayuda para algunos. Un saludo.</p>
 <center><i>Content not supported</i></center>]]></content:encoded>
+    </item>
+    <item>
+      <title>Instalación y configuración de un servidor de correos en el VPS</title>
+      <link>https://github.com/oscarlucas22/practicas/correos/</link>
+      <guid>https://github.com/oscarlucas22/practicas/correos/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">Instalación y configuración de un servidor de correos en el VPS</source>
+      <category>practicas</category>
+      <content:encoded><![CDATA[<h1 id="instalacion-y-configuracion-de-un-servidor-de-correos-en-el-vps"> Instalación y configuración de un servidor de correos en el VPS</h1>
+<h2 id="practica-servidor-de-correos"> Práctica: Servidor de correos</h2>
+<p><strong>Instala y configura de manera adecuada el servidor de correos en tu VPS. El nombre del servidor de correo será mail.tudominio.es (Este es el nombre que deberá aparecer en el registro MX).</strong></p>
+<h2 id="gestion-de-correos-desde-el-servidorpermalink"> Gestión de correos desde el servidorPermalink</h2>
+<p><strong>El envío y recepción se hará desde el servidor usando la herramienta mail.</strong></p>
+<ul>
+<li>
+<p><strong><em>Tarea 1</em>: Documenta una prueba de funcionamiento, donde envíes desde tu servidor local al exterior. Muestra el log donde se vea el envío. Muestra el correo que has recibido. Muestra el registro SPF.</strong></p>
+</li>
+<li>
+<p><strong><em>Tarea 2</em>: Documenta una prueba de funcionamiento, donde envíes un correo desde el exterior (gmail, hotmail,…) a tu servidor local. Muestra el log donde se vea el envío. Muestra cómo has leído el correo. Muestra el registro MX de tu dominio.</strong></p>
+</li>
+</ul>
+<h2 id="uso-de-alias-y-redireccionespermalink"> Uso de alias y redireccionesPermalink</h2>
+<ul>
+<li><strong><em>Tarea 3</em>: Uso de alias y redirecciones.</strong></li>
+</ul>
+<p><strong>Vamos a comprobar como los procesos del servidor pueden mandar correos para informar sobre su estado. Por ejemplo cada vez que se ejecuta una tarea cron podemos enviar un correo informando del resultado. Normalmente estos correos se mandan al usuario root del servidor, para ello:</strong></p>
+<div><pre><code>$ crontab -e
+</code></pre>
+</div><p><strong>E indico donde se envía el correo:</strong></p>
+<div><pre><code>MAILTO = root
+</code></pre>
+</div><p><strong>Puedes poner alguna tarea en el cron para ver como se mandan correo.</strong></p>
+<p><strong>Posteriormente usando alias y redirecciones podemos hacer llegar esos correos a nuestro correo personal.</strong></p>
+<p><strong>Configura el cron para enviar correo al usuario root. Comprueba que están llegando esos correos al root. Crea un nuevo alias para que se manden a un usuario sin privilegios. Comprueban que llegan a ese usuario. Por último crea una redirección para enviar esos correo a tu correo personal (gmail,hotmail,…).</strong></p>
+<h2 id="para-asegurar-el-enviopermalink"> Para asegurar el envíoPermalink</h2>
+<ul>
+<li><strong><em>Tarea 4:</em> (No obligatoria): Configura de manera adecuada DKIM es tu sistema de correos. Comprueba el registro DKIM en la página https://mxtoolbox.com/dkim.aspx. Configura postfix para que firme los correos que envía. Manda un correo y comprueba la verificación de las firmas en ellos.</strong></li>
+</ul>
+<h2 id="para-luchar-contra-el-spampermalink"> Para luchar contra el SPAMPermalink</h2>
+<ul>
+<li>
+<p><strong><em>Tarea 5</em>: (No obligatorio): Configura de manera adecuada Postfix para que tenga en cuenta el registro SPF de los correos que recibe. Muestra el log del correo para comprobar que se está haciendo el testeo del registro SPF.</strong></p>
+</li>
+<li>
+<p><strong><em>Tarea 6</em>: (No obligatoria): Configura un sistema antispam. Realiza comprobaciones para comprobarlo.</strong></p>
+</li>
+<li>
+<p><strong><em>Tarea 7</em>: (No obligatoria): Configura un sistema antivirus. Realiza comprobaciones para comprobarlo.</strong></p>
+</li>
+</ul>
+<h2 id="gestion-de-correos-desde-un-clientepermalink"> Gestión de correos desde un clientePermalink</h2>
+<ul>
+<li>
+<p><strong><em>Tarea 8</em>: Configura el buzón de los usuarios de tipo Maildir. Envía un correo a tu usuario y comprueba que el correo se ha guardado en el buzón Maildir del usuario del sistema correspondiente. Recuerda que ese tipo de buzón no se puede leer con la utilidad mail.</strong></p>
+</li>
+<li>
+<p><strong><em>Tarea 9</em>: Instala configura dovecot para ofrecer el protocolo IMAP. Configura dovecot de manera adecuada para ofrecer autentificación y cifrado.</strong></p>
+</li>
+</ul>
+<p><strong>Para realizar el cifrado de la comunicación crea un certificado en LetsEncrypt para el dominio mail.iesgnXX.es. Recuerda que para el ofrecer el cifrado tiene varias soluciones:</strong></p>
+<ul>
+<li>
+<ul>
+<li><strong><em>IMAP con STARTTLS</em>: STARTTLS transforma una conexión insegura en una segura mediante el uso de SSL/TLS. Por lo tanto usando el mismo puerto 143/tcp tenemos cifrada la comunicación.</strong></li>
+</ul>
+</li>
+<li>
+<ul>
+<li><strong><em>IMAPS</em>: Versión segura del protocolo IMAP que usa el puerto 993/tcp.</strong></li>
+</ul>
+</li>
+<li>
+<ul>
+<li><strong>Ofrecer las dos posibilidades.</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>Elige una de las opciones anterior para realizar el cifrado. Y muestra la configuración de un cliente de correo (evolution, thunderbird, …) y muestra como puedes leer los correos enviado a tu usuario.</strong></p>
+<ul>
+<li>
+<p><strong><em>Tarea 10</em>: (No obligatoria): Instala un webmail (roundcube, horde, rainloop) para gestionar el correo del equipo mediante una interfaz web. Muestra la configuración necesaria y cómo eres capaz de leer los correos que recibe tu usuario.</strong></p>
+</li>
+<li>
+<p><strong><em>Tarea 11</em>: Configura de manera adecuada postfix para que podamos mandar un correo desde un cliente remoto. La conexión entre cliente y servidor debe estar autentificada con SASL usando dovecor y además debe estar cifrada. Para cifrar esta comunicación puedes usar dos opciones:</strong></p>
+<ul>
+<li>
+<p><strong><em>ESMTP + STARTTLS</em>: Usando el puerto 567/tcp enviamos de forma segura el correo al servidor.</strong></p>
+</li>
+<li>
+<p><strong><em>SMTPS</em>: Utiliza un puerto no estándar (465) para SMTPS (Simple Mail Transfer Protocol Secure). No es una extensión de smtp. Es muy parecido a HTTPS.</strong></p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Elige una de las opciones anterior para realizar el cifrado. Y muestra la configuración de un cliente de correo (evolution, thunderbird, …) y muestra como puedes enviar los correos.</strong></p>
+<ul>
+<li><strong><em>Tarea 12</em>: (No obligatoria): Configura el cliente webmail para el envío de correo. Realiza una prueba de envío con el webmail.</strong></li>
+</ul>
+<h2 id="comprobacion-finalpermalink"> Comprobación finalPermalink</h2>
+<ul>
+<li><strong><em>Tarea 13</em>: Prueba de envío de correo. En esta página tenemos una herramienta completa y fácil de usar a la que podemos enviar un correo para que verifique y puntúe el correo que enviamos. Captura la pantalla y muestra la puntuación que has sacado.</strong></li>
+</ul>
+]]></content:encoded>
     </item>
   </channel>
 </rss>
