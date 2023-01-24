@@ -6,8 +6,8 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Tue, 24 Jan 2023 02:44:42 GMT</pubDate>
-    <lastBuildDate>Tue, 24 Jan 2023 02:44:42 GMT</lastBuildDate>
+    <pubDate>Tue, 24 Jan 2023 02:47:06 GMT</pubDate>
+    <lastBuildDate>Tue, 24 Jan 2023 02:47:06 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
@@ -1043,7 +1043,7 @@ pip install uwsgi
 </div><p>Para servir nuestra aplicación python, vamos a crear un fichero nombre.ini el que guardara lo siguiente:</p>
 <div><pre><code>[uwsgi]
 http = :8080
-chdir = /home/olucas/django_tutorial/django_tutorial 
+chdir = /home/olucas/django_tutorial
 wsgi-file = /home/olucas/django_tutorial/django_tutorial/wsgi.py
 processes = 4
 threads = 2

@@ -5,7 +5,7 @@
   <author>
     <name>Óscar Lucas</name>
   </author>
-  <updated>2023-01-24T02:44:42.125Z</updated>
+  <updated>2023-01-24T02:47:06.854Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://github.com/oscarlucas22/atom.xml"/>
   <link rel="alternate" href="https://github.com/oscarlucas22/"/>
@@ -1106,7 +1106,7 @@ pip install uwsgi
 </div><p>Para servir nuestra aplicación python, vamos a crear un fichero nombre.ini el que guardara lo siguiente:</p>
 <div><pre><code>[uwsgi]
 http = :8080
-chdir = /home/olucas/django_tutorial/django_tutorial 
+chdir = /home/olucas/django_tutorial
 wsgi-file = /home/olucas/django_tutorial/django_tutorial/wsgi.py
 processes = 4
 threads = 2
