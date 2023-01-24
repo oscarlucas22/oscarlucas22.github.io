@@ -5,7 +5,7 @@
   <author>
     <name>Óscar Lucas</name>
   </author>
-  <updated>2023-01-20T07:37:34.516Z</updated>
+  <updated>2023-01-24T00:14:18.303Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://github.com/oscarlucas22/atom.xml"/>
   <link rel="alternate" href="https://github.com/oscarlucas22/"/>
@@ -678,33 +678,19 @@ export SAN=DNS:$URL
 <div><pre><code>sudo apt update
 sudo apt install apache2
 sudo a2dissite 000-default.conf
-sudo nano -cl /etc/apache2/sites-available/juanjesus.iesgn.org.conf
+sudo nano -cl /etc/apache2/sites-available/olucas.iesgn.org.conf
 </code></pre>
 </div><p>Contenido del fichero olucas.iesgn.org.conf:</p>
 <div><pre><code>&lt;VirtualHost *:80&gt;
     ServerName olucas.iesgn.org
     DocumentRoot /var/www/html/olucas.iesgn.org
+
     ErrorLog ${APACHE_LOG_DIR}/error-olucas.log
     CustomLog ${APACHE_LOG_DIR}/access-olucas.log combined
 &lt;/VirtualHost&gt;
 </code></pre>
-</div><p>Para la web de prueba, he creado un fichero index.html en /var/www/html/olucas.iesgn.org:</p>
-<div><pre><code>sudo mkdir /var/www/html/olucas.iesgn.org
-sudo nano -cl /var/www/html/olucas.iesgn.org/index.html
-</code></pre>
-</div><p>Contenido del fichero index.html:</p>
-<div><pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;olucas.iesgn.org&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;olucas.iesgn.org&lt;/h1&gt;
-        &lt;p&gt;Web de prueba para cifrado III - HTTPS&lt;/p&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-</div><p>Ahora activo el virtualhost:</p>
+</div><p>Para la web de prueba, me he descargado una plantilla html y la he colocado en la ruta /var/www/html/olucas.iesgn.org:</p>
+<p>Ahora activo el virtualhost:</p>
 <div><pre><code>sudo a2ensite olucas.iesgn.org.conf
 sudo systemctl reload apache2
 </code></pre>
@@ -712,6 +698,7 @@ sudo systemctl reload apache2
 <div><pre><code>172.22.2.141 olucas.iesgn.org
 </code></pre>
 </div><p>Y compruebo que puedo acceder a la web:</p>
+<p><img src="./../images/SAD/cripto III/0-https.png" alt="image"></p>
 <p><font color="#00ff00"><strong>1.</strong></font> <strong>Crea una clave privada RSA de 4096 bits para identificar el servidor.</strong></p>
 <div><pre><code>sudo openssl genrsa -aes256 -out /etc/ssl/private/olucas-privada.key 4096
 sudo chmod 400 /etc/ssl/private/olucas-privada.key
@@ -722,9 +709,9 @@ sudo chmod 400 /etc/ssl/private/olucas-privada.key
 </code></pre>
 </div><p><img src="./../images/SAD/cripto III/2-2-https.png" alt="image"></p>
 <p><font color="#00ff00"><strong>3.</strong></font> <strong>Envía la solicitud de firma a la entidad certificadora (su compañero).</strong></p>
-<p>Le envio el fichero &quot;csr&quot; a Alfonso</p>
+<p>Le envio el fichero <strong>.csr</strong> a Alfonso</p>
 <p><font color="#00ff00"><strong>4.</strong></font> <strong>Recibe como respuesta un certificado X.509 para el servidor firmado y el certificado de la autoridad certificadora.</strong></p>
-<p>Alfonso me ha enviado los ficheros olucas.crt y cacert.crt, esto son mi certificado firmado por su CA y el certificado autofirmado de su CA:</p>
+<p>Alfonso me ha enviado los ficheros olucas.crt y cacert.crt, esto son mi certificado firmado por su CA y el certificado autofirmado de su CA</p>
 <p><img src="./../images/SAD/cripto III/4-2-https.png" alt="image"></p>
 <p><font color="#00ff00"><strong>5.</strong></font> <strong>Configura tu servidor web con https en el puerto 443, haciendo que las peticiones http se redireccionen a https (forzar https).</strong></p>
 <p>El primer paso es crear el VirtualHost para el puerto 443:</p>
@@ -735,12 +722,15 @@ sudo chmod 400 /etc/ssl/private/olucas-privada.key
     &lt;VirtualHost *:443&gt;
         ServerName olucas.iesgn.org
         DocumentRoot /var/www/html/olucas.iesgn.org
-        ErrorLog ${APACHE_LOG_DIR}/error-olucas.log
-        CustomLog ${APACHE_LOG_DIR}/access-olucas.log combined
+
+        ErrorLog ${APACHE_LOG_DIR}/error-ssl-olucas.log
+        CustomLog ${APACHE_LOG_DIR}/access-ssl-olucas.log combined
+
         SSLEngine on
         SSLCertificateFile /etc/ssl/certs/olucas.crt
-        SSLCertificateKeyFile /etc/ssl/private/olucas-privada.key
-        SSLCertificateChainFile /etc/ssl/certs/cacert.crt
+        SSLCertificateKeyFile /etc/ssl/private/privada-olucas.key
+        SSLCACertificateFile /etc/ssl/certs/cacert.crt
+
         &lt;Directory /var/www/html/olucas.iesgn.org&gt;
             Options Indexes FollowSymLinks
             AllowOverride None
@@ -763,7 +753,69 @@ sudo chmod 644 /etc/ssl/certs/cacert.crt
 sudo a2ensite ssl-olucas.iesgn.org.conf
 sudo systemctl reload apache2
 </code></pre>
+</div><p>Durante el proceso, debemos de introducir la contraseña de la clave RSA.</p>
+<p>Ahora para habilitar una redirección automática hacia https, modificaremos el fichero
+olucas.iesgn.org.conf. Y añadiremos la línea correspondiente para la redirección y el fichero quedaria asi:</p>
+<div><pre><code>&lt;VirtualHost *:80&gt;
+    ServerName olucas.iesgn.org
+    DocumentRoot /var/www/html/olucas.iesgn.org
+
+    ErrorLog ${APACHE_LOG_DIR}/error-olucas.log
+    CustomLog ${APACHE_LOG_DIR}/access-olucas.log combined
+
+    redirect 301 / https://olucas.iesgn.org/
+&lt;/VirtualHost&gt;
+</code></pre>
+</div><p>Y volvemos a reiniciar apache</p>
+<div><pre><code>sudo systemcl restart apache2
+</code></pre>
 </div><p><font color="#00ff00"><strong>6.</strong></font> <strong>Instala ahora un servidor nginx, y realiza la misma configuración que anteriormente para que se sirva la página con HTTPS.</strong></p>
+<p>Antes que nada, vamos a deshabilitar apache para que no entre en conflicto con el nginx.</p>
+<div><pre><code>sudo systemctl disable --now apache2
+</code></pre>
+</div><p>Despues instalamos nginx:</p>
+<div><pre><code>sudo apt install nginx
+</code></pre>
+</div><p>A continuación creamos el virtualhost para la página web.</p>
+<div><pre><code>sudo nano /etc/nginx/sites-available/olucas.iesgn.org.conf
+</code></pre>
+</div><p>Y el fichero quedaria asi:</p>
+<div><pre><code>server {
+        listen 80;
+        listen [::]:80;
+        server_name olucas.iesgn.org;
+        return 301 https://$server_name$request_uri;
+}
+
+server {
+        listen 443 ssl http2;
+        listen [::]:443 ssl http2;
+        server_name olucas.iesgn.org;
+        ssl_certificate /etc/ssl/certs/olucas.iesgn.crt;
+        ssl_certificate_key /etc/ssl/private/privada-olucas.key;
+        ssl_trusted_certificate /etc/ssl/certs/cacert.crt;
+        root /var/www/html/olucas.iesgn.org;
+        index index.html;
+        location / {
+                try_files $uri $uri/ =404;
+        }
+}
+</code></pre>
+</div><p>Guardamos el fichero y habilitamos el virtualhost. Para ello creamos un enlace simbólico
+en /etc/nginx/sites-enabled.</p>
+<div><pre><code>ln -s /etc/nginx/sites-available/olucas.iesgn.org.conf /etc/nginx/sites-enabled/
+</code></pre>
+</div><p>Reiniciamos nginx:</p>
+<div><pre><code>sudo systemctl restart nginx
+</code></pre>
+</div><p>Al reiniciar nginx a diferencia de apache, nos reporta un fallo, ya que no puede cargar la frase de paso.</p>
+<p>Para solucionarlo, podemos agregar la línea en el virtualhost:</p>
+<div><pre><code>ssl_password_file /etc/keys/global.pass;
+</code></pre>
+</div><p>Y volvemos a reiniciar nginx:</p>
+<div><pre><code>sudo systemctl restart nginx
+</code></pre>
+</div><p>Y ya nos deberia dejar acceder a nuestra pagina y podriamos acceder con https</p>
 ]]></content>
     <author>
       <name>Óscar Lucas</name>
@@ -782,8 +834,13 @@ sudo systemctl reload apache2
     <content type="html"><![CDATA[<h1 id="despliegue-de-aplicaciones-python"> Despliegue de aplicaciones python</h1>
 <p><a href="https://fp.josedomingo.org/iaw2223/4_python/practica.html" target="_blank" rel="noopener noreferrer">Página del ejercicio.<i>Content not supported</i></a></p>
 <h2 id="tarea-1-entorno-de-desarrollo"> Tarea 1: Entorno de desarrollo</h2>
-<p>En mi caso haré esta practica en una máquina Rocky.</p>
-<p><font color="#FFA500"><strong>Paso 1</strong></font> <a href="https://github.com/josedom24/django_tutorial" target="_blank" rel="noopener noreferrer">Clonar el repositorio de GitHub.<i>Content not supported</i></a></p>
+<p><strong>Vamos a desplegar la aplicación del tutorial de django. Como entorno de desarrollo tienes dos opciones:</strong></p>
+<p><strong>Que tu entorno de desarrollo se la máquina bravo de tu entorno de desarrollo. Opción que dará más puntos.</strong> <em><strong>Opción elegida</strong></em></p>
+<p><strong>Que tu entorno de desarrollo sea una máquina de openstack con el sistema operativo que quieras. Opción que dará menos puntos.</strong></p>
+<p><strong>Vamos a configurar tu equipo como entorno de desarrollo para trabajar con la aplicación, para ello:</strong></p>
+<ul>
+<li><strong>Realiza un fork del repositorio de GitHub: <a href="https://github.com/josedom24/django_tutorial" target="_blank" rel="noopener noreferrer">https://github.com/josedom24/django_tutorial<i>Content not supported</i></a></strong></li>
+</ul>
 <p>Para la clonación tenemos a nuestra disposición 3 protocolos diferentes de los que podemos hacer uso. En mi caso voy a utilizar el protocolo HTTPS.</p>
 <p><strong>Nota</strong>: Si no tenemos instalado el comando <code>git</code> lo instalamos:</p>
 <div><pre><code>sudo dnf install git
@@ -792,7 +849,9 @@ sudo systemctl reload apache2
 <div><pre><code>git clone &lt;&lt;URL de descarga&gt;&gt;
 </code></pre>
 </div><p>Y una vez hecho esto el repositorio de nombre django_tutorial ha sido correctamente clonado en nuestra máquina local y podremos empezar a hacer uso del mismo.</p>
-<p><font color="#FFA500"><strong>Paso 2</strong></font> Crear un entorno virtual de Python.</p>
+<ul>
+<li><strong>Crea un entorno virtual de python3 e instala las dependencias necesarias para que funcione el proyecto.</strong></li>
+</ul>
 <p>Instalaremos los paquetes necesarios para que la aplicación funcione. Para la correspondiente creación de un entorno virtual, debemos instalar previamente el paquete necesario (python3-venv), ejecutando para ello el comando:</p>
 <div><pre><code>sudo dnf install python3-venv
 </code></pre>
@@ -803,7 +862,9 @@ sudo systemctl reload apache2
 <div><pre><code>source &lt;&lt;Nombre del entorno&gt;&gt;/bin/activate
 </code></pre>
 </div><p>Y hecho esto nuestro entorno habrá sido habilitado.</p>
-<p><font color="#FFA500"><strong>Paso 3</strong></font> Instalar paquetes necesarios para la aplicación.</p>
+<ul>
+<li><strong>Comprueba que vamos a trabajar con una base de datos sqlite. ¿Qué fichero tienes que consultar? ¿Cómo se llama la base de datos que vamos a crear?</strong></li>
+</ul>
 <p>Estos paquetes lo entontraremos en el fichero <code>requirements.txt</code> que se encuentra entre los ficheros que hemos clonado del GitHub</p>
 <p><img src="./../images/IAW/django/1-1_django.png" alt="image"></p>
 <p>E instalaremos los paquetes que se encuentan en el, con el siguiente comando:</p>
@@ -825,23 +886,38 @@ sudo systemctl reload apache2
 <p>Para verificar que el fichero que contiene la base de datos sqlite3 ha sido correctamente generado, listaremos el contenido del directorio:</p>
 <p><img src="./../images/IAW/django/1-4_django.png" alt="image"></p>
 <p>Efectivamente, un fichero de nombre <code>db.sqlite3</code> ha sido generado, que contendrá todas las tablas necesarias.</p>
+<ul>
+<li>
+<p><strong>Crea la base de datos. A partir del modelo de datos se crean las tablas de la base de datos.</strong></p>
+</li>
+<li>
+<p><strong>Crea un usuario administrador.</strong></p>
+</li>
+</ul>
 <p>La aplicación se encuentra ya instalada en su totalidad, de manera que vamos a proceder a crear un usuario administrador de dicho proyecto, que tendrá privilegios suficientes para acceder a la zona de administración, ejecutando para ello el comando:</p>
 <div><pre><code>python3 manage.py createsuperuser
 </code></pre>
 </div><p><img src="./../images/IAW/django/1-5_django.png" alt="image"></p>
+<ul>
+<li><strong>Ejecuta el servidor web de desarrollo y entra en la zona de administración (/admin) para comprobar que los datos se han añadido correctamente.</strong></li>
+</ul>
 <p>Se nos ha solicitado un nombre de usuario para el mismo, un correo electrónico y una contraseña, así que una vez creado, vamos a proceder a arrancar el servidor web ligero que nos proporciona Django:</p>
-<div><pre><code>python3 manage.py runserver
-</code></pre>
-</div><p>Y una vez hecho esto ya prodremos acceder al servidor web, poniendo en el navegador <code>localhost:8000/admin</code> para acceder a la zona de administración.</p>
+<p>Y una vez hecho esto ya prodremos acceder al servidor web, poniendo en el navegador <code>localhost:8000/admin</code> para acceder a la zona de administración.</p>
 <p><img src="./../images/IAW/django/1-6_django.png" alt="image"></p>
 <p>Una vez hayamos accedido a la zona de administración, se nos solicitarán los credenciales del usuario administrador que acabamos de generar, así que tras introducirlos, pulsaremos en <strong>Log in</strong>.</p>
 <p><img src="./../images/IAW/django/1-7_django.png" alt="image"></p>
 <p>Y como podemos comprobar el acceso a la zona de administración ha funcionado correctamente.</p>
+<ul>
+<li><strong>Crea dos preguntas, con posibles respuestas.</strong></li>
+</ul>
 <p>Para comprobar el funcionamiento de esta última aplicación, vamos a añadir dos nuevas preguntas, pulsando para ello en <strong>+ Add</strong> en el apartado <strong>Questions</strong> de la sección <strong>polls</strong></p>
 <p>En mi caso, he creado la pregunta “¿Cuál es tu color favorito?” con 4 posibles respuestas, indicando a su vez la fecha y hora de inicio de la encuesta. Cuando hayamos finalizado, pulsaremos en <strong>Save and add another</strong> para así añadir una segunda encuesta de prueba la cual dice &quot;¿Qué marca de portátil prefieres?&quot; con 3 posibles respuestas. Por último, pulsaremos en <strong>SAVE</strong> para añadirla y volver a la zona de administración::</p>
 <p><img src="./../images/IAW/django/1-8_django.png" alt="image"></p>
 <p><img src="./../images/IAW/django/1-9_django.png" alt="image"></p>
 <p><img src="./../images/IAW/django/1-10_django.png" alt="image"></p>
+<ul>
+<li><strong>Comprueba en el navegador que la aplicación está funcionando, accede a la url /polls.</strong></li>
+</ul>
 <p>Como se puede apreciar, las dos preguntas han sido correctamente generadas, así que accederemos tras ello a la ruta <strong>/polls</strong> para así hacer uso de dicha aplicación, en la que se mostrarán las encuestas existentes y nos permitirá votar entre las diferentes posibilidades:</p>
 <p><img src="./../images/IAW/django/1-11_django.png" alt="image"></p>
 <p>Efectivamente, ambas encuestas han sido mostradas, de manera que accederemos a la primera de ellas para verificar que todo funciona como debería:</p>
@@ -861,7 +937,302 @@ sudo systemctl reload apache2
 <p><img src="./../images/IAW/django/1-16_django.png" alt="image"></p>
 <p>En la salida de la instrucción se han mostrado todas las tablas resultantes de haber aplicado las correspondientes migraciones, siendo <strong>polls_question</strong> aquella en la que se almacenarán las dos preguntas que hemos creado, así como <strong>polls_choice</strong> aquella en la que se almacenarán las posibles respuestas y los votos realizados para cada una de ellas. Vamos a proceder a comprobar el contenido de ambas, ejecutando para ello las instrucciones:</p>
 <p><img src="./../images/IAW/django/1-17_django.png" alt="image"></p>
-<h2 id="tarea-2-entorno-de-produccion"> Tarea 2: Entorno de producción</h2>
+<ul>
+<li>
+<p><strong>Configura el servidor web apache2 con el módulo wsgi para servir la página web. Si utilizas como entorno de desarrollo la máquina bravo, se accederá con el nombre python.tunombre.gonzalonazareno.org. Si tu entorno de desarrollo es una máquina de openstack, elige el nombre con el que acceder y entrega la dirección IP de la máquina.</strong></p>
+</li>
+<li>
+<p>Primero reuniremos los ficheros estaticos:</p>
+</li>
+</ul>
+<hr>
+<div><pre><code>nano /django_tutorial/settings.py
+</code></pre>
+</div><hr>
+<div><pre><code>STATIC_ROOT = '/var/www/html/django_tutorial/static'
+</code></pre>
+</div><ul>
+<li>Despues instalaremos el modulo wsgi para apache:</li>
+</ul>
+<hr>
+<div><pre><code>dnf install mod_wsgi httpd
+</code></pre>
+</div><ul>
+<li>Despues crearemos nuestro VirtualHost:</li>
+</ul>
+<hr>
+<div><pre><code>&lt;VirtualHost *:80&gt;
+    ServerName python.olucas.gonzalonazareno.org
+
+    DocumentRoot /var/www/html/django_tutorial
+
+    Alias /static/ /var/www/html/django_tutorial/static/
+
+    WSGIDaemonProcess django_tutorial python-path=/var/www/html/django_tutorial:/var/www/html/django/lib/python3.9/site-packages
+    WSGIProcessGroup django_tutorial
+    WSGIScriptAlias / /var/www/html/django_tutorial/django_tutorial/wsgi.py
+
+    &lt;Directory /var/www/html/django_tutorial/static&gt;
+        Require all granted
+    &lt;/Directory&gt;
+
+    &lt;Directory /var/www/html/django_tutorial&gt;
+        Require all granted
+        Allow from all
+    &lt;/Directory&gt;
+
+    &lt;Directory /var/www/html/django_tutorial/django_tutorial&gt;
+        &lt;Files wsgi.py&gt;
+            Require all granted
+        &lt;/Files&gt;
+    &lt;/Directory&gt;
+
+    ErrorLog /var/log/httpd/django_tutorial_error.log
+    CustomLog /var/log/httpd/django_tutorial_access.log combined
+&lt;/VirtualHost&gt;
+</code></pre>
+</div><ul>
+<li>Despues de hacer esto habilitaremos el fichero</li>
+</ul>
+<hr>
+<div><pre><code>ln -s /etc/httpd/site-enabled/ /etc/httpd/site-available/python.conf
+</code></pre>
+</div><ul>
+<li>Nos iremos a la maquina charlie y lo habilitaremos en las vistas que ya hemos creado</li>
+</ul>
+<p><em>En interna:</em></p>
+<div><pre><code>python  IN  CNAME   bravo
+</code></pre>
+</div><p><em>En dmz:</em></p>
+<div><pre><code>python  IN  CNAME   bravo
+</code></pre>
+</div><p><em>En externa:</em></p>
+<div><pre><code>python  IN  CNAME   alfa
+</code></pre>
+</div><p>Borraremos la caché:</p>
+<div><pre><code>rncd flush
+</code></pre>
+</div><p>Reiniciaremos bind9:</p>
+<div><pre><code>systemctl restart bind9
+</code></pre>
+</div><p>Sepación</p>
+<div><pre><code>python manage.py dumpdata &gt; db.json
+</code></pre>
+</div><h2 id="tarea-2-entorno-de-produccion"> Tarea 2: Entorno de producción</h2>
+<p><strong>Vamos a realizar el despliegue de nuestra aplicación en un entorno de producción, para ello vamos a utilizar nuestro VPS, sigue los siguientes pasos:</strong></p>
+<ul>
+<li><strong>Clona el repositorio en el VPS</strong></li>
+</ul>
+<hr>
+<div><pre><code>git clone https://github.com/oscarlucas22/django_tutorial.git
+</code></pre>
+</div><ul>
+<li><strong>Crea un entorno virtual e instala las dependencias de tu aplicación.</strong></li>
+</ul>
+<hr>
+<div><pre><code>sudo apt-get install python-virtualenv virtualenv
+python3 -m venv my_entorno
+source my_entorno/bin/activate
+pip install -r requirements.txt
+</code></pre>
+</div><ul>
+<li><strong>Instala el módulo que permite que python trabaje con mysql:</strong></li>
+</ul>
+<hr>
+<div><pre><code>apt install python3-dev default-libmysqlclient-dev build-essential
+</code></pre>
+</div><hr>
+<div><pre><code>(my_entorno)$ pip install mysqlclient
+</code></pre>
+</div><ul>
+<li><strong>Crea una base de datos y un usuario en mysql.</strong></li>
+</ul>
+<hr>
+<div><pre><code>sudo apt-get install default-mysql-server
+</code></pre>
+</div><hr>
+<div><pre><code>sudo mysql -u root -p
+</code></pre>
+</div><hr>
+<div><pre><code>create database db_django;
+create user 'user_django'@'localhost' identified by 'root';
+grant all privileges on db_django.* to 'user_django'@'localhost';
+</code></pre>
+</div><ul>
+<li><strong>Configura la aplicación para trabajar con mysql, para ello modifica la configuración de la base de datos en el archivo <code>settings.py</code>:</strong></li>
+</ul>
+<hr>
+<div><pre><code>nano django_tutorial/settings.py
+</code></pre>
+</div><hr>
+<div><pre><code>DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'db_django',
+        'USER': 'user_django',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
+</code></pre>
+</div><ul>
+<li><strong>Crea una copia de seguridad de la base de datos. Ten en cuenta que en el entorno de desarrollo vas a tener una base de datos sqlite, y en el entorno de producción una mariadb, por lo tanto es recomendable para hacer la copia de seguridad y recuperarla con los comandos: <code>python manage.py dumpdata</code> y <code>python manage.py loaddata</code>, para más información.</strong></li>
+</ul>
+<hr>
+<div><pre><code>python3 manage.py migrate
+python manage.py loaddata db.json
+</code></pre>
+</div><ul>
+<li><strong>Configura el servidor de aplicaciones uwsgi, creando una unidad de systemd como hicimos en el taller2) y configura nginx como proxy inverso para servir la aplicación.</strong></li>
+</ul>
+<hr>
+<div><pre><code>apt install libapache2-mod-wsgi-py3
+</code></pre>
+</div><hr>
+<div><pre><code>sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install build-essential python
+sudo apt-get install python-dev
+sudo apt-get install python3-all-dev
+sudo apt-get install uwsgi-plugin-python3
+pip install uwsgi
+</code></pre>
+</div><p>Para servir nuestra aplicación python, vamos a utilizar un servidor de aplicaciones llamado gunicorn. Además, vamos a configurar nginx como un proxy inverso para gestionar las solicitudes y servir la aplicación. Primero, instalaremos gunicorn en nuestro entorno virtual de python utilizando el comando pip.</p>
+<div><pre><code>pip install gunicorn
+</code></pre>
+</div><p>Una vez hecho esto, podríamos ejecutar la aplicación simplemente con el siguiente comando.</p>
+<p><strong>Nota</strong>: Debemos de estar en el directorio principal de la aplicación</p>
+<div><pre><code>gunicorn django_tutorial.wsgi
+</code></pre>
+</div><p>Para garantizar que nuestra aplicación esté funcionando continuamente y poder acceder a ella mediante un virtualhost en nginx, vamos a crear una unidad de systemd para manejar ese proceso de manera más simple.</p>
+<div><pre><code>nano /etc/systemd/system/gunicorn-djangopolls.service
+</code></pre>
+</div><hr>
+<div><pre><code>[Unit]
+Description=gunicorn-djangopolls
+After=network.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+User=www-data
+Group=www-data
+Restart=always
+
+ExecStart=/home/olucas/my_entorno/bin/gunicorn django_tutorial.wsgi
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s TERM $MAINPID
+
+WorkingDirectory=/home/olucas/django_tutorial
+Environment=PYTHONPATH='/home/olucas/django_tutorial:/home/olucas/my_entorno/lib/python3.9/site-packages'
+
+PrivateTmp=true
+</code></pre>
+</div><p>Ahora habilitamos e iniciamos el servicio:</p>
+<div><pre><code>sudo systemctl enable gunicorn-djangopolls.service
+sudo systemctl start gunicorn-djangopolls.service 
+</code></pre>
+</div><p>En caso de realizar cambios en la configuración del fichero recientemente creado, es necesario recargar el demonio para aplicar los cambios.</p>
+<div><pre><code>sudo systemctl daemon-reload
+</code></pre>
+</div><p>Ahora ya podemos crear el virtualhost en nginx para que sirva la aplicación:</p>
+<div><pre><code>sudo nano /etc/nginx/sites-available/app-python.conf
+</code></pre>
+</div><hr>
+<div><pre><code>server {
+        listen 80;
+        listen [::]:80;
+
+        root /home/olucas/django_tutorial;
+
+        index index.html index.php index.htm index.nginx-debian.html;
+
+        server_name python.olucass.com;
+
+        location / {
+                proxy_pass http://localhost:8000;
+                include proxy_params;
+        }
+
+        location /static {
+                alias /home/olucas/my_entorno/lib/python3.9/site-packages/django/contrib/admin/static;
+        }
+}
+</code></pre>
+</div><ul>
+<li>
+<p><strong>Debes asegurarte que el contenido estático se está sirviendo: ¿Se muestra la imagen de fondo de la aplicación? ¿Se ve de forma adecuada la hoja de estilo de la zona de administración?.</strong></p>
+</li>
+<li>
+<p><strong>Desactiva en la configuración el modo debug a False. Para que los errores de ejecución no den información sensible de la aplicación.</strong></p>
+<p>nano django_tutorial/settings.py</p>
+</li>
+<li>
+<p><strong>La página web debe ser accesible usando https, en la URL: <code>https://python.tudominio.algo</code></strong></p>
+</li>
+<li>
+<p><strong>Muestra la página funcionando. En la zona de administración se debe ver de forma adecuada la hoja de estilo.</strong></p>
+</li>
+</ul>
+<h2 id="tarea-3-modificacion-de-nuestra-aplicacion"> Tarea 3: Modificación de nuestra aplicación</h2>
+<p><strong>Vamos a realizar cambios en el entorno de desarrollo y posteriormente vamos a subirlas a producción. Vamos a realizar tres modificaciones, pero recuerda que primero lo haces en el entorno de desarrollo, y luego tendrás que llevar los cambios a producción:</strong></p>
+<ul>
+<li>
+<p><strong>Modifica la página inicial donde se ven las encuestas para que aparezca tu nombre: Para ello modifica el archivo <code>django_tutorial/polls/templates/polls/index.html</code>.</strong></p>
+</li>
+<li>
+<p><strong>Modifica la imagen de fondo que se ve la aplicación.</strong></p>
+</li>
+<li>
+<p><strong>Vamos a crear una nueva tabla en la base de datos, para ello sigue los siguientes pasos:</strong></p>
+<ul>
+<li><strong>Añade un nuevo modelo al fichero <code>polls/models.py</code>:</strong></li>
+</ul>
+</li>
+</ul>
+<hr>
+<div><pre><code>class Categoria(models.Model):
+    Abr = models.CharField(max_length=4)
+    Nombre = models.CharField(max_length=50)
+    
+    def __str__(self):
+        `return self.Abr+&quot; - &quot;+self.Nombre
+</code></pre>
+</div><hr>
+<ul>
+<li>
+<ul>
+<li>
+<p><strong>Crea una nueva migración.</strong></p>
+</li>
+<li>
+<p><strong>Y realiza la migración.</strong></p>
+</li>
+<li>
+<p><strong>Añade el nuevo modelo al sitio de administración de django:</strong></p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Para ello cambia la siguiente línea en el fichero <code>polls/admin.py</code>:</strong></p>
+<div><pre><code>from .models import Choice, Question
+</code></pre>
+</div><p><strong>Por esta otra:</strong></p>
+<div><pre><code>  from .models import Choice, Question, Categoria
+</code></pre>
+</div><p><strong>Y añade al final la siguiente línea:</strong></p>
+<div><pre><code>admin.site.register(Categoria)
+</code></pre>
+</div><hr>
+<ul>
+<li>
+<ul>
+<li><strong>Despliega el cambio producido al crear la nueva tabla en el entorno de producción.</strong></li>
+</ul>
+</li>
+</ul>
 ]]></content>
     <author>
       <name>Óscar Lucas</name>
@@ -2624,29 +2995,44 @@ host    all      all              ::/0                         md5
 </div><p><img src="./../images/SAD/usuarios/6-mysql-usuarios.png" alt="image"></p>
 <h3 id="oracle"> ORACLE</h3>
 <p><font color="#00ff00"><strong>1.</strong></font> <strong>Realiza un procedimiento llamado PermisosdeAsobreB que reciba dos nombres de usuario y muestre los permisos que tiene el primero de ellos sobre objetos del segundo.</strong></p>
-<p><font color="#00ff00"><strong>2.</strong></font> <strong>Realiza un procedimiento llamado MostrarInfoPerfil que reciba el nombre de un perfil y muestre su composición y los usuarios que lo tienen asignado.</strong></p>
-<div><pre><code>create procedure Infoperfil (p_perfil dba_profiles.profile%type)
+<div><pre><code>create or replace procedure PermisosdeAsobreB (p_userA in varchar2, p_userB in varchar2)
 is
-	cursor c_informacion
+begin
+	-- Obtener los permisos de p_userA sobre objetos de p_userB
+	for var in (select privilege, owner, table_name from dba_tab_privs where grantee = p_userA and owner = p_userB group by privilege, owner, table_name)
+	loop
+	-- Mostrar los permisos encontrados
+	dbms_output.put_line('Privilegio: ' || var.privilege || ', Objeto: ' || var.table_name || ', Propietario: ' || var.owner);
+	end loop;
+end;
+/
+</code></pre>
+</div><hr>
+<div><pre><code>exec PermisosdeAsobreB('SYSTEM', 'SYS');
+</code></pre>
+</div><p><font color="#00ff00"><strong>2.</strong></font> <strong>Realiza un procedimiento llamado MostrarInfoPerfil que reciba el nombre de un perfil y muestre su composición y los usuarios que lo tienen asignado.</strong></p>
+<div><pre><code>create or replace procedure Infoperfil (p_perfil dba_profiles.profile%type)
+is
+	cursor cursor
 	is
 	select resource_name, limit from dba_profiles where profile = p_perfil;
 begin
-	dbms_output.put_line('Composición de: '|| p_perfil);	
-	for i in c_informacion loop
-		dbms_output.put_line('Recurso: '|| i.resource_name || ' Límites: '|| i.limit);
+	dbms_output.put_line('Composicion de: '|| p_perfil);	
+	for var in cursor loop
+		dbms_output.put_line('Recurso: '|| var.resource_name || ' Limites: '|| var.limit);
 	end loop;
 end;
 /
 
-create procedure MostrarInfoPerfil (p_perfil dba_profiles.profile%type)
+create or replace procedure MostrarInfoPerfil (p_perfil dba_profiles.profile%type)
 is
-	cursor c_perfiles
+	cursor cursor
 	is
 	select username from dba_users where profile = p_perfil;
 begin 
 	Infoperfil(p_perfil);
-	for i in c_perfiles loop
-		dbms_output.put_line('Usuarios con ese perfil: '|| i.username);
+	for var in cursor loop
+		dbms_output.put_line('Usuarios con ese perfil: '|| var.username);
 	end loop;
 end;
 /
