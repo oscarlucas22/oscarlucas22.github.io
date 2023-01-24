@@ -5,7 +5,7 @@
   <author>
     <name>Óscar Lucas</name>
   </author>
-  <updated>2023-01-24T17:37:01.757Z</updated>
+  <updated>2023-01-24T17:37:27.814Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://github.com/oscarlucas22/atom.xml"/>
   <link rel="alternate" href="https://github.com/oscarlucas22/"/>
@@ -1228,7 +1228,7 @@ PrivateTmp=true
 </div><p>Y por ultimo reiniciamos nginx</p>
 <div><pre><code>sudo systemctl restart nginx
 </code></pre>
-</div><p><em><strong>Nota</strong></em>: Si no ttenemos nuestro certificado lo generaremos de la siguiente manera:</p>
+</div><p><em><strong>Nota</strong></em>: Si no tenemos nuestro certificado lo generaremos de la siguiente manera:</p>
 <div><pre><code>sudo apt remove certbo
 sudo apt install snap
 snap install --classic certbot
@@ -3310,7 +3310,7 @@ fetch first 1 row only;
     <title type="html">Instalación y configuración de un servidor de correos en el VPS</title>
     <id>https://github.com/oscarlucas22/practicas/correos/</id>
     <link href="https://github.com/oscarlucas22/practicas/correos/"/>
-    <updated>2023-01-24T17:37:01.820Z</updated>
+    <updated>2023-01-24T17:37:27.882Z</updated>
     <content type="html"><![CDATA[<h1 id="instalacion-y-configuracion-de-un-servidor-de-correos-en-el-vps"> Instalación y configuración de un servidor de correos en el VPS</h1>
 <h2 id="practica-servidor-de-correos"> Práctica: Servidor de correos</h2>
 <p><strong>Instala y configura de manera adecuada el servidor de correos en tu VPS. El nombre del servidor de correo será mail.tudominio.es (Este es el nombre que deberá aparecer en el registro MX).</strong></p>
