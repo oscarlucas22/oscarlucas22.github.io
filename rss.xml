@@ -6,8 +6,8 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Tue, 24 Jan 2023 02:37:31 GMT</pubDate>
-    <lastBuildDate>Tue, 24 Jan 2023 02:37:31 GMT</lastBuildDate>
+    <pubDate>Tue, 24 Jan 2023 02:41:44 GMT</pubDate>
+    <lastBuildDate>Tue, 24 Jan 2023 02:41:44 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
@@ -113,30 +113,6 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>Servidores y Clientes de Base de Datos</title>
-      <link>https://github.com/oscarlucas22/practicas/BD/</link>
-      <guid>https://github.com/oscarlucas22/practicas/BD/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">Servidores y Clientes de Base de Datos</source>
-      <category>practicas</category>
-      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="servidores-y-clientes-de-base-de-datos"> Servidores y Clientes de Base de Datos</h1>
-<ul>
-<li>
-<p><a href="./mariadb.html">MariaDB</a></p>
-</li>
-<li>
-<p><a href="./postgresql.html">PostgreSQL</a></p>
-</li>
-<li>
-<p><a href="./oracle.html">Oracle</a></p>
-</li>
-<li>
-<p><a href="./mongo.html">MongoDB</a></p>
-</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Criptografía I: Cifrado asímetrico</title>
       <link>https://github.com/oscarlucas22/practicas/criptografia1/</link>
       <guid>https://github.com/oscarlucas22/practicas/criptografia1/</guid>
@@ -219,6 +195,30 @@
 </code></pre>
 </div><p>Y despues ejecutare el comando &quot;cat&quot; para ver el interior del fichero.</p>
 <p><img src="./../images/SAD/cripto I/5-4.png" alt="image"></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Servidores y Clientes de Base de Datos</title>
+      <link>https://github.com/oscarlucas22/practicas/BD/</link>
+      <guid>https://github.com/oscarlucas22/practicas/BD/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">Servidores y Clientes de Base de Datos</source>
+      <category>practicas</category>
+      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="servidores-y-clientes-de-base-de-datos"> Servidores y Clientes de Base de Datos</h1>
+<ul>
+<li>
+<p><a href="./mariadb.html">MariaDB</a></p>
+</li>
+<li>
+<p><a href="./postgresql.html">PostgreSQL</a></p>
+</li>
+<li>
+<p><a href="./oracle.html">Oracle</a></p>
+</li>
+<li>
+<p><a href="./mongo.html">MongoDB</a></p>
+</li>
+</ul>
 ]]></content:encoded>
     </item>
     <item>
@@ -1231,6 +1231,14 @@ PrivateTmp=true
 <div><pre><code>admin.site.register(Categoria)
 </code></pre>
 </div><p><img src="./../images/IAW/django/1-26_django.png" alt="image"></p>
+<p>Despues de esto hay que subir todo el contenido a GitHub, e irnor al VPS y alli clonar este repositorio.</p>
+<p>Y volvemos a ejecutar los siguientes comando:</p>
+<div><pre><code>source django_vps/bin/activate
+(django_vps)$ python3 manage.py makemigrations
+(django_vps)$ python3 manage.py migrate
+(django_vps)$ python manage.py loaddata db.json
+</code></pre>
+</div><p>Y nuestra aplicación ya estaria funcionando con los cambios hechos.</p>
 <ul>
 <li>
 <ul>
