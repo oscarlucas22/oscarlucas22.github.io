@@ -5,7 +5,7 @@
   <author>
     <name>Óscar Lucas</name>
   </author>
-  <updated>2023-01-24T02:47:06.854Z</updated>
+  <updated>2023-01-24T03:12:57.293Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://github.com/oscarlucas22/atom.xml"/>
   <link rel="alternate" href="https://github.com/oscarlucas22/"/>
@@ -1023,6 +1023,7 @@ grant all privileges on db_django.* to 'user_django'@'localhost';
 </div><p>Y ya nos deberia de funcionar:</p>
 <p><img src="./../images/IAW/django/1-18_django.png" alt="image"></p>
 <p><img src="./../images/IAW/django/1-19_django.png" alt="image"></p>
+<p>Y despues de hacer todo esto subiremos todo a nuestro repositorio de GitHub.</p>
 <h2 id="tarea-2-entorno-de-produccion"> Tarea 2: Entorno de producción</h2>
 <p><strong>Vamos a realizar el despliegue de nuestra aplicación en un entorno de producción, para ello vamos a utilizar nuestro VPS, sigue los siguientes pasos:</strong></p>
 <ul>
@@ -1294,7 +1295,11 @@ PrivateTmp=true
 <div><pre><code>admin.site.register(Categoria)
 </code></pre>
 </div><p><img src="./../images/IAW/django/1-26_django.png" alt="image"></p>
-<p>Despues de esto hay que subir todo el contenido a GitHub, y nos iremos al VPS y alli haremos un <code>pull</code> al repositorio.</p>
+<p>Despues de esto ejecutaremos el siguiente comando:</p>
+<div><pre><code>source django_vps/bin/activate
+(django_vps)$ python manage.py collectstatic
+</code></pre>
+</div><p>Y despues hay que subir todo el contenido a GitHub, y nos iremos al VPS y alli haremos un <code>pull</code> al repositorio.</p>
 <div><pre><code>git pull
 </code></pre>
 </div><p>Y volvemos a ejecutar los siguientes comando:</p>
