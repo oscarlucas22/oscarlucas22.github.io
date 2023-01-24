@@ -6,8 +6,8 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Tue, 24 Jan 2023 00:14:18 GMT</pubDate>
-    <lastBuildDate>Tue, 24 Jan 2023 00:14:18 GMT</lastBuildDate>
+    <pubDate>Tue, 24 Jan 2023 02:25:12 GMT</pubDate>
+    <lastBuildDate>Tue, 24 Jan 2023 02:25:12 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
@@ -824,12 +824,21 @@ en /etc/nginx/sites-enabled.</p>
 <p><img src="./../images/IAW/django/1-4_django.png" alt="image"></p>
 <p>Efectivamente, un fichero de nombre <code>db.sqlite3</code> ha sido generado, que contendrá todas las tablas necesarias.</p>
 <ul>
-<li>
-<p><strong>Crea la base de datos. A partir del modelo de datos se crean las tablas de la base de datos.</strong></p>
-</li>
-<li>
-<p><strong>Crea un usuario administrador.</strong></p>
-</li>
+<li><strong>Crea la base de datos. A partir del modelo de datos se crean las tablas de la base de datos.</strong></li>
+</ul>
+<hr>
+<div><pre><code>sudo apt-get install default-mysql-server
+</code></pre>
+</div><hr>
+<div><pre><code>sudo mysql -u root -p
+</code></pre>
+</div><hr>
+<div><pre><code>create database db_django;
+create user 'user_django'@'localhost' identified by 'root';
+grant all privileges on db_django.* to 'user_django'@'localhost';
+</code></pre>
+</div><ul>
+<li><strong>Crea un usuario administrador.</strong></li>
 </ul>
 <p>La aplicación se encuentra ya instalada en su totalidad, de manera que vamos a proceder a crear un usuario administrador de dicho proyecto, que tendrá privilegios suficientes para acceder a la zona de administración, ejecutando para ello el comando:</p>
 <div><pre><code>python3 manage.py createsuperuser
@@ -839,7 +848,9 @@ en /etc/nginx/sites-enabled.</p>
 <li><strong>Ejecuta el servidor web de desarrollo y entra en la zona de administración (/admin) para comprobar que los datos se han añadido correctamente.</strong></li>
 </ul>
 <p>Se nos ha solicitado un nombre de usuario para el mismo, un correo electrónico y una contraseña, así que una vez creado, vamos a proceder a arrancar el servidor web ligero que nos proporciona Django:</p>
-<p>Y una vez hecho esto ya prodremos acceder al servidor web, poniendo en el navegador <code>localhost:8000/admin</code> para acceder a la zona de administración.</p>
+<div><pre><code>python manage.py runserver 0.0.0.0:8000
+</code></pre>
+</div><p>Y una vez hecho esto ya prodremos acceder al servidor web, poniendo en el navegador <code>localhost:8000/admin</code> para acceder a la zona de administración.</p>
 <p><img src="./../images/IAW/django/1-6_django.png" alt="image"></p>
 <p>Una vez hayamos accedido a la zona de administración, se nos solicitarán los credenciales del usuario administrador que acabamos de generar, así que tras introducirlos, pulsaremos en <strong>Log in</strong>.</p>
 <p><img src="./../images/IAW/django/1-7_django.png" alt="image"></p>
@@ -879,7 +890,7 @@ en /etc/nginx/sites-enabled.</p>
 <p><strong>Configura el servidor web apache2 con el módulo wsgi para servir la página web. Si utilizas como entorno de desarrollo la máquina bravo, se accederá con el nombre python.tunombre.gonzalonazareno.org. Si tu entorno de desarrollo es una máquina de openstack, elige el nombre con el que acceder y entrega la dirección IP de la máquina.</strong></p>
 </li>
 <li>
-<p>Primero reuniremos los ficheros estaticos:</p>
+<p>Primero reuniremos los ficheros estaticos pero antes editamos este fichero con el siguiente contenido:</p>
 </li>
 </ul>
 <hr>
@@ -887,6 +898,9 @@ en /etc/nginx/sites-enabled.</p>
 </code></pre>
 </div><hr>
 <div><pre><code>STATIC_ROOT = '/var/www/html/django_tutorial/static'
+</code></pre>
+</div><p>Y ahora si ejeutamos el comando para reunir los ficheros estaticos:</p>
+<div><pre><code>python manage.py collectstatic
 </code></pre>
 </div><ul>
 <li>Despues instalaremos el modulo wsgi para apache:</li>
@@ -935,27 +949,18 @@ en /etc/nginx/sites-enabled.</p>
 <div><pre><code>ln -s /etc/httpd/site-enabled/ /etc/httpd/site-available/python.conf
 </code></pre>
 </div><ul>
-<li>Nos iremos a la maquina charlie y lo habilitaremos en las vistas que ya hemos creado</li>
+<li>Editamos el fichero <code>/etc/hosts/</code> en nuestro local:</li>
 </ul>
-<p><em>En interna:</em></p>
-<div><pre><code>python  IN  CNAME   bravo
+<hr>
+<div><pre><code>172.22.201.40 python.olucass.com
 </code></pre>
-</div><p><em>En dmz:</em></p>
-<div><pre><code>python  IN  CNAME   bravo
-</code></pre>
-</div><p><em>En externa:</em></p>
-<div><pre><code>python  IN  CNAME   alfa
-</code></pre>
-</div><p>Borraremos la caché:</p>
-<div><pre><code>rncd flush
-</code></pre>
-</div><p>Reiniciaremos bind9:</p>
-<div><pre><code>systemctl restart bind9
-</code></pre>
-</div><p>Sepación</p>
+</div><p>Y por ultimo creamos una copia de seguridad de la base de datos con el siguiente comando:</p>
 <div><pre><code>python manage.py dumpdata &gt; db.json
 </code></pre>
-</div><h2 id="tarea-2-entorno-de-produccion"> Tarea 2: Entorno de producción</h2>
+</div><p>Y ya nos deberia de funcionar:</p>
+<p><img src="./../images/IAW/django/1-18_django.png" alt="image"></p>
+<p><img src="./../images/IAW/django/1-19_django.png" alt="image"></p>
+<h2 id="tarea-2-entorno-de-produccion"> Tarea 2: Entorno de producción</h2>
 <p><strong>Vamos a realizar el despliegue de nuestra aplicación en un entorno de producción, para ello vamos a utilizar nuestro VPS, sigue los siguientes pasos:</strong></p>
 <ul>
 <li><strong>Clona el repositorio en el VPS</strong></li>
@@ -1035,19 +1040,24 @@ sudo apt-get install python3-all-dev
 sudo apt-get install uwsgi-plugin-python3
 pip install uwsgi
 </code></pre>
-</div><p>Para servir nuestra aplicación python, vamos a utilizar un servidor de aplicaciones llamado gunicorn. Además, vamos a configurar nginx como un proxy inverso para gestionar las solicitudes y servir la aplicación. Primero, instalaremos gunicorn en nuestro entorno virtual de python utilizando el comando pip.</p>
-<div><pre><code>pip install gunicorn
+</div><p>Para servir nuestra aplicación python, vamos a crear un fichero nombre.ini el que guardara lo siguiente:</p>
+<div><pre><code>[uwsgi]
+http = :8080
+chdir = /home/olucas/django_tutorial/django_tutorial 
+wsgi-file = /home/olucas/django_tutorial/django_tutorial/wsgi.py
+processes = 4
+threads = 2
 </code></pre>
 </div><p>Una vez hecho esto, podríamos ejecutar la aplicación simplemente con el siguiente comando.</p>
-<p><strong>Nota</strong>: Debemos de estar en el directorio principal de la aplicación</p>
-<div><pre><code>gunicorn django_tutorial.wsgi
+<p><strong>Nota</strong>: Debemos de estar en la ruta donde se encuentra el fichero</p>
+<div><pre><code>uwsgi ejemplo.ini
 </code></pre>
 </div><p>Para garantizar que nuestra aplicación esté funcionando continuamente y poder acceder a ella mediante un virtualhost en nginx, vamos a crear una unidad de systemd para manejar ese proceso de manera más simple.</p>
-<div><pre><code>nano /etc/systemd/system/gunicorn-djangopolls.service
+<div><pre><code>nano /etc/systemd/system/uwsgi-django_tutorial.service
 </code></pre>
 </div><hr>
 <div><pre><code>[Unit]
-Description=gunicorn-djangopolls
+Description=uwsgi-django_tutorial
 After=network.target
 
 [Install]
@@ -1058,18 +1068,14 @@ User=www-data
 Group=www-data
 Restart=always
 
-ExecStart=/home/olucas/my_entorno/bin/gunicorn django_tutorial.wsgi
+ExecStart=/home/olucas/django_vps/bin/uwsgi /home/olucas/django_vps/fich.ini
 ExecReload=/bin/kill -s HUP $MAINPID
 ExecStop=/bin/kill -s TERM $MAINPID
 
 WorkingDirectory=/home/olucas/django_tutorial
-Environment=PYTHONPATH='/home/olucas/django_tutorial:/home/olucas/my_entorno/lib/python3.9/site-packages'
+Environment=PYTHONPATH='/home/olucas/django_tutorial/django_tutorial:/home/olucas/django_vps/lib/python3.9/site-packages'
 
 PrivateTmp=true
-</code></pre>
-</div><p>Ahora habilitamos e iniciamos el servicio:</p>
-<div><pre><code>sudo systemctl enable gunicorn-djangopolls.service
-sudo systemctl start gunicorn-djangopolls.service 
 </code></pre>
 </div><p>En caso de realizar cambios en la configuración del fichero recientemente creado, es necesario recargar el demonio para aplicar los cambios.</p>
 <div><pre><code>sudo systemctl daemon-reload
@@ -1083,7 +1089,6 @@ sudo systemctl start gunicorn-djangopolls.service
         listen [::]:80;
 
         root /home/olucas/django_tutorial;
-
         index index.html index.php index.htm index.nginx-debian.html;
 
         server_name python.olucass.com;
@@ -1094,9 +1099,12 @@ sudo systemctl start gunicorn-djangopolls.service
         }
 
         location /static {
-                alias /home/olucas/my_entorno/lib/python3.9/site-packages/django/contrib/admin/static;
+                alias /home/olucas/django_tutorial/static;
         }
 }
+</code></pre>
+</div><p>Y lo habilitamos:</p>
+<div><pre><code>ln -s /etc/nginx/site-enabled/ /etc/nginx/site-aviable/app-python.conf
 </code></pre>
 </div><ul>
 <li>
@@ -1104,24 +1112,65 @@ sudo systemctl start gunicorn-djangopolls.service
 </li>
 <li>
 <p><strong>Desactiva en la configuración el modo debug a False. Para que los errores de ejecución no den información sensible de la aplicación.</strong></p>
-<p>nano django_tutorial/settings.py</p>
-</li>
-<li>
-<p><strong>La página web debe ser accesible usando https, en la URL: <code>https://python.tudominio.algo</code></strong></p>
-</li>
-<li>
-<p><strong>Muestra la página funcionando. En la zona de administración se debe ver de forma adecuada la hoja de estilo.</strong></p>
 </li>
 </ul>
+<hr>
+<div><pre><code>nano django_tutorial/settings.py
+</code></pre>
+</div><p><img src="./../images/IAW/django/1-20_django.png" alt="image"></p>
+<ul>
+<li><strong>La página web debe ser accesible usando https, en la URL: <code>https://python.tudominio.algo</code></strong></li>
+</ul>
+<p>Para hacer esto crearemos otro VirtualHost:</p>
+<div><pre><code>server {
+        listen 443 ssl http2;
+        listen [::]:443 ssl http2;
+
+    ssl on;
+        ssl_certificate /etc/letsencrypt/live/olucass.com/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/olucass.com/privkey.pem;
+
+        root /home/olucas/django_tutorial;
+        index index.html index.php index.htm index.nginx-debian.html;
+
+        server_name python.olucass.com;
+
+        location / {
+                proxy_pass http://localhost:8000;
+                include proxy_params;
+        }
+
+        location /static {
+                alias /home/olucas/django_tutorial/static;
+        }
+
+}
+</code></pre>
+</div><p>Y lo habilitamos:</p>
+<div><pre><code>ln -s /etc/nginx/site-enabled/ /etc/nginx/site-aviable/app-python-https.conf
+</code></pre>
+</div><p>Y editamos nuestro VirtualHost de antes y le añadimos la siguiente linea:</p>
+<div><pre><code>rewrite ^/$ https://python.olucass.com;
+</code></pre>
+</div><p>Y por ultimo reiniciamos nginx</p>
+<div><pre><code>sudo systemctl restart nginx
+</code></pre>
+</div><ul>
+<li><strong>Muestra la página funcionando. En la zona de administración se debe ver de forma adecuada la hoja de estilo.</strong></li>
+</ul>
+<p><img src="./../images/IAW/django/1-21_django.png" alt="image"></p>
 <h2 id="tarea-3-modificacion-de-nuestra-aplicacion"> Tarea 3: Modificación de nuestra aplicación</h2>
 <p><strong>Vamos a realizar cambios en el entorno de desarrollo y posteriormente vamos a subirlas a producción. Vamos a realizar tres modificaciones, pero recuerda que primero lo haces en el entorno de desarrollo, y luego tendrás que llevar los cambios a producción:</strong></p>
 <ul>
-<li>
-<p><strong>Modifica la página inicial donde se ven las encuestas para que aparezca tu nombre: Para ello modifica el archivo <code>django_tutorial/polls/templates/polls/index.html</code>.</strong></p>
-</li>
-<li>
-<p><strong>Modifica la imagen de fondo que se ve la aplicación.</strong></p>
-</li>
+<li><strong>Modifica la página inicial donde se ven las encuestas para que aparezca tu nombre: Para ello modifica el archivo <code>django_tutorial/polls/templates/polls/index.html</code>.</strong></li>
+</ul>
+<p><img src="./../images/IAW/django/1-22_django.png" alt="image"></p>
+<ul>
+<li><strong>Modifica la imagen de fondo que se ve la aplicación.</strong></li>
+</ul>
+<p><img src="./../images/IAW/django/1-23_django.png" alt="image"></p>
+<p><img src="./../images/IAW/django/1-24_django.png" alt="image"></p>
+<ul>
 <li>
 <p><strong>Vamos a crear una nueva tabla en la base de datos, para ello sigue los siguientes pasos:</strong></p>
 <ul>
@@ -1135,21 +1184,36 @@ sudo systemctl start gunicorn-djangopolls.service
     Nombre = models.CharField(max_length=50)
     
     def __str__(self):
-        `return self.Abr+&quot; - &quot;+self.Nombre
+        return self.Abr+&quot; - &quot;+self.Nombre
+</code></pre>
+</div><hr>
+<p><img src="./../images/IAW/django/1-25_django.png" alt="image"></p>
+<ul>
+<li>
+<ul>
+<li><strong>Crea una nueva migración.</strong></li>
+</ul>
+</li>
+</ul>
+<hr>
+<div><pre><code>python3 manage.py makemigrations
 </code></pre>
 </div><hr>
 <ul>
 <li>
 <ul>
-<li>
-<p><strong>Crea una nueva migración.</strong></p>
+<li><strong>Y realiza la migración.</strong></li>
+</ul>
 </li>
+</ul>
+<hr>
+<div><pre><code>python3 manage.py migrate
+</code></pre>
+</div><hr>
+<ul>
 <li>
-<p><strong>Y realiza la migración.</strong></p>
-</li>
-<li>
-<p><strong>Añade el nuevo modelo al sitio de administración de django:</strong></p>
-</li>
+<ul>
+<li><strong>Añade el nuevo modelo al sitio de administración de django:</strong></li>
 </ul>
 </li>
 </ul>
@@ -1162,7 +1226,7 @@ sudo systemctl start gunicorn-djangopolls.service
 </div><p><strong>Y añade al final la siguiente línea:</strong></p>
 <div><pre><code>admin.site.register(Categoria)
 </code></pre>
-</div><hr>
+</div><p><img src="./../images/IAW/django/1-26_django.png" alt="image"></p>
 <ul>
 <li>
 <ul>
@@ -1170,6 +1234,8 @@ sudo systemctl start gunicorn-djangopolls.service
 </ul>
 </li>
 </ul>
+<p><img src="./../images/IAW/django/1-27_django.png" alt="image"></p>
+<p><img src="./../images/IAW/django/1-28_django.png" alt="image"></p>
 ]]></content:encoded>
     </item>
     <item>
