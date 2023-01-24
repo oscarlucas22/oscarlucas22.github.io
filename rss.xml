@@ -6,8 +6,8 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Tue, 24 Jan 2023 02:25:12 GMT</pubDate>
-    <lastBuildDate>Tue, 24 Jan 2023 02:25:12 GMT</lastBuildDate>
+    <pubDate>Tue, 24 Jan 2023 02:37:31 GMT</pubDate>
+    <lastBuildDate>Tue, 24 Jan 2023 02:37:31 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
@@ -1077,10 +1077,14 @@ Environment=PYTHONPATH='/home/olucas/django_tutorial/django_tutorial:/home/oluca
 
 PrivateTmp=true
 </code></pre>
-</div><p>En caso de realizar cambios en la configuración del fichero recientemente creado, es necesario recargar el demonio para aplicar los cambios.</p>
-<div><pre><code>sudo systemctl daemon-reload
+</div><p>Una vez hecho esto habilitaremos el fichero y lo iniciaremos:</p>
+<div><pre><code>systemctl enable uwsgi-django.service
 </code></pre>
-</div><p>Ahora ya podemos crear el virtualhost en nginx para que sirva la aplicación:</p>
+</div><hr>
+<div><pre><code>systemctl start uwsgi-django.service
+</code></pre>
+</div><p><img src="./../images/IAW/django/uwsgi-django.png" alt="image"></p>
+<p>Ahora ya podemos crear el virtualhost en nginx para que sirva la aplicación:</p>
 <div><pre><code>sudo nano /etc/nginx/sites-available/app-python.conf
 </code></pre>
 </div><hr>

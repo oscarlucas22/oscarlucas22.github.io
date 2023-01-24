@@ -5,7 +5,7 @@
   <author>
     <name>Óscar Lucas</name>
   </author>
-  <updated>2023-01-24T02:25:12.372Z</updated>
+  <updated>2023-01-24T02:37:31.729Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://github.com/oscarlucas22/atom.xml"/>
   <link rel="alternate" href="https://github.com/oscarlucas22/"/>
@@ -1140,10 +1140,14 @@ Environment=PYTHONPATH='/home/olucas/django_tutorial/django_tutorial:/home/oluca
 
 PrivateTmp=true
 </code></pre>
-</div><p>En caso de realizar cambios en la configuración del fichero recientemente creado, es necesario recargar el demonio para aplicar los cambios.</p>
-<div><pre><code>sudo systemctl daemon-reload
+</div><p>Una vez hecho esto habilitaremos el fichero y lo iniciaremos:</p>
+<div><pre><code>systemctl enable uwsgi-django.service
 </code></pre>
-</div><p>Ahora ya podemos crear el virtualhost en nginx para que sirva la aplicación:</p>
+</div><hr>
+<div><pre><code>systemctl start uwsgi-django.service
+</code></pre>
+</div><p><img src="./../images/IAW/django/uwsgi-django.png" alt="image"></p>
+<p>Ahora ya podemos crear el virtualhost en nginx para que sirva la aplicación:</p>
 <div><pre><code>sudo nano /etc/nginx/sites-available/app-python.conf
 </code></pre>
 </div><hr>
