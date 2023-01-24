@@ -5,7 +5,7 @@
   <author>
     <name>Óscar Lucas</name>
   </author>
-  <updated>2023-01-24T02:41:44.103Z</updated>
+  <updated>2023-01-24T02:44:42.125Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://github.com/oscarlucas22/atom.xml"/>
   <link rel="alternate" href="https://github.com/oscarlucas22/"/>
@@ -150,6 +150,37 @@
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
+    <title type="html">Servidores y Clientes de Base de Datos</title>
+    <id>https://github.com/oscarlucas22/practicas/BD/</id>
+    <link href="https://github.com/oscarlucas22/practicas/BD/"/>
+    <updated>2023-01-19T12:13:11.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="servidores-y-clientes-de-base-de-datos"> Servidores y Clientes de Base de Datos</h1>
+<ul>
+<li>
+<p><a href="./mariadb.html">MariaDB</a></p>
+</li>
+<li>
+<p><a href="./postgresql.html">PostgreSQL</a></p>
+</li>
+<li>
+<p><a href="./oracle.html">Oracle</a></p>
+</li>
+<li>
+<p><a href="./mongo.html">MongoDB</a></p>
+</li>
+</ul>
+]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
+    <category term="practicas" scheme=""/>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <published>2023-01-19T12:13:11.000Z</published>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
     <title type="html">Criptografía I: Cifrado asímetrico</title>
     <id>https://github.com/oscarlucas22/practicas/criptografia1/</id>
     <link href="https://github.com/oscarlucas22/practicas/criptografia1/"/>
@@ -230,37 +261,6 @@
 </code></pre>
 </div><p>Y despues ejecutare el comando &quot;cat&quot; para ver el interior del fichero.</p>
 <p><img src="./../images/SAD/cripto I/5-4.png" alt="image"></p>
-]]></content>
-    <author>
-      <name>Óscar Lucas</name>
-    </author>
-    <category term="practicas" scheme=""/>
-    <contributor>
-      <name>Óscar Lucas</name>
-    </contributor>
-    <published>2023-01-19T12:13:11.000Z</published>
-    <rights>Copyright by Óscar Lucas</rights>
-  </entry>
-  <entry>
-    <title type="html">Servidores y Clientes de Base de Datos</title>
-    <id>https://github.com/oscarlucas22/practicas/BD/</id>
-    <link href="https://github.com/oscarlucas22/practicas/BD/"/>
-    <updated>2023-01-19T12:13:11.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="servidores-y-clientes-de-base-de-datos"> Servidores y Clientes de Base de Datos</h1>
-<ul>
-<li>
-<p><a href="./mariadb.html">MariaDB</a></p>
-</li>
-<li>
-<p><a href="./postgresql.html">PostgreSQL</a></p>
-</li>
-<li>
-<p><a href="./oracle.html">Oracle</a></p>
-</li>
-<li>
-<p><a href="./mongo.html">MongoDB</a></p>
-</li>
-</ul>
 ]]></content>
     <author>
       <name>Óscar Lucas</name>
@@ -1294,8 +1294,10 @@ PrivateTmp=true
 <div><pre><code>admin.site.register(Categoria)
 </code></pre>
 </div><p><img src="./../images/IAW/django/1-26_django.png" alt="image"></p>
-<p>Despues de esto hay que subir todo el contenido a GitHub, e irnor al VPS y alli clonar este repositorio.</p>
-<p>Y volvemos a ejecutar los siguientes comando:</p>
+<p>Despues de esto hay que subir todo el contenido a GitHub, y nos iremos al VPS y alli haremos un <code>pull</code> al repositorio.</p>
+<div><pre><code>git pull
+</code></pre>
+</div><p>Y volvemos a ejecutar los siguientes comando:</p>
 <div><pre><code>source django_vps/bin/activate
 (django_vps)$ python3 manage.py makemigrations
 (django_vps)$ python3 manage.py migrate
