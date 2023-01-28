@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VPN | LucasBlog</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
+    <link rel="alternate" type="application/atom+xml" href="https://github.com/oscarlucas22/atom.xml" title="LucasBlog Atom Feed">
+    <link rel="alternate" type="application/json" href="https://github.com/oscarlucas22/rss.xml" title="LucasBlog JSON Feed">
+    <link rel="alternate" type="application/rss+xml" href="https://github.com/oscarlucas22/rss.xml" title="LucasBlog RSS Feed">
+    <meta name="description" content="">
+    <meta property="og:url" content="https://github.com/oscarlucas22/practicas/vpn.html">
+    <meta property="og:site_name" content="LucasBlog">
+    <meta property="og:title" content="VPN">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en-US">
+    <meta property="article:author" content="Óscar Lucas">
+    <meta name="theme-color" content="#46bd87">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    
+    <link rel="preload" href="/assets/css/0.styles.a9db6349.css" as="style"><link rel="preload" href="/assets/js/app.c01551bf.js" as="script"><link rel="preload" href="/assets/js/vendors~layout-Layout.33b007bc.js" as="script"><link rel="preload" href="/assets/js/vendors~layout-Blog~layout-Layout~layout-NotFound.05ca1d1f.js" as="script"><link rel="preload" href="/assets/js/page-VPN.e9b17872.js" as="script"><link rel="preload" href="/assets/js/vendors~layout-Blog~layout-Layout.115acfd8.js" as="script"><link rel="prefetch" href="/assets/js/36.99e20d19.js"><link rel="prefetch" href="/assets/js/37.de2e4b22.js"><link rel="prefetch" href="/assets/js/layout-Blog.d101508d.js"><link rel="prefetch" href="/assets/js/layout-Layout.4c35ec6e.js"><link rel="prefetch" href="/assets/js/layout-NotFound.1721584c.js"><link rel="prefetch" href="/assets/js/layout-Slide.c37bfb42.js"><link rel="prefetch" href="/assets/js/page-ABD.d6b1380a.js"><link rel="prefetch" href="/assets/js/page-ASO.3afc9e7e.js"><link rel="prefetch" href="/assets/js/page-CompilacióndeunprogramaenCutilizandounMakefile.66bde6cb.js"><link rel="prefetch" href="/assets/js/page-CriptografíaICifradoasímetrico.fee1d4f4.js"><link rel="prefetch" href="/assets/js/page-CriptografíaIIICertificadosDigitalesHTTPS.03091449.js"><link rel="prefetch" href="/assets/js/page-CriptografíaIIIntegridad,firmasyautenticación.1277c52d.js"><link rel="prefetch" href="/assets/js/page-DesplieguedeaplicacionesJava.d4bf08eb.js"><link rel="prefetch" href="/assets/js/page-Desplieguedeaplicacionespython.9073dc4e.js"><link rel="prefetch" href="/assets/js/page-Home.4e9a6f0b.js"><link rel="prefetch" href="/assets/js/page-IAW.a0524961.js"><link rel="prefetch" href="/assets/js/page-InstalaciónyconfiguracióndeunservidordecorreosenelVPS.173ed704.js"><link rel="prefetch" href="/assets/js/page-InterconexiónServidores.f31f29ee.js"><link rel="prefetch" href="/assets/js/page-LucasBlog.0b05fff7.js"><link rel="prefetch" href="/assets/js/page-MariaDBenDebian11Bullseye.8b47f266.js"><link rel="prefetch" href="/assets/js/page-MigrarCentos8aRockyLinux8.becf1d26.js"><link rel="prefetch" href="/assets/js/page-MongoDBenDebian11Bullseye.6d1dcf2d.js"><link rel="prefetch" href="/assets/js/page-OracleenDebian11Bullseye.a4bb7791.js"><link rel="prefetch" href="/assets/js/page-PostgreSQLenDebian11Bullseye.d54fa117.js"><link rel="prefetch" href="/assets/js/page-Presentación.c363f645.js"><link rel="prefetch" href="/assets/js/page-PrácticaEscenarioenOpenStack.789f6f92.js"><link rel="prefetch" href="/assets/js/page-Recoleccióncentralizadadelogsdesistema,mediantejournald.53cb5d2d.js"><link rel="prefetch" href="/assets/js/page-SAD.5f5ba073.js"><link rel="prefetch" href="/assets/js/page-SRI.ddc1d3f0.js"><link rel="prefetch" href="/assets/js/page-ServidoresyClientesdeBasedeDatos.e3263bc5.js"><link rel="prefetch" href="/assets/js/page-USUARIOS.2035df9c.js"><link rel="prefetch" href="/assets/js/vendors~photo-swipe.78181366.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a9db6349.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container has-navbar has-anchor"><header class="navbar"><!----> <div class="content__navbar-start"></div> <button title="Sidebar Button" class="sidebar-button"><span class="icon"></span></button> <a href="/" class="home-link router-link-active"><img src="/olucas.png" alt="LucasBlog" class="logo"> <!----> <span class="site-name can-hide">LucasBlog</span></a> <!----> <div class="content__navbar-center"></div> <div class="links"><button tabindex="-1" aria-hidden="true" class="color-button"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="skin-icon"><path d="M224 800c0 9.6 3.2 44.8 6.4 54.4 6.4 48-48 76.8-48 76.8s80 41.6 147.2 0 134.4-134.4
+        38.4-195.2c-22.4-12.8-41.6-19.2-57.6-19.2C259.2 716.8 227.2 761.6 224 800zM560 675.2l-32
+        51.2c-51.2 51.2-83.2 32-83.2 32 25.6 67.2 0 112-12.8 128 25.6 6.4 51.2 9.6 80 9.6 54.4 0
+        102.4-9.6 150.4-32l0 0c3.2 0 3.2-3.2 3.2-3.2 22.4-16 12.8-35.2
+        6.4-44.8-9.6-12.8-12.8-25.6-12.8-41.6 0-54.4 60.8-99.2 137.6-99.2 6.4 0 12.8 0 22.4
+        0 12.8 0 38.4 9.6 48-25.6 0-3.2 0-3.2 3.2-6.4 0-3.2 3.2-6.4 3.2-6.4 6.4-16 6.4-16 6.4-19.2
+        9.6-35.2 16-73.6 16-115.2 0-105.6-41.6-198.4-108.8-268.8C704 396.8 560 675.2 560 675.2zM224
+        419.2c0-28.8 22.4-51.2 51.2-51.2 28.8 0 51.2 22.4 51.2 51.2 0 28.8-22.4 51.2-51.2 51.2C246.4
+        470.4 224 448 224 419.2zM320 284.8c0-22.4 19.2-41.6 41.6-41.6 22.4 0 41.6 19.2 41.6 41.6 0
+        22.4-19.2 41.6-41.6 41.6C339.2 326.4 320 307.2 320 284.8zM457.6 208c0-12.8 12.8-25.6 25.6-25.6
+        12.8 0 25.6 12.8 25.6 25.6 0 12.8-12.8 25.6-25.6 25.6C470.4 233.6 457.6 220.8 457.6 208zM128
+        505.6C128 592 153.6 672 201.6 736c28.8-60.8 112-60.8 124.8-60.8-16-51.2 16-99.2
+        16-99.2l316.8-422.4c-48-19.2-99.2-32-150.4-32C297.6 118.4 128 291.2 128 505.6zM764.8
+        86.4c-22.4 19.2-390.4 518.4-390.4 518.4-22.4 28.8-12.8 76.8 22.4 99.2l9.6 6.4c35.2 22.4
+        80 12.8 99.2-25.6 0 0 6.4-12.8 9.6-19.2 54.4-105.6 275.2-524.8 288-553.6
+        6.4-19.2-3.2-32-19.2-32C777.6 76.8 771.2 80 764.8 86.4z"></path></svg> <div class="color-picker-menu" style="display:none;"><div class="theme-options"><ul class="themecolor-select"><label for="themecolor-select">Theme Color:</label> <li><span class="default-theme"></span></li> </ul> <div class="darkmode-toggle"><label for="darkmode-toggle" class="desc">Theme Mode:</label> <div class="darkmode-switch"><div class="item day"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon light-icon"><path d="M512 256a42.667 42.667 0 0 0 42.667-42.667V128a42.667 42.667 0 0 0-85.334 0v85.333A42.667 42.667 0 0 0 512 256zm384 213.333h-85.333a42.667 42.667 0 0 0 0 85.334H896a42.667 42.667 0 0 0 0-85.334zM256 512a42.667 42.667 0 0 0-42.667-42.667H128a42.667 42.667 0 0 0 0 85.334h85.333A42.667 42.667 0 0 0 256 512zm9.387-298.667a42.667 42.667 0 0 0-59.307 62.72l61.44 59.307a42.667 42.667 0 0 0 31.147 11.947 42.667 42.667 0 0 0 30.72-13.227 42.667 42.667 0 0 0 0-60.16zm459.946 133.974a42.667 42.667 0 0 0 29.44-11.947l61.44-59.307a42.667 42.667 0 0 0-57.6-62.72l-61.44 60.587a42.667 42.667 0 0 0 0 60.16 42.667 42.667 0 0 0 28.16 13.227zM512 768a42.667 42.667 0 0 0-42.667 42.667V896a42.667 42.667 0 0 0 85.334 0v-85.333A42.667 42.667 0 0 0 512 768zm244.48-79.36a42.667 42.667 0 0 0-59.307 61.44l61.44 60.587a42.667 42.667 0 0 0 29.44 11.946 42.667 42.667 0 0 0 30.72-12.8 42.667 42.667 0 0 0 0-60.586zm-488.96 0-61.44 59.307a42.667 42.667 0 0 0 0 60.586 42.667 42.667 0 0 0 30.72 12.8 42.667 42.667 0 0 0 28.587-10.666l61.44-59.307a42.667 42.667 0 0 0-59.307-61.44zM512 341.333A170.667 170.667 0 1 0 682.667 512 170.667 170.667 0 0 0 512 341.333z" fill="currentColor"></path></svg></div> <div class="item auto active"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon auto-icon"><path d="M460.864 539.072H564.8L510.592 376l-49.728 163.072zM872 362.368V149.504H659.648L510.528 0l-149.12 149.504H149.12v212.928L0 511.872l149.12 149.504v212.928h212.352l149.12 149.504 149.12-149.504h212.352V661.376l149.12-149.504L872 362.368zM614.464 693.12l-31.616-90.624H438.272l-31.616 90.624h-85.888l144.576-407.68h90.368l144.576 407.68h-85.824zm0 0" fill="currentColor"></path></svg></div> <div class="item night"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon dark-icon"><path d="M935.539 630.402c-11.43-11.432-28.674-14.739-43.531-8.354-46.734 20.103-96.363 30.297-147.508 30.297-99.59 0-193.221-38.784-263.64-109.203-108.637-108.637-139.61-270.022-78.908-411.148a39.497 39.497 0 0 0-51.886-51.887c-52.637 22.64-100.017 54.81-140.826 95.616-85.346 85.346-132.346 198.821-132.346 319.52 0 120.7 47.001 234.172 132.347 319.519S408.063 947.11 528.76 947.11c120.7 0 234.172-47.003 319.52-132.351 40.809-40.81 72.978-88.19 95.616-140.826a39.497 39.497 0 0 0-8.356-43.532z" fill="currentColor"></path></svg></div></div> <!----></div></div></div></button> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link router-link-active"><i class="iconfont icon-home"></i>
+  Home
+</a></div><div class="nav-item"><a href="/presentacion/" class="nav-link"><i class="iconfont icon-people"></i>
+  Presentación
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Categorías" class="dropdown-title"><span class="title"><i class="iconfont icon-file"></i>
+        Categorías
+      </span> <span class="arrow"></span></button> <ul class="nav-dropdown"><li class="dropdown-item"><a href="/category/ASO.html" class="nav-link"><!---->
+  ASO
+</a></li><li class="dropdown-item"><a href="/category/ABD.html" class="nav-link"><!---->
+  ABD
+</a></li><li class="dropdown-item"><a href="/category/SRI.html" class="nav-link"><!---->
+  SRI
+</a></li><li class="dropdown-item"><a href="/category/SAD.html" class="nav-link"><!---->
+  SAD
+</a></li><li class="dropdown-item"><a href="/category/IAW.html" class="nav-link"><!---->
+  IAW
+</a></li></ul></div></div></nav> <!----> <a rel="noopener noreferrer" href="https://github.com/oscarlucas22" target="_blank" class="repo-link can-hide">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> <!----> <div class="content__navbar-end"></div></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><div vocab="https://schema.org/" typeof="Person" class="blogger-info mobile"><div data-balloon-pos="down" role="navigation" class="blogger hasIntro"><img property="image" alt="Blogger Avatar" src="/olucas.png" class="avatar round"> <div property="name" class="name">oscarlucas22</div> <meta property="url" content="/"></div> <div class="num-wrapper"><div><div class="num">24</div> <div>Articles</div></div> <div><div class="num">2</div> <div>Category</div></div> <div><div class="num">0</div> <div>Tags</div></div> <div><div class="num">22</div> <div>Timeline</div></div></div> <div class="media-links-wrapper"><a href="https://github.com/oscarlucas22" rel="noopener noreferrer" target="_blank" aria-label="Github" data-balloon-pos="up" class="media-link"><span class="sr-only">Github</span> <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon icon-github"><circle cx="512" cy="512" r="512" fill="#171515"></circle> <path d="M509.423 146.442c-200.317 0-362.756 162.42-362.756 362.8 0 160.266 103.936 296.24 248.109 344.217 18.139 3.327 24.76-7.872 24.76-17.486 0-8.613-.313-31.427-.49-61.702-100.912 21.923-122.205-48.63-122.205-48.63-16.495-41.91-40.28-53.067-40.28-53.067-32.937-22.51 2.492-22.053 2.492-22.053 36.407 2.566 55.568 37.386 55.568 37.386 32.362 55.438 84.907 39.43 105.58 30.143 3.296-23.444 12.667-39.43 23.032-48.498-80.557-9.156-165.246-40.28-165.246-179.297 0-39.604 14.135-71.988 37.342-97.348-3.731-9.178-16.18-46.063 3.556-96.009 0 0 30.46-9.754 99.76 37.19 28.937-8.048 59.97-12.071 90.823-12.211 30.807.14 61.843 4.165 90.822 12.21 69.26-46.944 99.663-37.189 99.663-37.189 19.792 49.946 7.34 86.831 3.61 96.01 23.25 25.359 37.29 57.742 37.29 97.347 0 139.366-84.82 170.033-165.637 179.013 13.026 11.2 24.628 33.342 24.628 67.182 0 48.498-.445 87.627-.445 99.521 0 9.702 6.535 20.988 24.945 17.444 144.03-48.067 247.881-183.95 247.881-344.175 0-200.378-162.442-362.798-362.802-362.798z" fill="#FFF"></path></svg></a></div></div> <hr> <!----> <div class="content__sidebar-top"></div> <nav class="sidebar-nav-links"><div class="nav-item"><a href="/" class="nav-link router-link-active"><i class="iconfont icon-home"></i>
+  Home
+</a></div><div class="nav-item"><a href="/presentacion/" class="nav-link"><i class="iconfont icon-people"></i>
+  Presentación
+</a></div><div class="nav-item"><div class="mobile-dropdown-wrapper"><button type="button" aria-label="Categorías" class="dropdown-title"><span class="title"><i class="iconfont icon-file"></i>
+      Categorías
+    </span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/category/ASO.html" class="nav-link"><!---->
+  ASO
+</a></li><li class="dropdown-item"><!----> <a href="/category/ABD.html" class="nav-link"><!---->
+  ABD
+</a></li><li class="dropdown-item"><!----> <a href="/category/SRI.html" class="nav-link"><!---->
+  SRI
+</a></li><li class="dropdown-item"><!----> <a href="/category/SAD.html" class="nav-link"><!---->
+  SAD
+</a></li><li class="dropdown-item"><!----> <a href="/category/IAW.html" class="nav-link"><!---->
+  IAW
+</a></li></ul></div></div> <a rel="noopener noreferrer" href="https://github.com/oscarlucas22" target="_blank" class="repo-link">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav> <!----> <div class="content__sidebar-center"></div> <!----> <!----> <div class="content__sidebar-bottom"></div> <!----></aside> <main class="page"><nav class="breadcrumb disable"><!----></nav> <!----> <div class="content__page-top"></div> <div vocab="https://schema.org/" typeof="Article" class="page-title"><h1><i class="iconfont icon-computer"></i> <span property="headline">VPN</span></h1> <div class="page-info"><!----> <span aria-label="Author🖊" data-balloon-pos="down" categoryPath="/category/$category/" tagPath="/tag/$tag/"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon author-icon"><path d="M649.6 633.6c86.4-48 147.2-144 147.2-249.6 0-160-128-288-288-288s-288 128-288 288c0 108.8 57.6 201.6 147.2 249.6-121.6 48-214.4 153.6-240 288-3.2 9.6 0 19.2 6.4 25.6 3.2 9.6 12.8 12.8 22.4 12.8h704c9.6 0 19.2-3.2 25.6-12.8 6.4-6.4 9.6-16 6.4-25.6-25.6-134.4-121.6-240-243.2-288z" fill="currentColor"></path></svg> <span property="author">Óscar Lucas</span></span><span aria-label="Page views🔢" data-balloon-pos="down" defaultAuthor="Óscar Lucas" categoryPath="/category/$category/" tagPath="/tag/$tag/" class="visitor-info"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon eye-icon"><path d="M992 512.096c0-5.76-.992-10.592-1.28-11.136-.192-2.88-1.152-8.064-2.08-10.816-.256-.672-.544-1.376-.832-2.08-.48-1.568-1.024-3.104-1.6-4.32C897.664 290.112 707.104 160 512 160c-195.072 0-385.632 130.016-473.76 322.592-1.056 2.112-1.792 4.096-2.272 5.856a55.512 55.512 0 0 0-.64 1.6c-1.76 5.088-1.792 8.64-1.632 7.744-.832 3.744-1.568 11.168-1.568 11.168-.224 2.272-.224 4.032.032 6.304 0 0 .736 6.464 1.088 7.808.128 1.824.576 4.512 1.12 6.976h-.032c.448 2.08 1.12 4.096 1.984 6.08.48 1.536.992 2.976 1.472 4.032C126.432 733.856 316.992 864 512 864c195.136 0 385.696-130.048 473.216-321.696 1.376-2.496 2.24-4.832 2.848-6.912.256-.608.48-1.184.672-1.728 1.536-4.48 1.856-8.32 1.728-8.32l-.032.032c.608-3.104 1.568-7.744 1.568-13.28zM512 672c-88.224 0-160-71.776-160-160s71.776-160 160-160 160 71.776 160 160-71.776 160-160 160z" fill="currentColor"></path></svg> <span id="/practicas/vpn/" data-flag-title="VPN" class="leancloud_visitors waline-visitor-count"><span class="leancloud-visitors-count">...</span></span></span><!----><span role="navigation" aria-label="Category🌈" data-balloon-pos="down" defaultAuthor="Óscar Lucas" tagPath="/tag/$tag/" class="category-info enable"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon category-icon"><path d="M148.41 106.992h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H148.41c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.311-40.31zm-.854 446.486H429.73c22.263 0 40.311 18.048 40.311 40.31v282.176c0 22.263-18.048 40.312-40.31 40.312H147.555c-22.263 0-40.311-18.049-40.311-40.312V593.79c0-22.263 18.048-40.311 40.31-40.311zm446.371-446.486h282.176c22.263 0 40.31 18.048 40.31 40.31V429.48c0 22.263-18.047 40.31-40.31 40.31H593.927c-22.263 0-40.311-18.047-40.311-40.31V147.302c0-22.263 18.048-40.31 40.31-40.31zm136.293 813.51H623.926c-40.925 0-74.22-33.388-74.22-74.425V623.992c0-41.038 33.387-74.424 74.425-74.424h222.085c41.038 0 74.424 33.226 74.424 74.067v114.233c0 10.244-8.304 18.548-18.547 18.548s-18.548-8.304-18.548-18.548V623.635c0-20.388-16.746-36.974-37.33-36.974H624.13c-20.585 0-37.331 16.747-37.331 37.33v222.086c0 20.585 16.654 37.331 37.126 37.331H730.22c10.243 0 18.547 8.304 18.547 18.547 0 10.244-8.304 18.547-18.547 18.547z" fill="currentColor"></path></svg> <span property="articleSection">Practicas</span></span><!----><span aria-label="Reading Time⌛" data-balloon-pos="down" defaultAuthor="Óscar Lucas" categoryPath="/category/$category/" tagPath="/tag/$tag/" class="reading-time-info"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon timer-icon"><path d="M799.387 122.15c4.402-2.978 7.38-7.897 7.38-13.463v-1.165c0-8.933-7.38-16.312-16.312-16.312H256.33c-8.933 0-16.311 7.38-16.311 16.312v1.165c0 5.825 2.977 10.874 7.637 13.592 4.143 194.44 97.22 354.963 220.201 392.763-122.204 37.542-214.893 196.511-220.2 389.397-4.661 5.049-7.638 11.651-7.638 19.03v5.825h566.49v-5.825c0-7.379-2.849-13.981-7.509-18.9-5.049-193.016-97.867-351.985-220.2-389.527 123.24-37.67 216.446-198.453 220.588-392.892zM531.16 450.445v352.632c117.674 1.553 211.787 40.778 211.787 88.676H304.097c0-48.286 95.149-87.382 213.728-88.676V450.445c-93.077-3.107-167.901-81.297-167.901-177.093 0-8.803 6.99-15.793 15.793-15.793 8.803 0 15.794 6.99 15.794 15.793 0 80.261 63.69 145.635 142.01 145.635s142.011-65.374 142.011-145.635c0-8.803 6.99-15.793 15.794-15.793s15.793 6.99 15.793 15.793c0 95.019-73.789 172.82-165.96 177.093z" fill="currentColor"></path></svg> <span>About 15 min</span> <meta property="timeRequired" content="PT15M"></span></div> <!----> <hr></div> <div class="anchor-place-holder"><aside id="anchor"><div class="anchor-wrapper"><ul class="anchor-list"><li class="anchor"><a href="/practicas/vpn/#a-vpn-de-acceso-remoto-con-openvpn-y-certificados-x509-5-puntos" class="anchor-link heading2"><div>A) VPN de acceso remoto con OpenVPN y certificados x509 (5 puntos)</div></a></li><li class="anchor"><a href="/practicas/vpn/#b-vpn-sitio-a-sitio-con-openvpn-y-certificados-x509-10-puntos" class="anchor-link heading2"><div>B) VPN sitio a sitio con OpenVPN y certificados x509 (10 puntos)</div></a></li><li class="anchor"><a href="/practicas/vpn/#c-vpn-de-acceso-remoto-con-wireguard-5-puntos" class="anchor-link heading2"><div>C) VPN de acceso remoto con WireGuard (5 puntos)</div></a></li><li class="anchor"><a href="/practicas/vpn/#d-vpn-sitio-a-sitio-con-wireguard-10-puntos" class="anchor-link heading2"><div>D) VPN sitio a sitio con WireGuard (10 puntos)</div></a></li><li class="anchor"><a href="/practicas/vpn/#extra-1-vpn-de-acceso-remoto-con-ipsec-5-puntos" class="anchor-link heading3"><div>Extra 1) VPN de acceso remoto con Ipsec (5 puntos)</div></a></li><li class="anchor"><a href="/practicas/vpn/#extra-2-vpn-sitio-a-sitio-con-ipsec-10-puntos" class="anchor-link heading3"><div>Extra 2) VPN sitio a sitio con IPsec (10 puntos)</div></a></li></ul></div></aside></div> <!----> <div class="content__content-top"></div> <div class="theme-default-content content__default"><h1 id="vpn"><a href="#vpn" class="header-anchor">#</a> VPN</h1> <h2 id="a-vpn-de-acceso-remoto-con-openvpn-y-certificados-x509-5-puntos"><a href="#a-vpn-de-acceso-remoto-con-openvpn-y-certificados-x509-5-puntos" class="header-anchor">#</a> A) VPN de acceso remoto con OpenVPN y certificados x509 (5 puntos)</h2> <p><strong>Configura una conexión VPN de acceso remoto entre dos equipos del cloud:</strong></p> <ul><li><p><strong>Uno de los dos equipos (el que actuará como servidor) estará conectado a dos redes</strong></p></li> <li><p><strong>Para la autenticación de los extremos se usarán obligatoriamente certificados digitales, que se generarán utilizando openssl y se almacenarán en el directorio /etc/openvpn, junto con  los parámetros Diffie-Helman y el certificado de la propia Autoridad de Certificación.</strong></p></li> <li><p><strong>Se utilizarán direcciones de la red 10.99.99.0/24 para las direcciones virtuales de la VPN. La dirección 10.99.99.1 se asignará al servidor VPN.</strong></p></li> <li><p><strong>Los ficheros de configuración del servidor y del cliente se crearán en el directorio /etc/openvpn de cada máquina, y se llamarán servidor.conf y cliente.conf respectivamente.</strong></p></li> <li><p><strong>Tras el establecimiento de la VPN, la máquina cliente debe ser capaz de acceder a una máquina que esté en la otra red a la que está conectado el servidor.</strong></p></li></ul> <p><strong>Documenta el proceso detalladamente.</strong></p> <hr> <p>Vamos a utilizar Vagrant para crear un escenario. He utilizado el siguiente Vagrantfile para lograrlo:</p> <p><a href="https://pastebin.com/8SUMxXwY" target="_blank" rel="noopener noreferrer">Vagrantfile<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>En la máquina que está actuando como servidor, es necesario instalar OpenVPN y habilitar la característica de reenvío (forwarding).</p> <div class="language- extra-class"><pre><code>sudo apt install openvpn
+</code></pre></div><hr> <div class="language- extra-class"><pre><code>sudo nano /etc/sysctl.conf
+
+net.ipv4.ip_forward=1
+</code></pre></div><p>A continuación, vamos a copiar la configuración de <code>/usr/share/easy-rsa</code> a <code>/etc/openvpn</code> para evitar que las actualizaciones del paquete sobreescriban los cambios que realicemos.</p> <div class="language- extra-class"><pre><code>sudo cp -r /usr/share/easy-rsa /etc/openvpn
+cd /etc/openvpn/easy-rsa/
+</code></pre></div><p>Inicializamos el directorio PKI:</p> <div class="language- extra-class"><pre><code>sudo ./easyrsa init-pki
+</code></pre></div><p><img src="/assets/img/1-A.224ae5d9.png" alt="image"></p> <p>A continuación, vamos a crear el certificado de la Autoridad de Certificación (CA) y la clave para firmar los certificados de los clientes y del servidor.</p> <div class="language- extra-class"><pre><code>sudo ./easyrsa build-ca
+</code></pre></div><p><img src="/assets/img/2-A.3c01bdcc.png" alt="image"></p> <p>He usado &quot;usuarioroot&quot; como frase de contraseña. Según lo indicado en la salida del comando, el certificado se ha generado en <code>/etc/openvpn/easy-rsa/pki/ca.crt</code>, mientras que la clave privada se encuentra en <code>/etc/openvpn/easy-rsa/pki/private/ca.key</code>.</p> <p>Ahora, debemos generar los parámetros Diffie-Hellman, los cuales se utilizarán para el intercambio de claves durante el proceso de apretón de manos TLS entre el servidor OpenVPN y los clientes que se conecten.</p> <div class="language- extra-class"><pre><code>sudo ./easyrsa gen-dh
+</code></pre></div><p><img src="/assets/img/3-A.931f9298.png" alt="image"></p> <p>Como podemos ver, se ha generado en <code>/etc/openvpn/easy-rsa/pki/dh.pem</code>.</p> <p>A continuación, crearemos el certificado y la clave privada del servidor OpenVPN.</p> <div class="language- extra-class"><pre><code>sudo ./easyrsa build-server-full server nopass
+</code></pre></div><p><img src="/assets/img/4-A.b08899b7.png" alt="image"></p> <ul><li>“nopass” deshabilita el uso de la frase de paso.</li></ul> <p>El certificado se ha almacenado en <code>/etc/openvpn/easy-rsa/pki/issued/server.crt</code> y la clave privada se ha generado en <code>/etc/openvpn/easy-rsa/pki/private/server.key</code>.</p> <p>Así como hicimos con el servidor, generaremos el certificado y la clave privada para el cliente de la VPN (que yo llamé Clientevpn1).</p> <div class="language- extra-class"><pre><code>sudo ./easyrsa build-client-full Clientevpn1 nopass
+</code></pre></div><p><img src="/assets/img/5-A.09a73e98.png" alt="image"></p> <p>El certificado se ha generado en <code>/etc/openvpn/easy-rsa/pki/issued/Clientevpn1.crt</code> y la clave privada se ha generado en <code>/etc/openvpn/easy-rsa/pki/private/Clientevpn1.key</code>. Todos estos archivos se encuentran en el lado del servidor, pero para que la conexión sea efectiva, debemos transferir los archivos necesarios al cliente. Para ello, primero los agruparemos en una carpeta para tenerlos más organizados.</p> <div class="language- extra-class"><pre><code>mkdir /home/vagrant/Clientevpn1
+sudo cp -rp /etc/openvpn/easy-rsa/pki/{ca.crt,issued/Clientevpn1.crt,private/Clientevpn1.key} /home/vagrant/Clientevpn1
+sudo chown -R vagrant: /home/vagrant/Clientevpn1/
+</code></pre></div><p>Generamos una clave pública u privada para pasarnos la carpeta:</p> <div class="language- extra-class"><pre><code>ssh-keygen -t rsa
+</code></pre></div><p>Y nos pasamos la carpeta a la maquina cliente por scp:</p> <div class="language- extra-class"><pre><code>scp -i /home/vagrant/.ssh/id_rsa -r /home/vagrant/Clientevpn1/ vagrant@192.168.10.11:/home/vagrant
+</code></pre></div><p><img src="/assets/img/6-A.81173367.png" alt="image"></p> <p>Ahora, en el lado del servidor, crearemos el archivo de configuración del túnel utilizando el archivo de ejemplo existente.</p> <div class="language- extra-class"><pre><code>sudo cp /usr/share/doc/openvpn/examples/sample-config-files/server.conf /etc/openvpn/server/servidor.conf
+</code></pre></div><hr> <div class="language- extra-class"><pre><code>sudo nano /etc/openvpn/server/servidor.conf
+
+port 1194
+proto udp
+dev tun
+
+ca /etc/openvpn/easy-rsa/pki/ca.crt
+cert /etc/openvpn/easy-rsa/pki/issued/server.crt
+key /etc/openvpn/easy-rsa/pki/private/server.key
+dh /etc/openvpn/easy-rsa/pki/dh.pem
+
+topology subnet
+
+server 10.99.99.0 255.255.255.0
+ifconfig-pool-persist /var/log/openvpn/ipp.txt
+
+push &quot;route 192.168.11.0 255.255.255.0&quot;
+
+keepalive 10 120
+cipher AES-256-CBC
+persist-key
+persist-tun
+status /var/log/openvpn/openvpn-status.log
+verb 3
+explicit-exit-notify 1
+</code></pre></div><p>Una vez creado este fichero en el servidor, podemos activar y habilitar el servicio:</p> <div class="language- extra-class"><pre><code>sudo systemctl enable --now openvpn-server@servidor
+</code></pre></div><p>Vemos el servicio activo:</p> <div class="language- extra-class"><pre><code>sudo systemctl status openvpn-server@servidor
+</code></pre></div><p><img src="/assets/img/7-A.f7554f43.png" alt="image"></p> <p>En el cliente que queremos que use la vpn (Clientevpn1), tenemos que instalar el paquete openvpn:</p> <div class="language- extra-class"><pre><code>sudo apt install openvpn
+</code></pre></div><p>Movemos al lugar adecuado los ficheros que pasamos antes por scp:</p> <div class="language- extra-class"><pre><code>sudo mv Clientevpn1/* /etc/openvpn/client/
+</code></pre></div><p>Y les cambiamos el propietario a root:</p> <div class="language- extra-class"><pre><code>sudo chown root: /etc/openvpn/client/*
+</code></pre></div><p>Asimismo, procedimos de manera similar con el cliente, tomando la plantilla de configuración existente y alterándola para adaptarla a nuestras necesidades específicas.</p> <div class="language- extra-class"><pre><code>sudo cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf /etc/openvpn/client/cliente.conf
+</code></pre></div><hr> <div class="language- extra-class"><pre><code>sudo nano /etc/openvpn/client/cliente.conf
+
+client
+dev tun
+proto udp
+
+remote 192.168.10.10 1194
+resolv-retry infinite
+nobind
+persist-key
+persist-tun
+
+ca /etc/openvpn/client/ca.crt
+cert /etc/openvpn/client/Clientevpn1.crt
+key /etc/openvpn/client/Clientevpn1.key
+
+remote-cert-tls server
+cipher AES-256-CBC
+verb 3
+</code></pre></div><p>Habilitamos y empezamos el servicio:</p> <div class="language- extra-class"><pre><code>sudo systemctl enable --now openvpn-client@cliente
+</code></pre></div><p>Y verificamos si el servicio está funcionando correctamente:</p> <div class="language- extra-class"><pre><code>sudo systemctl status openvpn-client@cliente
+</code></pre></div><p><img src="/assets/img/8-A.fc21e3e6.png" alt="image"></p> <p>Notamos que se han generado dos interfaces denominadas &quot;tun0&quot; en ambos, el servidor y el cliente, con la dirección IP especificada en el servidor.</p> <p><em>Servidorvpn</em></p> <p><img src="/assets/img/9-A.2348e32f.png" alt="image"></p> <p><em>Clientevpn1</em></p> <p><img src="/assets/img/10-A.2e7dbd44.png" alt="image"></p> <p>En el caso del cliente interno (denominado Clientevpn2 por mi parte), solo es necesario modificar la ruta predeterminada para que apunte hacia el servidor.</p> <div class="language- extra-class"><pre><code>ip route del default
+ip route add default via 192.168.11.10
+</code></pre></div><p>Pruebas de funcionamiento (todas hechas desde Clientevpn1):</p> <ul><li>Ping a Clientevpn2:</li></ul> <p><img src="/assets/img/11-A.59f0e43e.png" alt="image"></p> <ul><li>Traceroute a Clientevpn2:</li></ul> <p><img src="/assets/img/12-A.b122a232.png" alt="image"></p> <p>Tal como observamos, el cliente denominado Clientevpn1 (Clientevpn) es capaz de realizar un ping sin problemas hacia una máquina en la red remota, y al revisar el resultado del comando traceroute, podemos ver que transita a través del túnel para alcanzar su destino final.</p> <h2 id="b-vpn-sitio-a-sitio-con-openvpn-y-certificados-x509-10-puntos"><a href="#b-vpn-sitio-a-sitio-con-openvpn-y-certificados-x509-10-puntos" class="header-anchor">#</a> B) VPN sitio a sitio con OpenVPN y certificados x509 (10 puntos)</h2> <p><strong>Configura una conexión VPN sitio a sitio entre dos equipos del cloud:</strong></p> <ul><li><p><strong>Cada equipo estará conectado a dos redes, una de ellas en común</strong></p></li> <li><p><strong>Para la autenticación de los extremos se usarán obligatoriamente certificados digitales, que se generarán utilizando openssl y se almacenarán en el directorio /etc/openvpn, junto con con los parámetros Diffie-Helman y el certificado de la propia Autoridad de Certificación.</strong></p></li> <li><p><strong>Se utilizarán direcciones de la red 10.99.99.0/24 para las direcciones virtuales de la VPN.</strong></p></li> <li><p><strong>Tras el establecimiento de la VPN, una máquina de cada red detrás de cada servidor VPN debe ser capaz de acceder a una máquina del otro extremo.</strong></p></li></ul> <p><strong>Documenta el proceso detalladamente.</strong></p> <hr> <p>Para ello vamos a crear un escenario usuando vagrant. Para ello he utilizado el siguiente Vagrantfile:</p> <p><a href="https://pastebin.com/xrPNkVJt" target="_blank" rel="noopener noreferrer">Vagrantfile<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>Tendremos el siguiente escenario:</p> <ul><li><p>En el escenario 1, hay una subred con direcciones IP en el rango 30.0.0.0/24. Dentro de esta subred habrá dos computadoras conectadas entre sí a través de una red privada. La computadora &quot;Servidor1&quot; tendrá acceso a Internet y será accesible desde &quot;Servidor2&quot;, mientras que la computadora &quot;Cliente1&quot; solo podrá acceder a &quot;Servidor1&quot;.</p></li> <li><p>En el escenario 2, que utiliza la red 20.0.0.0/24, se encontrarán dos dispositivos: &quot;Servidor2&quot; que podrá ser accedido desde &quot;Servidor&quot; y &quot;Cliente2&quot; que solo estará conectado a &quot;Servidor2&quot;.</p></li></ul> <p><em><strong>Configuración en el escenario 1 (servidor)</strong></em></p> <p>Para comenzar, deberemos crear un archivo denominado &quot;vars&quot; que obtendrá su contenido a partir de una plantilla existente en el mismo directorio. Este archivo almacenará la información necesaria para nuestra Autoridad Certificadora.</p> <div class="language- extra-class"><pre><code>sudo apt install openvpn
+</code></pre></div><hr> <div class="language- extra-class"><pre><code>cd /usr/share/easy-rsa/
+sudo cp vars.example vars
+</code></pre></div><hr> <div class="language- extra-class"><pre><code>sudo nano vars
+
+set_var EASYRSA_REQ_COUNTRY     &quot;ES&quot;
+set_var EASYRSA_REQ_PROVINCE    &quot;Sevilla&quot;
+set_var EASYRSA_REQ_CITY        &quot;Dos Hermanas&quot;
+set_var EASYRSA_REQ_ORG         &quot;OLucas Corp&quot;
+set_var EASYRSA_REQ_EMAIL       &quot;oscarlucasleo124@gmail.com&quot;
+set_var EASYRSA_REQ_OU          &quot;Apartado B VPN&quot;
+</code></pre></div><p>En este paso, crearemos una carpeta donde se guardarán todos los documentos relacionados con la Autoridad Certificadora, como los certificados, las claves y la base de datos.</p> <div class="language- extra-class"><pre><code>sudo ./easyrsa init-pki
+</code></pre></div><p><img src="/assets/img/1-B.ba39f76e.png" alt="image"></p> <p>Finalmente, antes de crear la Autoridad Certificadora, deberemos generar una clave &quot;Diffie-Hellman&quot;:</p> <div class="language- extra-class"><pre><code>sudo ./easyrsa gen-dh
+</code></pre></div><p><img src="/assets/img/2-B.48087fe9.png" alt="image"></p> <p>Ahora podemos proceder a crear la Autoridad Certificadora en sí:</p> <div class="language- extra-class"><pre><code>sudo ./easyrsa build-ca
+</code></pre></div><p><img src="/assets/img/3-B.d94b893c.png" alt="image"></p> <p>Nota: He usado como frase de paso “usuario”.</p> <p>Ahora que nuestra Autoridad Certificadora está lista, deberemos proceder a crear y firmar el certificado que utilizará nuestro dispositivo &quot;Servidor1&quot;:</p> <div class="language- extra-class"><pre><code>sudo ./easyrsa gen-req server
+</code></pre></div><p><img src="/assets/img/4-B.1040fb59.png" alt="image"></p> <div class="language- extra-class"><pre><code>sudo ./easyrsa sign-req server server
+</code></pre></div><p><img src="/assets/img/5-B.efb703b4.png" alt="image"></p> <p>Ahora que hemos terminado de crear y firmar el certificado del servidor, procederemos a generar y firmar el certificado que utilizará el dispositivo &quot;Servidor2&quot; del escenario 2 para acceder a la VPN.</p> <div class="language- extra-class"><pre><code>sudo ./easyrsa gen-req vpn2
+</code></pre></div><p><img src="/assets/img/6-B.7b4a9b95.png" alt="image"></p> <div class="language- extra-class"><pre><code>sudo ./easyrsa sign-req client vpn2
+</code></pre></div><p><img src="/assets/img/7-B.829906fd.png" alt="image"></p> <p>Vamos a necesitar copiar algunos archivos para que el servidor VPN funcione correctamente en la ruta <code>/etc/openvpn/server</code>.</p> <div class="language- extra-class"><pre><code>sudo cp pki/ca.crt /etc/openvpn/server/
+sudo cp pki/dh.pem /etc/openvpn/server/
+sudo cp pki/issued/server.crt /etc/openvpn/server/
+sudo cp pki/private/server.key /etc/openvpn/server/
+</code></pre></div><p>Necesitamos transferir los archivos necesarios para que la máquina &quot;Servidor2&quot; pueda conectarse a mi servidor VPN. Una forma de hacerlo es utilizando SCP, pero hay varias otras opciones disponibles.</p> <p>Generamos una clave pública u privada para pasarnos la carpeta:</p> <div class="language- extra-class"><pre><code>ssh-keygen -t rsa
+</code></pre></div><p>Y nos pasamos la carpeta a la maquina cliente por scp:</p> <div class="language- extra-class"><pre><code>sudo scp -i /home/vagrant/.ssh/id_rsa /etc/openvpn/server/ca.crt vagrant@192.168.121.182:/home/vagrant
+sudo scp -i /home/vagrant/.ssh/id_rsa /usr/share/easy-rsa/pki/issued/vpn2.crt vagrant@192.168.121.182:/home/vagrant
+sudo scp -i /home/vagrant/.ssh/id_rsa /usr/share/easy-rsa/pki/private/vpn2.key vagrant@192.168.121.182:/home/vagrant
+</code></pre></div><p>Actualmente, debemos generar el archivo de configuración para el servidor VPN, y para ello podemos utilizar una plantilla proporcionada por el paquete de OpenVPN.</p> <div class="language- extra-class"><pre><code>sudo cp /usr/share/doc/openvpn/examples/sample-config-files/server.conf /etc/openvpn/server/servidor.conf
+</code></pre></div><hr> <div class="language- extra-class"><pre><code>sudo nano /etc/openvpn/server/servidor.conf
+
+dev tun
+
+ifconfig 10.99.99.1 10.99.99.2
+route 20.0.0.0 255.255.255.0
+tls-server 
+
+ca ca.crt
+cert server.crt  
+key server.key 
+
+dh dh.pem  
+comp-lzo  
+keepalive 10 120  
+log /var/log/openvpn/server.log  
+verb 3   
+askpass passwd.txt 
+</code></pre></div><p>Ahora podemos iniciar el servicio en el lado del servidor:</p> <div class="language- extra-class"><pre><code>sudo systemctl start openvpn-server@servidor
+</code></pre></div><p>Vemos el servicio activo:</p> <div class="language- extra-class"><pre><code>sudo systemctl status openvpn-server@servidor
+</code></pre></div><p><img src="/assets/img/8-B.842ae5e0.png" alt="image"></p> <p>No debemos olvidar el bit de forwarding en el servidor:</p> <div class="language- extra-class"><pre><code>echo 1 &gt; sudo /proc/sys/net/ipv4/ip_forward
+</code></pre></div><p>También en el cliente del escenario 1 debemos cambiar la ruta por defecto:</p> <div class="language- extra-class"><pre><code>sudo ip r del default
+sudo ip r add default via 30.0.0.10
+</code></pre></div><p>Con esto hemos terminado en el lado del escenario 1.</p> <p><em><strong>Configuración en el escenario 2 (cliente)</strong></em></p> <p>Instalamos openvpn</p> <div class="language- extra-class"><pre><code>sudo apt install openvpn
+</code></pre></div><p>En esta situación, debemos preparar la máquina &quot;Servidor2&quot; para que funcione como la otra punta del túnel VPN. El primer paso es trasladar los archivos que se enviaron desde el escenario 1 a la carpeta correspondiente.</p> <div class="language- extra-class"><pre><code>sudo mv ca.crt /etc/openvpn/client/
+sudo mv vpn2.crt /etc/openvpn/client/
+sudo mv vpn2.key /etc/openvpn/client/
+</code></pre></div><p>En este momento, vamos a crear un archivo de configuración para esta máquina. Para hacerlo, disponemos de un modelo como guía, al igual que ocurrió en el paso anterior.</p> <div class="language- extra-class"><pre><code>sudo cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf /etc/openvpn/client/cliente.conf
+</code></pre></div><hr> <div class="language- extra-class"><pre><code>sudo nano /etc/openvpn/client/cliente.conf
+
+dev tun  
+
+remote 192.168.121.102
+ifconfig 10.99.99.2 10.99.99.1 
+route 30.0.0.0 255.255.255.0
+tls-client 
+
+ca ca.crt
+cert vpn2.crt
+key vpn2.key 
+
+comp-lzo  
+keepalive 10 60 
+verb 3 
+askpass passwd2.txt 
+</code></pre></div><p>Ahora iniciamos el servicio:</p> <div class="language- extra-class"><pre><code>sudo systemctl start openvpn-client@cliente
+</code></pre></div><p>Vemos el servicio activo:</p> <div class="language- extra-class"><pre><code>sudo systemctl status openvpn-client@cliente
+</code></pre></div><p><img src="/assets/img/9-B.98a3916e.png" alt="image"></p> <p>También debemos activar el ip de forwarding en esta máquina:</p> <div class="language- extra-class"><pre><code>echo 1 &gt; sudo /proc/sys/net/ipv4/ip_forward
+</code></pre></div><p>Al igual que antes, también debemos cambiar la ruta del cliente en este escenario:</p> <div class="language- extra-class"><pre><code>sudo ip r del default
+sudo ip r add default via 20.0.0.10
+</code></pre></div><p>Ya hemos terminado de configurar este escenario y podemos pasar a hacer las pruebas:</p> <ul><li>Las rutas del servidor del escenario 1:</li></ul> <p><img src="/assets/img/10-B.87e3b573.png" alt="image"></p> <ul><li>Las rutas del servidor del escenario 2:</li></ul> <p><img src="/assets/img/11-B.752eefad.png" alt="image"></p> <ul><li>Desde el cliente del escenario 1:</li></ul> <p><img src="/assets/img/12-B.c91449d0.png" alt="image"></p> <ul><li>Desde el cliente del escenario 2:</li></ul> <p><img src="/assets/img/13-B.9241a4b8.png" alt="image"></p> <p>Ambas computadoras clientes están conectadas entre sí y al utilizar el comando &quot;traceroute&quot; se puede ver que el tráfico entre ellas pasa a través de un túnel.</p> <h2 id="c-vpn-de-acceso-remoto-con-wireguard-5-puntos"><a href="#c-vpn-de-acceso-remoto-con-wireguard-5-puntos" class="header-anchor">#</a> C) VPN de acceso remoto con WireGuard (5 puntos)</h2> <p><strong>Monta una VPN de acceso remoto usando Wireguard. Intenta probarla con clientes Windows, Linux y Android. Documenta el proceso adecuadamente y compáralo con el del apartado A.</strong></p> <hr> <p>Voy a establecer una conexión VPN de acceso remoto utilizando WireGuard, la cual será utilizada por tres dispositivos: una computadora con sistema operativo Debian 11, una computadora con Windows 10, y un dispositivo móvil con sistema operativo Android. El dispositivo que actuará como servidor será mi computadora principal con sistema operativo Debian 11, mientras que los dispositivos clientes serán máquinas virtuales, excepto el dispositivo móvil Android. Para realizar las pruebas, he creado otra máquina virtual con sistema operativo Debian que está conectada a una red interna con mi computadora principal. Esta máquina virtual será accedida por los dispositivos clientes a través del túnel VPN que estamos creando.</p> <p>A conticuación el Vagrantfile del cliente interno:</p> <p><a href="https://pastebin.com/DSu5CTa0" target="_blank" rel="noopener noreferrer">Vagrantfile<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>En este cliente solo cambiaremos la ruta por defecto:</p> <div class="language- extra-class"><pre><code>sudo ip r del default
+sudo ip r add default via 192.168.10.1
+</code></pre></div><p><em><strong>Servidor</strong></em></p> <p>Para empezar, vamos a configurar el servidor. Lo primero que haremos es instalar el paquete necesario.</p> <div class="language- extra-class"><pre><code>apt install wireguard
+</code></pre></div><p>Antes de continuar, debemos asegurarnos de haber habilitado el reenvío de paquetes en el servidor.</p> <div class="language- extra-class"><pre><code>nano /etc/sysctl.conf
+
+net.ipv4.ip_forward = 1
+</code></pre></div><p>A continuación, crearemos los archivos de configuración necesarios en la carpeta principal de WireGuard.</p> <div class="language- extra-class"><pre><code>cd /etc/wireguard/
+</code></pre></div><p>A continuación, generaremos el par de claves necesarias utilizando el comando recomendado por la página oficial de Wireguard.</p> <div class="language- extra-class"><pre><code>wg genkey | tee serverprivatekey | wg pubkey &gt; serverpublickey
+</code></pre></div><hr> <div class="language- extra-class"><pre><code>cat serverprivatekey 
+
+OLF7JGFfqzkfblV/XvrFNAGOEplRImYNXcBFh+G1Els=
+</code></pre></div><hr> <div class="language- extra-class"><pre><code>cat serverpublickey 
+
+dRinpHDTA6T/o2OCeeY3q6JH4DuiPgPHsnOJ568heDM=
+</code></pre></div><p>A continuación, crearemos el archivo de configuración que tendrá el mismo nombre de la interfaz a crear (wg0).</p> <div class="language- extra-class"><pre><code>nano wg0.conf
+
+# Server config
+[Interface]
+Address = 10.99.99.1
+PrivateKey = OLF7JGFfqzkfblV/XvrFNAGOEplRImYNXcBFh+G1Els=
+ListenPort = 51820
+PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -A FORWARD -o %i -j ACCEPT; iptables -t nat -A POSTROUTING -o wlp2s0 -j MASQUERADE
+PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -D FORWARD -o %i -j ACCEPT; iptables -t nat -D POSTROUTING -o wlp2s0 -j MASQUERADE
+</code></pre></div><p>En el archivo de configuración anterior, encontrará una sección llamada &quot;Interfaz&quot; que incluye lo siguiente:</p> <ul><li><p>Address: La dirección IP asignada al servidor (la dirección de la VPN).</p></li> <li><p>PrivateKey: La clave privada generada en el servidor.</p></li> <li><p>ListenPort: El puerto en el que WireGuard escuchará. No es obligatorio, pero es recomendable especialmente en el caso de trabajar con firewalls.</p></li> <li><p>PostUp / PostDown: Reglas de iptables que se activarán y desactivarán al levantar la interfaz que hemos definido.</p></li></ul> <p>En este momento ya podemos activar la interfaz que hemos creado</p> <div class="language- extra-class"><pre><code>wg-quick up wg0
+</code></pre></div><p><img src="/assets/img/1-C.4a93e06b.png" alt="image"></p> <p>Podemos ver que el servidor se encuentra activo:</p> <div class="language- extra-class"><pre><code>wg
+</code></pre></div><p><img src="/assets/img/2-C.d9e56414.png" alt="image"></p> <p>También podemos ver que se ha creado la interfaz que hemos definido:</p> <p><img src="/assets/img/3-C.dad9e92c.png" alt="image"></p> <p>Hemos terminado con la configuración básica del servidor. A continuación configuraremos los clientes.</p> <p><em><strong>Cliente Linux (Debian 11)</strong></em></p> <p>Igual que hicimos con el servidor, necesitamos instalar WireGuard y generar el par de claves para los dispositivos clientes</p> <div class="language- extra-class"><pre><code>sudo apt install wireguard
+</code></pre></div><hr> <div class="language- extra-class"><pre><code>cd /etc/wireguard/
+</code></pre></div><hr> <div class="language- extra-class"><pre><code>wg genkey | tee clientprivatekey | wg pubkey &gt; clientpublickey
+</code></pre></div><hr> <div class="language- extra-class"><pre><code>cat clientprivatekey 
+
+iPFH1abrr3Wr5po5W1nht+zTlpVPjc7B11vBsNZ0hlg=
+</code></pre></div><hr> <div class="language- extra-class"><pre><code>cat clientpublickey 
+
+SrVG8SbLIDTS0QkNxQFB532FcfSagnqHZbXcBG48tkA=
+</code></pre></div><p>Igual que en el servidor, también crearemos un archivo de configuración con la siguiente información en los dispositivos clientes.</p> <div class="language- extra-class"><pre><code>nano wg0.conf
+
+[Interface]
+Address = 10.99.99.2
+PrivateKey = iPFH1abrr3Wr5po5W1nht+zTlpVPjc7B11vBsNZ0hlg=
+ListenPort = 51820
+PostUp = ip route add 200.0.0.0/24 dev wg0
+PostDown = ip route del 200.0.0.0/24 dev wg0
+
+[Peer]
+PublicKey = dRinpHDTA6T/o2OCeeY3q6JH4DuiPgPHsnOJ568heDM=
+AllowedIPs = 0.0.0.0/0
+Endpoint = 192.168.100.10:51820
+</code></pre></div><p>En el bloque &quot;Interfaz&quot; en el dispositivo cliente es similar al del servidor, pero se ha agregado un bloque llamado &quot;Pares&quot; que se replicará más tarde en el servidor, que contiene la siguiente información:</p> <ul><li><p>PublicKey: La clave pública del servidor.</p></li> <li><p>PostUp: Hemos agregado la ruta estática a la red interna a la que nos conectaremos.</p></li> <li><p>AllowedIPs: Se especifica una lista de direcciones IP de las cuales los paquetes pueden ser recibidos sin ser descartados. Actúa como un firewall dentro de WireGuard.</p></li> <li><p>Endpoint: La dirección IP del dispositivo que actúa como servidor en la conexión VPN de WireGuard.</p></li></ul> <p>Con esto ya podemos activar la interfaz que hemos configurado:</p> <div class="language- extra-class"><pre><code>wg-quick up wg0
+</code></pre></div><p><img src="/assets/img/4-C.713e7373.png" alt="image"></p> <p>También podemos ver la interfaz que hemos creado:</p> <p><img src="/assets/img/5-C.800aadf4.png" alt="image"></p> <p>Con esto hemos terminado de configurar el cliente, pero para que funcione debemos agregar también el bloque &quot;Peer&quot; en el lado del servidor (uno por cada cliente que conectemos). Por lo tanto, el archivo de configuración del servidor quedaría de la siguiente manera:</p> <div class="language- extra-class"><pre><code>nano wg0.conf
+
+# Server config
+[Interface]
+Address = 10.99.99.1
+PrivateKey = 4MdgspEZXa36HRzvG0PvTyshgzdQgX/cZKEm0fipkFY=
+ListenPort = 51820
+PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -A FORWARD -o %i -j ACCEPT; iptables -t nat -A POSTROUTING -o wlp2s0 -j MASQUERADE
+PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -D FORWARD -o %i -j ACCEPT; iptables -t nat -D POSTROUTING -o wlp2s0 -j MASQUERADE
+
+# Clients configs
+
+# Cliente Debian 11
+
+[Peer]
+Publickey = SrVG8SbLIDTS0QkNxQFB532FcfSagnqHZbXcBG48tkA=
+AllowedIPs = 10.99.99.2/32
+PersistentKeepAlive = 25
+</code></pre></div><p>En el bloque “Peer” hemos incluido lo siguiente:</p> <ul><li><p>PublicKey: La clave pública del cliente.</p></li> <li><p>PersistentKeepAlive: Si no hay intercambio de paquetes entre las máquinas después de 25 segundos, se enviará un paquete para comprobar si la conexión sigue activa.</p></li></ul> <p>Con este bloque que hemos añadido, ya podemos reiniciar el servicio:</p> <div class="language- extra-class"><pre><code>wg-quick down wg0
+</code></pre></div><p><img src="/assets/img/6-C.98c8e053.png" alt="image"></p> <div class="language- extra-class"><pre><code>wg-quick up wg0
+</code></pre></div><p><img src="/assets/img/7-C.b15d1d4e.png" alt="image"></p> <p>Podemos ver el servicio activado con el cliente conectado:</p> <div class="language- extra-class"><pre><code>wg
+</code></pre></div><p>image</p> <p>Con esto ya hemos terminado completamente con el lado del cliente Linux. Probemos si ha funcionado:</p> <ul><li>Ping y traceroute desde el cliente externo a la red interna:</li></ul> <p>image</p> <ul><li>Ping y traceroute desde el cliente interno a la interfaz del túnel en el cliente externo:</li></ul> <p>image</p> <p><em><strong>Cliente Windows (Windows 10)</strong></em></p> <p>Para configurar el sistema en Windows, es necesario descargar el software de la página oficial y abrirlo una vez instalado. Crearemos un túnel vacío, generando automáticamente las claves necesarias. El siguiente paso será completar el archivo de configuración con la información necesaria.</p> <p>image</p> <p>Una vez hayamos completado la configuración en el lado del cliente Windows, debemos pasar al lado del servidor y agregar un nuevo bloque &quot;Peer&quot; similar al que agregamos en el cliente Linux.</p> <div class="language- extra-class"><pre><code>nano /etc/wireguard/wg0.conf
+
+# Server config
+[Interface]
+Address = 10.99.99.1
+PrivateKey = 4MdgspEZXa36HRzvG0PvTyshgzdQgX/cZKEm0fipkFY=
+ListenPort = 51820
+PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -A FORWARD -o %i -j ACCEPT; iptables -t nat -A PO&gt;
+PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -D FORWARD -o %i -j ACCEPT; iptables -t nat -D &gt;
+
+# Clients configs
+
+# Cliente Debian 11
+
+[Peer]usuario
+Publickey = 3ePW20++qsuhEpbarV+wbkT03pz4gEmqisEx1vH4YBQ=
+AllowedIPs = 10.99.99.2/32
+PersistentKeepAlive = 25
+
+# Cliente Windows 10
+[Peer]
+Publickey = kq4wuUfAsKCE+nOHKx42OA23WXR5H0LVu/MMILg8zEs=
+AllowedIPs = 10.99.99.3/32
+PersistentKeepAlive = 25
+</code></pre></div><p>Ahora que lo hemos hecho, podemos reiniciar el servicio en el servidor:</p> <div class="language- extra-class"><pre><code>wg-quick down wg0
+</code></pre></div><hr> <div class="language- extra-class"><pre><code>wg-quick up wg0
+</code></pre></div><p>Una vez iniciado en el servidor, activamos el túnel en el cliente windows:</p> <p>image</p> <p>Podemos ver en el lado del servidor que se ha añadido un nuevo “Peer”:</p> <p>image</p> <p>Ahora hagamos las pruebas:</p> <ul><li>Ping y traceroute desde el cliente windows a la red interna:</li></ul> <p>image</p> <ul><li>Ping y traceroute desde el cliente interno a la interfaz del túnel en el cliente windows:</li></ul> <p>image</p> <p><em><strong>Cliente Android</strong></em></p> <p>Para utilizar Wireguard en un dispositivo Android Ios, es necesario descargar la aplicación desde la tienda de aplicaciones de Google (Playstore) o App Store.</p> <p><img src="/assets/img/1-C-android.477a742b.png" alt="image"></p> <p>Una vez en la aplicación, veremos que nos da tres opciones para crear el túnel:</p> <p><img src="/assets/img/2-C-android.170146b7.png" alt="image"></p> <p>Para usar Wireguard en Android Ios, primero debes descargar la aplicación desde la Playstore o App Store. Una vez hecho esto, puedes generar el par de claves en el cliente y crear un archivo de configuración. Una forma fácil de importar la configuración en tu dispositivo móvil es utilizar la opción de &quot;escanear desde código QR&quot;, para ello, puedes utilizar un paquete para convertir el archivo de configuración en un código QR que pueda ser escaneado por tu dispositivo móvil.</p> <div class="language- extra-class"><pre><code>wg genkey | tee clientprivatekey | wg pubkey &gt; clientpublickey
+</code></pre></div><hr> <div class="language- extra-class"><pre><code>cat clientprivatekey
+
+SEVl3i3Oj2SKPyVP9V2dULxaNiRhbCFgfYhRA59MtVI=
+</code></pre></div><hr> <div class="language- extra-class"><pre><code>cat clientpublickey
+
+SnWqP6EjnlX6ecN6sjrs5ybdVeYK+jlhBJLc7tkJExs=
+</code></pre></div><p>Nos generamos el fichero de configuración tal y como hicimos con el cliente linux:</p> <div class="language- extra-class"><pre><code>nano clientelinux.conf
+                                    
+[Interface]
+Address = 10.99.99.4
+PrivateKey = SEVl3i3Oj2SKPyVP9V2dULxaNiRhbCFgfYhRA59MtVI=
+ListenPort = 51820
+
+[Peer]
+Publickey = evAbFv7RnmD0tKU8eBT5AIc1NPc/Le3FWm2tFnKRfTE=
+AllowedIPs = 0.0.0.0/0
+Endpoint = 192.168.1.78:51820
+</code></pre></div><p>Ahora nos instalamos el paquete para convertir esta configuración en un código qr:</p> <div class="language- extra-class"><pre><code>apt install qrencode
+</code></pre></div><p>Y lo ejecutamos:</p> <div class="language- extra-class"><pre><code>qrencode -t ansiutf8 &lt; clientelinux.conf 
+</code></pre></div><p><img src="/assets/img/3-C-android.c1f07189.png" alt="image"></p> <p>Ahora lo escaneamos con el móvil. Una vez escaneado podemos ver la configuración que ha importado:</p> <p>image</p> <p>Ya solo tenemos que añadir el nuevo bloque “Peer” a la configuración del servidor:</p> <div class="language- extra-class"><pre><code>nano wg0.conf 
+
+# Server config
+[Interface]
+Address = 10.99.99.1
+PrivateKey = 4MdgspEZXa36HRzvG0PvTyshgzdQgX/cZKEm0fipkFY=
+ListenPort = 51820
+PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -A FORWARD -o %i -j ACCEPT; iptables -t nat -A PO&gt;
+PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -D FORWARD -o %i -j ACCEPT; iptables -t nat -D &gt;
+
+# Clients configs
+
+# Cliente Debian 11
+
+[Peer]
+Publickey = 3ePW20++qsuhEpbarV+wbkT03pz4gEmqisEx1vH4YBQ=
+AllowedIPs = 10.99.99.2/32
+PersistentKeepAlive = 25
+
+# Cliente Windows 10
+[Peer]
+Publickey = kq4wuUfAsKCE+nOHKx42OA23WXR5H0LVu/MMILg8zEs=
+AllowedIPs = 10.99.99.3/32
+PersistentKeepAlive = 25
+
+# Cliente Android
+[Peer]
+Publickey = SnWqP6EjnlX6ecN6sjrs5ybdVeYK+jlhBJLc7tkJExs=
+AllowedIPs = 10.99.99.4/32
+PersistentKeepAlive = 25
+</code></pre></div><p>Ahora ya podemos reiniciar el servicio en el servidor:</p> <div class="language- extra-class"><pre><code>wg-quick down wg0
+
+wg-quick up wg0
+</code></pre></div><p>En este momento podemos ver que están conectados los 3 peers que hemos añadido (tras iniciar el túnel en el dispositivo android o ios):</p> <div class="language- extra-class"><pre><code>wg
+</code></pre></div><p>image</p> <p>Ahora ya podemos realizar las pruebas de funcionamiento (nos hemos instalado una aplicación llamada iNetTools para ejecutar los comandos adecuados):</p> <ul><li>Ping y traceroute desde el cliente android a la red interna:</li></ul> <p>image</p> <p>image</p> <ul><li>Ping y traceroute desde el cliente interno a la interfaz del túnel en el cliente windows:</li></ul> <p>image</p> <h2 id="d-vpn-sitio-a-sitio-con-wireguard-10-puntos"><a href="#d-vpn-sitio-a-sitio-con-wireguard-10-puntos" class="header-anchor">#</a> D) VPN sitio a sitio con WireGuard (10 puntos)</h2> <p><strong>Configura una VPN sitio a sitio usando WireGuard. Documenta el proceso adecuadamente y compáralo con el del apartado B.</strong></p> <p>De forma similar a como lo hicimos con OpenVPN, vamos a crear un entorno de prueba utilizando el mismo archivo &quot;Vagrantfile&quot; del segundo apartado. Una vez establecido el entorno, debemos configurar adecuadamente las máquinas para usar Wireguard.</p> <p>Para comenzar, debemos modificar la ruta predeterminada en ambos clientes. Si no se realizó en Vagrant, este paso no sería necesario.</p> <p>En el cliente del escenario 1:</p> <div class="language- extra-class"><pre><code>sudo ip r del default
+sudo ip r add default via 30.0.0.10
+</code></pre></div><p>En el cliente del escenario 2:</p> <div class="language- extra-class"><pre><code>sudo ip r del default
+sudo ip r add default via 20.0.0.10
+</code></pre></div><p>Una vez configuradas las rutas en los clientes, procedemos a configurar las máquinas que actuarán como servidor y cliente de Wireguard.</p> <p>En la máquina “Servidor1” del escenario 1 instalamos en primer lugar wireguard:</p> <div class="language- extra-class"><pre><code>sudo apt install wireguard
+</code></pre></div><p>A continuación activamos el bit de forwarding y hacemos esta configuración permanente:</p> <div class="language- extra-class"><pre><code>echo 1 &gt; sudo /proc/sys/net/ipv4/ip_forward
+</code></pre></div><hr> <div class="language- extra-class"><pre><code>sudo nano /etc/sysctl.conf                                          
+
+net.ipv4.ip_forward=1
+</code></pre></div><p>Después, al igual que hicimos antes, tenemos que generar el par de claves:</p> <div class="language- extra-class"><pre><code>cd /etc/wireguard
+wg genkey | tee serverprivatekey | wg pubkey &gt; serverpublickey
+</code></pre></div><hr> <div class="language- extra-class"><pre><code>cat serverprivatekey
+
+cC+ti1+R0GaTwEjYF1FYtENEnJcsUWhIuwM1JDxhA0g=
+</code></pre></div><hr> <div class="language- extra-class"><pre><code>cat serverpublickey
+
+SsXvBbNfZ+TosuxjIy9bzYQYAPnbr1gmdvnn3RcR53s=
+</code></pre></div><p>Ahora ya podemos crear el fichero de configuración, que será muy parecido al que creamos en el apartado anterior:</p> <div class="language- extra-class"><pre><code>nano wg0.conf
+
+# Server config
+[Interface]
+Address = 10.99.99.1
+PrivateKey = cC+ti1+R0GaTwEjYF1FYtENEnJcsUWhIuwM1JDxhA0g=
+ListenPort = 51820
+PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -A FORWARD -o %i -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -D FORWARD -o %i -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
+</code></pre></div><p>En este momento, ya podemos probar a iniciar el servicio:</p> <div class="language- extra-class"><pre><code>wg-quick up wg0
+</code></pre></div><p>Podemos ver que el servicio se ha iniciado correctamente:</p> <div class="language- extra-class"><pre><code>wg
+</code></pre></div><p>Una vez que hemos configurado las rutas, debemos proceder a configurar la máquina &quot;Servidor2&quot; como cliente de Wireguard en el escenario 2. Primero, debemos instalar Wireguard en esa máquina.</p> <div class="language- extra-class"><pre><code>sudo apt install wireguard
+</code></pre></div><p>Y activamos el bit de forwarding, haciéndolo permanente:</p> <div class="language- extra-class"><pre><code>echo 1 &gt; sudo /proc/sys/net/ipv4/ip_forward
+</code></pre></div><hr> <div class="language- extra-class"><pre><code>sudo nano /etc/sysctl.conf                                          
+
+net.ipv4.ip_forward=1
+</code></pre></div><p>Generaremos el par de claves que usará esta máquina:</p> <div class="language- extra-class"><pre><code>cd /etc/wireguard
+
+wg genkey | tee clientprivatekey | wg pubkey &gt; clientpublickey
+</code></pre></div><hr> <div class="language- extra-class"><pre><code>cat clientprivatekey
+
+OLjGjIFwJYNa2FKWYjpcmjDlBXjyQDuf5IBxvc0HNV4=
+</code></pre></div><hr> <div class="language- extra-class"><pre><code>cat clientpublickey
+
+t6xa/d6mLIRK1vqbjM1zgF/K7iUz2SeoDrAIz6hWtSk=
+</code></pre></div><p>Ahora debemos configurar la máquina &quot;Servidor2&quot; para que actúe como cliente de Wireguard en el escenario 2. Así que en primer lugar, instalamos Wireguard en esa máquina y luego creamos el archivo de configuración que utilizará, también agregando el bloque &quot;Peer&quot; tal como lo hicimos en el paso anterior.</p> <div class="language- extra-class"><pre><code>nano wg0.conf
+
+[Interface]
+Address = 10.99.99.2
+PrivateKey = 2IZ8qGagupYbFsWBQjLVCkmNCuuRrlIp+ScliSIyTnE=
+ListenPort = 51820
+
+[Peer]
+PublicKey = 4dAlX0YhNeSWdEmVEiB779cOECpryHWLFhx1rEnuPmA=
+AllowedIPs = 10.99.99.0/32, 30.0.0.0/24
+Endpoint = 192.168.121.183:51820
+</code></pre></div><p>Para activar el servicio de Wireguard, es necesario añadir un bloque &quot;Peer&quot; en el fichero de configuración del escenario 1 antes de iniciar el servicio.</p> <div class="language- extra-class"><pre><code>nano wg0.conf
+
+# Server config
+[Interface]
+Address = 10.99.99.1
+PrivateKey = cHi1Gnj0aP82bNUJ9mp+3rMClVzvnCt1128uTaHk+mQ=
+ListenPort = 51820
+PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -A FORWARD -o %i -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -D FORWARD -o %i -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
+
+# Cliente Escenario 2
+[Peer]
+Publickey = h3gPs1hb/csc0+QEAtPohrR/RrsAfKNNsI6HSaki61I=
+AllowedIPs = 10.99.99.0/32, 20.0.0.0/24
+PersistentKeepAlive = 25
+</code></pre></div><p>Ahora reiniciamos el servicio en la máquina “Servidor1” del escenario 1:</p> <div class="language- extra-class"><pre><code>wg-quick down wg0
+
+wg-quick up wg0
+</code></pre></div><p>Ya podemos iniciar el servicio en el escenario 2:</p> <div class="language- extra-class"><pre><code>wg-quick up wg0
+</code></pre></div><p>Y podemos ver que se han establecido la conexión:</p> <p>image</p> <p>Ahora ya podemos realizar las pruebas necesarias:</p> <ul><li>Rutas en la máquina “Servidor1” del escenario 1:</li></ul> <p>image</p> <ul><li>Ping y traceroute desde el cliente del escenario 1 al cliente del escenario 2:</li></ul> <p>image</p> <ul><li>Rutas en la máquina “Servidor2” del escenario 2:</li></ul> <p>image</p> <ul><li>Ping y traceroute desde el cliente del escenario 2 al cliente del escenario 1:</li></ul> <p>image</p> <h3 id="extra-1-vpn-de-acceso-remoto-con-ipsec-5-puntos"><a href="#extra-1-vpn-de-acceso-remoto-con-ipsec-5-puntos" class="header-anchor">#</a> Extra 1) VPN de acceso remoto con Ipsec (5 puntos)</h3> <p><strong>Elige una aplicación por software (por ejemplo, FreeS/Wan) y monta la configuración. Documenta el proceso detalladamente.</strong></p> <h3 id="extra-2-vpn-sitio-a-sitio-con-ipsec-10-puntos"><a href="#extra-2-vpn-sitio-a-sitio-con-ipsec-10-puntos" class="header-anchor">#</a> Extra 2) VPN sitio a sitio con IPsec (10 puntos)</h3> <p><strong>Montando el escenario en GNS3 usando routers CISCO o con una aplicación por software (por ejemplo, FreeS/Wan) despliega la configuración solicitada. Documenta el proceso detalladamente.</strong></p></div> <!----> <div class="content__content-bottom"></div> <footer class="page-meta"><div class="edit-link"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="icon edit-icon"><path d="M117.953 696.992 64.306 959.696l265.931-49.336 450.204-452.505-212.284-213.376-450.204 452.513zm496.384-296.326L219.039 797.993l-46.108-46.34L568.233 354.33l46.104 46.335zm345.357-122.99-114.45 115.04-212.288-213.377 114.45-115.035 212.288 213.371zm0 0" fill="currentColor"></path></svg> <a href="https://github.com/oscarlucas22/edit/main/practicas/vpn.md" target="_blank" rel="noopener noreferrer">Edit this page</a></div> <!----> <!----></footer> <!----> <!----> <!----> <div class="content__page-bottom"></div></main> <!----></div><div class="global-ui"><!----><div id="pwa-install"><!----> <div id="install-modal-wrapper" style="display:none;"><div class="background"></div> <div class="install-modal"><div class="header"><button aria-label="Close" class="close-button"><svg width="23" height="22" xmlns="http://www.w3.org/2000/svg" class="icon close-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.12.358a1.224 1.224 0 011.729 0l8.92 8.914L20.686.358a1.224 1.224 0 011.73 1.728L13.497 11l8.92 8.913a1.222 1.222 0 11-1.73 1.729l-8.919-8.913-8.92 8.913a1.224 1.224 0 01-1.729-1.729L10.04 11l-8.92-8.914a1.222 1.222 0 010-1.728z" fill="currentColor"></path></svg></button> <div class="logo"><!----> <div class="title"><h1></h1> <p class="desc">This app can be installed on your PC or mobile device.  This will allow this web app to look and behave like any other installed app.  You will find it in your app lists and be able to pin it to your home screen, start menus or task bars.  This installed web app will also be able to safely interact with other apps and your operating system. </p></div></div></div> <div class="content"><div class="highlight"><!----> <!----></div> <div class="description"><h3>Description</h3> <p></p></div></div> <div class="button-wrapper"><button class="install-button">
+        Install <span></span></button> <button class="cancel-button">
+        Cancel
+      </button></div></div></div></div><!----><div tabindex="-1" role="dialog" aria-hidden="true" class="pswp"><div class="pswp__bg"></div> <div class="pswp__scroll-wrap"><div class="pswp__container"><div class="pswp__item"></div> <div class="pswp__item"></div> <div class="pswp__item"></div></div> <div class="pswp__ui pswp__ui--hidden"><div class="pswp__top-bar"><div class="pswp__counter"></div> <button title="Close" aria-label="Close" class="pswp__button pswp__button--close"></button> <button title="Share" aria-label="Share" class="pswp__button pswp__button--share"></button> <button title="Switch to full screen" aria-label="Switch to full screen" class="pswp__button pswp__button--fs"></button> <button title="Zoom in/out" aria-label="Zoom in/out" class="pswp__button pswp__button--zoom"></button> <div class="pswp__preloader"><div class="pswp__preloader__icn"><div class="pswp__preloader__cut"><div class="pswp__preloader__donut"></div></div></div></div></div> <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class="pswp__share-tooltip"></div></div> <button title="Prev (Arrow Left)" aria-label="Prev (Arrow Left)" class="pswp__button pswp__button--arrow--left"></button> <button title="Next (Arrow Right)" aria-label="Next (Arrow Right)" class="pswp__button pswp__button--arrow--right"></button> <div class="pswp__caption"><div class="pswp__caption__center"></div></div></div></div></div></div></div>
+    <script src="/assets/js/app.c01551bf.js" defer></script><script src="/assets/js/vendors~layout-Layout.33b007bc.js" defer></script><script src="/assets/js/vendors~layout-Blog~layout-Layout~layout-NotFound.05ca1d1f.js" defer></script><script src="/assets/js/page-VPN.e9b17872.js" defer></script><script src="/assets/js/vendors~layout-Blog~layout-Layout.115acfd8.js" defer></script>
+  </body>
+</html>
