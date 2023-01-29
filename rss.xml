@@ -6,8 +6,8 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Sun, 29 Jan 2023 02:59:01 GMT</pubDate>
-    <lastBuildDate>Sun, 29 Jan 2023 02:59:01 GMT</lastBuildDate>
+    <pubDate>Sun, 29 Jan 2023 12:30:05 GMT</pubDate>
+    <lastBuildDate>Sun, 29 Jan 2023 12:30:05 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
@@ -3293,7 +3293,7 @@ fetch first 1 row only;
 
 net.ipv4.ip_forward=1
 </code></pre>
-</div><p>A continuación, vamos a copiar la configuración de <code>/usr/share/easy-rsa</code> a <code>/etc/openvpn</code> para evitar que las actualizaciones del paquete sobreescriban los cambios que realicemos.</p>
+</div><p>A continuación, vamos a copiar la configuración de <code>/usr/share/easy-rsa</code> a <code>/etc/openvpn</code> para evitar que las actualizaciones del paquete sobreescriban los cambiOS que realicemos.</p>
 <div><pre><code>sudo cp -r /usr/share/easy-rsa /etc/openvpn
 cd /etc/openvpn/easy-rsa/
 </code></pre>
@@ -3622,12 +3622,12 @@ sudo ip r add default via 20.0.0.10
 <p><img src="./../images/SAD/vpn/13-B.png" alt="image"></p>
 <p>Ambas computadoras clientes están conectadas entre sí y al utilizar el comando &quot;traceroute&quot; se puede ver que el tráfico entre ellas pasa a través de un túnel.</p>
 <h2 id="c-vpn-de-acceso-remoto-con-wireguard-5-puntos"> C) VPN de acceso remoto con WireGuard (5 puntos)</h2>
-<p><strong>Monta una VPN de acceso remoto usando Wireguard. Intenta probarla con clientes Windows, Linux y Android. Documenta el proceso adecuadamente y compáralo con el del apartado A.</strong></p>
+<p><strong>Monta una VPN de acceso remoto usando Wireguard. Intenta probarla con clientes Windows, Linux y Android o iOS. Documenta el proceso adecuadamente y compáralo con el del apartado A.</strong></p>
 <hr>
-<p>Voy a establecer una conexión VPN de acceso remoto utilizando WireGuard, la cual será utilizada por tres dispositivos: una computadora con sistema operativo Debian 11, una computadora con Windows 10, y un dispositivo móvil con sistema operativo Android. El dispositivo que actuará como servidor será una maquina virtual, exceptuando la prueba del cliente de android que será mi computadora principal, mientras que los dispositivos clientes serán máquinas virtuales, excepto el dispositivo móvil Android.</p>
+<p>Voy a establecer una conexión VPN de acceso remoto utilizando WireGuard, la cual será utilizada por tres dispositivos: una computadora con sistema operativo Debian 11, una computadora con Windows 10, y un dispositivo móvil con sistema operativo Android o iOS. El dispositivo que actuará como servidor será una maquina virtual, exceptuando la prueba del cliente de android o ios que será mi computadora principal, mientras que los dispositivos clientes serán máquinas virtuales, excepto el dispositivo móvil.</p>
 <p>A conticuación el Vagrantfile de este escenario:</p>
 <p><a href="https://pastebin.com/DSu5CTa0" target="_blank" rel="noopener noreferrer">Vagrantfile<i>Content not supported</i></a></p>
-<p>En este cliente solo cambiaremos la ruta por defecto:</p>
+<p>En el cliente interno solo cambiaremos la ruta por defecto:</p>
 <div><pre><code>sudo ip r del default
 sudo ip r add default via 192.168.10.10
 </code></pre>
@@ -3640,7 +3640,7 @@ sudo ip r add default via 192.168.10.10
 
 net.ipv4.ip_forward = 1
 </code></pre>
-</div><hr>
+</div><p>Y guardamos los cambios</p>
 <div><pre><code>sysctl -p
 </code></pre>
 </div><p>A continuación, crearemos los archivos de configuración necesarios en la carpeta principal de WireGuard.</p>
@@ -3670,19 +3670,19 @@ ListenPort = 51820
 PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -A FORWARD -o %i -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -D FORWARD -o %i -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
 </code></pre>
-</div><p>En el archivo de configuración anterior, encontrará una sección llamada &quot;Interfaz&quot; que incluye lo siguiente:</p>
+</div><p>En el archivo de configuración anterior, encontrará una sección llamada &quot;Interface&quot;(Interfaz) que incluye lo siguiente:</p>
 <ul>
 <li>
-<p>Address: La dirección IP asignada al servidor (la dirección de la VPN).</p>
+<p><em>Address</em>: La dirección IP asignada al servidor (la dirección de la VPN).</p>
 </li>
 <li>
-<p>PrivateKey: La clave privada generada en el servidor.</p>
+<p><em>PrivateKey</em>: La clave privada generada en el servidor.</p>
 </li>
 <li>
-<p>ListenPort: El puerto en el que WireGuard escuchará. No es obligatorio, pero es recomendable especialmente en el caso de trabajar con firewalls.</p>
+<p><em>ListenPort</em>: El puerto en el que WireGuard escuchará. No es obligatorio, pero es recomendable especialmente en el caso de trabajar con firewalls.</p>
 </li>
 <li>
-<p>PostUp / PostDown: Reglas de iptables que se activarán y desactivarán al levantar la interfaz que hemos definido.</p>
+<p><em>PostUp / PostDown</em>: Reglas de iptables que se activarán y desactivarán al levantar la interfaz que hemos definido.</p>
 </li>
 </ul>
 <p>En este momento ya podemos activar la interfaz que hemos creado</p>
@@ -3697,7 +3697,7 @@ PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -D FORWARD -o %i -j ACC
 <p><img src="./../images/SAD/vpn/3-C.png" alt="image"></p>
 <p>Hemos terminado con la configuración básica del servidor. A continuación configuraremos los clientes.</p>
 <h4 id="cliente-linux-debian-11"> Cliente Linux (Debian 11)</h4>
-<p>Igual que hicimos con el servidor, necesitamos instalar WireGuard y generar el par de claves para los dispositivos clientes</p>
+<p>Igual que hicimos con el servidor, necesitamos instalar WireGuard y generar el par de claves para los dispositivos clientes:</p>
 <div><pre><code>sudo apt install wireguard
 </code></pre>
 </div><hr>
@@ -3731,19 +3731,19 @@ PublicKey = V6tMkGlJqkfZVG6zchnzmH1kHaCH0OMW3eMuNDZspSg=
 AllowedIPs = 0.0.0.0/0
 Endpoint = 192.168.121.110:51820
 </code></pre>
-</div><p>En el bloque &quot;Interfaz&quot; en el dispositivo cliente es similar al del servidor, pero se ha agregado un bloque llamado &quot;Pares&quot; que se replicará más tarde en el servidor, que contiene la siguiente información:</p>
+</div><p>En el bloque &quot;Interface&quot;(Interfaz) en el dispositivo cliente es similar al del servidor, pero se ha agregado un bloque llamado &quot;Peer&quot;(Pares) que se replicará más tarde en el servidor, que contiene la siguiente información:</p>
 <ul>
 <li>
-<p>PublicKey: La clave pública del servidor.</p>
+<p><em>PublicKey</em>: La clave pública del servidor.</p>
 </li>
 <li>
-<p>PostUp: Hemos agregado la ruta estática a la red interna a la que nos conectaremos.</p>
+<p><em>PostUp</em>: Hemos agregado la ruta estática a la red interna a la que nos conectaremos.</p>
 </li>
 <li>
-<p>AllowedIPs: Se especifica una lista de direcciones IP de las cuales los paquetes pueden ser recibidos sin ser descartados. Actúa como un firewall dentro de WireGuard.</p>
+<p><em>AllowedIPs</em>: Se especifica una lista de direcciones IP de las cuales los paquetes pueden ser recibidos sin ser descartados. Actúa como un firewall dentro de WireGuard.</p>
 </li>
 <li>
-<p>Endpoint: La dirección IP del dispositivo que actúa como servidor en la conexión VPN de WireGuard.</p>
+<p><em>Endpoint</em>: La dirección IP del dispositivo que actúa como servidor en la conexión VPN de WireGuard.</p>
 </li>
 </ul>
 <p>Con esto ya podemos activar la interfaz que hemos configurado:</p>
@@ -3752,7 +3752,7 @@ Endpoint = 192.168.121.110:51820
 </div><p><img src="./../images/SAD/vpn/4-C.png" alt="image"></p>
 <p>También podemos ver la interfaz que hemos creado:</p>
 <p><img src="./../images/SAD/vpn/5-C.png" alt="image"></p>
-<p>Con esto hemos terminado de configurar el cliente, pero para que funcione debemos agregar también el bloque &quot;Peer&quot; en el lado del servidor (uno por cada cliente que conectemos). Por lo tanto, el archivo de configuración del servidor quedaría de la siguiente manera:</p>
+<p>Con esto hemos terminado de configurar el cliente, pero para que funcione debemos agregar también el bloque &quot;Peer&quot;(Pares) en el lado del servidor (uno por cada cliente que conectemos). Por lo tanto, el archivo de configuración del servidor quedaría de la siguiente manera:</p>
 <div><pre><code>nano wg0.conf
 
 # Server config
@@ -3766,19 +3766,18 @@ PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -D FORWARD -o %i -j ACC
 # Clients configs
 
 # Cliente Debian 11
-
 [Peer]
 Publickey = GjTH3fo/Z6KgryKoGxwxhyW98O+pfULTjxSMmlS9GxI=
 AllowedIPs = 10.99.99.2/32
 PersistentKeepAlive = 25
 </code></pre>
-</div><p>En el bloque “Peer” hemos incluido lo siguiente:</p>
+</div><p>En el bloque “Peer”(Pares) hemos incluido lo siguiente:</p>
 <ul>
 <li>
-<p>PublicKey: La clave pública del cliente.</p>
+<p><em>PublicKey</em>: La clave pública del cliente.</p>
 </li>
 <li>
-<p>PersistentKeepAlive: Si no hay intercambio de paquetes entre las máquinas después de 25 segundos, se enviará un paquete para comprobar si la conexión sigue activa.</p>
+<p><em>PersistentKeepAlive</em>: Si no hay intercambio de paquetes entre las máquinas después de 25 segundos, se enviará un paquete para comprobar si la conexión sigue activa.</p>
 </li>
 </ul>
 <p>Con este bloque que hemos añadido, ya podemos reiniciar el servicio:</p>
@@ -3801,7 +3800,7 @@ PersistentKeepAlive = 25
 </ul>
 <p><img src="./../images/SAD/vpn/8-C.png" alt="image"></p>
 <h4 id="cliente-windows-windows-10"> Cliente Windows (Windows 10)</h4>
-<p>Para configurar el sistema en Windows, es necesario descargar el software de la página oficial y abrirlo una vez instalado. Crearemos un túnel vacío, generando automáticamente las claves necesarias. El siguiente paso será completar el archivo de configuración con la información necesaria.</p>
+<p>Para configurar el sistema en Windows, es necesario descargar una iso y abrirlo una vez instalado. Crearemos un túnel vacío, generando automáticamente las claves necesarias. El siguiente paso será completar el archivo de configuración con la información necesaria.</p>
 <p><img src="./../images/SAD/vpn/9-C.png" alt="image"></p>
 <p>Una vez hayamos completado la configuración en el lado del cliente Windows, debemos pasar al lado del servidor y agregar un nuevo bloque &quot;Peer&quot; similar al que agregamos en el cliente Linux.</p>
 <div><pre><code>nano /etc/wireguard/wg0.conf
@@ -3847,12 +3846,12 @@ PersistentKeepAlive = 25
 <li>Ping y traceroute desde el cliente interno a la interfaz del túnel en el cliente windows:</li>
 </ul>
 <p><img src="./../images/SAD/vpn/13-C.png" alt="image"></p>
-<h4 id="cliente-android"> Cliente Android</h4>
-<p>Para utilizar Wireguard en un dispositivo Android Ios, es necesario descargar la aplicación desde la tienda de aplicaciones de Google (Playstore) o App Store.</p>
+<h4 id="cliente-android-o-ios"> Cliente Android o iOS</h4>
+<p>Para utilizar Wireguard en un dispositivo Android o iOS, es necesario descargar la aplicación desde la tienda de aplicaciones de Google Playstore o App Store.</p>
 <p><img src="./../images/SAD/vpn/1-C-android.png" alt="image"></p>
 <p>Una vez en la aplicación, veremos que nos da tres opciones para crear el túnel:</p>
 <p><img src="./../images/SAD/vpn/2-C-android.png" alt="image"></p>
-<p>Para usar Wireguard en Android Ios, primero debes descargar la aplicación desde la Playstore o App Store. Una vez hecho esto, puedes generar el par de claves en el cliente y crear un archivo de configuración. Una forma fácil de importar la configuración en tu dispositivo móvil es utilizar la opción de &quot;escanear desde código QR&quot;, para ello, puedes utilizar un paquete para convertir el archivo de configuración en un código QR que pueda ser escaneado por tu dispositivo móvil.</p>
+<p>Para usar Wireguard en Android o iOS, primero debes descargar la aplicación desde la Playstore o App Store. Una vez hecho esto, puedes generar el par de claves en el cliente y crear un archivo de configuración. Una forma fácil de importar la configuración en tu dispositivo móvil es utilizar la opción de &quot;Crear desde código QR&quot;, para ello, puedes utilizar un paquete para convertir el archivo de configuración en un código QR que pueda ser escaneado por tu dispositivo móvil.</p>
 <div><pre><code>wg genkey | tee clientprivatekey | wg pubkey &gt; clientpublickey
 </code></pre>
 </div><hr>
@@ -3895,27 +3894,14 @@ Endpoint = 192.168.1.78:51820
 Address = 10.99.99.1
 PrivateKey = 4MdgspEZXa36HRzvG0PvTyshgzdQgX/cZKEm0fipkFY=
 ListenPort = 51820
-PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -A FORWARD -o %i -j ACCEPT; iptables -t nat -A PO&gt;
-PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -D FORWARD -o %i -j ACCEPT; iptables -t nat -D &gt;
+PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -A FORWARD -o %i -j ACCEPT; iptables -t nat -A POSTROUTING -o wlp2s0 -j MASQUERADE
+PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -D FORWARD -o %i -j ACCEPT; iptables -t nat -D POSTROUTING -o wlp2s0 -j MASQUERADE
 
 # Clients configs
 
-# Cliente Debian 11
-
-[Peer]
-Publickey = 3ePW20++qsuhEpbarV+wbkT03pz4gEmqisEx1vH4YBQ=
-AllowedIPs = 10.99.99.2/32
-PersistentKeepAlive = 25
-
-# Cliente Windows 10
-[Peer]
-Publickey = kq4wuUfAsKCE+nOHKx42OA23WXR5H0LVu/MMILg8zEs=
-AllowedIPs = 10.99.99.3/32
-PersistentKeepAlive = 25
-
 # Cliente Android
 [Peer]
-Publickey = SnWqP6EjnlX6ecN6sjrs5ybdVeYK+jlhBJLc7tkJExs=
+Publickey = R4+mPQdkslRgRTGOME1mDkb8Lw/0VWTLYHKJPm+5zDM=
 AllowedIPs = 10.99.99.4/32
 PersistentKeepAlive = 25
 </code></pre>
@@ -3924,7 +3910,7 @@ PersistentKeepAlive = 25
 
 wg-quick up wg0
 </code></pre>
-</div><p>En este momento podemos ver que están conectados los 3 peers que hemos añadido (tras iniciar el túnel en el dispositivo android o ios):</p>
+</div><p>En este momento podemos ver que están conectados los 3 peers que hemos añadido (tras iniciar el túnel en el dispositivo android o iOS):</p>
 <p>Ahora ya podemos realizar las pruebas de funcionamiento (nos hemos instalado una aplicación llamada iNetTools para ejecutar los comandos adecuados):</p>
 <ul>
 <li>
@@ -3934,7 +3920,8 @@ wg-quick up wg0
 <p>Ping y traceroute desde el cliente interno a la interfaz del túnel en el cliente windows:</p>
 </li>
 </ul>
-<h3 id="comparativa-con-openvpn"> Comparativa con OpenVPN</h3>
+<p>(Sin terminar)</p>
+<h3 id="comparativa-con-openvpn-apartado-a"> Comparativa con OpenVPN (Apartado A)</h3>
 <p>Después de configurar el acceso remoto con OpenVPN y Wireguard, he descubierto que Wireguard es superior en varios aspectos. En primer lugar, se ha demostrado que es más rápido que OpenVPN en pruebas realizadas en máquinas virtuales. Esto podría mejorar significativamente la experiencia del usuario en un entorno real. Además, la configuración de Wireguard es más sencilla y se comparte de manera similar en todos los clientes, independientemente del sistema operativo utilizado. Finalmente, Wireguard no requiere la creación de una autoridad certificadora, lo que es una ventaja adicional.</p>
 <h2 id="d-vpn-sitio-a-sitio-con-wireguard-10-puntos"> D) VPN sitio a sitio con WireGuard (10 puntos)</h2>
 <p><strong>Configura una VPN sitio a sitio usando WireGuard. Documenta el proceso adecuadamente y compáralo con el del apartado B.</strong></p>
@@ -3962,7 +3949,9 @@ net.ipv4.ip_forward=1
 </code></pre>
 </div><p>Después, al igual que hicimos antes, tenemos que generar el par de claves:</p>
 <div><pre><code>cd /etc/wireguard
-wg genkey | tee serverprivatekey | wg pubkey &gt; serverpublickey
+</code></pre>
+</div><hr>
+<div><pre><code>wg genkey | tee serverprivatekey | wg pubkey &gt; serverpublickey
 </code></pre>
 </div><hr>
 <div><pre><code>cat serverprivatekey
@@ -4075,7 +4064,7 @@ wg-quick up wg0
 <li>Ping y traceroute desde el cliente del escenario 2 al cliente del escenario 1:</li>
 </ul>
 <p><img src="./../images/SAD/vpn/6-D.png" alt="image"></p>
-<h3 id="comparativa-con-openvpn-2"> Comparativa con OpenVPN</h3>
+<h3 id="comparativa-con-openvpn-apartado-b"> Comparativa con OpenVPN (Apartado B)</h3>
 <p>Después de configurar el site to site con OpenVPN y Wireguard, me he dado cuenta de que Wireguard es superior a OpenVPN en varios aspectos, tal como sucedió con el acceso remoto. En primer lugar, la configuración de Wireguard es mucho más sencilla y rápida en comparación con OpenVPN, con una sintaxis más fácil de entender. Aunque no he podido comprobarlo en profundidad en un entorno de máquinas virtuales, he notado una mayor velocidad al realizar pruebas y establecer conexiones con Wireguard. Además, sigue siendo cómodo de configurar ya que no se requiere crear una autoridad certificadora.</p>
 <h3 id="extra-1-vpn-de-acceso-remoto-con-ipsec-5-puntos"> Extra 1) VPN de acceso remoto con Ipsec (5 puntos)</h3>
 <p><strong>Elige una aplicación por software (por ejemplo, FreeS/Wan) y monta la configuración. Documenta el proceso detalladamente.</strong></p>
