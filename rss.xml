@@ -6,8 +6,8 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Tue, 07 Feb 2023 09:56:40 GMT</pubDate>
-    <lastBuildDate>Tue, 07 Feb 2023 09:56:40 GMT</lastBuildDate>
+    <pubDate>Tue, 07 Feb 2023 10:01:10 GMT</pubDate>
+    <lastBuildDate>Tue, 07 Feb 2023 10:01:10 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
@@ -31,7 +31,7 @@
 <p><a href="/practicas/usuarios.html">Usuarios</a></p>
 </li>
 <li>
-<p><a href="/practicas/almacenamiento.html">Almacenamiento</a></p>
+<p><a href="/noacabado/noacabado.html">Almacenamiento</a></p>
 </li>
 </ul>
 ]]></content:encoded>
@@ -4275,7 +4275,7 @@ AuthorizedKeysCommandUser nobody
 <p><em>Comprobación del usuario de Alfonso</em></p>
 <p><img src="./../images/ASO/ldap-csv/8.png" alt="image"></p>
 <p><img src="./../images/ASO/ldap-csv/9.png" alt="image"></p>
-<p>¡Grazia miarma!</p>
+<p>¡Gracias!</p>
 ]]></content:encoded>
     </item>
     <item>

@@ -5,7 +5,7 @@
   <author>
     <name>Óscar Lucas</name>
   </author>
-  <updated>2023-02-07T09:56:40.331Z</updated>
+  <updated>2023-02-07T10:01:10.624Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://github.com/oscarlucas22/atom.xml"/>
   <link rel="alternate" href="https://github.com/oscarlucas22/"/>
@@ -31,7 +31,7 @@
 <p><a href="/practicas/usuarios.html">Usuarios</a></p>
 </li>
 <li>
-<p><a href="/practicas/almacenamiento.html">Almacenamiento</a></p>
+<p><a href="/noacabado/noacabado.html">Almacenamiento</a></p>
 </li>
 </ul>
 ]]></content>
@@ -3322,7 +3322,7 @@ fetch first 1 row only;
     <title type="html">Alumno 3:</title>
     <id>https://github.com/oscarlucas22/practicas/almacenamiento/</id>
     <link href="https://github.com/oscarlucas22/practicas/almacenamiento/"/>
-    <updated>2023-02-07T09:56:40.400Z</updated>
+    <updated>2023-02-07T10:01:10.685Z</updated>
     <content type="html"><![CDATA[<h2 id="alumno-3"> Alumno 3:</h2>
 <p><em><strong>ORACLE:</strong></em></p>
 <ol>
@@ -3679,7 +3679,7 @@ GRANT select on Ana.Productos to Lidia;
     <title type="html">Instalación y configuración de un servidor de correos en el VPS</title>
     <id>https://github.com/oscarlucas22/practicas/correos/</id>
     <link href="https://github.com/oscarlucas22/practicas/correos/"/>
-    <updated>2023-02-07T09:56:40.404Z</updated>
+    <updated>2023-02-07T10:01:10.690Z</updated>
     <content type="html"><![CDATA[<h1 id="instalacion-y-configuracion-de-un-servidor-de-correos-en-el-vps"> Instalación y configuración de un servidor de correos en el VPS</h1>
 <h2 id="practica-servidor-de-correos"> Práctica: Servidor de correos</h2>
 <p><strong>Instala y configura de manera adecuada el servidor de correos en tu VPS. El nombre del servidor de correo será mail.tudominio.es (Este es el nombre que deberá aparecer en el registro MX).</strong></p>
@@ -4203,7 +4203,7 @@ server {
     <title type="html">Poblar un directorio LDAP desde un fichero CSV</title>
     <id>https://github.com/oscarlucas22/practicas/ldap-csv/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldap-csv/"/>
-    <updated>2023-02-07T09:56:40.407Z</updated>
+    <updated>2023-02-07T10:01:10.691Z</updated>
     <content type="html"><![CDATA[<h1 id="poblar-un-directorio-ldap-desde-un-fichero-csv"> Poblar un directorio LDAP desde un fichero CSV</h1>
 <ul>
 <li>
@@ -4444,7 +4444,7 @@ AuthorizedKeysCommandUser nobody
 <p><em>Comprobación del usuario de Alfonso</em></p>
 <p><img src="./../images/ASO/ldap-csv/8.png" alt="image"></p>
 <p><img src="./../images/ASO/ldap-csv/9.png" alt="image"></p>
-<p>¡Grazia miarma!</p>
+<p>¡Gracias!</p>
 ]]></content>
     <author>
       <name>Óscar Lucas</name>
@@ -4459,7 +4459,7 @@ AuthorizedKeysCommandUser nobody
     <title type="html">Instalación y configuración inicial de OpenLDAP</title>
     <id>https://github.com/oscarlucas22/practicas/ldap/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldap/"/>
-    <updated>2023-02-07T09:56:40.408Z</updated>
+    <updated>2023-02-07T10:01:10.693Z</updated>
     <content type="html"><![CDATA[<h1 id="instalacion-y-configuracion-inicial-de-openldap"> Instalación y configuración inicial de OpenLDAP</h1>
 <p><strong>Realiza la instalación y configuración básica de OpenLDAP en alfa, utilizando como base el nombre DNS asignado. Deberás crear un usuario llamado prueba y configurar una máquina cliente basada en Debian y Rocky para que pueda validarse en servidor ldap configurado anteriormente con el usuario prueba.</strong></p>
 <p><font color="#FFFF00"><strong>Paso 1</strong></font> Configuración de OpenLDAP en el servidor: Instalación y configuración de OpenLDAP.Instalación y configuración de OpenLDAP en el Servidor</p>
@@ -4819,7 +4819,7 @@ systemctl start mnt-nfs.mount
     <title type="html">VPN</title>
     <id>https://github.com/oscarlucas22/practicas/vpn/</id>
     <link href="https://github.com/oscarlucas22/practicas/vpn/"/>
-    <updated>2023-02-07T09:56:40.413Z</updated>
+    <updated>2023-02-07T10:01:10.698Z</updated>
     <content type="html"><![CDATA[<h1 id="vpn"> VPN</h1>
 <h2 id="a-vpn-de-acceso-remoto-con-openvpn-y-certificados-x509-5-puntos"> A) VPN de acceso remoto con OpenVPN y certificados x509 (5 puntos)</h2>
 <p><strong>Configura una conexión VPN de acceso remoto entre dos equipos del cloud:</strong></p>
