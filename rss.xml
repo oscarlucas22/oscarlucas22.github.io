@@ -6,8 +6,8 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Sun, 29 Jan 2023 12:30:05 GMT</pubDate>
-    <lastBuildDate>Sun, 29 Jan 2023 12:30:05 GMT</lastBuildDate>
+    <pubDate>Tue, 07 Feb 2023 09:56:40 GMT</pubDate>
+    <lastBuildDate>Tue, 07 Feb 2023 09:56:40 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
@@ -30,6 +30,9 @@
 <li>
 <p><a href="/practicas/usuarios.html">Usuarios</a></p>
 </li>
+<li>
+<p><a href="/practicas/almacenamiento.html">Almacenamiento</a></p>
+</li>
 </ul>
 ]]></content:encoded>
     </item>
@@ -50,6 +53,12 @@
 </li>
 <li>
 <p><a href="/practicas/logs.html">Recolección centralizada de logs de sistema, mediante journald.</a></p>
+</li>
+<li>
+<p><a href="/practicas/ldap.html">Instalación y configuración inicial de OpenLDAP</a></p>
+</li>
+<li>
+<p><a href="/noacabado/noacabado.html">Poblar un directorio LDAP desde un fichero CSV</a></p>
 </li>
 </ul>
 ]]></content:encoded>
@@ -3154,6 +3163,356 @@ fetch first 1 row only;
 <center><i>Content not supported</i></center>]]></content:encoded>
     </item>
     <item>
+      <title>Alumno 3:</title>
+      <link>https://github.com/oscarlucas22/practicas/almacenamiento/</link>
+      <guid>https://github.com/oscarlucas22/practicas/almacenamiento/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">Alumno 3:</source>
+      <category>practicas</category>
+      <content:encoded><![CDATA[<h2 id="alumno-3"> Alumno 3:</h2>
+<p><em><strong>ORACLE:</strong></em></p>
+<ol>
+<li><strong>Muestra los objetos a los que pertenecen las extensiones del tablespace TS_2 (creado por Alumno 2) y el tamaño de cada una de ellas.</strong></li>
+</ol>
+<p>Creamos un tablespace llamado TS_2 que me ha mandado Alumno2.</p>
+<div><pre><code>CREATE TABLESPACE TS_2
+DATAFILE '/opt/oracle/ts2_1.dbf' 
+SIZE 1M, '/opt/oracle/ts2_2.dbf' SIZE 1M;
+</code></pre>
+</div><p>Podemos verificar que ya tenemos nuestro tablespace creado y determinar su ubicación.</p>
+<div><pre><code>select file_name, tablespace_name from dba_data_files where tablespace_name='TS_2';
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/1_1.png" alt="image"></p>
+<p>Haremos una prueba breve para evaluar el funcionamiento del espacio.</p>
+<div><pre><code>create table pruebats_2 (           
+	mt_clave       number(3)    not null,
+	mt_descripcion varchar2(50) null
+	)  
+	TABLESPACE TS_2; 
+</code></pre>
+</div><p>Agregaremos algo de contenido.</p>
+<div><pre><code>insert into pruebats_2 (mt_clave, mt_descripcion) values (123, 'clave prueba1');
+insert into pruebats_2 (mt_clave, mt_descripcion) values (456, 'clave prueba2');
+</code></pre>
+</div><p>Verificaremos cuánto espacio libre ocupa actualmente nuestro tablespace.</p>
+<div><pre><code>select tablespace_name, to_char(sum(nvl(bytes,0))/1024/1024, '99,999,990.99') as &quot;free space&quot;
+from user_free_space
+where tablespace_name = 'TS_2'
+group by tablespace_name;
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/2_1.png" alt="image"></p>
+<ol start="2">
+<li><strong>Borra la tabla que está llenando TS_2 consiguiendo que vuelvan a existir extensiones libres. Añade después otro fichero de datos a TS_2.</strong></li>
+</ol>
+<p>Eliminaremos la tabla previamente creada y comprobaremos el espacio de almacenamiento de nuestro tablespace.</p>
+<div><pre><code>drop table pruebats_2;
+</code></pre>
+</div><hr>
+<div><pre><code>select tablespace_name, to_char(sum(nvl(bytes,0))/1024/1024, '99,999,990.99') as &quot;free space&quot;
+from user_free_space
+where tablespace_name = 'TS_2'
+group by tablespace_name;
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/1_2.png" alt="image"></p>
+<p>Para comenzar, veremos los archivos que estamos utilizando:</p>
+<div><pre><code>select substr(name, 1, 255)
+from v$datafile;
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/2_2.png" alt="image"></p>
+<p>Agendaremos un nuevo archivo y verificaremos que se ha agregado a nuestro tablespace.</p>
+<div><pre><code>alter tablespace TS_2 add datafile '/home/oracle/prueba.dbf' size 10M;
+</code></pre>
+</div><hr>
+<div><pre><code>select file_name,tablespace_name
+from dba_data_files
+where tablespace_name='TS_2';
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/3_2.png" alt="image"></p>
+<ol start="3">
+<li><strong>Crea el tablespace TS3 gestionado localmente con un tamaño de extension uniforme de 128K y un fichero de datos asociado. Cambia la ubicación del fichero de datos y modifica la base de datos para que pueda acceder al mismo. Crea en TS3 dos tablas e inserta registros en las mismas. Comprueba que segmentos tiene TS3, qué extensiones tiene cada uno de ellos y en qué ficheros se encuentran.</strong></li>
+</ol>
+<p>Crearemos el nuevo tablespace TS3, que tendra un fichero añadido y una extension uniforme de 128K.</p>
+<div><pre><code>create tablespace TS3 datafile '/home/oracle/ts3.dbf' size 50M extent management local uniform size 128K;
+</code></pre>
+</div><hr>
+<div><pre><code>select file_name, tablespace_name
+from dba_data_files
+where tablespace_name='TS3';
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/1_3.png" alt="image"></p>
+<p>Para modificar los archivos dentro de un tablespace indicado, primero deberemos apagarlo.</p>
+<div><pre><code>alter tablespace TS3 offline;
+</code></pre>
+</div><p>Ahora procederemos a las modificacion de la ubicación del fichero.</p>
+<div><pre><code>mv ts3.dbf ejer3/
+</code></pre>
+</div><hr>
+<div><pre><code>alter tablespace TS3 rename datafile '/home/oracle/ts3.dbf' to '/home/oracle/ejer3/ts3.dbf';
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/2_3.png" alt="image"></p>
+<p>Activamos el tablespace y comprobamos la nueva configuración.</p>
+<div><pre><code>alter tablespace TS3 online;
+</code></pre>
+</div><hr>
+<div><pre><code>select file_name, tablespace_name
+from dba_data_files
+where tablespace_name='TS3';
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/3_3.png" alt="image"></p>
+<p>Creamos nuevas tablas y registros en TS3:</p>
+<div><pre><code>create table peliculas (
+	id_pelicula number PRIMARY KEY,
+	titulo varchar2(100) not null,
+	director varchar2(100) not null,
+	fecha_lanzamiento DATE not null,
+	duracion number not null
+) tablespace TS3;
+
+
+insert into peliculas (id_pelicula, titulo, director, fecha_lanzamiento, duracion)
+values (2, 'The Avengers', 'Joss Whedon', to_date('04/05/2012'), 143);
+insert into peliculas (id_pelicula, titulo, director, fecha_lanzamiento, duracion)
+values (3, 'Interstellar', 'Christopher Nolan', to_date('05/11/2014'), 169);
+insert into peliculas (id_pelicula, titulo, director, fecha_lanzamiento, duracion)
+values (4, 'Inception', 'Christopher Nolan', to_date('06/07/2014'), 148);
+insert into peliculas (id_pelicula, titulo, director, fecha_lanzamiento, duracion)
+values (5, 'The Shawshank Redemption', 'Frank Darabont', to_date('23/09/1994'), 142);
+</code></pre>
+</div><hr>
+<div><pre><code>CREATE TABLE cines (
+	id_cine number PRIMARY KEY,
+	nombre varchar2(100) not null,
+	direccion varchar2(200) not null,
+	telefono varchar2(20) not null,
+	numero_salas number not null
+) tablespace TS3;
+
+
+insert into cines (id_cine, nombre, direccion, telefono, numero_salas)
+values (1, 'Cine 1', 'Dirección 1', '1234567890', 5);
+insert into cines (id_cine, nombre, direccion, telefono, numero_salas)
+values (2, 'Cine 2', 'Dirección 2', '0987654321', 7);
+insert into cines (id_cine, nombre, direccion, telefono, numero_salas)
+values (3, 'Cine 3', 'Dirección 3', '1112223333', 8);
+insert into cines (id_cine, nombre, direccion, telefono, numero_salas)
+values (4, 'Cine 4', 'Dirección 4', '4445556666', 9);
+</code></pre>
+</div><p>Comprobamos:</p>
+<div><pre><code>select de.segment_name,de.extent_id,df.file_name,de.file_id
+from dba_data_files  df, dba_extents de
+where de.file_id = df.file_id
+and de.tablespace_name = 'TS3'; 
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/4_3.png" alt="image"></p>
+<ol start="4">
+<li><strong>Redimensiona los ficheros asociados a los tres tablespaces que has creado de forma que ocupen el mínimo espacio posible para alojar sus objetos.</strong></li>
+</ol>
+<p>Comprobamos el espacio de almacenamiento de nuestros tablespaces:</p>
+<div><pre><code>select sum(bytes)/1024||'KB', tablespace_name
+from dba_segments
+where tablespace_name like 'TS%'
+group by tablespace_name;
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/1_4.png" alt="image"></p>
+<p>Redimensionaremos los ficheros y comprobaremos el espacio que ocupan.</p>
+<div><pre><code>alter database datafile '/opt/oracle/ts2_1.dbf' resize 3M;
+alter database datafile '/opt/oracle/ts2_2.dbf' resize 3M;
+</code></pre>
+</div><hr>
+<div><pre><code>alter database datafile '/home/oracle/ejer3/ts3.dbf' resize 20M;
+</code></pre>
+</div><hr>
+<div><pre><code>select sum(bytes)/1024||'KB', tablespace_name
+from dba_segments
+where tablespace_name like 'TS%'
+group by tablespace_name;
+</code></pre>
+</div><hr>
+<div><pre><code>select file_name,tablespace_name,(bytes/1024)||'KB'
+from dba_data_files
+where tablespace_name like 'TS%';
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/2_4.png" alt="image"></p>
+<ol start="5">
+<li>
+<p><strong>Realiza un procedimiento llamado InformeRestricciones que reciba el nombre de una tabla y muestre los nombres de las restricciones que tiene, a qué columna o columnas afectan y en qué consisten exactamente.</strong></p>
+</li>
+<li>
+<p><strong>Realiza un procedimiento llamado MostrarAlmacenamientoUsuario que reciba el nombre de un usuario y devuelva el espacio que ocupan sus objetos agrupando por dispositivos y archivos:</strong></p>
+<div><pre><code> Usuario: NombreUsuario
+ 	Dispositivo:xxxx
+ 		Archivo: xxxxxxx.xxx
+ 				Tabla1......nnn K
+ 				…
+ 				TablaN......nnn K
+ 				Indice1.....nnn K
+ 				…
+ 				IndiceN.....nnn K
+ 		Total Espacio en Archivo xxxxxxx.xxx: nnnnn K
+ 		Archivo:...
+ 		…
+ 
+ 	
+ 	Total Espacio en Dispositivo xxxx: nnnnnn K
+ 	Dispositivo: yyyy
+ 	…
+ Total Espacio Usuario en la BD: nnnnnnn K
+</code></pre>
+</div></li>
+</ol>
+<hr>
+<div><pre><code>create or replace procedure Archivos (p_usuario in varchar2)
+is
+	cursor c_cursor is 
+	select segment_name, bytes 
+	from user_segments 
+	where owner = p_usuario and device_name = dispositivo.device_name;
+
+	for var in c_cursor loop
+		dbms_output.put_line(chr(9)||'Archivos:');
+		dbms_output.put_line('  - ' || var.segment_name || ': ' || archivo.bytes || ' bytes');
+		dbms_output.put_line('Tamaño Espacio en Archivos: ||var.bytes||'bytes');
+		end loop;
+	end loop;
+</code></pre>
+</div><hr>
+<div><pre><code>create or replace procedure MostrarAlmacenamientoUsuario(p_usuario in varchar2)
+is
+	cursor c_cursor is 
+	select device_name, sum(bytes) as bytes
+	from user_segments
+	where owner = p_usuario 
+	group by device_name;
+begin
+	dbms_output.put_line('Usuario: '||p_usuario);
+	for var in c_cursor loop
+		dbms_output.put_line('Dispositivo: ' || dispositivo.device_name);
+		Archivos(p_usuario);
+	end loop;
+end;
+/
+</code></pre>
+</div><p><em><strong>Postgres:</strong></em></p>
+<ol start="7">
+<li><strong>Averigua si es posible establecer cuotas de uso sobre los tablespaces en Postgres.</strong></li>
+</ol>
+<p>Sí, es posible establecer cuotas de uso en los tablespaces en PostgreSQL, pero no es una funcionalidad incorporada en la base de datos. Se pueden crear scripts personalizados o utilizar herramientas de terceros para limitar el espacio de almacenamiento disponible para cada usuario en un tablespace específico. Sin embargo, es importante tener en cuenta que esto puede ser un proceso complejo y requiere una planificación cuidadosa.</p>
+<p><em><strong>MySQL:</strong></em></p>
+<ol start="8">
+<li><strong>Averigua si existe el concepto de extensión en MySQL y si coincide con el existente en ORACLE.</strong></li>
+</ol>
+<p>Segmentos, Extensiones y Bloques e MySQL.</p>
+<p>MySQL incorpora una característica única llamada «motores de almacenamiento», que nos permite seleccionar el tipo de almacenamiento interno de cada tabla</p>
+<p>Los motores MyISAM e InnoDB son los más empleados, en ellos podemos encontrar extensiones, segmentos y páginas.</p>
+<p>Ejemplo:</p>
+<p>Segmentos, Extensiones y Bloques en Oracle.</p>
+<p>Los segmentos son los equivalentes físicos de los objetos que almacenan datos. El uso efectivo de los segmentos requiere que el DBA conozca los objetos que utiliza una aplicación, cómo los datos son introducidos en esos objetos y el modo en que serán recuperados.</p>
+<p>Como los segmentos son entidades físicas, deben estar asignados a espacios de tablas en la BD y estarán localizados en uno de los ficheros de datos del espacio de tablas. Un segmento está constituido por secciones llamadas extensiones, que son conjuntos contiguos de bloques Oracle. Una vez que una extensión existente en un segmento no puede almacenar más datos, el segmento obtendrá del espacio de tabla otra extensión. Este proceso de extensión continuará hasta que no quede más espacio disponible en los ficheros del espacio de tablas, o hasta que se alcance un número máximo de extensiónes por segmento.</p>
+<p><em><strong>MongoDB:</strong></em></p>
+<ol start="9">
+<li><strong>Averigua si en MongoDB puede saberse el espacio disponible para almacenar nuevos documentos.</strong></li>
+</ol>
+<p>Mongo posee una serie de funciones para mostrar diferentes datos de almacenamiento.</p>
+<p>Ejemplos:</p>
+<div><pre><code>#El tamaño de los datos en la colección.
+db.collection.dataSize(): 
+
+#Ver tamaño de un índice.
+db.collection.index.stats().indexSizes:
+
+#El tamaño de los datos más el de los índices.
+db.collection.totalSize():
+
+#El tamaño de los índices.
+db.collection.totalIndexSize():
+</code></pre>
+</div><h2 id="parte-grupal"> Parte grupal:</h2>
+<ol start="3">
+<li><strong>Cread una secuencia para rellenar el campo deptno de la tabla dept de forma coherente con los datos ya existentes. Insertad al menos dos registros haciendo uso de la secuencia.</strong></li>
+</ol>
+<p>Creare una secuencia que incremente el codigo en 10 empezando desde el numero 50 y no se repita.</p>
+<div><pre><code>create sequence secuenciaDeptno
+start with 50
+increment by 10
+nocycle;
+</code></pre>
+</div><hr>
+<div><pre><code>insert into scott.dept (DEPTNO, DNAME, LOC) values (secuenciaDeptno.nextval, 'ACCOUNTING', 'BOSTON');
+insert into scott.dept (DEPTNO, DNAME, LOC) values (secuenciaDeptno.nextval, 'ACCOUNTING', 'MIAMI');
+</code></pre>
+</div><hr>
+<div><pre><code>select * from scott.dept;
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/3-grupal.png" alt="image"></p>
+<ol start="8">
+<li><strong>Resolved el siguiente caso práctico en ORACLE:</strong></li>
+</ol>
+<p><strong>En nuestra empresa existen tres departamentos: Informática, Ventas y Producción. En Informática trabajan tres personas: Pepe, Juan y Clara. En Ventas trabajan Ana y Eva y en Producción Jaime y Lidia.</strong></p>
+<p>a) <strong>Pepe es el administrador de la base de datos. Juan y Clara son los programadores de la base de datos, que trabajan tanto en la aplicación que usa el departamento de Ventas como en la usada por el departamento de Producción. Ana y Eva tienen permisos para insertar, modificar y borrar registros en las tablas de la aplicación de Ventas que tienes que crear, y se llaman Productos y Ventas, siendo propiedad de Ana. Jaime y Lidia pueden leer la información de esas tablas pero no pueden modificar la información. Crea los usuarios y dale los roles y permisos que creas conveniente.</strong></p>
+<div><pre><code>CREATE USER Pepe identified by Pepe;
+GRANT dba to Pepe;
+</code></pre>
+</div><hr>
+<div><pre><code>CREATE USER Juan identified by Juan;
+GRANT resource to Juan;
+</code></pre>
+</div><hr>
+<div><pre><code>CREATE USER Clara identified by Clara;
+GRANT resource to Clara;
+</code></pre>
+</div><hr>
+<div><pre><code>CREATE TABLE Informatica (
+id number(10) PRIMARY KEY,
+fecha DATE not null,
+producto varchar2(50) not null,
+descripcion varchar2(200) not null,
+precio number(10,2) not null
+);
+</code></pre>
+</div><hr>
+<div><pre><code>CREATE TABLE Ventas (
+id number(10) PRIMARY KEY,
+fecha DATE not null,
+producto varchar2(50) not null,
+cantidad number(10) not null,
+precio number(10,2) not null
+);
+</code></pre>
+</div><hr>
+<div><pre><code>CREATE TABLE Produccion (
+id number(10) PRIMARY KEY,
+fecha DATE not null,
+producto varchar2(50) not null,
+cantidad number(10) not null,
+ubicacion varchar2(50) not null
+);
+</code></pre>
+</div><hr>
+<div><pre><code>CREATE USER Ana identified by Ana;
+CREATE USER Eva identified by Eva;
+GRANT select on Ana.Ventas to Eva;
+GRANT insert on Ana.Ventas to Eva;
+GRANT update on Ana.Ventas to Eva;
+GRANT delete on Ana.Ventas to Eva;
+GRANT select on Ana.Productos to Eva;
+GRANT insert on Ana.Productos to Eva;
+GRANT update on Ana.Productos to Eva;
+GRANT delete on Ana.Productos to Eva;
+</code></pre>
+</div><hr>
+<div><pre><code>CREATE USER Jaime identified by Jaime;
+CREATE USER Lidia identified by Lidia;
+GRANT select on Ana.Ventas to Jaime;
+GRANT select on Ana.Ventas to Lidia;
+GRANT select on Ana.Productos to Jaime;
+GRANT select on Ana.Productos to Lidia;
+</code></pre>
+</div><p>b) <strong>Los espacios de tablas son System, Producción (ficheros prod1.dbf y prod2.dbf) y Ventas (fichero vent.dbf). Los programadores del departamento de Informática pueden crear objetos en cualquier tablespace de la base de datos, excepto en System. Los demás usuarios solo podrán crear objetos en su tablespace correspondiente teniendo un límite de espacio de 30 M los del departamento de Ventas y 100K los del de Producción. Pepe tiene cuota ilimitada en todos los espacios, aunque el suyo por defecto es System.</strong></p>
+<p>c) <strong>Pepe quiere crear una tabla Prueba que ocupe inicialmente 256K en el tablespace Ventas.</strong></p>
+<p>d) <strong>Pepe decide que los programadores tengan acceso a la tabla Prueba antes creada y puedan ceder ese derecho y el de conectarse a la base de datos a los usuarios que ellos quieran.</strong></p>
+<p>f) <strong>Lidia y Jaime dejan la empresa, borra los usuarios y el espacio de tablas correspondiente, detalla los pasos necesarios para que no quede rastro del espacio de tablas.</strong></p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>Instalación y configuración de un servidor de correos en el VPS</title>
       <link>https://github.com/oscarlucas22/practicas/correos/</link>
       <guid>https://github.com/oscarlucas22/practicas/correos/</guid>
@@ -3162,17 +3521,37 @@ fetch first 1 row only;
       <content:encoded><![CDATA[<h1 id="instalacion-y-configuracion-de-un-servidor-de-correos-en-el-vps"> Instalación y configuración de un servidor de correos en el VPS</h1>
 <h2 id="practica-servidor-de-correos"> Práctica: Servidor de correos</h2>
 <p><strong>Instala y configura de manera adecuada el servidor de correos en tu VPS. El nombre del servidor de correo será mail.tudominio.es (Este es el nombre que deberá aparecer en el registro MX).</strong></p>
-<h2 id="gestion-de-correos-desde-el-servidorpermalink"> Gestión de correos desde el servidorPermalink</h2>
+<h2 id="gestion-de-correos-desde-el-servidor"> Gestión de correos desde el servidor</h2>
 <p><strong>El envío y recepción se hará desde el servidor usando la herramienta mail.</strong></p>
 <ul>
-<li>
-<p><strong><em>Tarea 1</em>: Documenta una prueba de funcionamiento, donde envíes desde tu servidor local al exterior. Muestra el log donde se vea el envío. Muestra el correo que has recibido. Muestra el registro SPF.</strong></p>
-</li>
-<li>
-<p><strong><em>Tarea 2</em>: Documenta una prueba de funcionamiento, donde envíes un correo desde el exterior (gmail, hotmail,…) a tu servidor local. Muestra el log donde se vea el envío. Muestra cómo has leído el correo. Muestra el registro MX de tu dominio.</strong></p>
-</li>
+<li><strong><em>Tarea 1</em>: Documenta una prueba de funcionamiento, donde envíes desde tu servidor local al exterior. Muestra el log donde se vea el envío. Muestra el correo que has recibido. Muestra el registro SPF.</strong></li>
 </ul>
-<h2 id="uso-de-alias-y-redireccionespermalink"> Uso de alias y redireccionesPermalink</h2>
+<hr>
+<p>He accedido a la sección de DNS de mi alojamiento web para establecer el registro MX, que debe estar vinculado a un registro de clase A. También he creado el registro SPF en este momento.</p>
+<p><img src="./../images/SRI/correos/1_1.png" alt="image"></p>
+<p>Luego, instalamos Postfix en la VPS y especificamos el dominio (olucass.com) durante la instalación. Además, instalamos los paquetes requeridos para enviar correos electrónicos.</p>
+<div><pre><code>apt install postfix bsd-mailx
+</code></pre>
+</div><p>Debido a que disponemos de una dirección IP pública en la VPS, no requerimos agregar el relay en la configuración de Postfix. Por lo tanto, podemos continuar directamente con el envío de correos electrónicos a mi cuenta de Gmail.</p>
+<p><img src="./../images/SRI/correos/2_1.png" alt="image"></p>
+<p>Ahora veamos los logs para ver si se ha enviado:</p>
+<p><img src="./../images/SRI/correos/3_1.png" alt="image"></p>
+<p>Como podemos observar, de acuerdo con el registro, el correo se ha enviado exitosamente. Ahora, verifiquemos si llegó a mi cliente de correo electrónico.</p>
+<p><img src="./../images/SRI/correos/4_1.png" alt="image"></p>
+<p>Como vemos, he recibido correctamente el correo, por lo que podemos decir que esta primera tarea ha sido un éxito.</p>
+<ul>
+<li><strong><em>Tarea 2</em>: Documenta una prueba de funcionamiento, donde envíes un correo desde el exterior (gmail, hotmail,…) a tu servidor local. Muestra el log donde se vea el envío. Muestra cómo has leído el correo. Muestra el registro MX de tu dominio.</strong></li>
+</ul>
+<hr>
+<p>Vamos a mandar un correo desde mi cliente de correos gmail hacia mi vps:</p>
+<p><img src="./../images/SRI/correos/1_2.png" alt="image"></p>
+<p>Como hemos demostrado en la tarea previa, en el registro DNS de mi VPS existe un registro de clase MX que apunta a mi servidor, por lo que no debería haber ningún obstáculo para recibir correos electrónicos. Verifiquemos los registros de la VPS para determinar si el correo ha llegado.</p>
+<p><img src="./../images/SRI/correos/2_2.png" alt="image"></p>
+<p>En los registros se refleja la recepción del correo electrónico. Para ver su contenido, utilizaremos la herramienta &quot;mail&quot;.</p>
+<p><img src="./../images/SRI/correos/3_2.png" alt="image"></p>
+<p><img src="./../images/SRI/correos/4_2.png" alt="image"></p>
+<p>Con esto hemos acabado la segunda tarea de forma satisfactoria.</p>
+<h2 id="uso-de-alias-y-redirecciones"> Uso de alias y redirecciones</h2>
 <ul>
 <li><strong><em>Tarea 3</em>: Uso de alias y redirecciones.</strong></li>
 </ul>
@@ -3185,30 +3564,263 @@ fetch first 1 row only;
 </div><p><strong>Puedes poner alguna tarea en el cron para ver como se mandan correo.</strong></p>
 <p><strong>Posteriormente usando alias y redirecciones podemos hacer llegar esos correos a nuestro correo personal.</strong></p>
 <p><strong>Configura el cron para enviar correo al usuario root. Comprueba que están llegando esos correos al root. Crea un nuevo alias para que se manden a un usuario sin privilegios. Comprueban que llegan a ese usuario. Por último crea una redirección para enviar esos correo a tu correo personal (gmail,hotmail,…).</strong></p>
-<h2 id="para-asegurar-el-enviopermalink"> Para asegurar el envíoPermalink</h2>
+<hr>
+<p>Para empezar he creado una tarea cron que se ejecuta cada 3 minutos y he hecho que mande el mail al usuario “root”:</p>
+<p><img src="./../images/SRI/correos/1_3.png" alt="image"></p>
+<p>El script que ejecuta es el siguiente:</p>
+<p><img src="./../images/SRI/correos/2_3.png" alt="image"></p>
+<p>Es un script sencillo que nos ayudará a realizar las pruebas necesarias. Ahora, crearemos un alias en el archivo &quot;/etc/aliases&quot; para que los correos electrónicos recibidos por &quot;root&quot; se reenvíen a mi usuario &quot;olucas&quot;.</p>
+<p><img src="./../images/SRI/correos/3_3.png" alt="image"></p>
+<p>Para que se apliquen los cambios realizados en este fichero debemos ejecutar el siguiente comando:</p>
+<div><pre><code>newaliases
+</code></pre>
+</div><p>Ahora los correos que le lleguen al usuario “root”, deberían llegarle también al usuario &quot;olucas&quot;:</p>
+<p><img src="./../images/SRI/correos/4_3.png" alt="image"></p>
+<p><img src="./../images/SRI/correos/5_3.png" alt="image"></p>
+<p>Para que los correos electrónicos lleguen a nuestra cuenta principal, debemos crear un archivo llamado &quot;.forward&quot; en el directorio &quot;~&quot; del usuario, y agregar las direcciones de correo a las que deseamos reenviar los mensajes.</p>
+<div><pre><code>nano ~/.forward
+
+oscarlucasleo124@gmail.com
+</code></pre>
+</div><p>Veamos si llegan a mi correo:</p>
+<p><img src="./../images/SRI/correos/6_3.png" alt="image"></p>
+<p>Como podemos observar, los correos electrónicos se han reenviado correctamente, por lo que podemos considerar esta tarea finalizada.</p>
+<h2 id="para-asegurar-el-envio"> Para asegurar el envío</h2>
 <ul>
-<li><strong><em>Tarea 4:</em> (No obligatoria): Configura de manera adecuada DKIM es tu sistema de correos. Comprueba el registro DKIM en la página https://mxtoolbox.com/dkim.aspx. Configura postfix para que firme los correos que envía. Manda un correo y comprueba la verificación de las firmas en ellos.</strong></li>
+<li><strong><em>Tarea 4:</em> (No obligatoria): Configura de manera adecuada DKIM es tu sistema de correos. Comprueba el registro DKIM en la página <a href="https://mxtoolbox.com/dkim.aspx" target="_blank" rel="noopener noreferrer">https://mxtoolbox.com/dkim.aspx<i>Content not supported</i></a>. Configura postfix para que firme los correos que envía. Manda un correo y comprueba la verificación de las firmas en ellos.</strong></li>
 </ul>
-<h2 id="para-luchar-contra-el-spampermalink"> Para luchar contra el SPAMPermalink</h2>
+<p>En esta tarea, vamos a establecer la autenticación de correo electrónico a través de &quot;DKIM&quot; (DomainKeys Identified Mail) en nuestra VPS. Este método garantiza la integridad del mensaje desde su envío hasta su recepción y se basa en la publicación de una clave pública en un registro TXT del servidor DNS. El servidor de correo electrónico firmará los mensajes con esta clave pública y los clientes podrán verificar la firma mediante la clave pública en el servidor DNS.</p>
+<p>Con lo anterior en mente, ahora procederemos a instalar los paquetes requeridos para establecer DKIM en nuestra VPS.</p>
+<div><pre><code>apt install opendkim opendkim-tools
+</code></pre>
+</div><p>Ahora modificaremos el fichero de configuración de DKIM (/etc/opendkim.conf):</p>
+<div><pre><code>nano /etc/opendkim.conf
+
+Syslog                  yes
+SyslogSuccess           yes
+Canonicalization        relaxed/simple
+OversignHeaders         From
+Domain                  olucass.com
+Selector                dkim
+KeyFile         		/etc/dkimkeys/dkim.private
+UserID                  opendkim
+UMask                   007
+Socket                  inet:8891@localhost
+PidFile                 /run/opendkim/opendkim.pid
+TrustAnchorFile         /usr/share/dns/root.key
+</code></pre>
+</div><p>De los parámetros anteriores he dejado por defecto la mayoría. Los que he cambiado son los siguientes:</p>
 <ul>
 <li>
-<p><strong><em>Tarea 5</em>: (No obligatorio): Configura de manera adecuada Postfix para que tenga en cuenta el registro SPF de los correos que recibe. Muestra el log del correo para comprobar que se está haciendo el testeo del registro SPF.</strong></p>
+<p><strong>Dominio</strong>: Especificamos nuestro dominio.</p>
 </li>
 <li>
-<p><strong><em>Tarea 6</em>: (No obligatoria): Configura un sistema antispam. Realiza comprobaciones para comprobarlo.</strong></p>
+<p><strong>Selector</strong>: Un nombre único que utilizaremos para subir la clave pública al servidor DNS y para que el destinatario pueda identificarla fácilmente.</p>
 </li>
 <li>
-<p><strong><em>Tarea 7</em>: (No obligatoria): Configura un sistema antivirus. Realiza comprobaciones para comprobarlo.</strong></p>
+<p><strong>KeyFile</strong>: La ubicación de la clave privada que usaremos para firmar los mensajes.</p>
+</li>
+<li>
+<p><strong>Socket</strong>: Cambiamos el socket UNIX por uno TCP/IP (comentamos el que viene por defecto y descomentamos este). Debemos actualizar el archivo /etc/default/opendkim para reflejar este cambio.</p>
+<p>nano /etc/default/opendkim</p>
+<p>SOCKET=inet:8891@localhost</p>
 </li>
 </ul>
-<h2 id="gestion-de-correos-desde-un-clientepermalink"> Gestión de correos desde un clientePermalink</h2>
+<p>Ahora debemos hacer un ajuste en la configuración de Postfix en el archivo /etc/postfix/main.cf para especificar que se utilice DKIM para firmar los mensajes enviados.</p>
+<div><pre><code>nano /etc/postfix/main.cf
+
+milter_default_action = accept
+milter_protocol = 2
+smtpd_milters = inet:localhost:8891
+non_smtpd_milters = $smtpd_milters
+</code></pre>
+</div><p>Ahora que hemos terminado con la configuración, es hora de generar la clave pública y privada de la que hemos hablado antes. Para hacer esto, nos dirigimos al directorio especificado previamente en la configuración (/etc/dkimkeys) y ejecutamos el siguiente comando:</p>
+<div><pre><code>opendkim-genkey -s dkim -d olucass.com -b 1024
+</code></pre>
+</div><p>Donde:</p>
 <ul>
 <li>
-<p><strong><em>Tarea 8</em>: Configura el buzón de los usuarios de tipo Maildir. Envía un correo a tu usuario y comprueba que el correo se ha guardado en el buzón Maildir del usuario del sistema correspondiente. Recuerda que ese tipo de buzón no se puede leer con la utilidad mail.</strong></p>
+<p>“-s:” Indicamos el “Selector” al cual nombramos en la configuración de DKIM.</p>
 </li>
 <li>
-<p><strong><em>Tarea 9</em>: Instala configura dovecot para ofrecer el protocolo IMAP. Configura dovecot de manera adecuada para ofrecer autentificación y cifrado.</strong></p>
+<p>“-d:” Indicamos el dominio.</p>
 </li>
+<li>
+<p>“-b:” Indicamos el tamaño de la clave.</p>
+</li>
+</ul>
+<p>Al par de claves que se han generado debemos cambiarle el propietario:</p>
+<div><pre><code>chown opendkim: dkim.private dkim.txt
+</code></pre>
+</div><p>Ahora solo necesitamos agregar el registro TXT en el servidor DNS con la clave pública. El registro debe tener el siguiente formato: [selector]._domainkey. Entonces, mi registro quedaría así:</p>
+<p><img src="./../images/SRI/correos/1_4.png" alt="image"></p>
+<p>Si usamos la herramienta que se menciona en el enunciado, podemos comprobar que el registro se ha añadido correctamente:</p>
+<p><img src="./../images/SRI/correos/2_4.png" alt="image"></p>
+<p>Para asegurarnos de que el servidor es capaz de firmar mensajes con nuestra clave privada, debemos enviar un correo y verificar si se ha firmado correctamente. Antes de hacer esto, es necesario reiniciar los servicios de Postfix y OpenDKIM.</p>
+<div><pre><code>systemctl restart opendkim postfix
+</code></pre>
+</div><p>Comprobemos si nuestra vps está escuchando en el puerto que le hemos indicado (8891):</p>
+<div><pre><code>netstat -tlnp | egrep opendkim
+</code></pre>
+</div><p><img src="./../images/SRI/correos/3_4.png" alt="image"></p>
+<p>Ahora mandaremos un mensaje a mi cuenta de gmail y veremos si nos indica que está verificado por dkim:</p>
+<p><img src="./../images/SRI/correos/4_4.png" alt="image"></p>
+<p>Veamos el mensaje:</p>
+<p><img src="./../images/SRI/correos/5_4.png" alt="image"></p>
+<p>Y el contenido original del mensaje:</p>
+<p><img src="./../images/SRI/correos/6_4.png" alt="image"></p>
+<p>Como vemos, nos indica que está verificado con DKIM, por lo que podemos decir que esta tarea ha sido un éxito.</p>
+<h2 id="para-luchar-contra-el-spam"> Para luchar contra el SPAM</h2>
+<ul>
+<li><strong><em>Tarea 5</em>: (No obligatorio): Configura de manera adecuada Postfix para que tenga en cuenta el registro SPF de los correos que recibe. Muestra el log del correo para comprobar que se está haciendo el testeo del registro SPF.</strong></li>
+</ul>
+<p>Para que postfix pueda verificar los registros SPF de los correos que recibe, es necesario instalar un paquete adicional para agregar esta capacidad, ya que no está disponible por defecto.</p>
+<div><pre><code>apt install postfix-policyd-spf-python
+</code></pre>
+</div><p>Ahora es necesario ajustar la configuración de Postfix para aprovechar las nuevas funcionalidades instaladas para verificar el correo entrante. Para hacer esto, debemos editar el archivo <code>/etc/postfix/master.cf</code>.</p>
+<div><pre><code>nano /etc/postfix/master.cf
+
+policyd-spf  unix  -    n       n       -       0       spawn
+    user=policyd-spf argv=/usr/bin/policyd-spf
+</code></pre>
+</div><p>Para que postfix pueda evaluar los registros SPF de los correos entrantes, debemos hacer cambios en su configuración. Específicamente, debemos agregar las nuevas funcionalidades recién instaladas en el archivo <code>/etc/postfix/master.cf</code>. Luego, para que postfix sepa qué hacer con los mensajes que pasen por el filtro, debemos modificar la configuración en el archivo <code>/etc/postfix/main.cf</code>.</p>
+<div><pre><code>policyd-spf_time_limit = 3600
+smtpd_recipient_restrictions = check_policy_service unix:private/policyd-spf
+</code></pre>
+</div><p>Para aplicar los cambios realizados en la configuración de postfix, deberemos reiniciar el servicio de postfix.</p>
+<div><pre><code>systemctl restart postfix
+</code></pre>
+</div><p>Ahora es momento de verificar si todo lo que hemos realizado funciona correctamente. Para ello, enviaremos un correo a nuestra VPS y revisaremos los registros del log para verificar que todo se haya ejecutado de manera satisfactoria.</p>
+<p><img src="./../images/SRI/correos/1_5.png" alt="image"></p>
+<p>Como vemos, el correo ha pasado filtro SPF, por lo que hemos podido recibirlo de forma correcta.</p>
+<ul>
+<li><strong><em>Tarea 6</em>: (No obligatoria): Configura un sistema antispam. Realiza comprobaciones para comprobarlo.</strong></li>
+</ul>
+<p>Vamos a utilizar SpamAssassin para combatir el spam, que actuará como un filtro en Postfix y nos notificará cuáles de los correos recibidos son considerados spam. Procederemos a instalar los paquetes necesarios para el funcionamiento de SpamAssassin.</p>
+<div><pre><code>apt install spamassassin spamc
+</code></pre>
+</div><p>Ahora iniciaremos y habilitaremos el servicio de SpamAssassin:</p>
+<div><pre><code>systemctl start spamassassin
+systemctl enable spamassassin
+</code></pre>
+</div><p>Para que SpamAssassin pueda utilizar una base de datos actualizada para determinar si un correo es spam o no, vamos a cambiar su configuración para que se actualice una vez al día. Para hacer esto, editaremos la línea &quot;CRON&quot; en el archivo <code>/etc/default/spamassassin</code> y cambiaremos su valor a &quot;1&quot;.</p>
+<div><pre><code>nano /etc/default/spamassassin
+
+CRON=1
+</code></pre>
+</div><p>Ahora debemos decirle a Postfix que utilice SpamAssassin como filtro para identificar correos spam. Para ello, agregaremos lo siguiente a su configuración:</p>
+<div><pre><code>nano /etc/postfix/master.cf
+</code></pre>
+</div><hr>
+<div><pre><code>smtp      inet  n       -       y       -       -       smtpd
+  -o content_filter=spamassassin
+submission inet n       -       y       -       -       smtpd
+  -o content_filter=spamassassin
+spamassassin unix -     n       n       -       -       pipe
+  user=debian-spamd argv=/usr/bin/spamc -f -e /usr/sbin/sendmail -oi -f ${sender} ${recipient}
+</code></pre>
+</div><p>Para concluir la configuración de SpamAssassin, vamos a establecer cómo serán identificados los mensajes de correo considerados como spam. Para ello, editamos el archivo <code>/etc/spamassassin/local.cf</code> y activamos la siguiente línea removiendo el comentario:</p>
+<div><pre><code>nano /etc/spamassassin/local.cf
+
+rewrite_header Subject *****SPAM*****
+</code></pre>
+</div><p>Para hacer efectivos los cambios en la configuración, debemos reiniciar los servicios correspondientes.</p>
+<div><pre><code>systemctl restart postfix spamassassin
+</code></pre>
+</div><p>Para verificar si el filtro anti-spam está funcionando correctamente, podemos enviarnos un correo de prueba que incluya la siguiente línea:</p>
+<div><pre><code>XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
+</code></pre>
+</div><p>Cualquier correo que contenga la anterior cadena es inmediatamente considerado como spam, por lo que es perfecta para realizar las pruebas que necesitamos. De esta forma, mandamos el siguiente correo:</p>
+<p><img src="./../images/SRI/correos/1_6.png" alt="image"></p>
+<p>Ahora comprobemos si el mensaje aparece en los logs como si fuera spam:</p>
+<p><img src="./../images/SRI/correos/2_6.png" alt="image"></p>
+<p>En los logs aparece como spam. Veamos si lo marca como spam en nuestro buzón:</p>
+<p><img src="./../images/SRI/correos/3_6.png" alt="image"></p>
+<p>Como vemos, lo ha marcado como spam y ha añadido la cabecera que le indicamos, por lo que podemos identificar los correos spam de forma mucho más sencilla.</p>
+<ul>
+<li><strong><em>Tarea 7</em>: (No obligatoria): Configura un sistema antivirus. Realiza comprobaciones para comprobarlo.</strong></li>
+</ul>
+<p>Para añadir una capa extra de seguridad contra virus en los correos, utilizaremos &quot;ClamAV&quot;. Este programa funcionará como filtro adicional para los mensajes que recibamos a través de postfix y nos notificará sobre aquellos que considere como virus. Antes de poder emplear &quot;ClamAV&quot;, es necesario instalar algunos paquetes específicos.</p>
+<div><pre><code>apt install clamsmtp clamav-daemon arc arj bzip2 cabextract lzop nomarch p7zip pax tnef
+</code></pre>
+</div><p>Al instalarlo, se ha creado un proceso que escucha en la interfaz de loopback:</p>
+<div><pre><code>netstat -tlnp | egrep clamsmtp
+</code></pre>
+</div><p><img src="./../images/SRI/correos/1_7.png" alt="image"></p>
+<p>A continuación debemos arrancar y habilitar el demonio de ClamAV:</p>
+<div><pre><code>systemctl start clamav-daemon
+systemctl enable clamav-daemon
+</code></pre>
+</div><p>Ahora es necesario hacer algunos cambios en la configuración de postfix para asegurarnos de que los correos recibidos se escaneen en busca de virus, para ello agregaremos las directivas necesarias.</p>
+<div><pre><code>nano /etc/postfix/master.cf
+</code></pre>
+</div><hr>
+<div><pre><code>scan unix -       -       n       -       16       smtp
+-o smtp_data_done_timeout=1200
+-o smtp_send_xforward_command=yes
+-o disable_dns_lookups=yes
+127.0.0.1:10025 inet n       -       n       -       16       smtpd
+-o content_filter=
+-o local_recipient_maps=
+-o relay_recipient_maps=
+-o smtpd_restriction_classes=
+-o smtpd_client_restrictions=
+-o smtpd_helo_restrictions=
+-o smtpd_sender_restrictions=
+-o smtpd_recipient_restrictions=permit_mynetworks,reject
+-o mynetworks_style=host
+-o smtpd_authorized_xforward_hosts=127.0.0.0/8
+</code></pre>
+</div><p>También debemos añadir al fichero de configuración principal de postfix el socket por el que debe comunicarse con ClamAV:</p>
+<div><pre><code>nano /etc/postfix/main.cf
+
+content_filter = scan:127.0.0.1:10026
+</code></pre>
+</div><p>Con esto ya estaría listo. Solo tendríamos que reiniciar el servicio de postfix para aplicar los cambios que hemos hecho:</p>
+<div><pre><code>systemctl restart postfix
+</code></pre>
+</div><p>Para probar el antivirus, nos mandaremos un correo desde nuestro cliente que contenga la siguiente cadena:</p>
+<div><pre><code>X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*
+</code></pre>
+</div><p>Veamos si funciona el filtro anti-virus. Para ello, enviaremos un correo de prueba que contenga la siguiente línea:</p>
+<p><img src="./../images/SRI/correos/2_7.png" alt="image"></p>
+<p>Comprobamos que el log muestra que el mensaje ha sido identificado como virus y por lo tanto ha sido descartado. Con esto podemos dar por finalizada la tarea.</p>
+<h2 id="gestion-de-correos-desde-un-cliente"> Gestión de correos desde un cliente</h2>
+<ul>
+<li><strong><em>Tarea 8</em>: Configura el buzón de los usuarios de tipo Maildir. Envía un correo a tu usuario y comprueba que el correo se ha guardado en el buzón Maildir del usuario del sistema correspondiente. Recuerda que ese tipo de buzón no se puede leer con la utilidad mail.</strong></li>
+</ul>
+<p>Para configurar postfix para usar un buzón de tipo Maildir, debemos editar su configuración principal y especificar que en lugar de mbox, utilice Maildir.</p>
+<div><pre><code>nano /etc/postfix/main.cf
+
+home_mailbox = Maildir/
+</code></pre>
+</div><p>Ahora debemos reiniciar el servicio de postfix para aplicar los cambios:</p>
+<div><pre><code>systemctl restart postfix
+</code></pre>
+</div><p>Debemos reemplazar la herramienta de visualización de correos &quot;mail&quot; por &quot;mutt&quot; porque después de modificar la configuración principal de postfix para utilizar un buzón de tipo Maildir, ya no es posible utilizar &quot;mail&quot;. &quot;Mutt&quot; nos permitirá ver los correos que recibamos.</p>
+<div><pre><code>apt install mutt
+</code></pre>
+</div><p>Para que esta herramienta funcione, debemos crear el siguiente fichero con esta configuración:</p>
+<div><pre><code>nano ~/.muttrc
+</code></pre>
+</div><hr>
+<div><pre><code>set mbox_type=Maildir
+set folder=&quot;~/Maildir&quot;
+set mask=&quot;!^\\.[^.]&quot;
+set mbox=&quot;~/Maildir&quot;
+set record=&quot;+.Sent&quot;
+set postponed=&quot;+.Drafts&quot;
+set spoolfile=&quot;~/Maildir&quot;
+</code></pre>
+</div><p>Para comprobar si los correos están almacenados en el directorio Maildir, verificaremos el contenido del mismo.</p>
+<p><img src="./../images/SRI/correos/1_8.png" alt="image"></p>
+<p><img src="./../images/SRI/correos/2_8.png" alt="image"></p>
+<p>Como vemos lo ha guardado en el directorio Maildir. Para visualizarlo, usaremos la herramienta mutt:</p>
+<p><img src="./../images/SRI/correos/3_8.png" alt="image"></p>
+<p><img src="./../images/SRI/correos/4_8.png" alt="image"></p>
+<p>De esta manera, hemos verificado que los mensajes de correo están siendo guardados en el directorio Maildir y también hemos confirmado que podemos visualizarlos utilizando la herramienta Mutt.</p>
+<ul>
+<li><strong><em>Tarea 9</em>: Instala configura dovecot para ofrecer el protocolo IMAP. Configura dovecot de manera adecuada para ofrecer autentificación y cifrado.</strong></li>
 </ul>
 <p><strong>Para realizar el cifrado de la comunicación crea un certificado en LetsEncrypt para el dominio mail.iesgnXX.es. Recuerda que para el ofrecer el cifrado tiene varias soluciones:</strong></p>
 <ul>
@@ -3229,10 +3841,34 @@ fetch first 1 row only;
 </li>
 </ul>
 <p><strong>Elige una de las opciones anterior para realizar el cifrado. Y muestra la configuración de un cliente de correo (evolution, thunderbird, …) y muestra como puedes leer los correos enviado a tu usuario.</strong></p>
+<p>Para empezar vamos a instalar dovecot en la VPS:</p>
+<div><pre><code>apt install dovecot-imapd
+</code></pre>
+</div><p>Al instalarlo, habrá creado un proceso que estará escuchando en dos sockets TCP/IP diferentes: en el puerto 143 y en el puerto 993:</p>
+<div><pre><code>netstat -tlnp | egrep dovecot
+</code></pre>
+</div><p><img src="./../images/SRI/correos/1_9.png" alt="image"></p>
+<p>Vamos a obtener un certificado LetsEncrypt para el dominio mail.olucass.com para cifrar las comunicaciones.</p>
+<div><pre><code>certbot certonly --standalone -d mail.olucass.com
+</code></pre>
+</div><p><img src="./../images/SRI/correos/2_9.png" alt="image"></p>
+<p>Para proteger la comunicación, vamos a utilizar un certificado generado por LetsEncrypt para el dominio mail.olucass.com. Para hacer uso de este certificado, debemos ajustar la configuración de dovecot.</p>
+<div><pre><code>nano /etc/dovecot/conf.d/10-ssl.conf
+</code></pre>
+</div><hr>
+<div><pre><code>ssl_cert = &lt;/etc/letsencrypt/live/mail.olucass.com-0001/fullchain.pem
+ssl_key = &lt;/etc/letsencrypt/live/mail.olucass.com-0001/privkey.pem
+</code></pre>
+</div><p>Indicaremos a dovecot la ubicación de los correos que deben ser cifrados y sincronizados con el cliente, los cuales se encuentran en el directorio ~/Maildir.</p>
+<div><pre><code>nano /etc/dovecot/conf.d/10-mail.conf
+
+mail_location = maildir:~/Maildir
+</code></pre>
+</div><p>Ahora reiniciaremos el servicio de dovecot para aplicar los cambios:</p>
+<div><pre><code>systemctl restart dovecot
+</code></pre>
+</div><p>Estaremos verificando tanto la recepción de correo como el envío desde el cliente en la siguiente sección, al momento de configurar Evolution, que requiere también la configuración para el envío.</p>
 <ul>
-<li>
-<p><strong><em>Tarea 10</em>: (No obligatoria): Instala un webmail (roundcube, horde, rainloop) para gestionar el correo del equipo mediante una interfaz web. Muestra la configuración necesaria y cómo eres capaz de leer los correos que recibe tu usuario.</strong></p>
-</li>
 <li>
 <p><strong><em>Tarea 11</em>: Configura de manera adecuada postfix para que podamos mandar un correo desde un cliente remoto. La conexión entre cliente y servidor debe estar autentificada con SASL usando dovecor y además debe estar cifrada. Para cifrar esta comunicación puedes usar dos opciones:</strong></p>
 <ul>
@@ -3245,14 +3881,754 @@ fetch first 1 row only;
 </ul>
 </li>
 </ul>
+<p>Continuando con la tarea anterior, modificaremos la configuración de postfix para asegurar el envío de correos cifrados. Para ello, utilizaremos los certificados generados y estableceremos la autenticación a través de dovecot.</p>
+<div><pre><code>nano /etc/postfix/main.cf
+</code></pre>
+</div><hr>
+<div><pre><code>smtpd_tls_cert_file=/etc/letsencrypt/live/mail.olucass.com-0001/fullchain.pem
+smtpd_tls_key_file=/etc/letsencrypt/live/mail.olucass.com-0001/privkey.pem
+
+smtpd_sasl_auth_enable = yes
+smtpd_sasl_type = dovecot
+smtpd_sasl_path = private/auth
+smtpd_sasl_authenticated_header = yes
+broken_sasl_auth_clients = yes
+</code></pre>
+</div><p>Para usar los puertos 587/TCP y 465/TCP con postfix, deberemos modificar el archivo de configuración correspondiente y activar las directivas relevantes.</p>
+<div><pre><code>nano /etc/postfix/master.cf
+</code></pre>
+</div><hr>
+<div><pre><code>submission inet n       -       y       -       -       smtpd
+  -o content_filter=spamassassin
+  -o syslog_name=postfix/submission
+  -o smtpd_tls_security_level=encrypt
+  -o smtpd_sasl_auth_enable=yes
+  -o smtpd_tls_auth_only=yes
+  -o smtpd_reject_unlisted_recipient=no
+  -o smtpd_client_restrictions=$mua_client_restrictions
+  -o smtpd_helo_restrictions=$mua_helo_restrictions
+  -o smtpd_sender_restrictions=$mua_sender_restrictions
+  -o smtpd_recipient_restrictions=
+  -o smtpd_relay_restrictions=permit_sasl_authenticated,reject
+  -o milter_macro_daemon_name=ORIGINATING
+smtps     inet  n       -       y       -       -       smtpd
+  -o syslog_name=postfix/smtps
+  -o smtpd_tls_wrappermode=yes
+  -o smtpd_sasl_auth_enable=yes
+  -o smtpd_reject_unlisted_recipient=no
+  -o smtpd_client_restrictions=$mua_client_restrictions
+  -o smtpd_helo_restrictions=$mua_helo_restrictions
+  -o smtpd_sender_restrictions=$mua_sender_restrictions
+  -o smtpd_recipient_restrictions=
+  -o smtpd_relay_restrictions=permit_sasl_authenticated,reject
+  -o milter_macro_daemon_name=ORIGINATING
+</code></pre>
+</div><p>A continuación debemos indicar a dovecot como tiene que realizar la autentificación. Para ello modificamos el siguiente fichero:</p>
+<div><pre><code>nano /etc/dovecot/conf.d/10-master.conf
+
+unix_listener /var/spool/postfix/private/auth {
+mode = 0666
+}
+</code></pre>
+</div><p>Con esto ya podemos reiniciar los servicios de postfix y dovecot para aplicar los cambios:</p>
+<div><pre><code>systemctl restart postfix dovecot
+</code></pre>
+</div><p>Ahora ya podemos configurar el cliente de correos en nuestro anfitrión. En mi caso he elegido el cliente de correos “Evolution”</p>
+<p><img src="./../images/SRI/correos/1_11.png" alt="image"></p>
+<p><img src="./../images/SRI/correos/2_11.png" alt="image"></p>
+<p><img src="./../images/SRI/correos/3_11.png" alt="image"></p>
+<p><img src="./../images/SRI/correos/4_11.png" alt="image"></p>
+<p>Una vez finalizados los cambios, podemos verificar si las carpetas ~/Maildir en la VPS se han sincronizado con el cliente de correos Evolution. Para ello, Evolution nos solicitará la contraseña de nuestro usuario en la VPS.</p>
+<p><img src="./../images/SRI/correos/5_11.png" alt="image"></p>
+<p>Vamos a probar si al mandar un correo desde gmail hasta nuestra vps se sincronizan las carpetas:</p>
+<p><img src="./../images/SRI/correos/6_11.png" alt="image"></p>
+<p><img src="./../images/SRI/correos/7_11.png" alt="image"></p>
+<p>Como vemos, lo hemos recibido en el cliente Evolution, por lo que podemos decir que ambos directorios se sincronizan perfectamente.</p>
+<p>Ahora comprobemos si somos capaces de enviar correos desde Evolution usando nuestra cuenta de la VPS a nuestro gmail:</p>
+<p><img src="./../images/SRI/correos/8_11.png" alt="image"></p>
+<p><img src="./../images/SRI/correos/9_11.png" alt="image"></p>
+<p>Podemos comprobar que el mensaje se ha entregado correctamente, lo que indica que los procesos previos y este en sí han sido un éxito.</p>
 <p><strong>Elige una de las opciones anterior para realizar el cifrado. Y muestra la configuración de un cliente de correo (evolution, thunderbird, …) y muestra como puedes enviar los correos.</strong></p>
+<ul>
+<li><strong><em>Tarea 10</em>: (No obligatoria): Instala un webmail (roundcube, horde, rainloop) para gestionar el correo del equipo mediante una interfaz web. Muestra la configuración necesaria y cómo eres capaz de leer los correos que recibe tu usuario.</strong></li>
+</ul>
+<p>He optado por utilizar Roundcube como webmail. Para su instalación en la VPS, elegí la opción de contenedores Docker, ya que cuenta con una imagen oficial en Docker Hub. Primero, debemos instalar Docker en la VPS.</p>
+<div><pre><code>apt install docker.io
+</code></pre>
+</div><p>También crearemos un nuevo registro CNAME en el DNS para el nuevo servicio web:</p>
+<p><img src="./../images/SRI/correos/1_10.png" alt="image"></p>
+<p>Con esto ya podemos crear el contenedor con la imagen de “roundcube”:</p>
+<div><pre><code>docker run -e ROUNDCUBEMAIL_DEFAULT_HOST=ssl://mail.olucass.com -e ROUNDCUBEMAIL_SMTP_SERVER=ssl://mail.olucass.com -e ROUNDCUBEMAIL_SMTP_PORT=465 -e ROUNDCUBEMAIL_DEFAULT_PORT=993 -p 8001:80 -d roundcube/roundcubemail
+</code></pre>
+</div><p>Una vez que se haya instalado Docker y creado el contenedor de roundcube, será necesario obtener un certificado de Let's Encrypt para configurar la conexión segura HTTPS.</p>
+<div><pre><code>certbot certonly --standalone -d roundcube.olucass.com
+</code></pre>
+</div><p><img src="./../images/SRI/correos/2_10.png" alt="image"></p>
+<p>Obtenido el fichero, ya podemos crear el VirtualHost que actuará como ProxyInverso para acceder a Round Cube:</p>
+<div><pre><code>nano /etc/nginx/sites-available/roundcube.conf
+</code></pre>
+</div><hr>
+<div><pre><code>server {
+        listen 80;
+        listen [::]:80;
+
+        server_name roundcube.olucass.com;
+
+        return 301 https://$host$request_uri;
+}
+
+server {
+        listen 443 ssl http2;
+        listen [::]:443 ssl http2;
+
+        ssl    on;
+        ssl_certificate /etc/letsencrypt/live/roundcube.olucass.com-0002/fullchain.pem;
+        ssl_certificate_key     /etc/letsencrypt/live/roundcube.olucass.com-0002/privkey.pem;
+
+        index index.html index.php index.htm index.nginx-debian.html;
+
+        server_name roundcube.olucass.com;
+
+        location / {
+                proxy_pass http://localhost:8001;
+                include proxy_params;
+        }
+}
+</code></pre>
+</div><p>A continuación creamos el enlace simbólico y reiniciamos nginx:</p>
+<div><pre><code>ln -s /etc/nginx/sites-available/roundcube.conf /etc/nginx/sites-enabled/roundcube.conf
+</code></pre>
+</div><hr>
+<div><pre><code>systemctl restart nginx
+</code></pre>
+</div><p>Una vez que hemos terminado, ya podemos acceder a Round Cube desde nuestro navegador web:</p>
+<p><img src="./../images/SRI/correos/3_10.png" alt="image"></p>
+<p>Ingresamos con nuestras credenciales:</p>
+<p><img src="./../images/SRI/correos/4_10.png" alt="image"></p>
+<p>Para confirmar que todo está funcionando correctamente, enviaremos un correo desde Gmail y lo revisaremos en nuestro buzón de correos en el webmail Roundcube.</p>
+<p><img src="./../images/SRI/correos/5_10.png" alt="image"></p>
+<p><img src="./../images/SRI/correos/6_10.png" alt="image"></p>
+<p>Con esto hemos comprobado que la recepción de correos funciona.</p>
 <ul>
 <li><strong><em>Tarea 12</em>: (No obligatoria): Configura el cliente webmail para el envío de correo. Realiza una prueba de envío con el webmail.</strong></li>
 </ul>
-<h2 id="comprobacion-finalpermalink"> Comprobación finalPermalink</h2>
+<p>Todo fue ajustado en las actividades previas, así que procederemos a probar el envío de un correo electrónico desde el servicio de correo web.</p>
+<p><img src="./../images/SRI/correos/1_12.png" alt="image"></p>
+<p><img src="./../images/SRI/correos/2_12.png" alt="image"></p>
+<p><img src="./../images/SRI/correos/3_12.png" alt="image"></p>
+<p>Podemos afirmar que el servicio de Gmail ha sido efectivo al recibir y enviar correos electrónicos en mi cuenta.</p>
+<h2 id="comprobacion-final"> Comprobación final</h2>
 <ul>
-<li><strong><em>Tarea 13</em>: Prueba de envío de correo. En esta página tenemos una herramienta completa y fácil de usar a la que podemos enviar un correo para que verifique y puntúe el correo que enviamos. Captura la pantalla y muestra la puntuación que has sacado.</strong></li>
+<li><strong><em>Tarea 13</em>: Prueba de envío de correo. En esta <a href="https://www.mail-tester.com/" target="_blank" rel="noopener noreferrer">página<i>Content not supported</i></a> tenemos una herramienta completa y fácil de usar a la que podemos enviar un correo para que verifique y puntúe el correo que enviamos. Captura la pantalla y muestra la puntuación que has sacado.</strong></li>
 </ul>
+<p>En consecuencia, haremos una prueba al enviar el correo a la dirección indicada y determinaremos nuestra calificación.</p>
+<p><img src="./../images/SRI/correos/1_13.png" alt="image"></p>
+<p><img src="./../images/SRI/correos/2_13.png" alt="image"></p>
+<p>Los resultados son los siguientes:</p>
+<p><img src="./../images/SRI/correos/3_13.png" alt="image"></p>
+<p>A pesar de que el resultado aparenta ser insuficiente, en realidad es debido a factores que no se consideraron durante el proceso, por lo que podemos considerar la tarea completada.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Poblar un directorio LDAP desde un fichero CSV</title>
+      <link>https://github.com/oscarlucas22/practicas/ldap-csv/</link>
+      <guid>https://github.com/oscarlucas22/practicas/ldap-csv/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">Poblar un directorio LDAP desde un fichero CSV</source>
+      <category>practicas</category>
+      <content:encoded><![CDATA[<h1 id="poblar-un-directorio-ldap-desde-un-fichero-csv"> Poblar un directorio LDAP desde un fichero CSV</h1>
+<ul>
+<li>
+<p><strong>Crear entre todos los alumnos de la clase que vayan a hacer esta tarea un fichero CSV que incluya información personal de cada uno incluyendo los siguientes datos:</strong></p>
+<ul>
+<li>
+<p><strong>Nombre</strong></p>
+</li>
+<li>
+<p><strong>Apellidos</strong></p>
+</li>
+<li>
+<p><strong>Dirección de correo electrónico</strong></p>
+</li>
+<li>
+<p><strong>Nombre de usuario</strong></p>
+</li>
+<li>
+<p><strong>Clave pública ssh</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Añadir otro fichero con la información de las máquinas de los alumnos (solo informativo) :</strong></p>
+<ul>
+<li>
+<p><strong>Hostname</strong></p>
+</li>
+<li>
+<p><strong>IPv4</strong></p>
+</li>
+<li>
+<p><strong>clave pública ssh de la máquina</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Añadir el esquema openssh-lpk al directorio para poder incluir claves públicas ssh en un directorio LDAP.</strong></p>
+</li>
+<li>
+<p><strong>Hacer un script en bash o en python que utilice el fichero como entrada y pueble el directorio LDAP con un objeto para cada alumno utilizando los ObjectClass posixAccount e inetOrgPerson.</strong></p>
+</li>
+<li>
+<p><strong>Configurar el sistema para que sean válidos los usuarios del LDAP.</strong></p>
+</li>
+<li>
+<p><strong>Configurar el servicio ssh para que permita acceder a los usuarios del LDAP utilizando las claves públicas que hay allí, en lugar de almacenarlas en <code>.ssh/authorized_keys</code>, que sólo permita acceder a los equipos que estén en el LDAP en lugar del fichero .ssh/known_hosts y que se cree el directorio &quot;home&quot; al vuelo.</strong></p>
+</li>
+</ul>
+<hr>
+<h3 id="crear-entre-todos-los-alumnos-de-la-clase-que-vayan-a-hacer-esta-tarea-un-fichero-csv-que-incluya-informacion-personal-de-cada-uno-incluyendo-los-siguientes-datos"> Crear entre todos los alumnos de la clase que vayan a hacer esta tarea un fichero CSV que incluya información personal de cada uno incluyendo los siguientes datos:</h3>
+<p>Avanzamos con la creación del archivo en cuestión.</p>
+<div><pre><code>nano usuarios.csv
+</code></pre>
+</div><p>El fichero quedaría de la siguiente forma:</p>
+<div><pre><code>nombre,apellidos,correo,usuario,clave_pública
+</code></pre>
+</div><h3 id="anadir-el-esquema-openssh-lpk-al-directorio-para-poder-incluir-claves-publicas-ssh-en-un-directorio-ldap"> Añadir el esquema openssh-lpk al directorio para poder incluir claves públicas ssh en un directorio LDAP.</h3>
+<p>Una vez completada la creación de estos dos archivos, debemos agregar el esquema openssh-lpk. Para ello, generaremos un archivo ldif con la definición del esquema en <code>/etc/ldap/schema/</code>.</p>
+<div><pre><code>nano /etc/ldap/schema/openssh-lpk.ldif
+</code></pre>
+</div><hr>
+<div><pre><code>dn: cn=openssh-lpk,cn=schema,cn=config
+objectClass: olcSchemaConfig
+cn: openssh-lpk
+olcAttributeTypes: ( 1.3.6.1.4.1.24552.500.1.1.1.13 NAME 'sshPublicKey'
+DESC 'MANDATORY: OpenSSH Public key'
+EQUALITY octetStringMatch
+SYNTAX 1.3.6.1.4.1.1466.115.121.1.40 )
+olcObjectClasses: ( 1.3.6.1.4.1.24552.500.1.1.2.0 NAME 'ldapPublicKey' SUP top AUXILIARY
+DESC 'MANDATORY: OpenSSH LPK objectclass'
+MAY ( sshPublicKey $ uid )
+)
+</code></pre>
+</div><p>Y lo importamos con el siguiente comando:</p>
+<div><pre><code>ldapadd -Y EXTERNAL -H ldapi:/// -f openssh-lpk.ldif
+</code></pre>
+</div><h3 id="hacer-un-script-en-bash-o-en-python-que-utilice-el-fichero-como-entrada-y-pueble-el-directorio-ldap-con-un-objeto-para-cada-alumno-utilizando-los-objectclass-posixaccount-e-inetorgperson"> Hacer un script en bash o en python que utilice el fichero como entrada y pueble el directorio LDAP con un objeto para cada alumno utilizando los ObjectClass posixAccount e inetOrgPerson.</h3>
+<p>Ahora, centrémonos en el script que agregará los usuarios al directorio LDAP a partir del archivo CSV. He elegido usar Python y un módulo llamado &quot;python3-ldap&quot;. Para evitar problemas de compatibilidad con otras versiones de paquetes, es recomendable crear un entorno virtual y instalar el módulo en él. Por lo tanto, creemos el entorno virtual:</p>
+<div><pre><code>apt install python3-venv
+
+python3 -m venv ldap
+</code></pre>
+</div><p>A continuación, instalemos el módulo necesario. Hay que tener en cuenta que algunas versiones del módulo pueden presentar errores, por lo que es recomendable descargar y utilizar una versión comprobada y que funcione correctamente.</p>
+<div><pre><code>pip install python3-ldap
+
+pip install ldap3==2.6
+</code></pre>
+</div><p>Ahora vayamos al script en cuestión:</p>
+<div><pre><code>nano poblarusuarios.py 
+</code></pre>
+</div><hr>
+<div><pre><code>#!/usr/bin/env python
+
+import ldap3
+from ldap3 import Connection, ALL
+from getpass import getpass
+from sys import exit
+
+#### VARIABLES
+
+# Shell que se le asigna a los usuarios
+shell = '/bin/bash'
+
+# Ruta absoluta del directorio que contiene los directorios personales de los usuarios. Terminado en &quot;/&quot;
+home_dir = '/home/'
+
+# El valor inicial para los UID que se asignan al insertar usuarios. 
+uid_number = 5000
+
+# El GID que se le asigna a los usuarios. Si no se manda al anadir el usuario da error.
+gid = 5000
+
+#### VARIABLES
+
+# Leemos el fichero .csv de los usuarios y guardamos cada linea en una lista.
+with open('user.csv', 'r') as usuarios:
+usuarios = usuarios.readlines()
+
+
+#### Parametros para la conexion
+ldap_ip = 'ldaps://localhost:389'
+dominio_base = 'dc=olucas,dc=gonzalonazareno,dc=org'
+user_admin = 'admin' 
+contrasena = getpass('Contrasena: ')
+
+# Intenta realizar la conexion.
+conn = Connection(ldap_ip, 'cn={},{}'.format(user_admin, dominio_base),contrasena)
+
+# conn.bind() devuelve &quot;True&quot; si se ha establecido la conexion y &quot;False&quot; en caso contrario.
+
+# Si no se establece la conexion imprime por pantalla un error de conexion.
+if not conn.bind():
+print('No se ha podido conectar con ldap') 
+if conn.result['description'] == 'invalidCredentials':
+    print('Credenciales no validas.')
+# Termina el script.
+exit(0)
+
+# Recorre la lista de usuarios
+for user in usuarios:
+# Separa los valores del usuario usando como delimitador &quot;,&quot;, y asigna cada valor a la variable correspondiente.
+user = user.split(',')
+cn = user[0]
+sn = user[1]
+mail = user[2]
+uid = user[3]
+ssh = user[4]
+
+#Anade el usuario.
+conn.add(
+    'uid={},ou=Personas,{}'.format(uid, dominio_base),
+    object_class = 
+    [
+    'inetOrgPerson',
+    'posixAccount', 
+    'ldapPublicKey'
+    ],
+    attributes =
+    {
+    'cn': cn,
+    'sn': sn,
+    'mail': mail,
+    'uid': uid,
+    'uidNumber': str(uid_number),
+    'gidNumber': str(gid),
+    'homeDirectory': '{}{}'.format(home_dir,uid),
+    'loginShell': shell,
+    'sshPublicKey': str(ssh)
+    })
+
+if conn.result['description'] == 'entryAlreadyExists':
+    print('El usuario {} ya existe.'.format(uid))
+
+# Aumenta el contador para asignar un UID diferente a cada usuario (cada vez que ejecutemos el script debemos asegurarnos de ante mano que no existe dicho uid en el directorio ldap, o se solaparian los datos)
+uid_number += 1
+
+#Cierra la conexion.
+conn.unbind()
+</code></pre>
+</div><p>Y vemos si funciona con el archivo anterior:</p>
+<p><img src="./../images/ASO/ldap-csv/1.png" alt="image"></p>
+<p>Comprobamos si se han añadido los usuarios indicados:</p>
+<p><img src="./../images/ASO/ldap-csv/2.png" alt="image"></p>
+<h3 id="configurar-el-sistema-para-que-sean-validos-los-usuarios-del-ldap"> Configurar el sistema para que sean válidos los usuarios del LDAP.</h3>
+<p>Para ello, debemos modificar el archivo <code>/etc/ldap/ldap.conf</code> en el cliente y realizar los siguientes cambios:</p>
+<div><pre><code>nano /etc/ldap/ldap.conf
+
+BASE dc=olucas,dc=gonzalonazareno,dc=org
+URI ldap://localhost
+</code></pre>
+</div><p>Además, debemos ajustar la configuración del NSS (Name Service Switch) para que el sistema pueda verificar los UID y GID en el directorio LDAP.</p>
+<div><pre><code>nano /etc/nsswitch.conf
+
+passwd:         files systemd ldap
+group:          files systemd ldap
+shadow:         files ldap
+</code></pre>
+</div><p>Para que esto funcione, es necesario instalar y configurar correctamente el siguiente paquete:</p>
+<div><pre><code>apt install libnss-ldap
+</code></pre>
+</div><p>Ahora podemos iniciar sesión en la máquina con los usuarios que se encuentran en el directorio LDAP (por ejemplo, usaré el usuario &quot;impmon&quot; que creé en un ejercicio anterior).</p>
+<p><img src="./../images/ASO/ldap-csv/3.png" alt="image"></p>
+<h3 id="configurar-el-servicio-ssh-para-que-permita-acceder-a-los-usuarios-del-ldap-utilizando-las-claves-publicas-que-hay-alli-en-lugar-de-almacenarlas-en-ssh-authorized-keys-y-que-se-cree-el-directorio-home-al-vuelo"> Configurar el servicio ssh para que permita acceder a los usuarios del LDAP utilizando las claves públicas que hay allí, en lugar de almacenarlas en .ssh/authorized_keys y que se cree el directorio “home” al vuelo.</h3>
+<p>Para que al acceder con dichos usuarios se cree el directorio home del usuario, debemos ejecutar lo siguiente:</p>
+<div><pre><code>echo &quot;session    required        pam_mkhomedir.so&quot; &gt;&gt; /etc/pam.d/common-session
+</code></pre>
+</div><p>Ahora volvemos a entrar con el usuario anterior y vemos si se ha creado su directorio home:</p>
+<p><img src="./../images/ASO/ldap-csv/3.png" alt="image"></p>
+<p>Pasemos a configurar el sistema para que acepte el acceso por ssh a los usuarios que tengan sus claves públicas en el directorio de ldap.</p>
+<p>Para comenzar, debemos crear un script que busque las claves públicas registradas para el usuario especificado. Debido a ciertos parámetros de seguridad de SSH, se requiere que el script se encuentre en un directorio propiedad de root y que tenga permisos específicos. Por lo tanto, he decidido crear el script en <code>/opt</code>:</p>
+<div><pre><code>nano /opt/buscarclave.sh 
+
+#!/bin/bash
+
+ldapsearch -x -u -LLL -o ldif-wrap=no '(&amp;(objectClass=posixAccount)(uid='&quot;$1&quot;'))' 'sshPublicKey' | sed -n 's/^[ \t]*sshPublicKey::[ \t]*\(.*\)/\1/p' | base64 -d
+</code></pre>
+</div><p>Y cambiamos los permisos del script:</p>
+<div><pre><code>chmod 755 /opt/buscarclave.sh 
+</code></pre>
+</div><p>Podemos ver que el script encuentra las claves de forma adecuada:</p>
+<p><img src="./../images/ASO/ldap-csv/4.png" alt="image"></p>
+<p>Ahora añadimos las siguientes líneas al fichero /etc/ssh/sshd_config:</p>
+<div><pre><code>nano /etc/ssh/sshd_config
+
+AuthorizedKeysCommand /opt/buscarclave.sh
+AuthorizedKeysCommandUser nobody
+</code></pre>
+</div><p>Y reiniciamos el servicio de ssh para aplicar los cambios:</p>
+<div><pre><code>systemctl restart sshd
+</code></pre>
+</div><p>Verifiquemos si es posible acceder a través de SSH usando los usuarios de LDAP que tengan sus claves en el directorio:</p>
+<p><em>Comprobacion de mi usuario</em></p>
+<p><img src="./../images/ASO/ldap-csv/5.png" alt="image"></p>
+<p><em>Comprobación de usuario de Angel</em></p>
+<p><img src="./../images/ASO/ldap-csv/6.png" alt="image"></p>
+<p><img src="./../images/ASO/ldap-csv/7.png" alt="image"></p>
+<p><em>Comprobación del usuario de Alfonso</em></p>
+<p><img src="./../images/ASO/ldap-csv/8.png" alt="image"></p>
+<p><img src="./../images/ASO/ldap-csv/9.png" alt="image"></p>
+<p>¡Grazia miarma!</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Instalación y configuración inicial de OpenLDAP</title>
+      <link>https://github.com/oscarlucas22/practicas/ldap/</link>
+      <guid>https://github.com/oscarlucas22/practicas/ldap/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">Instalación y configuración inicial de OpenLDAP</source>
+      <category>practicas</category>
+      <content:encoded><![CDATA[<h1 id="instalacion-y-configuracion-inicial-de-openldap"> Instalación y configuración inicial de OpenLDAP</h1>
+<p><strong>Realiza la instalación y configuración básica de OpenLDAP en alfa, utilizando como base el nombre DNS asignado. Deberás crear un usuario llamado prueba y configurar una máquina cliente basada en Debian y Rocky para que pueda validarse en servidor ldap configurado anteriormente con el usuario prueba.</strong></p>
+<p><font color="#FFFF00"><strong>Paso 1</strong></font> Configuración de OpenLDAP en el servidor: Instalación y configuración de OpenLDAP.Instalación y configuración de OpenLDAP en el Servidor</p>
+<p>El FQDN de mi alfa es este:</p>
+<div><pre><code>hostname -f 
+
+alfa.olucas.gonzalonazareno.org
+</code></pre>
+</div><p>Antes de continuar, debemos instalar los paquetes &quot;slapd&quot; y &quot;ldap-utils&quot; de OpenLDAP. &quot;Slapd&quot; es el paquete central de OpenLDAP, mientras que &quot;ldap-utils&quot; ofrece herramientas de línea de comandos para manejar el servidor OpenLDAP.</p>
+<div><pre><code>apt install slapd ldap-utils
+</code></pre>
+</div><p>Luego de esto, se requerirá que configure la contraseña del administrador de OpenLDAP.</p>
+<p>Introduce tu contraseña y selecciona ‘OK‘, luego pulsa‘ENTER’.</p>
+<p><img src="./../images/ASO/ldap/1.png" alt="image"></p>
+<p>Repite tu contraseña y selecciona‘OK’, y pulsa‘ENTER’ de nuevo. Y la instalación de OpenLDAP se habrá completado.</p>
+<p><img src="./../images/ASO/ldap/2.png" alt="image"></p>
+<p>Durante la instalación nos pedirá la contraseña que usará el usuario administrador de LDAP, en mi caso la he puesto como “root”:</p>
+<p>Una vez instalado, podemos comprobar que nos ha abierto el puerto TCP 389, que es por el que estará escuchando las peticiones:</p>
+<div><pre><code>netstat -tlnp | egrep slap
+</code></pre>
+</div><p><img src="./../images/ASO/ldap/3.png" alt="image"></p>
+<p>Una vez que hemos verificado que OpenLDAP está activo y funcionando, podemos proceder a instalar el paquete de herramientas necesario para nuestro trabajo.</p>
+<div><pre><code>apt install ldap-utils
+</code></pre>
+</div><p>Ahora podemos utilizar el comando &quot;ldapsearch&quot; con las credenciales que proporcionamos durante la instalación (si deseamos realizar la búsqueda como administrador) para acceder al contenido de nuestro directorio.</p>
+<div><pre><code>ldapsearch -x -D &quot;cn=admin,dc=olucas,dc=gonzalonazareno,dc=org&quot; -b &quot;dc=olucas,dc=gonzalonazareno,dc=org&quot; -W
+</code></pre>
+</div><p><img src="./../images/ASO/ldap/4.png" alt="image"></p>
+<p>Con esto, hemos concluido la instalación de OpenLDAP. Sin embargo, para mantener una mayor organización de los objetos que creemos, vamos a crear un par de objetos llamados &quot;Unidades Organizativas&quot;. Para lograr esto, crearemos un archivo .ldif con la siguiente información:</p>
+<div><pre><code>nano UdsOrg.ldif
+</code></pre>
+</div><hr>
+<div><pre><code>dn: ou=Personas,dc=olucas,dc=gonzalonazareno,dc=org
+objectClass: top
+objectClass: organizationalUnit
+ou: Personas
+
+dn: ou=Grupos,dc=olucas,dc=gonzalonazareno,dc=org
+objectClass: top
+objectClass: organizationalUnit
+ou: Grupos
+</code></pre>
+</div><p>Una vez que hemos preparado el archivo, podemos agregarlo a nuestro directorio con el siguiente comando:</p>
+<div><pre><code>ldapadd -x -D &quot;cn=admin,dc=olucas,dc=gonzalonazareno,dc=org&quot; -f UdsOrg.ldif -W
+</code></pre>
+</div><p><img src="./../images/ASO/ldap/5.png" alt="image"></p>
+<p>Para eliminar las unidades organizativas, utilizaremos el siguiente comando:</p>
+<div><pre><code>ldapdelete -x -D 'cn=admin,dc=olucas,dc=gonzalonazareno,dc=org' -W ou=Personas,dc=olucas,dc=gonzalonazareno,dc=org
+ldapdelete -x -D 'cn=admin,dc=olucas,dc=gonzalonazareno,dc=org' -W ou=Grupos,dc=olucas,dc=gonzalonazareno,dc=org
+</code></pre>
+</div><p>Podemos comprobar que, efectivamente, se han producido los cambios:</p>
+<div><pre><code>ldapsearch -x -b dc=olucas,dc=gonzalonazareno,dc=org
+</code></pre>
+</div><p><img src="./../images/ASO/ldap/6.png" alt="image"></p>
+<p>También crearemos un grupo llamado grupos:</p>
+<div><pre><code>nano grupos.ldif
+</code></pre>
+</div><hr>
+<div><pre><code>dn: cn=prueba,ou=Grupos,dc=olucas,dc=gonzalonazareno,dc=org
+objectClass: top
+objectClass: posixGroup
+gidNumber: 2001
+cn: prueba
+</code></pre>
+</div><p>Una vez que ya tenemos el fichero, lo añadiremos a nuestro directorio:</p>
+<div><pre><code>ldapadd -x -D 'cn=admin,dc=olucas,dc=gonzalonazareno,dc=org' -W -f grupos.ldif
+</code></pre>
+</div><p><img src="./../images/ASO/ldap/7.png" alt="image"></p>
+<p>Como podemos ver, se ha creado correctamente:</p>
+<div><pre><code>ldapsearch -x -b dc=olucas,dc=gonzalonazareno,dc=org
+</code></pre>
+</div><p><img src="./../images/ASO/ldap/8.png" alt="image"></p>
+<p>Para borrarlo, usaremos el siguiente comando:</p>
+<div><pre><code>ldapdelete -x -D 'cn=admin,dc=olucas,dc=gonzalonazareno,dc=org' -W cn=prueba,ou=Group,dc=olucas,dc=gonzalonazareno,dc=org
+</code></pre>
+</div><p>Generaremos una contraseña cifrada para el usuario de prueba. Es necesario cifrar la contraseña del usuario con el comando &quot;slappasswd&quot;, que producirá un resultado para copiar en el campo &quot;userPassword&quot;.</p>
+<div><pre><code>slappasswd
+</code></pre>
+</div><p><img src="./../images/ASO/ldap/9.png" alt="image"></p>
+<p>Tras esto, crearé un usuario llamado prueba:</p>
+<div><pre><code>nano usuarios.ldif
+</code></pre>
+</div><hr>
+<div><pre><code>dn: uid=prueba,ou=Personas,dc=olucas,dc=gonzalonazareno,dc=org
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+objectClass: person
+cn: prueba
+uid: prueba
+uidNumber: 2001
+gidNumber: 2001
+homeDirectory: /home/nfs/prueba
+loginShell: /bin/bash
+userPassword: {SSHA}1unJBHIQ1DYG/qNBKwhqpAMN5Lq2Bobj
+sn: prueba
+givenName: prueba
+</code></pre>
+</div><p>Una vez que ya tenemos el fichero, lo añadiremos a nuestro directorio:</p>
+<div><pre><code>ldapadd -x -D 'cn=admin,dc=olucas,dc=gonzalonazareno,dc=org' -W -f usuarios.ldif
+</code></pre>
+</div><p><img src="./../images/ASO/ldap/10.png" alt="image"></p>
+<p>Podemos comprobar que se ha añadido el usuario prueba al grupo prueba:</p>
+<div><pre><code>ldapsearch -x -b dc=olucas,dc=gonzalonazareno,dc=org
+</code></pre>
+</div><p><img src="./../images/ASO/ldap/11.png" alt="image"></p>
+<p>Para borrar el usuario prueba, usaremos el siguiente comando:</p>
+<div><pre><code>ldapdelete -x -D 'cn=admin,dc=olucas,dc=gonzalonazareno,dc=org' -W uid=prueba,ou=People,dc=olucas,dc=gonzalonazareno,dc=org
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 2</strong></font> Configuración de NFS en el Servidor</p>
+<p>El usuario no será capaz de acceder a su cuenta debido a la ausencia de un directorio de inicio. Para crearlo, ejecutaremos el siguiente comando:</p>
+<div><pre><code>mkdir /home/nfs
+mkdir /home/nfs/prueba
+chown 2001:2001 /home/nfs/prueba
+</code></pre>
+</div><p>Ahora, modificaremos el archivo &quot;/etc/exports&quot; para que el usuario de prueba pueda acceder a su directorio de inicio.</p>
+<div><pre><code>nano /etc/exports
+
+/home/nfs       *(rw,fsid=0,subtree_check)
+</code></pre>
+</div><p>Después de modificar el archivo, reiniciaremos el servicio &quot;nfs-kernel-server&quot;.</p>
+<div><pre><code>/etc/init.d/nfs-kernel-server restart
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 3</strong></font> Instalar Name Service Switch (NSS), Pluggable Authentication Module (PAM) y Name Service Cache Daemon (NSCD) en el servidor.</p>
+<p>En el servidor LDAP, instalamos paquetes que permiten que el sistema realice la resolución de nombres de usuarios (UID) y grupos (GID), acceder a información en un directorio LDAP, iniciar sesión y almacenar en caché la resolución de nombres.</p>
+<div><pre><code>apt-get install libpam-ldapd nscd libnss-ldap
+</code></pre>
+</div><p>Lo configuramos en mi caso de la siguiente forma:</p>
+<p><img src="./../images/ASO/ldap/12.png" alt="image"></p>
+<p><img src="./../images/ASO/ldap/13.png" alt="image"></p>
+<p><img src="./../images/ASO/ldap/14.png" alt="image"></p>
+<p><img src="./../images/ASO/ldap/15.png" alt="image"></p>
+<p><img src="./../images/ASO/ldap/16.png" alt="image"></p>
+<p><img src="./../images/ASO/ldap/17.png" alt="image"></p>
+<p>Por último, modificaremos el archivo &quot;/etc/nsswitch.conf&quot; para que el sistema haga uso del servicio LDAP para la resolución de nombres.</p>
+<div><pre><code>nano /etc/nsswitch.conf
+</code></pre>
+</div><hr>
+<div><pre><code>passwd:         files ldap
+group:          files ldap
+shadow:         files ldap
+gshadow:        files ldap
+
+hosts:          files dns mymachines
+networks:       files
+
+protocols:      db files
+services:       db files
+ethers:         db files
+rpc:            db files
+
+netgroup:       nis
+</code></pre>
+</div><p>Veremos el uuid del usuario prueba:</p>
+<div><pre><code>id prueba
+</code></pre>
+</div><p><img src="./../images/ASO/ldap/18.png" alt="image"></p>
+<p>Para terminar, nos loguearemos con el usuario prueba:</p>
+<div><pre><code>login prueba
+</code></pre>
+</div><p><img src="./../images/ASO/ldap/19.png" alt="image"></p>
+<p><font color="#FFFF00"><strong>Paso 4</strong></font> Configuración del Cliente Ubuntu</p>
+<p>Para configurar el cliente Ubuntu, el primer paso es instalar el paquete de herramientas de LDAP.</p>
+<div><pre><code>apt install ldap-utils
+</code></pre>
+</div><p>Ahora, vamos a crear un fichero de configuración para el cliente:</p>
+<div><pre><code>nano /etc/ldap/ldap.conf
+</code></pre>
+</div><hr>
+<div><pre><code>BASE dc=olucas,dc=gonzalonazareno,dc=org
+URI ldap://alfa.olucas.gonzalonazareno.org
+</code></pre>
+</div><p>Una vez que ya tenemos el fichero de configuración, podemos comprobar que funciona correctamente:</p>
+<div><pre><code>ldapsearch -x -b &quot;dc=olucas,dc=gonzalonazareno,dc=org&quot;
+</code></pre>
+</div><p><img src="./../images/ASO/ldap/20.png" alt="image"></p>
+<p>Como podemos ver, funciona correctamente.</p>
+<p>Comprobación de la autentificación en el cliente Ubuntu usando el usuario prueba y el siguiente comando.</p>
+<div><pre><code>ldapwhoami -x -D &quot;uid=prueba,ou=Personas,dc=olucas,dc=gonzalonazareno,dc=org&quot; -W
+</code></pre>
+</div><p><img src="./../images/ASO/ldap/21.png" alt="image"></p>
+<p>Instalamos los paquetes necesarios (libnss-ldap, libpam-ldapd y nscd):</p>
+<div><pre><code>apt install -y libnss-ldap libpam-ldapd nscd
+</code></pre>
+</div><p><img src="./../images/ASO/ldap/22.png" alt="image"></p>
+<p><img src="./../images/ASO/ldap/23.png" alt="image"></p>
+<p><img src="./../images/ASO/ldap/25.png" alt="image"></p>
+<p><img src="./../images/ASO/ldap/26.png" alt="image"></p>
+<p><img src="./../images/ASO/ldap/27.png" alt="image"></p>
+<p><img src="./../images/ASO/ldap/28.png" alt="image"></p>
+<p><img src="./../images/ASO/ldap/29.png" alt="image"></p>
+<p><img src="./../images/ASO/ldap/30.png" alt="image"></p>
+<p>Ahora configuraremos el cliente Ubuntu para conectarse al servidor LDAP en lugar de usar los datos locales del host (que en este caso es el cliente Ubuntu).</p>
+<p>Vamos a cambiar la configuración en el archivo /etc/nsswitch.conf para que el sistema se apoye en el servicio LDAP para resolver nombres.</p>
+<div><pre><code>nano /etc/nsswitch.conf
+</code></pre>
+</div><hr>
+<div><pre><code>passwd:         files systemd ldap
+group:          files systemd ldap
+shadow:         files ldap
+gshadow:        files ldap
+
+hosts:          files dns
+networks:       files
+
+protocols:      db files
+services:       db files
+ethers:         db files
+rpc:            db files
+
+netgroup:       nis
+</code></pre>
+</div><p>Después de esto, reiniciaremos el servicio NSCD y será posible iniciar sesión en el servidor LDAP desde el cliente Ubuntu.</p>
+<div><pre><code>service nscd restart
+</code></pre>
+</div><p>Para poder acceder a la carpeta de inicio del usuario prueba, necesitamos montarla usando NFS.</p>
+<p>Instalamos el paquete para el cliente NFS:</p>
+<div><pre><code>apt install -y nfs-common
+</code></pre>
+</div><p>Activamos el servicio:</p>
+<div><pre><code>systemctl start nfs-client.target &amp; systemctl enable nfs-client.target
+</code></pre>
+</div><p><img src="./../images/ASO/ldap/31.png" alt="image"></p>
+<p>Creamos el directorio de montaje:</p>
+<div><pre><code>mkdir /home/nfs
+mkdir /home/nfs/prueba
+chown 2001:2001 /home/nfs/prueba
+</code></pre>
+</div><p>Para solucionar el problema de no visualizar los cambios en la carpeta de inicio del usuario prueba, debemos montarla a través de NFS. De esta manera, podremos acceder a los cambios realizados desde cualquier cliente conectado.</p>
+<p>Cargamos el módulo:</p>
+<div><pre><code>modprobe nfs
+</code></pre>
+</div><p>Ejecutamos lo siguiente para que se cargue el modulo automáticamente:</p>
+<div><pre><code>echo NFS | tee -a /etc/modules
+</code></pre>
+</div><p>Lo montamos mediante systemd:</p>
+<div><pre><code>nano /etc/systemd/system/home-nfs.mount
+</code></pre>
+</div><p>Añadimos las siguientes líneas:</p>
+<div><pre><code>[Unit]
+Description=script de montaje NFS
+Requires=network-online.target
+After=network-online.target
+[Mount]
+What=192.168.0.1:/home/nfs
+Where=/home/nfs
+Options=_netdev,auto
+Type=nfs
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+</div><p>Reiniciamos el servicio:</p>
+<div><pre><code>systemctl daemon-reload
+systemctl start home-nfs.mount
+systemctl enable home-nfs.mount
+</code></pre>
+</div><p><img src="./../images/ASO/ldap/32.png" alt="image"></p>
+<p><img src="./../images/ASO/ldap/33.png" alt="image"></p>
+<p><img src="./../images/ASO/ldap/34.png" alt="image"></p>
+<p>Vamos a comprobar que funciona correctamente:</p>
+<div><pre><code>login prueba
+</code></pre>
+</div><p><img src="./../images/ASO/ldap/35.png" alt="image"></p>
+<p>Por último, verificaremos que las modificaciones realizadas en la carpeta de inicio del usuario prueba se reflejan en el servidor.</p>
+<p><img src="./../images/ASO/ldap/36.png" alt="image"></p>
+<p><font color="#FFFF00"><strong>Paso 5</strong></font> Configuración del Cliente Rocky</p>
+<p>Antes de configurar el cliente Rocky, es necesario instalar el paquete de herramientas de LDAP.</p>
+<div><pre><code>dnf install openldap-clients
+</code></pre>
+</div><p>Modificación del archivo de configuración de PAM (Pluggable Authentication Modules) en el cliente Rocky, agregando la siguiente línea en el archivo /etc/pam.d/common-auth.</p>
+<div><pre><code>auth sufficient pam_ldap.so 
+</code></pre>
+</div><p>Ahora, vamos a crear un fichero de configuración para el cliente:</p>
+<div><pre><code>nano /etc/openldap/ldap.conf
+
+BASE dc=olucas,dc=gonzalonazareno,dc=org
+URI ldap://alfa.olucas.gonzalonazareno.org
+</code></pre>
+</div><p>Finalmente, para que el usuario prueba tenga acceso al directorio de inicio, debemos modificar el archivo de configuración de PAM, /etc/pam.d/common-session, para permitir la autenticación de usuarios mediante LDAP, agregando la siguiente línea:</p>
+<div><pre><code>session sufficient pam_mkhomedir.so umask=0022 skel=/etc/skel/
+</code></pre>
+</div><p>Para verificar que la configuración funciona correctamente, podemos ejecutar el siguiente comando:</p>
+<div><pre><code>ldapsearch -x -b &quot;dc=olucas,dc=gonzalonazareno,dc=org&quot;
+</code></pre>
+</div><p><img src="./../images/ASO/ldap/37.png" alt="image"></p>
+<p>Como podemos ver, funciona correctamente.</p>
+<p>Vamos a verificar si la configuración funciona correctamente en el cliente Rocky. Para hacer esto, usaremos un comando que nos permita conectarnos al servidor LDAP con el usuario de prueba y verificaremos la autenticación.</p>
+<div><pre><code>ldapwhoami -x -D &quot;uid=prueba,ou=Personas,dc=olucas,dc=gonzalonazareno,dc=org&quot; -W
+</code></pre>
+</div><p><img src="./../images/ASO/ldap/38.png" alt="image"></p>
+<p>Como podemos ver, funciona correctamente.</p>
+<p>Instalamos los paquetes necesarios para realizar el login con LDAP:</p>
+<div><pre><code>dnf install -y sssd sssd-ldap
+</code></pre>
+</div><p>Incluimos las siguientes líneas en el archivo de configuración de SSSD (/etc/sssd/sssd.conf).</p>
+<div><pre><code>[domain/default]
+id_provider = ldap
+autofs_provider = ldap
+auth_provider = ldap
+chpass_provider = ldap
+ldap_uri = ldap://alfa.olucas.gonzalonazareno.org
+ldap_search_base = dc=olucas,dc=gonzalonazareno,dc=org
+ldap_id_use_start_tls = True
+ldap_tls_cacertdir = /etc/openldap/cacerts
+cache_credentials = True
+ldap_tls_reqcert = allow
+
+[sssd]
+services = nss, pam, autofs
+domains = default
+
+[nss]
+homedir_substring = /home/nfs
+</code></pre>
+</div><p>Ahora, reiniciamos los servicios y los habilitamos:</p>
+<div><pre><code>systemctl restart sssd
+systemctl enable sssd
+</code></pre>
+</div><p>Antes de continuar, creamos una carpeta en la que montaremos el servidor NFS en el cliente. Esto lo hacemos con el siguiente comando:</p>
+<div><pre><code>mkdir /home/nfs
+mkdir /home/nfs/prueba
+chown 2001:2001 /home/nfs/prueba
+</code></pre>
+</div><p>Montamos el directorio de inicio del usuario prueba:</p>
+<div><pre><code>nano /etc/systemd/system/home-nfs.mount
+</code></pre>
+</div><hr>
+<div><pre><code>[Unit]
+Description=script de montaje NFS
+Requires=NetworkManager.service
+After=NetworkManager.service
+[Mount]
+What=172.16.0.1:/home/nfs
+Where=/home/nfs
+Options=_netdev,auto
+Type=nfs
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+</div><p>Reiniamos el servicio:</p>
+<div><pre><code>systemctl daemon-reload
+systemctl start mnt-nfs.mount
+</code></pre>
+</div><p>image</p>
+<p>image</p>
 ]]></content:encoded>
     </item>
     <item>
