@@ -5,7 +5,7 @@
   <author>
     <name>Óscar Lucas</name>
   </author>
-  <updated>2023-02-07T10:08:06.567Z</updated>
+  <updated>2023-02-16T07:50:06.715Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://github.com/oscarlucas22/atom.xml"/>
   <link rel="alternate" href="https://github.com/oscarlucas22/"/>
@@ -31,7 +31,7 @@
 <p><a href="/practicas/usuarios.html">Usuarios</a></p>
 </li>
 <li>
-<p><a href="/noacabado/noacabado.html">Almacenamiento</a></p>
+<p><a href="/practicas/almacenamiento.html">Almacenamiento</a></p>
 </li>
 </ul>
 ]]></content>
@@ -198,98 +198,6 @@
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
-    <title type="html">Criptografía I: Cifrado asímetrico</title>
-    <id>https://github.com/oscarlucas22/practicas/criptografia1/</id>
-    <link href="https://github.com/oscarlucas22/practicas/criptografia1/"/>
-    <updated>2023-01-19T12:13:11.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="criptografia-i-cifrado-asimetrico"> Criptografía I: Cifrado asímetrico</h1>
-<h3 id="tarea-1-generacion-de-claves"> Tarea 1: Generación de claves</h3>
-<p><font color="#00ff00"><strong>1.</strong></font> <strong>Genera un par de claves (pública y privada). ¿En que directorio se guarda las claves de un usuario?</strong></p>
-<p>Las claves las generamos con el siguiente comando:</p>
-<div><pre><code>gpg --gen-key
-</code></pre>
-</div><p>Y se guardan en el directorio <code>/home/usuario/.gnupg/</code></p>
-<p><font color="#00ff00"><strong>2.</strong></font> <strong>Lista las claves públicas que tienes en tu almacén de claves. Explica los distintos datos que nos muestra. ¿Cómo deberías haber generado las claves para indicar, por ejemplo, que tenga un 1 mes de validez?</strong></p>
-<p>Listo las claves publicas</p>
-<p><img src="./../images/SAD/cripto I/1-2.png" alt="image"></p>
-<p>Para hacer que tenga un mes de validacion haremos lo siguiente:</p>
-<p><img src="./../images/SAD/cripto I/1-2.1.png" alt="image"></p>
-<p>Para poner un mes de validacion escribiremos cuando nos lo pida &quot;1M&quot; de 1 mes</p>
-<p><font color="#00ff00"><strong>3.</strong></font> <strong>Lista las claves privadas de tu almacén de claves.</strong></p>
-<p>Listo claves privadas</p>
-<p><img src="./../images/SAD/cripto I/1-3.png" alt="image"></p>
-<h3 id="tarea-2-importar-exportar-clave-publica"> Tarea 2: Importar / exportar clave pública</h3>
-<p><font color="#00ff00"><strong>1.</strong></font> <strong>Exporta tu clave pública en formato ASCII y guardalo en un archivo nombre_apellido.asc y envíalo al compañero con el que vas a hacer esta práctica.</strong></p>
-<p>Exporto la clave con el siguiente comando:</p>
-<div><pre><code>gpg --export -a &quot;oscar lucas leo&quot; &gt; oscar_lucas.asc
-</code></pre>
-</div><p>Y le envio a Angel el fichero oscar_lucas.asc</p>
-<p><font color="#00ff00"><strong>2.</strong></font> <strong>Importa las claves públicas recibidas de vuestro compañero.</strong></p>
-<p>Importo la clave que me ha mandado Angel</p>
-<p><img src="./../images/SAD/cripto I/2-2.png" alt="image"></p>
-<p><font color="#00ff00"><strong>3.</strong></font> <strong>Comprueba que las claves se han incluido correctamente en vuestro keyring.</strong>
-<img src="./../images/SAD/cripto I/2-3.png" alt="image"></p>
-<h3 id="tarea-3-cifrado-asimetrico-con-claves-publicas"> Tarea 3: Cifrado asimétrico con claves públicas</h3>
-<p><font color="#00ff00"><strong>1.</strong></font> <strong>Cifraremos un archivo cualquiera y lo remitiremos por email a uno de nuestros compañeros que nos proporcionó su clave pública.</strong></p>
-<p><img src="./../images/SAD/cripto I/3-1.png" alt="image"></p>
-<p><font color="#00ff00"><strong>2.</strong></font> <strong>Nuestro compañero, a su vez, nos remitirá un archivo cifrado para que nosotros lo descifremos.</strong></p>
-<p>Le envio el archivo cifrado_olucas que he cifrado antes</p>
-<p><font color="#00ff00"><strong>3.</strong></font> <strong>Tanto nosotros como nuestro compañero comprobaremos que hemos podido descifrar los mensajes recibidos respectivamente.</strong></p>
-<p><img src="./../images/SAD/cripto I/3-3.png" alt="image"></p>
-<p><font color="#00ff00"><strong>4.</strong></font> <strong>Por último, enviaremos el documento cifrado a alguien que no estaba en la lista de destinatarios y comprobaremos que este usuario no podrá descifrar este archivo.</strong></p>
-<p>El archivo se lo he pasado a Paco y como podemos ver el no tiene acceso para poder descifrarlo</p>
-<p><img src="./../images/SAD/cripto I/3-4.jpeg" alt="image"></p>
-<p><font color="#00ff00"><strong>5.</strong></font> <strong>Para terminar, indica los comandos necesarios para borrar las claves públicas y privadas que posees.</strong></p>
-<p>Comando para borrar clave publica:</p>
-<div><pre><code>gpg --delete-key &quot;Nombre de Usuario&quot;
-</code></pre>
-</div><p>Comando para borrar clave privada:</p>
-<div><pre><code>gpg --delete-secret-key &quot;Nombre de Usuario&quot;
-</code></pre>
-</div><h3 id="tarea-4-exportar-clave-a-un-servidor-publico-de-claves-pgp"> Tarea 4: Exportar clave a un servidor público de claves PGP</h3>
-<p><font color="#00ff00"><strong>1.</strong></font> <strong>Genera la clave de revocación de tu clave pública para utilizarla en caso de que haya problemas.</strong></p>
-<p><img src="./../images/SAD/cripto I/4-1.png" alt="image"></p>
-<p><font color="#00ff00"><strong>2.</strong></font> <strong>Exporta tu clave pública al servidor pgp.rediris.es</strong></p>
-<p>Tanto Angel como yo hemos probado exportar la clave en &quot;pgp.rediris.es&quot; pero no iba y hemos decido hacerla en &quot;keyserver.ubuntu.com&quot;</p>
-<p><img src="./../images/SAD/cripto I/4-2.png" alt="image"></p>
-<p><font color="#00ff00"><strong>3.</strong></font> <strong>Borra la clave pública de alguno de tus compañeros de clase e impórtala ahora del servidor público de rediris.</strong></p>
-<p>Borro la clave de Angel</p>
-<p><img src="./../images/SAD/cripto I/4-3.png" alt="image"></p>
-<p>Y la vuelvo a importar ahora a traves del servidor publico.</p>
-<p><img src="./../images/SAD/cripto I/4-3.1.png" alt="image"></p>
-<h3 id="tarea-5-cifrado-asimetrico-con-openssl"> Tarea 5: Cifrado asimétrico con openssl</h3>
-<p><font color="#00ff00"><strong>1.</strong></font> <strong>Genera un par de claves (pública y privada).</strong></p>
-<p><img src="./../images/SAD/cripto I/5-1.png" alt="image"></p>
-<p><font color="#00ff00"><strong>2.</strong></font> <strong>Envía tu clave pública a un compañero.</strong></p>
-<p>Guardo la clave en un archivo con el siguiente comando:</p>
-<div><pre><code>sudo openssl rsa -in key.pem -pubout -out key.publica.pem
-</code></pre>
-</div><p><img src="./../images/SAD/cripto I/5-2.png" alt="image"></p>
-<p>Y el fichero &quot;key.publica.pem&quot; se la envio a Angel</p>
-<p><font color="#00ff00"><strong>3.</strong></font> <strong>Utilizando la clave pública cifra un fichero de texto y envíalo a tu compañero.</strong></p>
-<p>Cifro un archivo de texto con el siguiente comando:</p>
-<div><pre><code>openssl rsautl -encrypt -in cifrado_olucas -out cifrado_olucas.enc -inkey ~/Descargas/publicaopenssl.pem -pubin
-</code></pre>
-</div><p><img src="./../images/SAD/cripto I/5-3.png" alt="image"></p>
-<p>Y se la envio a Angel</p>
-<p><font color="#00ff00"><strong>4.</strong></font> <strong>Tu compañero te ha mandado un fichero cifrado, muestra el proceso para el descifrado.</strong></p>
-<p>Angel me ha mandado su archivo llamado &quot;CifradoOSSasp.enc&quot; y lo desencripto con el siguiente comando:</p>
-<div><pre><code>sudo openssl rsautl -decrypt -in Descargas/CifradoOSSasp.enc -out cifrado.txt -inkey key.pem
-</code></pre>
-</div><p>Y despues ejecutare el comando &quot;cat&quot; para ver el interior del fichero.</p>
-<p><img src="./../images/SAD/cripto I/5-4.png" alt="image"></p>
-]]></content>
-    <author>
-      <name>Óscar Lucas</name>
-    </author>
-    <category term="practicas" scheme=""/>
-    <contributor>
-      <name>Óscar Lucas</name>
-    </contributor>
-    <published>2023-01-19T12:13:11.000Z</published>
-    <rights>Copyright by Óscar Lucas</rights>
-  </entry>
-  <entry>
     <title type="html">Criptografía II: Integridad, firmas y autenticación</title>
     <id>https://github.com/oscarlucas22/practicas/criptografia2/</id>
     <link href="https://github.com/oscarlucas22/practicas/criptografia2/"/>
@@ -444,6 +352,98 @@ De manera que tendremos que verificar la firma con el uso de la opcion '--verify
 <p>Para solucionar este problema tendriamos que borrar la linea correspondiente a dicho host en el fichero ~/.ssh/known_hosts. Normalmente, en el propio mensaje de advertencia te dice explicitamente el comando a ejecutar para borrar dicha linea.</p>
 <p><font color="#00ff00"><strong>6.</strong></font> <strong>¿Qué guardamos y para qué sirve el fichero en el servidor ~/.ssh/authorized_keys?</strong></p>
 <p>En el guardaremos nuestra clave publica para asi poder acceder al servidor por medio de nuestra clave privada</p>
+]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
+    <category term="practicas" scheme=""/>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <published>2023-01-19T12:13:11.000Z</published>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
+    <title type="html">Criptografía I: Cifrado asímetrico</title>
+    <id>https://github.com/oscarlucas22/practicas/criptografia1/</id>
+    <link href="https://github.com/oscarlucas22/practicas/criptografia1/"/>
+    <updated>2023-01-19T12:13:11.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="criptografia-i-cifrado-asimetrico"> Criptografía I: Cifrado asímetrico</h1>
+<h3 id="tarea-1-generacion-de-claves"> Tarea 1: Generación de claves</h3>
+<p><font color="#00ff00"><strong>1.</strong></font> <strong>Genera un par de claves (pública y privada). ¿En que directorio se guarda las claves de un usuario?</strong></p>
+<p>Las claves las generamos con el siguiente comando:</p>
+<div><pre><code>gpg --gen-key
+</code></pre>
+</div><p>Y se guardan en el directorio <code>/home/usuario/.gnupg/</code></p>
+<p><font color="#00ff00"><strong>2.</strong></font> <strong>Lista las claves públicas que tienes en tu almacén de claves. Explica los distintos datos que nos muestra. ¿Cómo deberías haber generado las claves para indicar, por ejemplo, que tenga un 1 mes de validez?</strong></p>
+<p>Listo las claves publicas</p>
+<p><img src="./../images/SAD/cripto I/1-2.png" alt="image"></p>
+<p>Para hacer que tenga un mes de validacion haremos lo siguiente:</p>
+<p><img src="./../images/SAD/cripto I/1-2.1.png" alt="image"></p>
+<p>Para poner un mes de validacion escribiremos cuando nos lo pida &quot;1M&quot; de 1 mes</p>
+<p><font color="#00ff00"><strong>3.</strong></font> <strong>Lista las claves privadas de tu almacén de claves.</strong></p>
+<p>Listo claves privadas</p>
+<p><img src="./../images/SAD/cripto I/1-3.png" alt="image"></p>
+<h3 id="tarea-2-importar-exportar-clave-publica"> Tarea 2: Importar / exportar clave pública</h3>
+<p><font color="#00ff00"><strong>1.</strong></font> <strong>Exporta tu clave pública en formato ASCII y guardalo en un archivo nombre_apellido.asc y envíalo al compañero con el que vas a hacer esta práctica.</strong></p>
+<p>Exporto la clave con el siguiente comando:</p>
+<div><pre><code>gpg --export -a &quot;oscar lucas leo&quot; &gt; oscar_lucas.asc
+</code></pre>
+</div><p>Y le envio a Angel el fichero oscar_lucas.asc</p>
+<p><font color="#00ff00"><strong>2.</strong></font> <strong>Importa las claves públicas recibidas de vuestro compañero.</strong></p>
+<p>Importo la clave que me ha mandado Angel</p>
+<p><img src="./../images/SAD/cripto I/2-2.png" alt="image"></p>
+<p><font color="#00ff00"><strong>3.</strong></font> <strong>Comprueba que las claves se han incluido correctamente en vuestro keyring.</strong>
+<img src="./../images/SAD/cripto I/2-3.png" alt="image"></p>
+<h3 id="tarea-3-cifrado-asimetrico-con-claves-publicas"> Tarea 3: Cifrado asimétrico con claves públicas</h3>
+<p><font color="#00ff00"><strong>1.</strong></font> <strong>Cifraremos un archivo cualquiera y lo remitiremos por email a uno de nuestros compañeros que nos proporcionó su clave pública.</strong></p>
+<p><img src="./../images/SAD/cripto I/3-1.png" alt="image"></p>
+<p><font color="#00ff00"><strong>2.</strong></font> <strong>Nuestro compañero, a su vez, nos remitirá un archivo cifrado para que nosotros lo descifremos.</strong></p>
+<p>Le envio el archivo cifrado_olucas que he cifrado antes</p>
+<p><font color="#00ff00"><strong>3.</strong></font> <strong>Tanto nosotros como nuestro compañero comprobaremos que hemos podido descifrar los mensajes recibidos respectivamente.</strong></p>
+<p><img src="./../images/SAD/cripto I/3-3.png" alt="image"></p>
+<p><font color="#00ff00"><strong>4.</strong></font> <strong>Por último, enviaremos el documento cifrado a alguien que no estaba en la lista de destinatarios y comprobaremos que este usuario no podrá descifrar este archivo.</strong></p>
+<p>El archivo se lo he pasado a Paco y como podemos ver el no tiene acceso para poder descifrarlo</p>
+<p><img src="./../images/SAD/cripto I/3-4.jpeg" alt="image"></p>
+<p><font color="#00ff00"><strong>5.</strong></font> <strong>Para terminar, indica los comandos necesarios para borrar las claves públicas y privadas que posees.</strong></p>
+<p>Comando para borrar clave publica:</p>
+<div><pre><code>gpg --delete-key &quot;Nombre de Usuario&quot;
+</code></pre>
+</div><p>Comando para borrar clave privada:</p>
+<div><pre><code>gpg --delete-secret-key &quot;Nombre de Usuario&quot;
+</code></pre>
+</div><h3 id="tarea-4-exportar-clave-a-un-servidor-publico-de-claves-pgp"> Tarea 4: Exportar clave a un servidor público de claves PGP</h3>
+<p><font color="#00ff00"><strong>1.</strong></font> <strong>Genera la clave de revocación de tu clave pública para utilizarla en caso de que haya problemas.</strong></p>
+<p><img src="./../images/SAD/cripto I/4-1.png" alt="image"></p>
+<p><font color="#00ff00"><strong>2.</strong></font> <strong>Exporta tu clave pública al servidor pgp.rediris.es</strong></p>
+<p>Tanto Angel como yo hemos probado exportar la clave en &quot;pgp.rediris.es&quot; pero no iba y hemos decido hacerla en &quot;keyserver.ubuntu.com&quot;</p>
+<p><img src="./../images/SAD/cripto I/4-2.png" alt="image"></p>
+<p><font color="#00ff00"><strong>3.</strong></font> <strong>Borra la clave pública de alguno de tus compañeros de clase e impórtala ahora del servidor público de rediris.</strong></p>
+<p>Borro la clave de Angel</p>
+<p><img src="./../images/SAD/cripto I/4-3.png" alt="image"></p>
+<p>Y la vuelvo a importar ahora a traves del servidor publico.</p>
+<p><img src="./../images/SAD/cripto I/4-3.1.png" alt="image"></p>
+<h3 id="tarea-5-cifrado-asimetrico-con-openssl"> Tarea 5: Cifrado asimétrico con openssl</h3>
+<p><font color="#00ff00"><strong>1.</strong></font> <strong>Genera un par de claves (pública y privada).</strong></p>
+<p><img src="./../images/SAD/cripto I/5-1.png" alt="image"></p>
+<p><font color="#00ff00"><strong>2.</strong></font> <strong>Envía tu clave pública a un compañero.</strong></p>
+<p>Guardo la clave en un archivo con el siguiente comando:</p>
+<div><pre><code>sudo openssl rsa -in key.pem -pubout -out key.publica.pem
+</code></pre>
+</div><p><img src="./../images/SAD/cripto I/5-2.png" alt="image"></p>
+<p>Y el fichero &quot;key.publica.pem&quot; se la envio a Angel</p>
+<p><font color="#00ff00"><strong>3.</strong></font> <strong>Utilizando la clave pública cifra un fichero de texto y envíalo a tu compañero.</strong></p>
+<p>Cifro un archivo de texto con el siguiente comando:</p>
+<div><pre><code>openssl rsautl -encrypt -in cifrado_olucas -out cifrado_olucas.enc -inkey ~/Descargas/publicaopenssl.pem -pubin
+</code></pre>
+</div><p><img src="./../images/SAD/cripto I/5-3.png" alt="image"></p>
+<p>Y se la envio a Angel</p>
+<p><font color="#00ff00"><strong>4.</strong></font> <strong>Tu compañero te ha mandado un fichero cifrado, muestra el proceso para el descifrado.</strong></p>
+<p>Angel me ha mandado su archivo llamado &quot;CifradoOSSasp.enc&quot; y lo desencripto con el siguiente comando:</p>
+<div><pre><code>sudo openssl rsautl -decrypt -in Descargas/CifradoOSSasp.enc -out cifrado.txt -inkey key.pem
+</code></pre>
+</div><p>Y despues ejecutare el comando &quot;cat&quot; para ver el interior del fichero.</p>
+<p><img src="./../images/SAD/cripto I/5-4.png" alt="image"></p>
 ]]></content>
     <author>
       <name>Óscar Lucas</name>
@@ -837,6 +837,131 @@ en /etc/nginx/sites-enabled.</p>
     <author>
       <name>Óscar Lucas</name>
     </author>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <published>2023-01-19T12:13:11.000Z</published>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
+    <title type="html">Despliegue de aplicaciones Java</title>
+    <id>https://github.com/oscarlucas22/practicas/java/</id>
+    <link href="https://github.com/oscarlucas22/practicas/java/"/>
+    <updated>2023-01-19T12:13:11.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="despliegue-de-aplicaciones-java"> Despliegue de aplicaciones Java</h1>
+<p>Información de la <a href="https://fp.josedomingo.org/iaw2223/5_java/practica.html" target="_blank" rel="noopener noreferrer">Practica<i>Content not supported</i></a></p>
+<h3 id="tarea-1-desarrollo-y-despliegue-de-una-aplicacion-java-simple"> Tarea 1: Desarrollo y despliegue de una aplicación Java simple</h3>
+<p><font color="#FFA500"><strong>Paso 1</strong></font> <strong>Clonamos el <a href="https://github.com/josedom24/rock-paper-scissors" target="_blank" rel="noopener noreferrer">repositorio<i>Content not supported</i></a></strong></p>
+<p>Instalamos git si no lo tenemos:</p>
+<div><pre><code>apt install git
+</code></pre>
+</div><p>Y clonamos el repositorio:</p>
+<div><pre><code>git clone https://github.com/josedom24/rock-paper-scissors.git
+</code></pre>
+</div><p>Nota: Para seguir el siguiente paso debes de hacer este <a href="https://fp.josedomingo.org/iaw2223/5_java/t1.html" target="_blank" rel="noopener noreferrer">Taller<i>Content not supported</i></a></p>
+<p><font color="#FFA500"><strong>Paso 2</strong></font></p>
+<p>Entraremos dentro de la carpeta que se nos ha creado y ejecutaremos el siguiente comando:</p>
+<div><pre><code>mvn package
+</code></pre>
+</div><p><font color="#FFA500"><strong>Paso 3</strong></font> <strong>Nos pasamos el fichero .war</strong></p>
+<p>Nos pasaremos por <code>scp</code> a nuestra maquina local el archivo .war que estara dentro de la nueva carpeta que nos ha creado</p>
+<p><font color="#FFA500"><strong>Paso 4</strong></font> <strong>Buscaremos la en la web</strong></p>
+<div><pre><code>`Ip-de-la-maquina:8080/manager/html`
+</code></pre>
+</div><p><font color="#FFA500"><strong>Paso 5</strong></font> <strong>Desplegamos la aplicación</strong></p>
+<p>Le introduciremos nuestro usuario y password y pincharemos en <em>examinar</em> introduciremos nuestro .war y le daremos a <em>desplegar</em> y nos saldra ya habilitada nuestra pagina.</p>
+<p><img src="./../images/IAW/java/1-java.png" alt="image"></p>
+<p><img src="./../images/IAW/java/2-java.png" alt="image"></p>
+<h3 id="tarea-2-despliegue-de-un-cms-java"> Tarea 2: Despliegue de un CMS Java</h3>
+<p><font color="#FFA500"><strong>Paso 1</strong></font> <strong>Descargar el fichero .war</strong></p>
+<p><a href="https://cloud.josedomingo.org/index.php/s/cwMj6NAZ4fNMoRA" target="_blank" rel="noopener noreferrer">Fichero .war<i>Content not supported</i></a></p>
+<p><font color="#FFA500"><strong>Paso 2</strong></font> <strong>Creamos un usuario en MySQL</strong></p>
+<p>Instalamos MySQL si no lo tenemos:</p>
+<div><pre><code>sudo apt install mariadb-server -y
+</code></pre>
+</div><p>Creamos un usuario:</p>
+<div><pre><code>create user olucas_java;
+</code></pre>
+</div><hr>
+<div><pre><code>grant all privileges on *.* to 'olucas_java'@'%' identified by 'root' with grant option;
+</code></pre>
+</div><hr>
+<div><pre><code>flush privileges;
+</code></pre>
+</div><p><font color="#FFA500"><strong>Paso 3</strong></font> <strong>Accedemos a la aplicación para configurarla</strong></p>
+<p>Pinchamos en la aplicación:</p>
+<p>![image]../images/IAW/java/2-java.png</p>
+<p>Ponemos a continuación de la URL <code>/setup</code> y nos aparecera lo siguiente:</p>
+<p><img src="./../images/IAW/java/3-java.png" alt="image"></p>
+<p><img src="./../images/IAW/java/4-java.png" alt="image"></p>
+<p>En la siguiente ventana pondremos el usuarios y la contraseña que hemos creado en MySQL</p>
+<p><img src="./../images/IAW/java/5-java.png" alt="image"></p>
+<p><img src="./../images/IAW/java/6-java.png" alt="image"></p>
+<p><img src="./../images/IAW/java/7-java.png" alt="image"></p>
+<p><font color="#FFA500"><strong>Paso 4</strong></font> <strong>Modificación en la aplicación</strong></p>
+<p>Despúes de que acabe la instalación haremos alguna modificación en la página entrando en la URL <code>Ip-maquina:8080/opencms/overview/</code></p>
+<p>Primero nos tendremos que loguear en la página con el usuario <code>Admin</code> y la contraseña <code>admin</code></p>
+<p>Editaremos por ejemplo el cuadro rojo, y cambiaremos <code>Documentación</code> por nuestro nombre mismo, para ello le daremos al lapiz para editar que aparece en la esquina superior derecha del cuadro rojo.</p>
+<p><img src="./../images/IAW/java/8-java.png" alt="image"></p>
+<p>Y le daremos a publicar que aparece en la esquina superior izquierda de la página:</p>
+<p><img src="./../images/IAW/java/9-java.png" alt="image"></p>
+<h3 id="tarea-3-acceso-a-las-aplicaciones"> Tarea 3: Acceso a las aplicaciones</h3>
+<p>Habilitaremos un virtual host (en mi caso en nginx), si no tenemos instalado nginx lo instalaremos:</p>
+<div><pre><code>apt install nginx
+</code></pre>
+</div><p>Creamos el VirtualHost:</p>
+<div><pre><code>sudo nano /etc/nginx/site-available/java.conf
+</code></pre>
+</div><hr>
+<div><pre><code>server {
+    listen 80;
+    listen [::]:80;
+
+    index index.html index.htm index.nginx-debian.html;
+
+    server_name java.olucas.org;
+
+    location / {
+        return 301 http://$host/opencms/;
+    }
+
+    location /game{
+                proxy_pass http://localhost:8080/roshambo/;
+                include proxy_params;
+    }	
+
+    location /opencms/{
+        proxy_pass http://localhost:8080;
+        include proxy_params;	
+    }
+
+}
+</code></pre>
+</div><p>Habilitaremos nuestro virtual host</p>
+<div><pre><code>cd /etc/nginx/site-enabled
+</code></pre>
+</div><hr>
+<div><pre><code>sudo ln -s ../site-available/java.conf
+</code></pre>
+</div><p>Y reiniciamos nginx</p>
+<div><pre><code>sudo systemctl restart nginx
+</code></pre>
+</div><p>Pondremo en el <code>/etc/hosts</code> de nuestra maquina lo siguiente:</p>
+<div><pre><code>Ip-maquina  java.tunombre.org
+</code></pre>
+</div><p>Cambiamos los permisos del directorio opencms situado en <code>/var/lib/tomcat9/webapps</code>:</p>
+<div><pre><code>sudo chmod 750 opencms
+</code></pre>
+</div><p>Y ya tendiamos funcionando nuestra aplicación:</p>
+<p>Aplicación Piedra, Papel o Tijeras:</p>
+<p><img src="./../images/IAW/java/10-java.png" alt="image"></p>
+<p>Aplicación Opencms:</p>
+<p><img src="./../images/IAW/java/11-java.png" alt="image"></p>
+]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
+    <category term="practicas" scheme=""/>
     <contributor>
       <name>Óscar Lucas</name>
     </contributor>
@@ -1367,119 +1492,191 @@ snap install core; sudo snap refresh core
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
-    <title type="html">Despliegue de aplicaciones Java</title>
-    <id>https://github.com/oscarlucas22/practicas/java/</id>
-    <link href="https://github.com/oscarlucas22/practicas/java/"/>
+    <title type="html">Compilación de un programa en C utilizando un Makefile</title>
+    <id>https://github.com/oscarlucas22/practicas/makefile/</id>
+    <link href="https://github.com/oscarlucas22/practicas/makefile/"/>
     <updated>2023-01-19T12:13:11.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="despliegue-de-aplicaciones-java"> Despliegue de aplicaciones Java</h1>
-<p>Información de la <a href="https://fp.josedomingo.org/iaw2223/5_java/practica.html" target="_blank" rel="noopener noreferrer">Practica<i>Content not supported</i></a></p>
-<h3 id="tarea-1-desarrollo-y-despliegue-de-una-aplicacion-java-simple"> Tarea 1: Desarrollo y despliegue de una aplicación Java simple</h3>
-<p><font color="#FFA500"><strong>Paso 1</strong></font> <strong>Clonamos el <a href="https://github.com/josedom24/rock-paper-scissors" target="_blank" rel="noopener noreferrer">repositorio<i>Content not supported</i></a></strong></p>
-<p>Instalamos git si no lo tenemos:</p>
-<div><pre><code>apt install git
+    <content type="html"><![CDATA[<h1 id="compilacion-de-un-programa-en-c-utilizando-un-makefile"> Compilación de un programa en C utilizando un Makefile</h1>
+<p>Aqui dejo la url de la web de <a href="https://packages.debian.org/bullseye/imagination" target="_blank" rel="noopener noreferrer">Debian<i>Content not supported</i></a> donde se encuentra la compilación del paquete imagination.</p>
+<p><font color="#FFFF00"><strong>Paso 1</strong></font> Descarga del código fuente</p>
+<p>Primero instalaremos dpkg-dev</p>
+<div><pre><code>sudo apt install dpkg-dev
 </code></pre>
-</div><p>Y clonamos el repositorio:</p>
-<div><pre><code>git clone https://github.com/josedom24/rock-paper-scissors.git
+</div><p>Despues instalaremos imagination con el comando <code>apt source</code></p>
+<div><pre><code>apt source imagination
 </code></pre>
-</div><p>Nota: Para seguir el siguiente paso debes de hacer este <a href="https://fp.josedomingo.org/iaw2223/5_java/t1.html" target="_blank" rel="noopener noreferrer">Taller<i>Content not supported</i></a></p>
-<p><font color="#FFA500"><strong>Paso 2</strong></font></p>
-<p>Entraremos dentro de la carpeta que se nos ha creado y ejecutaremos el siguiente comando:</p>
-<div><pre><code>mvn package
+</div><p><img src="./../images/ASO/1-ASO.png" alt="image"></p>
+<p><img src="./../images/ASO/2-ASO.png" alt="image"></p>
+<p><font color="#FFFF00"><strong>Paso 2</strong></font> Instalación dependencias</p>
+<p>Para instalar las dependencias utilizaremos el comando <code>apt build-dep</code></p>
+<div><pre><code>sudo apt build-dep imagination
 </code></pre>
-</div><p><font color="#FFA500"><strong>Paso 3</strong></font> <strong>Nos pasamos el fichero .war</strong></p>
-<p>Nos pasaremos por <code>scp</code> a nuestra maquina local el archivo .war que estara dentro de la nueva carpeta que nos ha creado</p>
-<p><font color="#FFA500"><strong>Paso 4</strong></font> <strong>Buscaremos la en la web</strong></p>
-<div><pre><code>`Ip-de-la-maquina:8080/manager/html`
+</div><p><font color="#FFFF00"><strong>Paso 3</strong></font> Compilación del paquete</p>
+<p>Para poder compilar el paquete nos moveremos a la carpeta descomprimida</p>
+<div><pre><code>cd imagination-3.6/
+
+./configure
 </code></pre>
-</div><p><font color="#FFA500"><strong>Paso 5</strong></font> <strong>Desplegamos la aplicación</strong></p>
-<p>Le introduciremos nuestro usuario y password y pincharemos en <em>examinar</em> introduciremos nuestro .war y le daremos a <em>desplegar</em> y nos saldra ya habilitada nuestra pagina.</p>
-<p><img src="./../images/IAW/java/1-java.png" alt="image"></p>
-<p><img src="./../images/IAW/java/2-java.png" alt="image"></p>
-<h3 id="tarea-2-despliegue-de-un-cms-java"> Tarea 2: Despliegue de un CMS Java</h3>
-<p><font color="#FFA500"><strong>Paso 1</strong></font> <strong>Descargar el fichero .war</strong></p>
-<p><a href="https://cloud.josedomingo.org/index.php/s/cwMj6NAZ4fNMoRA" target="_blank" rel="noopener noreferrer">Fichero .war<i>Content not supported</i></a></p>
-<p><font color="#FFA500"><strong>Paso 2</strong></font> <strong>Creamos un usuario en MySQL</strong></p>
-<p>Instalamos MySQL si no lo tenemos:</p>
-<div><pre><code>sudo apt install mariadb-server -y
+</div><p><img src="./../images/ASO/3-ASO.png" alt="image"></p>
+<p><img src="./../images/ASO/4-ASO.png" alt="image"></p>
+<p>Y despues de esto ejecutaremos el comando <code>make</code></p>
+<div><pre><code>make
 </code></pre>
-</div><p>Creamos un usuario:</p>
-<div><pre><code>create user olucas_java;
+</div><p><font color="#FFFF00"><strong>Paso 4</strong></font> Instalación del paquete</p>
+<p>Una vez ya este compilado ejecutaremos:</p>
+<div><pre><code>sudo make install
+</code></pre>
+</div><p>Y con esto ya tendriamos instalado el paquete</p>
+<p><font color="#FFFF00"><strong>Paso 5</strong></font> Desinstalación del paquete</p>
+<p>Para poder desinstalar el paquete debemos ejecutar:</p>
+<div><pre><code>cd imagination-3.6/
+
+sudo make uninstall
+</code></pre>
+</div><p>Y con esto ya estaría desinstalado</p>
+]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
+    <category term="practicas" scheme=""/>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <published>2023-01-19T12:13:11.000Z</published>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
+    <title type="html">MongoDB en Debian 11 Bullseye</title>
+    <id>https://github.com/oscarlucas22/practicas/mongo/</id>
+    <link href="https://github.com/oscarlucas22/practicas/mongo/"/>
+    <updated>2023-01-19T12:13:11.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="mongodb-en-debian-11-bullseye"> MongoDB en Debian 11 Bullseye</h1>
+<p><img src="./../images/ABD/mongodb.png" alt="image"></p>
+<h2 id="instalacion-de-mongodb-en-debian-11-bullseye"> Instalación de MongoDB en Debian 11 Bullseye</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font> Instalar paquetes requeridos</p>
+<div><pre><code>sudo apt install dirmngr gnupg apt-transport-https software-properties-common ca-certificates curl -y
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 2</strong></font> Importar repositorio de MongoDB</p>
+<div><pre><code>sudo wget -O- https://www.mongodb.org/static/pgp/server-5.0.asc | gpg --dearmor | sudo tee /usr/share/keyrings/mongodb.gpg
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 3</strong></font> Agregamos el repositorio</p>
+<div><pre><code>echo 'deb [signed-by=/usr/share/keyrings/mongodb.gpg] http://repo.mongodb.org/apt/debian buster/mongodb-org/5.0 main' | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 4</strong></font> Actualizamos</p>
+<div><pre><code>sudo apt-get update
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 5</strong></font> Instalar MongoDB 5.0</p>
+<div><pre><code>sudo apt install mongodb-org -y
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 6</strong></font> Activamos el servicio de mongodb</p>
+<div><pre><code>sudo systemctl enable mongod --now
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 7</strong></font> Verificamos la versión</p>
+<div><pre><code>mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+</code></pre>
+</div><p><img src="./../images/ABD/1-mongo.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 8</strong></font> Configurar la seguridad de MongoDB</p>
+<div><pre><code>sudo nano /etc/mongod.conf
 </code></pre>
 </div><hr>
-<div><pre><code>grant all privileges on *.* to 'olucas_java'@'%' identified by 'root' with grant option;
+<div><pre><code>security:
+    authorization: enabled
 </code></pre>
-</div><hr>
-<div><pre><code>flush privileges;
+</div><p><img src="./../images/ABD/2-mongo.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 9</strong></font> Reiniciamos servicio</p>
+<div><pre><code>sudo systemctl restart mongod
 </code></pre>
-</div><p><font color="#FFA500"><strong>Paso 3</strong></font> <strong>Accedemos a la aplicación para configurarla</strong></p>
-<p>Pinchamos en la aplicación:</p>
-<p>![image]../images/IAW/java/2-java.png</p>
-<p>Ponemos a continuación de la URL <code>/setup</code> y nos aparecera lo siguiente:</p>
-<p><img src="./../images/IAW/java/3-java.png" alt="image"></p>
-<p><img src="./../images/IAW/java/4-java.png" alt="image"></p>
-<p>En la siguiente ventana pondremos el usuarios y la contraseña que hemos creado en MySQL</p>
-<p><img src="./../images/IAW/java/5-java.png" alt="image"></p>
-<p><img src="./../images/IAW/java/6-java.png" alt="image"></p>
-<p><img src="./../images/IAW/java/7-java.png" alt="image"></p>
-<p><font color="#FFA500"><strong>Paso 4</strong></font> <strong>Modificación en la aplicación</strong></p>
-<p>Despúes de que acabe la instalación haremos alguna modificación en la página entrando en la URL <code>Ip-maquina:8080/opencms/overview/</code></p>
-<p>Primero nos tendremos que loguear en la página con el usuario <code>Admin</code> y la contraseña <code>admin</code></p>
-<p>Editaremos por ejemplo el cuadro rojo, y cambiaremos <code>Documentación</code> por nuestro nombre mismo, para ello le daremos al lapiz para editar que aparece en la esquina superior derecha del cuadro rojo.</p>
-<p><img src="./../images/IAW/java/8-java.png" alt="image"></p>
-<p>Y le daremos a publicar que aparece en la esquina superior izquierda de la página:</p>
-<p><img src="./../images/IAW/java/9-java.png" alt="image"></p>
-<h3 id="tarea-3-acceso-a-las-aplicaciones"> Tarea 3: Acceso a las aplicaciones</h3>
-<p>Habilitaremos un virtual host (en mi caso en nginx), si no tenemos instalado nginx lo instalaremos:</p>
-<div><pre><code>apt install nginx
+</div><h2 id="creacion-de-usuario-administrador"> Creación de usuario administrador</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font> Crear usuario administrador en MongoDB</p>
+<div><pre><code>mongosh
 </code></pre>
-</div><p>Creamos el VirtualHost:</p>
-<div><pre><code>sudo nano /etc/nginx/site-available/java.conf
+</div><p><font color="#800080"><strong>Paso 2</strong></font> Nos conectamos como administrador</p>
+<div><pre><code>use admin
 </code></pre>
-</div><hr>
-<div><pre><code>server {
-    listen 80;
-    listen [::]:80;
-
-    index index.html index.htm index.nginx-debian.html;
-
-    server_name java.olucas.org;
-
-    location / {
-        return 301 http://$host/opencms/;
+</div><p><font color="#800080"><strong>Paso 3</strong></font> Creamos usuario</p>
+<div><pre><code>db.createUser(
+    {
+        user: &quot;lucas&quot;, 
+        pwd: &quot;admin&quot;, 
+        roles: [{ role: &quot;userAdminAnyDatabase&quot;, db: &quot;admin&quot; }, &quot;readWriteAnyDatabase&quot;]
     }
-
-    location /game{
-                proxy_pass http://localhost:8080/roshambo/;
-                include proxy_params;
-    }	
-
-    location /opencms/{
-        proxy_pass http://localhost:8080;
-        include proxy_params;	
-    }
-
-}
+)
 </code></pre>
-</div><p>Habilitaremos nuestro virtual host</p>
-<div><pre><code>cd /etc/nginx/site-enabled
+</div><p><img src="./../images/ABD/3-mongo.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 4</strong></font> Nos conectamos</p>
+<div><pre><code>mongosh -u lucas
 </code></pre>
 </div><hr>
-<div><pre><code>sudo ln -s ../site-available/java.conf
+<h2 id="ayuda-sobre-manejo-en-mongodb"> Ayuda sobre manejo en MongoDB</h2>
+<h3 id="creacion-de-base-de-datos"> Creación de base de datos</h3>
+<div><pre><code>use &lt;nombre-database&gt;
 </code></pre>
-</div><p>Y reiniciamos nginx</p>
-<div><pre><code>sudo systemctl restart nginx
+</div><h3 id="usuario"> Usuario</h3>
+<p><strong>Creacion de usuario</strong></p>
+<div><pre><code>db.createUser(
+    {
+        user: &quot;usuario&quot;, 
+        pwd: &quot;passwd&quot;, 
+        roles: []
+    }
+)
 </code></pre>
-</div><p>Pondremo en el <code>/etc/hosts</code> de nuestra maquina lo siguiente:</p>
-<div><pre><code>Ip-maquina  java.tunombre.org
+</div><p><strong>Borrar usuario</strong></p>
+<p>db.dropUser(&quot;usuario&quot;)</p>
+<h3 id="colecciones"> Colecciones</h3>
+<p><strong>Crear coleccion</strong></p>
+<div><pre><code>db.createCollection(&quot;collection&quot;)
 </code></pre>
-</div><p>Cambiamos los permisos del directorio opencms situado en <code>/var/lib/tomcat9/webapps</code>:</p>
-<div><pre><code>sudo chmod 750 opencms
+</div><p><strong>Insertar valores</strong></p>
+<div><pre><code>db.collection.insertMany([
+{ dato1: &quot;dato&quot;, dato1: &quot;dato&quot; },
+{ dato2: &quot;dato&quot;, dato2: &quot;dato&quot; }
+])
 </code></pre>
-</div><p>Y ya tendiamos funcionando nuestra aplicación:</p>
-<p>Aplicación Piedra, Papel o Tijeras:</p>
-<p><img src="./../images/IAW/java/10-java.png" alt="image"></p>
-<p>Aplicación Opencms:</p>
-<p><img src="./../images/IAW/java/11-java.png" alt="image"></p>
+</div><h3 id="uso-de-privilegios-roles"> Uso de privilegios (Roles)</h3>
+<p><strong>Crear rol</strong></p>
+<p>Ejemplo de privilegio de solo lectura</p>
+<div><pre><code>db.createRole({role: &quot;nombre-role&quot;, privileges:[{resource: {db:&quot;nombre-db&quot;,collection:&quot;nombre-collection&quot;},actions:[&quot;find&quot;]}],roles:[]})
+</code></pre>
+</div><p>Se la asignamos a un usuario</p>
+<div><pre><code>db.grantRolesToUser(&quot;usuario&quot;,[{role:&quot;nombre-role&quot;,db:&quot;nombre-db&quot;}])
+</code></pre>
+</div><hr>
+<p><strong>Listar base de datos</strong></p>
+<div><pre><code>show dbs
+</code></pre>
+</div><p><strong>Verificar la base de datos actual</strong></p>
+<div><pre><code>db
+</code></pre>
+</div><p><strong>Eliminar base de datos</strong></p>
+<p>Hacerlo dentro de la base de datos</p>
+<div><pre><code>db.dropDatabase()
+</code></pre>
+</div><p><strong>Importar json en MongoDB</strong></p>
+<p>Hacerlo fuera de mongo</p>
+<div><pre><code>mongoimport --db NAME_BD --collection NAME_YOUR_COLLECTION --file 'ruta del json'
+</code></pre>
+</div><p><strong>Eliminar json de la base de datos</strong></p>
+<p>Hacerlo dentro de la base de datos donde este el json</p>
+<div><pre><code>db.NAME_COLLECTION.drop()
+</code></pre>
+</div><p><strong>Mostrar la colección</strong></p>
+<div><pre><code>db.nombre-collection.find()
+</code></pre>
+</div><h2 id="acceso-remoto"> Acceso remoto</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font> Editaremos el fichero <code>mongod.conf</code></p>
+<div><pre><code>sudo /etc/mongod.conf
+</code></pre>
+</div><p>Ahí editaremos donde pone <code>bindIp</code> escribiremos la ip del servidor, asi como se muestra en la imagen:</p>
+<p><img src="./../images/ABD/4-mongo.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 2</strong></font> Reiniciamos el servicio para que los cambios se guarden</p>
+<div><pre><code>sudo service mongod restart
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 3</strong></font> Nos iremos a la maquina cliente y nos conectaremos</p>
+<div><pre><code>mongosh -u nombre-user -p password ip-server
+</code></pre>
+</div><p><img src="./../images/ABD/5-mongo.png" alt="image"></p>
+<p>¡Gracias!</p>
 ]]></content>
     <author>
       <name>Óscar Lucas</name>
@@ -1560,48 +1757,175 @@ snap install core; sudo snap refresh core
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
-    <title type="html">Compilación de un programa en C utilizando un Makefile</title>
-    <id>https://github.com/oscarlucas22/practicas/makefile/</id>
-    <link href="https://github.com/oscarlucas22/practicas/makefile/"/>
+    <title type="html">Oracle en Debian 11 Bullseye</title>
+    <id>https://github.com/oscarlucas22/practicas/oracle/</id>
+    <link href="https://github.com/oscarlucas22/practicas/oracle/"/>
     <updated>2023-01-19T12:13:11.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="compilacion-de-un-programa-en-c-utilizando-un-makefile"> Compilación de un programa en C utilizando un Makefile</h1>
-<p>Aqui dejo la url de la web de <a href="https://packages.debian.org/bullseye/imagination" target="_blank" rel="noopener noreferrer">Debian<i>Content not supported</i></a> donde se encuentra la compilación del paquete imagination.</p>
-<p><font color="#FFFF00"><strong>Paso 1</strong></font> Descarga del código fuente</p>
-<p>Primero instalaremos dpkg-dev</p>
-<div><pre><code>sudo apt install dpkg-dev
+    <content type="html"><![CDATA[<h1 id="oracle-en-debian-11-bullseye"> Oracle en Debian 11 Bullseye</h1>
+<p><img src="./../images/ABD/oracle.png" alt="image"></p>
+<h2 id="instalacion-de-oracle-en-debian-11-bullseye"> Instalación de Oracle en Debian 11 Bullseye</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font></p>
+<p>Antes de instalar el paquete, tenemos que configurar algunas cosas. Empezaremos creando el script:</p>
+<div><pre><code>sudo nano /sbin/chkconfig
 </code></pre>
-</div><p>Despues instalaremos imagination con el comando <code>apt source</code></p>
-<div><pre><code>apt source imagination
+</div><p>Y copiamos estas líneas en el archivo:</p>
+<div><pre><code>#!/bin/bash
+# Oracle XE installer chkconfig hack for Ubuntu
+file=/etc/init.d/oracle-xe
+if [[ ! `tail -n1 $file | grep INIT` ]]; then
+echo &gt;&gt; $file
+echo '### BEGIN INIT INFO' &gt;&gt; $file
+echo '# Provides: OracleXE' &gt;&gt; $file
+echo '# Required-Start: $remote_fs $syslog' &gt;&gt; $file
+echo '# Required-Stop: $remote_fs $syslog' &gt;&gt; $file
+echo '# Default-Start: 2 3 4 5' &gt;&gt; $file
+echo '# Default-Stop: 0 1 6' &gt;&gt; $file
+echo '# Short-Description: Oracle 19c Express Edition' &gt;&gt; $file
+echo '### END INIT INFO' &gt;&gt; $file
+fi
+update-rc.d oracle-xe defaults 80 01
 </code></pre>
-</div><p><img src="./../images/ASO/1-ASO.png" alt="image"></p>
-<p><img src="./../images/ASO/2-ASO.png" alt="image"></p>
-<p><font color="#FFFF00"><strong>Paso 2</strong></font> Instalación dependencias</p>
-<p>Para instalar las dependencias utilizaremos el comando <code>apt build-dep</code></p>
-<div><pre><code>sudo apt build-dep imagination
+</div><p><font color="#800080"><strong>Paso 2</strong></font></p>
+<p>Damos los permisos necesarios al archivo:</p>
+<div><pre><code>sudo chmod 755 /sbin/chkconfig
 </code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 3</strong></font> Compilación del paquete</p>
-<p>Para poder compilar el paquete nos moveremos a la carpeta descomprimida</p>
-<div><pre><code>cd imagination-3.6/
-
-./configure
+</div><p><font color="#800080"><strong>Paso 3</strong></font></p>
+<p>Oracle 19c XE requiere de una configuración especial en kernel para funcionar. Por eso necesitamos añadir algunos parámetros al mismo.</p>
+<div><pre><code>sudo nano /etc/sysctl.d/60-oracle.conf
 </code></pre>
-</div><p><img src="./../images/ASO/3-ASO.png" alt="image"></p>
-<p><img src="./../images/ASO/4-ASO.png" alt="image"></p>
-<p>Y despues de esto ejecutaremos el comando <code>make</code></p>
-<div><pre><code>make
+</div><p>Copiamos lo siguiente y guardamos.</p>
+<div><pre><code>fs.file-max=6815744
+net.ipv4.ip_local_port_range=9000 65000
+kernel.sem=250 32000 100 128
+kernel.shmmax=536870912
 </code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 4</strong></font> Instalación del paquete</p>
-<p>Una vez ya este compilado ejecutaremos:</p>
-<div><pre><code>sudo make install
+</div><p><font color="#800080"><strong>Paso 4</strong></font></p>
+<p>Para cargar los parámetros del kernel sin reiniciar:</p>
+<div><pre><code>sudo service procps start
 </code></pre>
-</div><p>Y con esto ya tendriamos instalado el paquete</p>
-<p><font color="#FFFF00"><strong>Paso 5</strong></font> Desinstalación del paquete</p>
-<p>Para poder desinstalar el paquete debemos ejecutar:</p>
-<div><pre><code>cd imagination-3.6/
-
-sudo make uninstall
+</div><p><font color="#800080"><strong>Paso 5</strong></font> <strong>Comienzo de la instalación</strong></p>
+<p>Y ahora sí, instalamos el paquete <a href="https://www.dropbox.com/s/p1vhrnjw73fdc70/oracle-database-ee-19c_1.0-2_amd64.deb?dl=0" target="_blank" rel="noopener noreferrer">.deb<i>Content not supported</i></a>:</p>
+<div><pre><code>sudo dpkg -i oracle-database-ee-19c_1.0-2_amd64.deb
 </code></pre>
-</div><p>Y con esto ya estaría desinstalado</p>
+</div><p>Después de unos 10 minutos el proceso terminará. Ejecutamos el siguiente comando para configurar la contraseña de administrador de la base de datos y demás cosas:</p>
+<div><pre><code>sudo /etc/init.d/oracledb_ORCLCDB-19c configure
+</code></pre>
+</div><p>Veremos que da error. Eso se debe a que en al script de configuración le hace falta un parámetro. Para añadirlo entramos en el script con:</p>
+<div><pre><code>sudo nano /etc/init.d/oracledb_ORCLCDB-19c
+</code></pre>
+</div><p>Y buscamos(Ctrl + W) en la línea donde pone &quot;Configuring&quot;</p>
+<p><img src="./../images/ABD/1-oracle.png" alt="image"></p>
+<p>Borramos la línea que se ve marcada en la imagen y copiamos en su lugar la siguiente:</p>
+<div><pre><code>$SU -s /bin/bash  $ORACLE_OWNER -c &quot;$DBCA -silent -createDatabase -gdbName $ORACLE_SID -templateName $TEMPLATE_NAME -characterSet $CHARSET -createAsContainerDatabase $CREATE_AS_CDB -numberOfPDBs $NUMBER_OF_PDBS -pdbName $PDB_NAME -createListener $LISTENER_NAME:$LISTENER_PORT -datafileDestination $ORACLE_DATA_LOCATION -sid $ORACLE_SID -autoGeneratePasswords -emConfiguration DBEXPRESS -emExpressPort $EM_EXPRESS_PORT -J-Doracle.assistants.dbca.validate.ConfigurationParams=false&quot;
+</code></pre>
+</div><p>Ahora lo intentamos de nuevo:</p>
+<div><pre><code>sudo /etc/init.d/oracledb_ORCLCDB-19c configure
+</code></pre>
+</div><p><code>Nota: Si nos salta un error de netstat tendremos que instalarlo sudo apt install net-tools</code></p>
+<p><code>Nota: Si nos sigue saliendo un error instalaremos lo siguiente sudo apt install libaio1 unixodbc</code></p>
+<p>Si te sale este error:</p>
+<p><img src="./../images/ABD/2-oracle.png" alt="image"></p>
+<p>Sigue estos pasos:</p>
+<div><pre><code>sudo nano /etc/hosts
+</code></pre>
+</div><p>Dentro del fichero escribe tu ip seguido del nombre de tu máquina dos veces, como se muestra en la siguiente imagen:</p>
+<p><img src="./../images/ABD/3-oracle.png" alt="image"></p>
+<p>Y después de esto ejecutaremos de nuevo el comando y ya debería de ir sino reinicia la máquina (<em>sudo reboot</em>) y vuélvelo a probar</p>
+<p><font color="#800080"><strong>Paso 6</strong></font></p>
+<p>Añadimos las variables de entorno a bash:</p>
+<div><pre><code>nano ~/.bashrc
+</code></pre>
+</div><p>Copiamos las siguientes líneas al final del fichero:</p>
+<div><pre><code>export ORACLE_HOME=/opt/oracle/product/19c/dbhome_1
+export ORACLE_SID=ORCLCDB
+export ORACLE_BASE=/opt/oracle
+export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
+export PATH=$ORACLE_HOME/bin:$PATH
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 7</strong></font></p>
+<p>Para finalizar reiniciamos el servicio de Oracle 19c:</p>
+<div><pre><code>sudo service oracledb_ORCLCDB-19c restart
+</code></pre>
+</div><p>Para iniciar Oracle ejecutaremos una serie de pasos:</p>
+<p><strong>Primero pondremos una contraseña</strong></p>
+<div><pre><code>passwd oracle
+</code></pre>
+</div><p><strong>Segundo entrasemos en oracle</strong></p>
+<div><pre><code>su oracle
+</code></pre>
+</div><p>Seguramente te salga un <code>$</code>, si es así eso es que no tienes shell. Para solucionarlo ejecutaremos</p>
+<div><pre><code>sudo usermod -s /bin/bash oracle
+</code></pre>
+</div><p>Y probaremos de nuevo:</p>
+<div><pre><code>su oracle
+</code></pre>
+</div><p>Una vez dentro ya tendras shell y dentro ejecutaremos:</p>
+<div><pre><code>sqlplus / as sysdba
+</code></pre>
+</div><p>Si esto no te va reinicia la maquina <code>sudo reboot</code> y prueba de nuevo</p>
+<p>Bien, una vez echo esto si al iniciar te sale algo asi:</p>
+<p><img src="./../images/ABD/4-oracle.png" alt="image"></p>
+<p>Ejecuta lo siguiente</p>
+<div><pre><code>SQL&gt; shutdown abort
+</code></pre>
+</div><hr>
+<div><pre><code>SQL&gt; startup
+</code></pre>
+</div><p>Y ya estaría sal y entra de nuevo y te deberia salir algo así:</p>
+<p><img src="./../images/ABD/5-oracle.png" alt="image"></p>
+<p>Acto seguido cambiaremos la contraseña del user SYS y SYSTEM</p>
+<div><pre><code>SQL&gt; alter user sys identified by TU_PASSWD;
+</code></pre>
+</div><hr>
+<div><pre><code>SQL&gt; alter user system identified by TU_PASSWD;
+</code></pre>
+</div><h2 id="creacion-de-usuario"> Creación de usuario</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font></p>
+<p>Ejecutamos el siguiente comando para activar _ORACLE_SCRIPT para que se puedan ejecutar sin errores los siguientes comandos:</p>
+<div><pre><code>SQL&gt; alter session set &quot;_ORACLE_SCRIPT&quot;=true;
+</code></pre>
+</div><p>Y luego nos dejara crear el usuario</p>
+<div><pre><code>SQL&gt; create user lucas identified by admin;
+</code></pre>
+</div><p>Si le queremos dar prvilegios ejecutaremos el siguiente comando(en este caso le daremos todos los privilegios):</p>
+<div><pre><code>SQL&gt; grant all privileges to lucas;
+</code></pre>
+</div><p>Una vez hecho esto pasos ya estaria el usuario creato y nos podremos conectar con el siguiente comando:</p>
+<div><pre><code>sqlplus lucas/admin
+</code></pre>
+</div><p><img src="./../images/ABD/6-oracle.png" alt="image"></p>
+<p>Para crear la base de datos y las tablas con sus respectivos inserts aqui os muestro como se hace:</p>
+<p><a href="https://github.com/oscarlucas22/Proyecto-DDL-y-DML_BD/tree/main/Oracle" target="_blank" rel="noopener noreferrer">Como crear base de datos y tablas en Oracle<i>Content not supported</i></a></p>
+<h2 id="cliente-remoto-oracle"> Cliente remoto Oracle</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font> Activaremos listener y habilitaremos el pueto 1521/tcp</p>
+<p>Antes de comenzar tenemos que activar el listener:</p>
+<div><pre><code>lsnrclt start
+</code></pre>
+</div><p>Despues de eso habilitaremos el puerto 1521 del firewall, pero antes si no tenemos instalado firewalld lo instalaremos:</p>
+<div><pre><code>sudo apt install firewalld
+</code></pre>
+</div><p>Y ahora si habilitaremos el puerto 1521:</p>
+<div><pre><code>sudo firewall-cmd --permanent --add-port=1521/tcp
+</code></pre>
+</div><hr>
+<div><pre><code>sudo firewall-cmd --reload
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 2</strong></font> Instalaremos los clientes</p>
+<p>Una vez hecho esto instalaremos los clientes de Oracle</p>
+<ul>
+<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-basic-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">basic<i>Content not supported</i></a></li>
+<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-devel-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">devel<i>Content not supported</i></a></li>
+<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-sqlplus-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">sqlplus<i>Content not supported</i></a></li>
+</ul>
+<p>Una vez descargados los instalaremos en mi caso como lo voy a instalar en un Debian utilizaremos el comando <code>alien</code></p>
+<div><pre><code>sudo alien -i --scripts oracle-instantclient-*
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 3</strong></font> Acceso desde el cliente</p>
+<p>Una vez instalados los clientes ya podremos acceder</p>
+<div><pre><code>sqlplus lucas/admin@ip-server/ORCLCDB
+</code></pre>
+</div><p><img src="./../images/ABD/7-oracle.png" alt="image"></p>
+<p>¡Gracias!</p>
 ]]></content>
     <author>
       <name>Óscar Lucas</name>
@@ -1769,123 +2093,6 @@ Podemos descargar los paquetes del repositorio con programas como wget.</p>
 <div><pre><code>cat /etc/redhat-release
 </code></pre>
 </div>]]></content>
-    <author>
-      <name>Óscar Lucas</name>
-    </author>
-    <category term="practicas" scheme=""/>
-    <contributor>
-      <name>Óscar Lucas</name>
-    </contributor>
-    <published>2023-01-19T12:13:11.000Z</published>
-    <rights>Copyright by Óscar Lucas</rights>
-  </entry>
-  <entry>
-    <title type="html">MongoDB en Debian 11 Bullseye</title>
-    <id>https://github.com/oscarlucas22/practicas/mongo/</id>
-    <link href="https://github.com/oscarlucas22/practicas/mongo/"/>
-    <updated>2023-01-19T12:13:11.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="mongodb-en-debian-11-bullseye"> MongoDB en Debian 11 Bullseye</h1>
-<p><img src="./../images/ABD/mongodb.png" alt="image"></p>
-<h2 id="instalacion-de-mongodb-en-debian-11-bullseye"> Instalación de MongoDB en Debian 11 Bullseye</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font> Instalar paquetes requeridos</p>
-<div><pre><code>sudo apt install dirmngr gnupg apt-transport-https software-properties-common ca-certificates curl -y
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 2</strong></font> Importar repositorio de MongoDB</p>
-<div><pre><code>sudo wget -O- https://www.mongodb.org/static/pgp/server-5.0.asc | gpg --dearmor | sudo tee /usr/share/keyrings/mongodb.gpg
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font> Agregamos el repositorio</p>
-<div><pre><code>echo 'deb [signed-by=/usr/share/keyrings/mongodb.gpg] http://repo.mongodb.org/apt/debian buster/mongodb-org/5.0 main' | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 4</strong></font> Actualizamos</p>
-<div><pre><code>sudo apt-get update
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 5</strong></font> Instalar MongoDB 5.0</p>
-<div><pre><code>sudo apt install mongodb-org -y
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 6</strong></font> Activamos el servicio de mongodb</p>
-<div><pre><code>sudo systemctl enable mongod --now
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 7</strong></font> Verificamos la versión</p>
-<div><pre><code>mongo --eval 'db.runCommand({ connectionStatus: 1 })'
-</code></pre>
-</div><p><img src="./../images/ABD/1-mongo.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 8</strong></font> Configurar la seguridad de MongoDB</p>
-<div><pre><code>sudo nano /etc/mongod.conf
-</code></pre>
-</div><hr>
-<div><pre><code>security:
-    authorization: enabled
-</code></pre>
-</div><p><img src="./../images/ABD/2-mongo.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 9</strong></font> Reiniciamos servicio</p>
-<div><pre><code>sudo systemctl restart mongod
-</code></pre>
-</div><h2 id="creacion-de-usuario"> Creación de usuario</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font> Crear usuario administrador en MongoDB</p>
-<div><pre><code>mongo
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 2</strong></font> Nos conectamos como administrador</p>
-<div><pre><code>use admin
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font> Creamos usuario</p>
-<div><pre><code>db.createUser(
-    {
-        user: &quot;lucas&quot;, 
-        pwd: &quot;admin&quot;, 
-        roles: [ { role: &quot;root&quot;, db: &quot;admin&quot; } ]
-    }
-)
-</code></pre>
-</div><p><img src="./../images/ABD/3-mongo.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 4</strong></font> Nos conectamos</p>
-<div><pre><code>mongo --port 27017 --authenticationDatabase &quot;admin&quot; -u &quot;lucas&quot; -p
-</code></pre>
-</div><p>o también puedes probar con:</p>
-<div><pre><code>mongosh -u lucas
-</code></pre>
-</div><h2 id="creacion-de-base-de-datos"> Creación de base de datos</h2>
-<p><strong>Iniciar MongoDB</strong></p>
-<div><pre><code>mongo
-</code></pre>
-</div><p><strong>Crear y si ya esta creada usar base de datos</strong></p>
-<div><pre><code>use 'NOMBRE_BD'
-</code></pre>
-</div><p><strong>Listar base de datos</strong></p>
-<div><pre><code>show dbs
-</code></pre>
-</div><p><strong>Verificar la base de datos actual</strong></p>
-<div><pre><code>db
-</code></pre>
-</div><p><strong>Eliminar base de datos</strong></p>
-<p>Hacerlo dentro de la base de datos</p>
-<div><pre><code>db.dropDatabase()
-</code></pre>
-</div><p><strong>Importar json en MongoDB</strong></p>
-<p>Hacerlo fuera de mongo</p>
-<div><pre><code>mongoimport --db NAME_BD --collection NAME_YOUR_COLLECTION --file 'ruta del json'
-</code></pre>
-</div><p><strong>Eliminar json de la base de datos</strong></p>
-<p>Hacerlo dentro de la base de datos donde este el json</p>
-<div><pre><code>db.NAME_COLLECTION.drop()
-</code></pre>
-</div><p><strong>Mostrar la colección</strong></p>
-<div><pre><code>db.NAME_COLLECTION.find().pretty
-</code></pre>
-</div><h2 id="acceso-remoto"> Acceso remoto</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font> Editaremos el fichero <code>mongod.conf</code></p>
-<div><pre><code>sudo /etc/mongod.conf
-</code></pre>
-</div><p>Ahí editaremos donde pone <code>bindIp</code> escribiremos la ip del servidor, asi como se muestra en la imagen:</p>
-<p><img src="./../images/ABD/4-mongo.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 2</strong></font> Reiniciamos el servicio para que los cambios se guarden</p>
-<div><pre><code>sudo service mongod restart
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font> Nos iremos a la maquina cliente y nos conectaremos</p>
-<div><pre><code>mongosh -u nombre-user -p password ip-server
-</code></pre>
-</div><p><img src="./../images/ABD/5-mongo.png" alt="image"></p>
-<p>¡Gracias!</p>
-]]></content>
     <author>
       <name>Óscar Lucas</name>
     </author>
@@ -2140,427 +2347,6 @@ down iptables -t nat -D POSTROUTING -s 192.168.0.0/16 -o ens3 -j MASQUERADE
 <p><strong>Cambia la contraseña al usuario root</strong></p>
 </li>
 </ul>
-]]></content>
-    <author>
-      <name>Óscar Lucas</name>
-    </author>
-    <category term="practicas" scheme=""/>
-    <contributor>
-      <name>Óscar Lucas</name>
-    </contributor>
-    <published>2023-01-19T12:13:11.000Z</published>
-    <rights>Copyright by Óscar Lucas</rights>
-  </entry>
-  <entry>
-    <title type="html">Oracle en Debian 11 Bullseye</title>
-    <id>https://github.com/oscarlucas22/practicas/oracle/</id>
-    <link href="https://github.com/oscarlucas22/practicas/oracle/"/>
-    <updated>2023-01-19T12:13:11.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="oracle-en-debian-11-bullseye"> Oracle en Debian 11 Bullseye</h1>
-<p><img src="./../images/ABD/oracle.png" alt="image"></p>
-<h2 id="instalacion-de-oracle-en-debian-11-bullseye"> Instalación de Oracle en Debian 11 Bullseye</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font></p>
-<p>Antes de instalar el paquete, tenemos que configurar algunas cosas. Empezaremos creando el script:</p>
-<div><pre><code>sudo nano /sbin/chkconfig
-</code></pre>
-</div><p>Y copiamos estas líneas en el archivo:</p>
-<div><pre><code>#!/bin/bash
-# Oracle XE installer chkconfig hack for Ubuntu
-file=/etc/init.d/oracle-xe
-if [[ ! `tail -n1 $file | grep INIT` ]]; then
-echo &gt;&gt; $file
-echo '### BEGIN INIT INFO' &gt;&gt; $file
-echo '# Provides: OracleXE' &gt;&gt; $file
-echo '# Required-Start: $remote_fs $syslog' &gt;&gt; $file
-echo '# Required-Stop: $remote_fs $syslog' &gt;&gt; $file
-echo '# Default-Start: 2 3 4 5' &gt;&gt; $file
-echo '# Default-Stop: 0 1 6' &gt;&gt; $file
-echo '# Short-Description: Oracle 19c Express Edition' &gt;&gt; $file
-echo '### END INIT INFO' &gt;&gt; $file
-fi
-update-rc.d oracle-xe defaults 80 01
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 2</strong></font></p>
-<p>Damos los permisos necesarios al archivo:</p>
-<div><pre><code>sudo chmod 755 /sbin/chkconfig
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font></p>
-<p>Oracle 19c XE requiere de una configuración especial en kernel para funcionar. Por eso necesitamos añadir algunos parámetros al mismo.</p>
-<div><pre><code>sudo nano /etc/sysctl.d/60-oracle.conf
-</code></pre>
-</div><p>Copiamos lo siguiente y guardamos.</p>
-<div><pre><code>fs.file-max=6815744
-net.ipv4.ip_local_port_range=9000 65000
-kernel.sem=250 32000 100 128
-kernel.shmmax=536870912
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 4</strong></font></p>
-<p>Para cargar los parámetros del kernel sin reiniciar:</p>
-<div><pre><code>sudo service procps start
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 5</strong></font> <strong>Comienzo de la instalación</strong></p>
-<p>Y ahora sí, instalamos el paquete <a href="https://www.dropbox.com/s/p1vhrnjw73fdc70/oracle-database-ee-19c_1.0-2_amd64.deb?dl=0" target="_blank" rel="noopener noreferrer">.deb<i>Content not supported</i></a>:</p>
-<div><pre><code>sudo dpkg -i oracle-database-ee-19c_1.0-2_amd64.deb
-</code></pre>
-</div><p>Después de unos 10 minutos el proceso terminará. Ejecutamos el siguiente comando para configurar la contraseña de administrador de la base de datos y demás cosas:</p>
-<div><pre><code>sudo /etc/init.d/oracledb_ORCLCDB-19c configure
-</code></pre>
-</div><p>Veremos que da error. Eso se debe a que en al script de configuración le hace falta un parámetro. Para añadirlo entramos en el script con:</p>
-<div><pre><code>sudo nano /etc/init.d/oracledb_ORCLCDB-19c
-</code></pre>
-</div><p>Y buscamos(Ctrl + W) en la línea donde pone &quot;Configuring&quot;</p>
-<p><img src="./../images/ABD/1-oracle.png" alt="image"></p>
-<p>Borramos la línea que se ve marcada en la imagen y copiamos en su lugar la siguiente:</p>
-<div><pre><code>$SU -s /bin/bash  $ORACLE_OWNER -c &quot;$DBCA -silent -createDatabase -gdbName $ORACLE_SID -templateName $TEMPLATE_NAME -characterSet $CHARSET -createAsContainerDatabase $CREATE_AS_CDB -numberOfPDBs $NUMBER_OF_PDBS -pdbName $PDB_NAME -createListener $LISTENER_NAME:$LISTENER_PORT -datafileDestination $ORACLE_DATA_LOCATION -sid $ORACLE_SID -autoGeneratePasswords -emConfiguration DBEXPRESS -emExpressPort $EM_EXPRESS_PORT -J-Doracle.assistants.dbca.validate.ConfigurationParams=false&quot;
-</code></pre>
-</div><p>Ahora lo intentamos de nuevo:</p>
-<div><pre><code>sudo /etc/init.d/oracledb_ORCLCDB-19c configure
-</code></pre>
-</div><p><code>Nota: Si nos salta un error de netstat tendremos que instalarlo sudo apt install net-tools</code></p>
-<p><code>Nota: Si nos sigue saliendo un error instalaremos lo siguiente sudo apt install libaio1 unixodbc</code></p>
-<p>Si te sale este error:</p>
-<p><img src="./../images/ABD/2-oracle.png" alt="image"></p>
-<p>Sigue estos pasos:</p>
-<div><pre><code>sudo nano /etc/hosts
-</code></pre>
-</div><p>Dentro del fichero escribe tu ip seguido del nombre de tu máquina dos veces, como se muestra en la siguiente imagen:</p>
-<p><img src="./../images/ABD/3-oracle.png" alt="image"></p>
-<p>Y después de esto ejecutaremos de nuevo el comando y ya debería de ir sino reinicia la máquina (<em>sudo reboot</em>) y vuélvelo a probar</p>
-<p><font color="#800080"><strong>Paso 6</strong></font></p>
-<p>Añadimos las variables de entorno a bash:</p>
-<div><pre><code>nano ~/.bashrc
-</code></pre>
-</div><p>Copiamos las siguientes líneas al final del fichero:</p>
-<div><pre><code>export ORACLE_HOME=/opt/oracle/product/19c/dbhome_1
-export ORACLE_SID=ORCLCDB
-export ORACLE_BASE=/opt/oracle
-export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
-export PATH=$ORACLE_HOME/bin:$PATH
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 7</strong></font></p>
-<p>Para finalizar reiniciamos el servicio de Oracle 19c:</p>
-<div><pre><code>sudo service oracledb_ORCLCDB-19c restart
-</code></pre>
-</div><p>Para iniciar Oracle ejecutaremos una serie de pasos:</p>
-<p><strong>Primero pondremos una contraseña</strong></p>
-<div><pre><code>passwd oracle
-</code></pre>
-</div><p><strong>Segundo entrasemos en oracle</strong></p>
-<div><pre><code>su oracle
-</code></pre>
-</div><p>Seguramente te salga un <code>$</code>, si es así eso es que no tienes shell. Para solucionarlo ejecutaremos</p>
-<div><pre><code>sudo usermod -s /bin/bash oracle
-</code></pre>
-</div><p>Y probaremos de nuevo:</p>
-<div><pre><code>su oracle
-</code></pre>
-</div><p>Una vez dentro ya tendras shell y dentro ejecutaremos:</p>
-<div><pre><code>sqlplus / as sysdba
-</code></pre>
-</div><p>Si esto no te va reinicia la maquina <code>sudo reboot</code> y prueba de nuevo</p>
-<p>Bien, una vez echo esto si al iniciar te sale algo asi:</p>
-<p><img src="./../images/ABD/4-oracle.png" alt="image"></p>
-<p>Ejecuta lo siguiente</p>
-<div><pre><code>SQL&gt; shutdown abort
-</code></pre>
-</div><hr>
-<div><pre><code>SQL&gt; startup
-</code></pre>
-</div><p>Y ya estaría sal y entra de nuevo y te deberia salir algo así:</p>
-<p><img src="./../images/ABD/5-oracle.png" alt="image"></p>
-<p>Acto seguido cambiaremos la contraseña del user SYS y SYSTEM</p>
-<div><pre><code>SQL&gt; alter user sys identified by TU_PASSWD;
-</code></pre>
-</div><hr>
-<div><pre><code>SQL&gt; alter user system identified by TU_PASSWD;
-</code></pre>
-</div><h2 id="creacion-de-usuario"> Creación de usuario</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font></p>
-<p>Ejecutamos el siguiente comando para activar _ORACLE_SCRIPT para que se puedan ejecutar sin errores los siguientes comandos:</p>
-<div><pre><code>SQL&gt; alter session set &quot;_ORACLE_SCRIPT&quot;=true;
-</code></pre>
-</div><p>Y luego nos dejara crear el usuario</p>
-<div><pre><code>SQL&gt; create user lucas identified by admin;
-</code></pre>
-</div><p>Si le queremos dar prvilegios ejecutaremos el siguiente comando(en este caso le daremos todos los privilegios):</p>
-<div><pre><code>SQL&gt; grant all privileges to lucas;
-</code></pre>
-</div><p>Una vez hecho esto pasos ya estaria el usuario creato y nos podremos conectar con el siguiente comando:</p>
-<div><pre><code>sqlplus lucas/admin
-</code></pre>
-</div><p><img src="./../images/ABD/6-oracle.png" alt="image"></p>
-<p>Para crear la base de datos y las tablas con sus respectivos inserts aqui os muestro como se hace:</p>
-<p><a href="https://github.com/oscarlucas22/Proyecto-DDL-y-DML_BD/tree/main/Oracle" target="_blank" rel="noopener noreferrer">Como crear base de datos y tablas en Oracle<i>Content not supported</i></a></p>
-<h2 id="cliente-remoto-oracle"> Cliente remoto Oracle</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font> Activaremos listener y habilitaremos el pueto 1521/tcp</p>
-<p>Antes de comenzar tenemos que activar el listener:</p>
-<div><pre><code>lsnrclt start
-</code></pre>
-</div><p>Despues de eso habilitaremos el puerto 1521 del firewall, pero antes si no tenemos instalado firewalld lo instalaremos:</p>
-<div><pre><code>sudo apt install firewalld
-</code></pre>
-</div><p>Y ahora si habilitaremos el puerto 1521:</p>
-<div><pre><code>sudo firewall-cmd --permanent --add-port=1521/tcp
-</code></pre>
-</div><hr>
-<div><pre><code>sudo firewall-cmd --reload
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 2</strong></font> Instalaremos los clientes</p>
-<p>Una vez hecho esto instalaremos los clientes de Oracle</p>
-<ul>
-<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-basic-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">basic<i>Content not supported</i></a></li>
-<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-devel-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">devel<i>Content not supported</i></a></li>
-<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-sqlplus-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">sqlplus<i>Content not supported</i></a></li>
-</ul>
-<p>Una vez descargados los instalaremos en mi caso como lo voy a instalar en un Debian utilizaremos el comando <code>alien</code></p>
-<div><pre><code>sudo alien -i --scripts oracle-instantclient-*
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font> Acceso desde el cliente</p>
-<p>Una vez instalados los clientes ya podremos acceder</p>
-<div><pre><code>sqlplus lucas/admin@ip-server/ORCLCDB
-</code></pre>
-</div><p><img src="./../images/ABD/7-oracle.png" alt="image"></p>
-<p>¡Gracias!</p>
-]]></content>
-    <author>
-      <name>Óscar Lucas</name>
-    </author>
-    <category term="practicas" scheme=""/>
-    <contributor>
-      <name>Óscar Lucas</name>
-    </contributor>
-    <published>2023-01-19T12:13:11.000Z</published>
-    <rights>Copyright by Óscar Lucas</rights>
-  </entry>
-  <entry>
-    <title type="html">PostgreSQL en Debian 11 Bullseye</title>
-    <id>https://github.com/oscarlucas22/practicas/postgresql/</id>
-    <link href="https://github.com/oscarlucas22/practicas/postgresql/"/>
-    <updated>2023-01-19T12:13:11.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="postgresql-en-debian-11-bullseye"> PostgreSQL en Debian 11 Bullseye</h1>
-<p><img src="./../images/ABD/postgresql.png" alt="image"></p>
-<h2 id="instalacion-de-postgresql-en-debian-11-bullseye"> Instalación de PostgreSQL en Debian 11 Bullseye</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font> Actualizar el sistema</p>
-<div><pre><code>sudo apt update &amp;&amp; sudo apt upgrade -y
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 2</strong></font> Instalamos postgresql</p>
-<div><pre><code>sudo apt install -y postgresql*
-</code></pre>
-</div><p>Esto tardará un poco</p>
-<p><font color="#800080"><strong>Paso 3</strong></font> Comprobamos el estado del servicio</p>
-<div><pre><code>systemctl status postgresql
-</code></pre>
-</div><p><img src="./../images/ABD/1-postgre.png" alt="image"></p>
-<p>En el caso que no estuviera iniciado lo iniciaremos</p>
-<div><pre><code>systemctl start postgresql
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 4</strong></font> Instalamos el cliente</p>
-<div><pre><code>sudo apt install -y postgresql-client
-</code></pre>
-</div><h3 id="comandos-de-navegacion-y-consulta-de-informacion"> Comandos de navegación y consulta de información</h3>
-<ul>
-<li>
-<p><code>\c</code> Saltar entre bases de datos</p>
-</li>
-<li>
-<p><code>\l</code> Listar base de datos disponibles</p>
-</li>
-<li>
-<p><code>\dt</code> Listar las tablas de la base de datos</p>
-</li>
-<li>
-<p><code>\d &lt;nombre_tabla&gt;</code> Describir una tabla</p>
-</li>
-<li>
-<p><code>\dn</code> Listar los esquemas de la base de datos actual</p>
-</li>
-<li>
-<p><code>\df</code> Listar las funciones disponibles de la base de datos actual</p>
-</li>
-<li>
-<p><code>\dv</code> Listar las vistas de la base de datos actual</p>
-</li>
-<li>
-<p><code>\du</code> Listar los usuarios y sus roles de la base de datos actual</p>
-</li>
-</ul>
-<h3 id="comandos-de-inspeccion-y-ejecucion"> Comandos de inspección y ejecución</h3>
-<ul>
-<li>
-<p><code>\g</code> Volver a ejecutar el comando ejecutando justo antes</p>
-</li>
-<li>
-<p><code>\s</code> Ver el historial de comandos ejecutados</p>
-</li>
-<li>
-<p><code>\s &lt;nombre_archivo&gt;</code> Si se quiere guardar la lista de comandos ejecutados en un archivo de texto plano</p>
-</li>
-<li>
-<p><code>\i &lt;nombre_archivo&gt;</code> Ejecutar los comandos desde un archivo</p>
-</li>
-<li>
-<p><code>\e</code> Permite abrir un editor de texto plano, escribir comandos y ejecutar en lote. \e abre el editor de texto, escribir allí todos los comandos, luego guardar los cambios y cerrar, al cerrar se ejecutarán todos los comandos guardados.</p>
-</li>
-<li>
-<p><code>\ef</code> Equivalente al comando anterior pero permite editar también funciones en PostgreSQL</p>
-</li>
-</ul>
-<h3 id="comandos-para-debug-y-optimizacion"> Comandos para debug y optimización</h3>
-<ul>
-<li><code>\timing</code> Activar <code>/</code> Desactivar el contador de tiempo por consulta</li>
-</ul>
-<h3 id="comandos-para-cerrar-la-consola"> Comandos para cerrar la consola</h3>
-<ul>
-<li><code>\q</code> Cerrar la consola</li>
-</ul>
-<h2 id="creacion-de-usuario"> Creación de usuario</h2>
-<p>Para crear el usuario ingresamos primero a postgres:</p>
-<div><pre><code>sudo -u postgres psql
-</code></pre>
-</div><p><strong>Crearemos el usuario:</strong></p>
-<div><pre><code>CREATE USER lucas PASSWORD 'TU_PASSWORD';
-</code></pre>
-</div><p><strong>Asignar permisos de superusuario a un usuario</strong></p>
-<div><pre><code>ALTER ROLE lucas WITH SUPERUSER;
-</code></pre>
-</div><p><strong>Cambiar la contraseña de un usuario</strong></p>
-<div><pre><code>ALTER ROLE lucas WITH PASSWORD 'NUEVO_PASSWORD';
-</code></pre>
-</div><p><strong>Crear una base de datos con un usuario específico como propietario</strong></p>
-<div><pre><code>CREATE DATABASE lucas_db WITH OWNER lucas;
-</code></pre>
-</div><p><strong>Asignar todos los permisos a un usuario a una base de datos existente</strong></p>
-<div><pre><code>GRANT ALL PRIVILEGES ON DATABASE lucas_db TO lucas;
-</code></pre>
-</div><p>Ejemplo práctico:</p>
-<p><img src="./../images/ABD/23-postgre.png" alt="image"></p>
-<h2 id="borrar-usuario"> Borrar usuario</h2>
-<div><pre><code>su - postgres
-</code></pre>
-</div><p>En el caso que queramos borrar solo el usuario antes debemos revocarle los permisos sobre la base de datos</p>
-<div><pre><code>revoke all on database nombre-db from nombre-user;
-</code></pre>
-</div><hr>
-<div><pre><code>drop user nombre-user;
-</code></pre>
-</div><h2 id="acceso-remoto"> Acceso remoto</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font> Acceso remoto</p>
-<div><pre><code>sudo nano /etc/postgresql/13/main/postgresql.conf
-</code></pre>
-</div><p>Busca la siguiente línea:</p>
-<p><code>#listen_addresses = 'localhost' # what IP address(es) to listen on;</code></p>
-<p>Y sustituye 'localhost' por '*':</p>
-<p><img src="./../images/ABD/2-postgre.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 2</strong></font> Activamos contraseñas de red</p>
-<p>El siguiente paso es configurar el fichero &quot;pg_hba.conf&quot; para permitir el acceso remoto desde cualquier dirección. Para ello ejecuta lo siguiente:</p>
-<div><pre><code>sudo nano /etc/postgresql/13/main/pg_hba.conf
-</code></pre>
-</div><p>Añade al final del fichero las siguientes líneas:</p>
-<div><pre><code>host    all      all              0.0.0.0/0                    md5
-host    all      all              ::/0                         md5
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font> Reiniciamos el servicio</p>
-<div><pre><code>sudo systemctl restart postgresql.service
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 4</strong></font> Añadimos regla de firewall</p>
-<div><pre><code>sudo ufw allow postgresql
-</code></pre>
-</div><hr>
-<p><font color="#800080"><strong>Paso 5</strong></font> Nos conectamos</p>
-<div><pre><code>psql -h ip-server -U nombre-user -p nombre-db
-</code></pre>
-</div><p>Ejemplo:</p>
-<p><img src="./../images/ABD/3-postgre.png" alt="image"></p>
-<h2 id="instalacion-herramienta-de-administracion-web"> Instalación herramienta de administración web</h2>
-<p>En mi caso vamos a instalar la herramienta <code>pgadmin4</code></p>
-<p><font color="#800080"><strong>Paso 1</strong></font> Instala el paquete gnupg2 mediante el comando apt que aparece a continuación</p>
-<div><pre><code>apt install gnupg gnupg2
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 2</strong></font> A continuación, ejecuta el siguiente comando para añadir el repositorio de pgAdmin para el sistema Debian.</p>
-<div><pre><code>echo &quot;deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main&quot;\ | sudo tee /etc/apt/sources.list.d/pgadmin4.list
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font> Añade la clave gpg del repositorio pgAdmin utilizando el siguiente comando</p>
-<div><pre><code>curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 4</strong></font> Refresca y actualiza todos los repositorios utilizando el siguiente comando</p>
-<div><pre><code>sudo apt update
-</code></pre>
-</div><p>Ahora estás listo para instalar pgAdmin en el sistema Debian.</p>
-<h3 id="instalacion-y-configuracion-de-pgadmin4-en-debian-11"> Instalación y configuración de pgAdmin4 en Debian 11</h3>
-<p><font color="#800080"><strong>Paso 1</strong></font> Para instalar pgAdmin en modo servidor, instala el paquete ‘pgadmin4-web’ utilizando el comando apt que aparece a continuación.</p>
-<div><pre><code>apt install pgadmin4-web
-</code></pre>
-</div><p>Escribe <code>y</code> y pulsa <code>Enter</code> para continuar la instalación.</p>
-<p><font color="#800080"><strong>Paso 2</strong></font> Si la instalación se ha completado, ejecuta el siguiente comando para configurar la cuenta de usuario de pgAdmin4 y la configuración del host virtual de apache.</p>
-<div><pre><code>/usr/pgadmin4/bin/setup-web.sh
-</code></pre>
-</div><p>Escribe el correo electrónico y la contraseña del usuario para crear un nuevo usuario pgAdmin, y luego pulsa <code>Enter</code>.</p>
-<p><img src="./../images/ABD/4-postgre.png" alt="image"></p>
-<p>Después, se te pedirá que configures el servidor web Apache, escribe <code>y</code>, y pulsa <code>Enter</code>.</p>
-<p>Ahora la instalación de pgAdmin es accesible en la ruta URL <code>/pgadmin4</code>.</p>
-<p>El script de instalación <code>setup-web.sh</code> creará y activará automáticamente la configuración de apache en el directorio <code>/etc/apache2/conf-enabled</code>. Puedes comprobarlo con el siguiente comando.</p>
-<p>A continuación se muestra la configuración que verás.</p>
-<p><img src="./../images/ABD/5-postgre.png" alt="image"></p>
-<h3 id="verificar-la-instalacion-de-pgadmin"> Verificar la instalación de pgAdmin</h3>
-<p><font color="#800080"><strong>Paso 1</strong></font> Abre tu navegador web y escribe la dirección IP del servidor o el nombre del dominio seguido de la ruta ‘/pgadmin4’ como se indica a continuación.</p>
-<div><pre><code>tu-ip/pgadmin4
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 2</strong></font> Si la instalación se ha realizado correctamente, verás la página de inicio de sesión de pgadmin4 como se indica a continuación.</p>
-<p><img src="./../images/ABD/6-postgre.png" alt="image"></p>
-<p>Escribe tu usuario de acceso y tu correo electrónico, y luego haz clic en el botón <code>Login</code>.</p>
-<p>Ahora verás el panel de control de pgadmin4 como se indica a continuación.</p>
-<p><img src="./../images/ABD/7-postgre.png" alt="image"></p>
-<h3 id="conectar-con-el-servidor-postgresql-con-pgadmin4"> Conectar con el servidor PostgreSQL con pgAdmin4</h3>
-<p>Después de entrar en el tablero de pgAdmin, añadirás una nueva conexión a tu servidor PostgreSQL.</p>
-<p><font color="#800080"><strong>Paso 1</strong></font> En el tablero de pgAdmin, haz clic en el icono <code>Añadir nuevo servidor</code></p>
-<p><font color="#800080"><strong>Paso 2</strong></font> Aparecerá una pequeña ventana emergente.</p>
-<p>En la pestaña <code>General</code>, escribe un nuevo <code>Nombre</code> de tu conexión.</p>
-<p><img src="./../images/ABD/8-postgre.png" alt="image"></p>
-<p>Para esta guía, daremos a la nueva conexión el nombre de <code>local</code>.</p>
-<p><font color="#800080"><strong>Paso 3</strong></font> Pasa a la pestaña <code>Conexión</code> y escribe tus datos de host PostgreSQL, base de datos, usuario y contraseña.</p>
-<p>Para este ejemplo, utilizaremos el servidor PostgreSQL local con el usuario <code>lucas</code> para gestionar una base de datos predeterminada <code>postgres</code>.</p>
-<p><img src="./../images/ABD/9-postgre.png" alt="image"></p>
-<p>Después, haz clic en el botón <code>Guardar</code> para guardar una nueva conexión.</p>
-<p><font color="#800080"><strong>Paso 4</strong></font> Si la conexión se realiza con éxito, verás una página similar a la siguiente. En caso contrario, verás un error</p>
-<p><img src="./../images/ABD/10-postgre.png" alt="image"></p>
-<p>Como puedes ver en la parte inferior de la captura de pantalla, el usuario <code>lucas</code> está conectado a la base de datos <code>postgres</code> con la aplicación <code>pgAdmin4</code>, y el estado de la conexión es <code>activò</code>.</p>
-<h3 id="creacion-de-un-nuevo-usuario-en-pgadmin4"> Creación de un nuevo usuario en pgAdmin4</h3>
-<p>En esta etapa, vas a crear un nuevo usuario de PostgreSQL utilizando la herramienta pgAdmin4.</p>
-<p><font color="#800080"><strong>Paso 1</strong></font> Haz clic con el botón derecho del ratón sobre el nombre de la conexión en el menú <code>local =&gt; Crear =&gt; Rol de inicio de sesión/grupo..</code>.</p>
-<p><img src="./../images/ABD/11-postgre.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 2</strong></font> En la pestaña <code>General</code>, escribe el nuevo usuario que quieres crear. Para este ejemplo, crearás un nuevo usuario <code>prueba</code>.</p>
-<p><img src="./../images/ABD/12-postgre.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 3</strong></font> Pasa a la pestaña <code>Definición</code> y escribe la contraseña de tu usuario.</p>
-<p><img src="./../images/ABD/13-postgre.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 4</strong></font> Ve a la pestaña <strong>«Privilegios»</strong> y activa los privilegios que necesites.</p>
-<p><img src="./../images/ABD/14-postgre.png" alt="image"></p>
-<p>Ahora haz clic en el botón <code>Guardar</code>.</p>
-<p><font color="#800080"><strong>Paso 5</strong></font> Para verificar tu nuevo usuario, haz clic en el menú <code>Roles de inicio de sesión/grupo</code> de la izquierda, y luego haz clic en el <code>prueba</code> que acabas de crear.</p>
-<p><img src="./../images/ABD/15-postgre.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 6</strong></font> Haz clic en la pestaña<code>Propiedades</code> de la página y obtendrás detalles del usuario como en la captura de pantalla superior.</p>
-<h3 id="creacion-de-una-nueva-base-de-datos-en-pgadmin4"> Creación de una nueva base de datos en pgAdmin4</h3>
-<p>En esta etapa, crearás una nueva base de datos desde el panel de control de pgAdmin.</p>
-<p><font color="#800080"><strong>Paso 1</strong></font> Haz clic con el botón derecho del ratón en el menú del nombre de la conexión <code>local =&gt; Crear =&gt; Base de datos..</code>.</p>
-<p><img src="./../images/ABD/16-postgre.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 2</strong></font> En la pestaña <code>General</code>, escribe el nombre de tu nueva base de datos y elige el usuario propietario de la misma. Para este ejemplo, crearás una nueva base de datos <code>pruebadb</code> y harás al usuario <code>prueba</code> como propietario.</p>
-<p><img src="./../images/ABD/17-postgre.png" alt="image"></p>
-<p>Ahora haz clic en el botón <code>Guardar</code>.</p>
-<p><font color="#800080"><strong>Paso 3</strong></font> Para verificar tu nueva base de datos, haz clic en el menú <code>Bases de datos</code> de la izquierda, y luego haz clic en la base de datos <code>pruebadb</code> que acabas de crear.</p>
-<p><img src="./../images/ABD/18-postgre.png" alt="image"></p>
-<p>Haz clic en la pestaña <code>Propiedades</code> de la página y obtendrás los detalles de la base de datos <code>pruebadb</code> como en la captura de pantalla superior.</p>
-<h3 id="verificar-la-conexion-del-usuario"> Verificar la conexión del usuario</h3>
-<p>Después de crear un nuevo usuario y una base de datos utilizando el pgAdmin4, crearás una nueva conexión PostgreSQL en el pgAdmin4 utilizando el usuario <code>prueba</code> y la base de datos <code>pruebadb</code>.</p>
-<p><font color="#800080"><strong>Paso 1</strong></font> Vuelve al panel de control de pgAdmin4 y haz clic en el icono <code>Añadir nuevo servidor</code>.</p>
-<p><img src="./../images/ABD/19-postgre.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 2</strong></font> En la pestaña <code>General</code>, escribe el nombre de la nueva conexión como <code>prueba-connection</code>, como se indica a continuación.</p>
-<p><img src="./../images/ABD/20-postgre.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 3</strong></font> Pasa a la pestaña <code>Conexión</code> y escribe los detalles de la nueva conexión. El host es <code>127.0.0.1</code> con el usuario <code>prueba</code>, y gestionará la base de datos <code>pruebadb</code>, y no olvides escribir la contraseña del usuario <code>prueba</code>.</p>
-<p><img src="./../images/ABD/21-postgre.png" alt="image"></p>
-<p>Ahora haz clic en el botón <code>Guardar</code>.</p>
-<p><font color="#800080"><strong>Paso 4</strong></font> Si tus credenciales de la base de datos son correctas, verás una página similar a la siguiente.</p>
-<p><img src="./../images/ABD/22-postgre.png" alt="image"></p>
-<p>Como puedes ver en la parte inferior de la captura de pantalla, el usuario <code>prueba</code> está conectado a la base de datos <code>pruebadb</code> con la aplicación <code>pgAdmin4</code>, y el estado de la conexión es <code>activo</code>.</p>
-<p>¡Gracias!</p>
 ]]></content>
     <author>
       <name>Óscar Lucas</name>
@@ -2991,6 +2777,246 @@ set ODBCINI=/etc/odbc.ini
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
+    <title type="html">PostgreSQL en Debian 11 Bullseye</title>
+    <id>https://github.com/oscarlucas22/practicas/postgresql/</id>
+    <link href="https://github.com/oscarlucas22/practicas/postgresql/"/>
+    <updated>2023-01-19T12:13:11.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="postgresql-en-debian-11-bullseye"> PostgreSQL en Debian 11 Bullseye</h1>
+<p><img src="./../images/ABD/postgresql.png" alt="image"></p>
+<h2 id="instalacion-de-postgresql-en-debian-11-bullseye"> Instalación de PostgreSQL en Debian 11 Bullseye</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font> Actualizar el sistema</p>
+<div><pre><code>sudo apt update &amp;&amp; sudo apt upgrade -y
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 2</strong></font> Instalamos postgresql</p>
+<div><pre><code>sudo apt install -y postgresql*
+</code></pre>
+</div><p>Esto tardará un poco</p>
+<p><font color="#800080"><strong>Paso 3</strong></font> Comprobamos el estado del servicio</p>
+<div><pre><code>systemctl status postgresql
+</code></pre>
+</div><p><img src="./../images/ABD/1-postgre.png" alt="image"></p>
+<p>En el caso que no estuviera iniciado lo iniciaremos</p>
+<div><pre><code>systemctl start postgresql
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 4</strong></font> Instalamos el cliente</p>
+<div><pre><code>sudo apt install -y postgresql-client
+</code></pre>
+</div><h3 id="comandos-de-navegacion-y-consulta-de-informacion"> Comandos de navegación y consulta de información</h3>
+<ul>
+<li>
+<p><code>\c</code> Saltar entre bases de datos</p>
+</li>
+<li>
+<p><code>\l</code> Listar base de datos disponibles</p>
+</li>
+<li>
+<p><code>\dt</code> Listar las tablas de la base de datos</p>
+</li>
+<li>
+<p><code>\d &lt;nombre_tabla&gt;</code> Describir una tabla</p>
+</li>
+<li>
+<p><code>\dn</code> Listar los esquemas de la base de datos actual</p>
+</li>
+<li>
+<p><code>\df</code> Listar las funciones disponibles de la base de datos actual</p>
+</li>
+<li>
+<p><code>\dv</code> Listar las vistas de la base de datos actual</p>
+</li>
+<li>
+<p><code>\du</code> Listar los usuarios y sus roles de la base de datos actual</p>
+</li>
+</ul>
+<h3 id="comandos-de-inspeccion-y-ejecucion"> Comandos de inspección y ejecución</h3>
+<ul>
+<li>
+<p><code>\g</code> Volver a ejecutar el comando ejecutando justo antes</p>
+</li>
+<li>
+<p><code>\s</code> Ver el historial de comandos ejecutados</p>
+</li>
+<li>
+<p><code>\s &lt;nombre_archivo&gt;</code> Si se quiere guardar la lista de comandos ejecutados en un archivo de texto plano</p>
+</li>
+<li>
+<p><code>\i &lt;nombre_archivo&gt;</code> Ejecutar los comandos desde un archivo</p>
+</li>
+<li>
+<p><code>\e</code> Permite abrir un editor de texto plano, escribir comandos y ejecutar en lote. \e abre el editor de texto, escribir allí todos los comandos, luego guardar los cambios y cerrar, al cerrar se ejecutarán todos los comandos guardados.</p>
+</li>
+<li>
+<p><code>\ef</code> Equivalente al comando anterior pero permite editar también funciones en PostgreSQL</p>
+</li>
+</ul>
+<h3 id="comandos-para-debug-y-optimizacion"> Comandos para debug y optimización</h3>
+<ul>
+<li><code>\timing</code> Activar <code>/</code> Desactivar el contador de tiempo por consulta</li>
+</ul>
+<h3 id="comandos-para-cerrar-la-consola"> Comandos para cerrar la consola</h3>
+<ul>
+<li><code>\q</code> Cerrar la consola</li>
+</ul>
+<h2 id="creacion-de-usuario"> Creación de usuario</h2>
+<p>Para crear el usuario ingresamos primero a postgres:</p>
+<div><pre><code>sudo -u postgres psql
+</code></pre>
+</div><p><strong>Crearemos el usuario:</strong></p>
+<div><pre><code>CREATE USER lucas PASSWORD 'TU_PASSWORD';
+</code></pre>
+</div><p><strong>Asignar permisos de superusuario a un usuario</strong></p>
+<div><pre><code>ALTER ROLE lucas WITH SUPERUSER;
+</code></pre>
+</div><p><strong>Cambiar la contraseña de un usuario</strong></p>
+<div><pre><code>ALTER ROLE lucas WITH PASSWORD 'NUEVO_PASSWORD';
+</code></pre>
+</div><p><strong>Crear una base de datos con un usuario específico como propietario</strong></p>
+<div><pre><code>CREATE DATABASE lucas_db WITH OWNER lucas;
+</code></pre>
+</div><p><strong>Asignar todos los permisos a un usuario a una base de datos existente</strong></p>
+<div><pre><code>GRANT ALL PRIVILEGES ON DATABASE lucas_db TO lucas;
+</code></pre>
+</div><p>Ejemplo práctico:</p>
+<p><img src="./../images/ABD/23-postgre.png" alt="image"></p>
+<h2 id="borrar-usuario"> Borrar usuario</h2>
+<div><pre><code>su - postgres
+</code></pre>
+</div><p>En el caso que queramos borrar solo el usuario antes debemos revocarle los permisos sobre la base de datos</p>
+<div><pre><code>revoke all on database nombre-db from nombre-user;
+</code></pre>
+</div><hr>
+<div><pre><code>drop user nombre-user;
+</code></pre>
+</div><h2 id="acceso-remoto"> Acceso remoto</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font> Acceso remoto</p>
+<div><pre><code>sudo nano /etc/postgresql/13/main/postgresql.conf
+</code></pre>
+</div><p>Busca la siguiente línea:</p>
+<p><code>#listen_addresses = 'localhost' # what IP address(es) to listen on;</code></p>
+<p>Y sustituye 'localhost' por '*':</p>
+<p><img src="./../images/ABD/2-postgre.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 2</strong></font> Activamos contraseñas de red</p>
+<p>El siguiente paso es configurar el fichero &quot;pg_hba.conf&quot; para permitir el acceso remoto desde cualquier dirección. Para ello ejecuta lo siguiente:</p>
+<div><pre><code>sudo nano /etc/postgresql/13/main/pg_hba.conf
+</code></pre>
+</div><p>Añade al final del fichero las siguientes líneas:</p>
+<div><pre><code>host    all      all              0.0.0.0/0                    md5
+host    all      all              ::/0                         md5
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 3</strong></font> Reiniciamos el servicio</p>
+<div><pre><code>sudo systemctl restart postgresql.service
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 4</strong></font> Añadimos regla de firewall</p>
+<div><pre><code>sudo ufw allow postgresql
+</code></pre>
+</div><hr>
+<p><font color="#800080"><strong>Paso 5</strong></font> Nos conectamos</p>
+<div><pre><code>psql -h ip-server -U nombre-user -p nombre-db
+</code></pre>
+</div><p>Ejemplo:</p>
+<p><img src="./../images/ABD/3-postgre.png" alt="image"></p>
+<h2 id="instalacion-herramienta-de-administracion-web"> Instalación herramienta de administración web</h2>
+<p>En mi caso vamos a instalar la herramienta <code>pgadmin4</code></p>
+<p><font color="#800080"><strong>Paso 1</strong></font> Instala el paquete gnupg2 mediante el comando apt que aparece a continuación</p>
+<div><pre><code>apt install gnupg gnupg2
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 2</strong></font> A continuación, ejecuta el siguiente comando para añadir el repositorio de pgAdmin para el sistema Debian.</p>
+<div><pre><code>echo &quot;deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main&quot;\ | sudo tee /etc/apt/sources.list.d/pgadmin4.list
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 3</strong></font> Añade la clave gpg del repositorio pgAdmin utilizando el siguiente comando</p>
+<div><pre><code>curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 4</strong></font> Refresca y actualiza todos los repositorios utilizando el siguiente comando</p>
+<div><pre><code>sudo apt update
+</code></pre>
+</div><p>Ahora estás listo para instalar pgAdmin en el sistema Debian.</p>
+<h3 id="instalacion-y-configuracion-de-pgadmin4-en-debian-11"> Instalación y configuración de pgAdmin4 en Debian 11</h3>
+<p><font color="#800080"><strong>Paso 1</strong></font> Para instalar pgAdmin en modo servidor, instala el paquete ‘pgadmin4-web’ utilizando el comando apt que aparece a continuación.</p>
+<div><pre><code>apt install pgadmin4-web
+</code></pre>
+</div><p>Escribe <code>y</code> y pulsa <code>Enter</code> para continuar la instalación.</p>
+<p><font color="#800080"><strong>Paso 2</strong></font> Si la instalación se ha completado, ejecuta el siguiente comando para configurar la cuenta de usuario de pgAdmin4 y la configuración del host virtual de apache.</p>
+<div><pre><code>/usr/pgadmin4/bin/setup-web.sh
+</code></pre>
+</div><p>Escribe el correo electrónico y la contraseña del usuario para crear un nuevo usuario pgAdmin, y luego pulsa <code>Enter</code>.</p>
+<p><img src="./../images/ABD/4-postgre.png" alt="image"></p>
+<p>Después, se te pedirá que configures el servidor web Apache, escribe <code>y</code>, y pulsa <code>Enter</code>.</p>
+<p>Ahora la instalación de pgAdmin es accesible en la ruta URL <code>/pgadmin4</code>.</p>
+<p>El script de instalación <code>setup-web.sh</code> creará y activará automáticamente la configuración de apache en el directorio <code>/etc/apache2/conf-enabled</code>. Puedes comprobarlo con el siguiente comando.</p>
+<p>A continuación se muestra la configuración que verás.</p>
+<p><img src="./../images/ABD/5-postgre.png" alt="image"></p>
+<h3 id="verificar-la-instalacion-de-pgadmin"> Verificar la instalación de pgAdmin</h3>
+<p><font color="#800080"><strong>Paso 1</strong></font> Abre tu navegador web y escribe la dirección IP del servidor o el nombre del dominio seguido de la ruta ‘/pgadmin4’ como se indica a continuación.</p>
+<div><pre><code>tu-ip/pgadmin4
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 2</strong></font> Si la instalación se ha realizado correctamente, verás la página de inicio de sesión de pgadmin4 como se indica a continuación.</p>
+<p><img src="./../images/ABD/6-postgre.png" alt="image"></p>
+<p>Escribe tu usuario de acceso y tu correo electrónico, y luego haz clic en el botón <code>Login</code>.</p>
+<p>Ahora verás el panel de control de pgadmin4 como se indica a continuación.</p>
+<p><img src="./../images/ABD/7-postgre.png" alt="image"></p>
+<h3 id="conectar-con-el-servidor-postgresql-con-pgadmin4"> Conectar con el servidor PostgreSQL con pgAdmin4</h3>
+<p>Después de entrar en el tablero de pgAdmin, añadirás una nueva conexión a tu servidor PostgreSQL.</p>
+<p><font color="#800080"><strong>Paso 1</strong></font> En el tablero de pgAdmin, haz clic en el icono <code>Añadir nuevo servidor</code></p>
+<p><font color="#800080"><strong>Paso 2</strong></font> Aparecerá una pequeña ventana emergente.</p>
+<p>En la pestaña <code>General</code>, escribe un nuevo <code>Nombre</code> de tu conexión.</p>
+<p><img src="./../images/ABD/8-postgre.png" alt="image"></p>
+<p>Para esta guía, daremos a la nueva conexión el nombre de <code>local</code>.</p>
+<p><font color="#800080"><strong>Paso 3</strong></font> Pasa a la pestaña <code>Conexión</code> y escribe tus datos de host PostgreSQL, base de datos, usuario y contraseña.</p>
+<p>Para este ejemplo, utilizaremos el servidor PostgreSQL local con el usuario <code>lucas</code> para gestionar una base de datos predeterminada <code>postgres</code>.</p>
+<p><img src="./../images/ABD/9-postgre.png" alt="image"></p>
+<p>Después, haz clic en el botón <code>Guardar</code> para guardar una nueva conexión.</p>
+<p><font color="#800080"><strong>Paso 4</strong></font> Si la conexión se realiza con éxito, verás una página similar a la siguiente. En caso contrario, verás un error</p>
+<p><img src="./../images/ABD/10-postgre.png" alt="image"></p>
+<p>Como puedes ver en la parte inferior de la captura de pantalla, el usuario <code>lucas</code> está conectado a la base de datos <code>postgres</code> con la aplicación <code>pgAdmin4</code>, y el estado de la conexión es <code>activò</code>.</p>
+<h3 id="creacion-de-un-nuevo-usuario-en-pgadmin4"> Creación de un nuevo usuario en pgAdmin4</h3>
+<p>En esta etapa, vas a crear un nuevo usuario de PostgreSQL utilizando la herramienta pgAdmin4.</p>
+<p><font color="#800080"><strong>Paso 1</strong></font> Haz clic con el botón derecho del ratón sobre el nombre de la conexión en el menú <code>local =&gt; Crear =&gt; Rol de inicio de sesión/grupo..</code>.</p>
+<p><img src="./../images/ABD/11-postgre.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 2</strong></font> En la pestaña <code>General</code>, escribe el nuevo usuario que quieres crear. Para este ejemplo, crearás un nuevo usuario <code>prueba</code>.</p>
+<p><img src="./../images/ABD/12-postgre.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 3</strong></font> Pasa a la pestaña <code>Definición</code> y escribe la contraseña de tu usuario.</p>
+<p><img src="./../images/ABD/13-postgre.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 4</strong></font> Ve a la pestaña <strong>«Privilegios»</strong> y activa los privilegios que necesites.</p>
+<p><img src="./../images/ABD/14-postgre.png" alt="image"></p>
+<p>Ahora haz clic en el botón <code>Guardar</code>.</p>
+<p><font color="#800080"><strong>Paso 5</strong></font> Para verificar tu nuevo usuario, haz clic en el menú <code>Roles de inicio de sesión/grupo</code> de la izquierda, y luego haz clic en el <code>prueba</code> que acabas de crear.</p>
+<p><img src="./../images/ABD/15-postgre.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 6</strong></font> Haz clic en la pestaña<code>Propiedades</code> de la página y obtendrás detalles del usuario como en la captura de pantalla superior.</p>
+<h3 id="creacion-de-una-nueva-base-de-datos-en-pgadmin4"> Creación de una nueva base de datos en pgAdmin4</h3>
+<p>En esta etapa, crearás una nueva base de datos desde el panel de control de pgAdmin.</p>
+<p><font color="#800080"><strong>Paso 1</strong></font> Haz clic con el botón derecho del ratón en el menú del nombre de la conexión <code>local =&gt; Crear =&gt; Base de datos..</code>.</p>
+<p><img src="./../images/ABD/16-postgre.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 2</strong></font> En la pestaña <code>General</code>, escribe el nombre de tu nueva base de datos y elige el usuario propietario de la misma. Para este ejemplo, crearás una nueva base de datos <code>pruebadb</code> y harás al usuario <code>prueba</code> como propietario.</p>
+<p><img src="./../images/ABD/17-postgre.png" alt="image"></p>
+<p>Ahora haz clic en el botón <code>Guardar</code>.</p>
+<p><font color="#800080"><strong>Paso 3</strong></font> Para verificar tu nueva base de datos, haz clic en el menú <code>Bases de datos</code> de la izquierda, y luego haz clic en la base de datos <code>pruebadb</code> que acabas de crear.</p>
+<p><img src="./../images/ABD/18-postgre.png" alt="image"></p>
+<p>Haz clic en la pestaña <code>Propiedades</code> de la página y obtendrás los detalles de la base de datos <code>pruebadb</code> como en la captura de pantalla superior.</p>
+<h3 id="verificar-la-conexion-del-usuario"> Verificar la conexión del usuario</h3>
+<p>Después de crear un nuevo usuario y una base de datos utilizando el pgAdmin4, crearás una nueva conexión PostgreSQL en el pgAdmin4 utilizando el usuario <code>prueba</code> y la base de datos <code>pruebadb</code>.</p>
+<p><font color="#800080"><strong>Paso 1</strong></font> Vuelve al panel de control de pgAdmin4 y haz clic en el icono <code>Añadir nuevo servidor</code>.</p>
+<p><img src="./../images/ABD/19-postgre.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 2</strong></font> En la pestaña <code>General</code>, escribe el nombre de la nueva conexión como <code>prueba-connection</code>, como se indica a continuación.</p>
+<p><img src="./../images/ABD/20-postgre.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 3</strong></font> Pasa a la pestaña <code>Conexión</code> y escribe los detalles de la nueva conexión. El host es <code>127.0.0.1</code> con el usuario <code>prueba</code>, y gestionará la base de datos <code>pruebadb</code>, y no olvides escribir la contraseña del usuario <code>prueba</code>.</p>
+<p><img src="./../images/ABD/21-postgre.png" alt="image"></p>
+<p>Ahora haz clic en el botón <code>Guardar</code>.</p>
+<p><font color="#800080"><strong>Paso 4</strong></font> Si tus credenciales de la base de datos son correctas, verás una página similar a la siguiente.</p>
+<p><img src="./../images/ABD/22-postgre.png" alt="image"></p>
+<p>Como puedes ver en la parte inferior de la captura de pantalla, el usuario <code>prueba</code> está conectado a la base de datos <code>pruebadb</code> con la aplicación <code>pgAdmin4</code>, y el estado de la conexión es <code>activo</code>.</p>
+<p>¡Gracias!</p>
+]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
+    <category term="practicas" scheme=""/>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <published>2023-01-19T12:13:11.000Z</published>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
     <title type="html">USUARIOS</title>
     <id>https://github.com/oscarlucas22/practicas/usuarios/</id>
     <link href="https://github.com/oscarlucas22/practicas/usuarios/"/>
@@ -3319,52 +3345,53 @@ fetch first 1 row only;
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
-    <title type="html">Alumno 3:</title>
+    <title type="html">Almacenamiento</title>
     <id>https://github.com/oscarlucas22/practicas/almacenamiento/</id>
     <link href="https://github.com/oscarlucas22/practicas/almacenamiento/"/>
-    <updated>2023-02-07T10:08:06.633Z</updated>
-    <content type="html"><![CDATA[<h2 id="alumno-3"> Alumno 3:</h2>
+    <updated>2023-02-16T07:50:06.771Z</updated>
+    <content type="html"><![CDATA[<h1 id="almacenamiento"> Almacenamiento</h1>
+<h2 id="alumno-3"> Alumno 3:</h2>
 <p><em><strong>ORACLE:</strong></em></p>
 <ol>
-<li><strong>Muestra los objetos a los que pertenecen las extensiones del tablespace TS_2 (creado por Alumno 2) y el tamaño de cada una de ellas.</strong></li>
+<li><strong>Muestra los objetos a los que pertenecen las extensiones del tablespace TS2 (creado por Alumno 2) y el tamaño de cada una de ellas.</strong></li>
 </ol>
-<p>Creamos un tablespace llamado TS_2 que me ha mandado Alumno2.</p>
-<div><pre><code>CREATE TABLESPACE TS_2
+<p>Creamos un tablespace llamado TS2 que me ha mandado Alumno2.</p>
+<div><pre><code>CREATE TABLESPACE TS2
 DATAFILE '/opt/oracle/ts2_1.dbf' 
 SIZE 1M, '/opt/oracle/ts2_2.dbf' SIZE 1M;
 </code></pre>
 </div><p>Podemos verificar que ya tenemos nuestro tablespace creado y determinar su ubicación.</p>
-<div><pre><code>select file_name, tablespace_name from dba_data_files where tablespace_name='TS_2';
+<div><pre><code>select file_name, tablespace_name from dba_data_files where tablespace_name='TS2';
 </code></pre>
 </div><p><img src="./../images/ABD/almacenamiento/1_1.png" alt="image"></p>
 <p>Haremos una prueba breve para evaluar el funcionamiento del espacio.</p>
-<div><pre><code>create table pruebats_2 (           
+<div><pre><code>create table pruebats2 (           
 	mt_clave       number(3)    not null,
 	mt_descripcion varchar2(50) null
 	)  
-	TABLESPACE TS_2; 
+	TABLESPACE TS2; 
 </code></pre>
 </div><p>Agregaremos algo de contenido.</p>
-<div><pre><code>insert into pruebats_2 (mt_clave, mt_descripcion) values (123, 'clave prueba1');
-insert into pruebats_2 (mt_clave, mt_descripcion) values (456, 'clave prueba2');
+<div><pre><code>insert into pruebats2 (mt_clave, mt_descripcion) values (123, 'clave prueba1');
+insert into pruebats2 (mt_clave, mt_descripcion) values (456, 'clave prueba2');
 </code></pre>
 </div><p>Verificaremos cuánto espacio libre ocupa actualmente nuestro tablespace.</p>
 <div><pre><code>select tablespace_name, to_char(sum(nvl(bytes,0))/1024/1024, '99,999,990.99') as &quot;free space&quot;
 from user_free_space
-where tablespace_name = 'TS_2'
+where tablespace_name = 'TS2'
 group by tablespace_name;
 </code></pre>
 </div><p><img src="./../images/ABD/almacenamiento/2_1.png" alt="image"></p>
 <ol start="2">
-<li><strong>Borra la tabla que está llenando TS_2 consiguiendo que vuelvan a existir extensiones libres. Añade después otro fichero de datos a TS_2.</strong></li>
+<li><strong>Borra la tabla que está llenando TS2 consiguiendo que vuelvan a existir extensiones libres. Añade después otro fichero de datos a TS2.</strong></li>
 </ol>
 <p>Eliminaremos la tabla previamente creada y comprobaremos el espacio de almacenamiento de nuestro tablespace.</p>
-<div><pre><code>drop table pruebats_2;
+<div><pre><code>drop table pruebats2;
 </code></pre>
 </div><hr>
 <div><pre><code>select tablespace_name, to_char(sum(nvl(bytes,0))/1024/1024, '99,999,990.99') as &quot;free space&quot;
 from user_free_space
-where tablespace_name = 'TS_2'
+where tablespace_name = 'TS2'
 group by tablespace_name;
 </code></pre>
 </div><p><img src="./../images/ABD/almacenamiento/1_2.png" alt="image"></p>
@@ -3374,12 +3401,12 @@ from v$datafile;
 </code></pre>
 </div><p><img src="./../images/ABD/almacenamiento/2_2.png" alt="image"></p>
 <p>Agendaremos un nuevo archivo y verificaremos que se ha agregado a nuestro tablespace.</p>
-<div><pre><code>alter tablespace TS_2 add datafile '/home/oracle/prueba.dbf' size 10M;
+<div><pre><code>alter tablespace TS2 add datafile '/home/oracle/prueba.dbf' size 10M;
 </code></pre>
 </div><hr>
 <div><pre><code>select file_name,tablespace_name
 from dba_data_files
-where tablespace_name='TS_2';
+where tablespace_name='TS2';
 </code></pre>
 </div><p><img src="./../images/ABD/almacenamiento/3_2.png" alt="image"></p>
 <ol start="3">
@@ -3490,7 +3517,23 @@ where tablespace_name like 'TS%';
 <ol start="5">
 <li>
 <p><strong>Realiza un procedimiento llamado InformeRestricciones que reciba el nombre de una tabla y muestre los nombres de las restricciones que tiene, a qué columna o columnas afectan y en qué consisten exactamente.</strong></p>
-</li>
+<div><pre><code> create or replace procedure InformeRestricciones (p_table_name in varchar2)
+ is
+ 	cursor c_cursor is 
+ 	select constraint_name, column_name from user_cons_columns where table_name = p_table_name;
+ begin
+ 	for var in c_cursor loop
+ 		dbms_output.put_line('Nombre de la restriccion: ' || var.constraint_name);
+ 		dbms_output.put_line('Columna afectada: ' || var.column_name);
+ 		dbms_output.put_line('------------------------------');
+ 	end loop;
+ end;
+ /
+</code></pre>
+</div></li>
+</ol>
+<p><img src="./../images/ABD/almacenamiento/5.png" alt="image"></p>
+<ol start="6">
 <li>
 <p><strong>Realiza un procedimiento llamado MostrarAlmacenamientoUsuario que reciba el nombre de un usuario y devuelva el espacio que ocupan sus objetos agrupando por dispositivos y archivos:</strong></p>
 <div><pre><code> Usuario: NombreUsuario
@@ -3515,38 +3558,32 @@ where tablespace_name like 'TS%';
 </div></li>
 </ol>
 <hr>
-<div><pre><code>create or replace procedure Archivos (p_usuario in varchar2)
+<p>create or replace procedure Archivo (p_usuario varchar2)
 is
-	cursor c_cursor is 
-	select segment_name, bytes 
-	from user_segments 
-	where owner = p_usuario and device_name = dispositivo.device_name;
-
-	for var in c_cursor loop
-		dbms_output.put_line(chr(9)||'Archivos:');
-		dbms_output.put_line('  - ' || var.segment_name || ': ' || archivo.bytes || ' bytes');
-		dbms_output.put_line('Tamaño Espacio en Archivos: ||var.bytes||'bytes');
-		end loop;
-	end loop;
-</code></pre>
-</div><hr>
-<div><pre><code>create or replace procedure MostrarAlmacenamientoUsuario(p_usuario in varchar2)
-is
-	cursor c_cursor is 
-	select device_name, sum(bytes) as bytes
-	from user_segments
-	where owner = p_usuario 
-	group by device_name;
+cursor c_cursor is
+select owner, segment_name, segment_type, tablespace_name, bytes from dba_segments where owner = p_usuario;
+v_total_bytes number;
+v_tablaspace_anterior varchar2(30);
 begin
-	dbms_output.put_line('Usuario: '||p_usuario);
-	for var in c_cursor loop
-		dbms_output.put_line('Dispositivo: ' || dispositivo.device_name);
-		Archivos(p_usuario);
-	end loop;
+v_total_bytes := 0;
+v_tablaspace_anterior := null;
+for var in c_cursor loop
+if v_tablaspace_anterior is null or v_tablaspace_anterior != var.tablespace_name then
+v_total_bytes := 0;
+dbms_output.put_line(chr(9)||chr(9)||'Archivo: ' || var.tablespace_name);
+end if;
+v_total_bytes := v_total_bytes + var.bytes;
+if var.segment_type = 'INDEX' and var.segment_type = 'TABLE' then
+dbms_output.put_line(chr(9)||chr(9)||chr(9)||var.segment_name||'.....'||round(var.bytes/1024)||' K');
+end if;
+v_tablaspace_anterior := var.tablespace_name;
+if c_cursor%notfound then
+dbms_output.put_line(chr(9)||chr(9)||'Total Espacio en Archivo ' || var.tablespace_name || ': ' || round(v_total_bytes/1024) || ' K');
+end if;
+end loop;
 end;
-/
-</code></pre>
-</div><p><em><strong>Postgres:</strong></em></p>
+/</p>
+<p><em><strong>Postgres:</strong></em></p>
 <ol start="7">
 <li><strong>Averigua si es posible establecer cuotas de uso sobre los tablespaces en Postgres.</strong></li>
 </ol>
@@ -3555,13 +3592,11 @@ end;
 <ol start="8">
 <li><strong>Averigua si existe el concepto de extensión en MySQL y si coincide con el existente en ORACLE.</strong></li>
 </ol>
-<p>Segmentos, Extensiones y Bloques e MySQL.</p>
-<p>MySQL incorpora una característica única llamada «motores de almacenamiento», que nos permite seleccionar el tipo de almacenamiento interno de cada tabla</p>
-<p>Los motores MyISAM e InnoDB son los más empleados, en ellos podemos encontrar extensiones, segmentos y páginas.</p>
-<p>Ejemplo:</p>
-<p>Segmentos, Extensiones y Bloques en Oracle.</p>
-<p>Los segmentos son los equivalentes físicos de los objetos que almacenan datos. El uso efectivo de los segmentos requiere que el DBA conozca los objetos que utiliza una aplicación, cómo los datos son introducidos en esos objetos y el modo en que serán recuperados.</p>
-<p>Como los segmentos son entidades físicas, deben estar asignados a espacios de tablas en la BD y estarán localizados en uno de los ficheros de datos del espacio de tablas. Un segmento está constituido por secciones llamadas extensiones, que son conjuntos contiguos de bloques Oracle. Una vez que una extensión existente en un segmento no puede almacenar más datos, el segmento obtendrá del espacio de tabla otra extensión. Este proceso de extensión continuará hasta que no quede más espacio disponible en los ficheros del espacio de tablas, o hasta que se alcance un número máximo de extensiónes por segmento.</p>
+<p>No, en MySQL no existe el concepto de extensión. Sin embargo, MySQL permite la utilización de complementos o plugins que permiten ampliar las funcionalidades del sistema. Estos plugins se pueden instalar en el servidor de MySQL y proporcionan nuevas funcionalidades que no vienen incorporadas en la versión estándar de MySQL. Por ejemplo, existen plugins de seguridad, optimización, y también plugins que permiten habilitar nuevos protocolos de comunicación o mejorar la escalabilidad y rendimiento del sistema.</p>
+<p>¿Coincide con el existente en ORACLE?</p>
+<p>Sí, en Oracle existe un concepto similar al de las extensiones de MySQL, que se conoce como &quot;Paquetes&quot;. Los paquetes en Oracle son un conjunto de funciones y procedimientos relacionados que se agrupan en un solo objeto lógico. Estos paquetes permiten encapsular lógica de negocios y compartirla fácilmente entre múltiples aplicaciones o usuarios.</p>
+<p>Además de los paquetes, Oracle también tiene otras características similares a las extensiones de MySQL, como por ejemplo, &quot;funciones externas&quot; (que permiten extender la funcionalidad de Oracle utilizando lenguajes de programación externos) y &quot;tipos objeto&quot; (que permiten definir tipos de datos complejos en Oracle).</p>
+<p>En resumen, aunque el concepto no es exactamente el mismo, Oracle tiene características similares a las extensiones de MySQL que permiten ampliar y mejorar la funcionalidad del sistema.</p>
 <p><em><strong>MongoDB:</strong></em></p>
 <ol start="9">
 <li><strong>Averigua si en MongoDB puede saberse el espacio disponible para almacenar nuevos documentos.</strong></li>
@@ -3624,16 +3659,23 @@ precio number(10,2) not null
 );
 </code></pre>
 </div><hr>
-<div><pre><code>CREATE TABLE Ventas (
+<div><pre><code>CREATE USER Ana identified by Ana; 
+GRANT CREATE SESSION to Ana;
+GRANT create table to Ana;
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/8.1_grupal.png" alt="image"></p>
+<div><pre><code>/q
+sqlplus Ana/Ana
+
+CREATE TABLE Ventas (
 id number(10) PRIMARY KEY,
 fecha DATE not null,
 producto varchar2(50) not null,
 cantidad number(10) not null,
 precio number(10,2) not null
 );
-</code></pre>
-</div><hr>
-<div><pre><code>CREATE TABLE Produccion (
+
+CREATE TABLE Productos (
 id number(10) PRIMARY KEY,
 fecha DATE not null,
 producto varchar2(50) not null,
@@ -3641,9 +3683,8 @@ cantidad number(10) not null,
 ubicacion varchar2(50) not null
 );
 </code></pre>
-</div><hr>
-<div><pre><code>CREATE USER Ana identified by Ana;
-CREATE USER Eva identified by Eva;
+</div><p><img src="./../images/ABD/almacenamiento/8.2_grupal.png" alt="image"></p>
+<div><pre><code>CREATE USER Eva identified by Eva;
 GRANT select on Ana.Ventas to Eva;
 GRANT insert on Ana.Ventas to Eva;
 GRANT update on Ana.Ventas to Eva;
@@ -3653,7 +3694,7 @@ GRANT insert on Ana.Productos to Eva;
 GRANT update on Ana.Productos to Eva;
 GRANT delete on Ana.Productos to Eva;
 </code></pre>
-</div><hr>
+</div><p><img src="./../images/ABD/almacenamiento/8.3_grupal.png" alt="image"></p>
 <div><pre><code>CREATE USER Jaime identified by Jaime;
 CREATE USER Lidia identified by Lidia;
 GRANT select on Ana.Ventas to Jaime;
@@ -3661,10 +3702,81 @@ GRANT select on Ana.Ventas to Lidia;
 GRANT select on Ana.Productos to Jaime;
 GRANT select on Ana.Productos to Lidia;
 </code></pre>
-</div><p>b) <strong>Los espacios de tablas son System, Producción (ficheros prod1.dbf y prod2.dbf) y Ventas (fichero vent.dbf). Los programadores del departamento de Informática pueden crear objetos en cualquier tablespace de la base de datos, excepto en System. Los demás usuarios solo podrán crear objetos en su tablespace correspondiente teniendo un límite de espacio de 30 M los del departamento de Ventas y 100K los del de Producción. Pepe tiene cuota ilimitada en todos los espacios, aunque el suyo por defecto es System.</strong></p>
+</div><p><img src="./../images/ABD/almacenamiento/8.4_grupal.png" alt="image"></p>
+<p>Roles:</p>
+<div><pre><code>#Producción
+CREATE ROLE Produccion;
+GRANT select on Ana.Ventas to Produccion;
+GRANT select on Ana.Productos to Produccion;
+
+GRANT Produccion to Lidia;
+GRANT Produccion to Jaime;
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/8.5_grupal.png" alt="image"></p>
+<div><pre><code>#Ventas
+CREATE ROLE Ventas;
+GRANT select, insert, update, delete on Ana.Ventas to Ventas;
+GRANT select, insert, update, delete on Ana.Productos to Ventas;
+GRANT Ventas to Eva;
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/8.6_grupal.png" alt="image"></p>
+<p>b) <strong>Los espacios de tablas son System, Producción (ficheros prod1.dbf y prod2.dbf) y Ventas (fichero vent.dbf). Los programadores del departamento de Informática pueden crear objetos en cualquier tablespace de la base de datos, excepto en System. Los demás usuarios solo podrán crear objetos en su tablespace correspondiente teniendo un límite de espacio de 30 M los del departamento de Ventas y 100K los del de Producción. Pepe tiene cuota ilimitada en todos los espacios, aunque el suyo por defecto es System.</strong></p>
+<p>Tablespace de System, Producción y Ventas:</p>
+<div><pre><code>CREATE TABLESPACE ts_produccion
+DATAFILE 'prodr1.dbf' SIZE 100M,
+'prodr2.dbf' SIZE 100M AUTOEXTEND ON;
+
+CREATE TABLESPACE ts_venta
+DATAFILE 'venta.dbf'
+SIZE 100M AUTOEXTEND ON;
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/8.7_grupal.png" alt="image"></p>
+<p>Cuotas para los usuarios:</p>
+<div><pre><code>ALTER USER ANA QUOTA 30M ON ts_venta;
+ALTER USER EVA QUOTA 30M ON ts_venta;
+ALTER USER JAIME QUOTA 100K ON ts_produccion;
+ALTER USER LIDIA QUOTA 100K ON ts_produccion;
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/8.8_grupal.png" alt="image"></p>
+<p>Modificación del tablespace de pepe:</p>
+<div><pre><code>ALTER USER Pepe DEFAULT TABLESPACE SYSTEM;
+GRANT UNLIMITED TABLESPACE TO Pepe;
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/8.9_grupal.png" alt="image"></p>
+<p>Revocamos los privilegios de creación de objetos alos usuarios del tablespace.</p>
+<div><pre><code>GRANT UNLIMITED TABLESPACE TO JUAN;
+GRANT UNLIMITED TABLESPACE TO CLARA;
+ALTER USER JUAN QUOTA 0 ON SYSTEM;
+ALTER USER CLARA QUOTA 0 ON SYSTEM;
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/8.10_grupal.png" alt="image"></p>
 <p>c) <strong>Pepe quiere crear una tabla Prueba que ocupe inicialmente 256K en el tablespace Ventas.</strong></p>
+<div><pre><code>CREATE TABLE Pepe.Prueba (
+	Codigo    VARCHAR2(5),
+	Nombre    VARCHAR2(30),
+	CONSTRAINT pk_codigo PRIMARY KEY(Codigo)
+)
+TABLESPACE ts_venta,
+STORAGE (INITIAL 256K);
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/8.11_grupal.png" alt="image"></p>
 <p>d) <strong>Pepe decide que los programadores tengan acceso a la tabla Prueba antes creada y puedan ceder ese derecho y el de conectarse a la base de datos a los usuarios que ellos quieran.</strong></p>
+<div><pre><code>GRANT SELECT ON Pepe.Prueba TO Juan WITH GRANT OPTION;
+GRANT SELECT ON Pepe.Prueba TO Clara WITH GRANT OPTION;
+GRANT CONNECT TO Clara WITH ADMIN OPTION;
+GRANT CONNECT TO Juan WITH ADMIN OPTION;
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/8.12_grupal.png" alt="image"></p>
 <p>f) <strong>Lidia y Jaime dejan la empresa, borra los usuarios y el espacio de tablas correspondiente, detalla los pasos necesarios para que no quede rastro del espacio de tablas.</strong></p>
+<p>Borramos los usuarios, añadimos cascade para borrar todo el rastro dejado en otras tablas.</p>
+<div><pre><code>DROP USER LIDIA cascade;
+DROP USER JAIME cascade;
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/8.13_grupal.png" alt="image"></p>
+<p>Para borrar todo lo incluido en el tablespace</p>
+<div><pre><code>drop tablespace ts_produccion including contents and datafiles;
+</code></pre>
+</div><p><img src="./../images/ABD/almacenamiento/8.14_grupal.png" alt="image"></p>
 ]]></content>
     <author>
       <name>Óscar Lucas</name>
@@ -3679,7 +3791,7 @@ GRANT select on Ana.Productos to Lidia;
     <title type="html">Instalación y configuración de un servidor de correos en el VPS</title>
     <id>https://github.com/oscarlucas22/practicas/correos/</id>
     <link href="https://github.com/oscarlucas22/practicas/correos/"/>
-    <updated>2023-02-07T10:08:06.639Z</updated>
+    <updated>2023-02-16T07:50:06.776Z</updated>
     <content type="html"><![CDATA[<h1 id="instalacion-y-configuracion-de-un-servidor-de-correos-en-el-vps"> Instalación y configuración de un servidor de correos en el VPS</h1>
 <h2 id="practica-servidor-de-correos"> Práctica: Servidor de correos</h2>
 <p><strong>Instala y configura de manera adecuada el servidor de correos en tu VPS. El nombre del servidor de correo será mail.tudominio.es (Este es el nombre que deberá aparecer en el registro MX).</strong></p>
@@ -4200,10 +4312,91 @@ server {
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
+    <title type="html">Informática Forense</title>
+    <id>https://github.com/oscarlucas22/practicas/forense/</id>
+    <link href="https://github.com/oscarlucas22/practicas/forense/"/>
+    <updated>2023-02-16T07:50:06.777Z</updated>
+    <content type="html"><![CDATA[<h1 id="informatica-forense"> Informática Forense</h1>
+<p><strong>La informática forense es el conjunto de técnicas que nos permite obtener la máxima información posible tras un incidente o delito informático.</strong></p>
+<p><strong>En esta práctica, realizarás la fase de toma de evidencias y análisis de las mismas sobre una máquina Linux y otra Windows. Supondremos que pillamos al delincuente in fraganti y las máquinas se encontraban encendidas. Opcionalmente, podéis realizar el análisis de un dispositivo Android.</strong></p>
+<p><strong>Sobre cada una de las máquinas debes realizar un volcado de memoria y otro de disco duro, tomando las medidas necesarias para certificar posteriormente la cadena de custodia.</strong></p>
+<p><strong>Debes tratar de obtener las siguientes informaciones:</strong></p>
+<p><strong>Apartado A) Máquina Windows.</strong></p>
+<p><strong>Por comandos:</strong></p>
+<p><strong>1. Procesos en ejecución.</strong></p>
+<p><strong>2. Servicios en ejecución.</strong></p>
+<p><strong>3. Puertos abiertos.</strong></p>
+<p><strong>4. Conexiones establecidas por la máquina.</strong></p>
+<p><strong>5. Sesiones de usuario establecidas remotamente.</strong></p>
+<p><strong>6. Ficheros transferidos recientemente por NetBios.</strong></p>
+<p><strong>7. Contenido de la caché DNS.</strong></p>
+<p><strong>8. Variables de entorno.</strong></p>
+<p><strong>Analizando el Registro de Windows:</strong></p>
+<p><strong>9. Dispositivos USB conectados</strong></p>
+<p><strong>10. Redes wifi utilizadas recientemente.</strong></p>
+<p><strong>11. Configuración del firewall de nodo.</strong></p>
+<p><strong>12. Programas que se ejecutan en el Inicio.</strong></p>
+<p><strong>13. Asociación de extensiones de ficheros y aplicaciones.</strong></p>
+<p><strong>14. Aplicaciones usadas recientemente.</strong></p>
+<p><strong>15. Ficheros abiertos recientemente.</strong></p>
+<p><strong>16. Software Instalado.</strong></p>
+<p><strong>17. Contraseñas guardadas.</strong></p>
+<p><strong>18. Cuentas de Usuario</strong></p>
+<p><strong>Con Aplicaciones de terceros:</strong></p>
+<p><strong>19. Historial de navegación y descargas. Cookies.</strong></p>
+<p><strong>20. Volúmenes cifrados</strong></p>
+<p><strong>Sobre la imagen del disco:</strong></p>
+<p><strong>21. Archivos con extensión cambiada.</strong></p>
+<p><strong>22. Archivos eliminados.</strong></p>
+<p><strong>23. Archivos Ocultos.</strong></p>
+<p><strong>24. Archivos que contienen una cadena determinada.</strong></p>
+<p><strong>25. Búsqueda de imágenes por ubicación.</strong></p>
+<p><strong>26. Búsqueda de archivos por autor.</strong></p>
+<p><strong>Apartado B) Máquina Linux.</strong></p>
+<p><strong>Intenta realizar las mismas operaciones en una máquina Linux para aquellos apartados que tengan sentido y no se realicen de manera idéntica a Windows.</strong></p>
+<p><strong>Apartado C)</strong></p>
+<p><strong>En un dispositivo Android, trata de hacer un volcado de memoria y recuperar información de ubicación, llamadas, mensajes, aplicaciones de mensajería, perfiles en redes sociales, etc...</strong></p>
+<p><strong>Algunos kits de herramientas forenses open-source:</strong></p>
+<p><strong>Caine</strong>
+<strong>DFF (Digital Forensics Framework)</strong>
+<strong>The Sleuth Kit</strong>
+<strong>Helix Live CD</strong>
+<strong>Digital Evidence and Forensics Toolkit (DEFT)</strong></p>
+<p><strong>Para análisis de memoria:</strong></p>
+<p><strong>Volatility</strong>
+<strong>Access Data FTK Imager</strong>
+<strong>MDD</strong></p>
+<p><strong>Para análisis de registro de Windows:</strong></p>
+<p><strong>AccessData Registry Viewer</strong>
+<strong>Kape</strong>
+<strong>Fred (Forensic Registry Editor)</strong></p>
+<p><strong>Para análisis de discos duros:</strong></p>
+<p><strong>Autopsy</strong></p>
+<p><strong>Herramientas gratuitas para Android:</strong></p>
+<p><strong>AFLogical OSE</strong>
+<strong>OSAF (Open Source Android Forensics)</strong>
+<strong>Andriller</strong>
+<strong>ADEL (Android Data Extractor Lite)</strong>
+<strong>WhatsApp Xtract</strong>
+<strong>Skype Xtractor</strong>
+<strong>Android Pattern Lock Cracker</strong></p>
+<p><strong>Para saber algo más:</strong></p>
+<p><strong>Cursos básicos de Análisis Forense Linux y Windows en OpenWebinars.</strong>
+**Cursos gratuitos en TryHackMe.**AD</p>
+]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
     <title type="html">Poblar un directorio LDAP desde un fichero CSV</title>
     <id>https://github.com/oscarlucas22/practicas/ldap-csv/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldap-csv/"/>
-    <updated>2023-02-07T10:08:06.641Z</updated>
+    <updated>2023-02-16T07:50:06.778Z</updated>
     <content type="html"><![CDATA[<h1 id="poblar-un-directorio-ldap-desde-un-fichero-csv"> Poblar un directorio LDAP desde un fichero CSV</h1>
 <ul>
 <li>
@@ -4459,7 +4652,7 @@ AuthorizedKeysCommandUser nobody
     <title type="html">Instalación y configuración inicial de OpenLDAP</title>
     <id>https://github.com/oscarlucas22/practicas/ldap/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldap/"/>
-    <updated>2023-02-07T10:08:06.643Z</updated>
+    <updated>2023-02-16T07:50:06.780Z</updated>
     <content type="html"><![CDATA[<h1 id="instalacion-y-configuracion-inicial-de-openldap"> Instalación y configuración inicial de OpenLDAP</h1>
 <p><strong>Realiza la instalación y configuración básica de OpenLDAP en alfa, utilizando como base el nombre DNS asignado. Deberás crear un usuario llamado prueba y configurar una máquina cliente basada en Debian y Rocky para que pueda validarse en servidor ldap configurado anteriormente con el usuario prueba.</strong></p>
 <p><font color="#FFFF00"><strong>Paso 1</strong></font> Configuración de OpenLDAP en el servidor: Instalación y configuración de OpenLDAP.Instalación y configuración de OpenLDAP en el Servidor</p>
@@ -4819,7 +5012,7 @@ systemctl start mnt-nfs.mount
     <title type="html">VPN</title>
     <id>https://github.com/oscarlucas22/practicas/vpn/</id>
     <link href="https://github.com/oscarlucas22/practicas/vpn/"/>
-    <updated>2023-02-07T10:08:06.649Z</updated>
+    <updated>2023-02-16T07:50:06.783Z</updated>
     <content type="html"><![CDATA[<h1 id="vpn"> VPN</h1>
 <h2 id="a-vpn-de-acceso-remoto-con-openvpn-y-certificados-x509-5-puntos"> A) VPN de acceso remoto con OpenVPN y certificados x509 (5 puntos)</h2>
 <p><strong>Configura una conexión VPN de acceso remoto entre dos equipos del cloud:</strong></p>
