@@ -5,7 +5,7 @@
   <author>
     <name>Óscar Lucas</name>
   </author>
-  <updated>2023-02-16T21:27:14.100Z</updated>
+  <updated>2023-02-16T21:30:28.155Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://github.com/oscarlucas22/atom.xml"/>
   <link rel="alternate" href="https://github.com/oscarlucas22/"/>
@@ -3351,7 +3351,7 @@ fetch first 1 row only;
     <title type="html">Almacenamiento</title>
     <id>https://github.com/oscarlucas22/practicas/almacenamiento/</id>
     <link href="https://github.com/oscarlucas22/practicas/almacenamiento/"/>
-    <updated>2023-02-16T21:27:14.167Z</updated>
+    <updated>2023-02-16T21:30:28.216Z</updated>
     <content type="html"><![CDATA[<h1 id="almacenamiento"> Almacenamiento</h1>
 <h2 id="alumno-3"> Alumno 3:</h2>
 <p><em><strong>ORACLE:</strong></em></p>
@@ -3794,7 +3794,7 @@ DROP USER JAIME cascade;
     <title type="html">Instalación y configuración de un servidor de correos en el VPS</title>
     <id>https://github.com/oscarlucas22/practicas/correos/</id>
     <link href="https://github.com/oscarlucas22/practicas/correos/"/>
-    <updated>2023-02-16T21:27:14.172Z</updated>
+    <updated>2023-02-16T21:30:28.228Z</updated>
     <content type="html"><![CDATA[<h1 id="instalacion-y-configuracion-de-un-servidor-de-correos-en-el-vps"> Instalación y configuración de un servidor de correos en el VPS</h1>
 <h2 id="practica-servidor-de-correos"> Práctica: Servidor de correos</h2>
 <p><strong>Instala y configura de manera adecuada el servidor de correos en tu VPS. El nombre del servidor de correo será mail.tudominio.es (Este es el nombre que deberá aparecer en el registro MX).</strong></p>
@@ -4318,7 +4318,7 @@ server {
     <title type="html">Cortafuegos I: De nodo con iptables</title>
     <id>https://github.com/oscarlucas22/practicas/cortafuegoI/</id>
     <link href="https://github.com/oscarlucas22/practicas/cortafuegoI/"/>
-    <updated>2023-02-16T21:27:14.173Z</updated>
+    <updated>2023-02-16T21:30:28.231Z</updated>
     <content type="html"><![CDATA[<h1 id="cortafuegos-i-de-nodo-con-iptables"> Cortafuegos I: De nodo con iptables</h1>
 <p>Página de la <a href="https://fp.josedomingo.org/seguridadgs/u03/ejercicio1.html" target="_blank" rel="noopener noreferrer">practica<i>Content not supported</i></a></p>
 <hr>
@@ -4393,6 +4393,7 @@ iptables -A OUTPUT -o ens3 -p tcp --sport 80 -m state --state ESTABLISHED -j ACC
 </div><p>En mi caso he vuelto a hacer la comprobación por lynx (lynx &quot;mi-ip-flotante&quot;)</p>
 <p><img src="./../images/SAD/cortafuegos1/7.png" alt="image"></p>
 <hr>
+<h2 id="ejercicios"> Ejercicios</h2>
 <p><strong>1. Permite poder hacer conexiones ssh al exterior.</strong></p>
 <p>Vamos a añadir las reglas que permitan realizar conexiones ssh al exterior:</p>
 <div><pre><code>iptables -A INPUT -i ens3 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
@@ -4504,7 +4505,7 @@ iptables -A OUTPUT -d 10.0.0.180 -p tcp --sport 3306 -j ACCEPT
     <title type="html">Informática Forense</title>
     <id>https://github.com/oscarlucas22/practicas/forense/</id>
     <link href="https://github.com/oscarlucas22/practicas/forense/"/>
-    <updated>2023-02-16T21:27:14.175Z</updated>
+    <updated>2023-02-16T21:30:28.232Z</updated>
     <content type="html"><![CDATA[<h1 id="informatica-forense"> Informática Forense</h1>
 <p><strong>La informática forense es el conjunto de técnicas que nos permite obtener la máxima información posible tras un incidente o delito informático.</strong></p>
 <p><strong>En esta práctica, realizarás la fase de toma de evidencias y análisis de las mismas sobre una máquina Linux y otra Windows. Supondremos que pillamos al delincuente in fraganti y las máquinas se encontraban encendidas. Opcionalmente, podéis realizar el análisis de un dispositivo Android.</strong></p>
@@ -4585,7 +4586,7 @@ iptables -A OUTPUT -d 10.0.0.180 -p tcp --sport 3306 -j ACCEPT
     <title type="html">Poblar un directorio LDAP desde un fichero CSV</title>
     <id>https://github.com/oscarlucas22/practicas/ldap-csv/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldap-csv/"/>
-    <updated>2023-02-16T21:27:14.176Z</updated>
+    <updated>2023-02-16T21:30:28.233Z</updated>
     <content type="html"><![CDATA[<h1 id="poblar-un-directorio-ldap-desde-un-fichero-csv"> Poblar un directorio LDAP desde un fichero CSV</h1>
 <ul>
 <li>
@@ -4841,7 +4842,7 @@ AuthorizedKeysCommandUser nobody
     <title type="html">Instalación y configuración inicial de OpenLDAP</title>
     <id>https://github.com/oscarlucas22/practicas/ldap/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldap/"/>
-    <updated>2023-02-16T21:27:14.179Z</updated>
+    <updated>2023-02-16T21:30:28.235Z</updated>
     <content type="html"><![CDATA[<h1 id="instalacion-y-configuracion-inicial-de-openldap"> Instalación y configuración inicial de OpenLDAP</h1>
 <p><strong>Realiza la instalación y configuración básica de OpenLDAP en alfa, utilizando como base el nombre DNS asignado. Deberás crear un usuario llamado prueba y configurar una máquina cliente basada en Debian y Rocky para que pueda validarse en servidor ldap configurado anteriormente con el usuario prueba.</strong></p>
 <p><font color="#FFFF00"><strong>Paso 1</strong></font> Configuración de OpenLDAP en el servidor: Instalación y configuración de OpenLDAP.Instalación y configuración de OpenLDAP en el Servidor</p>
@@ -5201,7 +5202,7 @@ systemctl start mnt-nfs.mount
     <title type="html">VPN</title>
     <id>https://github.com/oscarlucas22/practicas/vpn/</id>
     <link href="https://github.com/oscarlucas22/practicas/vpn/"/>
-    <updated>2023-02-16T21:27:14.185Z</updated>
+    <updated>2023-02-16T21:30:28.239Z</updated>
     <content type="html"><![CDATA[<h1 id="vpn"> VPN</h1>
 <h2 id="a-vpn-de-acceso-remoto-con-openvpn-y-certificados-x509-5-puntos"> A) VPN de acceso remoto con OpenVPN y certificados x509 (5 puntos)</h2>
 <p><strong>Configura una conexión VPN de acceso remoto entre dos equipos del cloud:</strong></p>

@@ -6,8 +6,8 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Thu, 16 Feb 2023 21:27:14 GMT</pubDate>
-    <lastBuildDate>Thu, 16 Feb 2023 21:27:14 GMT</lastBuildDate>
+    <pubDate>Thu, 16 Feb 2023 21:30:28 GMT</pubDate>
+    <lastBuildDate>Thu, 16 Feb 2023 21:30:28 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
@@ -4224,6 +4224,7 @@ iptables -A OUTPUT -o ens3 -p tcp --sport 80 -m state --state ESTABLISHED -j ACC
 </div><p>En mi caso he vuelto a hacer la comprobación por lynx (lynx &quot;mi-ip-flotante&quot;)</p>
 <p><img src="./../images/SAD/cortafuegos1/7.png" alt="image"></p>
 <hr>
+<h2 id="ejercicios"> Ejercicios</h2>
 <p><strong>1. Permite poder hacer conexiones ssh al exterior.</strong></p>
 <p>Vamos a añadir las reglas que permitan realizar conexiones ssh al exterior:</p>
 <div><pre><code>iptables -A INPUT -i ens3 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
