@@ -6,8 +6,8 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Thu, 16 Feb 2023 07:50:06 GMT</pubDate>
-    <lastBuildDate>Thu, 16 Feb 2023 07:50:06 GMT</lastBuildDate>
+    <pubDate>Thu, 16 Feb 2023 21:20:06 GMT</pubDate>
+    <lastBuildDate>Thu, 16 Feb 2023 21:20:06 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
@@ -82,6 +82,24 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>SRI</title>
+      <link>https://github.com/oscarlucas22/category/SRI/</link>
+      <guid>https://github.com/oscarlucas22/category/SRI/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">SRI</source>
+      <category>categorías</category>
+      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="sri"> SRI</h1>
+<ul>
+<li>
+<p><a href="/practicas/openstack.html">Práctica: Escenario en OpenStack</a></p>
+</li>
+<li>
+<p><a href="/practicas/correos.html">Instalación y configuración de un servidor de correos en el VPS</a></p>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
       <title>SAD</title>
       <link>https://github.com/oscarlucas22/category/SAD/</link>
       <guid>https://github.com/oscarlucas22/category/SAD/</guid>
@@ -108,23 +126,8 @@
 <li>
 <p><a href="/practicas/vpn.html">VPN</a></p>
 </li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>SRI</title>
-      <link>https://github.com/oscarlucas22/category/SRI/</link>
-      <guid>https://github.com/oscarlucas22/category/SRI/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">SRI</source>
-      <category>categorías</category>
-      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="sri"> SRI</h1>
-<ul>
 <li>
-<p><a href="/practicas/openstack.html">Práctica: Escenario en OpenStack</a></p>
-</li>
-<li>
-<p><a href="/practicas/correos.html">Instalación y configuración de un servidor de correos en el VPS</a></p>
+<p><a href="/noacabado/noacabado.html">Cortafuegos I: De nodo con iptables</a></p>
 </li>
 </ul>
 ]]></content:encoded>
@@ -151,6 +154,91 @@
 <p><a href="./mongo.html">MongoDB</a></p>
 </li>
 </ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Criptografía I: Cifrado asímetrico</title>
+      <link>https://github.com/oscarlucas22/practicas/criptografia1/</link>
+      <guid>https://github.com/oscarlucas22/practicas/criptografia1/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">Criptografía I: Cifrado asímetrico</source>
+      <category>practicas</category>
+      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="criptografia-i-cifrado-asimetrico"> Criptografía I: Cifrado asímetrico</h1>
+<h3 id="tarea-1-generacion-de-claves"> Tarea 1: Generación de claves</h3>
+<p><font color="#00ff00"><strong>1.</strong></font> <strong>Genera un par de claves (pública y privada). ¿En que directorio se guarda las claves de un usuario?</strong></p>
+<p>Las claves las generamos con el siguiente comando:</p>
+<div><pre><code>gpg --gen-key
+</code></pre>
+</div><p>Y se guardan en el directorio <code>/home/usuario/.gnupg/</code></p>
+<p><font color="#00ff00"><strong>2.</strong></font> <strong>Lista las claves públicas que tienes en tu almacén de claves. Explica los distintos datos que nos muestra. ¿Cómo deberías haber generado las claves para indicar, por ejemplo, que tenga un 1 mes de validez?</strong></p>
+<p>Listo las claves publicas</p>
+<p><img src="./../images/SAD/cripto I/1-2.png" alt="image"></p>
+<p>Para hacer que tenga un mes de validacion haremos lo siguiente:</p>
+<p><img src="./../images/SAD/cripto I/1-2.1.png" alt="image"></p>
+<p>Para poner un mes de validacion escribiremos cuando nos lo pida &quot;1M&quot; de 1 mes</p>
+<p><font color="#00ff00"><strong>3.</strong></font> <strong>Lista las claves privadas de tu almacén de claves.</strong></p>
+<p>Listo claves privadas</p>
+<p><img src="./../images/SAD/cripto I/1-3.png" alt="image"></p>
+<h3 id="tarea-2-importar-exportar-clave-publica"> Tarea 2: Importar / exportar clave pública</h3>
+<p><font color="#00ff00"><strong>1.</strong></font> <strong>Exporta tu clave pública en formato ASCII y guardalo en un archivo nombre_apellido.asc y envíalo al compañero con el que vas a hacer esta práctica.</strong></p>
+<p>Exporto la clave con el siguiente comando:</p>
+<div><pre><code>gpg --export -a &quot;oscar lucas leo&quot; &gt; oscar_lucas.asc
+</code></pre>
+</div><p>Y le envio a Angel el fichero oscar_lucas.asc</p>
+<p><font color="#00ff00"><strong>2.</strong></font> <strong>Importa las claves públicas recibidas de vuestro compañero.</strong></p>
+<p>Importo la clave que me ha mandado Angel</p>
+<p><img src="./../images/SAD/cripto I/2-2.png" alt="image"></p>
+<p><font color="#00ff00"><strong>3.</strong></font> <strong>Comprueba que las claves se han incluido correctamente en vuestro keyring.</strong>
+<img src="./../images/SAD/cripto I/2-3.png" alt="image"></p>
+<h3 id="tarea-3-cifrado-asimetrico-con-claves-publicas"> Tarea 3: Cifrado asimétrico con claves públicas</h3>
+<p><font color="#00ff00"><strong>1.</strong></font> <strong>Cifraremos un archivo cualquiera y lo remitiremos por email a uno de nuestros compañeros que nos proporcionó su clave pública.</strong></p>
+<p><img src="./../images/SAD/cripto I/3-1.png" alt="image"></p>
+<p><font color="#00ff00"><strong>2.</strong></font> <strong>Nuestro compañero, a su vez, nos remitirá un archivo cifrado para que nosotros lo descifremos.</strong></p>
+<p>Le envio el archivo cifrado_olucas que he cifrado antes</p>
+<p><font color="#00ff00"><strong>3.</strong></font> <strong>Tanto nosotros como nuestro compañero comprobaremos que hemos podido descifrar los mensajes recibidos respectivamente.</strong></p>
+<p><img src="./../images/SAD/cripto I/3-3.png" alt="image"></p>
+<p><font color="#00ff00"><strong>4.</strong></font> <strong>Por último, enviaremos el documento cifrado a alguien que no estaba en la lista de destinatarios y comprobaremos que este usuario no podrá descifrar este archivo.</strong></p>
+<p>El archivo se lo he pasado a Paco y como podemos ver el no tiene acceso para poder descifrarlo</p>
+<p><img src="./../images/SAD/cripto I/3-4.jpeg" alt="image"></p>
+<p><font color="#00ff00"><strong>5.</strong></font> <strong>Para terminar, indica los comandos necesarios para borrar las claves públicas y privadas que posees.</strong></p>
+<p>Comando para borrar clave publica:</p>
+<div><pre><code>gpg --delete-key &quot;Nombre de Usuario&quot;
+</code></pre>
+</div><p>Comando para borrar clave privada:</p>
+<div><pre><code>gpg --delete-secret-key &quot;Nombre de Usuario&quot;
+</code></pre>
+</div><h3 id="tarea-4-exportar-clave-a-un-servidor-publico-de-claves-pgp"> Tarea 4: Exportar clave a un servidor público de claves PGP</h3>
+<p><font color="#00ff00"><strong>1.</strong></font> <strong>Genera la clave de revocación de tu clave pública para utilizarla en caso de que haya problemas.</strong></p>
+<p><img src="./../images/SAD/cripto I/4-1.png" alt="image"></p>
+<p><font color="#00ff00"><strong>2.</strong></font> <strong>Exporta tu clave pública al servidor pgp.rediris.es</strong></p>
+<p>Tanto Angel como yo hemos probado exportar la clave en &quot;pgp.rediris.es&quot; pero no iba y hemos decido hacerla en &quot;keyserver.ubuntu.com&quot;</p>
+<p><img src="./../images/SAD/cripto I/4-2.png" alt="image"></p>
+<p><font color="#00ff00"><strong>3.</strong></font> <strong>Borra la clave pública de alguno de tus compañeros de clase e impórtala ahora del servidor público de rediris.</strong></p>
+<p>Borro la clave de Angel</p>
+<p><img src="./../images/SAD/cripto I/4-3.png" alt="image"></p>
+<p>Y la vuelvo a importar ahora a traves del servidor publico.</p>
+<p><img src="./../images/SAD/cripto I/4-3.1.png" alt="image"></p>
+<h3 id="tarea-5-cifrado-asimetrico-con-openssl"> Tarea 5: Cifrado asimétrico con openssl</h3>
+<p><font color="#00ff00"><strong>1.</strong></font> <strong>Genera un par de claves (pública y privada).</strong></p>
+<p><img src="./../images/SAD/cripto I/5-1.png" alt="image"></p>
+<p><font color="#00ff00"><strong>2.</strong></font> <strong>Envía tu clave pública a un compañero.</strong></p>
+<p>Guardo la clave en un archivo con el siguiente comando:</p>
+<div><pre><code>sudo openssl rsa -in key.pem -pubout -out key.publica.pem
+</code></pre>
+</div><p><img src="./../images/SAD/cripto I/5-2.png" alt="image"></p>
+<p>Y el fichero &quot;key.publica.pem&quot; se la envio a Angel</p>
+<p><font color="#00ff00"><strong>3.</strong></font> <strong>Utilizando la clave pública cifra un fichero de texto y envíalo a tu compañero.</strong></p>
+<p>Cifro un archivo de texto con el siguiente comando:</p>
+<div><pre><code>openssl rsautl -encrypt -in cifrado_olucas -out cifrado_olucas.enc -inkey ~/Descargas/publicaopenssl.pem -pubin
+</code></pre>
+</div><p><img src="./../images/SAD/cripto I/5-3.png" alt="image"></p>
+<p>Y se la envio a Angel</p>
+<p><font color="#00ff00"><strong>4.</strong></font> <strong>Tu compañero te ha mandado un fichero cifrado, muestra el proceso para el descifrado.</strong></p>
+<p>Angel me ha mandado su archivo llamado &quot;CifradoOSSasp.enc&quot; y lo desencripto con el siguiente comando:</p>
+<div><pre><code>sudo openssl rsautl -decrypt -in Descargas/CifradoOSSasp.enc -out cifrado.txt -inkey key.pem
+</code></pre>
+</div><p>Y despues ejecutare el comando &quot;cat&quot; para ver el interior del fichero.</p>
+<p><img src="./../images/SAD/cripto I/5-4.png" alt="image"></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -310,91 +398,6 @@ De manera que tendremos que verificar la firma con el uso de la opcion '--verify
 <p>Para solucionar este problema tendriamos que borrar la linea correspondiente a dicho host en el fichero ~/.ssh/known_hosts. Normalmente, en el propio mensaje de advertencia te dice explicitamente el comando a ejecutar para borrar dicha linea.</p>
 <p><font color="#00ff00"><strong>6.</strong></font> <strong>¿Qué guardamos y para qué sirve el fichero en el servidor ~/.ssh/authorized_keys?</strong></p>
 <p>En el guardaremos nuestra clave publica para asi poder acceder al servidor por medio de nuestra clave privada</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Criptografía I: Cifrado asímetrico</title>
-      <link>https://github.com/oscarlucas22/practicas/criptografia1/</link>
-      <guid>https://github.com/oscarlucas22/practicas/criptografia1/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">Criptografía I: Cifrado asímetrico</source>
-      <category>practicas</category>
-      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="criptografia-i-cifrado-asimetrico"> Criptografía I: Cifrado asímetrico</h1>
-<h3 id="tarea-1-generacion-de-claves"> Tarea 1: Generación de claves</h3>
-<p><font color="#00ff00"><strong>1.</strong></font> <strong>Genera un par de claves (pública y privada). ¿En que directorio se guarda las claves de un usuario?</strong></p>
-<p>Las claves las generamos con el siguiente comando:</p>
-<div><pre><code>gpg --gen-key
-</code></pre>
-</div><p>Y se guardan en el directorio <code>/home/usuario/.gnupg/</code></p>
-<p><font color="#00ff00"><strong>2.</strong></font> <strong>Lista las claves públicas que tienes en tu almacén de claves. Explica los distintos datos que nos muestra. ¿Cómo deberías haber generado las claves para indicar, por ejemplo, que tenga un 1 mes de validez?</strong></p>
-<p>Listo las claves publicas</p>
-<p><img src="./../images/SAD/cripto I/1-2.png" alt="image"></p>
-<p>Para hacer que tenga un mes de validacion haremos lo siguiente:</p>
-<p><img src="./../images/SAD/cripto I/1-2.1.png" alt="image"></p>
-<p>Para poner un mes de validacion escribiremos cuando nos lo pida &quot;1M&quot; de 1 mes</p>
-<p><font color="#00ff00"><strong>3.</strong></font> <strong>Lista las claves privadas de tu almacén de claves.</strong></p>
-<p>Listo claves privadas</p>
-<p><img src="./../images/SAD/cripto I/1-3.png" alt="image"></p>
-<h3 id="tarea-2-importar-exportar-clave-publica"> Tarea 2: Importar / exportar clave pública</h3>
-<p><font color="#00ff00"><strong>1.</strong></font> <strong>Exporta tu clave pública en formato ASCII y guardalo en un archivo nombre_apellido.asc y envíalo al compañero con el que vas a hacer esta práctica.</strong></p>
-<p>Exporto la clave con el siguiente comando:</p>
-<div><pre><code>gpg --export -a &quot;oscar lucas leo&quot; &gt; oscar_lucas.asc
-</code></pre>
-</div><p>Y le envio a Angel el fichero oscar_lucas.asc</p>
-<p><font color="#00ff00"><strong>2.</strong></font> <strong>Importa las claves públicas recibidas de vuestro compañero.</strong></p>
-<p>Importo la clave que me ha mandado Angel</p>
-<p><img src="./../images/SAD/cripto I/2-2.png" alt="image"></p>
-<p><font color="#00ff00"><strong>3.</strong></font> <strong>Comprueba que las claves se han incluido correctamente en vuestro keyring.</strong>
-<img src="./../images/SAD/cripto I/2-3.png" alt="image"></p>
-<h3 id="tarea-3-cifrado-asimetrico-con-claves-publicas"> Tarea 3: Cifrado asimétrico con claves públicas</h3>
-<p><font color="#00ff00"><strong>1.</strong></font> <strong>Cifraremos un archivo cualquiera y lo remitiremos por email a uno de nuestros compañeros que nos proporcionó su clave pública.</strong></p>
-<p><img src="./../images/SAD/cripto I/3-1.png" alt="image"></p>
-<p><font color="#00ff00"><strong>2.</strong></font> <strong>Nuestro compañero, a su vez, nos remitirá un archivo cifrado para que nosotros lo descifremos.</strong></p>
-<p>Le envio el archivo cifrado_olucas que he cifrado antes</p>
-<p><font color="#00ff00"><strong>3.</strong></font> <strong>Tanto nosotros como nuestro compañero comprobaremos que hemos podido descifrar los mensajes recibidos respectivamente.</strong></p>
-<p><img src="./../images/SAD/cripto I/3-3.png" alt="image"></p>
-<p><font color="#00ff00"><strong>4.</strong></font> <strong>Por último, enviaremos el documento cifrado a alguien que no estaba en la lista de destinatarios y comprobaremos que este usuario no podrá descifrar este archivo.</strong></p>
-<p>El archivo se lo he pasado a Paco y como podemos ver el no tiene acceso para poder descifrarlo</p>
-<p><img src="./../images/SAD/cripto I/3-4.jpeg" alt="image"></p>
-<p><font color="#00ff00"><strong>5.</strong></font> <strong>Para terminar, indica los comandos necesarios para borrar las claves públicas y privadas que posees.</strong></p>
-<p>Comando para borrar clave publica:</p>
-<div><pre><code>gpg --delete-key &quot;Nombre de Usuario&quot;
-</code></pre>
-</div><p>Comando para borrar clave privada:</p>
-<div><pre><code>gpg --delete-secret-key &quot;Nombre de Usuario&quot;
-</code></pre>
-</div><h3 id="tarea-4-exportar-clave-a-un-servidor-publico-de-claves-pgp"> Tarea 4: Exportar clave a un servidor público de claves PGP</h3>
-<p><font color="#00ff00"><strong>1.</strong></font> <strong>Genera la clave de revocación de tu clave pública para utilizarla en caso de que haya problemas.</strong></p>
-<p><img src="./../images/SAD/cripto I/4-1.png" alt="image"></p>
-<p><font color="#00ff00"><strong>2.</strong></font> <strong>Exporta tu clave pública al servidor pgp.rediris.es</strong></p>
-<p>Tanto Angel como yo hemos probado exportar la clave en &quot;pgp.rediris.es&quot; pero no iba y hemos decido hacerla en &quot;keyserver.ubuntu.com&quot;</p>
-<p><img src="./../images/SAD/cripto I/4-2.png" alt="image"></p>
-<p><font color="#00ff00"><strong>3.</strong></font> <strong>Borra la clave pública de alguno de tus compañeros de clase e impórtala ahora del servidor público de rediris.</strong></p>
-<p>Borro la clave de Angel</p>
-<p><img src="./../images/SAD/cripto I/4-3.png" alt="image"></p>
-<p>Y la vuelvo a importar ahora a traves del servidor publico.</p>
-<p><img src="./../images/SAD/cripto I/4-3.1.png" alt="image"></p>
-<h3 id="tarea-5-cifrado-asimetrico-con-openssl"> Tarea 5: Cifrado asimétrico con openssl</h3>
-<p><font color="#00ff00"><strong>1.</strong></font> <strong>Genera un par de claves (pública y privada).</strong></p>
-<p><img src="./../images/SAD/cripto I/5-1.png" alt="image"></p>
-<p><font color="#00ff00"><strong>2.</strong></font> <strong>Envía tu clave pública a un compañero.</strong></p>
-<p>Guardo la clave en un archivo con el siguiente comando:</p>
-<div><pre><code>sudo openssl rsa -in key.pem -pubout -out key.publica.pem
-</code></pre>
-</div><p><img src="./../images/SAD/cripto I/5-2.png" alt="image"></p>
-<p>Y el fichero &quot;key.publica.pem&quot; se la envio a Angel</p>
-<p><font color="#00ff00"><strong>3.</strong></font> <strong>Utilizando la clave pública cifra un fichero de texto y envíalo a tu compañero.</strong></p>
-<p>Cifro un archivo de texto con el siguiente comando:</p>
-<div><pre><code>openssl rsautl -encrypt -in cifrado_olucas -out cifrado_olucas.enc -inkey ~/Descargas/publicaopenssl.pem -pubin
-</code></pre>
-</div><p><img src="./../images/SAD/cripto I/5-3.png" alt="image"></p>
-<p>Y se la envio a Angel</p>
-<p><font color="#00ff00"><strong>4.</strong></font> <strong>Tu compañero te ha mandado un fichero cifrado, muestra el proceso para el descifrado.</strong></p>
-<p>Angel me ha mandado su archivo llamado &quot;CifradoOSSasp.enc&quot; y lo desencripto con el siguiente comando:</p>
-<div><pre><code>sudo openssl rsautl -decrypt -in Descargas/CifradoOSSasp.enc -out cifrado.txt -inkey key.pem
-</code></pre>
-</div><p>Y despues ejecutare el comando &quot;cat&quot; para ver el interior del fichero.</p>
-<p><img src="./../images/SAD/cripto I/5-4.png" alt="image"></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -776,124 +779,6 @@ en /etc/nginx/sites-enabled.</p>
 <div><pre><code>sudo systemctl restart nginx
 </code></pre>
 </div><p>Y ya nos deberia dejar acceder a nuestra pagina y podriamos acceder con https</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Despliegue de aplicaciones Java</title>
-      <link>https://github.com/oscarlucas22/practicas/java/</link>
-      <guid>https://github.com/oscarlucas22/practicas/java/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">Despliegue de aplicaciones Java</source>
-      <category>practicas</category>
-      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="despliegue-de-aplicaciones-java"> Despliegue de aplicaciones Java</h1>
-<p>Información de la <a href="https://fp.josedomingo.org/iaw2223/5_java/practica.html" target="_blank" rel="noopener noreferrer">Practica<i>Content not supported</i></a></p>
-<h3 id="tarea-1-desarrollo-y-despliegue-de-una-aplicacion-java-simple"> Tarea 1: Desarrollo y despliegue de una aplicación Java simple</h3>
-<p><font color="#FFA500"><strong>Paso 1</strong></font> <strong>Clonamos el <a href="https://github.com/josedom24/rock-paper-scissors" target="_blank" rel="noopener noreferrer">repositorio<i>Content not supported</i></a></strong></p>
-<p>Instalamos git si no lo tenemos:</p>
-<div><pre><code>apt install git
-</code></pre>
-</div><p>Y clonamos el repositorio:</p>
-<div><pre><code>git clone https://github.com/josedom24/rock-paper-scissors.git
-</code></pre>
-</div><p>Nota: Para seguir el siguiente paso debes de hacer este <a href="https://fp.josedomingo.org/iaw2223/5_java/t1.html" target="_blank" rel="noopener noreferrer">Taller<i>Content not supported</i></a></p>
-<p><font color="#FFA500"><strong>Paso 2</strong></font></p>
-<p>Entraremos dentro de la carpeta que se nos ha creado y ejecutaremos el siguiente comando:</p>
-<div><pre><code>mvn package
-</code></pre>
-</div><p><font color="#FFA500"><strong>Paso 3</strong></font> <strong>Nos pasamos el fichero .war</strong></p>
-<p>Nos pasaremos por <code>scp</code> a nuestra maquina local el archivo .war que estara dentro de la nueva carpeta que nos ha creado</p>
-<p><font color="#FFA500"><strong>Paso 4</strong></font> <strong>Buscaremos la en la web</strong></p>
-<div><pre><code>`Ip-de-la-maquina:8080/manager/html`
-</code></pre>
-</div><p><font color="#FFA500"><strong>Paso 5</strong></font> <strong>Desplegamos la aplicación</strong></p>
-<p>Le introduciremos nuestro usuario y password y pincharemos en <em>examinar</em> introduciremos nuestro .war y le daremos a <em>desplegar</em> y nos saldra ya habilitada nuestra pagina.</p>
-<p><img src="./../images/IAW/java/1-java.png" alt="image"></p>
-<p><img src="./../images/IAW/java/2-java.png" alt="image"></p>
-<h3 id="tarea-2-despliegue-de-un-cms-java"> Tarea 2: Despliegue de un CMS Java</h3>
-<p><font color="#FFA500"><strong>Paso 1</strong></font> <strong>Descargar el fichero .war</strong></p>
-<p><a href="https://cloud.josedomingo.org/index.php/s/cwMj6NAZ4fNMoRA" target="_blank" rel="noopener noreferrer">Fichero .war<i>Content not supported</i></a></p>
-<p><font color="#FFA500"><strong>Paso 2</strong></font> <strong>Creamos un usuario en MySQL</strong></p>
-<p>Instalamos MySQL si no lo tenemos:</p>
-<div><pre><code>sudo apt install mariadb-server -y
-</code></pre>
-</div><p>Creamos un usuario:</p>
-<div><pre><code>create user olucas_java;
-</code></pre>
-</div><hr>
-<div><pre><code>grant all privileges on *.* to 'olucas_java'@'%' identified by 'root' with grant option;
-</code></pre>
-</div><hr>
-<div><pre><code>flush privileges;
-</code></pre>
-</div><p><font color="#FFA500"><strong>Paso 3</strong></font> <strong>Accedemos a la aplicación para configurarla</strong></p>
-<p>Pinchamos en la aplicación:</p>
-<p>![image]../images/IAW/java/2-java.png</p>
-<p>Ponemos a continuación de la URL <code>/setup</code> y nos aparecera lo siguiente:</p>
-<p><img src="./../images/IAW/java/3-java.png" alt="image"></p>
-<p><img src="./../images/IAW/java/4-java.png" alt="image"></p>
-<p>En la siguiente ventana pondremos el usuarios y la contraseña que hemos creado en MySQL</p>
-<p><img src="./../images/IAW/java/5-java.png" alt="image"></p>
-<p><img src="./../images/IAW/java/6-java.png" alt="image"></p>
-<p><img src="./../images/IAW/java/7-java.png" alt="image"></p>
-<p><font color="#FFA500"><strong>Paso 4</strong></font> <strong>Modificación en la aplicación</strong></p>
-<p>Despúes de que acabe la instalación haremos alguna modificación en la página entrando en la URL <code>Ip-maquina:8080/opencms/overview/</code></p>
-<p>Primero nos tendremos que loguear en la página con el usuario <code>Admin</code> y la contraseña <code>admin</code></p>
-<p>Editaremos por ejemplo el cuadro rojo, y cambiaremos <code>Documentación</code> por nuestro nombre mismo, para ello le daremos al lapiz para editar que aparece en la esquina superior derecha del cuadro rojo.</p>
-<p><img src="./../images/IAW/java/8-java.png" alt="image"></p>
-<p>Y le daremos a publicar que aparece en la esquina superior izquierda de la página:</p>
-<p><img src="./../images/IAW/java/9-java.png" alt="image"></p>
-<h3 id="tarea-3-acceso-a-las-aplicaciones"> Tarea 3: Acceso a las aplicaciones</h3>
-<p>Habilitaremos un virtual host (en mi caso en nginx), si no tenemos instalado nginx lo instalaremos:</p>
-<div><pre><code>apt install nginx
-</code></pre>
-</div><p>Creamos el VirtualHost:</p>
-<div><pre><code>sudo nano /etc/nginx/site-available/java.conf
-</code></pre>
-</div><hr>
-<div><pre><code>server {
-    listen 80;
-    listen [::]:80;
-
-    index index.html index.htm index.nginx-debian.html;
-
-    server_name java.olucas.org;
-
-    location / {
-        return 301 http://$host/opencms/;
-    }
-
-    location /game{
-                proxy_pass http://localhost:8080/roshambo/;
-                include proxy_params;
-    }	
-
-    location /opencms/{
-        proxy_pass http://localhost:8080;
-        include proxy_params;	
-    }
-
-}
-</code></pre>
-</div><p>Habilitaremos nuestro virtual host</p>
-<div><pre><code>cd /etc/nginx/site-enabled
-</code></pre>
-</div><hr>
-<div><pre><code>sudo ln -s ../site-available/java.conf
-</code></pre>
-</div><p>Y reiniciamos nginx</p>
-<div><pre><code>sudo systemctl restart nginx
-</code></pre>
-</div><p>Pondremo en el <code>/etc/hosts</code> de nuestra maquina lo siguiente:</p>
-<div><pre><code>Ip-maquina  java.tunombre.org
-</code></pre>
-</div><p>Cambiamos los permisos del directorio opencms situado en <code>/var/lib/tomcat9/webapps</code>:</p>
-<div><pre><code>sudo chmod 750 opencms
-</code></pre>
-</div><p>Y ya tendiamos funcionando nuestra aplicación:</p>
-<p>Aplicación Piedra, Papel o Tijeras:</p>
-<p><img src="./../images/IAW/java/10-java.png" alt="image"></p>
-<p>Aplicación Opencms:</p>
-<p><img src="./../images/IAW/java/11-java.png" alt="image"></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -1413,186 +1298,121 @@ snap install core; sudo snap refresh core
 ]]></content:encoded>
     </item>
     <item>
-      <title>Compilación de un programa en C utilizando un Makefile</title>
-      <link>https://github.com/oscarlucas22/practicas/makefile/</link>
-      <guid>https://github.com/oscarlucas22/practicas/makefile/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">Compilación de un programa en C utilizando un Makefile</source>
+      <title>Despliegue de aplicaciones Java</title>
+      <link>https://github.com/oscarlucas22/practicas/java/</link>
+      <guid>https://github.com/oscarlucas22/practicas/java/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">Despliegue de aplicaciones Java</source>
       <category>practicas</category>
       <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="compilacion-de-un-programa-en-c-utilizando-un-makefile"> Compilación de un programa en C utilizando un Makefile</h1>
-<p>Aqui dejo la url de la web de <a href="https://packages.debian.org/bullseye/imagination" target="_blank" rel="noopener noreferrer">Debian<i>Content not supported</i></a> donde se encuentra la compilación del paquete imagination.</p>
-<p><font color="#FFFF00"><strong>Paso 1</strong></font> Descarga del código fuente</p>
-<p>Primero instalaremos dpkg-dev</p>
-<div><pre><code>sudo apt install dpkg-dev
+      <content:encoded><![CDATA[<h1 id="despliegue-de-aplicaciones-java"> Despliegue de aplicaciones Java</h1>
+<p>Información de la <a href="https://fp.josedomingo.org/iaw2223/5_java/practica.html" target="_blank" rel="noopener noreferrer">Practica<i>Content not supported</i></a></p>
+<h3 id="tarea-1-desarrollo-y-despliegue-de-una-aplicacion-java-simple"> Tarea 1: Desarrollo y despliegue de una aplicación Java simple</h3>
+<p><font color="#FFA500"><strong>Paso 1</strong></font> <strong>Clonamos el <a href="https://github.com/josedom24/rock-paper-scissors" target="_blank" rel="noopener noreferrer">repositorio<i>Content not supported</i></a></strong></p>
+<p>Instalamos git si no lo tenemos:</p>
+<div><pre><code>apt install git
 </code></pre>
-</div><p>Despues instalaremos imagination con el comando <code>apt source</code></p>
-<div><pre><code>apt source imagination
+</div><p>Y clonamos el repositorio:</p>
+<div><pre><code>git clone https://github.com/josedom24/rock-paper-scissors.git
 </code></pre>
-</div><p><img src="./../images/ASO/1-ASO.png" alt="image"></p>
-<p><img src="./../images/ASO/2-ASO.png" alt="image"></p>
-<p><font color="#FFFF00"><strong>Paso 2</strong></font> Instalación dependencias</p>
-<p>Para instalar las dependencias utilizaremos el comando <code>apt build-dep</code></p>
-<div><pre><code>sudo apt build-dep imagination
+</div><p>Nota: Para seguir el siguiente paso debes de hacer este <a href="https://fp.josedomingo.org/iaw2223/5_java/t1.html" target="_blank" rel="noopener noreferrer">Taller<i>Content not supported</i></a></p>
+<p><font color="#FFA500"><strong>Paso 2</strong></font></p>
+<p>Entraremos dentro de la carpeta que se nos ha creado y ejecutaremos el siguiente comando:</p>
+<div><pre><code>mvn package
 </code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 3</strong></font> Compilación del paquete</p>
-<p>Para poder compilar el paquete nos moveremos a la carpeta descomprimida</p>
-<div><pre><code>cd imagination-3.6/
+</div><p><font color="#FFA500"><strong>Paso 3</strong></font> <strong>Nos pasamos el fichero .war</strong></p>
+<p>Nos pasaremos por <code>scp</code> a nuestra maquina local el archivo .war que estara dentro de la nueva carpeta que nos ha creado</p>
+<p><font color="#FFA500"><strong>Paso 4</strong></font> <strong>Buscaremos la en la web</strong></p>
+<div><pre><code>`Ip-de-la-maquina:8080/manager/html`
+</code></pre>
+</div><p><font color="#FFA500"><strong>Paso 5</strong></font> <strong>Desplegamos la aplicación</strong></p>
+<p>Le introduciremos nuestro usuario y password y pincharemos en <em>examinar</em> introduciremos nuestro .war y le daremos a <em>desplegar</em> y nos saldra ya habilitada nuestra pagina.</p>
+<p><img src="./../images/IAW/java/1-java.png" alt="image"></p>
+<p><img src="./../images/IAW/java/2-java.png" alt="image"></p>
+<h3 id="tarea-2-despliegue-de-un-cms-java"> Tarea 2: Despliegue de un CMS Java</h3>
+<p><font color="#FFA500"><strong>Paso 1</strong></font> <strong>Descargar el fichero .war</strong></p>
+<p><a href="https://cloud.josedomingo.org/index.php/s/cwMj6NAZ4fNMoRA" target="_blank" rel="noopener noreferrer">Fichero .war<i>Content not supported</i></a></p>
+<p><font color="#FFA500"><strong>Paso 2</strong></font> <strong>Creamos un usuario en MySQL</strong></p>
+<p>Instalamos MySQL si no lo tenemos:</p>
+<div><pre><code>sudo apt install mariadb-server -y
+</code></pre>
+</div><p>Creamos un usuario:</p>
+<div><pre><code>create user olucas_java;
+</code></pre>
+</div><hr>
+<div><pre><code>grant all privileges on *.* to 'olucas_java'@'%' identified by 'root' with grant option;
+</code></pre>
+</div><hr>
+<div><pre><code>flush privileges;
+</code></pre>
+</div><p><font color="#FFA500"><strong>Paso 3</strong></font> <strong>Accedemos a la aplicación para configurarla</strong></p>
+<p>Pinchamos en la aplicación:</p>
+<p>![image]../images/IAW/java/2-java.png</p>
+<p>Ponemos a continuación de la URL <code>/setup</code> y nos aparecera lo siguiente:</p>
+<p><img src="./../images/IAW/java/3-java.png" alt="image"></p>
+<p><img src="./../images/IAW/java/4-java.png" alt="image"></p>
+<p>En la siguiente ventana pondremos el usuarios y la contraseña que hemos creado en MySQL</p>
+<p><img src="./../images/IAW/java/5-java.png" alt="image"></p>
+<p><img src="./../images/IAW/java/6-java.png" alt="image"></p>
+<p><img src="./../images/IAW/java/7-java.png" alt="image"></p>
+<p><font color="#FFA500"><strong>Paso 4</strong></font> <strong>Modificación en la aplicación</strong></p>
+<p>Despúes de que acabe la instalación haremos alguna modificación en la página entrando en la URL <code>Ip-maquina:8080/opencms/overview/</code></p>
+<p>Primero nos tendremos que loguear en la página con el usuario <code>Admin</code> y la contraseña <code>admin</code></p>
+<p>Editaremos por ejemplo el cuadro rojo, y cambiaremos <code>Documentación</code> por nuestro nombre mismo, para ello le daremos al lapiz para editar que aparece en la esquina superior derecha del cuadro rojo.</p>
+<p><img src="./../images/IAW/java/8-java.png" alt="image"></p>
+<p>Y le daremos a publicar que aparece en la esquina superior izquierda de la página:</p>
+<p><img src="./../images/IAW/java/9-java.png" alt="image"></p>
+<h3 id="tarea-3-acceso-a-las-aplicaciones"> Tarea 3: Acceso a las aplicaciones</h3>
+<p>Habilitaremos un virtual host (en mi caso en nginx), si no tenemos instalado nginx lo instalaremos:</p>
+<div><pre><code>apt install nginx
+</code></pre>
+</div><p>Creamos el VirtualHost:</p>
+<div><pre><code>sudo nano /etc/nginx/site-available/java.conf
+</code></pre>
+</div><hr>
+<div><pre><code>server {
+    listen 80;
+    listen [::]:80;
 
-./configure
-</code></pre>
-</div><p><img src="./../images/ASO/3-ASO.png" alt="image"></p>
-<p><img src="./../images/ASO/4-ASO.png" alt="image"></p>
-<p>Y despues de esto ejecutaremos el comando <code>make</code></p>
-<div><pre><code>make
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 4</strong></font> Instalación del paquete</p>
-<p>Una vez ya este compilado ejecutaremos:</p>
-<div><pre><code>sudo make install
-</code></pre>
-</div><p>Y con esto ya tendriamos instalado el paquete</p>
-<p><font color="#FFFF00"><strong>Paso 5</strong></font> Desinstalación del paquete</p>
-<p>Para poder desinstalar el paquete debemos ejecutar:</p>
-<div><pre><code>cd imagination-3.6/
+    index index.html index.htm index.nginx-debian.html;
 
-sudo make uninstall
-</code></pre>
-</div><p>Y con esto ya estaría desinstalado</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>MongoDB en Debian 11 Bullseye</title>
-      <link>https://github.com/oscarlucas22/practicas/mongo/</link>
-      <guid>https://github.com/oscarlucas22/practicas/mongo/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">MongoDB en Debian 11 Bullseye</source>
-      <category>practicas</category>
-      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="mongodb-en-debian-11-bullseye"> MongoDB en Debian 11 Bullseye</h1>
-<p><img src="./../images/ABD/mongodb.png" alt="image"></p>
-<h2 id="instalacion-de-mongodb-en-debian-11-bullseye"> Instalación de MongoDB en Debian 11 Bullseye</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font> Instalar paquetes requeridos</p>
-<div><pre><code>sudo apt install dirmngr gnupg apt-transport-https software-properties-common ca-certificates curl -y
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 2</strong></font> Importar repositorio de MongoDB</p>
-<div><pre><code>sudo wget -O- https://www.mongodb.org/static/pgp/server-5.0.asc | gpg --dearmor | sudo tee /usr/share/keyrings/mongodb.gpg
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font> Agregamos el repositorio</p>
-<div><pre><code>echo 'deb [signed-by=/usr/share/keyrings/mongodb.gpg] http://repo.mongodb.org/apt/debian buster/mongodb-org/5.0 main' | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 4</strong></font> Actualizamos</p>
-<div><pre><code>sudo apt-get update
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 5</strong></font> Instalar MongoDB 5.0</p>
-<div><pre><code>sudo apt install mongodb-org -y
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 6</strong></font> Activamos el servicio de mongodb</p>
-<div><pre><code>sudo systemctl enable mongod --now
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 7</strong></font> Verificamos la versión</p>
-<div><pre><code>mongo --eval 'db.runCommand({ connectionStatus: 1 })'
-</code></pre>
-</div><p><img src="./../images/ABD/1-mongo.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 8</strong></font> Configurar la seguridad de MongoDB</p>
-<div><pre><code>sudo nano /etc/mongod.conf
-</code></pre>
-</div><hr>
-<div><pre><code>security:
-    authorization: enabled
-</code></pre>
-</div><p><img src="./../images/ABD/2-mongo.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 9</strong></font> Reiniciamos servicio</p>
-<div><pre><code>sudo systemctl restart mongod
-</code></pre>
-</div><h2 id="creacion-de-usuario-administrador"> Creación de usuario administrador</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font> Crear usuario administrador en MongoDB</p>
-<div><pre><code>mongosh
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 2</strong></font> Nos conectamos como administrador</p>
-<div><pre><code>use admin
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font> Creamos usuario</p>
-<div><pre><code>db.createUser(
-    {
-        user: &quot;lucas&quot;, 
-        pwd: &quot;admin&quot;, 
-        roles: [{ role: &quot;userAdminAnyDatabase&quot;, db: &quot;admin&quot; }, &quot;readWriteAnyDatabase&quot;]
+    server_name java.olucas.org;
+
+    location / {
+        return 301 http://$host/opencms/;
     }
-)
-</code></pre>
-</div><p><img src="./../images/ABD/3-mongo.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 4</strong></font> Nos conectamos</p>
-<div><pre><code>mongosh -u lucas
-</code></pre>
-</div><hr>
-<h2 id="ayuda-sobre-manejo-en-mongodb"> Ayuda sobre manejo en MongoDB</h2>
-<h3 id="creacion-de-base-de-datos"> Creación de base de datos</h3>
-<div><pre><code>use &lt;nombre-database&gt;
-</code></pre>
-</div><h3 id="usuario"> Usuario</h3>
-<p><strong>Creacion de usuario</strong></p>
-<div><pre><code>db.createUser(
-    {
-        user: &quot;usuario&quot;, 
-        pwd: &quot;passwd&quot;, 
-        roles: []
+
+    location /game{
+                proxy_pass http://localhost:8080/roshambo/;
+                include proxy_params;
+    }	
+
+    location /opencms/{
+        proxy_pass http://localhost:8080;
+        include proxy_params;	
     }
-)
+
+}
 </code></pre>
-</div><p><strong>Borrar usuario</strong></p>
-<p>db.dropUser(&quot;usuario&quot;)</p>
-<h3 id="colecciones"> Colecciones</h3>
-<p><strong>Crear coleccion</strong></p>
-<div><pre><code>db.createCollection(&quot;collection&quot;)
-</code></pre>
-</div><p><strong>Insertar valores</strong></p>
-<div><pre><code>db.collection.insertMany([
-{ dato1: &quot;dato&quot;, dato1: &quot;dato&quot; },
-{ dato2: &quot;dato&quot;, dato2: &quot;dato&quot; }
-])
-</code></pre>
-</div><h3 id="uso-de-privilegios-roles"> Uso de privilegios (Roles)</h3>
-<p><strong>Crear rol</strong></p>
-<p>Ejemplo de privilegio de solo lectura</p>
-<div><pre><code>db.createRole({role: &quot;nombre-role&quot;, privileges:[{resource: {db:&quot;nombre-db&quot;,collection:&quot;nombre-collection&quot;},actions:[&quot;find&quot;]}],roles:[]})
-</code></pre>
-</div><p>Se la asignamos a un usuario</p>
-<div><pre><code>db.grantRolesToUser(&quot;usuario&quot;,[{role:&quot;nombre-role&quot;,db:&quot;nombre-db&quot;}])
+</div><p>Habilitaremos nuestro virtual host</p>
+<div><pre><code>cd /etc/nginx/site-enabled
 </code></pre>
 </div><hr>
-<p><strong>Listar base de datos</strong></p>
-<div><pre><code>show dbs
+<div><pre><code>sudo ln -s ../site-available/java.conf
 </code></pre>
-</div><p><strong>Verificar la base de datos actual</strong></p>
-<div><pre><code>db
+</div><p>Y reiniciamos nginx</p>
+<div><pre><code>sudo systemctl restart nginx
 </code></pre>
-</div><p><strong>Eliminar base de datos</strong></p>
-<p>Hacerlo dentro de la base de datos</p>
-<div><pre><code>db.dropDatabase()
+</div><p>Pondremo en el <code>/etc/hosts</code> de nuestra maquina lo siguiente:</p>
+<div><pre><code>Ip-maquina  java.tunombre.org
 </code></pre>
-</div><p><strong>Importar json en MongoDB</strong></p>
-<p>Hacerlo fuera de mongo</p>
-<div><pre><code>mongoimport --db NAME_BD --collection NAME_YOUR_COLLECTION --file 'ruta del json'
+</div><p>Cambiamos los permisos del directorio opencms situado en <code>/var/lib/tomcat9/webapps</code>:</p>
+<div><pre><code>sudo chmod 750 opencms
 </code></pre>
-</div><p><strong>Eliminar json de la base de datos</strong></p>
-<p>Hacerlo dentro de la base de datos donde este el json</p>
-<div><pre><code>db.NAME_COLLECTION.drop()
-</code></pre>
-</div><p><strong>Mostrar la colección</strong></p>
-<div><pre><code>db.nombre-collection.find()
-</code></pre>
-</div><h2 id="acceso-remoto"> Acceso remoto</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font> Editaremos el fichero <code>mongod.conf</code></p>
-<div><pre><code>sudo /etc/mongod.conf
-</code></pre>
-</div><p>Ahí editaremos donde pone <code>bindIp</code> escribiremos la ip del servidor, asi como se muestra en la imagen:</p>
-<p><img src="./../images/ABD/4-mongo.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 2</strong></font> Reiniciamos el servicio para que los cambios se guarden</p>
-<div><pre><code>sudo service mongod restart
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font> Nos iremos a la maquina cliente y nos conectaremos</p>
-<div><pre><code>mongosh -u nombre-user -p password ip-server
-</code></pre>
-</div><p><img src="./../images/ABD/5-mongo.png" alt="image"></p>
-<p>¡Gracias!</p>
+</div><p>Y ya tendiamos funcionando nuestra aplicación:</p>
+<p>Aplicación Piedra, Papel o Tijeras:</p>
+<p><img src="./../images/IAW/java/10-java.png" alt="image"></p>
+<p>Aplicación Opencms:</p>
+<p><img src="./../images/IAW/java/11-java.png" alt="image"></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -1654,6 +1474,156 @@ sudo make uninstall
 <p><strong>Delta</strong>
 <img src="./../images/ASO/10-logs.png" alt="image"></p>
 <p>Se puede observar que los logs estan llegando correctamente a Alfa por lo que el sistema de recoleccion de logs esta funcionando perfectamente.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Compilación de un programa en C utilizando un Makefile</title>
+      <link>https://github.com/oscarlucas22/practicas/makefile/</link>
+      <guid>https://github.com/oscarlucas22/practicas/makefile/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">Compilación de un programa en C utilizando un Makefile</source>
+      <category>practicas</category>
+      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="compilacion-de-un-programa-en-c-utilizando-un-makefile"> Compilación de un programa en C utilizando un Makefile</h1>
+<p>Aqui dejo la url de la web de <a href="https://packages.debian.org/bullseye/imagination" target="_blank" rel="noopener noreferrer">Debian<i>Content not supported</i></a> donde se encuentra la compilación del paquete imagination.</p>
+<p><font color="#FFFF00"><strong>Paso 1</strong></font> Descarga del código fuente</p>
+<p>Primero instalaremos dpkg-dev</p>
+<div><pre><code>sudo apt install dpkg-dev
+</code></pre>
+</div><p>Despues instalaremos imagination con el comando <code>apt source</code></p>
+<div><pre><code>apt source imagination
+</code></pre>
+</div><p><img src="./../images/ASO/1-ASO.png" alt="image"></p>
+<p><img src="./../images/ASO/2-ASO.png" alt="image"></p>
+<p><font color="#FFFF00"><strong>Paso 2</strong></font> Instalación dependencias</p>
+<p>Para instalar las dependencias utilizaremos el comando <code>apt build-dep</code></p>
+<div><pre><code>sudo apt build-dep imagination
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 3</strong></font> Compilación del paquete</p>
+<p>Para poder compilar el paquete nos moveremos a la carpeta descomprimida</p>
+<div><pre><code>cd imagination-3.6/
+
+./configure
+</code></pre>
+</div><p><img src="./../images/ASO/3-ASO.png" alt="image"></p>
+<p><img src="./../images/ASO/4-ASO.png" alt="image"></p>
+<p>Y despues de esto ejecutaremos el comando <code>make</code></p>
+<div><pre><code>make
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 4</strong></font> Instalación del paquete</p>
+<p>Una vez ya este compilado ejecutaremos:</p>
+<div><pre><code>sudo make install
+</code></pre>
+</div><p>Y con esto ya tendriamos instalado el paquete</p>
+<p><font color="#FFFF00"><strong>Paso 5</strong></font> Desinstalación del paquete</p>
+<p>Para poder desinstalar el paquete debemos ejecutar:</p>
+<div><pre><code>cd imagination-3.6/
+
+sudo make uninstall
+</code></pre>
+</div><p>Y con esto ya estaría desinstalado</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>MariaDB en Debian 11 Bullseye</title>
+      <link>https://github.com/oscarlucas22/practicas/mariadb/</link>
+      <guid>https://github.com/oscarlucas22/practicas/mariadb/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">MariaDB en Debian 11 Bullseye</source>
+      <category>practicas</category>
+      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="mariadb-en-debian-11-bullseye"> MariaDB en Debian 11 Bullseye</h1>
+<p><img src="./../images/ABD/mariadb.png" alt="image"></p>
+<p>Para conseguir una instalación correcta debemos cumplir los siguientes requisitos:</p>
+<p><input type="checkbox" name="vehicle" value="Bike"> Tener una máquina Debian 11 actualizada</p>
+<p><input type="checkbox" name="vehicle" value="Bike"> Tener un usuario con privilegios de sudo</p>
+<p><input type="checkbox" name="vehicle" value="Bike"> Tener acceso a internet</p>
+<p>Antes de comenzar con la instalación actualizaremos nuestra máquina</p>
+<div><pre><code>sudo apt update &amp;&amp; sudo apt upgrade
+</code></pre>
+</div><p>Una vez completada la actualización del sistema, ejecuta el siguiente comando para instalr los paquetes necesarios</p>
+<div><pre><code>sudo apt-get install software-properties-common dirmngr gnupg2 -y
+</code></pre>
+</div><hr>
+<div><pre><code>sudo apt-get install apt-transport-https wget curl -y
+</code></pre>
+</div><h2 id="instalar-mariadb-en-debian-11"> Instalar MariaDB en Debian 11</h2>
+<p>Para comenzar con la instalación ejecuta el siguiente comando:</p>
+<div><pre><code>sudo apt install mariadb-server -y
+</code></pre>
+</div><p>Para iniciar, detener y reiniciar el servidor de bases de datos MariaDB, utiliza los siguientes comandos:</p>
+<p>Iniciar</p>
+<div><pre><code>sudo systemctl start mariadb
+</code></pre>
+</div><p>Detener</p>
+<div><pre><code>sudo systemctl stop mariadb
+</code></pre>
+</div><p>Reiniciar</p>
+<div><pre><code>sudo systemctl restart mariadb
+</code></pre>
+</div><p>Para que MariaDB se inicie automáticamente al arrancar el sistema, ejecuta el siguiente comando:</p>
+<div><pre><code>sudo systemctl enable mariadb
+</code></pre>
+</div><p>MariaDB debería estar en marcha en este momento. Puedes comprobar si se esta ejecutando, ejecutando el siguiente comando:</p>
+<div><pre><code>sudo systemctl status mariadb
+</code></pre>
+</div><p>Ejemplo de salida:</p>
+<p><img src="./../images/ABD/1-mariadb.png" alt="image"></p>
+<p><code>Ctrl + C</code> para salir del fichero</p>
+<p>Y con esto ya tendriamos instalado MariaDB y para ejecutarlo, ejecutaremos el siguiente comando:</p>
+<div><pre><code>sudo mysql
+</code></pre>
+</div><h2 id="creacion-de-usuario"> Creación de usuario</h2>
+<p>Los siguientes pasos que vas a ver se ejecutan dentro de MariaDB (cambia el usuario y la contraseña por los tuyos)</p>
+<div><pre><code>create user lucas;
+</code></pre>
+</div><hr>
+<div><pre><code>grant all privileges on *.* to 'lucas'@'%' identified by 'root' with grant option;
+</code></pre>
+</div><hr>
+<div><pre><code>FLUSH PRIVILEGES;
+</code></pre>
+</div><p><img src="./../images/ABD/2-mariadb.png" alt="image"></p>
+<p>Y una vez ya creado el usuario salimos de MariaDB ejecutando <code>exit;</code>
+Y para conectarnos a nuestro usuario ejecutaremos el siguiente comando:</p>
+<div><pre><code>mysql -u lucas -p
+</code></pre>
+</div><p><img src="./../images/ABD/5-mariadb.png" alt="image"></p>
+<h3 id="creacion-de-base-de-datos"> Creación de base de datos</h3>
+<p>Para ejecutar una base de datos ejecutaremos el siguiente comando:</p>
+<div><pre><code>mysql&gt; CREATE DATABASE nombre-db;
+</code></pre>
+</div><p><img src="./../images/ABD/6-mariadb.png" alt="image"></p>
+<p>Para meternos en una base de datos ejecutaremos el siguiente comando:</p>
+<div><pre><code>mysql&gt; use nombre-db;
+</code></pre>
+</div><p>Para crear una tabla ejecutaremos el siguiente comando:</p>
+<div><pre><code>mysql&gt; CREATE TABLE NOMBRE (
+    -&gt;     DATO,
+    -&gt;     DATO,
+    -&gt;     DATO
+    -&gt; );
+</code></pre>
+</div><p>Para ejecutar los insert dentro de la table ejecutaremos el siguiente comando:</p>
+<div><pre><code>mysql&gt; INSERT INTO NOMBRE VALUES ('DATO','DATO','DATO');
+</code></pre>
+</div><p>Ejemplo práctico:</p>
+<p><img src="./../images/ABD/7-mariadb.png" alt="image"></p>
+<h2 id="acceso-remoto"> Acceso remoto</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font> Modificamos el fichero <code>50-server.conf</code></p>
+<div><pre><code>sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
+</code></pre>
+</div><p>Y editamos la linea donde pone <code>bind-address</code> y lo dejaremos como se muestra en la imagen:</p>
+<p><img src="./../images/ABD/3-mariadb.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 2</strong></font> Reiniciamos el servicio mariadb</p>
+<div><pre><code>sudo service mariadb restart
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 3</strong></font> Nos iremos al cliente e instalaremos mariadb-client</p>
+<div><pre><code>sudo apt install mariadb-client
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 4</strong></font> Nos conectamos</p>
+<div><pre><code>mariadb -u lucas -h ip-servidor -p 
+</code></pre>
+</div><p><img src="./../images/ABD/4-mariadb.png" alt="image"></p>
+<p>¡Gracias!</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -1831,109 +1801,6 @@ export PATH=$ORACLE_HOME/bin:$PATH
 ]]></content:encoded>
     </item>
     <item>
-      <title>MariaDB en Debian 11 Bullseye</title>
-      <link>https://github.com/oscarlucas22/practicas/mariadb/</link>
-      <guid>https://github.com/oscarlucas22/practicas/mariadb/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">MariaDB en Debian 11 Bullseye</source>
-      <category>practicas</category>
-      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="mariadb-en-debian-11-bullseye"> MariaDB en Debian 11 Bullseye</h1>
-<p><img src="./../images/ABD/mariadb.png" alt="image"></p>
-<p>Para conseguir una instalación correcta debemos cumplir los siguientes requisitos:</p>
-<p><input type="checkbox" name="vehicle" value="Bike"> Tener una máquina Debian 11 actualizada</p>
-<p><input type="checkbox" name="vehicle" value="Bike"> Tener un usuario con privilegios de sudo</p>
-<p><input type="checkbox" name="vehicle" value="Bike"> Tener acceso a internet</p>
-<p>Antes de comenzar con la instalación actualizaremos nuestra máquina</p>
-<div><pre><code>sudo apt update &amp;&amp; sudo apt upgrade
-</code></pre>
-</div><p>Una vez completada la actualización del sistema, ejecuta el siguiente comando para instalr los paquetes necesarios</p>
-<div><pre><code>sudo apt-get install software-properties-common dirmngr gnupg2 -y
-</code></pre>
-</div><hr>
-<div><pre><code>sudo apt-get install apt-transport-https wget curl -y
-</code></pre>
-</div><h2 id="instalar-mariadb-en-debian-11"> Instalar MariaDB en Debian 11</h2>
-<p>Para comenzar con la instalación ejecuta el siguiente comando:</p>
-<div><pre><code>sudo apt install mariadb-server -y
-</code></pre>
-</div><p>Para iniciar, detener y reiniciar el servidor de bases de datos MariaDB, utiliza los siguientes comandos:</p>
-<p>Iniciar</p>
-<div><pre><code>sudo systemctl start mariadb
-</code></pre>
-</div><p>Detener</p>
-<div><pre><code>sudo systemctl stop mariadb
-</code></pre>
-</div><p>Reiniciar</p>
-<div><pre><code>sudo systemctl restart mariadb
-</code></pre>
-</div><p>Para que MariaDB se inicie automáticamente al arrancar el sistema, ejecuta el siguiente comando:</p>
-<div><pre><code>sudo systemctl enable mariadb
-</code></pre>
-</div><p>MariaDB debería estar en marcha en este momento. Puedes comprobar si se esta ejecutando, ejecutando el siguiente comando:</p>
-<div><pre><code>sudo systemctl status mariadb
-</code></pre>
-</div><p>Ejemplo de salida:</p>
-<p><img src="./../images/ABD/1-mariadb.png" alt="image"></p>
-<p><code>Ctrl + C</code> para salir del fichero</p>
-<p>Y con esto ya tendriamos instalado MariaDB y para ejecutarlo, ejecutaremos el siguiente comando:</p>
-<div><pre><code>sudo mysql
-</code></pre>
-</div><h2 id="creacion-de-usuario"> Creación de usuario</h2>
-<p>Los siguientes pasos que vas a ver se ejecutan dentro de MariaDB (cambia el usuario y la contraseña por los tuyos)</p>
-<div><pre><code>create user lucas;
-</code></pre>
-</div><hr>
-<div><pre><code>grant all privileges on *.* to 'lucas'@'%' identified by 'root' with grant option;
-</code></pre>
-</div><hr>
-<div><pre><code>FLUSH PRIVILEGES;
-</code></pre>
-</div><p><img src="./../images/ABD/2-mariadb.png" alt="image"></p>
-<p>Y una vez ya creado el usuario salimos de MariaDB ejecutando <code>exit;</code>
-Y para conectarnos a nuestro usuario ejecutaremos el siguiente comando:</p>
-<div><pre><code>mysql -u lucas -p
-</code></pre>
-</div><p><img src="./../images/ABD/5-mariadb.png" alt="image"></p>
-<h3 id="creacion-de-base-de-datos"> Creación de base de datos</h3>
-<p>Para ejecutar una base de datos ejecutaremos el siguiente comando:</p>
-<div><pre><code>mysql&gt; CREATE DATABASE nombre-db;
-</code></pre>
-</div><p><img src="./../images/ABD/6-mariadb.png" alt="image"></p>
-<p>Para meternos en una base de datos ejecutaremos el siguiente comando:</p>
-<div><pre><code>mysql&gt; use nombre-db;
-</code></pre>
-</div><p>Para crear una tabla ejecutaremos el siguiente comando:</p>
-<div><pre><code>mysql&gt; CREATE TABLE NOMBRE (
-    -&gt;     DATO,
-    -&gt;     DATO,
-    -&gt;     DATO
-    -&gt; );
-</code></pre>
-</div><p>Para ejecutar los insert dentro de la table ejecutaremos el siguiente comando:</p>
-<div><pre><code>mysql&gt; INSERT INTO NOMBRE VALUES ('DATO','DATO','DATO');
-</code></pre>
-</div><p>Ejemplo práctico:</p>
-<p><img src="./../images/ABD/7-mariadb.png" alt="image"></p>
-<h2 id="acceso-remoto"> Acceso remoto</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font> Modificamos el fichero <code>50-server.conf</code></p>
-<div><pre><code>sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
-</code></pre>
-</div><p>Y editamos la linea donde pone <code>bind-address</code> y lo dejaremos como se muestra en la imagen:</p>
-<p><img src="./../images/ABD/3-mariadb.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 2</strong></font> Reiniciamos el servicio mariadb</p>
-<div><pre><code>sudo service mariadb restart
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font> Nos iremos al cliente e instalaremos mariadb-client</p>
-<div><pre><code>sudo apt install mariadb-client
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 4</strong></font> Nos conectamos</p>
-<div><pre><code>mariadb -u lucas -h ip-servidor -p 
-</code></pre>
-</div><p><img src="./../images/ABD/4-mariadb.png" alt="image"></p>
-<p>¡Gracias!</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Migrar Centos 8 a Rocky Linux 8</title>
       <link>https://github.com/oscarlucas22/practicas/migracionrocky/</link>
       <guid>https://github.com/oscarlucas22/practicas/migracionrocky/</guid>
@@ -1981,6 +1848,142 @@ Podemos descargar los paquetes del repositorio con programas como wget.</p>
 <div><pre><code>cat /etc/redhat-release
 </code></pre>
 </div>]]></content:encoded>
+    </item>
+    <item>
+      <title>MongoDB en Debian 11 Bullseye</title>
+      <link>https://github.com/oscarlucas22/practicas/mongo/</link>
+      <guid>https://github.com/oscarlucas22/practicas/mongo/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">MongoDB en Debian 11 Bullseye</source>
+      <category>practicas</category>
+      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="mongodb-en-debian-11-bullseye"> MongoDB en Debian 11 Bullseye</h1>
+<p><img src="./../images/ABD/mongodb.png" alt="image"></p>
+<h2 id="instalacion-de-mongodb-en-debian-11-bullseye"> Instalación de MongoDB en Debian 11 Bullseye</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font> Instalar paquetes requeridos</p>
+<div><pre><code>sudo apt install dirmngr gnupg apt-transport-https software-properties-common ca-certificates curl -y
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 2</strong></font> Importar repositorio de MongoDB</p>
+<div><pre><code>sudo wget -O- https://www.mongodb.org/static/pgp/server-5.0.asc | gpg --dearmor | sudo tee /usr/share/keyrings/mongodb.gpg
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 3</strong></font> Agregamos el repositorio</p>
+<div><pre><code>echo 'deb [signed-by=/usr/share/keyrings/mongodb.gpg] http://repo.mongodb.org/apt/debian buster/mongodb-org/5.0 main' | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 4</strong></font> Actualizamos</p>
+<div><pre><code>sudo apt-get update
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 5</strong></font> Instalar MongoDB 5.0</p>
+<div><pre><code>sudo apt install mongodb-org -y
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 6</strong></font> Activamos el servicio de mongodb</p>
+<div><pre><code>sudo systemctl enable mongod --now
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 7</strong></font> Verificamos la versión</p>
+<div><pre><code>mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+</code></pre>
+</div><p><img src="./../images/ABD/1-mongo.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 8</strong></font> Configurar la seguridad de MongoDB</p>
+<div><pre><code>sudo nano /etc/mongod.conf
+</code></pre>
+</div><hr>
+<div><pre><code>security:
+    authorization: enabled
+</code></pre>
+</div><p><img src="./../images/ABD/2-mongo.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 9</strong></font> Reiniciamos servicio</p>
+<div><pre><code>sudo systemctl restart mongod
+</code></pre>
+</div><h2 id="creacion-de-usuario-administrador"> Creación de usuario administrador</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font> Crear usuario administrador en MongoDB</p>
+<div><pre><code>mongosh
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 2</strong></font> Nos conectamos como administrador</p>
+<div><pre><code>use admin
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 3</strong></font> Creamos usuario</p>
+<div><pre><code>db.createUser(
+    {
+        user: &quot;lucas&quot;, 
+        pwd: &quot;admin&quot;, 
+        roles: [{ role: &quot;userAdminAnyDatabase&quot;, db: &quot;admin&quot; }, &quot;readWriteAnyDatabase&quot;]
+    }
+)
+</code></pre>
+</div><p><img src="./../images/ABD/3-mongo.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 4</strong></font> Nos conectamos</p>
+<div><pre><code>mongosh -u lucas
+</code></pre>
+</div><hr>
+<h2 id="ayuda-sobre-manejo-en-mongodb"> Ayuda sobre manejo en MongoDB</h2>
+<h3 id="creacion-de-base-de-datos"> Creación de base de datos</h3>
+<div><pre><code>use &lt;nombre-database&gt;
+</code></pre>
+</div><h3 id="usuario"> Usuario</h3>
+<p><strong>Creacion de usuario</strong></p>
+<div><pre><code>db.createUser(
+    {
+        user: &quot;usuario&quot;, 
+        pwd: &quot;passwd&quot;, 
+        roles: []
+    }
+)
+</code></pre>
+</div><p><strong>Borrar usuario</strong></p>
+<p>db.dropUser(&quot;usuario&quot;)</p>
+<h3 id="colecciones"> Colecciones</h3>
+<p><strong>Crear coleccion</strong></p>
+<div><pre><code>db.createCollection(&quot;collection&quot;)
+</code></pre>
+</div><p><strong>Insertar valores</strong></p>
+<div><pre><code>db.collection.insertMany([
+{ dato1: &quot;dato&quot;, dato1: &quot;dato&quot; },
+{ dato2: &quot;dato&quot;, dato2: &quot;dato&quot; }
+])
+</code></pre>
+</div><h3 id="uso-de-privilegios-roles"> Uso de privilegios (Roles)</h3>
+<p><strong>Crear rol</strong></p>
+<p>Ejemplo de privilegio de solo lectura</p>
+<div><pre><code>db.createRole({role: &quot;nombre-role&quot;, privileges:[{resource: {db:&quot;nombre-db&quot;,collection:&quot;nombre-collection&quot;},actions:[&quot;find&quot;]}],roles:[]})
+</code></pre>
+</div><p>Se la asignamos a un usuario</p>
+<div><pre><code>db.grantRolesToUser(&quot;usuario&quot;,[{role:&quot;nombre-role&quot;,db:&quot;nombre-db&quot;}])
+</code></pre>
+</div><hr>
+<p><strong>Listar base de datos</strong></p>
+<div><pre><code>show dbs
+</code></pre>
+</div><p><strong>Verificar la base de datos actual</strong></p>
+<div><pre><code>db
+</code></pre>
+</div><p><strong>Eliminar base de datos</strong></p>
+<p>Hacerlo dentro de la base de datos</p>
+<div><pre><code>db.dropDatabase()
+</code></pre>
+</div><p><strong>Importar json en MongoDB</strong></p>
+<p>Hacerlo fuera de mongo</p>
+<div><pre><code>mongoimport --db NAME_BD --collection NAME_YOUR_COLLECTION --file 'ruta del json'
+</code></pre>
+</div><p><strong>Eliminar json de la base de datos</strong></p>
+<p>Hacerlo dentro de la base de datos donde este el json</p>
+<div><pre><code>db.NAME_COLLECTION.drop()
+</code></pre>
+</div><p><strong>Mostrar la colección</strong></p>
+<div><pre><code>db.nombre-collection.find()
+</code></pre>
+</div><h2 id="acceso-remoto"> Acceso remoto</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font> Editaremos el fichero <code>mongod.conf</code></p>
+<div><pre><code>sudo /etc/mongod.conf
+</code></pre>
+</div><p>Ahí editaremos donde pone <code>bindIp</code> escribiremos la ip del servidor, asi como se muestra en la imagen:</p>
+<p><img src="./../images/ABD/4-mongo.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 2</strong></font> Reiniciamos el servicio para que los cambios se guarden</p>
+<div><pre><code>sudo service mongod restart
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 3</strong></font> Nos iremos a la maquina cliente y nos conectaremos</p>
+<div><pre><code>mongosh -u nombre-user -p password ip-server
+</code></pre>
+</div><p><img src="./../images/ABD/5-mongo.png" alt="image"></p>
+<p>¡Gracias!</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Práctica: Escenario en OpenStack</title>
@@ -3187,6 +3190,185 @@ fetch first 1 row only;
 <p>La idea principal de este blog es subir algunas de las tareas que vaya realizando a lo largo de mi curso de ASIR.</p>
 <p>Espero que os guste y os sirva de ayuda para algunos. Un saludo.</p>
 <center><i>Content not supported</i></center>]]></content:encoded>
+    </item>
+    <item>
+      <title>Cortafuegos I: De nodo con iptables</title>
+      <link>https://github.com/oscarlucas22/practicas/cortafuegoI/</link>
+      <guid>https://github.com/oscarlucas22/practicas/cortafuegoI/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">Cortafuegos I: De nodo con iptables</source>
+      <category>practicas</category>
+      <content:encoded><![CDATA[<h1 id="cortafuegos-i-de-nodo-con-iptables"> Cortafuegos I: De nodo con iptables</h1>
+<p>Página de la <a href="https://fp.josedomingo.org/seguridadgs/u03/ejercicio1.html" target="_blank" rel="noopener noreferrer">practica<i>Content not supported</i></a></p>
+<hr>
+<p>Vamos a crear nuestra maquina sobre la que vamos a trabajar</p>
+<p><a href="https://pastebin.com/xJ6NjdGT" target="_blank" rel="noopener noreferrer">fichero<i>Content not supported</i></a></p>
+<p>Cuando tengamos el fichero nos hiremos a Openstack e iniciaremos la maquina a traves de este fichero, sigue los siguientes pasos para crearla:</p>
+<p><img src="./../images/SAD/cortafuegos1/creacion1.png" alt="image"></p>
+<p><img src="./../images/SAD/cortafuegos1/creacion2.png" alt="image"></p>
+<p>Importamos el fichero</p>
+<p><img src="./../images/SAD/cortafuegos1/creacion3.png" alt="image"></p>
+<p>Le daremos a &quot;Siguiente&quot; y rellenaremos las siguientes casillas:</p>
+<p><img src="./../images/SAD/cortafuegos1/creacion4.png" alt="image"></p>
+<p>Y ya comenzaria a instalarse. Una vez instalada nos saldria en la sección de &quot;Instancias&quot;</p>
+<hr>
+<p>Vamos a realizar los primeros pasos para implementar un cortafuegos en un nodo de una red, aquel que se ejecuta en el propio equipo que trata de proteger, lo que a veces se denomina un cortafuegos personal. He usado contenedores virtuales LXC.</p>
+<h2 id="limpieza-de-las-reglas-previas"> Limpieza de las reglas previas</h2>
+<div><pre><code>iptables -F
+iptables -t nat -F
+iptables -Z
+iptables -t nat -Z
+</code></pre>
+</div><h2 id="vamos-a-permitir-ssh"> Vamos a permitir ssh</h2>
+<p>Cómo estamos conectado a la máquina por ssh, vamos a permitir la conexión ssh desde la red 172.22.0.0/16, antes de cambiar las políticas por defecto a DROP, para no perder la conexión:</p>
+<div><pre><code>iptables -A INPUT -s 172.22.0.0/16 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -d 172.22.0.0/16 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
+
+iptables -A INPUT -s 172.29.0.0/16 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -d 172.29.0.0/16 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
+</code></pre>
+</div><h2 id="politica-por-defecto"> Política por defecto</h2>
+<div><pre><code>iptables -P INPUT DROP
+iptables -P OUTPUT DROP
+</code></pre>
+</div><p>Comprobamos que el equipo no puede acceder a ningún servicio ni de Internet ni de la red local, ya que la política lo impide.</p>
+<p><img src="./../images/SAD/cortafuegos1/1.png" alt="image"></p>
+<p><img src="./../images/SAD/cortafuegos1/1.1.png" alt="image"></p>
+<h2 id="permitimos-trafico-para-la-interfaz-loopback"> Permitimos tráfico para la interfaz loopback</h2>
+<div><pre><code>iptables -A INPUT -i lo -p icmp -j ACCEPT
+iptables -A OUTPUT -o lo -p icmp -j ACCEPT
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/2.png" alt="image"></p>
+<h2 id="peticiones-y-respuestas-protocolo-icmp"> Peticiones y respuestas protocolo ICMP</h2>
+<div><pre><code>iptables -A INPUT -i ens3 -p icmp --icmp-type echo-reply -j ACCEPT
+iptables -A OUTPUT -o ens3 -p icmp --icmp-type echo-request -j ACCEPT
+</code></pre>
+</div><p>Comprobamos su funcionamiento haciendo ping a una IP pública:</p>
+<p><img src="./../images/SAD/cortafuegos1/3.png" alt="image"></p>
+<h2 id="consultas-y-respuestas-dns"> Consultas y respuestas DNS</h2>
+<div><pre><code>iptables -A OUTPUT -o ens3 -p udp --dport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A INPUT -i ens3 -p udp --sport 53 -m state --state ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>Comprobamos su funcionamiento con una consulta DNS:</p>
+<p><img src="./../images/SAD/cortafuegos1/4.png" alt="image"></p>
+<h2 id="trafico-http-que-la-maquina-pueda-navegar"> Tráfico http (que la máquina pueda navegar)</h2>
+<div><pre><code>iptables -A OUTPUT -o ens3 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A INPUT -i ens3 -p tcp --sport 80 -m state --state ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>Comprobamos que funciona accediendo a un servicio http (!no https)</p>
+<p><img src="./../images/SAD/cortafuegos1/5.png" alt="image"></p>
+<h2 id="trafico-https"> Tráfico https</h2>
+<div><pre><code>iptables -A OUTPUT -o ens3 -p tcp --dport 443 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A INPUT -i ens3 -p tcp --sport 443 -m state --state ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>Comprobamos que funciona abriendo un navegador y accediendo a cualquier sitio web (hoy en día la mayoría son https). En mi caso lo he hecho con lynx:</p>
+<div><pre><code>apt install lynx
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/6.png" alt="image"></p>
+<h2 id="permitimos-el-acceso-a-nuestro-servidor-web"> Permitimos el acceso a nuestro servidor web</h2>
+<div><pre><code>iptables -A INPUT -i ens3 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -o ens3 -p tcp --sport 80 -m state --state ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>En mi caso he vuelto a hacer la comprobación por lynx (lynx &quot;mi-ip-flotante&quot;)</p>
+<p><img src="./../images/SAD/cortafuegos1/7.png" alt="image"></p>
+<hr>
+<p><strong>1. Permite poder hacer conexiones ssh al exterior.</strong></p>
+<p>Vamos a añadir las reglas que permitan realizar conexiones ssh al exterior:</p>
+<div><pre><code>iptables -A INPUT -i ens3 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -o ens3 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>Probemos si podemos conectarnos por ssh a otra máquina:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea1-1.png" alt="image"></p>
+<p>Efectivamente, podemos conectarnos, por lo que podemos decir que la regla funciona correctamente.</p>
+<p><strong>2. Deniega el acceso a tu servidor web desde una ip concreta.</strong></p>
+<p>Antes de agregar la regla de bloqueo, es importante considerar las reglas de INPUT que ya tenemos establecidas:</p>
+<div><pre><code>iptables -L -v -n
+</code></pre>
+</div><p>Si agregamos la regla de bloqueo al final, no sería efectiva, ya que siempre se superpondría con la regla previa que permite todo el tráfico HTTP entrante.</p>
+<p>Para solucionarlo, añadimos por encima la nueva regla.</p>
+<p>Necesitamos saber el número de línea específico, así que ejecutamos el siguiente comando:</p>
+<div><pre><code>iptables -L -v -n --line-numbers
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/tarea2-0.png" alt="image"></p>
+<p>Vamos a añadir la regla de bloqueo en la posición marcada para que funcione:</p>
+<div><pre><code>iptables -I INPUT 6 -s 10.0.0.216/32 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j DROP
+</code></pre>
+</div><p>Esta regla permitirá el acceso a nuestro servidor web desde cualquier máquina que no tenga la dirección IP especificada. Verifiquemos si funciona:</p>
+<ul>
+<li>Desde otra ip que no es la bloqueada:</li>
+</ul>
+<p><img src="./../images/SAD/cortafuegos1/tarea2-1.png" alt="image"></p>
+<ul>
+<li>Desde la ip bloqueda:</li>
+</ul>
+<p><img src="./../images/SAD/cortafuegos1/tarea2-2.png" alt="image"></p>
+<p>Como vemos, podemos acceder desde cualquier máquina que no sea la que tenga la ip que tenemos bloqueada.</p>
+<p><strong>3. Permite hacer consultas DNS sólo al servidor 192.168.202.2. Comprueba que no puedes hacer un dig @1.1.1.1.</strong></p>
+<p>En esta situación, estamos enfrentando un problema similar al del ejercicio anterior. Sin embargo, en este caso necesitamos eliminar dos reglas antiguas que permitían todo el tráfico DNS saliente.</p>
+<div><pre><code>iptables -L -v -n --line-numbers
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/tarea3-0.png" alt="image"></p>
+<p>Aun si añadiéramos las nuevas reglas por encima de estas, si ejecutamos el comando <code>dig</code> a 1.1.1.1, se produciría una coincidencia con estas reglas, lo que permitiría el tráfico. Esto no es lo que buscamos.</p>
+<p>Primero, borramos las reglas antiguas:</p>
+<div><pre><code>iptables -D INPUT 5
+iptables -D OUTPUT 5
+</code></pre>
+</div><p>Despues añadimos las siguientes reglas:</p>
+<div><pre><code>iptables -A INPUT -s 192.168.202.2/32 -p udp --sport 53 -m state --state ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -d 192.168.202.2/32 -p udp --dport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>Vemos que no podemos hacer un dig @1.1.1.1:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea3-1.png" alt="image"></p>
+<p>Pero si podemos usar el servidor dns que hay en “192.168.202.2”:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea3-2.png" alt="image"></p>
+<p><strong>4. No permitir el acceso al servidor web de www.josedomingo.org (Tienes que utilizar la ip). ¿Puedes acceder a fp.josedomingo.org?</strong></p>
+<p>Una vez más, si agregamos la siguiente regla al final, tendremos un conflicto de reglas, ya que antes tenemos una que permite todo el tráfico HTTP de salida. Los emparejamientos siempre se detendrían ahí.</p>
+<div><pre><code>iptables -L -v -n --line-numbers
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/tarea4-0.png" alt="image"></p>
+<p>Es necesario agregar la regla de bloqueo por encima de la regla previamente mostrada:</p>
+<div><pre><code>iptables -I OUTPUT 5 -d 37.187.119.60/32 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j DROP
+</code></pre>
+</div><p>Ahora no podemos acceder a esa url desde esta máquina debido a la regla del cortafuegos:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea4-1.png" alt="image"></p>
+<p>Tampoco podemos acceder a fp.josedomingo.org, ya que tiene la misma ip, y la tenemos bloqueada:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea4-2.png" alt="image"></p>
+<p>Sin embargo, si que podemos acceder a otros dominios que no tengan esa ip:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea4-3.png" alt="image"></p>
+<p>Como vemos, la regla funciona bien, pero debemos tener cuidado al bloquear ciertas ips, ya que podríamos estar bloqueando más servicios de los que queremos.</p>
+<p><strong>5. Permite mandar un correo usando nuestro servidor de correo: babuino-smtp. Para probarlo ejecuta un telnet bubuino-smtp.gonzalonazareno.org 25.</strong></p>
+<p>Lo primero que haremos será crear las reglas Iptables:</p>
+<div><pre><code>iptables -A OUTPUT -d 192.168.203.3 -p tcp --dport 25 -j ACCEPT
+iptables -A INPUT -s 192.168.203.3 -p tcp --sport 25 -j ACCEPT
+</code></pre>
+</div><p>Pruebo que funciona con telnet:</p>
+<div><pre><code>telnet babuino-smtp.gonzalonazareno.org 25
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/tarea5-1.png" alt="image"></p>
+<p><strong>6. Instala un servidor mariadb, y permite los accesos desde la ip de tu cliente. Comprueba que desde otro cliente no se puede acceder.</strong></p>
+<p>Instalamos mariadb-server y permitimos conexiones remotas:</p>
+<div><pre><code>apt install mariadb-server
+</code></pre>
+</div><p>Editamos el siguiente fichero <code>/etc/mysql/mariadb.conf.d/50-server.cnf</code>:</p>
+<div><pre><code>bind-address            = 0.0.0.0
+</code></pre>
+</div><p>Reiniciamos mariadb:</p>
+<div><pre><code>systemctl restart mariadb
+</code></pre>
+</div><p>A continuación, habilitamos el tráfico entrante desde mi máquina host:</p>
+<div><pre><code>iptables -A INPUT -s 10.0.0.180 -p tcp --dport 3306 -j ACCEPT
+iptables -A OUTPUT -d 10.0.0.180 -p tcp --sport 3306 -j ACCEPT
+</code></pre>
+</div><p>Creo un usuario en la maquina para despues comprobar el funcionamiento:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea6-1.png" alt="image"></p>
+<p>Probamos que funciona:</p>
+<div><pre><code>mariadb -u cortafuegos -h 10.0.0.72 -p
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/tarea6-2.png" alt="image"></p>
+<p>Verificamos que el tráfico se bloquea desde otro cliente:</p>
+<div><pre><code>mariadb -u cortafuegos -h 10.0.0.72 -p
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/tarea6-3.png" alt="image"></p>
+]]></content:encoded>
     </item>
     <item>
       <title>Almacenamiento</title>
