@@ -5,7 +5,7 @@
   <author>
     <name>Óscar Lucas</name>
   </author>
-  <updated>2023-02-25T18:52:53.398Z</updated>
+  <updated>2023-02-28T18:57:38.462Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://github.com/oscarlucas22/atom.xml"/>
   <link rel="alternate" href="https://github.com/oscarlucas22/"/>
@@ -38,6 +38,34 @@
 </li>
 <li>
 <p><a href="">Movimiento de datos</a></p>
+</li>
+</ul>
+]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
+    <category term="categorías" scheme=""/>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <published>2023-01-19T12:13:11.000Z</published>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
+    <title type="html">IAW</title>
+    <id>https://github.com/oscarlucas22/category/IAW/</id>
+    <link href="https://github.com/oscarlucas22/category/IAW/"/>
+    <updated>2023-01-19T12:13:11.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="iaw"> IAW</h1>
+<ul>
+<li>
+<p><a href="/practicas/django.html">Instalación/migración de aplicaciones web Python</a></p>
+</li>
+<li>
+<p><a href="/practicas/java.html">Despliegue de aplicaciones Java</a></p>
+</li>
+<li>
+<p><a href="/practicas/phpdocker.html">Implantación de aplicaciones web PHP en docker</a></p>
 </li>
 </ul>
 ]]></content>
@@ -89,17 +117,17 @@
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
-    <title type="html">IAW</title>
-    <id>https://github.com/oscarlucas22/category/IAW/</id>
-    <link href="https://github.com/oscarlucas22/category/IAW/"/>
+    <title type="html">SRI</title>
+    <id>https://github.com/oscarlucas22/category/SRI/</id>
+    <link href="https://github.com/oscarlucas22/category/SRI/"/>
     <updated>2023-01-19T12:13:11.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="iaw"> IAW</h1>
+    <content type="html"><![CDATA[<h1 id="sri"> SRI</h1>
 <ul>
 <li>
-<p><a href="/practicas/django.html">Instalación/migración de aplicaciones web Python</a></p>
+<p><a href="/practicas/openstack.html">Práctica: Escenario en OpenStack</a></p>
 </li>
 <li>
-<p><a href="/practicas/java.html">Despliegue de aplicaciones Java</a></p>
+<p><a href="/practicas/correos.html">Instalación y configuración de un servidor de correos en el VPS</a></p>
 </li>
 </ul>
 ]]></content>
@@ -140,31 +168,6 @@
 </li>
 <li>
 <p><a href="/practicas/cortafuegoI.html">Cortafuegos I: De nodo con iptables</a></p>
-</li>
-</ul>
-]]></content>
-    <author>
-      <name>Óscar Lucas</name>
-    </author>
-    <category term="categorías" scheme=""/>
-    <contributor>
-      <name>Óscar Lucas</name>
-    </contributor>
-    <published>2023-01-19T12:13:11.000Z</published>
-    <rights>Copyright by Óscar Lucas</rights>
-  </entry>
-  <entry>
-    <title type="html">SRI</title>
-    <id>https://github.com/oscarlucas22/category/SRI/</id>
-    <link href="https://github.com/oscarlucas22/category/SRI/"/>
-    <updated>2023-01-19T12:13:11.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="sri"> SRI</h1>
-<ul>
-<li>
-<p><a href="/practicas/openstack.html">Práctica: Escenario en OpenStack</a></p>
-</li>
-<li>
-<p><a href="/practicas/correos.html">Instalación y configuración de un servidor de correos en el VPS</a></p>
 </li>
 </ul>
 ]]></content>
@@ -1626,6 +1629,62 @@ sudo make uninstall
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
+    <title type="html">Migrar Centos 8 a Rocky Linux 8</title>
+    <id>https://github.com/oscarlucas22/practicas/migracionrocky/</id>
+    <link href="https://github.com/oscarlucas22/practicas/migracionrocky/"/>
+    <updated>2023-01-19T12:13:11.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="migrar-centos-8-a-rocky-linux-8"> Migrar Centos 8 a Rocky Linux 8</h1>
+<p><img src="./../images/ASO/rocky.png" alt="image"></p>
+<p>Para conseguir este fin se nos ofrece un script llamado <strong>migrate2rocky.sh</strong>. Este script se encargará de cambiar los repositorios del sistemas por los de Rocky Linux. Los paquetes se instalarán y actualizarán, para finalmente cambiar todo el sistema operativo.</p>
+<p><font color="#FFFF00"><strong>Paso 1</strong></font> Actualizamos el sistema.</p>
+<div><pre><code>sudo dnf -y upgrade
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 2</strong></font> Reiniciamos.</p>
+<div><pre><code>sudo reboot 
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 3</strong></font> Actualizar el sistema.</p>
+<div><pre><code>dnf update
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 4</strong></font> Descargar repositorio.</p>
+<p>Una vez hecho esto nos iremos al repositorio donde se encuentra dicho script, en este caso en Github.
+Podemos descargar los paquetes del repositorio con programas como wget.</p>
+<div><pre><code>wget https://github.com/rocky-linux/rocky-tools/archive/refs/heads/main.zip
+</code></pre>
+</div><p>O bien, si solo deseamos descargar el script:</p>
+<div><pre><code>wget https://raw.githubusercontent.com/rocky-linux/rocky-tools/main/migrate2rocky/migrate2rocky.sh
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 5</strong></font> Le asignamos permisos de ejecución.</p>
+<div><pre><code>chmod +x migrate2rocky.sh
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 6</strong></font> Lo ejecutamos.</p>
+<p>Con el parámetro <strong>-r</strong> indicamos que siga adelante e instale todo.</p>
+<div><pre><code>./migrate2rocky.sh -r
+</code></pre>
+</div><p>El proceso puede tardar un rato, según la capacidad del equipo y la conexión a Internet.</p>
+<p>Después:</p>
+<div><pre><code>sudo dnf distro-sync -y
+</code></pre>
+</div><hr>
+<div><pre><code>sudo reboot
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 7</strong></font> Comprobación.</p>
+<div><pre><code>cat /etc/os-release
+</code></pre>
+</div><p>Podemos consultar ficheros como <strong>/etc/os-release</strong> o bien <strong>/etc/redhat-release</strong>, o lanzar el comando <strong>hostnamectl</strong></p>
+<div><pre><code>cat /etc/redhat-release
+</code></pre>
+</div>]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
+    <category term="practicas" scheme=""/>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <published>2023-01-19T12:13:11.000Z</published>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
     <title type="html">MariaDB en Debian 11 Bullseye</title>
     <id>https://github.com/oscarlucas22/practicas/mariadb/</id>
     <link href="https://github.com/oscarlucas22/practicas/mariadb/"/>
@@ -1736,51 +1795,176 @@ Y para conectarnos a nuestro usuario ejecutaremos el siguiente comando:</p>
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
-    <title type="html">Migrar Centos 8 a Rocky Linux 8</title>
-    <id>https://github.com/oscarlucas22/practicas/migracionrocky/</id>
-    <link href="https://github.com/oscarlucas22/practicas/migracionrocky/"/>
+    <title type="html">Oracle en Debian 11 Bullseye</title>
+    <id>https://github.com/oscarlucas22/practicas/oracle/</id>
+    <link href="https://github.com/oscarlucas22/practicas/oracle/"/>
     <updated>2023-01-19T12:13:11.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="migrar-centos-8-a-rocky-linux-8"> Migrar Centos 8 a Rocky Linux 8</h1>
-<p><img src="./../images/ASO/rocky.png" alt="image"></p>
-<p>Para conseguir este fin se nos ofrece un script llamado <strong>migrate2rocky.sh</strong>. Este script se encargará de cambiar los repositorios del sistemas por los de Rocky Linux. Los paquetes se instalarán y actualizarán, para finalmente cambiar todo el sistema operativo.</p>
-<p><font color="#FFFF00"><strong>Paso 1</strong></font> Actualizamos el sistema.</p>
-<div><pre><code>sudo dnf -y upgrade
+    <content type="html"><![CDATA[<h1 id="oracle-en-debian-11-bullseye"> Oracle en Debian 11 Bullseye</h1>
+<p><img src="./../images/ABD/oracle.png" alt="image"></p>
+<h2 id="instalacion-de-oracle-en-debian-11-bullseye"> Instalación de Oracle en Debian 11 Bullseye</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font></p>
+<p>Antes de instalar el paquete, tenemos que configurar algunas cosas. Empezaremos creando el script:</p>
+<div><pre><code>sudo nano /sbin/chkconfig
 </code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 2</strong></font> Reiniciamos.</p>
-<div><pre><code>sudo reboot 
+</div><p>Y copiamos estas líneas en el archivo:</p>
+<div><pre><code>#!/bin/bash
+# Oracle XE installer chkconfig hack for Ubuntu
+file=/etc/init.d/oracle-xe
+if [[ ! `tail -n1 $file | grep INIT` ]]; then
+echo &gt;&gt; $file
+echo '### BEGIN INIT INFO' &gt;&gt; $file
+echo '# Provides: OracleXE' &gt;&gt; $file
+echo '# Required-Start: $remote_fs $syslog' &gt;&gt; $file
+echo '# Required-Stop: $remote_fs $syslog' &gt;&gt; $file
+echo '# Default-Start: 2 3 4 5' &gt;&gt; $file
+echo '# Default-Stop: 0 1 6' &gt;&gt; $file
+echo '# Short-Description: Oracle 19c Express Edition' &gt;&gt; $file
+echo '### END INIT INFO' &gt;&gt; $file
+fi
+update-rc.d oracle-xe defaults 80 01
 </code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 3</strong></font> Actualizar el sistema.</p>
-<div><pre><code>dnf update
+</div><p><font color="#800080"><strong>Paso 2</strong></font></p>
+<p>Damos los permisos necesarios al archivo:</p>
+<div><pre><code>sudo chmod 755 /sbin/chkconfig
 </code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 4</strong></font> Descargar repositorio.</p>
-<p>Una vez hecho esto nos iremos al repositorio donde se encuentra dicho script, en este caso en Github.
-Podemos descargar los paquetes del repositorio con programas como wget.</p>
-<div><pre><code>wget https://github.com/rocky-linux/rocky-tools/archive/refs/heads/main.zip
+</div><p><font color="#800080"><strong>Paso 3</strong></font></p>
+<p>Oracle 19c XE requiere de una configuración especial en kernel para funcionar. Por eso necesitamos añadir algunos parámetros al mismo.</p>
+<div><pre><code>sudo nano /etc/sysctl.d/60-oracle.conf
 </code></pre>
-</div><p>O bien, si solo deseamos descargar el script:</p>
-<div><pre><code>wget https://raw.githubusercontent.com/rocky-linux/rocky-tools/main/migrate2rocky/migrate2rocky.sh
+</div><p>Copiamos lo siguiente y guardamos.</p>
+<div><pre><code>fs.file-max=6815744
+net.ipv4.ip_local_port_range=9000 65000
+kernel.sem=250 32000 100 128
+kernel.shmmax=536870912
 </code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 5</strong></font> Le asignamos permisos de ejecución.</p>
-<div><pre><code>chmod +x migrate2rocky.sh
+</div><p><font color="#800080"><strong>Paso 4</strong></font></p>
+<p>Para cargar los parámetros del kernel sin reiniciar:</p>
+<div><pre><code>sudo service procps start
 </code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 6</strong></font> Lo ejecutamos.</p>
-<p>Con el parámetro <strong>-r</strong> indicamos que siga adelante e instale todo.</p>
-<div><pre><code>./migrate2rocky.sh -r
+</div><p><font color="#800080"><strong>Paso 5</strong></font> <strong>Comienzo de la instalación</strong></p>
+<p>Y ahora sí, instalamos el paquete <a href="https://www.dropbox.com/s/p1vhrnjw73fdc70/oracle-database-ee-19c_1.0-2_amd64.deb?dl=0" target="_blank" rel="noopener noreferrer">.deb<i>Content not supported</i></a>:</p>
+<div><pre><code>sudo dpkg -i oracle-database-ee-19c_1.0-2_amd64.deb
 </code></pre>
-</div><p>El proceso puede tardar un rato, según la capacidad del equipo y la conexión a Internet.</p>
-<p>Después:</p>
-<div><pre><code>sudo dnf distro-sync -y
+</div><p>Después de unos 10 minutos el proceso terminará. Ejecutamos el siguiente comando para configurar la contraseña de administrador de la base de datos y demás cosas:</p>
+<div><pre><code>sudo /etc/init.d/oracledb_ORCLCDB-19c configure
+</code></pre>
+</div><p>Veremos que da error. Eso se debe a que en al script de configuración le hace falta un parámetro. Para añadirlo entramos en el script con:</p>
+<div><pre><code>sudo nano /etc/init.d/oracledb_ORCLCDB-19c
+</code></pre>
+</div><p>Y buscamos(Ctrl + W) en la línea donde pone &quot;Configuring&quot;</p>
+<p><img src="./../images/ABD/1-oracle.png" alt="image"></p>
+<p>Borramos la línea que se ve marcada en la imagen y copiamos en su lugar la siguiente:</p>
+<div><pre><code>$SU -s /bin/bash  $ORACLE_OWNER -c &quot;$DBCA -silent -createDatabase -gdbName $ORACLE_SID -templateName $TEMPLATE_NAME -characterSet $CHARSET -createAsContainerDatabase $CREATE_AS_CDB -numberOfPDBs $NUMBER_OF_PDBS -pdbName $PDB_NAME -createListener $LISTENER_NAME:$LISTENER_PORT -datafileDestination $ORACLE_DATA_LOCATION -sid $ORACLE_SID -autoGeneratePasswords -emConfiguration DBEXPRESS -emExpressPort $EM_EXPRESS_PORT -J-Doracle.assistants.dbca.validate.ConfigurationParams=false&quot;
+</code></pre>
+</div><p>Ahora lo intentamos de nuevo:</p>
+<div><pre><code>sudo /etc/init.d/oracledb_ORCLCDB-19c configure
+</code></pre>
+</div><p><code>Nota: Si nos salta un error de netstat tendremos que instalarlo sudo apt install net-tools</code></p>
+<p><code>Nota: Si nos sigue saliendo un error instalaremos lo siguiente sudo apt install libaio1 unixodbc</code></p>
+<p>Si te sale este error:</p>
+<p><img src="./../images/ABD/2-oracle.png" alt="image"></p>
+<p>Sigue estos pasos:</p>
+<div><pre><code>sudo nano /etc/hosts
+</code></pre>
+</div><p>Dentro del fichero escribe tu ip seguido del nombre de tu máquina dos veces, como se muestra en la siguiente imagen:</p>
+<p><img src="./../images/ABD/3-oracle.png" alt="image"></p>
+<p>Y después de esto ejecutaremos de nuevo el comando y ya debería de ir sino reinicia la máquina (<em>sudo reboot</em>) y vuélvelo a probar</p>
+<p><font color="#800080"><strong>Paso 6</strong></font></p>
+<p>Añadimos las variables de entorno a bash:</p>
+<div><pre><code>nano ~/.bashrc
+</code></pre>
+</div><p>Copiamos las siguientes líneas al final del fichero:</p>
+<div><pre><code>export ORACLE_HOME=/opt/oracle/product/19c/dbhome_1
+export ORACLE_SID=ORCLCDB
+export ORACLE_BASE=/opt/oracle
+export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
+export PATH=$ORACLE_HOME/bin:$PATH
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 7</strong></font></p>
+<p>Para finalizar reiniciamos el servicio de Oracle 19c:</p>
+<div><pre><code>sudo service oracledb_ORCLCDB-19c restart
+</code></pre>
+</div><p>Para iniciar Oracle ejecutaremos una serie de pasos:</p>
+<p><strong>Primero pondremos una contraseña</strong></p>
+<div><pre><code>passwd oracle
+</code></pre>
+</div><p><strong>Segundo entrasemos en oracle</strong></p>
+<div><pre><code>su oracle
+</code></pre>
+</div><p>Seguramente te salga un <code>$</code>, si es así eso es que no tienes shell. Para solucionarlo ejecutaremos</p>
+<div><pre><code>sudo usermod -s /bin/bash oracle
+</code></pre>
+</div><p>Y probaremos de nuevo:</p>
+<div><pre><code>su oracle
+</code></pre>
+</div><p>Una vez dentro ya tendras shell y dentro ejecutaremos:</p>
+<div><pre><code>sqlplus / as sysdba
+</code></pre>
+</div><p>Si esto no te va reinicia la maquina <code>sudo reboot</code> y prueba de nuevo</p>
+<p>Bien, una vez echo esto si al iniciar te sale algo asi:</p>
+<p><img src="./../images/ABD/4-oracle.png" alt="image"></p>
+<p>Ejecuta lo siguiente</p>
+<div><pre><code>SQL&gt; shutdown abort
 </code></pre>
 </div><hr>
-<div><pre><code>sudo reboot
+<div><pre><code>SQL&gt; startup
 </code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 7</strong></font> Comprobación.</p>
-<div><pre><code>cat /etc/os-release
+</div><p>Y ya estaría sal y entra de nuevo y te deberia salir algo así:</p>
+<p><img src="./../images/ABD/5-oracle.png" alt="image"></p>
+<p>Acto seguido cambiaremos la contraseña del user SYS y SYSTEM</p>
+<div><pre><code>SQL&gt; alter user sys identified by TU_PASSWD;
 </code></pre>
-</div><p>Podemos consultar ficheros como <strong>/etc/os-release</strong> o bien <strong>/etc/redhat-release</strong>, o lanzar el comando <strong>hostnamectl</strong></p>
-<div><pre><code>cat /etc/redhat-release
+</div><hr>
+<div><pre><code>SQL&gt; alter user system identified by TU_PASSWD;
 </code></pre>
-</div>]]></content>
+</div><h2 id="creacion-de-usuario"> Creación de usuario</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font></p>
+<p>Ejecutamos el siguiente comando para activar _ORACLE_SCRIPT para que se puedan ejecutar sin errores los siguientes comandos:</p>
+<div><pre><code>SQL&gt; alter session set &quot;_ORACLE_SCRIPT&quot;=true;
+</code></pre>
+</div><p>Y luego nos dejara crear el usuario</p>
+<div><pre><code>SQL&gt; create user lucas identified by admin;
+</code></pre>
+</div><p>Si le queremos dar prvilegios ejecutaremos el siguiente comando(en este caso le daremos todos los privilegios):</p>
+<div><pre><code>SQL&gt; grant all privileges to lucas;
+</code></pre>
+</div><p>Una vez hecho esto pasos ya estaria el usuario creato y nos podremos conectar con el siguiente comando:</p>
+<div><pre><code>sqlplus lucas/admin
+</code></pre>
+</div><p><img src="./../images/ABD/6-oracle.png" alt="image"></p>
+<p>Para crear la base de datos y las tablas con sus respectivos inserts aqui os muestro como se hace:</p>
+<p><a href="https://github.com/oscarlucas22/Proyecto-DDL-y-DML_BD/tree/main/Oracle" target="_blank" rel="noopener noreferrer">Como crear base de datos y tablas en Oracle<i>Content not supported</i></a></p>
+<h2 id="cliente-remoto-oracle"> Cliente remoto Oracle</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font> Activaremos listener y habilitaremos el pueto 1521/tcp</p>
+<p>Antes de comenzar tenemos que activar el listener:</p>
+<div><pre><code>lsnrclt start
+</code></pre>
+</div><p>Despues de eso habilitaremos el puerto 1521 del firewall, pero antes si no tenemos instalado firewalld lo instalaremos:</p>
+<div><pre><code>sudo apt install firewalld
+</code></pre>
+</div><p>Y ahora si habilitaremos el puerto 1521:</p>
+<div><pre><code>sudo firewall-cmd --permanent --add-port=1521/tcp
+</code></pre>
+</div><hr>
+<div><pre><code>sudo firewall-cmd --reload
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 2</strong></font> Instalaremos los clientes</p>
+<p>Una vez hecho esto instalaremos los clientes de Oracle</p>
+<ul>
+<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-basic-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">basic<i>Content not supported</i></a></li>
+<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-devel-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">devel<i>Content not supported</i></a></li>
+<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-sqlplus-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">sqlplus<i>Content not supported</i></a></li>
+</ul>
+<p>Una vez descargados los instalaremos en mi caso como lo voy a instalar en un Debian utilizaremos el comando <code>alien</code></p>
+<div><pre><code>sudo alien -i --scripts oracle-instantclient-*
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 3</strong></font> Acceso desde el cliente</p>
+<p>Una vez instalados los clientes ya podremos acceder</p>
+<div><pre><code>sqlplus lucas/admin@ip-server/ORCLCDB
+</code></pre>
+</div><p><img src="./../images/ABD/7-oracle.png" alt="image"></p>
+<p>¡Gracias!</p>
+]]></content>
     <author>
       <name>Óscar Lucas</name>
     </author>
@@ -2178,187 +2362,6 @@ down iptables -t nat -D POSTROUTING -s 192.168.0.0/16 -o ens3 -j MASQUERADE
 <p><strong>Cambia la contraseña al usuario root</strong></p>
 </li>
 </ul>
-]]></content>
-    <author>
-      <name>Óscar Lucas</name>
-    </author>
-    <category term="practicas" scheme=""/>
-    <contributor>
-      <name>Óscar Lucas</name>
-    </contributor>
-    <published>2023-01-19T12:13:11.000Z</published>
-    <rights>Copyright by Óscar Lucas</rights>
-  </entry>
-  <entry>
-    <title type="html">Oracle en Debian 11 Bullseye</title>
-    <id>https://github.com/oscarlucas22/practicas/oracle/</id>
-    <link href="https://github.com/oscarlucas22/practicas/oracle/"/>
-    <updated>2023-01-19T12:13:11.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="oracle-en-debian-11-bullseye"> Oracle en Debian 11 Bullseye</h1>
-<p><img src="./../images/ABD/oracle.png" alt="image"></p>
-<h2 id="instalacion-de-oracle-en-debian-11-bullseye"> Instalación de Oracle en Debian 11 Bullseye</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font></p>
-<p>Antes de instalar el paquete, tenemos que configurar algunas cosas. Empezaremos creando el script:</p>
-<div><pre><code>sudo nano /sbin/chkconfig
-</code></pre>
-</div><p>Y copiamos estas líneas en el archivo:</p>
-<div><pre><code>#!/bin/bash
-# Oracle XE installer chkconfig hack for Ubuntu
-file=/etc/init.d/oracle-xe
-if [[ ! `tail -n1 $file | grep INIT` ]]; then
-echo &gt;&gt; $file
-echo '### BEGIN INIT INFO' &gt;&gt; $file
-echo '# Provides: OracleXE' &gt;&gt; $file
-echo '# Required-Start: $remote_fs $syslog' &gt;&gt; $file
-echo '# Required-Stop: $remote_fs $syslog' &gt;&gt; $file
-echo '# Default-Start: 2 3 4 5' &gt;&gt; $file
-echo '# Default-Stop: 0 1 6' &gt;&gt; $file
-echo '# Short-Description: Oracle 19c Express Edition' &gt;&gt; $file
-echo '### END INIT INFO' &gt;&gt; $file
-fi
-update-rc.d oracle-xe defaults 80 01
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 2</strong></font></p>
-<p>Damos los permisos necesarios al archivo:</p>
-<div><pre><code>sudo chmod 755 /sbin/chkconfig
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font></p>
-<p>Oracle 19c XE requiere de una configuración especial en kernel para funcionar. Por eso necesitamos añadir algunos parámetros al mismo.</p>
-<div><pre><code>sudo nano /etc/sysctl.d/60-oracle.conf
-</code></pre>
-</div><p>Copiamos lo siguiente y guardamos.</p>
-<div><pre><code>fs.file-max=6815744
-net.ipv4.ip_local_port_range=9000 65000
-kernel.sem=250 32000 100 128
-kernel.shmmax=536870912
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 4</strong></font></p>
-<p>Para cargar los parámetros del kernel sin reiniciar:</p>
-<div><pre><code>sudo service procps start
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 5</strong></font> <strong>Comienzo de la instalación</strong></p>
-<p>Y ahora sí, instalamos el paquete <a href="https://www.dropbox.com/s/p1vhrnjw73fdc70/oracle-database-ee-19c_1.0-2_amd64.deb?dl=0" target="_blank" rel="noopener noreferrer">.deb<i>Content not supported</i></a>:</p>
-<div><pre><code>sudo dpkg -i oracle-database-ee-19c_1.0-2_amd64.deb
-</code></pre>
-</div><p>Después de unos 10 minutos el proceso terminará. Ejecutamos el siguiente comando para configurar la contraseña de administrador de la base de datos y demás cosas:</p>
-<div><pre><code>sudo /etc/init.d/oracledb_ORCLCDB-19c configure
-</code></pre>
-</div><p>Veremos que da error. Eso se debe a que en al script de configuración le hace falta un parámetro. Para añadirlo entramos en el script con:</p>
-<div><pre><code>sudo nano /etc/init.d/oracledb_ORCLCDB-19c
-</code></pre>
-</div><p>Y buscamos(Ctrl + W) en la línea donde pone &quot;Configuring&quot;</p>
-<p><img src="./../images/ABD/1-oracle.png" alt="image"></p>
-<p>Borramos la línea que se ve marcada en la imagen y copiamos en su lugar la siguiente:</p>
-<div><pre><code>$SU -s /bin/bash  $ORACLE_OWNER -c &quot;$DBCA -silent -createDatabase -gdbName $ORACLE_SID -templateName $TEMPLATE_NAME -characterSet $CHARSET -createAsContainerDatabase $CREATE_AS_CDB -numberOfPDBs $NUMBER_OF_PDBS -pdbName $PDB_NAME -createListener $LISTENER_NAME:$LISTENER_PORT -datafileDestination $ORACLE_DATA_LOCATION -sid $ORACLE_SID -autoGeneratePasswords -emConfiguration DBEXPRESS -emExpressPort $EM_EXPRESS_PORT -J-Doracle.assistants.dbca.validate.ConfigurationParams=false&quot;
-</code></pre>
-</div><p>Ahora lo intentamos de nuevo:</p>
-<div><pre><code>sudo /etc/init.d/oracledb_ORCLCDB-19c configure
-</code></pre>
-</div><p><code>Nota: Si nos salta un error de netstat tendremos que instalarlo sudo apt install net-tools</code></p>
-<p><code>Nota: Si nos sigue saliendo un error instalaremos lo siguiente sudo apt install libaio1 unixodbc</code></p>
-<p>Si te sale este error:</p>
-<p><img src="./../images/ABD/2-oracle.png" alt="image"></p>
-<p>Sigue estos pasos:</p>
-<div><pre><code>sudo nano /etc/hosts
-</code></pre>
-</div><p>Dentro del fichero escribe tu ip seguido del nombre de tu máquina dos veces, como se muestra en la siguiente imagen:</p>
-<p><img src="./../images/ABD/3-oracle.png" alt="image"></p>
-<p>Y después de esto ejecutaremos de nuevo el comando y ya debería de ir sino reinicia la máquina (<em>sudo reboot</em>) y vuélvelo a probar</p>
-<p><font color="#800080"><strong>Paso 6</strong></font></p>
-<p>Añadimos las variables de entorno a bash:</p>
-<div><pre><code>nano ~/.bashrc
-</code></pre>
-</div><p>Copiamos las siguientes líneas al final del fichero:</p>
-<div><pre><code>export ORACLE_HOME=/opt/oracle/product/19c/dbhome_1
-export ORACLE_SID=ORCLCDB
-export ORACLE_BASE=/opt/oracle
-export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
-export PATH=$ORACLE_HOME/bin:$PATH
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 7</strong></font></p>
-<p>Para finalizar reiniciamos el servicio de Oracle 19c:</p>
-<div><pre><code>sudo service oracledb_ORCLCDB-19c restart
-</code></pre>
-</div><p>Para iniciar Oracle ejecutaremos una serie de pasos:</p>
-<p><strong>Primero pondremos una contraseña</strong></p>
-<div><pre><code>passwd oracle
-</code></pre>
-</div><p><strong>Segundo entrasemos en oracle</strong></p>
-<div><pre><code>su oracle
-</code></pre>
-</div><p>Seguramente te salga un <code>$</code>, si es así eso es que no tienes shell. Para solucionarlo ejecutaremos</p>
-<div><pre><code>sudo usermod -s /bin/bash oracle
-</code></pre>
-</div><p>Y probaremos de nuevo:</p>
-<div><pre><code>su oracle
-</code></pre>
-</div><p>Una vez dentro ya tendras shell y dentro ejecutaremos:</p>
-<div><pre><code>sqlplus / as sysdba
-</code></pre>
-</div><p>Si esto no te va reinicia la maquina <code>sudo reboot</code> y prueba de nuevo</p>
-<p>Bien, una vez echo esto si al iniciar te sale algo asi:</p>
-<p><img src="./../images/ABD/4-oracle.png" alt="image"></p>
-<p>Ejecuta lo siguiente</p>
-<div><pre><code>SQL&gt; shutdown abort
-</code></pre>
-</div><hr>
-<div><pre><code>SQL&gt; startup
-</code></pre>
-</div><p>Y ya estaría sal y entra de nuevo y te deberia salir algo así:</p>
-<p><img src="./../images/ABD/5-oracle.png" alt="image"></p>
-<p>Acto seguido cambiaremos la contraseña del user SYS y SYSTEM</p>
-<div><pre><code>SQL&gt; alter user sys identified by TU_PASSWD;
-</code></pre>
-</div><hr>
-<div><pre><code>SQL&gt; alter user system identified by TU_PASSWD;
-</code></pre>
-</div><h2 id="creacion-de-usuario"> Creación de usuario</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font></p>
-<p>Ejecutamos el siguiente comando para activar _ORACLE_SCRIPT para que se puedan ejecutar sin errores los siguientes comandos:</p>
-<div><pre><code>SQL&gt; alter session set &quot;_ORACLE_SCRIPT&quot;=true;
-</code></pre>
-</div><p>Y luego nos dejara crear el usuario</p>
-<div><pre><code>SQL&gt; create user lucas identified by admin;
-</code></pre>
-</div><p>Si le queremos dar prvilegios ejecutaremos el siguiente comando(en este caso le daremos todos los privilegios):</p>
-<div><pre><code>SQL&gt; grant all privileges to lucas;
-</code></pre>
-</div><p>Una vez hecho esto pasos ya estaria el usuario creato y nos podremos conectar con el siguiente comando:</p>
-<div><pre><code>sqlplus lucas/admin
-</code></pre>
-</div><p><img src="./../images/ABD/6-oracle.png" alt="image"></p>
-<p>Para crear la base de datos y las tablas con sus respectivos inserts aqui os muestro como se hace:</p>
-<p><a href="https://github.com/oscarlucas22/Proyecto-DDL-y-DML_BD/tree/main/Oracle" target="_blank" rel="noopener noreferrer">Como crear base de datos y tablas en Oracle<i>Content not supported</i></a></p>
-<h2 id="cliente-remoto-oracle"> Cliente remoto Oracle</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font> Activaremos listener y habilitaremos el pueto 1521/tcp</p>
-<p>Antes de comenzar tenemos que activar el listener:</p>
-<div><pre><code>lsnrclt start
-</code></pre>
-</div><p>Despues de eso habilitaremos el puerto 1521 del firewall, pero antes si no tenemos instalado firewalld lo instalaremos:</p>
-<div><pre><code>sudo apt install firewalld
-</code></pre>
-</div><p>Y ahora si habilitaremos el puerto 1521:</p>
-<div><pre><code>sudo firewall-cmd --permanent --add-port=1521/tcp
-</code></pre>
-</div><hr>
-<div><pre><code>sudo firewall-cmd --reload
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 2</strong></font> Instalaremos los clientes</p>
-<p>Una vez hecho esto instalaremos los clientes de Oracle</p>
-<ul>
-<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-basic-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">basic<i>Content not supported</i></a></li>
-<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-devel-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">devel<i>Content not supported</i></a></li>
-<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-sqlplus-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">sqlplus<i>Content not supported</i></a></li>
-</ul>
-<p>Una vez descargados los instalaremos en mi caso como lo voy a instalar en un Debian utilizaremos el comando <code>alien</code></p>
-<div><pre><code>sudo alien -i --scripts oracle-instantclient-*
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font> Acceso desde el cliente</p>
-<p>Una vez instalados los clientes ya podremos acceder</p>
-<div><pre><code>sqlplus lucas/admin@ip-server/ORCLCDB
-</code></pre>
-</div><p><img src="./../images/ABD/7-oracle.png" alt="image"></p>
-<p>¡Gracias!</p>
 ]]></content>
     <author>
       <name>Óscar Lucas</name>
@@ -3357,10 +3360,367 @@ fetch first 1 row only;
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
+    <title type="html">Auditoría</title>
+    <id>https://github.com/oscarlucas22/practicas/auditoria/</id>
+    <link href="https://github.com/oscarlucas22/practicas/auditoria/"/>
+    <updated>2023-02-28T18:57:38.526Z</updated>
+    <content type="html"><![CDATA[<h1 id="auditoria"> Auditoría</h1>
+<h2 id="_1-activa-desde-sql-plus-la-auditoria-de-los-intentos-de-acceso-exitosos-al-sistema-comprueba-su-funcionamiento"> <strong>1. Activa desde SQL*Plus la auditoría de los intentos de acceso exitosos al sistema. Comprueba su funcionamiento.</strong></h2>
+<p>Visualizaremos los parametros de auditorias:</p>
+<div><pre><code>show parameter AUDIT
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/1-1.png" alt="image"></p>
+<p>Nos aseguraremos de que el parámetro <code>AUDIT_TRAIL</code> esté establecido en DB. Puedes verificarlo ejecutando el siguiente comando:</p>
+<div><pre><code>show parameter audit_trail
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/2-1.png" alt="image"></p>
+<p>Si el valor devuelto no es DB, puedes establecerlo con el siguiente comando:</p>
+<div><pre><code>alter system set audit_trail=db scope=spfile;
+</code></pre>
+</div><p>Activamos la auditoría para los intentos de acceso exitosos con el siguiente comando:</p>
+<div><pre><code>audit session whenever successful;
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/3-1.png" alt="image"></p>
+<p>Comprobamos su activación.</p>
+<div><pre><code>audit create session by lucas;
+</code></pre>
+</div><hr>
+<div><pre><code>select * from dba_priv_audit_opts;
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/4-1.png" alt="image"></p>
+<p>Comprobamos el funcionamiento:</p>
+<p>Primero iniciaremos sesión en la base de datos SQL*Plus con una cuenta de usuario existente con cualquiera de los siguientes comandos:</p>
+<div><pre><code>sqlplus
+</code></pre>
+</div><hr>
+<div><pre><code>sqlplus username/passwd
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/5-1.png" alt="image"></p>
+<p>Si la autenticación es exitosa, la sesión se iniciará y deberías ver el prompt de SQL*Plus. Puedes comprobar que la auditoría está funcionando consultando la tabla de registros de auditoría <code>dba_audit_session</code>. Puedes hacerlo ejecutando el siguiente comando:</p>
+<div><pre><code>select os_username, username, extended_timestamp from dba_audit_session where action_name = 'LOGON' and returncode = 0;
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/6-1.png" alt="image"></p>
+<p>Para finalizar, desactivaremos la auditoría.</p>
+<div><pre><code>noaudit session whenever successful; 
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/7-1.png" alt="image"></p>
+<h2 id="_2-realiza-un-procedimiento-en-pl-sql-que-te-muestre-los-accesos-fallidos-junto-con-el-motivo-de-los-mismos-transformando-el-codigo-de-error-almacenado-en-un-mensaje-de-texto-comprensible-contempla-todos-los-motivos-posibles-para-que-un-acceso-sea-fallido"> <strong>2. Realiza un procedimiento en PL/SQL que te muestre los accesos fallidos junto con el motivo de los mismos, transformando el código de error almacenado en un mensaje de texto comprensible. Contempla todos los motivos posibles para que un acceso sea fallido.</strong></h2>
+<p>En primer lugar debemos de activar la auditoria de los aciertos fallidos:</p>
+<div><pre><code>audit create session whenever not successful;
+</code></pre>
+</div><p>Función para devolver el motivo del error:</p>
+<div><pre><code>create or replace function DevolverMotivo (p_error number)
+return varchar2
+is
+    mensaje varchar2(40);
+begin
+    case p_error
+        when 1017 then 
+            mensaje:='Usuario/Password Incorrecta';
+        when 28000 THEN
+            mensaje:='Cuenta Bloqueada';
+        when 1045 then
+            mensaje:='Privilegios insuficientes';
+        else
+            mensaje:='Error Desconocido';
+    end case;
+return mensaje;
+end;
+/
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/1-2.png" alt="image"></p>
+<p>Procedimiento:</p>
+<div><pre><code>create or replace procedure MostrarAccesosFallidos
+is
+    cursor c_cursor is 
+    select username, timestamp, returncode from dba_audit_session where action_name = 'LOGON' and returncode != 0;
+    v_motivo varchar2(40);
+begin
+    dbms_output.put_line(chr(10)||chr(9)||chr(9)||'-- AUDITORIA DE ACCESOS FALLIDOS --');
+    dbms_output.put_line(chr(10)||chr(9)||'Usuario'||chr(9)||chr(9)||'Fecha'||chr(9)||chr(9)||chr(9)||
+        'Motivo');
+    dbms_output.put_line(chr(9)||'----------------------------------------------------------------');
+    for var in c_cursor loop
+        v_motivo:=DevolverMotivo(var.returncode);
+        dbms_output.put_line(chr(10)||chr(9)||var.username||chr(9)||chr(9)||to_char(var.timestamp,'YY/MM/DD DY HH24:MI')||chr(9)||v_motivo);
+    end loop; 
+end;
+/
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/2-2.png" alt="image"></p>
+<p>Comprobación del funcionamiento:</p>
+<p>Para hacer la prueba voy a acceder con los usuarios &quot;lucas&quot;, &quot;oscar&quot; y &quot;oscarlucas&quot;. Con el usuario &quot;lucas&quot; voy a fallar en la contraseña, el usuario &quot;oscar&quot; esta bloqueado y el usuario &quot;oscarlucas&quot; no tiene privilegios.</p>
+<p><img src="./../images/ABD/auditoria/3-2.png" alt="image"></p>
+<p>Y ejecutaremos el procedimiento para ver su funcionamiento:</p>
+<div><pre><code>exec MostrarAccesosFallidos;
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/4-2.png" alt="image"></p>
+<p>Para finalizar, desactivamos la auditoria</p>
+<div><pre><code>noaudit create session whenever not successful;
+</code></pre>
+</div><h2 id="_3-activa-la-auditoria-de-las-operaciones-dml-realizadas-por-scott-comprueba-su-funcionamiento"> <strong>3. Activa la auditoría de las operaciones DML realizadas por SCOTT. Comprueba su funcionamiento.</strong></h2>
+<p><a href="https://pastebin.com/pCBR7MwS" target="_blank" rel="noopener noreferrer">Esquema scott<i>Content not supported</i></a></p>
+<p>Activamos la auditoría.</p>
+<div><pre><code>audit insert table, update table, delete table by scott by access;
+</code></pre>
+</div><p>Donde:</p>
+<ul>
+<li>
+<p>BY ACCESS : Realiza un registro por cada acción.</p>
+</li>
+<li>
+<p>BY SESSION : Realiza un registro de todas las acciones por cada sesión iniciada.</p>
+</li>
+</ul>
+<p>Realizamos una prueba:</p>
+<div><pre><code>conn scott/tiger
+insert into dept values(50, 'DH', 'Dos Hermanas');
+update dept set loc = 'Sevilla' where deptno = 50;
+delete from dept where deptno = 50;
+commit;
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/1-3.png" alt="image"></p>
+<p>Para ver las acciones realizadas por SCOTT:</p>
+<div><pre><code>audit all by scott by access;
+
+select obj_name, action_name, timestamp from dba_audit_object where username = 'SCOTT';
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/2-3.png" alt="image"></p>
+<h2 id="_4-realiza-una-auditoria-de-grano-fino-para-almacenar-informacion-sobre-la-insercion-de-empleados-con-sueldo-superior-a-2000-en-la-tabla-emp-de-scott"> <strong>4. Realiza una auditoría de grano fino para almacenar información sobre la inserción de empleados con sueldo superior a 2000 en la tabla emp de scott.</strong></h2>
+<p>Creación de la auditoría de grano fino:</p>
+<div><pre><code>begin
+    dbms_fga.add_policy (
+        object_schema      =&gt;  'scott',
+        object_name        =&gt;  'emp',
+        policy_name        =&gt;  'politica1',
+        audit_condition    =&gt;  'sal &gt; 2000',
+        statement_types    =&gt;  'insert'
+    );
+end;
+/
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/1-4.png" alt="image"></p>
+<p>Ver la política creada:</p>
+<div><pre><code>select object_schema,object_name,policy_name,policy_text from dba_audit_policies;
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/2-4.png" alt="image"></p>
+<p>Realizamos una prueba:</p>
+<div><pre><code>conn scott/tiger
+</code></pre>
+</div><hr>
+<div><pre><code>insert into emp values(7940, 'MARK', 'CARRIER', null, sysdate, 3000, null, 10);
+insert into emp values(7941, 'RICK', 'CARRIER', null, sysdate, 2001, null, 20);
+
+commit;
+</code></pre>
+</div><p>Para visualizar las acciones realizadas.</p>
+<div><pre><code>select sql_text from dba_fga_audit_trail where policy_name = 'POLITICA1';
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/3-4.png" alt="image"></p>
+<p>Para eliminar la auditoría de grano fino:</p>
+<div><pre><code>begin
+    dbms_fga.drop_policy (
+        object_schema      =&gt;  'scott',
+        object_name        =&gt;  'emp',
+        policy_name        =&gt;  'politica1'      
+    );
+end;
+/
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/4-4.png" alt="image"></p>
+<h2 id="_5-explica-la-diferencia-entre-auditar-una-operacion-by-access-o-by-session-ilustrandolo-con-ejemplos"> <strong>5. Explica la diferencia entre auditar una operación by access o by session ilustrándolo con ejemplos.</strong></h2>
+<p><strong>BY ACCESS</strong>:</p>
+<p>La auditoría por acceso implica registrar una entrada de auditoría cada vez que se lleva a cabo una operación de manipulación de datos (DML). Por ejemplo, esta técnica de auditoría permite registrar si un usuario ha insertado, actualizado o eliminado una fila de una tabla.</p>
+<p>Primero vaciamos la tabla de auditoria eliminando los registros</p>
+<div><pre><code>truncate table aud$;
+</code></pre>
+</div><p>Despues activamos la auditoría.</p>
+<div><pre><code>audit insert table, update table, delete table by scott by access;
+</code></pre>
+</div><p>Realizaremos una serie de pruebas.</p>
+<div><pre><code>conn scott/tiger
+
+insert into scott.dept values(60, 'OLL', 'ESPAÑA');
+update scott.dept set loc = 'MIAMI' where deptno = 60;
+delete from scott.dept where deptno = 60;
+
+commit;
+</code></pre>
+</div><p>Cambiamos al usuario administrador y comparamos registros:</p>
+<div><pre><code>select username, action_name, timestamp, obj_name from dba_audit_object where username = 'SCOTT';
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/1-5.png" alt="image"></p>
+<p><strong>BY SESSION</strong>:</p>
+<p>La auditoría por sesión, en contraste con la auditoría por acceso, registra únicamente una entrada de auditoría por sesión. Aunque esta técnica de auditoría proporciona un registro menos detallado, mejora el rendimiento de la base de datos.</p>
+<p>Primero vaciamos la tabla de auditoria eliminando los registros</p>
+<div><pre><code>truncate table aud$;
+</code></pre>
+</div><p>Despues activamos la auditoría.</p>
+<div><pre><code>audit insert table, update table, delete table by scott by session;
+</code></pre>
+</div><p>Realizaremos una serie de pruebas.</p>
+<div><pre><code>conn scott/tiger
+
+insert into scott.dept values(60, 'OLL', 'ESPAÑA');
+update scott.dept set loc = 'MIAMI' where deptno = 60;
+delete from scott.dept where deptno = 60;
+
+commit;
+</code></pre>
+</div><p>Cambiamos al usuario administrador y comparamos registros:</p>
+<div><pre><code>select username, action_name, timestamp, obj_name from dba_audit_object where username = 'SCOTT';
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/2-5.png" alt="image"></p>
+<h2 id="_6-documenta-las-diferencias-entre-los-valores-db-y-db-extended-del-parametro-audit-trail-de-oracle-demuestralas-poniendo-un-ejemplo-de-la-informacion-sobre-una-operacion-concreta-recopilada-con-cada-uno-de-ellos"> <strong>6. Documenta las diferencias entre los valores db y db, extended del parámetro audit_trail de ORACLE. Demuéstralas poniendo un ejemplo de la información sobre una operación concreta recopilada con cada uno de ellos.</strong></h2>
+<p>Las diferencias son mínimas y es que solo se diferencia en que db extend aparte de almacenarse en SYS.AUD$ también escribe valores en las columnas SQLBIND y SQLTEXT.</p>
+<p>Ejemplo:</p>
+<p>Para este ejemplo lo primero que deberemos hacer es activar las auditorias:</p>
+<div><pre><code>show parameter audit;
+
+alter system set audit_trail = db, extended scope = spfile;
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/1-6.png" alt="image"></p>
+<p>Deberemos de reiniciar la base de datos.</p>
+<div><pre><code>shutdown
+startup
+</code></pre>
+</div><p>Y comprobamos como hemos añadido un nuevo valor en la auditoria:</p>
+<div><pre><code>show parameter audit;
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/2-6.png" alt="image"></p>
+<h2 id="_7-averigua-si-en-postgres-se-pueden-realizar-los-cuatro-primeros-apartados-si-es-asi-documenta-el-proceso-adecuadamente"> <strong>7. Averigua si en Postgres se pueden realizar los cuatro primeros apartados. Si es así, documenta el proceso adecuadamente.</strong></h2>
+<p>A diferencia de otras bases de datos, PostgreSQL no incluye de forma nativa una herramienta para realizar auditorías. Sin embargo, la comunidad ha desarrollado una herramienta llamada Audit trigger 91plus para solventar esta limitación.</p>
+<p>Audit trigger 91plus es una herramienta creada por la comunidad de PostgreSQL que nos permite auditar las operaciones realizadas en la base de datos, tanto las de manipulación de datos (DML) como las de definición de objetos (DDL).</p>
+<p>Para instalar Audit trigger 91plus, es necesario seguir algunos pasos sencillos, como descargar el archivo de instalación, crear una base de datos de auditoría y ejecutar el archivo de instalación en la base de datos principal. Una vez instalado, Audit trigger 91plus registrará las operaciones realizadas en la base de datos y las almacenará en la base de datos de auditoría creada previamente.</p>
+<p>Gracias a Audit trigger 91plus, se puede realizar un seguimiento exhaustivo de todas las operaciones realizadas en la base de datos, lo que aumenta la seguridad y el cumplimiento normativo de la misma.</p>
+<p><em>Descargamos la herramienta:</em></p>
+<div><pre><code>wget https://raw.githubusercontent.com/2ndQuadrant/audit-trigger/master/audit.sql
+</code></pre>
+</div><p><em>Una vez descargada, la importamos en la base de datos:</em></p>
+<div><pre><code>\i audit.sql
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/1-7.png" alt="image"></p>
+<p><em>Una vez que hemos habilitado la auditoría con Audit trigger 91plus, si queremos ver las operaciones DML realizadas por un usuario concreto, como puede ser SCOTT, tendremos que especificar las tablas que queremos auditar, ya que no es posible realizar una auditoría global de todas las tablas de la base de datos:</em></p>
+<div><pre><code>SELECT audit.audit_table('emp');
+SELECT audit.audit_table('dept');
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/2-7.png" alt="image"></p>
+<p><em>Para pobrar que la auditoría funciona, vamos a hacer cambios en las tablas:</em></p>
+<div><pre><code>insert into dept values (50, 'NULO', 'MIAMI');
+insert into emp values (9000, 'KING','PRESIDENT', null, to_date('25-02-2023','dd-mm-yyyy'), 5000, null, 10);
+
+update dept set loc = 'DH' where deptno = 50;
+update emp set ename = 'QUEEN' where empno = 9000;
+
+delete from dept where deptno = 50;
+delete from emp where empno = 9000;
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/3-7.png" alt="image"></p>
+<p><em>Ahora, vamos a comprobar que la auditoría ha funcionado correctamente:</em></p>
+<div><pre><code>select session_user_name, action, table_name, action_tstamp_clk, client_query from audit.logged_actions;
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/4-7.png" alt="image"></p>
+<h2 id="_8-averigua-si-en-mysql-se-pueden-realizar-los-apartados-1-3-y-4-si-es-asi-documenta-el-proceso-adecuadamente"> <strong>8. Averigua si en MySQL se pueden realizar los apartados 1, 3 y 4. Si es así, documenta el proceso adecuadamente.</strong></h2>
+<p>Primero habilitamos las auditorias, debemos instalar un plugin adicional de mariadb:</p>
+<div><pre><code>sudo mysql
+
+install soname 'server_audit';
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/1-8.png" alt="image"></p>
+<p>Una vez hecho esto, para habilitar la auditoría DML de scott, debemos modificar la configuración de mariadb <code>/etc/mysql/mariadb.conf.d/50-server.cnf</code> con lo siguiente para solo coger las conexiones:</p>
+<div><pre><code>[server]
+server_audit_events = CONNECT
+server_audit_logging = ON
+</code></pre>
+</div><p>Ahora reiniciamos el servicio de mariadb para aplicar los cambios:</p>
+<div><pre><code>sudo systemctl restart mariadb
+</code></pre>
+</div><p>Ahora, vamos a comprobar que la auditoría ha funcionado correctamente mirándolo en los logs de MySQL:</p>
+<p>Primero nos conectaremos con un usuario</p>
+<div><pre><code>mysql -u lucas -p
+</code></pre>
+</div><p>Y ahora miraremos los logs</p>
+<div><pre><code>sudo cat /var/lib/mysql/server_audit.log
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/2-8.png" alt="image"></p>
+<p>Hbilitamos la auditoría DML de scott, debemos modificar la configuración de mariadb (/etc/mysql/mariadb.conf.d/50-server.cnf) con lo siguiente:</p>
+<div><pre><code>[server]
+server_audit_events=CONNECT,QUERY,TABLE
+server_audit_logging=ON
+server_audit_incl_users=scott
+</code></pre>
+</div><p>Ahora reiniciamos el servicio de mariadb para aplicar los cambios:</p>
+<div><pre><code>systemctl restart mariadb
+</code></pre>
+</div><p>Ahora, entramos con el usuario scott y ejecutamos algunas sentencias, para ver si se registran adecuadamente:</p>
+<div><pre><code>insert into scott.dept values(60, 'OLL', 'ESPAÑA');
+update scott.dept set loc = 'MIAMI' where deptno = 60;
+delete from scott.dept where deptno = 60;
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/3-8.png" alt="image"></p>
+<p>Miremos en el fichero de auditorías para ver si han guardado:</p>
+<div><pre><code>sudo cat /var/lib/mysql/server_audit.log
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/4-8.png" alt="image"></p>
+<h2 id="_9-averigua-las-posibilidades-que-ofrece-mongodb-para-auditar-los-cambios-que-va-sufriendo-un-documento-demuestra-su-funcionamiento"> <strong>9. Averigua las posibilidades que ofrece MongoDB para auditar los cambios que va sufriendo un documento. Demuestra su funcionamiento.</strong></h2>
+<h2 id="_10-averigua-si-en-mongodb-se-pueden-auditar-los-accesos-a-una-coleccion-concreta-demuestra-su-funcionamiento"> <strong>10. Averigua si en MongoDB se pueden auditar los accesos a una colección concreta. Demuestra su funcionamiento.</strong></h2>
+<p>Si utilizamos MongoDB, es posible llevar un registro de los accesos realizados a una colección específica mediante la ejecución de un comando.</p>
+<div><pre><code>db.setLogLevel(level, component)
+</code></pre>
+</div><p>Utilizando este comando, podemos observar los accesos a la colección que se esté utilizando en tiempo real. Para llevar a cabo este proceso, es necesario crear una base de datos y una colección, y utilizar un nuevo usuario con permisos de administrador para realizar las operaciones correspondientes.</p>
+<p>Al emplear esta técnica, se establece un nivel de detalle uniforme para todos los mensajes de registro.</p>
+<p>En lo que respecta a su funcionamiento, esta técnica fija un único nivel de detalle para la generación de mensajes de registro. Si deseamos establecer diferentes niveles de detalle en una misma operación, será necesario emplear el comando &quot;setParameter&quot; para definir el parámetro &quot;logComponentVerbosity&quot;. Es posible especificar la configuración de verbosidad en el archivo de configuración también.</p>
+<p>Para realizar la tarea, se procederá a la ejecución del comando siguiente:</p>
+<div><pre><code>db.setLogLevel(3, &quot;accessControl&quot;)
+</code></pre>
+</div><p>En términos prácticos, esto implica que se establecerá un nivel de detalle o verbosidad de 3 para el componente &quot;accessControl&quot;. Es decir, que se visualizarán los mensajes correspondientes a errores, advertencias e información.</p>
+<p>A continuación, se procederá a iniciar sesión con el usuario &quot;admin&quot; previamente creado y, posteriormente, se creará un nuevo usuario con permisos de administrador.</p>
+<div><pre><code># Accedemos a la consola de mongo
+mongosh
+# Accedemos al administrador
+use admin
+# Creamos un nuevo usuario administrador
+db.createUser ({user: 'olucas', pwd: 'root', roles: [{role: 'root', db: 'admin'}]})
+</code></pre>
+</div><p>En este momento, se realizará la conexión utilizando el nuevo usuario que se ha creado.</p>
+<div><pre><code>mongosh -u olucas -p root --authenticationDatabase admin
+</code></pre>
+</div><p>Seguidamente, se crearán dos colecciones denominadas &quot;1curso&quot; y &quot;2curso&quot;, y se procederá a insertar las siguientes asignaturas en cada una de ellas:</p>
+<div><pre><code>use audit
+
+db.createCollection(&quot;Primero&quot;)
+db.createCollection(&quot;Segundo&quot;)
+
+db.Primero.insertMany([{nombre: &quot;Sistemas Operativos&quot;, horas: &quot;6&quot;}, {nombre: &quot;Lenguajes de Marcas&quot;, horas: &quot;4&quot;}, {nombre: &quot;Redes&quot;, horas: &quot;5&quot;}, {nombre: &quot;Bases de Datos&quot;, horas: &quot;6&quot;}, {nombre: &quot;Formación y Orientación Laboral&quot;, horas: &quot;4&quot;}, {nombre: &quot;Fundamento de hardware&quot;, horas: &quot;4&quot;}])
+db.Segundo.insertMany([{nombre: &quot;Implantación de Aplicaciones Web&quot;, horas: &quot;6&quot;}, {nombre: &quot;Cloud Computing&quot;, horas: &quot;4&quot;}, {nombre: &quot;Seguridad&quot;, horas: &quot;3&quot;}, {nombre: &quot;Empresas&quot;, horas: &quot;4&quot;}, {nombre: &quot;Administración de Sistemas Operativos&quot;, horas: &quot;6&quot;}, {nombre: &quot;Administración de Sistemas Gestores de Bases de Datos&quot;, horas: &quot;3&quot;}])
+</code></pre>
+</div><p>Para visualizar los accesos realizados a la colección que se esté utilizando en ese momento, se ejecutará el siguiente comando: &quot;db.setLogLevel(3, &quot;accessControl&quot;)&quot;.</p>
+<p><img src="./../images/ABD/auditoria/1-10.png" alt="image"></p>
+<p>Para verificar que la técnica se encuentra funcionando adecuadamente, se han realizado dos intentos de inicio de sesión, uno de forma correcta y otro de forma incorrecta.</p>
+<p><img src="./../images/ABD/auditoria/2-10.png" alt="image"></p>
+<p>Para confirmar que la auditoría se está llevando a cabo de forma correcta, se revisarán los registros de MongoDB desde la consola utilizando un formato JSON para su mejor legibilidad. Antes de proceder con esta tarea, se deberá haber instalado la herramienta jq.</p>
+<div><pre><code>apt install jq
+</code></pre>
+</div><hr>
+<div><pre><code>cat /var/log/mongodb/mongod.log | jq
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/3-10.png" alt="image"></p>
+<p>De este modo, se puede comprobar que se han registrado tanto el acceso correcto como el incorrecto en los registros de auditoría.</p>
+]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
+    <category term="practicas" scheme=""/>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
     <title type="html">Almacenamiento</title>
     <id>https://github.com/oscarlucas22/practicas/almacenamiento/</id>
     <link href="https://github.com/oscarlucas22/practicas/almacenamiento/"/>
-    <updated>2023-02-25T18:52:53.465Z</updated>
+    <updated>2023-02-28T18:57:38.530Z</updated>
     <content type="html"><![CDATA[<h1 id="almacenamiento"> Almacenamiento</h1>
 <h2 id="alumno-3"> Alumno 3:</h2>
 <p><em><strong>orACLE:</strong></em></p>
@@ -3924,325 +4284,10 @@ DROP USER JAIME cascade;
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
-    <title type="html">Auditoría</title>
-    <id>https://github.com/oscarlucas22/practicas/auditoria/</id>
-    <link href="https://github.com/oscarlucas22/practicas/auditoria/"/>
-    <updated>2023-02-25T18:52:53.468Z</updated>
-    <content type="html"><![CDATA[<h1 id="auditoria"> Auditoría</h1>
-<h2 id="_1-activa-desde-sql-plus-la-auditoria-de-los-intentos-de-acceso-exitosos-al-sistema-comprueba-su-funcionamiento"> <strong>1. Activa desde SQL*Plus la auditoría de los intentos de acceso exitosos al sistema. Comprueba su funcionamiento.</strong></h2>
-<p>Visualizaremos los parametros de auditorias:</p>
-<div><pre><code>show parameter AUDIT
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/1-1.png" alt="image"></p>
-<p>Nos aseguraremos de que el parámetro <code>AUDIT_TRAIL</code> esté establecido en DB. Puedes verificarlo ejecutando el siguiente comando:</p>
-<div><pre><code>show parameter audit_trail
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/2-1.png" alt="image"></p>
-<p>Si el valor devuelto no es DB, puedes establecerlo con el siguiente comando:</p>
-<div><pre><code>alter system set audit_trail=db scope=spfile;
-</code></pre>
-</div><p>Activamos la auditoría para los intentos de acceso exitosos con el siguiente comando:</p>
-<div><pre><code>audit session whenever successful;
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/3-1.png" alt="image"></p>
-<p>Comprobamos su activación.</p>
-<div><pre><code>audit create session by lucas;
-</code></pre>
-</div><hr>
-<div><pre><code>select * from dba_priv_audit_opts;
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/4-1.png" alt="image"></p>
-<p>Comprobamos el funcionamiento:</p>
-<p>Primero iniciaremos sesión en la base de datos SQL*Plus con una cuenta de usuario existente con cualquiera de los siguientes comandos:</p>
-<div><pre><code>sqlplus
-</code></pre>
-</div><hr>
-<div><pre><code>sqlplus username/passwd
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/5-1.png" alt="image"></p>
-<p>Si la autenticación es exitosa, la sesión se iniciará y deberías ver el prompt de SQL*Plus. Puedes comprobar que la auditoría está funcionando consultando la tabla de registros de auditoría <code>dba_audit_session</code>. Puedes hacerlo ejecutando el siguiente comando:</p>
-<div><pre><code>select os_username, username, extended_timestamp from dba_audit_session where action_name = 'LOGON' and returncode = 0;
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/6-1.png" alt="image"></p>
-<p>Para finalizar, desactivaremos la auditoría.</p>
-<div><pre><code>noaudit session whenever successful; 
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/7-1.png" alt="image"></p>
-<h2 id="_2-realiza-un-procedimiento-en-pl-sql-que-te-muestre-los-accesos-fallidos-junto-con-el-motivo-de-los-mismos-transformando-el-codigo-de-error-almacenado-en-un-mensaje-de-texto-comprensible-contempla-todos-los-motivos-posibles-para-que-un-acceso-sea-fallido"> <strong>2. Realiza un procedimiento en PL/SQL que te muestre los accesos fallidos junto con el motivo de los mismos, transformando el código de error almacenado en un mensaje de texto comprensible. Contempla todos los motivos posibles para que un acceso sea fallido.</strong></h2>
-<p>En primer lugar debemos de activar la auditoria de los aciertos fallidos:</p>
-<div><pre><code>audit create session whenever not successful;
-</code></pre>
-</div><p>Función para devolver el motivo del error:</p>
-<div><pre><code>create or replace function DevolverMotivo (p_error number)
-return varchar2
-is
-    mensaje varchar2(40);
-begin
-    case p_error
-        when 1017 then 
-            mensaje:='Usuario/Password Incorrecta';
-        when 28000 THEN
-            mensaje:='Cuenta Bloqueada';
-        when 1045 then
-            mensaje:='Privilegios insuficientes';
-        else
-            mensaje:='Error Desconocido';
-    end case;
-return mensaje;
-end;
-/
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/1-2.png" alt="image"></p>
-<p>Procedimiento:</p>
-<div><pre><code>create or replace procedure MostrarAccesosFallidos
-is
-    cursor c_cursor is 
-    select username, timestamp, returncode from dba_audit_session where action_name = 'LOGON' and returncode != 0;
-    v_motivo varchar2(40);
-begin
-    dbms_output.put_line(chr(10)||chr(9)||chr(9)||'-- AUDITORIA DE ACCESOS FALLIDOS --');
-    dbms_output.put_line(chr(10)||chr(9)||'Usuario'||chr(9)||chr(9)||'Fecha'||chr(9)||chr(9)||chr(9)||
-        'Motivo');
-    dbms_output.put_line(chr(9)||'----------------------------------------------------------------');
-    for var in c_cursor loop
-        v_motivo:=DevolverMotivo(var.returncode);
-        dbms_output.put_line(chr(10)||chr(9)||var.username||chr(9)||chr(9)||to_char(var.timestamp,'YY/MM/DD DY HH24:MI')||chr(9)||v_motivo);
-    end loop; 
-end;
-/
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/2-2.png" alt="image"></p>
-<p>Comprobación del funcionamiento:</p>
-<p>Para hacer la prueba voy a acceder con los usuarios &quot;lucas&quot;, &quot;oscar&quot; y &quot;oscarlucas&quot;. Con el usuario &quot;lucas&quot; voy a fallar en la contraseña, el usuario &quot;oscar&quot; esta bloqueado y el usuario &quot;oscarlucas&quot; no tiene privilegios.</p>
-<p><img src="./../images/ABD/auditoria/3-2.png" alt="image"></p>
-<p>Y ejecutaremos el procedimiento para ver su funcionamiento:</p>
-<div><pre><code>exec MostrarAccesosFallidos;
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/4-2.png" alt="image"></p>
-<p>Para finalizar, desactivamos la auditoria</p>
-<div><pre><code>noaudit create session whenever not successful;
-</code></pre>
-</div><h2 id="_3-activa-la-auditoria-de-las-operaciones-dml-realizadas-por-scott-comprueba-su-funcionamiento"> <strong>3. Activa la auditoría de las operaciones DML realizadas por SCOTT. Comprueba su funcionamiento.</strong></h2>
-<p><a href="https://pastebin.com/pCBR7MwS" target="_blank" rel="noopener noreferrer">Esquema scott<i>Content not supported</i></a></p>
-<p>Activamos la auditoría.</p>
-<div><pre><code>audit insert table, update table, delete table by scott by access;
-</code></pre>
-</div><p>Donde:</p>
-<ul>
-<li>
-<p>BY ACCESS : Realiza un registro por cada acción.</p>
-</li>
-<li>
-<p>BY SESSION : Realiza un registro de todas las acciones por cada sesión iniciada.</p>
-</li>
-</ul>
-<p>Realizamos una prueba:</p>
-<div><pre><code>conn scott/tiger
-insert into dept values(50, 'DH', 'Dos Hermanas');
-update dept set loc = 'Sevilla' where deptno = 50;
-delete from dept where deptno = 50;
-commit;
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/1-3.png" alt="image"></p>
-<p>Para ver las acciones realizadas por SCOTT:</p>
-<div><pre><code>audit all by scott by access;
-
-select obj_name, action_name, timestamp from dba_audit_object where username = 'SCOTT';
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/2-3.png" alt="image"></p>
-<h2 id="_4-realiza-una-auditoria-de-grano-fino-para-almacenar-informacion-sobre-la-insercion-de-empleados-con-sueldo-superior-a-2000-en-la-tabla-emp-de-scott"> <strong>4. Realiza una auditoría de grano fino para almacenar información sobre la inserción de empleados con sueldo superior a 2000 en la tabla emp de scott.</strong></h2>
-<p>Creación de la auditoría de grano fino:</p>
-<div><pre><code>begin
-    dbms_fga.add_policy (
-        object_schema      =&gt;  'scott',
-        object_name        =&gt;  'emp',
-        policy_name        =&gt;  'politica1',
-        audit_condition    =&gt;  'sal &gt; 2000',
-        statement_types    =&gt;  'insert'
-    );
-end;
-/
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/1-4.png" alt="image"></p>
-<p>Ver la política creada:</p>
-<div><pre><code>select object_schema,object_name,policy_name,policy_text from dba_audit_policies;
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/2-4.png" alt="image"></p>
-<p>Realizamos una prueba:</p>
-<div><pre><code>conn scott/tiger
-</code></pre>
-</div><hr>
-<div><pre><code>insert into emp values(7940, 'MARK', 'CARRIER', null, sysdate, 3000, null, 10);
-insert into emp values(7941, 'RICK', 'CARRIER', null, sysdate, 2001, null, 20);
-
-commit;
-</code></pre>
-</div><p>Para visualizar las acciones realizadas.</p>
-<div><pre><code>select sql_text from dba_fga_audit_trail where policy_name = 'POLITICA1';
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/3-4.png" alt="image"></p>
-<p>Para eliminar la auditoría de grano fino:</p>
-<div><pre><code>begin
-    dbms_fga.drop_policy (
-        object_schema      =&gt;  'scott',
-        object_name        =&gt;  'emp',
-        policy_name        =&gt;  'politica1'      
-    );
-end;
-/
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/4-4.png" alt="image"></p>
-<h2 id="_5-explica-la-diferencia-entre-auditar-una-operacion-by-access-o-by-session-ilustrandolo-con-ejemplos"> <strong>5. Explica la diferencia entre auditar una operación by access o by session ilustrándolo con ejemplos.</strong></h2>
-<p><strong>BY ACCESS</strong>:</p>
-<p>La auditoría por acceso implica registrar una entrada de auditoría cada vez que se lleva a cabo una operación de manipulación de datos (DML). Por ejemplo, esta técnica de auditoría permite registrar si un usuario ha insertado, actualizado o eliminado una fila de una tabla.</p>
-<p>Primero vaciamos la tabla de auditoria eliminando los registros</p>
-<div><pre><code>truncate table aud$;
-</code></pre>
-</div><p>Despues activamos la auditoría.</p>
-<div><pre><code>audit insert table, update table, delete table by scott by access;
-</code></pre>
-</div><p>Realizaremos una serie de pruebas.</p>
-<div><pre><code>conn scott/tiger
-
-insert into scott.dept values(60, 'OLL', 'ESPAÑA');
-update scott.dept set loc = 'MIAMI' where deptno = 60;
-delete from scott.dept where deptno = 60;
-
-commit;
-</code></pre>
-</div><p>Cambiamos al usuario administrador y comparamos registros:</p>
-<div><pre><code>select username, action_name, timestamp, obj_name from dba_audit_object where username = 'SCOTT';
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/1-5.png" alt="image"></p>
-<p><strong>BY SESSION</strong>:</p>
-<p>La auditoría por sesión, en contraste con la auditoría por acceso, registra únicamente una entrada de auditoría por sesión. Aunque esta técnica de auditoría proporciona un registro menos detallado, mejora el rendimiento de la base de datos.</p>
-<p>Primero vaciamos la tabla de auditoria eliminando los registros</p>
-<div><pre><code>truncate table aud$;
-</code></pre>
-</div><p>Despues activamos la auditoría.</p>
-<div><pre><code>audit insert table, update table, delete table by scott by session;
-</code></pre>
-</div><p>Realizaremos una serie de pruebas.</p>
-<div><pre><code>conn scott/tiger
-
-insert into scott.dept values(60, 'OLL', 'ESPAÑA');
-update scott.dept set loc = 'MIAMI' where deptno = 60;
-delete from scott.dept where deptno = 60;
-
-commit;
-</code></pre>
-</div><p>Cambiamos al usuario administrador y comparamos registros:</p>
-<div><pre><code>select username, action_name, timestamp, obj_name from dba_audit_object where username = 'SCOTT';
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/2-5.png" alt="image"></p>
-<h2 id="_6-documenta-las-diferencias-entre-los-valores-db-y-db-extended-del-parametro-audit-trail-de-oracle-demuestralas-poniendo-un-ejemplo-de-la-informacion-sobre-una-operacion-concreta-recopilada-con-cada-uno-de-ellos"> <strong>6. Documenta las diferencias entre los valores db y db, extended del parámetro audit_trail de ORACLE. Demuéstralas poniendo un ejemplo de la información sobre una operación concreta recopilada con cada uno de ellos.</strong></h2>
-<p>Las diferencias son mínimas y es que solo se diferencia en que db extend aparte de almacenarse en SYS.AUD$ también escribe valores en las columnas SQLBIND y SQLTEXT.</p>
-<p>Ejemplo:</p>
-<p>Para este ejemplo lo primero que deberemos hacer es activar las auditorias:</p>
-<div><pre><code>show parameter audit;
-
-alter system set audit_trail = db, extended scope = spfile;
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/1-6.png" alt="image"></p>
-<p>Deberemos de reiniciar la base de datos.</p>
-<div><pre><code>shutdown
-startup
-</code></pre>
-</div><p>Y comprobamos como hemos añadido un nuevo valor en la auditoria:</p>
-<div><pre><code>show parameter audit;
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/2-6.png" alt="image"></p>
-<h2 id="_7-averigua-si-en-postgres-se-pueden-realizar-los-cuatro-primeros-apartados-si-es-asi-documenta-el-proceso-adecuadamente"> <strong>7. Averigua si en Postgres se pueden realizar los cuatro primeros apartados. Si es así, documenta el proceso adecuadamente.</strong></h2>
-<p>A diferencia de otras bases de datos, PostgreSQL no incluye de forma nativa una herramienta para realizar auditorías. Sin embargo, la comunidad ha desarrollado una herramienta llamada Audit trigger 91plus para solventar esta limitación.</p>
-<p>Audit trigger 91plus es una herramienta creada por la comunidad de PostgreSQL que nos permite auditar las operaciones realizadas en la base de datos, tanto las de manipulación de datos (DML) como las de definición de objetos (DDL).</p>
-<p>Para instalar Audit trigger 91plus, es necesario seguir algunos pasos sencillos, como descargar el archivo de instalación, crear una base de datos de auditoría y ejecutar el archivo de instalación en la base de datos principal. Una vez instalado, Audit trigger 91plus registrará las operaciones realizadas en la base de datos y las almacenará en la base de datos de auditoría creada previamente.</p>
-<p>Gracias a Audit trigger 91plus, se puede realizar un seguimiento exhaustivo de todas las operaciones realizadas en la base de datos, lo que aumenta la seguridad y el cumplimiento normativo de la misma.</p>
-<p><em>Descargamos la herramienta:</em></p>
-<div><pre><code>wget https://raw.githubusercontent.com/2ndQuadrant/audit-trigger/master/audit.sql
-</code></pre>
-</div><p><em>Una vez descargada, la importamos en la base de datos:</em></p>
-<div><pre><code>\i audit.sql
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/1-7.png" alt="image"></p>
-<p><em>Una vez que hemos habilitado la auditoría con Audit trigger 91plus, si queremos ver las operaciones DML realizadas por un usuario concreto, como puede ser SCOTT, tendremos que especificar las tablas que queremos auditar, ya que no es posible realizar una auditoría global de todas las tablas de la base de datos:</em></p>
-<div><pre><code>SELECT audit.audit_table('emp');
-SELECT audit.audit_table('dept');
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/2-7.png" alt="image"></p>
-<p><em>Para pobrar que la auditoría funciona, vamos a hacer cambios en las tablas:</em></p>
-<div><pre><code>insert into dept values (50, 'NULO', 'MIAMI');
-insert into emp values (9000, 'KING','PRESIDENT', null, to_date('25-02-2023','dd-mm-yyyy'), 5000, null, 10);
-
-update dept set loc = 'DH' where deptno = 50;
-update emp set ename = 'QUEEN' where empno = 9000;
-
-delete from dept where deptno = 50;
-delete from emp where empno = 9000;
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/3-7.png" alt="image"></p>
-<p><em>Ahora, vamos a comprobar que la auditoría ha funcionado correctamente:</em></p>
-<div><pre><code>select session_user_name, action, table_name, action_tstamp_clk, client_query from audit.logged_actions;
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/4-7.png" alt="image"></p>
-<h2 id="_8-averigua-si-en-mysql-se-pueden-realizar-los-apartados-1-3-y-4-si-es-asi-documenta-el-proceso-adecuadamente"> <strong>8. Averigua si en MySQL se pueden realizar los apartados 1, 3 y 4. Si es así, documenta el proceso adecuadamente.</strong></h2>
-<p>Primero habilitamos las auditorias, debemos instalar un plugin adicional de mariadb:</p>
-<div><pre><code>sudo mysql
-
-install soname 'server_audit';
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/1-8.png" alt="image"></p>
-<p>Una vez hecho esto, para habilitar la auditoría DML de scott, debemos modificar la configuración de mariadb <code>/etc/mysql/mariadb.conf.d/50-server.cnf</code> con lo siguiente para solo coger las conexiones:</p>
-<div><pre><code>[server]
-server_audit_events = CONNECT
-server_audit_logging = ON
-</code></pre>
-</div><p>Ahora reiniciamos el servicio de mariadb para aplicar los cambios:</p>
-<div><pre><code>sudo systemctl restart mariadb
-</code></pre>
-</div><p>Ahora, vamos a comprobar que la auditoría ha funcionado correctamente mirándolo en los logs de MySQL:</p>
-<p>Primero nos conectaremos con un usuario</p>
-<div><pre><code>mysql -u lucas -p
-</code></pre>
-</div><p>Y ahora miraremos los logs</p>
-<div><pre><code>sudo cat /var/lib/mysql/server_audit.log
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/2-8.png" alt="image"></p>
-<p>Hbilitamos la auditoría DML de scott, debemos modificar la configuración de mariadb (/etc/mysql/mariadb.conf.d/50-server.cnf) con lo siguiente:</p>
-<div><pre><code>[server]
-server_audit_events=CONNECT,QUERY,TABLE
-server_audit_logging=ON
-server_audit_incl_users=scott
-</code></pre>
-</div><p>Ahora reiniciamos el servicio de mariadb para aplicar los cambios:</p>
-<div><pre><code>systemctl restart mariadb
-</code></pre>
-</div><p>Ahora, entramos con el usuario scott y ejecutamos algunas sentencias, para ver si se registran adecuadamente:</p>
-<div><pre><code>insert into scott.dept values(60, 'OLL', 'ESPAÑA');
-update scott.dept set loc = 'MIAMI' where deptno = 60;
-delete from scott.dept where deptno = 60;
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/3-8.png" alt="image"></p>
-<p>Miremos en el fichero de auditorías para ver si han guardado:</p>
-<div><pre><code>sudo cat /var/lib/mysql/server_audit.log
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/4-8.png" alt="image"></p>
-<h2 id="_9-averigua-las-posibilidades-que-ofrece-mongodb-para-auditar-los-cambios-que-va-sufriendo-un-documento-demuestra-su-funcionamiento"> <strong>9. Averigua las posibilidades que ofrece MongoDB para auditar los cambios que va sufriendo un documento. Demuestra su funcionamiento.</strong></h2>
-<h2 id="_10-averigua-si-en-mongodb-se-pueden-auditar-los-accesos-a-una-coleccion-concreta-demuestra-su-funcionamiento"> <strong>10. Averigua si en MongoDB se pueden auditar los accesos a una colección concreta. Demuestra su funcionamiento.</strong></h2>
-]]></content>
-    <author>
-      <name>Óscar Lucas</name>
-    </author>
-    <category term="practicas" scheme=""/>
-    <contributor>
-      <name>Óscar Lucas</name>
-    </contributor>
-    <rights>Copyright by Óscar Lucas</rights>
-  </entry>
-  <entry>
     <title type="html">Instalación y configuración de un servidor de correos en el VPS</title>
     <id>https://github.com/oscarlucas22/practicas/correos/</id>
     <link href="https://github.com/oscarlucas22/practicas/correos/"/>
-    <updated>2023-02-25T18:52:53.472Z</updated>
+    <updated>2023-02-28T18:57:38.534Z</updated>
     <content type="html"><![CDATA[<h1 id="instalacion-y-configuracion-de-un-servidor-de-correos-en-el-vps"> Instalación y configuración de un servidor de correos en el VPS</h1>
 <h2 id="practica-servidor-de-correos"> Práctica: Servidor de correos</h2>
 <p><strong>Instala y configura de manera adecuada el servidor de correos en tu VPS. El nombre del servidor de correo será mail.tudominio.es (Este es el nombre que deberá aparecer en el registro MX).</strong></p>
@@ -4766,7 +4811,7 @@ server {
     <title type="html">Cortafuegos I: De nodo con iptables</title>
     <id>https://github.com/oscarlucas22/practicas/cortafuegoI/</id>
     <link href="https://github.com/oscarlucas22/practicas/cortafuegoI/"/>
-    <updated>2023-02-25T18:52:53.477Z</updated>
+    <updated>2023-02-28T18:57:38.537Z</updated>
     <content type="html"><![CDATA[<h1 id="cortafuegos-i-de-nodo-con-iptables"> Cortafuegos I: De nodo con iptables</h1>
 <p>Página de la <a href="https://fp.josedomingo.org/seguridadgs/u03/ejercicio1.html" target="_blank" rel="noopener noreferrer">practica<i>Content not supported</i></a></p>
 <hr>
@@ -4953,7 +4998,7 @@ iptables -A OUTPUT -d 10.0.0.180 -p tcp --sport 3306 -j ACCEPT
     <title type="html">Informática Forense</title>
     <id>https://github.com/oscarlucas22/practicas/forense/</id>
     <link href="https://github.com/oscarlucas22/practicas/forense/"/>
-    <updated>2023-02-25T18:52:53.477Z</updated>
+    <updated>2023-02-28T18:57:38.537Z</updated>
     <content type="html"><![CDATA[<h1 id="informatica-forense"> Informática Forense</h1>
 <p><strong>La informática forense es el conjunto de técnicas que nos permite obtener la máxima información posible tras un incidente o delito informático.</strong></p>
 <p><strong>En esta práctica, realizarás la fase de toma de evidencias y análisis de las mismas sobre una máquina Linux y otra Windows. Supondremos que pillamos al delincuente in fraganti y las máquinas se encontraban encendidas. Opcionalmente, podéis realizar el análisis de un dispositivo Android.</strong></p>
@@ -5034,7 +5079,7 @@ iptables -A OUTPUT -d 10.0.0.180 -p tcp --sport 3306 -j ACCEPT
     <title type="html">Poblar un directorio LDAP desde un fichero CSV</title>
     <id>https://github.com/oscarlucas22/practicas/ldap-csv/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldap-csv/"/>
-    <updated>2023-02-25T18:52:53.478Z</updated>
+    <updated>2023-02-28T18:57:38.538Z</updated>
     <content type="html"><![CDATA[<h1 id="poblar-un-directorio-ldap-desde-un-fichero-csv"> Poblar un directorio LDAP desde un fichero CSV</h1>
 <ul>
 <li>
@@ -5290,7 +5335,7 @@ AuthorizedKeysCommandUser nobody
     <title type="html">Instalación y configuración inicial de OpenLDAP</title>
     <id>https://github.com/oscarlucas22/practicas/ldap/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldap/"/>
-    <updated>2023-02-25T18:52:53.480Z</updated>
+    <updated>2023-02-28T18:57:38.540Z</updated>
     <content type="html"><![CDATA[<h1 id="instalacion-y-configuracion-inicial-de-openldap"> Instalación y configuración inicial de OpenLDAP</h1>
 <p><strong>Realiza la instalación y configuración básica de OpenLDAP en alfa, utilizando como base el nombre DNS asignado. Deberás crear un usuario llamado prueba y configurar una máquina cliente basada en Debian y Rocky para que pueda validarse en servidor ldap configurado anteriormente con el usuario prueba.</strong></p>
 <p><font color="#FFFF00"><strong>Paso 1</strong></font> Configuración de OpenLDAP en el servidor: Instalación y configuración de OpenLDAP.Instalación y configuración de OpenLDAP en el Servidor</p>
@@ -5650,7 +5695,7 @@ systemctl start mnt-nfs.mount
     <title type="html">LDAPs</title>
     <id>https://github.com/oscarlucas22/practicas/ldaps/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldaps/"/>
-    <updated>2023-02-25T18:52:53.481Z</updated>
+    <updated>2023-02-28T18:57:38.540Z</updated>
     <content type="html"><![CDATA[<h1 id="ldaps"> LDAPs</h1>
 <p><strong>Configura el servidor LDAP de alfa para que utilice el protocolo ldaps:// a la vez que el ldap:// utilizando el certificado x509 de la práctica de https o solicitando el correspondiente a través de gestiona. Realiza las modificaciones adecuadas en los clientes ldap de alfa para que todas las consultas se realicen por defecto utilizando ldaps://</strong></p>
 <p>Para empezar, crearemos el directorio que usaremos para almacenar las claves SSL y le otorgaremos los permisos adecuados. Luego, procederemos a generar la clave RSA.</p>
@@ -5748,7 +5793,7 @@ URI     ldaps://alfa.olucas.gonzalonazareno.org
     <title type="html">Movimiento de datos</title>
     <id>https://github.com/oscarlucas22/practicas/movdatos/</id>
     <link href="https://github.com/oscarlucas22/practicas/movdatos/"/>
-    <updated>2023-02-25T18:52:53.481Z</updated>
+    <updated>2023-02-28T18:57:38.540Z</updated>
     <content type="html"><![CDATA[<h1 id="movimiento-de-datos"> Movimiento de datos</h1>
 <p><strong>1. Realiza una exportación del esquema de SCOTT usando Oracle Data Pump con las siguientes condiciones:</strong></p>
 <ul>
@@ -5784,10 +5829,258 @@ URI     ldaps://alfa.olucas.gonzalonazareno.org
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
+    <title type="html">Implantación de aplicaciones web PHP en docker</title>
+    <id>https://github.com/oscarlucas22/practicas/phpdocker/</id>
+    <link href="https://github.com/oscarlucas22/practicas/phpdocker/"/>
+    <updated>2023-02-28T18:57:38.546Z</updated>
+    <content type="html"><![CDATA[<h1 id="implantacion-de-aplicaciones-web-php-en-docker"> Implantación de aplicaciones web PHP en docker</h1>
+<p><strong>Imaginemos que el equipo de desarrollo de nuestra empresa ha desarrollado una aplicación PHP que se llama <a href="https://github.com/evilnapsis/bookmedik" target="_blank" rel="noopener noreferrer">BookMedik<i>Content not supported</i></a>.</strong></p>
+<p><strong>Queremos crear una imagen Docker para implantar dicha aplicación.</strong></p>
+<p><strong>Tenemos que tener en cuenta los siguientes aspectos:</strong></p>
+<p><em><strong>Contenedor mariadb</strong></em></p>
+<ul>
+<li>
+<p><strong>Es necesario que nuestra aplicación guarde su información en un contenedor docker mariadb.</strong></p>
+</li>
+<li>
+<p><strong>El script para generar la base de datos y los registros lo encuentras en el repositorio y se llama schema.sql. Debes crear un usuario con su contraseña en la base de datos. La base de datos se llama bookmedik y se crea al ejecutar el script.</strong></p>
+</li>
+<li>
+<p><strong>Ejecuta el contenedor mariadb y carga los datos del script schema.sql. Para más información.</strong></p>
+</li>
+<li>
+<p><strong>El contenedor mariadb debe tener un volumen para guardar la base de datos.</strong></p>
+</li>
+</ul>
+<p><em><strong>Contenedor bookmedik</strong></em></p>
+<ul>
+<li>
+<p><strong>Vamos a crear tres versiones de la imagen que nos permite implantar la aplicación PHP.</strong></p>
+</li>
+<li>
+<p><strong>La imagen debe crear las variables de entorno necesarias con datos de conexión por defecto.</strong></p>
+</li>
+<li>
+<p><strong>Al crear un contenedor a partir de estas imágenes se ejecutará un script bash que realizará las siguientes tareas:</strong></p>
+<ul>
+<li>
+<p><strong>Modifique el fichero core\controller\Database.php para que lea las variables de entorno. Para obtener las variables de entorno en PHP usar la función getenv. Para más información.</strong></p>
+</li>
+<li>
+<p><strong>Inicialice la base de datos con el fichero schema.sql.</strong></p>
+</li>
+<li>
+<p><strong>Ejecute el servidor web.</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>El contenedor que creas debe tener un volumen para guardar los logs del servidor web.</strong></p>
+</li>
+<li>
+<p><strong>La imagen la tienes que crear en tu entorno de desarrollo con el comando docker build.</strong></p>
+</li>
+</ul>
+<hr>
+<p><em>Creación del contenedor MariaDB</em></p>
+<p>Primero creamos un contenedor con la imagen mariadb y que tenga las variables de entorno que nos han indicado. También crearemos una nueva red para la aplicación web.</p>
+<div><pre><code>docker network create red_bookmedik
+</code></pre>
+</div><hr>
+<div><pre><code>docker run -d --name db-mariadb -v bookmedik_vol:/var/lib/mysql --network red_bookmedik -e MARIADB_ROOT_PASSWORD=root -e MARIADB_DATABASE=bookmedik -e MARIADB_USER=admin -e MARIADB_PASSWORD=admin mariadb
+</code></pre>
+</div><p>Esto será para realizar las pruebas necesarias y comprobar que la imagen de la aplicación funcione como es debido.</p>
+<h2 id="tarea-1-creacion-de-una-imagen-docker-con-una-aplicacion-web-desde-una-imagen-base"> Tarea 1: Creación de una imagen docker con una aplicación web desde una imagen base</h2>
+<ul>
+<li>
+<p><strong>Vamos a crear una imagen que se llame usuario/bookmedik:v1.</strong></p>
+</li>
+<li>
+<p><strong>Crea una imagen docker con la aplicación desde una imagen base de debian o ubuntu.</strong></p>
+</li>
+</ul>
+<p>En primer lugar hemos hecho un fork del repositorio de bookmedik y lo hemos clonado en nuestro entorno de desarrollo. Una vez hecho esto, vamos a modificar el fichero schema.sql para que podamos ejecutarlo en un contenedor que ya tendrá una base de datos creada. Así pues, eliminamos las siguientes líneas de ese fichero:</p>
+<div><pre><code>create database bookmedik;
+use bookmedik;
+</code></pre>
+</div><p>A continuación modificamos el fichero <code>core/controller/Database.php</code> para que se configure a través de las variables de entorno que introduzcamos al crear el contenedor:</p>
+<div><pre><code>&lt;?php
+class Database {
+        public static $db;
+        public static $con;
+        function Database(){
+                $this-&gt;user=getenv('USER_BOOKMEDIK');$this-&gt;pass=getenv('PASSWD_BOOKMEDIK');$this-&gt;host=getenv('DB_HOST');$this-&gt;ddbb=getenv('NOMBRE_DB');
+        }
+
+        function connect(){
+                $con = new mysqli($this-&gt;host,$this-&gt;user,$this-&gt;pass,$this-&gt;ddbb);
+                $con-&gt;query(&quot;set sql_mode=''&quot;);
+                return $con;
+        }
+
+        public static function getCon(){
+                if(self::$con==null &amp;&amp; self::$db==null){
+                        self::$db = new Database();
+                        self::$con = self::$db-&gt;connect();
+                }
+                return self::$con;
+        }
+}
+?&gt;
+</code></pre>
+</div><p>Con esto ya podemos crear el Dockerfile que usaremos para crear la imagen:</p>
+<div><pre><code>nano Dockerfile
+</code></pre>
+</div><hr>
+<div><pre><code>FROM debian:bullseye
+MAINTAINER oscarlucas &quot;oscarlucasleo124@gmail.com&quot;
+RUN apt update &amp;&amp; apt upgrade -y &amp;&amp; apt install apache2 libapache2-mod-php php php-mysql mariadb-client -y &amp;&amp; apt clean &amp;&amp; rm -rf /var/lib/apt/lists/*
+ADD bookmedik /var/www/html/
+ADD script.sh /opt/
+RUN chmod +x /opt/script.sh &amp;&amp; rm /var/www/html/index.html
+ENTRYPOINT [&quot;/opt/script.sh&quot;]
+</code></pre>
+</div><p>Como vemos, al final le indicamos que ejecute un script. Dicho script lo hemos creado nosotros, y en él hacemos que introduzca la información del fichero schema.sql en la base de datos y hacemos que ejecute apache en modo demonio. El contenido del script es el siguiente:</p>
+<div><pre><code>nano script.sh
+</code></pre>
+</div><hr>
+<div><pre><code>#! /bin/sh
+
+while ! mysql -u ${USER_BOOKMEDIK} -p${PASSWD_BOOKMEDIK} -h ${DB_HOST}  -e &quot;;&quot; ; do
+        sleep 1
+done
+mysql -u $USER_BOOKMEDIK --password=$PASSWD_BOOKMEDIK -h $DB_HOST $NOMBRE_DB &lt; /var/www/html/schema.sql
+/usr/sbin/apache2ctl -D FOREGROUND
+</code></pre>
+</div><p>Este script lo hemos introducido en el directorio bookmedik (el que hemos obtenido de la clonación de github) para que se añada al contenedor junto con el contenido de dicho directorio. Con esto ya podemos crear la imagen con el siguiente comando:</p>
+<div><pre><code>docker build -t oscarlucas/bookmedik:v1 .
+</code></pre>
+</div><p>Una vez creada, ya la podemos ver en nuestro registro local:</p>
+<p>![image]</p>
+<h2 id="tarea-2-despliegue-en-el-entorno-de-desarrollo"> Tarea 2: Despliegue en el entorno de desarrollo</h2>
+<ul>
+<li>
+<p><strong>Crea un script con docker-compose que levante el escenario con los dos contenedores.</strong></p>
+</li>
+<li>
+<p><strong>Recuerda que para acceder a la aplicación: Usuario: admin, contraseña: admin.</strong></p>
+</li>
+</ul>
+<p>Así pues, crearemos un fichero docker-compose.yaml con la configuración necesaria para levantar los dos contenedores:</p>
+<div><pre><code>nano docker-compose.yaml
+</code></pre>
+</div><hr>
+<div><pre><code>version: '3.1'
+services:
+  bookmedik:
+    container_name: cont-bookmedik
+    image: oscarlucas/bookmedik:v1
+    restart: always
+    environment:
+      USER_BOOKMEDIK: admin
+      PASSWD_BOOKMEDIK: admin
+      DB_HOST: db-mariadb
+      NOMBRE_DB: bookmedik
+    ports:
+      - 8082:80
+    depends_on:
+      - db
+  db:
+    container_name: db-mariadb
+    image: mariadb
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: bookmedik
+      MARIADB_USER: admin
+      MARIADB_PASSWORD: admin
+    volumes:
+      - mariadb_data:/var/lib/mysql
+volumes:
+    mariadb_data:
+</code></pre>
+</div><p>Ahora levantamos los contenedores:</p>
+<div><pre><code>docker-compose up -d
+</code></pre>
+</div><p>Podemos verlos funcionando con el siguiente comando:</p>
+<p>![image]</p>
+<p>Y si entramos desde el navegador web, debería funcionar correctamente:</p>
+<p>![image]</p>
+<h2 id="tarea-3-creacion-de-una-imagen-docker-con-una-aplicacion-web-desde-una-imagen-php"> Tarea 3: Creación de una imagen docker con una aplicación web desde una imagen PHP</h2>
+<ul>
+<li>
+<p><strong>Vamos a crear una imagen que se llame usuario/bookmedik:v2.</strong></p>
+</li>
+<li>
+<p><strong>Realiza la imagen docker de la aplicación a partir de la imagen oficial PHP que encuentras en docker hub. Lee la documentación de la imagen para configurar una imagen con apache2 y php, además seguramente tengas que instalar alguna extensión de php.</strong></p>
+</li>
+<li>
+<p><strong>Modifica el fichero docker-compose.yml` para probar esta imagen.</strong></p>
+</li>
+</ul>
+<h2 id="tarea-4-ejecucion-de-una-aplicacion-php-en-docker-con-nginx-optativa"> Tarea 4: Ejecución de una aplicación PHP en docker con nginx (OPTATIVA)</h2>
+<ul>
+<li>
+<p><strong>Vamos a crear una imagen que se llame usuario/bookmedik:v3.</strong></p>
+</li>
+<li>
+<p><strong>En este caso queremos usar un contenedor que utilice nginx para servir la aplicación PHP. Puedes crear la imagen desde una imagen base debian o ubuntu o desde la imagen oficial de nginx.</strong></p>
+</li>
+<li>
+<p><strong>Vamos a crear otro contenedor que sirva php-fpm.</strong></p>
+</li>
+<li>
+<p><strong>Para que funcione de forma adecuada el php-fpm tiene que tener acceso al directorio donde se encuentra la aplicación.</strong></p>
+</li>
+<li>
+<p><strong>Y finalmente nuestro contenedor con la aplicación.</strong></p>
+</li>
+<li>
+<p><strong>Crea un script con docker compose que levante el escenario con los tres contenedores.</strong></p>
+</li>
+</ul>
+<p><strong>A lo mejor te puede ayudar el siguiente enlace: Dockerise your PHP application with Nginx and PHP7-FPM</strong></p>
+<h2 id="tarea-5-puesta-en-produccion-de-nuestra-aplicacion"> Tarea 5: Puesta en producción de nuestra aplicación</h2>
+<ul>
+<li>
+<p><strong>Elige una de las tres imágenes y súbela a Docker Hub.</strong></p>
+</li>
+<li>
+<p><strong>En tu VPS instala Docker y utilizando el docker-compose.yml correspondiente, crea un contenedor en ella de la aplicación.</strong></p>
+</li>
+<li>
+<p><strong>Configura el nginx de tu VPS para que haga de proxy inverso y nos permita acceder a la aplicación con https://bookmedik.tudominio.xxx</strong></p>
+</li>
+</ul>
+<h2 id="tarea-6-modificacion-de-la-aplicacion"> Tarea 6: Modificación de la aplicación</h2>
+<ul>
+<li>
+<p><strong>En el entorno de desarrollo vamos a hacer una modificación de la aplicación. Por ejemplo modifica el fichero core/app/view/login-view.php y pon tu nombre en la línea</strong></p>
+</li>
+<li>
+<p><strong>Vamos a trabajar con la primera imagen que construimos. Vuelve a crear la imagen con la etiqueta v1_2.</strong></p>
+</li>
+<li>
+<p><strong>Cambia el docker-compose para probar el cambio.</strong></p>
+</li>
+<li>
+<p><strong>Modifica la aplicación en producción.</strong></p>
+</li>
+</ul>
+]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
     <title type="html">VPN</title>
     <id>https://github.com/oscarlucas22/practicas/vpn/</id>
     <link href="https://github.com/oscarlucas22/practicas/vpn/"/>
-    <updated>2023-02-25T18:52:53.484Z</updated>
+    <updated>2023-02-28T18:57:38.550Z</updated>
     <content type="html"><![CDATA[<h1 id="vpn"> VPN</h1>
 <h2 id="a-vpn-de-acceso-remoto-con-openvpn-y-certificados-x509-5-puntos"> A) VPN de acceso remoto con OpenVPN y certificados x509 (5 puntos)</h2>
 <p><strong>Configura una conexión VPN de acceso remoto entre dos equipos del cloud:</strong></p>
