@@ -6,8 +6,8 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Fri, 03 Mar 2023 16:03:16 GMT</pubDate>
-    <lastBuildDate>Fri, 03 Mar 2023 16:03:16 GMT</lastBuildDate>
+    <pubDate>Fri, 03 Mar 2023 16:08:45 GMT</pubDate>
+    <lastBuildDate>Fri, 03 Mar 2023 16:08:45 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
@@ -4919,7 +4919,7 @@ iptables -A OUTPUT -d 10.0.0.180 -p tcp --sport 3306 -j ACCEPT
 <strong>l) Permite que los equipos de la LAN puedan navegar por internet.</strong></p>
 <hr>
 <h2 id="esquema-de-red"> Esquema de red</h2>
-<p>Utilizaremos dos instancias en OpenStack que se crearán mediante la plantilla de Heat llamada <a href="https://fp.josedomingo.org/seguridadgs/u03/escenario2.yaml" target="_blank" rel="noopener noreferrer">escenario2.yaml<i>Content not supported</i></a>. Esta plantilla de Heat ha desactivado el firewall que ofrece OpenStack, permitiendo la apertura de todos los puertos y protocolos. Una de las instancias tendrá una dirección IP flotante y actuará como firewall, mientras que la otra será una instancia de la red interna 192.168.100.0/24.</p>
+<p>Vamos a utilizar dos máquinas en openstack, que vamos a crear con la receta heat: <a href="https://fp.josedomingo.org/seguridadgs/u03/escenario2.yaml" target="_blank" rel="noopener noreferrer">escenario2.yaml<i>Content not supported</i></a>. La receta heat ha deshabilitado el cortafuego que nos ofrece openstack (todos los puertos de todos los protocolos están abiertos). Una máquina (que tiene asignada una IP flotante) hará de cortafuegos, y la otra será una máquina de la red interna 192.168.100.0/24.</p>
 <h2 id="preparacion-nftables"> Preparación nftables</h2>
 <h3 id="configuracion-de-las-rutas-por-defecto"> Configuración de las rutas por defecto</h3>
 <p><strong>LAN:</strong></p>

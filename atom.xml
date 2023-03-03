@@ -5,7 +5,7 @@
   <author>
     <name>Óscar Lucas</name>
   </author>
-  <updated>2023-03-03T16:03:16.606Z</updated>
+  <updated>2023-03-03T16:08:45.570Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://github.com/oscarlucas22/atom.xml"/>
   <link rel="alternate" href="https://github.com/oscarlucas22/"/>
@@ -3366,7 +3366,7 @@ fetch first 1 row only;
     <title type="html">Almacenamiento</title>
     <id>https://github.com/oscarlucas22/practicas/almacenamiento/</id>
     <link href="https://github.com/oscarlucas22/practicas/almacenamiento/"/>
-    <updated>2023-03-03T16:03:16.671Z</updated>
+    <updated>2023-03-03T16:08:45.633Z</updated>
     <content type="html"><![CDATA[<h1 id="almacenamiento"> Almacenamiento</h1>
 <h2 id="alumno-3"> Alumno 3:</h2>
 <p><em><strong>orACLE:</strong></em></p>
@@ -3933,7 +3933,7 @@ DROP USER JAIME cascade;
     <title type="html">Auditoría</title>
     <id>https://github.com/oscarlucas22/practicas/auditoria/</id>
     <link href="https://github.com/oscarlucas22/practicas/auditoria/"/>
-    <updated>2023-03-03T16:03:16.673Z</updated>
+    <updated>2023-03-03T16:08:45.635Z</updated>
     <content type="html"><![CDATA[<h1 id="auditoria"> Auditoría</h1>
 <h2 id="_1-activa-desde-sql-plus-la-auditoria-de-los-intentos-de-acceso-exitosos-al-sistema-comprueba-su-funcionamiento"> <strong>1. Activa desde SQL*Plus la auditoría de los intentos de acceso exitosos al sistema. Comprueba su funcionamiento.</strong></h2>
 <p>Visualizaremos los parametros de auditorias:</p>
@@ -4374,7 +4374,7 @@ insert into emp values(7942, 'RICK', 'CARRIER', null, str_to_date('01/03/2023', 
     <title type="html">Instalación y configuración de un servidor de correos en el VPS</title>
     <id>https://github.com/oscarlucas22/practicas/correos/</id>
     <link href="https://github.com/oscarlucas22/practicas/correos/"/>
-    <updated>2023-03-03T16:03:16.677Z</updated>
+    <updated>2023-03-03T16:08:45.640Z</updated>
     <content type="html"><![CDATA[<h1 id="instalacion-y-configuracion-de-un-servidor-de-correos-en-el-vps"> Instalación y configuración de un servidor de correos en el VPS</h1>
 <h2 id="practica-servidor-de-correos"> Práctica: Servidor de correos</h2>
 <p><strong>Instala y configura de manera adecuada el servidor de correos en tu VPS. El nombre del servidor de correo será mail.tudominio.es (Este es el nombre que deberá aparecer en el registro MX).</strong></p>
@@ -4898,7 +4898,7 @@ server {
     <title type="html">Cortafuegos I: De nodo con iptables</title>
     <id>https://github.com/oscarlucas22/practicas/cortafuegoI/</id>
     <link href="https://github.com/oscarlucas22/practicas/cortafuegoI/"/>
-    <updated>2023-03-03T16:03:16.680Z</updated>
+    <updated>2023-03-03T16:08:45.644Z</updated>
     <content type="html"><![CDATA[<h1 id="cortafuegos-i-de-nodo-con-iptables"> Cortafuegos I: De nodo con iptables</h1>
 <p>Página de la <a href="https://fp.josedomingo.org/seguridadgs/u03/ejercicio1.html" target="_blank" rel="noopener noreferrer">practica<i>Content not supported</i></a></p>
 <hr>
@@ -5085,7 +5085,7 @@ iptables -A OUTPUT -d 10.0.0.180 -p tcp --sport 3306 -j ACCEPT
     <title type="html">Cortafuegos II: Perimetral con nftables</title>
     <id>https://github.com/oscarlucas22/practicas/cortafuegoII/</id>
     <link href="https://github.com/oscarlucas22/practicas/cortafuegoII/"/>
-    <updated>2023-03-03T16:03:16.688Z</updated>
+    <updated>2023-03-03T16:08:45.648Z</updated>
     <content type="html"><![CDATA[<h1 id="cortafuegos-ii-perimetral-con-nftables"> Cortafuegos II: Perimetral con nftables</h1>
 <p><strong>Realiza con nftables el ejercicio de la <a href="https://fp.josedomingo.org/seguridadgs/u03/perimetral_iptables.html" target="_blank" rel="noopener noreferrer">página<i>Content not supported</i></a> documentando las pruebas de funcionamiento realizadas.</strong></p>
 <p><strong>Debes añadir después las reglas necesarias para que se permitan las siguientes operaciones:</strong></p>
@@ -5102,7 +5102,7 @@ iptables -A OUTPUT -d 10.0.0.180 -p tcp --sport 3306 -j ACCEPT
 <strong>l) Permite que los equipos de la LAN puedan navegar por internet.</strong></p>
 <hr>
 <h2 id="esquema-de-red"> Esquema de red</h2>
-<p>Utilizaremos dos instancias en OpenStack que se crearán mediante la plantilla de Heat llamada <a href="https://fp.josedomingo.org/seguridadgs/u03/escenario2.yaml" target="_blank" rel="noopener noreferrer">escenario2.yaml<i>Content not supported</i></a>. Esta plantilla de Heat ha desactivado el firewall que ofrece OpenStack, permitiendo la apertura de todos los puertos y protocolos. Una de las instancias tendrá una dirección IP flotante y actuará como firewall, mientras que la otra será una instancia de la red interna 192.168.100.0/24.</p>
+<p>Vamos a utilizar dos máquinas en openstack, que vamos a crear con la receta heat: <a href="https://fp.josedomingo.org/seguridadgs/u03/escenario2.yaml" target="_blank" rel="noopener noreferrer">escenario2.yaml<i>Content not supported</i></a>. La receta heat ha deshabilitado el cortafuego que nos ofrece openstack (todos los puertos de todos los protocolos están abiertos). Una máquina (que tiene asignada una IP flotante) hará de cortafuegos, y la otra será una máquina de la red interna 192.168.100.0/24.</p>
 <h2 id="preparacion-nftables"> Preparación nftables</h2>
 <h3 id="configuracion-de-las-rutas-por-defecto"> Configuración de las rutas por defecto</h3>
 <p><strong>LAN:</strong></p>
@@ -5408,7 +5408,7 @@ sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens
     <title type="html">Informática Forense</title>
     <id>https://github.com/oscarlucas22/practicas/forense/</id>
     <link href="https://github.com/oscarlucas22/practicas/forense/"/>
-    <updated>2023-03-03T16:03:16.691Z</updated>
+    <updated>2023-03-03T16:08:45.650Z</updated>
     <content type="html"><![CDATA[<h1 id="informatica-forense"> Informática Forense</h1>
 <p><strong>La informática forense es el conjunto de técnicas que nos permite obtener la máxima información posible tras un incidente o delito informático.</strong></p>
 <p><strong>En esta práctica, realizarás la fase de toma de evidencias y análisis de las mismas sobre una máquina Linux y otra Windows. Supondremos que pillamos al delincuente in fraganti y las máquinas se encontraban encendidas. Opcionalmente, podéis realizar el análisis de un dispositivo Android.</strong></p>
@@ -5489,7 +5489,7 @@ sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens
     <title type="html">Poblar un directorio LDAP desde un fichero CSV</title>
     <id>https://github.com/oscarlucas22/practicas/ldap-csv/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldap-csv/"/>
-    <updated>2023-03-03T16:03:16.693Z</updated>
+    <updated>2023-03-03T16:08:45.651Z</updated>
     <content type="html"><![CDATA[<h1 id="poblar-un-directorio-ldap-desde-un-fichero-csv"> Poblar un directorio LDAP desde un fichero CSV</h1>
 <ul>
 <li>
@@ -5745,7 +5745,7 @@ AuthorizedKeysCommandUser nobody
     <title type="html">Instalación y configuración inicial de OpenLDAP</title>
     <id>https://github.com/oscarlucas22/practicas/ldap/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldap/"/>
-    <updated>2023-03-03T16:03:16.695Z</updated>
+    <updated>2023-03-03T16:08:45.653Z</updated>
     <content type="html"><![CDATA[<h1 id="instalacion-y-configuracion-inicial-de-openldap"> Instalación y configuración inicial de OpenLDAP</h1>
 <p><strong>Realiza la instalación y configuración básica de OpenLDAP en alfa, utilizando como base el nombre DNS asignado. Deberás crear un usuario llamado prueba y configurar una máquina cliente basada en Debian y Rocky para que pueda validarse en servidor ldap configurado anteriormente con el usuario prueba.</strong></p>
 <p><font color="#FFFF00"><strong>Paso 1</strong></font> Configuración de OpenLDAP en el servidor: Instalación y configuración de OpenLDAP.Instalación y configuración de OpenLDAP en el Servidor</p>
@@ -6105,7 +6105,7 @@ systemctl start mnt-nfs.mount
     <title type="html">LDAPs</title>
     <id>https://github.com/oscarlucas22/practicas/ldaps/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldaps/"/>
-    <updated>2023-03-03T16:03:16.696Z</updated>
+    <updated>2023-03-03T16:08:45.655Z</updated>
     <content type="html"><![CDATA[<h1 id="ldaps"> LDAPs</h1>
 <p><strong>Configura el servidor LDAP de alfa para que utilice el protocolo ldaps:// a la vez que el ldap:// utilizando el certificado x509 de la práctica de https o solicitando el correspondiente a través de gestiona. Realiza las modificaciones adecuadas en los clientes ldap de alfa para que todas las consultas se realicen por defecto utilizando ldaps://</strong></p>
 <p>Para empezar, crearemos el directorio que usaremos para almacenar las claves SSL y le otorgaremos los permisos adecuados. Luego, procederemos a generar la clave RSA.</p>
@@ -6265,7 +6265,7 @@ systemctl enable home-nfs.mount
     <title type="html">Movimiento de datos</title>
     <id>https://github.com/oscarlucas22/practicas/movdatos/</id>
     <link href="https://github.com/oscarlucas22/practicas/movdatos/"/>
-    <updated>2023-03-03T16:03:16.696Z</updated>
+    <updated>2023-03-03T16:08:45.656Z</updated>
     <content type="html"><![CDATA[<h1 id="movimiento-de-datos"> Movimiento de datos</h1>
 <p><strong>1. Realiza una exportación del esquema de SCOTT usando Oracle Data Pump con las siguientes condiciones:</strong></p>
 <p>Primero nos crearemos un directorio donde almacenaremos los archivos de explotacion en mi caso creare un directorio en la ruta <code>/home/oracle</code>, el cual se llamara &quot;dir&quot;</p>
@@ -6466,7 +6466,7 @@ create table emp (
     <title type="html">Implantación de aplicaciones web PHP en docker</title>
     <id>https://github.com/oscarlucas22/practicas/phpdocker/</id>
     <link href="https://github.com/oscarlucas22/practicas/phpdocker/"/>
-    <updated>2023-03-03T16:03:16.698Z</updated>
+    <updated>2023-03-03T16:08:45.659Z</updated>
     <content type="html"><![CDATA[<h1 id="implantacion-de-aplicaciones-web-php-en-docker"> Implantación de aplicaciones web PHP en docker</h1>
 <p><strong>Imaginemos que el equipo de desarrollo de nuestra empresa ha desarrollado una aplicación PHP que se llama <a href="https://github.com/evilnapsis/bookmedik" target="_blank" rel="noopener noreferrer">BookMedik<i>Content not supported</i></a>.</strong></p>
 <p><strong>Queremos crear una imagen Docker para implantar dicha aplicación.</strong></p>
@@ -7000,7 +7000,7 @@ volumes:
     <title type="html">VPN</title>
     <id>https://github.com/oscarlucas22/practicas/vpn/</id>
     <link href="https://github.com/oscarlucas22/practicas/vpn/"/>
-    <updated>2023-03-03T16:03:16.709Z</updated>
+    <updated>2023-03-03T16:08:45.668Z</updated>
     <content type="html"><![CDATA[<h1 id="vpn"> VPN</h1>
 <h2 id="a-vpn-de-acceso-remoto-con-openvpn-y-certificados-x509-5-puntos"> A) VPN de acceso remoto con OpenVPN y certificados x509 (5 puntos)</h2>
 <p><strong>Configura una conexión VPN de acceso remoto entre dos equipos del cloud:</strong></p>
