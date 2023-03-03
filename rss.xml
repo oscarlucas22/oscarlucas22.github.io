@@ -6,12 +6,48 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Wed, 01 Mar 2023 16:25:17 GMT</pubDate>
-    <lastBuildDate>Wed, 01 Mar 2023 16:25:17 GMT</lastBuildDate>
+    <pubDate>Fri, 03 Mar 2023 15:53:47 GMT</pubDate>
+    <lastBuildDate>Fri, 03 Mar 2023 15:53:47 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
     <category>practicas</category>
+    <item>
+      <title>SAD</title>
+      <link>https://github.com/oscarlucas22/category/SAD/</link>
+      <guid>https://github.com/oscarlucas22/category/SAD/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">SAD</source>
+      <category>categorías</category>
+      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="sad"> SAD</h1>
+<ul>
+<li>
+<p><a href="https://www.dropbox.com/s/84gl6ea0ls0xksy/Plantilla%20Trabajo%20Grupal%201.pdf?dl=0" target="_blank" rel="noopener noreferrer">Herramientas de Seguridad<i>Content not supported</i></a></p>
+</li>
+<li>
+<p><a href="https://www.dropbox.com/s/th00q6nun0ekmam/Plan%20de%20Seguridad%20y%20de%20Contingencia%28Mar%C3%ADa-Iv%C3%A1n-%C3%93scar%29.pdf?dl=0" target="_blank" rel="noopener noreferrer">Plan de Seguridad y de Contingencia<i>Content not supported</i></a></p>
+</li>
+<li>
+<p><a href="/practicas/criptografia1.html">Criptografía I: Cifrado asímetrico</a></p>
+</li>
+<li>
+<p><a href="/practicas/criptografia2.html">Criptografía II: Integridad, firmas y autenticación</a></p>
+</li>
+<li>
+<p><a href="/practicas/criptografia3.html">Criptografía III. Certificados Digitales. HTTPS</a></p>
+</li>
+<li>
+<p><a href="/practicas/vpn.html">VPN</a></p>
+</li>
+<li>
+<p><a href="/practicas/cortafuegoI.html">Cortafuegos I: De nodo con iptables</a></p>
+</li>
+<li>
+<p><a href="/practicas/cortafuegoII.html">Cortafuegos II: Perimetral con nftables</a></p>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
     <item>
       <title>ABD</title>
       <link>https://github.com/oscarlucas22/category/ABD/</link>
@@ -37,7 +73,28 @@
 <p><a href="/practicas/auditoria.html">Auditoría</a></p>
 </li>
 <li>
-<p><a href="">Movimiento de datos</a></p>
+<p><a href="/practicas/movdatos.html">Movimiento de datos</a></p>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>IAW</title>
+      <link>https://github.com/oscarlucas22/category/IAW/</link>
+      <guid>https://github.com/oscarlucas22/category/IAW/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">IAW</source>
+      <category>categorías</category>
+      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="iaw"> IAW</h1>
+<ul>
+<li>
+<p><a href="/practicas/django.html">Instalación/migración de aplicaciones web Python</a></p>
+</li>
+<li>
+<p><a href="/practicas/java.html">Despliegue de aplicaciones Java</a></p>
+</li>
+<li>
+<p><a href="/practicas/phpdocker.html">Implantación de aplicaciones web PHP en docker</a></p>
 </li>
 </ul>
 ]]></content:encoded>
@@ -68,60 +125,6 @@
 </li>
 <li>
 <p><a href="/practicas/ldaps.html">LDAPs</a></p>
-</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>IAW</title>
-      <link>https://github.com/oscarlucas22/category/IAW/</link>
-      <guid>https://github.com/oscarlucas22/category/IAW/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">IAW</source>
-      <category>categorías</category>
-      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="iaw"> IAW</h1>
-<ul>
-<li>
-<p><a href="/practicas/django.html">Instalación/migración de aplicaciones web Python</a></p>
-</li>
-<li>
-<p><a href="/practicas/java.html">Despliegue de aplicaciones Java</a></p>
-</li>
-<li>
-<p><a href="/practicas/phpdocker.html">Implantación de aplicaciones web PHP en docker</a></p>
-</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>SAD</title>
-      <link>https://github.com/oscarlucas22/category/SAD/</link>
-      <guid>https://github.com/oscarlucas22/category/SAD/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">SAD</source>
-      <category>categorías</category>
-      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="sad"> SAD</h1>
-<ul>
-<li>
-<p><a href="https://www.dropbox.com/s/84gl6ea0ls0xksy/Plantilla%20Trabajo%20Grupal%201.pdf?dl=0" target="_blank" rel="noopener noreferrer">Herramientas de Seguridad<i>Content not supported</i></a></p>
-</li>
-<li>
-<p><a href="https://www.dropbox.com/s/th00q6nun0ekmam/Plan%20de%20Seguridad%20y%20de%20Contingencia%28Mar%C3%ADa-Iv%C3%A1n-%C3%93scar%29.pdf?dl=0" target="_blank" rel="noopener noreferrer">Plan de Seguridad y de Contingencia<i>Content not supported</i></a></p>
-</li>
-<li>
-<p><a href="/practicas/criptografia1.html">Criptografía I: Cifrado asímetrico</a></p>
-</li>
-<li>
-<p><a href="/practicas/criptografia2.html">Criptografía II: Integridad, firmas y autenticación</a></p>
-</li>
-<li>
-<p><a href="/practicas/criptografia3.html">Criptografía III. Certificados Digitales. HTTPS</a></p>
-</li>
-<li>
-<p><a href="/practicas/vpn.html">VPN</a></p>
-</li>
-<li>
-<p><a href="/practicas/cortafuegoI.html">Cortafuegos I: De nodo con iptables</a></p>
 </li>
 </ul>
 ]]></content:encoded>
@@ -1536,6 +1539,55 @@ sudo make uninstall
 ]]></content:encoded>
     </item>
     <item>
+      <title>Migrar Centos 8 a Rocky Linux 8</title>
+      <link>https://github.com/oscarlucas22/practicas/migracionrocky/</link>
+      <guid>https://github.com/oscarlucas22/practicas/migracionrocky/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">Migrar Centos 8 a Rocky Linux 8</source>
+      <category>practicas</category>
+      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="migrar-centos-8-a-rocky-linux-8"> Migrar Centos 8 a Rocky Linux 8</h1>
+<p><img src="./../images/ASO/rocky.png" alt="image"></p>
+<p>Para conseguir este fin se nos ofrece un script llamado <strong>migrate2rocky.sh</strong>. Este script se encargará de cambiar los repositorios del sistemas por los de Rocky Linux. Los paquetes se instalarán y actualizarán, para finalmente cambiar todo el sistema operativo.</p>
+<p><font color="#FFFF00"><strong>Paso 1</strong></font> Actualizamos el sistema.</p>
+<div><pre><code>sudo dnf -y upgrade
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 2</strong></font> Reiniciamos.</p>
+<div><pre><code>sudo reboot 
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 3</strong></font> Actualizar el sistema.</p>
+<div><pre><code>dnf update
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 4</strong></font> Descargar repositorio.</p>
+<p>Una vez hecho esto nos iremos al repositorio donde se encuentra dicho script, en este caso en Github.
+Podemos descargar los paquetes del repositorio con programas como wget.</p>
+<div><pre><code>wget https://github.com/rocky-linux/rocky-tools/archive/refs/heads/main.zip
+</code></pre>
+</div><p>O bien, si solo deseamos descargar el script:</p>
+<div><pre><code>wget https://raw.githubusercontent.com/rocky-linux/rocky-tools/main/migrate2rocky/migrate2rocky.sh
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 5</strong></font> Le asignamos permisos de ejecución.</p>
+<div><pre><code>chmod +x migrate2rocky.sh
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 6</strong></font> Lo ejecutamos.</p>
+<p>Con el parámetro <strong>-r</strong> indicamos que siga adelante e instale todo.</p>
+<div><pre><code>./migrate2rocky.sh -r
+</code></pre>
+</div><p>El proceso puede tardar un rato, según la capacidad del equipo y la conexión a Internet.</p>
+<p>Después:</p>
+<div><pre><code>sudo dnf distro-sync -y
+</code></pre>
+</div><hr>
+<div><pre><code>sudo reboot
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 7</strong></font> Comprobación.</p>
+<div><pre><code>cat /etc/os-release
+</code></pre>
+</div><p>Podemos consultar ficheros como <strong>/etc/os-release</strong> o bien <strong>/etc/redhat-release</strong>, o lanzar el comando <strong>hostnamectl</strong></p>
+<div><pre><code>cat /etc/redhat-release
+</code></pre>
+</div>]]></content:encoded>
+    </item>
+    <item>
       <title>MariaDB en Debian 11 Bullseye</title>
       <link>https://github.com/oscarlucas22/practicas/mariadb/</link>
       <guid>https://github.com/oscarlucas22/practicas/mariadb/</guid>
@@ -1636,439 +1688,6 @@ Y para conectarnos a nuestro usuario ejecutaremos el siguiente comando:</p>
 </code></pre>
 </div><p><img src="./../images/ABD/4-mariadb.png" alt="image"></p>
 <p>¡Gracias!</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Migrar Centos 8 a Rocky Linux 8</title>
-      <link>https://github.com/oscarlucas22/practicas/migracionrocky/</link>
-      <guid>https://github.com/oscarlucas22/practicas/migracionrocky/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">Migrar Centos 8 a Rocky Linux 8</source>
-      <category>practicas</category>
-      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="migrar-centos-8-a-rocky-linux-8"> Migrar Centos 8 a Rocky Linux 8</h1>
-<p><img src="./../images/ASO/rocky.png" alt="image"></p>
-<p>Para conseguir este fin se nos ofrece un script llamado <strong>migrate2rocky.sh</strong>. Este script se encargará de cambiar los repositorios del sistemas por los de Rocky Linux. Los paquetes se instalarán y actualizarán, para finalmente cambiar todo el sistema operativo.</p>
-<p><font color="#FFFF00"><strong>Paso 1</strong></font> Actualizamos el sistema.</p>
-<div><pre><code>sudo dnf -y upgrade
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 2</strong></font> Reiniciamos.</p>
-<div><pre><code>sudo reboot 
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 3</strong></font> Actualizar el sistema.</p>
-<div><pre><code>dnf update
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 4</strong></font> Descargar repositorio.</p>
-<p>Una vez hecho esto nos iremos al repositorio donde se encuentra dicho script, en este caso en Github.
-Podemos descargar los paquetes del repositorio con programas como wget.</p>
-<div><pre><code>wget https://github.com/rocky-linux/rocky-tools/archive/refs/heads/main.zip
-</code></pre>
-</div><p>O bien, si solo deseamos descargar el script:</p>
-<div><pre><code>wget https://raw.githubusercontent.com/rocky-linux/rocky-tools/main/migrate2rocky/migrate2rocky.sh
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 5</strong></font> Le asignamos permisos de ejecución.</p>
-<div><pre><code>chmod +x migrate2rocky.sh
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 6</strong></font> Lo ejecutamos.</p>
-<p>Con el parámetro <strong>-r</strong> indicamos que siga adelante e instale todo.</p>
-<div><pre><code>./migrate2rocky.sh -r
-</code></pre>
-</div><p>El proceso puede tardar un rato, según la capacidad del equipo y la conexión a Internet.</p>
-<p>Después:</p>
-<div><pre><code>sudo dnf distro-sync -y
-</code></pre>
-</div><hr>
-<div><pre><code>sudo reboot
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 7</strong></font> Comprobación.</p>
-<div><pre><code>cat /etc/os-release
-</code></pre>
-</div><p>Podemos consultar ficheros como <strong>/etc/os-release</strong> o bien <strong>/etc/redhat-release</strong>, o lanzar el comando <strong>hostnamectl</strong></p>
-<div><pre><code>cat /etc/redhat-release
-</code></pre>
-</div>]]></content:encoded>
-    </item>
-    <item>
-      <title>MongoDB en Debian 11 Bullseye</title>
-      <link>https://github.com/oscarlucas22/practicas/mongo/</link>
-      <guid>https://github.com/oscarlucas22/practicas/mongo/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">MongoDB en Debian 11 Bullseye</source>
-      <category>practicas</category>
-      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="mongodb-en-debian-11-bullseye"> MongoDB en Debian 11 Bullseye</h1>
-<p><img src="./../images/ABD/mongodb.png" alt="image"></p>
-<h2 id="instalacion-de-mongodb-en-debian-11-bullseye"> Instalación de MongoDB en Debian 11 Bullseye</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font> Instalar paquetes requeridos</p>
-<div><pre><code>sudo apt install dirmngr gnupg apt-transport-https software-properties-common ca-certificates curl -y
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 2</strong></font> Importar repositorio de MongoDB</p>
-<div><pre><code>sudo wget -O- https://www.mongodb.org/static/pgp/server-5.0.asc | gpg --dearmor | sudo tee /usr/share/keyrings/mongodb.gpg
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font> Agregamos el repositorio</p>
-<div><pre><code>echo 'deb [signed-by=/usr/share/keyrings/mongodb.gpg] http://repo.mongodb.org/apt/debian buster/mongodb-org/5.0 main' | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 4</strong></font> Actualizamos</p>
-<div><pre><code>sudo apt-get update
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 5</strong></font> Instalar MongoDB 5.0</p>
-<div><pre><code>sudo apt install mongodb-org -y
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 6</strong></font> Activamos el servicio de mongodb</p>
-<div><pre><code>sudo systemctl enable mongod --now
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 7</strong></font> Verificamos la versión</p>
-<div><pre><code>mongo --eval 'db.runCommand({ connectionStatus: 1 })'
-</code></pre>
-</div><p><img src="./../images/ABD/1-mongo.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 8</strong></font> Configurar la seguridad de MongoDB</p>
-<div><pre><code>sudo nano /etc/mongod.conf
-</code></pre>
-</div><hr>
-<div><pre><code>security:
-    authorization: enabled
-</code></pre>
-</div><p><img src="./../images/ABD/2-mongo.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 9</strong></font> Reiniciamos servicio</p>
-<div><pre><code>sudo systemctl restart mongod
-</code></pre>
-</div><h2 id="creacion-de-usuario-administrador"> Creación de usuario administrador</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font> Crear usuario administrador en MongoDB</p>
-<div><pre><code>mongosh
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 2</strong></font> Nos conectamos como administrador</p>
-<div><pre><code>use admin
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font> Creamos usuario</p>
-<div><pre><code>db.createUser(
-    {
-        user: &quot;lucas&quot;, 
-        pwd: &quot;admin&quot;, 
-        roles: [{ role: &quot;userAdminAnyDatabase&quot;, db: &quot;admin&quot; }, &quot;readWriteAnyDatabase&quot;]
-    }
-)
-</code></pre>
-</div><p><img src="./../images/ABD/3-mongo.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 4</strong></font> Nos conectamos</p>
-<div><pre><code>mongosh -u lucas
-</code></pre>
-</div><hr>
-<h2 id="ayuda-sobre-manejo-en-mongodb"> Ayuda sobre manejo en MongoDB</h2>
-<h3 id="creacion-de-base-de-datos"> Creación de base de datos</h3>
-<div><pre><code>use &lt;nombre-database&gt;
-</code></pre>
-</div><h3 id="usuario"> Usuario</h3>
-<p><strong>Creacion de usuario</strong></p>
-<div><pre><code>db.createUser(
-    {
-        user: &quot;usuario&quot;, 
-        pwd: &quot;passwd&quot;, 
-        roles: []
-    }
-)
-</code></pre>
-</div><p><strong>Borrar usuario</strong></p>
-<p>db.dropUser(&quot;usuario&quot;)</p>
-<h3 id="colecciones"> Colecciones</h3>
-<p><strong>Crear coleccion</strong></p>
-<div><pre><code>db.createCollection(&quot;collection&quot;)
-</code></pre>
-</div><p><strong>Insertar valores</strong></p>
-<div><pre><code>db.collection.insertMany([
-{ dato1: &quot;dato&quot;, dato1: &quot;dato&quot; },
-{ dato2: &quot;dato&quot;, dato2: &quot;dato&quot; }
-])
-</code></pre>
-</div><h3 id="uso-de-privilegios-roles"> Uso de privilegios (Roles)</h3>
-<p><strong>Crear rol</strong></p>
-<p>Ejemplo de privilegio de solo lectura</p>
-<div><pre><code>db.createRole({role: &quot;nombre-role&quot;, privileges:[{resource: {db:&quot;nombre-db&quot;,collection:&quot;nombre-collection&quot;},actions:[&quot;find&quot;]}],roles:[]})
-</code></pre>
-</div><p>Se la asignamos a un usuario</p>
-<div><pre><code>db.grantRolesToUser(&quot;usuario&quot;,[{role:&quot;nombre-role&quot;,db:&quot;nombre-db&quot;}])
-</code></pre>
-</div><hr>
-<p><strong>Listar base de datos</strong></p>
-<div><pre><code>show dbs
-</code></pre>
-</div><p><strong>Verificar la base de datos actual</strong></p>
-<div><pre><code>db
-</code></pre>
-</div><p><strong>Eliminar base de datos</strong></p>
-<p>Hacerlo dentro de la base de datos</p>
-<div><pre><code>db.dropDatabase()
-</code></pre>
-</div><p><strong>Importar json en MongoDB</strong></p>
-<p>Hacerlo fuera de mongo</p>
-<div><pre><code>mongoimport --db NAME_BD --collection NAME_YOUR_COLLECTION --file 'ruta del json'
-</code></pre>
-</div><p><strong>Eliminar json de la base de datos</strong></p>
-<p>Hacerlo dentro de la base de datos donde este el json</p>
-<div><pre><code>db.NAME_COLLECTION.drop()
-</code></pre>
-</div><p><strong>Mostrar la colección</strong></p>
-<div><pre><code>db.nombre-collection.find()
-</code></pre>
-</div><h2 id="acceso-remoto"> Acceso remoto</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font> Editaremos el fichero <code>mongod.conf</code></p>
-<div><pre><code>sudo /etc/mongod.conf
-</code></pre>
-</div><p>Ahí editaremos donde pone <code>bindIp</code> escribiremos la ip del servidor, asi como se muestra en la imagen:</p>
-<p><img src="./../images/ABD/4-mongo.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 2</strong></font> Reiniciamos el servicio para que los cambios se guarden</p>
-<div><pre><code>sudo service mongod restart
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font> Nos iremos a la maquina cliente y nos conectaremos</p>
-<div><pre><code>mongosh -u nombre-user -p password ip-server
-</code></pre>
-</div><p><img src="./../images/ABD/5-mongo.png" alt="image"></p>
-<p>¡Gracias!</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Práctica: Escenario en OpenStack</title>
-      <link>https://github.com/oscarlucas22/practicas/openstack/</link>
-      <guid>https://github.com/oscarlucas22/practicas/openstack/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">Práctica: Escenario en OpenStack</source>
-      <category>practicas</category>
-      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="practica-escenario-en-openstack"> Práctica: Escenario en OpenStack</h1>
-<p>De aquí saque las cosas de esta <a href="https://fp.josedomingo.org/sri2223/4_iaas/practica.html" target="_blank" rel="noopener noreferrer">práctica<i>Content not supported</i></a>.</p>
-<h1 id="instalacion-de-las-instancias-de-openstack"> Instalación de las instancias de OpenStack.</h1>
-<hr>
-<p><font color="#0000FF"><strong>1.</strong></font> <strong>Crea una red interna que se llame Red DMZ de tu_usuario, con las siguientes características:</strong></p>
-<ul>
-<li>
-<p><strong>Direccionamiento: 172.16.0.0/16</strong></p>
-</li>
-<li>
-<p><strong>Con DHCP y DNS (192.168.202.2).</strong></p>
-</li>
-<li>
-<p><strong>La puerta de enlace de los dispositivos conectados a esta red será el 172.16.0.1.</strong></p>
-</li>
-</ul>
-<hr>
-<div><pre><code>openstack network create Red-DMZ-de-olucas
-</code></pre>
-</div><hr>
-<div><pre><code>openstack subnet create --network Red-DMZ-de-olucas --subnet-range 172.16.0.0/16 subnet-DMZ --dhcp --dns-nameserver 192.168.202.2 --gateway 172.16.0.1
-</code></pre>
-</div><p><font color="#0000FF"><strong>2.</strong></font> <strong>Las dos instancias que vamos a crear se van a configurar con cloud-init de la siguiente manera:</strong></p>
-<ul>
-<li>
-<p><strong>Deben actualizar los paquetes de la distribución de la instancia.</strong></p>
-</li>
-<li>
-<p><strong>El dominio utilizado será del tipo tunombre.gonzalonazareno.org. Por lo tanto en la configuración con cloud-init habrá que indicar el hostname y el FQDN.</strong></p>
-</li>
-<li>
-<p><strong>Se crearán dos usuarios:</strong></p>
-<ul>
-<li>
-<p><strong>Un usuario sin privilegios. Se puede llamar como quieras (pero el nombre será el mismo en todas las máquinas) y accederás a las máquinas usando tu clave ssh privada.</strong></p>
-</li>
-<li>
-<p><strong>Un usuario profesor, que puede utilizar sudo sin contraseña. Copia de las claves públicas de todos los profesores en las instancias para que puedan acceder con el usuario profesor.</strong></p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Cambia la contraseña al usuario root.</strong></p>
-</li>
-</ul>
-<hr>
-<p>Por aquí dejo mi cloud-init:</p>
-<div><pre><code>#cloud-config
-#Actualización de paquetes
-package_update: true
-package_upgrade: true
-#Configuración de hostname
-preserve_hostname: false
-fqdn: alfa.olucas.gonzalonazareno.org
-hostname: alfa
-# Crear usuarios con clave pública ssh
-users:
-- name: profesor
-sudo: ALL=(ALL) NOPASSWD:ALL
-shell: /bin/bash
-passwd: profesor
-ssh_authorized_keys:
-    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCmjoVIoZCx4QFXvljqozXGqxxlSvO7V2aizqyPgMfGqnyl0J9YXo6zrcWYwyWMnMdRdwYZgHqfiiFCUn2QDm6ZuzC4Lcx0K3ZwO2lgL4XaATykVLneHR1ib6RNroFcClN69cxWsdwQW6dpjpiBDXf8m6/qxVP3EHwUTsP8XaOV7WkcCAqfYAMvpWLISqYme6e+6ZGJUIPkDTxavu5JTagDLwY+py1WB53eoDWsG99gmvyit2O1Eo+jRWN+mgRHIxJTrFtLS6o4iWeshPZ6LvCZ/Pum12Oj4B4bjGSHzrKjHZgTwhVJ/LDq3v71/PP4zaI3gVB9ZalemSxqomgbTlnT jose@debian
-    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCfk9mRtOHM3T1KpmGi0KiN2uAM6CDXM3WFcm1wkzKXx7RaLtf9pX+KCuVqHdy/N/9d9wtH7iSmLFX/4gQKQVG00jHiGf3ABufWeIpjmHtT1WaI0+vV47fofEIjDDfSZPlI3p5/c7tefHsIAK6GbQn31yepAcFYy9ZfqAh8H/Y5eLpf3egPZn9Czsvx+lm0I8Q+e/HSayRaiAPUukF57N2nnw7yhPZCHSZJqFbXyK3fVQ/UQVBeNS2ayp0my8X9sIBZnNkcYHFLIWBqJYdnu1ZFhnbu3yy94jmJdmELy3+54hqiwFEfjZAjUYSl8eGPixOfdTgc8ObbHbkHyIrQ91Kz rafa@eco
-- name: oscar
-shell: /bin/bash
-passwd: usuario
-ssh_authorized_keys:
-    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDTcmixc+3Zq1eSaRgb7Kvv5Efy0MZwx7wR6NWdHqi6+oLTPzNxr7IztKo9JvSMWsGzK5xR8mg8V/lPqdYO0GY5vrodpq6UdHojve0g2YaIeex7pcL2G8AEsFbysvUvwCXW4URdu1ZQAOylRPakPi0bIRsbVkRi3TjeeTcUUo/pxwI9VV6SHm94XpwZd/JUvLa8fH5USNTseN/isa4kIgHTxsIrUan2uuIr1BEYgLyrohZrvgVpmv5B/TDupxVo6lSdGQbJFwMp+/Krqrid4kvuBrDKPY5EnYyu5/XNFqRqfhoF4jk4W3Nzb8K/bF+DTelh8kZgouQQJP5RY9v1MRTqS8dq0751rVibD6KouFKBm9gxZ9BnTRFaN8hjZi60z3cyTjEl5bmD7KP5wT0i9E2dvn1xN83j7FM/ryLJ8I2GHIimNgvctQQdWddva0kVNjocteq32OtLOgh52qUzv9gw13WKVbedpoNV1cve/oFK7tH1WwG6nFf64V9Rnh1Inrs= oscar@debian
-chpasswd:
-list: |
-    root:root
-expire: False
-</code></pre>
-</div><p><font color="#0000FF"><strong>3.</strong></font> <strong>Creación de la máquina1 (alfa):</strong></p>
-<ul>
-<li><strong>Crea una instancia sobre un volumen de 30Gb, usando una imagen de Debian 11 Bullseye. Elige el sabor vol.medium. Y configuralá con cloud-init como se ha indicado anteriormente.</strong></li>
-</ul>
-<p>Creamos el volumen con la imagén correspondiente:</p>
-<div><pre><code>openstack volume create --bootable --size 30 --image &quot;Debian 11 Bullseye&quot; alfa_debian
-</code></pre>
-</div><p>Creamos la máquina Alfa:</p>
-<div><pre><code>openstack server create --flavor vol.medium --volume alfa_debian --security-group default --key-name oscar_clave --network &quot;red de oscar.lucas&quot; --user-data &quot;cloud-init-alfa.yaml&quot; \alfa
-</code></pre>
-</div><ul>
-<li><strong>Está instancia estará conectada a tu red interna. Asigna a la instancia una IP flotante.</strong></li>
-</ul>
-<p>Le asignamos una Ip flotante:</p>
-<div><pre><code>openstack floating ip create ext-net
-</code></pre>
-</div><hr>
-<div><pre><code>openstack server add floating ip alfa 172.22...
-</code></pre>
-</div><p><font color="#0000FF"><strong>4.</strong></font> <strong>Configuración de la máquina1 (alfa):</strong></p>
-<ul>
-<li><strong>Conecta la instancia a tu Red DMZ, asígnale la dirección 172.16.0.1 para que sea la puerta de enlace las máquinas conectadas a esta red.</strong></li>
-</ul>
-<p>Creamos el puerto:</p>
-<div><pre><code>openstack port create --network Red-DMZ-de-olucas --fixed-ip ip-address=172.16.0.1 port_alfa
-</code></pre>
-</div><p>Y asociamos el puerto a la máquina:</p>
-<div><pre><code>openstack server add port alfa port_alfa
-</code></pre>
-</div><ul>
-<li><strong>Deshabilita la seguridad de los puertos en las dos interfaces de red para que funcione de manera adecuada el NAT.</strong></li>
-</ul>
-<p>Quitamos grupo de seguridad:</p>
-<div><pre><code>openstack port list --server alfa
-</code></pre>
-</div><hr>
-<div><pre><code>openstack server remove security group alfa default
-</code></pre>
-</div><hr>
-<div><pre><code>openstack port set --disable-port-security port_alfa
-</code></pre>
-</div><hr>
-<div><pre><code>openstack port set --disable-port-security `identificador id`
-</code></pre>
-</div><ul>
-<li><strong>Configura de forma permanente la regla SNAT para que las máquinas de la Red DMZ tengan acceso a internet.</strong></li>
-</ul>
-<p>Reglas SNAT en la maquina alfa</p>
-<p>Entramos en la maquina alfa y entramos al siguiente fichero:</p>
-<div><pre><code>nano /etc/sysctl.conf
-</code></pre>
-</div><p>Y descomentamos la siguiente linea:</p>
-<div><pre><code>net.ipv4.ip_forward=1
-</code></pre>
-</div><p>Y guardamos los cambios:</p>
-<div><pre><code>sysctl -p
-</code></pre>
-</div><p>Instalamos iptables si no lo tenemos:</p>
-<div><pre><code>apt install iptables
-</code></pre>
-</div><p>Ponemos las reglas de iptables:</p>
-<div><pre><code>nano /etc/network/interfaces.d/50-cloud-init
-</code></pre>
-</div><hr>
-<div><pre><code>up iptables -t nat -A POSTROUTING -s 172.16.0.0/16 -o ens3 -j MASQUERADE
-down iptables -t nat -D POSTROUTING -s 172.16.0.0/16 -o ens3 -j MASQUERADE
-</code></pre>
-</div><p>Guardamos y reseteamos el servicio:</p>
-<div><pre><code>systemctl restart networking
-</code></pre>
-</div><p><font color="#0000FF"><strong>5.</strong></font> <strong>Creación de la máquina2 (bravo):</strong></p>
-<ul>
-<li><strong>Está instancia se conectará a la red DMZ. Usando un puerto asigna a esta máquina la dirección 172.16.0.200.</strong></li>
-</ul>
-<p>Creamos el puerto:</p>
-<div><pre><code>openstack port create --network Red-DMZ-de-olucas --fixed-ip ip-address=172.16.0.200 port_bravo
-</code></pre>
-</div><ul>
-<li><strong>Crea una instancia sobre un volumen de 30Gb, usando una imagen de Rocky Linux 9. Elige el sabor vol.normal. Y configuralá con cloud-init como se ha indicado anteriormente.</strong></li>
-</ul>
-<p>Creamos el volumen:</p>
-<div><pre><code>openstack volume create --bootable --size 30 --image &quot;Rocky Linux 9&quot; bravo_rocky
-</code></pre>
-</div><p>Creamos la máquina Bravo:</p>
-<div><pre><code>openstack server create --flavor vol.normal --volume bravo_rocky --security-group default --key-name oscar_clave --port &quot;port_bravo&quot; --user-data &quot;cloud-init-bravo.yaml&quot; \bravo
-</code></pre>
-</div><ul>
-<li><strong>Deshabilita la seguridad de los puertos en la interfaz de red para que funcione de manera adecuada el NAT.</strong></li>
-</ul>
-<p>Quitamos el grupo de seguridad:</p>
-<div><pre><code>openstack port list --server bravo
-</code></pre>
-</div><hr>
-<div><pre><code>openstack server remove security group bravo default
-</code></pre>
-</div><hr>
-<div><pre><code>openstack port set --disable-port-security port_bravo
-</code></pre>
-</div><ul>
-<li><strong>Comprueba que tiene acceso a internet. Si no tiene acceso a internet, no se han actualizado los paquetes con cloud-init, hazlo posteriormente..</strong></li>
-</ul>
-<h3 id="instalacion-de-los-contenedores"> Instalación de los contenedores</h3>
-<hr>
-<p><strong>En maquina1 vamos a crear dos contenedores en un red interna, para ello:</strong></p>
-<p><font color="#0000FF"><strong>1.</strong></font> <strong>Crea en máquina1 (alfa) un linux bridge llamado br-intra y asigna una dirección IP estática 192.168.0.1. Esta será la IP de máquina1 (alfa) conectada a este switch virtual y será la puerta de enlace de los contenedores</strong></p>
-<p>Instalamos los paquetes necesarios:</p>
-<div><pre><code>apt install qemu-system libvirt-clients libvirt-daemon-system
-</code></pre>
-</div><p>Creamos br-intra:</p>
-<div><pre><code>nano /etc/network/interfaces.d/50-cloud-init
-</code></pre>
-</div><hr>
-<div><pre><code>auto br-intra
-    iface br-intra inet static
-    pre-up brctl addbr br-intra
-    address 192.168.0.1
-    netmask 255.255.255.0
-</code></pre>
-</div><p><font color="#0000FF"><strong>2.</strong></font> <strong>Instala LXC y crea dos contenedores con la distribución Ubuntu 20.04. Estos contenedores serán la máquina3 (charlie) y la máquina4 (delta).</strong></p>
-<p>Instalamos lxc:</p>
-<div><pre><code>apt install lxc
-</code></pre>
-</div><p>Creamos el contenedor:</p>
-<div><pre><code>lxc-create -n charlie -t ubuntu -- -r focal
-</code></pre>
-</div><hr>
-<div><pre><code>lxc-create -n delta -t ubuntu -- -r focal
-</code></pre>
-</div><p><font color="#0000FF"><strong>3.</strong></font> <strong>Configura de forma permanente la regla SNAT para que los contenedores tengan acceso a internet.</strong></p>
-<p>Reglas SNAT de Charlie y Delta:</p>
-<div><pre><code>nano /etc/network/interfaces.d/50-cloud-init
-</code></pre>
-</div><hr>
-<div><pre><code>up iptables -t nat -A POSTROUTING -s 192.168.0.0/16 -o ens3 -j MASQUERADE
-down iptables -t nat -D POSTROUTING -s 192.168.0.0/16 -o ens3 -j MASQUERADE
-</code></pre>
-</div><p><font color="#0000FF"><strong>4.</strong></font> <strong>Conecta los contenedores al bridge br-intra y configúralo de forma estática con las siguientes direcciones: máquina3 (charlie) la 192.168.0.2 y máquina4 (delta) la 192.168.0.3.</strong></p>
-<p><font color="#0000FF"><strong>5.</strong></font> <strong>Para que la red de OpenStack funcione de forma adecuada las imágenes que usamos tienen configurado la mtu (Unidad máxima de transferencia) a 1450 bytes. Tenemos que adecuar los contenedores a este tamaño de trama. Para ello introduce en la configuración de los contenedores la línea: lxc.net.0.mtu = 1450.</strong></p>
-<p><font color="#0000FF"><strong>6.</strong></font> <strong>Configura los contenedores para que se auto inicien al reiniciar la instancia.</strong></p>
-<p><font color="#0000FF"><strong>7.</strong></font> <strong>Los contenedores tendrán características parecidas a las instancias anteriormente:</strong></p>
-<ul>
-<li>
-<p><strong>Debes actualizar los paquetes de la distribución instalada.</strong></p>
-</li>
-<li>
-<p><strong>El dominio utilizado será del tipo tunombre.gonzalonazareno.org. Por lo tanto configura de manera adecuda el hostname y el FQDN.</strong></p>
-</li>
-<li>
-<p><strong>Para acceder a los contenedores vamos a usar ssh.</strong></p>
-</li>
-<li>
-<p><strong>Crea dos usuarios:</strong></p>
-<ul>
-<li>
-<p><strong>Un usuario sin privilegios. Se puede llamar como quieras (el nombre de usuario que usaste en las instancias) y accederás a los contenedores usando tu clave ssh privada.</strong></p>
-</li>
-<li>
-<p><strong>Un usuario profesor, que puede utilizar sudo sin contraseña. Copia de las claves públicas de todos los profesores en los contenedores para que puedan acceder con el usuario profesor.</strong></p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Cambia la contraseña al usuario root</strong></p>
-</li>
-</ul>
 ]]></content:encoded>
     </item>
     <item>
@@ -2242,6 +1861,142 @@ export PATH=$ORACLE_HOME/bin:$PATH
 <div><pre><code>sqlplus lucas/admin@ip-server/ORCLCDB
 </code></pre>
 </div><p><img src="./../images/ABD/7-oracle.png" alt="image"></p>
+<p>¡Gracias!</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>MongoDB en Debian 11 Bullseye</title>
+      <link>https://github.com/oscarlucas22/practicas/mongo/</link>
+      <guid>https://github.com/oscarlucas22/practicas/mongo/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">MongoDB en Debian 11 Bullseye</source>
+      <category>practicas</category>
+      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="mongodb-en-debian-11-bullseye"> MongoDB en Debian 11 Bullseye</h1>
+<p><img src="./../images/ABD/mongodb.png" alt="image"></p>
+<h2 id="instalacion-de-mongodb-en-debian-11-bullseye"> Instalación de MongoDB en Debian 11 Bullseye</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font> Instalar paquetes requeridos</p>
+<div><pre><code>sudo apt install dirmngr gnupg apt-transport-https software-properties-common ca-certificates curl -y
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 2</strong></font> Importar repositorio de MongoDB</p>
+<div><pre><code>sudo wget -O- https://www.mongodb.org/static/pgp/server-5.0.asc | gpg --dearmor | sudo tee /usr/share/keyrings/mongodb.gpg
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 3</strong></font> Agregamos el repositorio</p>
+<div><pre><code>echo 'deb [signed-by=/usr/share/keyrings/mongodb.gpg] http://repo.mongodb.org/apt/debian buster/mongodb-org/5.0 main' | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 4</strong></font> Actualizamos</p>
+<div><pre><code>sudo apt-get update
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 5</strong></font> Instalar MongoDB 5.0</p>
+<div><pre><code>sudo apt install mongodb-org -y
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 6</strong></font> Activamos el servicio de mongodb</p>
+<div><pre><code>sudo systemctl enable mongod --now
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 7</strong></font> Verificamos la versión</p>
+<div><pre><code>mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+</code></pre>
+</div><p><img src="./../images/ABD/1-mongo.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 8</strong></font> Configurar la seguridad de MongoDB</p>
+<div><pre><code>sudo nano /etc/mongod.conf
+</code></pre>
+</div><hr>
+<div><pre><code>security:
+    authorization: enabled
+</code></pre>
+</div><p><img src="./../images/ABD/2-mongo.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 9</strong></font> Reiniciamos servicio</p>
+<div><pre><code>sudo systemctl restart mongod
+</code></pre>
+</div><h2 id="creacion-de-usuario-administrador"> Creación de usuario administrador</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font> Crear usuario administrador en MongoDB</p>
+<div><pre><code>mongosh
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 2</strong></font> Nos conectamos como administrador</p>
+<div><pre><code>use admin
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 3</strong></font> Creamos usuario</p>
+<div><pre><code>db.createUser(
+    {
+        user: &quot;lucas&quot;, 
+        pwd: &quot;admin&quot;, 
+        roles: [{ role: &quot;userAdminAnyDatabase&quot;, db: &quot;admin&quot; }, &quot;readWriteAnyDatabase&quot;]
+    }
+)
+</code></pre>
+</div><p><img src="./../images/ABD/3-mongo.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 4</strong></font> Nos conectamos</p>
+<div><pre><code>mongosh -u lucas
+</code></pre>
+</div><hr>
+<h2 id="ayuda-sobre-manejo-en-mongodb"> Ayuda sobre manejo en MongoDB</h2>
+<h3 id="creacion-de-base-de-datos"> Creación de base de datos</h3>
+<div><pre><code>use &lt;nombre-database&gt;
+</code></pre>
+</div><h3 id="usuario"> Usuario</h3>
+<p><strong>Creacion de usuario</strong></p>
+<div><pre><code>db.createUser(
+    {
+        user: &quot;usuario&quot;, 
+        pwd: &quot;passwd&quot;, 
+        roles: []
+    }
+)
+</code></pre>
+</div><p><strong>Borrar usuario</strong></p>
+<p>db.dropUser(&quot;usuario&quot;)</p>
+<h3 id="colecciones"> Colecciones</h3>
+<p><strong>Crear coleccion</strong></p>
+<div><pre><code>db.createCollection(&quot;collection&quot;)
+</code></pre>
+</div><p><strong>Insertar valores</strong></p>
+<div><pre><code>db.collection.insertMany([
+{ dato1: &quot;dato&quot;, dato1: &quot;dato&quot; },
+{ dato2: &quot;dato&quot;, dato2: &quot;dato&quot; }
+])
+</code></pre>
+</div><h3 id="uso-de-privilegios-roles"> Uso de privilegios (Roles)</h3>
+<p><strong>Crear rol</strong></p>
+<p>Ejemplo de privilegio de solo lectura</p>
+<div><pre><code>db.createRole({role: &quot;nombre-role&quot;, privileges:[{resource: {db:&quot;nombre-db&quot;,collection:&quot;nombre-collection&quot;},actions:[&quot;find&quot;]}],roles:[]})
+</code></pre>
+</div><p>Se la asignamos a un usuario</p>
+<div><pre><code>db.grantRolesToUser(&quot;usuario&quot;,[{role:&quot;nombre-role&quot;,db:&quot;nombre-db&quot;}])
+</code></pre>
+</div><hr>
+<p><strong>Listar base de datos</strong></p>
+<div><pre><code>show dbs
+</code></pre>
+</div><p><strong>Verificar la base de datos actual</strong></p>
+<div><pre><code>db
+</code></pre>
+</div><p><strong>Eliminar base de datos</strong></p>
+<p>Hacerlo dentro de la base de datos</p>
+<div><pre><code>db.dropDatabase()
+</code></pre>
+</div><p><strong>Importar json en MongoDB</strong></p>
+<p>Hacerlo fuera de mongo</p>
+<div><pre><code>mongoimport --db NAME_BD --collection NAME_YOUR_COLLECTION --file 'ruta del json'
+</code></pre>
+</div><p><strong>Eliminar json de la base de datos</strong></p>
+<p>Hacerlo dentro de la base de datos donde este el json</p>
+<div><pre><code>db.NAME_COLLECTION.drop()
+</code></pre>
+</div><p><strong>Mostrar la colección</strong></p>
+<div><pre><code>db.nombre-collection.find()
+</code></pre>
+</div><h2 id="acceso-remoto"> Acceso remoto</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font> Editaremos el fichero <code>mongod.conf</code></p>
+<div><pre><code>sudo /etc/mongod.conf
+</code></pre>
+</div><p>Ahí editaremos donde pone <code>bindIp</code> escribiremos la ip del servidor, asi como se muestra en la imagen:</p>
+<p><img src="./../images/ABD/4-mongo.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 2</strong></font> Reiniciamos el servicio para que los cambios se guarden</p>
+<div><pre><code>sudo service mongod restart
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 3</strong></font> Nos iremos a la maquina cliente y nos conectaremos</p>
+<div><pre><code>mongosh -u nombre-user -p password ip-server
+</code></pre>
+</div><p><img src="./../images/ABD/5-mongo.png" alt="image"></p>
 <p>¡Gracias!</p>
 ]]></content:encoded>
     </item>
@@ -2654,6 +2409,254 @@ set ODBCINI=/etc/odbc.ini
 <p>Y hacemos la prueba del funcionamiento:</p>
 <p><img src="./../images/orcl-psql/10-psql-orcl.png" alt="image"></p>
 <p>¡Gracias!</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Práctica: Escenario en OpenStack</title>
+      <link>https://github.com/oscarlucas22/practicas/openstack/</link>
+      <guid>https://github.com/oscarlucas22/practicas/openstack/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">Práctica: Escenario en OpenStack</source>
+      <category>practicas</category>
+      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="practica-escenario-en-openstack"> Práctica: Escenario en OpenStack</h1>
+<p>De aquí saque las cosas de esta <a href="https://fp.josedomingo.org/sri2223/4_iaas/practica.html" target="_blank" rel="noopener noreferrer">práctica<i>Content not supported</i></a>.</p>
+<h1 id="instalacion-de-las-instancias-de-openstack"> Instalación de las instancias de OpenStack.</h1>
+<hr>
+<p><font color="#0000FF"><strong>1.</strong></font> <strong>Crea una red interna que se llame Red DMZ de tu_usuario, con las siguientes características:</strong></p>
+<ul>
+<li>
+<p><strong>Direccionamiento: 172.16.0.0/16</strong></p>
+</li>
+<li>
+<p><strong>Con DHCP y DNS (192.168.202.2).</strong></p>
+</li>
+<li>
+<p><strong>La puerta de enlace de los dispositivos conectados a esta red será el 172.16.0.1.</strong></p>
+</li>
+</ul>
+<hr>
+<div><pre><code>openstack network create Red-DMZ-de-olucas
+</code></pre>
+</div><hr>
+<div><pre><code>openstack subnet create --network Red-DMZ-de-olucas --subnet-range 172.16.0.0/16 subnet-DMZ --dhcp --dns-nameserver 192.168.202.2 --gateway 172.16.0.1
+</code></pre>
+</div><p><font color="#0000FF"><strong>2.</strong></font> <strong>Las dos instancias que vamos a crear se van a configurar con cloud-init de la siguiente manera:</strong></p>
+<ul>
+<li>
+<p><strong>Deben actualizar los paquetes de la distribución de la instancia.</strong></p>
+</li>
+<li>
+<p><strong>El dominio utilizado será del tipo tunombre.gonzalonazareno.org. Por lo tanto en la configuración con cloud-init habrá que indicar el hostname y el FQDN.</strong></p>
+</li>
+<li>
+<p><strong>Se crearán dos usuarios:</strong></p>
+<ul>
+<li>
+<p><strong>Un usuario sin privilegios. Se puede llamar como quieras (pero el nombre será el mismo en todas las máquinas) y accederás a las máquinas usando tu clave ssh privada.</strong></p>
+</li>
+<li>
+<p><strong>Un usuario profesor, que puede utilizar sudo sin contraseña. Copia de las claves públicas de todos los profesores en las instancias para que puedan acceder con el usuario profesor.</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Cambia la contraseña al usuario root.</strong></p>
+</li>
+</ul>
+<hr>
+<p>Por aquí dejo mi cloud-init:</p>
+<div><pre><code>#cloud-config
+#Actualización de paquetes
+package_update: true
+package_upgrade: true
+#Configuración de hostname
+preserve_hostname: false
+fqdn: alfa.olucas.gonzalonazareno.org
+hostname: alfa
+# Crear usuarios con clave pública ssh
+users:
+- name: profesor
+sudo: ALL=(ALL) NOPASSWD:ALL
+shell: /bin/bash
+passwd: profesor
+ssh_authorized_keys:
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCmjoVIoZCx4QFXvljqozXGqxxlSvO7V2aizqyPgMfGqnyl0J9YXo6zrcWYwyWMnMdRdwYZgHqfiiFCUn2QDm6ZuzC4Lcx0K3ZwO2lgL4XaATykVLneHR1ib6RNroFcClN69cxWsdwQW6dpjpiBDXf8m6/qxVP3EHwUTsP8XaOV7WkcCAqfYAMvpWLISqYme6e+6ZGJUIPkDTxavu5JTagDLwY+py1WB53eoDWsG99gmvyit2O1Eo+jRWN+mgRHIxJTrFtLS6o4iWeshPZ6LvCZ/Pum12Oj4B4bjGSHzrKjHZgTwhVJ/LDq3v71/PP4zaI3gVB9ZalemSxqomgbTlnT jose@debian
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCfk9mRtOHM3T1KpmGi0KiN2uAM6CDXM3WFcm1wkzKXx7RaLtf9pX+KCuVqHdy/N/9d9wtH7iSmLFX/4gQKQVG00jHiGf3ABufWeIpjmHtT1WaI0+vV47fofEIjDDfSZPlI3p5/c7tefHsIAK6GbQn31yepAcFYy9ZfqAh8H/Y5eLpf3egPZn9Czsvx+lm0I8Q+e/HSayRaiAPUukF57N2nnw7yhPZCHSZJqFbXyK3fVQ/UQVBeNS2ayp0my8X9sIBZnNkcYHFLIWBqJYdnu1ZFhnbu3yy94jmJdmELy3+54hqiwFEfjZAjUYSl8eGPixOfdTgc8ObbHbkHyIrQ91Kz rafa@eco
+- name: oscar
+shell: /bin/bash
+passwd: usuario
+ssh_authorized_keys:
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDTcmixc+3Zq1eSaRgb7Kvv5Efy0MZwx7wR6NWdHqi6+oLTPzNxr7IztKo9JvSMWsGzK5xR8mg8V/lPqdYO0GY5vrodpq6UdHojve0g2YaIeex7pcL2G8AEsFbysvUvwCXW4URdu1ZQAOylRPakPi0bIRsbVkRi3TjeeTcUUo/pxwI9VV6SHm94XpwZd/JUvLa8fH5USNTseN/isa4kIgHTxsIrUan2uuIr1BEYgLyrohZrvgVpmv5B/TDupxVo6lSdGQbJFwMp+/Krqrid4kvuBrDKPY5EnYyu5/XNFqRqfhoF4jk4W3Nzb8K/bF+DTelh8kZgouQQJP5RY9v1MRTqS8dq0751rVibD6KouFKBm9gxZ9BnTRFaN8hjZi60z3cyTjEl5bmD7KP5wT0i9E2dvn1xN83j7FM/ryLJ8I2GHIimNgvctQQdWddva0kVNjocteq32OtLOgh52qUzv9gw13WKVbedpoNV1cve/oFK7tH1WwG6nFf64V9Rnh1Inrs= oscar@debian
+chpasswd:
+list: |
+    root:root
+expire: False
+</code></pre>
+</div><p><font color="#0000FF"><strong>3.</strong></font> <strong>Creación de la máquina1 (alfa):</strong></p>
+<ul>
+<li><strong>Crea una instancia sobre un volumen de 30Gb, usando una imagen de Debian 11 Bullseye. Elige el sabor vol.medium. Y configuralá con cloud-init como se ha indicado anteriormente.</strong></li>
+</ul>
+<p>Creamos el volumen con la imagén correspondiente:</p>
+<div><pre><code>openstack volume create --bootable --size 30 --image &quot;Debian 11 Bullseye&quot; alfa_debian
+</code></pre>
+</div><p>Creamos la máquina Alfa:</p>
+<div><pre><code>openstack server create --flavor vol.medium --volume alfa_debian --security-group default --key-name oscar_clave --network &quot;red de oscar.lucas&quot; --user-data &quot;cloud-init-alfa.yaml&quot; \alfa
+</code></pre>
+</div><ul>
+<li><strong>Está instancia estará conectada a tu red interna. Asigna a la instancia una IP flotante.</strong></li>
+</ul>
+<p>Le asignamos una Ip flotante:</p>
+<div><pre><code>openstack floating ip create ext-net
+</code></pre>
+</div><hr>
+<div><pre><code>openstack server add floating ip alfa 172.22...
+</code></pre>
+</div><p><font color="#0000FF"><strong>4.</strong></font> <strong>Configuración de la máquina1 (alfa):</strong></p>
+<ul>
+<li><strong>Conecta la instancia a tu Red DMZ, asígnale la dirección 172.16.0.1 para que sea la puerta de enlace las máquinas conectadas a esta red.</strong></li>
+</ul>
+<p>Creamos el puerto:</p>
+<div><pre><code>openstack port create --network Red-DMZ-de-olucas --fixed-ip ip-address=172.16.0.1 port_alfa
+</code></pre>
+</div><p>Y asociamos el puerto a la máquina:</p>
+<div><pre><code>openstack server add port alfa port_alfa
+</code></pre>
+</div><ul>
+<li><strong>Deshabilita la seguridad de los puertos en las dos interfaces de red para que funcione de manera adecuada el NAT.</strong></li>
+</ul>
+<p>Quitamos grupo de seguridad:</p>
+<div><pre><code>openstack port list --server alfa
+</code></pre>
+</div><hr>
+<div><pre><code>openstack server remove security group alfa default
+</code></pre>
+</div><hr>
+<div><pre><code>openstack port set --disable-port-security port_alfa
+</code></pre>
+</div><hr>
+<div><pre><code>openstack port set --disable-port-security `identificador id`
+</code></pre>
+</div><ul>
+<li><strong>Configura de forma permanente la regla SNAT para que las máquinas de la Red DMZ tengan acceso a internet.</strong></li>
+</ul>
+<p>Reglas SNAT en la maquina alfa</p>
+<p>Entramos en la maquina alfa y entramos al siguiente fichero:</p>
+<div><pre><code>nano /etc/sysctl.conf
+</code></pre>
+</div><p>Y descomentamos la siguiente linea:</p>
+<div><pre><code>net.ipv4.ip_forward=1
+</code></pre>
+</div><p>Y guardamos los cambios:</p>
+<div><pre><code>sysctl -p
+</code></pre>
+</div><p>Instalamos iptables si no lo tenemos:</p>
+<div><pre><code>apt install iptables
+</code></pre>
+</div><p>Ponemos las reglas de iptables:</p>
+<div><pre><code>nano /etc/network/interfaces.d/50-cloud-init
+</code></pre>
+</div><hr>
+<div><pre><code>up iptables -t nat -A POSTROUTING -s 172.16.0.0/16 -o ens3 -j MASQUERADE
+down iptables -t nat -D POSTROUTING -s 172.16.0.0/16 -o ens3 -j MASQUERADE
+</code></pre>
+</div><p>Guardamos y reseteamos el servicio:</p>
+<div><pre><code>systemctl restart networking
+</code></pre>
+</div><p><font color="#0000FF"><strong>5.</strong></font> <strong>Creación de la máquina2 (bravo):</strong></p>
+<ul>
+<li><strong>Está instancia se conectará a la red DMZ. Usando un puerto asigna a esta máquina la dirección 172.16.0.200.</strong></li>
+</ul>
+<p>Creamos el puerto:</p>
+<div><pre><code>openstack port create --network Red-DMZ-de-olucas --fixed-ip ip-address=172.16.0.200 port_bravo
+</code></pre>
+</div><ul>
+<li><strong>Crea una instancia sobre un volumen de 30Gb, usando una imagen de Rocky Linux 9. Elige el sabor vol.normal. Y configuralá con cloud-init como se ha indicado anteriormente.</strong></li>
+</ul>
+<p>Creamos el volumen:</p>
+<div><pre><code>openstack volume create --bootable --size 30 --image &quot;Rocky Linux 9&quot; bravo_rocky
+</code></pre>
+</div><p>Creamos la máquina Bravo:</p>
+<div><pre><code>openstack server create --flavor vol.normal --volume bravo_rocky --security-group default --key-name oscar_clave --port &quot;port_bravo&quot; --user-data &quot;cloud-init-bravo.yaml&quot; \bravo
+</code></pre>
+</div><ul>
+<li><strong>Deshabilita la seguridad de los puertos en la interfaz de red para que funcione de manera adecuada el NAT.</strong></li>
+</ul>
+<p>Quitamos el grupo de seguridad:</p>
+<div><pre><code>openstack port list --server bravo
+</code></pre>
+</div><hr>
+<div><pre><code>openstack server remove security group bravo default
+</code></pre>
+</div><hr>
+<div><pre><code>openstack port set --disable-port-security port_bravo
+</code></pre>
+</div><ul>
+<li><strong>Comprueba que tiene acceso a internet. Si no tiene acceso a internet, no se han actualizado los paquetes con cloud-init, hazlo posteriormente..</strong></li>
+</ul>
+<h3 id="instalacion-de-los-contenedores"> Instalación de los contenedores</h3>
+<hr>
+<p><strong>En maquina1 vamos a crear dos contenedores en un red interna, para ello:</strong></p>
+<p><font color="#0000FF"><strong>1.</strong></font> <strong>Crea en máquina1 (alfa) un linux bridge llamado br-intra y asigna una dirección IP estática 192.168.0.1. Esta será la IP de máquina1 (alfa) conectada a este switch virtual y será la puerta de enlace de los contenedores</strong></p>
+<p>Instalamos los paquetes necesarios:</p>
+<div><pre><code>apt install qemu-system libvirt-clients libvirt-daemon-system
+</code></pre>
+</div><p>Creamos br-intra:</p>
+<div><pre><code>nano /etc/network/interfaces.d/50-cloud-init
+</code></pre>
+</div><hr>
+<div><pre><code>auto br-intra
+    iface br-intra inet static
+    pre-up brctl addbr br-intra
+    address 192.168.0.1
+    netmask 255.255.255.0
+</code></pre>
+</div><p><font color="#0000FF"><strong>2.</strong></font> <strong>Instala LXC y crea dos contenedores con la distribución Ubuntu 20.04. Estos contenedores serán la máquina3 (charlie) y la máquina4 (delta).</strong></p>
+<p>Instalamos lxc:</p>
+<div><pre><code>apt install lxc
+</code></pre>
+</div><p>Creamos el contenedor:</p>
+<div><pre><code>lxc-create -n charlie -t ubuntu -- -r focal
+</code></pre>
+</div><hr>
+<div><pre><code>lxc-create -n delta -t ubuntu -- -r focal
+</code></pre>
+</div><p><font color="#0000FF"><strong>3.</strong></font> <strong>Configura de forma permanente la regla SNAT para que los contenedores tengan acceso a internet.</strong></p>
+<p>Reglas SNAT de Charlie y Delta:</p>
+<div><pre><code>nano /etc/network/interfaces.d/50-cloud-init
+</code></pre>
+</div><hr>
+<div><pre><code>up iptables -t nat -A POSTROUTING -s 192.168.0.0/16 -o ens3 -j MASQUERADE
+down iptables -t nat -D POSTROUTING -s 192.168.0.0/16 -o ens3 -j MASQUERADE
+</code></pre>
+</div><p><font color="#0000FF"><strong>4.</strong></font> <strong>Conecta los contenedores al bridge br-intra y configúralo de forma estática con las siguientes direcciones: máquina3 (charlie) la 192.168.0.2 y máquina4 (delta) la 192.168.0.3.</strong></p>
+<p><font color="#0000FF"><strong>5.</strong></font> <strong>Para que la red de OpenStack funcione de forma adecuada las imágenes que usamos tienen configurado la mtu (Unidad máxima de transferencia) a 1450 bytes. Tenemos que adecuar los contenedores a este tamaño de trama. Para ello introduce en la configuración de los contenedores la línea: lxc.net.0.mtu = 1450.</strong></p>
+<p><font color="#0000FF"><strong>6.</strong></font> <strong>Configura los contenedores para que se auto inicien al reiniciar la instancia.</strong></p>
+<p><font color="#0000FF"><strong>7.</strong></font> <strong>Los contenedores tendrán características parecidas a las instancias anteriormente:</strong></p>
+<ul>
+<li>
+<p><strong>Debes actualizar los paquetes de la distribución instalada.</strong></p>
+</li>
+<li>
+<p><strong>El dominio utilizado será del tipo tunombre.gonzalonazareno.org. Por lo tanto configura de manera adecuda el hostname y el FQDN.</strong></p>
+</li>
+<li>
+<p><strong>Para acceder a los contenedores vamos a usar ssh.</strong></p>
+</li>
+<li>
+<p><strong>Crea dos usuarios:</strong></p>
+<ul>
+<li>
+<p><strong>Un usuario sin privilegios. Se puede llamar como quieras (el nombre de usuario que usaste en las instancias) y accederás a los contenedores usando tu clave ssh privada.</strong></p>
+</li>
+<li>
+<p><strong>Un usuario profesor, que puede utilizar sudo sin contraseña. Copia de las claves públicas de todos los profesores en los contenedores para que puedan acceder con el usuario profesor.</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Cambia la contraseña al usuario root</strong></p>
+</li>
+</ul>
 ]]></content:encoded>
     </item>
     <item>
@@ -3764,437 +3767,499 @@ DROP USER JAIME cascade;
 ]]></content:encoded>
     </item>
     <item>
-      <title>Auditoría</title>
-      <link>https://github.com/oscarlucas22/practicas/auditoria/</link>
-      <guid>https://github.com/oscarlucas22/practicas/auditoria/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">Auditoría</source>
+      <title>Cortafuegos II: Perimetral con nftables</title>
+      <link>https://github.com/oscarlucas22/practicas/cortafuegoII/</link>
+      <guid>https://github.com/oscarlucas22/practicas/cortafuegoII/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">Cortafuegos II: Perimetral con nftables</source>
       <category>practicas</category>
-      <content:encoded><![CDATA[<h1 id="auditoria"> Auditoría</h1>
-<h2 id="_1-activa-desde-sql-plus-la-auditoria-de-los-intentos-de-acceso-exitosos-al-sistema-comprueba-su-funcionamiento"> <strong>1. Activa desde SQL*Plus la auditoría de los intentos de acceso exitosos al sistema. Comprueba su funcionamiento.</strong></h2>
-<p>Visualizaremos los parametros de auditorias:</p>
-<div><pre><code>show parameter AUDIT
+      <content:encoded><![CDATA[<h1 id="cortafuegos-ii-perimetral-con-nftables"> Cortafuegos II: Perimetral con nftables</h1>
+<p><strong>Realiza con nftables el ejercicio de la <a href="https://fp.josedomingo.org/seguridadgs/u03/perimetral_iptables.html" target="_blank" rel="noopener noreferrer">página<i>Content not supported</i></a> documentando las pruebas de funcionamiento realizadas.</strong></p>
+<p><strong>Debes añadir después las reglas necesarias para que se permitan las siguientes operaciones:</strong></p>
+<p><strong>a) Permite poder hacer conexiones ssh al exterior desde la máquina cortafuegos.</strong>
+<strong>b) Permite hacer consultas DNS desde la máquina cortafuegos sólo al servidor 192.168.202.2. Comprueba que no puedes hacer un dig @1.1.1.1.</strong>
+<strong>c) Permite que la máquina cortafuegos pueda navegar por internet.</strong>
+<strong>e) Permitimos el ssh desde el cortafuego a la LAN</strong>
+<strong>f) Permitimos hacer ping desde la LAN a la máquina cortafuegos.</strong>
+<strong>g) Permite realizar conexiones ssh desde los equipos de la LAN</strong>
+<strong>h) Instala un servidor de correos en la máquina de la LAN. Permite el acceso desde el exterior y desde el cortafuego al servidor de correos. Para probarlo puedes ejecutar un telnet al puerto 25 tcp.</strong>
+<strong>i) Permite poder hacer conexiones ssh desde exterior a la LAN</strong>
+<strong>j) Modifica la regla anterior, para que al acceder desde el exterior por ssh tengamos que conectar al puerto 2222, aunque el servidor ssh este configurado para acceder por el puerto 22.</strong>
+<strong>k) Permite hacer consultas DNS desde la LAN sólo al servidor 192.168.202.2. Comprueba que no puedes hacer un dig @1.1.1.1.</strong>
+<strong>l) Permite que los equipos de la LAN puedan navegar por internet.</strong></p>
+<hr>
+<h2 id="esquema-de-red"> Esquema de red</h2>
+<p>Utilizaremos dos instancias en OpenStack que se crearán mediante la plantilla de Heat llamada <a href="https://fp.josedomingo.org/seguridadgs/u03/escenario2.yaml" target="_blank" rel="noopener noreferrer">escenario2.yaml<i>Content not supported</i></a>. Esta plantilla de Heat ha desactivado el firewall que ofrece OpenStack, permitiendo la apertura de todos los puertos y protocolos. Una de las instancias tendrá una dirección IP flotante y actuará como firewall, mientras que la otra será una instancia de la red interna 192.168.100.0/24.</p>
+<h2 id="preparacion-nftables"> Preparación nftables</h2>
+<h3 id="configuracion-de-las-rutas-por-defecto"> Configuración de las rutas por defecto</h3>
+<p><strong>LAN:</strong></p>
+<p><img src="./../images/SAD/cortafuegos2/1.png" alt="image"></p>
+<div><pre><code>sudo ip route del default
+sudo ip route add default via 192.168.100.2
 </code></pre>
-</div><p><img src="./../images/ABD/auditoria/1-1.png" alt="image"></p>
-<p>Nos aseguraremos de que el parámetro <code>AUDIT_TRAIL</code> esté establecido en DB. Puedes verificarlo ejecutando el siguiente comando:</p>
-<div><pre><code>show parameter audit_trail
+</div><h3 id="creacion-de-las-tablas-filter-y-nat"> Creación de las tablas filter y nat:</h3>
+<div><pre><code>sudo nft add table inet filter
+sudo nft add table inet nat
 </code></pre>
-</div><p><img src="./../images/ABD/auditoria/2-1.png" alt="image"></p>
-<p>Si el valor devuelto no es DB, puedes establecerlo con el siguiente comando:</p>
-<div><pre><code>alter system set audit_trail=db scope=spfile;
+</div><p><img src="./../images/SAD/cortafuegos2/2.png" alt="image"></p>
+<h3 id="creacion-de-las-cadenas-de-filter"> Creación de las cadenas de filter:</h3>
+<div><pre><code>sudo nft add chain inet filter input { type filter hook input priority 0 \; counter \; policy accept \; }
+sudo nft add chain inet filter output { type filter hook output priority 0 \; counter \; policy accept \; }
+sudo nft add chain inet filter forward { type filter hook forward priority 0 \; counter \; policy accept \; }
 </code></pre>
-</div><p>Activamos la auditoría para los intentos de acceso exitosos con el siguiente comando:</p>
-<div><pre><code>audit session whenever successful;
+</div><p><img src="./../images/SAD/cortafuegos2/3.png" alt="image"></p>
+<h3 id="creacion-de-las-cadenas-de-nat"> Creación de las cadenas de nat:</h3>
+<div><pre><code>sudo nft add chain inet nat prerouting { type nat hook prerouting priority 0 \; }
+sudo nft add chain inet nat postrouting { type nat hook postrouting priority 100 \; }
 </code></pre>
-</div><p><img src="./../images/ABD/auditoria/3-1.png" alt="image"></p>
-<p>Comprobamos su activación.</p>
-<div><pre><code>audit create session by lucas;
+</div><p><img src="./../images/SAD/cortafuegos2/4.png" alt="image"></p>
+<h3 id="trafico-ssh-entrante-al-cortafuegos"> Tráfico ssh entrante al cortafuegos</h3>
+<div><pre><code>sudo nft add rule inet filter input ip saddr 172.29.0.0/16 tcp dport 22 ct state new,established counter accept
+sudo nft add rule inet filter output ip daddr 172.29.0.0/16 tcp sport 22 ct state established counter accept
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/5.png" alt="image"></p>
+<h3 id="politicas-por-defecto"> Políticas por defecto</h3>
+<div><pre><code>sudo nft chain inet filter input { policy drop \; }
+sudo nft chain inet filter output { policy drop \; }
+sudo nft chain inet filter forward { policy drop \; }
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/6.png" alt="image"></p>
+<p>No puedo hacer ping a localhost:</p>
+<div><pre><code>ping -c 5 127.0.0.1
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/7.png" alt="image"></p>
+<p>No puedo establecer conexión mediante ping con Internet.</p>
+<div><pre><code>ping -c 5 8.8.8.8
 </code></pre>
 </div><hr>
-<div><pre><code>select * from dba_priv_audit_opts;
+<div><pre><code>ping -c 5 1.1.1.1
 </code></pre>
-</div><p><img src="./../images/ABD/auditoria/4-1.png" alt="image"></p>
-<p>Comprobamos el funcionamiento:</p>
-<p>Primero iniciaremos sesión en la base de datos SQL*Plus con una cuenta de usuario existente con cualquiera de los siguientes comandos:</p>
-<div><pre><code>sqlplus
+</div><p><img src="./../images/SAD/cortafuegos2/8.png" alt="image"></p>
+<p>Si después de este paso nuestra conexión ssh a la máquina no se interrumpe, entonces las dos reglas que aplicamos previamente están operando correctamente.</p>
+<h3 id="activar-el-bit-de-forwarding"> Activar el bit de forwarding</h3>
+<div><pre><code>echo 1 &gt; /proc/sys/net/ipv4/ip_forward
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/9.png" alt="image"></p>
+<h3 id="snat"> SNAT</h3>
+<div><pre><code>sudo nft add rule inet nat postrouting oifname &quot;ens3&quot; ip saddr 192.168.100.0/24 counter masquerade
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/10.png" alt="image"></p>
+<h3 id="trafico-ssh-saliente-cortafuegos-lan"> Tráfico ssh saliente cortafuegos -&gt; LAN</h3>
+<div><pre><code>sudo nft add rule inet filter output oifname &quot;ens4&quot; ip daddr 192.168.100.0/24 tcp dport 22 ct state new,established counter accept
+sudo nft add rule inet filter input iifname &quot;ens4&quot; ip saddr 192.168.100.0/24 tcp sport 22 ct state established counter accept
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/11.png" alt="image"></p>
+<p>Pruebo que funciona:</p>
+<div><pre><code>ssh debian@192.168.100.10
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/12.png" alt="image"></p>
+<h3 id="trafico-loopback"> Tráfico loopback</h3>
+<div><pre><code>sudo nft add rule inet filter output oifname &quot;lo&quot; counter accept
+sudo nft add rule inet filter input iifname &quot;lo&quot; counter accept
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/13.png" alt="image"></p>
+<p>Ahora el ping a &quot;localhost&quot; está funcionando correctamente.</p>
+<div><pre><code>ping -c 3 127.0.0.1
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/14.png" alt="image"></p>
+<h2 id="trafico-icmp"> Tráfico ICMP</h2>
+<h3 id="permito-ping-entrante-desde-la-red-externa"> Permito ping entrante desde la red externa:</h3>
+<div><pre><code>sudo nft add rule inet filter input iifname &quot;ens3&quot; icmp type echo-request counter accept
+sudo nft add rule inet filter output oifname &quot;ens3&quot; icmp type echo-reply counter accept
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/15.png" alt="image"></p>
+<p>Voy a verificar su funcionamiento desde mi equipo.</p>
+<div><pre><code>ping -c 3 172.22.200.80
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/16.png" alt="image"></p>
+<h3 id="permito-ping-saliente-cortafuegos-lan"> Permito ping saliente cortafuegos -&gt; LAN:</h3>
+<div><pre><code>sudo nft add rule inet filter output oifname &quot;ens4&quot; icmp type echo-request counter accept
+sudo nft add rule inet filter input iifname &quot;ens4&quot; icmp type echo-reply counter accept
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/17.png" alt="image"></p>
+<p>Pruebo que funciona:</p>
+<div><pre><code>ping -c 3 192.168.100.10
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/18.png" alt="image"></p>
+<h3 id="forward-trafico-icmp-saliente-lan-internet"> FORWARD: tráfico icmp saliente LAN -&gt; Internet</h3>
+<div><pre><code>sudo nft add rule inet filter forward iifname &quot;ens4&quot; oifname &quot;ens3&quot; ip saddr 192.168.100.0/24 icmp type echo-request counter accept
+sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens4&quot; ip daddr 192.168.100.0/24 icmp type echo-reply counter accept
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/19.png" alt="image"></p>
+<p>Voy a comprobar que el ping a Internet está funcionando correctamente.</p>
+<div><pre><code>ping -c 3 8.8.8.8
 </code></pre>
 </div><hr>
-<div><pre><code>sqlplus username/passwd
+<div><pre><code>ping -c 3 1.1.1.1
 </code></pre>
-</div><p><img src="./../images/ABD/auditoria/5-1.png" alt="image"></p>
-<p>Si la autenticación es exitosa, la sesión se iniciará y deberías ver el prompt de SQL*Plus. Puedes comprobar que la auditoría está funcionando consultando la tabla de registros de auditoría <code>dba_audit_session</code>. Puedes hacerlo ejecutando el siguiente comando:</p>
-<div><pre><code>select os_username, username, extended_timestamp from dba_audit_session where action_name = 'LOGON' and returncode = 0;
+</div><p><img src="./../images/SAD/cortafuegos2/20.png" alt="image"></p>
+<h3 id="forward-trafico-dns-saliente-desde-lan"> FORWARD: tráfico DNS saliente desde LAN</h3>
+<div><pre><code>sudo nft add rule inet filter forward iifname &quot;ens4&quot; oifname &quot;ens3&quot; ip saddr 192.168.100.0/24 udp dport 53 ct state new,established counter accept
+sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens4&quot; ip daddr 192.168.100.0/24 udp sport 53 ct state established counter accept
 </code></pre>
-</div><p><img src="./../images/ABD/auditoria/6-1.png" alt="image"></p>
-<p>Para finalizar, desactivaremos la auditoría.</p>
-<div><pre><code>noaudit session whenever successful; 
+</div><p><img src="./../images/SAD/cortafuegos2/21.png" alt="image"></p>
+<p>Pruebo que funciona:</p>
+<div><pre><code>dig @1.1.1.1 www.example.org
 </code></pre>
-</div><p><img src="./../images/ABD/auditoria/7-1.png" alt="image"></p>
-<h2 id="_2-realiza-un-procedimiento-en-pl-sql-que-te-muestre-los-accesos-fallidos-junto-con-el-motivo-de-los-mismos-transformando-el-codigo-de-error-almacenado-en-un-mensaje-de-texto-comprensible-contempla-todos-los-motivos-posibles-para-que-un-acceso-sea-fallido"> <strong>2. Realiza un procedimiento en PL/SQL que te muestre los accesos fallidos junto con el motivo de los mismos, transformando el código de error almacenado en un mensaje de texto comprensible. Contempla todos los motivos posibles para que un acceso sea fallido.</strong></h2>
-<p>En primer lugar debemos de activar la auditoria de los aciertos fallidos:</p>
-<div><pre><code>audit create session whenever not successful;
+</div><p><img src="./../images/SAD/cortafuegos2/22.png" alt="image"></p>
+<h3 id="forward-trafico-http-https-saliente-desde-lan"> FORWARD: tráfico http/https saliente desde LAN</h3>
+<div><pre><code>sudo nft add rule inet filter forward iifname &quot;ens4&quot; oifname &quot;ens3&quot; ip protocol tcp ip saddr 192.168.100.0/24 tcp dport { 80,443 } ct state new,established counter accept
+sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens4&quot; ip protocol tcp ip daddr 192.168.100.0/24 tcp sport { 80,443 } ct state established counter accept
 </code></pre>
-</div><p>Función para devolver el motivo del error:</p>
-<div><pre><code>create or replace function DevolverMotivo (p_error number)
-return varchar2
-is
-    mensaje varchar2(40);
-begin
-    case p_error
-        when 1017 then 
-            mensaje:='Usuario/Password Incorrecta';
-        when 28000 THEN
-            mensaje:='Cuenta Bloqueada';
-        when 1045 then
-            mensaje:='Privilegios insuficientes';
-        else
-            mensaje:='Error Desconocido';
-    end case;
-return mensaje;
-end;
-/
+</div><p><img src="./../images/SAD/cortafuegos2/23.png" alt="image"></p>
+<p>Compruebo el funcionamiento de http:</p>
+<div><pre><code>curl portquiz.net:80
 </code></pre>
-</div><p><img src="./../images/ABD/auditoria/1-2.png" alt="image"></p>
-<p>Procedimiento:</p>
-<div><pre><code>create or replace procedure MostrarAccesosFallidos
-is
-    cursor c_cursor is 
-    select username, timestamp, returncode from dba_audit_session where action_name = 'LOGON' and returncode != 0;
-    v_motivo varchar2(40);
-begin
-    dbms_output.put_line(chr(10)||chr(9)||chr(9)||'-- AUDITORIA DE ACCESOS FALLIDOS --');
-    dbms_output.put_line(chr(10)||chr(9)||'Usuario'||chr(9)||chr(9)||'Fecha'||chr(9)||chr(9)||chr(9)||
-        'Motivo');
-    dbms_output.put_line(chr(9)||'----------------------------------------------------------------');
-    for var in c_cursor loop
-        v_motivo:=DevolverMotivo(var.returncode);
-        dbms_output.put_line(chr(10)||chr(9)||var.username||chr(9)||chr(9)||to_char(var.timestamp,'YY/MM/DD DY HH24:MI')||chr(9)||v_motivo);
-    end loop; 
-end;
-/
+</div><p>Compruebo el funcionamiento de https:</p>
+<div><pre><code>curl portquiz.net:443
 </code></pre>
-</div><p><img src="./../images/ABD/auditoria/2-2.png" alt="image"></p>
-<p>Comprobación del funcionamiento:</p>
-<p>Para hacer la prueba voy a acceder con los usuarios &quot;lucas&quot;, &quot;oscar&quot; y &quot;oscarlucas&quot;. Con el usuario &quot;lucas&quot; voy a fallar en la contraseña, el usuario &quot;oscar&quot; esta bloqueado y el usuario &quot;oscarlucas&quot; no tiene privilegios.</p>
-<p><img src="./../images/ABD/auditoria/3-2.png" alt="image"></p>
-<p>Y ejecutaremos el procedimiento para ver su funcionamiento:</p>
-<div><pre><code>exec MostrarAccesosFallidos;
+</div><p><img src="./../images/SAD/cortafuegos2/24.png" alt="image"></p>
+<h3 id="forward-trafico-http-entrante-hacia-lan"> FORWARD: tráfico http entrante hacia LAN</h3>
+<div><pre><code>sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens4&quot; ip daddr 192.168.100.0/24 tcp dport 80 ct state new,established counter accept
+sudo nft add rule inet filter forward iifname &quot;ens4&quot; oifname &quot;ens3&quot; ip saddr 192.168.100.0/24 tcp sport 80 ct state established counter accept
 </code></pre>
-</div><p><img src="./../images/ABD/auditoria/4-2.png" alt="image"></p>
-<p>Para finalizar, desactivamos la auditoria</p>
-<div><pre><code>noaudit create session whenever not successful;
+</div><p><img src="./../images/SAD/cortafuegos2/25.png" alt="image"></p>
+<h3 id="necesito-una-regla-dnat"> Necesito una regla DNAT:</h3>
+<div><pre><code>sudo nft add rule inet nat prerouting iifname &quot;ens3&quot; tcp dport 80 counter dnat ip to 192.168.100.10
 </code></pre>
-</div><h2 id="_3-activa-la-auditoria-de-las-operaciones-dml-realizadas-por-scott-comprueba-su-funcionamiento"> <strong>3. Activa la auditoría de las operaciones DML realizadas por SCOTT. Comprueba su funcionamiento.</strong></h2>
-<p><a href="https://pastebin.com/pCBR7MwS" target="_blank" rel="noopener noreferrer">Esquema scott<i>Content not supported</i></a></p>
-<p>Activamos la auditoría.</p>
-<div><pre><code>audit insert table, update table, delete table by scott by access;
+</div><p><img src="./../images/SAD/cortafuegos2/26.png" alt="image"></p>
+<p>Compruebo el funcionamiento desde mi host:</p>
+<div><pre><code>telnet 172.22.200.80 80
 </code></pre>
-</div><p>Donde:</p>
+</div><p><img src="./../images/SAD/cortafuegos2/27.png" alt="image"></p>
+<p><img src="./../images/SAD/cortafuegos2/28.png" alt="image"></p>
+<h3 id="guardar-la-configuracion-del-cortafuegos-de-forma-persistente"> Guardar la configuración del cortafuegos de forma persistente</h3>
+<div><pre><code>nft list ruleset &gt; /etc/nftables.conf
+sudo systemctl start nftables
+sudo systemctl enable nftables
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/29.png" alt="image"></p>
+<h2 id="debes-anadir-despues-las-reglas-necesarias-para-que-se-permitan-las-siguientes-operaciones"> Debes añadir después las reglas necesarias para que se permitan las siguientes operaciones:</h2>
+<h3 id="a-permite-poder-hacer-conexiones-ssh-al-exterior-desde-la-maquina-cortafuegos"> a) Permite poder hacer conexiones ssh al exterior desde la máquina cortafuegos.</h3>
+<div><pre><code>sudo nft add rule inet filter output oifname &quot;ens3&quot; tcp dport 22 ct state new,established counter accept
+sudo nft add rule inet filter input iifname &quot;ens3&quot; tcp sport 22 ct state established counter accept
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/30.png" alt="image"></p>
+<p>Pruebo el funcionamiento de conectando a mi host:</p>
+<div><pre><code>ssh oscar@172.29.0.65
+</code></pre>
+</div><p>![image]</p>
+<h3 id="b-permite-hacer-consultas-dns-desde-la-maquina-cortafuegos-solo-al-servidor-192-168-202-2-comprueba-que-no-puedes-hacer-un-dig-1-1-1-1"> b) Permite hacer consultas DNS desde la máquina cortafuegos sólo al servidor 192.168.202.2. Comprueba que no puedes hacer un dig @1.1.1.1.</h3>
+<div><pre><code>sudo nft add rule inet filter output ip daddr 192.168.202.2 udp dport 53 ct state new,established counter accept
+sudo nft add rule inet filter input ip saddr 192.168.202.2 udp sport 53 ct state established counter accept
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/32.png" alt="image"></p>
+<p>Pruebo que las consultas DNS a 192.168.202.2 funcionan:</p>
+<div><pre><code>dig @192.168.202.2 www.example.org
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/33.png" alt="image"></p>
+<p>Pruebo que las consultas DNS a 1.1.1.1 no funcionan:</p>
+<div><pre><code>dig @1.1.1.1 www.example.org
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/33-1.png" alt="image"></p>
+<h3 id="c-permite-que-la-maquina-cortafuegos-pueda-navegar-por-internet"> c) Permite que la máquina cortafuegos pueda navegar por internet.</h3>
+<div><pre><code>sudo nft add rule inet filter output oifname &quot;ens3&quot; ip protocol tcp tcp dport { 80,443 } ct state new,established counter accept
+sudo nft add rule inet filter input iifname &quot;ens3&quot; ip protocol tcp tcp sport { 80,443 } ct state established counter accept
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/34.png" alt="image"></p>
+<p>Compruebo el funcionamiento de http:</p>
+<div><pre><code>curl portquiz.net 80
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/35.png" alt="image"></p>
+<p>Compruebo el funcionamiento de https:</p>
+<div><pre><code>curl portquiz.net 443
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/36.png" alt="image"></p>
+<h3 id="d-los-equipos-de-la-red-local-deben-poder-tener-conexion-al-exterior"> d) Los equipos de la red local deben poder tener conexión al exterior.</h3>
+<p>Ya he llevado a cabo este paso durante la configuración previa de la máquina.</p>
+<p>Las reglas que establecí para lograr su funcionamiento fueron:</p>
+<div><pre><code>sudo nft add rule inet nat postrouting oifname &quot;ens3&quot; ip saddr 192.168.100.0/24 counter masquerade
+sudo nft add rule inet filter forward iifname &quot;ens4&quot; oifname &quot;ens3&quot; ip saddr 192.168.100.0/24 icmp type echo-request counter accept
+sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens4&quot; ip daddr 192.168.100.0/24 icmp type echo-reply counter accept
+</code></pre>
+</div><p>Pruebo el funcionamiento:</p>
+<div><pre><code>ping -c 3 8.8.8.8
+</code></pre>
+</div><hr>
+<div><pre><code>ping -c 3 1.1.1.1
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/37.png" alt="image"></p>
+<h3 id="e-permitimos-el-ssh-desde-el-cortafuego-a-la-lan"> e) Permitimos el ssh desde el cortafuego a la LAN.</h3>
+<p>Ya he llevado a cabo este paso durante la configuración previa de la máquina. Las reglas que establecí para lograr su funcionamiento fueron:</p>
+<div><pre><code>sudo nft add rule inet filter output oifname &quot;ens4&quot; ip daddr 192.168.100.0/24 tcp dport 22 ct state new,established counter accept
+sudo nft add rule inet filter input iifname &quot;ens4&quot; ip saddr 192.168.100.0/24 tcp sport 22 ct state established counter accept
+</code></pre>
+</div><p>Pruebo el funcionamiento de conectando a mi host:</p>
+<div><pre><code>ssh oscar@172.29.0.65
+</code></pre>
+</div><p>![image]</p>
+<h3 id="f-permitimos-hacer-ping-desde-la-lan-a-la-maquina-cortafuegos"> f) Permitimos hacer ping desde la LAN a la máquina cortafuegos.</h3>
+<div><pre><code>sudo nft add rule inet filter input iifname &quot;ens4&quot; icmp type echo-request counter accept
+sudo nft add rule inet filter output oifname &quot;ens4&quot; icmp type echo-reply counter accept
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/39.png" alt="image"></p>
+<p>Pruebo su funcionamiento:</p>
+<div><pre><code>ping -c 3 192.168.100.2
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/40.png" alt="image"></p>
+<h3 id="g-permite-realizar-conexiones-ssh-desde-los-equipos-de-la-lan"> g) Permite realizar conexiones ssh desde los equipos de la LAN.</h3>
+<div><pre><code>sudo nft add rule inet filter forward iifname &quot;ens4&quot; oifname &quot;ens3&quot; ip saddr 192.168.100.0/24 tcp dport 22 ct state new,established counter accept
+sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens4&quot; ip daddr 192.168.100.0/24 tcp sport 22 ct state established counter accept
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/41.png" alt="image"></p>
+<p>Voy a verificar que funciona la conexión atravesando el cortafuegos desde mi equipo hacia la máquina.</p>
+<div><pre><code>ssh oscar@172.29.0.65
+</code></pre>
+</div><p>![image]</p>
+<h3 id="h-instala-un-servidor-de-correos-en-la-maquina-de-la-lan-permite-el-acceso-desde-el-exterior-y-desde-el-cortafuego-al-servidor-de-correos-para-probarlo-puedes-ejecutar-un-telnet-al-puerto-25-tcp"> h) Instala un servidor de correos en la máquina de la LAN. Permite el acceso desde el exterior y desde el cortafuego al servidor de correos. Para probarlo puedes ejecutar un telnet al puerto 25 tcp.</h3>
+<p>Habilitar la conexión externa al servidor de correo dentro de la red local (LAN).</p>
+<div><pre><code>sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens4&quot; ip daddr 192.168.100.0/24 tcp dport 25 counter accept
+sudo nft add rule inet filter forward iifname &quot;ens4&quot; oifname &quot;ens3&quot; ip saddr 192.168.100.0/24 tcp sport 25 counter accept
+sudo nft add rule inet nat prerouting iifname &quot;ens3&quot; tcp dport 25 counter dnat ip to 192.168.100.10
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/43.png" alt="image"></p>
+<p>Pruebo el funcionamiento desde mi host:</p>
+<div><pre><code>telnet 172.22.200.80 25
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/44.png" alt="image"></p>
+<p>Configurar el firewall para permitir el acceso al servidor de correo de la red local (LAN) desde el exterior.</p>
+<div><pre><code>sudo nft add rule inet filter output ip daddr 192.168.100.10 tcp dport 25 counter accept
+sudo nft add rule inet filter input ip saddr 192.168.100.10 tcp sport 25 counter accept
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/45.png" alt="image"></p>
+<p>Pruebo el funcionamiento desde el cortafuegos:</p>
+<div><pre><code>telnet 192.168.100.10 25
+</code></pre>
+</div><p>![image]</p>
+<h3 id="i-permite-poder-hacer-conexiones-ssh-desde-exterior-a-la-lan"> i) Permite poder hacer conexiones ssh desde exterior a la LAN.</h3>
+<div><pre><code>sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens4&quot; ip daddr 192.168.100.0/24 tcp dport 22 ct state new,established counter accept
+sudo nft add rule inet filter forward iifname &quot;ens4&quot; oifname &quot;ens3&quot; ip saddr 192.168.100.0/24 tcp sport 22 ct state established counter accept
+sudo nft add rule inet nat prerouting iifname &quot;ens3&quot; tcp dport 22 counter dnat ip to 192.168.100.10
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/47.png" alt="image"></p>
+<p>Pruebo el funcionamiento desde mi host:</p>
+<div><pre><code>ssh debian@172.22.200.125
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/48.png" alt="image"></p>
+<h3 id="j-modifica-la-regla-anterior-para-que-al-acceder-desde-el-exterior-por-ssh-tengamos-que-conectar-al-puerto-2222-aunque-el-servidor-ssh-este-configurado-para-acceder-por-el-puerto-22"> j) Modifica la regla anterior, para que al acceder desde el exterior por ssh tengamos que conectar al puerto 2222, aunque el servidor ssh este configurado para acceder por el puerto 22.</h3>
+<div><pre><code>sudo nft add rule inet nat prerouting iifname &quot;ens3&quot; tcp dport 2222 counter dnat ip to 192.168.100.10:22
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/49.png" alt="image"></p>
+<p>Pruebo su funcionamiento:</p>
+<div><pre><code>ssh -p 2222 debian@172.22.200.125
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/50.png" alt="image"></p>
+<h3 id="k-permite-hacer-consultas-dns-desde-la-lan-solo-al-servidor-192-168-202-2-comprueba-que-no-puedes-hacer-un-dig-1-1-1-1"> k) Permite hacer consultas DNS desde la LAN sólo al servidor 192.168.202.2. Comprueba que no puedes hacer un dig @1.1.1.1.</h3>
+<p>Necesitamos identificar el handle de la regla que autoriza las consultas DNS a cualquier servidor.</p>
+<div><pre><code>sudo nft -a list ruleset | grep 53
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/51.png" alt="image"></p>
+<p>Antes de proceder, es necesario eliminar las reglas que permiten realizar consultas DNS a cualquier servidor.</p>
+<div><pre><code>sudo nft delete rule inet filter forward handle 42 
+sudo nft delete rule inet filter forward handle 43
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/52.png" alt="image"></p>
+<p>En este momento podemos agregar las reglas que autorizan las consultas DNS únicamente hacia el servidor 192.168.202.2.</p>
+<div><pre><code>sudo nft add rule inet filter forward iifname &quot;ens4&quot; oifname &quot;ens3&quot; ip saddr 192.168.100.0/24 ip daddr 192.168.202.2 udp dport 53 ct state new,established counter accept
+sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens4&quot; ip saddr 192.168.202.2 ip daddr 192.168.100.0/24 udp sport 53 ct state established counter accept
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/53.png" alt="image"></p>
+<p>Pruebo que las consultas DNS a 192.168.202.2 funcionan:</p>
+<div><pre><code>dig @192.168.202.2 www.example.org
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/54.png" alt="image"></p>
+<p>Pruebo que no puedo hacer consultas DNS a 1.1.1.1:</p>
+<div><pre><code>dig @1.1.1.1 www.example.org
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/55.png" alt="image"></p>
+<h3 id="l-permite-que-los-equipos-de-la-lan-puedan-navegar-por-internet"> l) Permite que los equipos de la LAN puedan navegar por internet.</h3>
+<p>Ya completé esta tarea durante la configuración inicial de la máquina. Las reglas que establecí para que funcione son:</p>
+<div><pre><code>sudo nft add rule inet filter forward iifname &quot;ens4&quot; oifname &quot;ens3&quot; ip protocol tcp ip saddr 192.168.100.0/24 tcp dport { 80,443 } ct state new,established counter accept
+sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens4&quot; ip protocol tcp
+</code></pre>
+</div><p>Compuebo su funcionamiento:</p>
+<div><pre><code>curl www.example.org
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos2/56.png" alt="image"></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Cortafuegos I: De nodo con iptables</title>
+      <link>https://github.com/oscarlucas22/practicas/cortafuegoI/</link>
+      <guid>https://github.com/oscarlucas22/practicas/cortafuegoI/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">Cortafuegos I: De nodo con iptables</source>
+      <category>practicas</category>
+      <content:encoded><![CDATA[<h1 id="cortafuegos-i-de-nodo-con-iptables"> Cortafuegos I: De nodo con iptables</h1>
+<p>Página de la <a href="https://fp.josedomingo.org/seguridadgs/u03/ejercicio1.html" target="_blank" rel="noopener noreferrer">practica<i>Content not supported</i></a></p>
+<hr>
+<p>Vamos a crear nuestra maquina sobre la que vamos a trabajar</p>
+<p><a href="https://pastebin.com/xJ6NjdGT" target="_blank" rel="noopener noreferrer">fichero<i>Content not supported</i></a></p>
+<p>Cuando tengamos el fichero nos hiremos a Openstack e iniciaremos la maquina a traves de este fichero, sigue los siguientes pasos para crearla:</p>
+<p><img src="./../images/SAD/cortafuegos1/creacion1.png" alt="image"></p>
+<p><img src="./../images/SAD/cortafuegos1/creacion2.png" alt="image"></p>
+<p>Importamos el fichero</p>
+<p><img src="./../images/SAD/cortafuegos1/creacion3.png" alt="image"></p>
+<p>Le daremos a &quot;Siguiente&quot; y rellenaremos las siguientes casillas:</p>
+<p><img src="./../images/SAD/cortafuegos1/creacion4.png" alt="image"></p>
+<p>Y ya comenzaria a instalarse. Una vez instalada nos saldria en la sección de &quot;Instancias&quot;</p>
+<hr>
+<p>Vamos a realizar los primeros pasos para implementar un cortafuegos en un nodo de una red, aquel que se ejecuta en el propio equipo que trata de proteger, lo que a veces se denomina un cortafuegos personal.</p>
+<h2 id="limpieza-de-las-reglas-previas"> Limpieza de las reglas previas</h2>
+<div><pre><code>iptables -F
+iptables -t nat -F
+iptables -Z
+iptables -t nat -Z
+</code></pre>
+</div><h2 id="vamos-a-permitir-ssh"> Vamos a permitir ssh</h2>
+<p>Cómo estamos conectado a la máquina por ssh, vamos a permitir la conexión ssh desde la red 172.22.0.0/16, antes de cambiar las políticas por defecto a DROP, para no perder la conexión:</p>
+<div><pre><code>iptables -A INPUT -s 172.22.0.0/16 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -d 172.22.0.0/16 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
+
+iptables -A INPUT -s 172.29.0.0/16 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -d 172.29.0.0/16 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
+</code></pre>
+</div><h2 id="politica-por-defecto"> Política por defecto</h2>
+<div><pre><code>iptables -P INPUT DROP
+iptables -P OUTPUT DROP
+</code></pre>
+</div><p>Comprobamos que el equipo no puede acceder a ningún servicio ni de Internet ni de la red local, ya que la política lo impide.</p>
+<p><img src="./../images/SAD/cortafuegos1/1.png" alt="image"></p>
+<p><img src="./../images/SAD/cortafuegos1/1.1.png" alt="image"></p>
+<h2 id="permitimos-trafico-para-la-interfaz-loopback"> Permitimos tráfico para la interfaz loopback</h2>
+<div><pre><code>iptables -A INPUT -i lo -p icmp -j ACCEPT
+iptables -A OUTPUT -o lo -p icmp -j ACCEPT
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/2.png" alt="image"></p>
+<h2 id="peticiones-y-respuestas-protocolo-icmp"> Peticiones y respuestas protocolo ICMP</h2>
+<div><pre><code>iptables -A INPUT -i ens3 -p icmp --icmp-type echo-reply -j ACCEPT
+iptables -A OUTPUT -o ens3 -p icmp --icmp-type echo-request -j ACCEPT
+</code></pre>
+</div><p>Comprobamos su funcionamiento haciendo ping a una IP pública:</p>
+<p><img src="./../images/SAD/cortafuegos1/3.png" alt="image"></p>
+<h2 id="consultas-y-respuestas-dns"> Consultas y respuestas DNS</h2>
+<div><pre><code>iptables -A OUTPUT -o ens3 -p udp --dport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A INPUT -i ens3 -p udp --sport 53 -m state --state ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>Comprobamos su funcionamiento con una consulta DNS:</p>
+<p><img src="./../images/SAD/cortafuegos1/4.png" alt="image"></p>
+<h2 id="trafico-http-que-la-maquina-pueda-navegar"> Tráfico http (que la máquina pueda navegar)</h2>
+<div><pre><code>iptables -A OUTPUT -o ens3 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A INPUT -i ens3 -p tcp --sport 80 -m state --state ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>Comprobamos que funciona accediendo a un servicio http (!no https)</p>
+<p><img src="./../images/SAD/cortafuegos1/5.png" alt="image"></p>
+<h2 id="trafico-https"> Tráfico https</h2>
+<div><pre><code>iptables -A OUTPUT -o ens3 -p tcp --dport 443 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A INPUT -i ens3 -p tcp --sport 443 -m state --state ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>Comprobamos que funciona abriendo un navegador y accediendo a cualquier sitio web (hoy en día la mayoría son https). En mi caso lo he hecho con lynx:</p>
+<div><pre><code>apt install lynx
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/6.png" alt="image"></p>
+<h2 id="permitimos-el-acceso-a-nuestro-servidor-web"> Permitimos el acceso a nuestro servidor web</h2>
+<div><pre><code>iptables -A INPUT -i ens3 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -o ens3 -p tcp --sport 80 -m state --state ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>En mi caso he vuelto a hacer la comprobación por lynx (lynx &quot;mi-ip-flotante&quot;)</p>
+<p><img src="./../images/SAD/cortafuegos1/7.png" alt="image"></p>
+<hr>
+<h2 id="ejercicios"> Ejercicios</h2>
+<p><strong>1. Permite poder hacer conexiones ssh al exterior.</strong></p>
+<p>Vamos a añadir las reglas que permitan realizar conexiones ssh al exterior:</p>
+<div><pre><code>iptables -A INPUT -i ens3 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -o ens3 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>Probemos si podemos conectarnos por ssh a otra máquina:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea1-1.png" alt="image"></p>
+<p>Efectivamente, podemos conectarnos, por lo que podemos decir que la regla funciona correctamente.</p>
+<p><strong>2. Deniega el acceso a tu servidor web desde una ip concreta.</strong></p>
+<p>Antes de agregar la regla de bloqueo, es importante considerar las reglas de INPUT que ya tenemos establecidas:</p>
+<div><pre><code>iptables -L -v -n
+</code></pre>
+</div><p>Si agregamos la regla de bloqueo al final, no sería efectiva, ya que siempre se superpondría con la regla previa que permite todo el tráfico HTTP entrante.</p>
+<p>Para solucionarlo, añadimos por encima la nueva regla.</p>
+<p>Necesitamos saber el número de línea específico, así que ejecutamos el siguiente comando:</p>
+<div><pre><code>iptables -L -v -n --line-numbers
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/tarea2-0.png" alt="image"></p>
+<p>Vamos a añadir la regla de bloqueo en la posición marcada para que funcione:</p>
+<div><pre><code>iptables -I INPUT 6 -s 10.0.0.216/32 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j DROP
+</code></pre>
+</div><p>Esta regla permitirá el acceso a nuestro servidor web desde cualquier máquina que no tenga la dirección IP especificada. Verifiquemos si funciona:</p>
 <ul>
-<li>
-<p>BY ACCESS : Realiza un registro por cada acción.</p>
-</li>
-<li>
-<p>BY SESSION : Realiza un registro de todas las acciones por cada sesión iniciada.</p>
-</li>
+<li>Desde otra ip que no es la bloqueada:</li>
 </ul>
-<p>Realizamos una prueba:</p>
-<div><pre><code>conn scott/tiger
-insert into dept values(50, 'DH', 'Dos Hermanas');
-update dept set loc = 'Sevilla' where deptno = 50;
-delete from dept where deptno = 50;
-commit;
+<p><img src="./../images/SAD/cortafuegos1/tarea2-1.png" alt="image"></p>
+<ul>
+<li>Desde la ip bloqueda:</li>
+</ul>
+<p><img src="./../images/SAD/cortafuegos1/tarea2-2.png" alt="image"></p>
+<p>Como vemos, podemos acceder desde cualquier máquina que no sea la que tenga la ip que tenemos bloqueada.</p>
+<p><strong>3. Permite hacer consultas DNS sólo al servidor 192.168.202.2. Comprueba que no puedes hacer un dig @1.1.1.1.</strong></p>
+<p>En esta situación, estamos enfrentando un problema similar al del ejercicio anterior. Sin embargo, en este caso necesitamos eliminar dos reglas antiguas que permitían todo el tráfico DNS saliente.</p>
+<div><pre><code>iptables -L -v -n --line-numbers
 </code></pre>
-</div><p><img src="./../images/ABD/auditoria/1-3.png" alt="image"></p>
-<p>Para ver las acciones realizadas por SCOTT:</p>
-<div><pre><code>audit all by scott by access;
-
-select obj_name, action_name, timestamp from dba_audit_object where username = 'SCOTT';
+</div><p><img src="./../images/SAD/cortafuegos1/tarea3-0.png" alt="image"></p>
+<p>Aun si añadiéramos las nuevas reglas por encima de estas, si ejecutamos el comando <code>dig</code> a 1.1.1.1, se produciría una coincidencia con estas reglas, lo que permitiría el tráfico. Esto no es lo que buscamos.</p>
+<p>Primero, borramos las reglas antiguas:</p>
+<div><pre><code>iptables -D INPUT 5
+iptables -D OUTPUT 5
 </code></pre>
-</div><p><img src="./../images/ABD/auditoria/2-3.png" alt="image"></p>
-<h2 id="_4-realiza-una-auditoria-de-grano-fino-para-almacenar-informacion-sobre-la-insercion-de-empleados-con-sueldo-superior-a-2000-en-la-tabla-emp-de-scott"> <strong>4. Realiza una auditoría de grano fino para almacenar información sobre la inserción de empleados con sueldo superior a 2000 en la tabla emp de scott.</strong></h2>
-<p>Creación de la auditoría de grano fino:</p>
-<div><pre><code>begin
-    dbms_fga.add_policy (
-        object_schema      =&gt;  'scott',
-        object_name        =&gt;  'emp',
-        policy_name        =&gt;  'politica1',
-        audit_condition    =&gt;  'sal &gt; 2000',
-        statement_types    =&gt;  'insert'
-    );
-end;
-/
+</div><p>Despues añadimos las siguientes reglas:</p>
+<div><pre><code>iptables -A INPUT -s 192.168.202.2/32 -p udp --sport 53 -m state --state ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -d 192.168.202.2/32 -p udp --dport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
 </code></pre>
-</div><p><img src="./../images/ABD/auditoria/1-4.png" alt="image"></p>
-<p>Ver la política creada:</p>
-<div><pre><code>select object_schema,object_name,policy_name,policy_text from dba_audit_policies;
+</div><p>Vemos que no podemos hacer un dig @1.1.1.1:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea3-1.png" alt="image"></p>
+<p>Pero si podemos usar el servidor dns que hay en “192.168.202.2”:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea3-2.png" alt="image"></p>
+<p><strong>4. No permitir el acceso al servidor web de www.josedomingo.org (Tienes que utilizar la ip). ¿Puedes acceder a fp.josedomingo.org?</strong></p>
+<p>Una vez más, si agregamos la siguiente regla al final, tendremos un conflicto de reglas, ya que antes tenemos una que permite todo el tráfico HTTP de salida. Los emparejamientos siempre se detendrían ahí.</p>
+<div><pre><code>iptables -L -v -n --line-numbers
 </code></pre>
-</div><p><img src="./../images/ABD/auditoria/2-4.png" alt="image"></p>
-<p>Realizamos una prueba:</p>
-<div><pre><code>conn scott/tiger
+</div><p><img src="./../images/SAD/cortafuegos1/tarea4-0.png" alt="image"></p>
+<p>Es necesario agregar la regla de bloqueo por encima de la regla previamente mostrada:</p>
+<div><pre><code>iptables -I OUTPUT 5 -d 37.187.119.60/32 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j DROP
 </code></pre>
-</div><hr>
-<div><pre><code>insert into emp values(7940, 'MARK', 'CARRIER', null, sysdate, 3000, null, 10);
-insert into emp values(7941, 'RICK', 'CARRIER', null, sysdate, 2001, null, 20);
-
-commit;
+</div><p>Ahora no podemos acceder a esa url desde esta máquina debido a la regla del cortafuegos:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea4-1.png" alt="image"></p>
+<p>Tampoco podemos acceder a fp.josedomingo.org, ya que tiene la misma ip, y la tenemos bloqueada:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea4-2.png" alt="image"></p>
+<p>Sin embargo, si que podemos acceder a otros dominios que no tengan esa ip:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea4-3.png" alt="image"></p>
+<p>Como vemos, la regla funciona bien, pero debemos tener cuidado al bloquear ciertas ips, ya que podríamos estar bloqueando más servicios de los que queremos.</p>
+<p><strong>5. Permite mandar un correo usando nuestro servidor de correo: babuino-smtp. Para probarlo ejecuta un telnet bubuino-smtp.gonzalonazareno.org 25.</strong></p>
+<p>Lo primero que haremos será crear las reglas Iptables:</p>
+<div><pre><code>iptables -A OUTPUT -d 192.168.203.3 -p tcp --dport 25 -j ACCEPT
+iptables -A INPUT -s 192.168.203.3 -p tcp --sport 25 -j ACCEPT
 </code></pre>
-</div><p>Para visualizar las acciones realizadas.</p>
-<div><pre><code>select sql_text from dba_fga_audit_trail where policy_name = 'POLITICA1';
+</div><p>Pruebo que funciona con telnet:</p>
+<div><pre><code>telnet babuino-smtp.gonzalonazareno.org 25
 </code></pre>
-</div><p><img src="./../images/ABD/auditoria/3-4.png" alt="image"></p>
-<p>Para eliminar la auditoría de grano fino:</p>
-<div><pre><code>begin
-    dbms_fga.drop_policy (
-        object_schema      =&gt;  'scott',
-        object_name        =&gt;  'emp',
-        policy_name        =&gt;  'politica1'      
-    );
-end;
-/
+</div><p><img src="./../images/SAD/cortafuegos1/tarea5-1.png" alt="image"></p>
+<p><strong>6. Instala un servidor mariadb, y permite los accesos desde la ip de tu cliente. Comprueba que desde otro cliente no se puede acceder.</strong></p>
+<p>Instalamos mariadb-server y permitimos conexiones remotas:</p>
+<div><pre><code>apt install mariadb-server
 </code></pre>
-</div><p><img src="./../images/ABD/auditoria/4-4.png" alt="image"></p>
-<h2 id="_5-explica-la-diferencia-entre-auditar-una-operacion-by-access-o-by-session-ilustrandolo-con-ejemplos"> <strong>5. Explica la diferencia entre auditar una operación by access o by session ilustrándolo con ejemplos.</strong></h2>
-<p><strong>BY ACCESS</strong>:</p>
-<p>La auditoría por acceso implica registrar una entrada de auditoría cada vez que se lleva a cabo una operación de manipulación de datos (DML). Por ejemplo, esta técnica de auditoría permite registrar si un usuario ha insertado, actualizado o eliminado una fila de una tabla.</p>
-<p>Primero vaciamos la tabla de auditoria eliminando los registros</p>
-<div><pre><code>truncate table aud$;
+</div><p>Editamos el siguiente fichero <code>/etc/mysql/mariadb.conf.d/50-server.cnf</code>:</p>
+<div><pre><code>bind-address            = 0.0.0.0
 </code></pre>
-</div><p>Despues activamos la auditoría.</p>
-<div><pre><code>audit insert table, update table, delete table by scott by access;
+</div><p>Reiniciamos mariadb:</p>
+<div><pre><code>systemctl restart mariadb
 </code></pre>
-</div><p>Realizaremos una serie de pruebas.</p>
-<div><pre><code>conn scott/tiger
-
-insert into scott.dept values(60, 'OLL', 'ESPAÑA');
-update scott.dept set loc = 'MIAMI' where deptno = 60;
-delete from scott.dept where deptno = 60;
-
-commit;
+</div><p>A continuación, habilitamos el tráfico entrante desde mi máquina host:</p>
+<div><pre><code>iptables -A INPUT -s 10.0.0.180 -p tcp --dport 3306 -j ACCEPT
+iptables -A OUTPUT -d 10.0.0.180 -p tcp --sport 3306 -j ACCEPT
 </code></pre>
-</div><p>Cambiamos al usuario administrador y comparamos registros:</p>
-<div><pre><code>select username, action_name, timestamp, obj_name from dba_audit_object where username = 'SCOTT';
+</div><p>Creo un usuario en la maquina para despues comprobar el funcionamiento:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea6-1.png" alt="image"></p>
+<p>Probamos que funciona:</p>
+<div><pre><code>mariadb -u cortafuegos -h 10.0.0.72 -p
 </code></pre>
-</div><p><img src="./../images/ABD/auditoria/1-5.png" alt="image"></p>
-<p><strong>BY SESSION</strong>:</p>
-<p>La auditoría por sesión, en contraste con la auditoría por acceso, registra únicamente una entrada de auditoría por sesión. Aunque esta técnica de auditoría proporciona un registro menos detallado, mejora el rendimiento de la base de datos.</p>
-<p>Primero vaciamos la tabla de auditoria eliminando los registros</p>
-<div><pre><code>truncate table aud$;
+</div><p><img src="./../images/SAD/cortafuegos1/tarea6-2.png" alt="image"></p>
+<p>Verificamos que el tráfico se bloquea desde otro cliente:</p>
+<div><pre><code>mariadb -u cortafuegos -h 10.0.0.72 -p
 </code></pre>
-</div><p>Despues activamos la auditoría.</p>
-<div><pre><code>audit insert table, update table, delete table by scott by session;
-</code></pre>
-</div><p>Realizaremos una serie de pruebas.</p>
-<div><pre><code>conn scott/tiger
-
-insert into scott.dept values(60, 'OLL', 'ESPAÑA');
-update scott.dept set loc = 'MIAMI' where deptno = 60;
-delete from scott.dept where deptno = 60;
-
-commit;
-</code></pre>
-</div><p>Cambiamos al usuario administrador y comparamos registros:</p>
-<div><pre><code>select username, action_name, timestamp, obj_name from dba_audit_object where username = 'SCOTT';
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/2-5.png" alt="image"></p>
-<h2 id="_6-documenta-las-diferencias-entre-los-valores-db-y-db-extended-del-parametro-audit-trail-de-oracle-demuestralas-poniendo-un-ejemplo-de-la-informacion-sobre-una-operacion-concreta-recopilada-con-cada-uno-de-ellos"> <strong>6. Documenta las diferencias entre los valores db y db, extended del parámetro audit_trail de ORACLE. Demuéstralas poniendo un ejemplo de la información sobre una operación concreta recopilada con cada uno de ellos.</strong></h2>
-<p>Las diferencias son mínimas y es que solo se diferencia en que db extend aparte de almacenarse en SYS.AUD$ también escribe valores en las columnas SQLBIND y SQLTEXT.</p>
-<p>Ejemplo:</p>
-<p>Para este ejemplo lo primero que deberemos hacer es activar las auditorias:</p>
-<div><pre><code>show parameter audit;
-
-alter system set audit_trail = db, extended scope = spfile;
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/1-6.png" alt="image"></p>
-<p>Deberemos de reiniciar la base de datos.</p>
-<div><pre><code>shutdown
-startup
-</code></pre>
-</div><p>Y comprobamos como hemos añadido un nuevo valor en la auditoria:</p>
-<div><pre><code>show parameter audit;
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/2-6.png" alt="image"></p>
-<h2 id="_7-averigua-si-en-postgres-se-pueden-realizar-los-cuatro-primeros-apartados-si-es-asi-documenta-el-proceso-adecuadamente"> <strong>7. Averigua si en Postgres se pueden realizar los cuatro primeros apartados. Si es así, documenta el proceso adecuadamente.</strong></h2>
-<p><em>ejer 1. Activa desde SQL</em>Plus la auditoría de los intentos de acceso exitosos al sistema. Comprueba su funcionamiento.*</p>
-<p>El parámetro log_connections en PostgreSQL se utiliza para realizar la auditoría de los accesos exitosos al sistema.</p>
-<p>Si queremos probar la funcionalidad del registro de accesos exitosos en PostgreSQL, debemos activar el parámetro correspondiente.</p>
-<div><pre><code>sudo -u postgres psql
-
-ALTER SYSTEM SET log_connections = 'ON';
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/1-7.png" alt="image"></p>
-<p>Reiniciamos el servicio:</p>
-<div><pre><code>sudo systemctl restart postgresql
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/2-7.png" alt="image"></p>
-<p>Después de activar el parámetro, podemos verificar los registros de acceso exitosos en PostgreSQL accediendo al archivo /var/log/postgresql/postgresql-13-main.log (el nombre del archivo puede variar según la versión de PostgreSQL instalada y la ubicación puede ser diferente según el sistema operativo). Por ejemplo, si nos hemos conectado con el usuario &quot;scott&quot;, podemos comprobar si se ha registrado el acceso correctamente revisando el archivo de registros.</p>
-<div><pre><code>tail /var/lib/postgresql/13/main/pg_log/postgresql-2023-03-01_140147.csv
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/3-7.png" alt="image"></p>
-<p>En el archivo de registros, podremos observar la información de la conexión exitosa realizada con el usuario &quot;scott&quot;.</p>
-<p><em>ejer 2. Realiza un procedimiento en PL/SQL que te muestre los accesos fallidos junto con el motivo de los mismos, transformando el código de error almacenado en un mensaje de texto comprensible. Contempla todos los motivos posibles para que un acceso sea fallido.</em></p>
-<p>Incluso si intentas acceder al sistema utilizando un usuario inexistente o una contraseña incorrecta, cualquier falla en el intento se registrará en el archivo <code>/var/lib/postgresql/13/main/pg_log/postgresql-2023-03-01_140147.csv</code>. Para verificar esto, puedes intentar conectarte al sistema utilizando el nombre de usuario &quot;scott&quot; y una contraseña incorrecta.</p>
-<div><pre><code>#Usuario existente (fallo contraseña)
-psql -h localhost -U scott -d scott
-
-#Usuario inexixtente
-psql -h localhost -U auditoria -d scott
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/4-7.png" alt="image"></p>
-<p><em>ejer 3. Activa la auditoría de las operaciones DML realizadas por SCOTT. Comprueba su funcionamiento.</em></p>
-<p>En lugar de desarrollar una herramienta propia para la auditoría de operaciones DML, utilizaré una herramienta de terceros llamada audit-trigger. Esta herramienta ya proporciona todas las funciones necesarias para llevar a cabo la auditoría, aunque también podríamos optar por utilizar otras herramientas como pgaudit.</p>
-<p>Antes de llevar a cabo la auditoría, descargo el archivo .sql que contiene la tabla de auditoría y los triggers necesarios para su creación.</p>
-<div><pre><code>wget https://raw.githubusercontent.com/2ndQuadrant/audit-trigger/master/audit.sql
-</code></pre>
-</div><p>Importo el fichero en la base de datos:</p>
-<div><pre><code>\i audit.sql
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/5-7.png" alt="image"></p>
-<p>Una vez que he descargado el archivo .sql, puedo activar la auditoría para las tablas que deseo auditar. En este caso, he decidido auditar las tablas EMP y DEPT.</p>
-<div><pre><code>SELECT audit.audit_table('emp');
-SELECT audit.audit_table('dept');
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/6-7.png" alt="image"></p>
-<p>Ejecuto algunas operaciones DML sobre las tablas:</p>
-<div><pre><code>insert into dept values (50, 'NULO', 'MIAMI');
-insert into emp values (9000, 'KING','PRESIDENT', null, to_date('25-02-2023','dd-mm-yyyy'), 5000, null, 10);
-
-update dept set loc = 'DH' where deptno = 50;
-update emp set ename = 'QUEEN' where empno = 9000;
-
-delete from dept where deptno = 50;
-delete from emp where empno = 9000;
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/7-7.png" alt="image"></p>
-<p>Y ahora, consulto la tabla de auditoría para comprobar que se han registrado las operaciones:</p>
-<div><pre><code>select session_user_name, action, table_name, action_tstamp_clk, client_query from audit.logged_actions;
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/8-7.png" alt="image"></p>
-<p>Hemos podido verificar que las operaciones realizadas en las tablas &quot;emp&quot; y &quot;dept&quot; se han registrado correctamente. Sin embargo, es posible que la salida de la consola de psql no se muestre correctamente formateada.</p>
-<p><em>ejer 4. Realiza una auditoría de grano fino para almacenar información sobre la inserción de empleados con sueldo superior a 2000 en la tabla emp de scott.</em></p>
-<p>Para llevar a cabo esta tarea, el primer paso es crear una tabla que contendrá los datos de auditoría.</p>
-<div><pre><code>create table emp_audit (
-    id serial primary key,
-    empno int,
-    tarea varchar(20),
-    sal decimal(7,2)
-);
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/9-7.png" alt="image"></p>
-<p>Una vez creada la tabla, procederé a escribir un disparador (trigger) que se encargará de registrar en la tabla &quot;emp_audit&quot; los datos de los empleados que se hayan insertado en la tabla &quot;EMP&quot; con un salario superior a 2000.</p>
-<div><pre><code>create or replace function emp_audit() returns trigger as $$
-begin
-    insert into emp_audit (empno, tarea, sal) values (new.empno, TG_OP, new.sal);
-return new;
-end;
-$$ language plpgsql;
-
-create trigger emp_audit
-after insert or update on emp
-for each row
-when (new.sal &gt; 2000)
-execute function emp_audit();
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/10-7.png" alt="image"></p>
-<p>Para probar el disparador, realizaré las siguientes acciones:</p>
-<ol>
-<li>
-<p>Insertaré un empleado en la tabla &quot;EMP&quot; con un salario superior a 2000.</p>
-</li>
-<li>
-<p>Insertaré otro empleado en la tabla &quot;EMP&quot; con un salario superior a 2000.</p>
-</li>
-<li>
-<p>Insertaré otro empleado en la tabla &quot;EMP&quot; con un salario inferior a 2000.</p>
-</li>
-</ol>
-<hr>
-<div><pre><code>insert into emp values(7940, 'MARK', 'CARRIER', null, to_date('01-01-2023','dd-mm-yyyy'), 3000, null, 10);
-insert into emp values(7941, 'RICK', 'CARRIER', null, to_date('01-02-2023','dd-mm-yyyy'), 2001, null, 20);
-insert into emp values(7942, 'RICK', 'CARRIER', null, to_date('01-03-2023','dd-mm-yyyy'), 500, null, 20);
-</code></pre>
-</div><p>Si consulto la tabla de auditoría en este momento, podré observar que las operaciones se han registrado correctamente.</p>
-<div><pre><code>select * from emp_audit;
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/11-7.png" alt="image"></p>
-<h2 id="_8-averigua-si-en-mysql-se-pueden-realizar-los-apartados-1-3-y-4-si-es-asi-documenta-el-proceso-adecuadamente"> <strong>8. Averigua si en MySQL se pueden realizar los apartados 1, 3 y 4. Si es así, documenta el proceso adecuadamente.</strong></h2>
-<p><em>ejer 1. Activa desde SQLPlus la auditoría de los intentos de acceso exitosos al sistema. Comprueba su funcionamiento.</em></p>
-<p>Para consultar las conexiones exitosas en MySQL, se inicia con la modificación del archivo de configuración llamado /etc/mysql/mariadb.conf.d/50-server.cnf:</p>
-<div><pre><code>sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
-</code></pre>
-</div><p>Después de abrir el archivo mencionado anteriormente, se procede a remover los comentarios de las siguientes líneas:</p>
-<div><pre><code>general_log_file       = /var/log/mysql/mysql.log
-general_log            = 1
-
-log_error = /var/log/mysql/error.log
-</code></pre>
-</div><p>Se aplican los permisos adecuados al directorio de registros (logs) de MariaDB y se reinicia el servicio para que los cambios tengan efecto.</p>
-<div><pre><code>sudo chown mysql:mysql /var/log/mysql/
-
-sudo systemctl restart mariadb
-</code></pre>
-</div><p>Para verificar que todo funciona correctamente, se intenta iniciar sesión con un usuario existente y se verifica que la conexión se registra en el archivo de registros general de MySQL, llamado mysql.log.</p>
-<div><pre><code>mysql -u scott -p
-
-sudo tail /var/log/mysql/mysql.log
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/1-8.png" alt="image"></p>
-<p><em>ejer 3. Activa la auditoría de las operaciones DML realizadas por SCOTT. Comprueba su funcionamiento.</em></p>
-<p>En esta sección, siguiendo el mismo enfoque que con PostgreSQL, utilizaremos el plugin server_audit para MySQL. Este complemento debe instalarse para habilitar la capacidad de auditar las operaciones DML. Aunque este plugin también puede registrar conexiones exitosas, como vimos anteriormente, no era necesario usarlo para ese propósito.</p>
-<p>La instalación del plugin es muy sencilla, solo se necesita ejecutar:</p>
-<div><pre><code>INSTALL SONAME 'server_audit';
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/2-8.png" alt="image"></p>
-<p>Una vez instalado, se procede a activar y configurar el plugin para que registre las operaciones DML realizadas por el usuario &quot;scott&quot;:</p>
-<div><pre><code>sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
-</code></pre>
-</div><p>Agrego las siguiente líneas:</p>
-<div><pre><code>[server]
-server_audit_events=CONNECT,QUERY,TABLE
-server_audit_logging=ON
-server_audit_incl_users=scott
-server_audit_file_path=/var/log/mysql/audit.log
-</code></pre>
-</div><p>Reinicio el servicio y ejecuto algunas sentencias de prueba:</p>
-<div><pre><code>sudo systemctl restart mariadb
-</code></pre>
-</div><hr>
-<div><pre><code>mysql -u scott -p
-use scott
-
-insert into dept values(50, 'DH', 'Dos Hermanas');
-update dept set loc = 'Sevilla' where deptno = 50;
-delete from dept where deptno = 50;
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/3-8.png" alt="image"></p>
-<p>Se revisa el archivo de auditoría y se observa que las operaciones se han registrado correctamente.</p>
-<div><pre><code>sudo tail /var/log/mysql/audit.log -n 10
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/4-8.png" alt="image"></p>
-<p><em>ejer 4. Realiza una auditoría de grano fino para almacenar información sobre la inserción de empleados con sueldo superior a 2000 en la tabla emp de scott.</em></p>
-<p>Siguiendo el enfoque utilizado en PostgreSQL, se debe crear un trigger que se ejecute cada vez que se inserte un nuevo registro en la tabla &quot;emp&quot;. El trigger debe registrar esta operación en la tabla &quot;emp_audit&quot; para permitir una auditoría más detallada.</p>
-<p>Creo la tabla:</p>
-<div><pre><code>create table emp_audit (
-    id serial primary key,
-    empno int,
-    tarea varchar(20),
-    sal decimal(7,2)
-);
-</code></pre>
-</div><p><img src="./../images/ABD/auditoria/5-8.png" alt="image"></p>
-<p>Creo el trigger para los inserts:</p>
-<p>delimiter //</p>
-<p>create trigger emp_audit_insert
-after insert on emp
-for each row
-begin
-if new.sal &gt; 2000 then
-insert into emp_audit (empno, tarea, sal) values (new.empno, 'insert', new.sal);
-end if;
-end //</p>
-<p>delimiter ;</p>
-<p><img src="./../images/ABD/auditoria/6-8.png" alt="image"></p>
-<p>Para probar el disparador, realizaré las siguientes acciones:</p>
-<ol>
-<li>
-<p>Insertaré un empleado en la tabla &quot;EMP&quot; con un salario superior a 2000.</p>
-</li>
-<li>
-<p>Insertaré otro empleado en la tabla &quot;EMP&quot; con un salario superior a 2000.</p>
-</li>
-<li>
-<p>Insertaré otro empleado en la tabla &quot;EMP&quot; con un salario inferior a 2000.</p>
-</li>
-</ol>
-<hr>
-<div><pre><code>insert into emp values(7940, 'MARK', 'CARRIER', null, str_to_date('01/01/2023', '%d/%m/%Y'), 3000, null, 10);
-insert into emp values(7941, 'RICK', 'CARRIER', null, str_to_date('01/02/2023', '%d/%m/%Y'), 2001, null, 20);
-insert into emp values(7942, 'RICK', 'CARRIER', null, str_to_date('01/03/2023', '%d/%m/%Y'), 500, null, 20);
-</code></pre>
-</div><p>Si consulto la tabla de auditoría en este momento, podré observar que las operaciones se han registrado correctamente.</p>
-<p>select * from emp_audit;</p>
-<p><img src="./../images/ABD/auditoria/7-8.png" alt="image"></p>
-<h2 id="_9-averigua-las-posibilidades-que-ofrece-mongodb-para-auditar-los-cambios-que-va-sufriendo-un-documento-demuestra-su-funcionamiento"> <strong>9. Averigua las posibilidades que ofrece MongoDB para auditar los cambios que va sufriendo un documento. Demuestra su funcionamiento.</strong></h2>
-<h2 id="_10-averigua-si-en-mongodb-se-pueden-auditar-los-accesos-a-una-coleccion-concreta-demuestra-su-funcionamiento"> <strong>10. Averigua si en MongoDB se pueden auditar los accesos a una colección concreta. Demuestra su funcionamiento.</strong></h2>
+</div><p><img src="./../images/SAD/cortafuegos1/tarea6-3.png" alt="image"></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -4715,183 +4780,437 @@ server {
 ]]></content:encoded>
     </item>
     <item>
-      <title>Cortafuegos I: De nodo con iptables</title>
-      <link>https://github.com/oscarlucas22/practicas/cortafuegoI/</link>
-      <guid>https://github.com/oscarlucas22/practicas/cortafuegoI/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">Cortafuegos I: De nodo con iptables</source>
+      <title>Auditoría</title>
+      <link>https://github.com/oscarlucas22/practicas/auditoria/</link>
+      <guid>https://github.com/oscarlucas22/practicas/auditoria/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">Auditoría</source>
       <category>practicas</category>
-      <content:encoded><![CDATA[<h1 id="cortafuegos-i-de-nodo-con-iptables"> Cortafuegos I: De nodo con iptables</h1>
-<p>Página de la <a href="https://fp.josedomingo.org/seguridadgs/u03/ejercicio1.html" target="_blank" rel="noopener noreferrer">practica<i>Content not supported</i></a></p>
-<hr>
-<p>Vamos a crear nuestra maquina sobre la que vamos a trabajar</p>
-<p><a href="https://pastebin.com/xJ6NjdGT" target="_blank" rel="noopener noreferrer">fichero<i>Content not supported</i></a></p>
-<p>Cuando tengamos el fichero nos hiremos a Openstack e iniciaremos la maquina a traves de este fichero, sigue los siguientes pasos para crearla:</p>
-<p><img src="./../images/SAD/cortafuegos1/creacion1.png" alt="image"></p>
-<p><img src="./../images/SAD/cortafuegos1/creacion2.png" alt="image"></p>
-<p>Importamos el fichero</p>
-<p><img src="./../images/SAD/cortafuegos1/creacion3.png" alt="image"></p>
-<p>Le daremos a &quot;Siguiente&quot; y rellenaremos las siguientes casillas:</p>
-<p><img src="./../images/SAD/cortafuegos1/creacion4.png" alt="image"></p>
-<p>Y ya comenzaria a instalarse. Una vez instalada nos saldria en la sección de &quot;Instancias&quot;</p>
-<hr>
-<p>Vamos a realizar los primeros pasos para implementar un cortafuegos en un nodo de una red, aquel que se ejecuta en el propio equipo que trata de proteger, lo que a veces se denomina un cortafuegos personal.</p>
-<h2 id="limpieza-de-las-reglas-previas"> Limpieza de las reglas previas</h2>
-<div><pre><code>iptables -F
-iptables -t nat -F
-iptables -Z
-iptables -t nat -Z
+      <content:encoded><![CDATA[<h1 id="auditoria"> Auditoría</h1>
+<h2 id="_1-activa-desde-sql-plus-la-auditoria-de-los-intentos-de-acceso-exitosos-al-sistema-comprueba-su-funcionamiento"> <strong>1. Activa desde SQL*Plus la auditoría de los intentos de acceso exitosos al sistema. Comprueba su funcionamiento.</strong></h2>
+<p>Visualizaremos los parametros de auditorias:</p>
+<div><pre><code>show parameter AUDIT
 </code></pre>
-</div><h2 id="vamos-a-permitir-ssh"> Vamos a permitir ssh</h2>
-<p>Cómo estamos conectado a la máquina por ssh, vamos a permitir la conexión ssh desde la red 172.22.0.0/16, antes de cambiar las políticas por defecto a DROP, para no perder la conexión:</p>
-<div><pre><code>iptables -A INPUT -s 172.22.0.0/16 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
-iptables -A OUTPUT -d 172.22.0.0/16 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
+</div><p><img src="./../images/ABD/auditoria/1-1.png" alt="image"></p>
+<p>Nos aseguraremos de que el parámetro <code>AUDIT_TRAIL</code> esté establecido en DB. Puedes verificarlo ejecutando el siguiente comando:</p>
+<div><pre><code>show parameter audit_trail
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/2-1.png" alt="image"></p>
+<p>Si el valor devuelto no es DB, puedes establecerlo con el siguiente comando:</p>
+<div><pre><code>alter system set audit_trail=db scope=spfile;
+</code></pre>
+</div><p>Activamos la auditoría para los intentos de acceso exitosos con el siguiente comando:</p>
+<div><pre><code>audit session whenever successful;
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/3-1.png" alt="image"></p>
+<p>Comprobamos su activación.</p>
+<div><pre><code>audit create session by lucas;
+</code></pre>
+</div><hr>
+<div><pre><code>select * from dba_priv_audit_opts;
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/4-1.png" alt="image"></p>
+<p>Comprobamos el funcionamiento:</p>
+<p>Primero iniciaremos sesión en la base de datos SQL*Plus con una cuenta de usuario existente con cualquiera de los siguientes comandos:</p>
+<div><pre><code>sqlplus
+</code></pre>
+</div><hr>
+<div><pre><code>sqlplus username/passwd
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/5-1.png" alt="image"></p>
+<p>Si la autenticación es exitosa, la sesión se iniciará y deberías ver el prompt de SQL*Plus. Puedes comprobar que la auditoría está funcionando consultando la tabla de registros de auditoría <code>dba_audit_session</code>. Puedes hacerlo ejecutando el siguiente comando:</p>
+<div><pre><code>select os_username, username, extended_timestamp from dba_audit_session where action_name = 'LOGON' and returncode = 0;
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/6-1.png" alt="image"></p>
+<p>Para finalizar, desactivaremos la auditoría.</p>
+<div><pre><code>noaudit session whenever successful; 
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/7-1.png" alt="image"></p>
+<h2 id="_2-realiza-un-procedimiento-en-pl-sql-que-te-muestre-los-accesos-fallidos-junto-con-el-motivo-de-los-mismos-transformando-el-codigo-de-error-almacenado-en-un-mensaje-de-texto-comprensible-contempla-todos-los-motivos-posibles-para-que-un-acceso-sea-fallido"> <strong>2. Realiza un procedimiento en PL/SQL que te muestre los accesos fallidos junto con el motivo de los mismos, transformando el código de error almacenado en un mensaje de texto comprensible. Contempla todos los motivos posibles para que un acceso sea fallido.</strong></h2>
+<p>En primer lugar debemos de activar la auditoria de los aciertos fallidos:</p>
+<div><pre><code>audit create session whenever not successful;
+</code></pre>
+</div><p>Función para devolver el motivo del error:</p>
+<div><pre><code>create or replace function DevolverMotivo (p_error number)
+return varchar2
+is
+    mensaje varchar2(40);
+begin
+    case p_error
+        when 1017 then 
+            mensaje:='Usuario/Password Incorrecta';
+        when 28000 THEN
+            mensaje:='Cuenta Bloqueada';
+        when 1045 then
+            mensaje:='Privilegios insuficientes';
+        else
+            mensaje:='Error Desconocido';
+    end case;
+return mensaje;
+end;
+/
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/1-2.png" alt="image"></p>
+<p>Procedimiento:</p>
+<div><pre><code>create or replace procedure MostrarAccesosFallidos
+is
+    cursor c_cursor is 
+    select username, timestamp, returncode from dba_audit_session where action_name = 'LOGON' and returncode != 0;
+    v_motivo varchar2(40);
+begin
+    dbms_output.put_line(chr(10)||chr(9)||chr(9)||'-- AUDITORIA DE ACCESOS FALLIDOS --');
+    dbms_output.put_line(chr(10)||chr(9)||'Usuario'||chr(9)||chr(9)||'Fecha'||chr(9)||chr(9)||chr(9)||
+        'Motivo');
+    dbms_output.put_line(chr(9)||'----------------------------------------------------------------');
+    for var in c_cursor loop
+        v_motivo:=DevolverMotivo(var.returncode);
+        dbms_output.put_line(chr(10)||chr(9)||var.username||chr(9)||chr(9)||to_char(var.timestamp,'YY/MM/DD DY HH24:MI')||chr(9)||v_motivo);
+    end loop; 
+end;
+/
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/2-2.png" alt="image"></p>
+<p>Comprobación del funcionamiento:</p>
+<p>Para hacer la prueba voy a acceder con los usuarios &quot;lucas&quot;, &quot;oscar&quot; y &quot;oscarlucas&quot;. Con el usuario &quot;lucas&quot; voy a fallar en la contraseña, el usuario &quot;oscar&quot; esta bloqueado y el usuario &quot;oscarlucas&quot; no tiene privilegios.</p>
+<p><img src="./../images/ABD/auditoria/3-2.png" alt="image"></p>
+<p>Y ejecutaremos el procedimiento para ver su funcionamiento:</p>
+<div><pre><code>exec MostrarAccesosFallidos;
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/4-2.png" alt="image"></p>
+<p>Para finalizar, desactivamos la auditoria</p>
+<div><pre><code>noaudit create session whenever not successful;
+</code></pre>
+</div><h2 id="_3-activa-la-auditoria-de-las-operaciones-dml-realizadas-por-scott-comprueba-su-funcionamiento"> <strong>3. Activa la auditoría de las operaciones DML realizadas por SCOTT. Comprueba su funcionamiento.</strong></h2>
+<p><a href="https://pastebin.com/pCBR7MwS" target="_blank" rel="noopener noreferrer">Esquema scott<i>Content not supported</i></a></p>
+<p>Activamos la auditoría.</p>
+<div><pre><code>audit insert table, update table, delete table by scott by access;
+</code></pre>
+</div><p>Donde:</p>
+<ul>
+<li>
+<p>BY ACCESS : Realiza un registro por cada acción.</p>
+</li>
+<li>
+<p>BY SESSION : Realiza un registro de todas las acciones por cada sesión iniciada.</p>
+</li>
+</ul>
+<p>Realizamos una prueba:</p>
+<div><pre><code>conn scott/tiger
+insert into dept values(50, 'DH', 'Dos Hermanas');
+update dept set loc = 'Sevilla' where deptno = 50;
+delete from dept where deptno = 50;
+commit;
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/1-3.png" alt="image"></p>
+<p>Para ver las acciones realizadas por SCOTT:</p>
+<div><pre><code>audit all by scott by access;
 
-iptables -A INPUT -s 172.29.0.0/16 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
-iptables -A OUTPUT -d 172.29.0.0/16 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
+select obj_name, action_name, timestamp from dba_audit_object where username = 'SCOTT';
 </code></pre>
-</div><h2 id="politica-por-defecto"> Política por defecto</h2>
-<div><pre><code>iptables -P INPUT DROP
-iptables -P OUTPUT DROP
+</div><p><img src="./../images/ABD/auditoria/2-3.png" alt="image"></p>
+<h2 id="_4-realiza-una-auditoria-de-grano-fino-para-almacenar-informacion-sobre-la-insercion-de-empleados-con-sueldo-superior-a-2000-en-la-tabla-emp-de-scott"> <strong>4. Realiza una auditoría de grano fino para almacenar información sobre la inserción de empleados con sueldo superior a 2000 en la tabla emp de scott.</strong></h2>
+<p>Creación de la auditoría de grano fino:</p>
+<div><pre><code>begin
+    dbms_fga.add_policy (
+        object_schema      =&gt;  'scott',
+        object_name        =&gt;  'emp',
+        policy_name        =&gt;  'politica1',
+        audit_condition    =&gt;  'sal &gt; 2000',
+        statement_types    =&gt;  'insert'
+    );
+end;
+/
 </code></pre>
-</div><p>Comprobamos que el equipo no puede acceder a ningún servicio ni de Internet ni de la red local, ya que la política lo impide.</p>
-<p><img src="./../images/SAD/cortafuegos1/1.png" alt="image"></p>
-<p><img src="./../images/SAD/cortafuegos1/1.1.png" alt="image"></p>
-<h2 id="permitimos-trafico-para-la-interfaz-loopback"> Permitimos tráfico para la interfaz loopback</h2>
-<div><pre><code>iptables -A INPUT -i lo -p icmp -j ACCEPT
-iptables -A OUTPUT -o lo -p icmp -j ACCEPT
+</div><p><img src="./../images/ABD/auditoria/1-4.png" alt="image"></p>
+<p>Ver la política creada:</p>
+<div><pre><code>select object_schema,object_name,policy_name,policy_text from dba_audit_policies;
 </code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/2.png" alt="image"></p>
-<h2 id="peticiones-y-respuestas-protocolo-icmp"> Peticiones y respuestas protocolo ICMP</h2>
-<div><pre><code>iptables -A INPUT -i ens3 -p icmp --icmp-type echo-reply -j ACCEPT
-iptables -A OUTPUT -o ens3 -p icmp --icmp-type echo-request -j ACCEPT
+</div><p><img src="./../images/ABD/auditoria/2-4.png" alt="image"></p>
+<p>Realizamos una prueba:</p>
+<div><pre><code>conn scott/tiger
 </code></pre>
-</div><p>Comprobamos su funcionamiento haciendo ping a una IP pública:</p>
-<p><img src="./../images/SAD/cortafuegos1/3.png" alt="image"></p>
-<h2 id="consultas-y-respuestas-dns"> Consultas y respuestas DNS</h2>
-<div><pre><code>iptables -A OUTPUT -o ens3 -p udp --dport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
-iptables -A INPUT -i ens3 -p udp --sport 53 -m state --state ESTABLISHED -j ACCEPT
+</div><hr>
+<div><pre><code>insert into emp values(7940, 'MARK', 'CARRIER', null, sysdate, 3000, null, 10);
+insert into emp values(7941, 'RICK', 'CARRIER', null, sysdate, 2001, null, 20);
+
+commit;
 </code></pre>
-</div><p>Comprobamos su funcionamiento con una consulta DNS:</p>
-<p><img src="./../images/SAD/cortafuegos1/4.png" alt="image"></p>
-<h2 id="trafico-http-que-la-maquina-pueda-navegar"> Tráfico http (que la máquina pueda navegar)</h2>
-<div><pre><code>iptables -A OUTPUT -o ens3 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
-iptables -A INPUT -i ens3 -p tcp --sport 80 -m state --state ESTABLISHED -j ACCEPT
+</div><p>Para visualizar las acciones realizadas.</p>
+<div><pre><code>select sql_text from dba_fga_audit_trail where policy_name = 'POLITICA1';
 </code></pre>
-</div><p>Comprobamos que funciona accediendo a un servicio http (!no https)</p>
-<p><img src="./../images/SAD/cortafuegos1/5.png" alt="image"></p>
-<h2 id="trafico-https"> Tráfico https</h2>
-<div><pre><code>iptables -A OUTPUT -o ens3 -p tcp --dport 443 -m state --state NEW,ESTABLISHED -j ACCEPT
-iptables -A INPUT -i ens3 -p tcp --sport 443 -m state --state ESTABLISHED -j ACCEPT
+</div><p><img src="./../images/ABD/auditoria/3-4.png" alt="image"></p>
+<p>Para eliminar la auditoría de grano fino:</p>
+<div><pre><code>begin
+    dbms_fga.drop_policy (
+        object_schema      =&gt;  'scott',
+        object_name        =&gt;  'emp',
+        policy_name        =&gt;  'politica1'      
+    );
+end;
+/
 </code></pre>
-</div><p>Comprobamos que funciona abriendo un navegador y accediendo a cualquier sitio web (hoy en día la mayoría son https). En mi caso lo he hecho con lynx:</p>
-<div><pre><code>apt install lynx
+</div><p><img src="./../images/ABD/auditoria/4-4.png" alt="image"></p>
+<h2 id="_5-explica-la-diferencia-entre-auditar-una-operacion-by-access-o-by-session-ilustrandolo-con-ejemplos"> <strong>5. Explica la diferencia entre auditar una operación by access o by session ilustrándolo con ejemplos.</strong></h2>
+<p><strong>BY ACCESS</strong>:</p>
+<p>La auditoría por acceso implica registrar una entrada de auditoría cada vez que se lleva a cabo una operación de manipulación de datos (DML). Por ejemplo, esta técnica de auditoría permite registrar si un usuario ha insertado, actualizado o eliminado una fila de una tabla.</p>
+<p>Primero vaciamos la tabla de auditoria eliminando los registros</p>
+<div><pre><code>truncate table aud$;
 </code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/6.png" alt="image"></p>
-<h2 id="permitimos-el-acceso-a-nuestro-servidor-web"> Permitimos el acceso a nuestro servidor web</h2>
-<div><pre><code>iptables -A INPUT -i ens3 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
-iptables -A OUTPUT -o ens3 -p tcp --sport 80 -m state --state ESTABLISHED -j ACCEPT
+</div><p>Despues activamos la auditoría.</p>
+<div><pre><code>audit insert table, update table, delete table by scott by access;
 </code></pre>
-</div><p>En mi caso he vuelto a hacer la comprobación por lynx (lynx &quot;mi-ip-flotante&quot;)</p>
-<p><img src="./../images/SAD/cortafuegos1/7.png" alt="image"></p>
+</div><p>Realizaremos una serie de pruebas.</p>
+<div><pre><code>conn scott/tiger
+
+insert into scott.dept values(60, 'OLL', 'ESPAÑA');
+update scott.dept set loc = 'MIAMI' where deptno = 60;
+delete from scott.dept where deptno = 60;
+
+commit;
+</code></pre>
+</div><p>Cambiamos al usuario administrador y comparamos registros:</p>
+<div><pre><code>select username, action_name, timestamp, obj_name from dba_audit_object where username = 'SCOTT';
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/1-5.png" alt="image"></p>
+<p><strong>BY SESSION</strong>:</p>
+<p>La auditoría por sesión, en contraste con la auditoría por acceso, registra únicamente una entrada de auditoría por sesión. Aunque esta técnica de auditoría proporciona un registro menos detallado, mejora el rendimiento de la base de datos.</p>
+<p>Primero vaciamos la tabla de auditoria eliminando los registros</p>
+<div><pre><code>truncate table aud$;
+</code></pre>
+</div><p>Despues activamos la auditoría.</p>
+<div><pre><code>audit insert table, update table, delete table by scott by session;
+</code></pre>
+</div><p>Realizaremos una serie de pruebas.</p>
+<div><pre><code>conn scott/tiger
+
+insert into scott.dept values(60, 'OLL', 'ESPAÑA');
+update scott.dept set loc = 'MIAMI' where deptno = 60;
+delete from scott.dept where deptno = 60;
+
+commit;
+</code></pre>
+</div><p>Cambiamos al usuario administrador y comparamos registros:</p>
+<div><pre><code>select username, action_name, timestamp, obj_name from dba_audit_object where username = 'SCOTT';
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/2-5.png" alt="image"></p>
+<h2 id="_6-documenta-las-diferencias-entre-los-valores-db-y-db-extended-del-parametro-audit-trail-de-oracle-demuestralas-poniendo-un-ejemplo-de-la-informacion-sobre-una-operacion-concreta-recopilada-con-cada-uno-de-ellos"> <strong>6. Documenta las diferencias entre los valores db y db, extended del parámetro audit_trail de ORACLE. Demuéstralas poniendo un ejemplo de la información sobre una operación concreta recopilada con cada uno de ellos.</strong></h2>
+<p>Las diferencias son mínimas y es que solo se diferencia en que db extend aparte de almacenarse en SYS.AUD$ también escribe valores en las columnas SQLBIND y SQLTEXT.</p>
+<p>Ejemplo:</p>
+<p>Para este ejemplo lo primero que deberemos hacer es activar las auditorias:</p>
+<div><pre><code>show parameter audit;
+
+alter system set audit_trail = db, extended scope = spfile;
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/1-6.png" alt="image"></p>
+<p>Deberemos de reiniciar la base de datos.</p>
+<div><pre><code>shutdown
+startup
+</code></pre>
+</div><p>Y comprobamos como hemos añadido un nuevo valor en la auditoria:</p>
+<div><pre><code>show parameter audit;
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/2-6.png" alt="image"></p>
+<h2 id="_7-averigua-si-en-postgres-se-pueden-realizar-los-cuatro-primeros-apartados-si-es-asi-documenta-el-proceso-adecuadamente"> <strong>7. Averigua si en Postgres se pueden realizar los cuatro primeros apartados. Si es así, documenta el proceso adecuadamente.</strong></h2>
+<p><em>ejer 1. Activa desde SQL</em>Plus la auditoría de los intentos de acceso exitosos al sistema. Comprueba su funcionamiento.*</p>
+<p>El parámetro log_connections en PostgreSQL se utiliza para realizar la auditoría de los accesos exitosos al sistema.</p>
+<p>Si queremos probar la funcionalidad del registro de accesos exitosos en PostgreSQL, debemos activar el parámetro correspondiente.</p>
+<div><pre><code>sudo -u postgres psql
+
+ALTER SYSTEM SET log_connections = 'ON';
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/1-7.png" alt="image"></p>
+<p>Reiniciamos el servicio:</p>
+<div><pre><code>sudo systemctl restart postgresql
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/2-7.png" alt="image"></p>
+<p>Después de activar el parámetro, podemos verificar los registros de acceso exitosos en PostgreSQL accediendo al archivo /var/log/postgresql/postgresql-13-main.log (el nombre del archivo puede variar según la versión de PostgreSQL instalada y la ubicación puede ser diferente según el sistema operativo). Por ejemplo, si nos hemos conectado con el usuario &quot;scott&quot;, podemos comprobar si se ha registrado el acceso correctamente revisando el archivo de registros.</p>
+<div><pre><code>tail /var/lib/postgresql/13/main/pg_log/postgresql-2023-03-01_140147.csv
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/3-7.png" alt="image"></p>
+<p>En el archivo de registros, podremos observar la información de la conexión exitosa realizada con el usuario &quot;scott&quot;.</p>
+<p><em>ejer 2. Realiza un procedimiento en PL/SQL que te muestre los accesos fallidos junto con el motivo de los mismos, transformando el código de error almacenado en un mensaje de texto comprensible. Contempla todos los motivos posibles para que un acceso sea fallido.</em></p>
+<p>Incluso si intentas acceder al sistema utilizando un usuario inexistente o una contraseña incorrecta, cualquier falla en el intento se registrará en el archivo <code>/var/lib/postgresql/13/main/pg_log/postgresql-2023-03-01_140147.csv</code>. Para verificar esto, puedes intentar conectarte al sistema utilizando el nombre de usuario &quot;scott&quot; y una contraseña incorrecta.</p>
+<div><pre><code>#Usuario existente (fallo contraseña)
+psql -h localhost -U scott -d scott
+
+#Usuario inexixtente
+psql -h localhost -U auditoria -d scott
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/4-7.png" alt="image"></p>
+<p><em>ejer 3. Activa la auditoría de las operaciones DML realizadas por SCOTT. Comprueba su funcionamiento.</em></p>
+<p>En lugar de desarrollar una herramienta propia para la auditoría de operaciones DML, utilizaré una herramienta de terceros llamada audit-trigger. Esta herramienta ya proporciona todas las funciones necesarias para llevar a cabo la auditoría, aunque también podríamos optar por utilizar otras herramientas como pgaudit.</p>
+<p>Antes de llevar a cabo la auditoría, descargo el archivo .sql que contiene la tabla de auditoría y los triggers necesarios para su creación.</p>
+<div><pre><code>wget https://raw.githubusercontent.com/2ndQuadrant/audit-trigger/master/audit.sql
+</code></pre>
+</div><p>Importo el fichero en la base de datos:</p>
+<div><pre><code>\i audit.sql
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/5-7.png" alt="image"></p>
+<p>Una vez que he descargado el archivo .sql, puedo activar la auditoría para las tablas que deseo auditar. En este caso, he decidido auditar las tablas EMP y DEPT.</p>
+<div><pre><code>SELECT audit.audit_table('emp');
+SELECT audit.audit_table('dept');
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/6-7.png" alt="image"></p>
+<p>Ejecuto algunas operaciones DML sobre las tablas:</p>
+<div><pre><code>insert into dept values (50, 'NULO', 'MIAMI');
+insert into emp values (9000, 'KING','PRESIDENT', null, to_date('25-02-2023','dd-mm-yyyy'), 5000, null, 10);
+
+update dept set loc = 'DH' where deptno = 50;
+update emp set ename = 'QUEEN' where empno = 9000;
+
+delete from dept where deptno = 50;
+delete from emp where empno = 9000;
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/7-7.png" alt="image"></p>
+<p>Y ahora, consulto la tabla de auditoría para comprobar que se han registrado las operaciones:</p>
+<div><pre><code>select session_user_name, action, table_name, action_tstamp_clk, client_query from audit.logged_actions;
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/8-7.png" alt="image"></p>
+<p>Hemos podido verificar que las operaciones realizadas en las tablas &quot;emp&quot; y &quot;dept&quot; se han registrado correctamente. Sin embargo, es posible que la salida de la consola de psql no se muestre correctamente formateada.</p>
+<p><em>ejer 4. Realiza una auditoría de grano fino para almacenar información sobre la inserción de empleados con sueldo superior a 2000 en la tabla emp de scott.</em></p>
+<p>Para llevar a cabo esta tarea, el primer paso es crear una tabla que contendrá los datos de auditoría.</p>
+<div><pre><code>create table emp_audit (
+    id serial primary key,
+    empno int,
+    tarea varchar(20),
+    sal decimal(7,2)
+);
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/9-7.png" alt="image"></p>
+<p>Una vez creada la tabla, procederé a escribir un disparador (trigger) que se encargará de registrar en la tabla &quot;emp_audit&quot; los datos de los empleados que se hayan insertado en la tabla &quot;EMP&quot; con un salario superior a 2000.</p>
+<div><pre><code>create or replace function emp_audit() returns trigger as $$
+begin
+    insert into emp_audit (empno, tarea, sal) values (new.empno, TG_OP, new.sal);
+return new;
+end;
+$$ language plpgsql;
+
+create trigger emp_audit
+after insert or update on emp
+for each row
+when (new.sal &gt; 2000)
+execute function emp_audit();
+</code></pre>
+</div><p><img src="./../images/ABD/auditoria/10-7.png" alt="image"></p>
+<p>Para probar el disparador, realizaré las siguientes acciones:</p>
+<ol>
+<li>
+<p>Insertaré un empleado en la tabla &quot;EMP&quot; con un salario superior a 2000.</p>
+</li>
+<li>
+<p>Insertaré otro empleado en la tabla &quot;EMP&quot; con un salario superior a 2000.</p>
+</li>
+<li>
+<p>Insertaré otro empleado en la tabla &quot;EMP&quot; con un salario inferior a 2000.</p>
+</li>
+</ol>
 <hr>
-<h2 id="ejercicios"> Ejercicios</h2>
-<p><strong>1. Permite poder hacer conexiones ssh al exterior.</strong></p>
-<p>Vamos a añadir las reglas que permitan realizar conexiones ssh al exterior:</p>
-<div><pre><code>iptables -A INPUT -i ens3 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
-iptables -A OUTPUT -o ens3 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+<div><pre><code>insert into emp values(7940, 'MARK', 'CARRIER', null, to_date('01-01-2023','dd-mm-yyyy'), 3000, null, 10);
+insert into emp values(7941, 'RICK', 'CARRIER', null, to_date('01-02-2023','dd-mm-yyyy'), 2001, null, 20);
+insert into emp values(7942, 'RICK', 'CARRIER', null, to_date('01-03-2023','dd-mm-yyyy'), 500, null, 20);
 </code></pre>
-</div><p>Probemos si podemos conectarnos por ssh a otra máquina:</p>
-<p><img src="./../images/SAD/cortafuegos1/tarea1-1.png" alt="image"></p>
-<p>Efectivamente, podemos conectarnos, por lo que podemos decir que la regla funciona correctamente.</p>
-<p><strong>2. Deniega el acceso a tu servidor web desde una ip concreta.</strong></p>
-<p>Antes de agregar la regla de bloqueo, es importante considerar las reglas de INPUT que ya tenemos establecidas:</p>
-<div><pre><code>iptables -L -v -n
+</div><p>Si consulto la tabla de auditoría en este momento, podré observar que las operaciones se han registrado correctamente.</p>
+<div><pre><code>select * from emp_audit;
 </code></pre>
-</div><p>Si agregamos la regla de bloqueo al final, no sería efectiva, ya que siempre se superpondría con la regla previa que permite todo el tráfico HTTP entrante.</p>
-<p>Para solucionarlo, añadimos por encima la nueva regla.</p>
-<p>Necesitamos saber el número de línea específico, así que ejecutamos el siguiente comando:</p>
-<div><pre><code>iptables -L -v -n --line-numbers
+</div><p><img src="./../images/ABD/auditoria/11-7.png" alt="image"></p>
+<h2 id="_8-averigua-si-en-mysql-se-pueden-realizar-los-apartados-1-3-y-4-si-es-asi-documenta-el-proceso-adecuadamente"> <strong>8. Averigua si en MySQL se pueden realizar los apartados 1, 3 y 4. Si es así, documenta el proceso adecuadamente.</strong></h2>
+<p><em>ejer 1. Activa desde SQLPlus la auditoría de los intentos de acceso exitosos al sistema. Comprueba su funcionamiento.</em></p>
+<p>Para consultar las conexiones exitosas en MySQL, se inicia con la modificación del archivo de configuración llamado /etc/mysql/mariadb.conf.d/50-server.cnf:</p>
+<div><pre><code>sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
 </code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/tarea2-0.png" alt="image"></p>
-<p>Vamos a añadir la regla de bloqueo en la posición marcada para que funcione:</p>
-<div><pre><code>iptables -I INPUT 6 -s 10.0.0.216/32 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j DROP
+</div><p>Después de abrir el archivo mencionado anteriormente, se procede a remover los comentarios de las siguientes líneas:</p>
+<div><pre><code>general_log_file       = /var/log/mysql/mysql.log
+general_log            = 1
+
+log_error = /var/log/mysql/error.log
 </code></pre>
-</div><p>Esta regla permitirá el acceso a nuestro servidor web desde cualquier máquina que no tenga la dirección IP especificada. Verifiquemos si funciona:</p>
-<ul>
-<li>Desde otra ip que no es la bloqueada:</li>
-</ul>
-<p><img src="./../images/SAD/cortafuegos1/tarea2-1.png" alt="image"></p>
-<ul>
-<li>Desde la ip bloqueda:</li>
-</ul>
-<p><img src="./../images/SAD/cortafuegos1/tarea2-2.png" alt="image"></p>
-<p>Como vemos, podemos acceder desde cualquier máquina que no sea la que tenga la ip que tenemos bloqueada.</p>
-<p><strong>3. Permite hacer consultas DNS sólo al servidor 192.168.202.2. Comprueba que no puedes hacer un dig @1.1.1.1.</strong></p>
-<p>En esta situación, estamos enfrentando un problema similar al del ejercicio anterior. Sin embargo, en este caso necesitamos eliminar dos reglas antiguas que permitían todo el tráfico DNS saliente.</p>
-<div><pre><code>iptables -L -v -n --line-numbers
+</div><p>Se aplican los permisos adecuados al directorio de registros (logs) de MariaDB y se reinicia el servicio para que los cambios tengan efecto.</p>
+<div><pre><code>sudo chown mysql:mysql /var/log/mysql/
+
+sudo systemctl restart mariadb
 </code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/tarea3-0.png" alt="image"></p>
-<p>Aun si añadiéramos las nuevas reglas por encima de estas, si ejecutamos el comando <code>dig</code> a 1.1.1.1, se produciría una coincidencia con estas reglas, lo que permitiría el tráfico. Esto no es lo que buscamos.</p>
-<p>Primero, borramos las reglas antiguas:</p>
-<div><pre><code>iptables -D INPUT 5
-iptables -D OUTPUT 5
+</div><p>Para verificar que todo funciona correctamente, se intenta iniciar sesión con un usuario existente y se verifica que la conexión se registra en el archivo de registros general de MySQL, llamado mysql.log.</p>
+<div><pre><code>mysql -u scott -p
+
+sudo tail /var/log/mysql/mysql.log
 </code></pre>
-</div><p>Despues añadimos las siguientes reglas:</p>
-<div><pre><code>iptables -A INPUT -s 192.168.202.2/32 -p udp --sport 53 -m state --state ESTABLISHED -j ACCEPT
-iptables -A OUTPUT -d 192.168.202.2/32 -p udp --dport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
+</div><p><img src="./../images/ABD/auditoria/1-8.png" alt="image"></p>
+<p><em>ejer 3. Activa la auditoría de las operaciones DML realizadas por SCOTT. Comprueba su funcionamiento.</em></p>
+<p>En esta sección, siguiendo el mismo enfoque que con PostgreSQL, utilizaremos el plugin server_audit para MySQL. Este complemento debe instalarse para habilitar la capacidad de auditar las operaciones DML. Aunque este plugin también puede registrar conexiones exitosas, como vimos anteriormente, no era necesario usarlo para ese propósito.</p>
+<p>La instalación del plugin es muy sencilla, solo se necesita ejecutar:</p>
+<div><pre><code>INSTALL SONAME 'server_audit';
 </code></pre>
-</div><p>Vemos que no podemos hacer un dig @1.1.1.1:</p>
-<p><img src="./../images/SAD/cortafuegos1/tarea3-1.png" alt="image"></p>
-<p>Pero si podemos usar el servidor dns que hay en “192.168.202.2”:</p>
-<p><img src="./../images/SAD/cortafuegos1/tarea3-2.png" alt="image"></p>
-<p><strong>4. No permitir el acceso al servidor web de www.josedomingo.org (Tienes que utilizar la ip). ¿Puedes acceder a fp.josedomingo.org?</strong></p>
-<p>Una vez más, si agregamos la siguiente regla al final, tendremos un conflicto de reglas, ya que antes tenemos una que permite todo el tráfico HTTP de salida. Los emparejamientos siempre se detendrían ahí.</p>
-<div><pre><code>iptables -L -v -n --line-numbers
+</div><p><img src="./../images/ABD/auditoria/2-8.png" alt="image"></p>
+<p>Una vez instalado, se procede a activar y configurar el plugin para que registre las operaciones DML realizadas por el usuario &quot;scott&quot;:</p>
+<div><pre><code>sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
 </code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/tarea4-0.png" alt="image"></p>
-<p>Es necesario agregar la regla de bloqueo por encima de la regla previamente mostrada:</p>
-<div><pre><code>iptables -I OUTPUT 5 -d 37.187.119.60/32 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j DROP
+</div><p>Agrego las siguiente líneas:</p>
+<div><pre><code>[server]
+server_audit_events=CONNECT,QUERY,TABLE
+server_audit_logging=ON
+server_audit_incl_users=scott
+server_audit_file_path=/var/log/mysql/audit.log
 </code></pre>
-</div><p>Ahora no podemos acceder a esa url desde esta máquina debido a la regla del cortafuegos:</p>
-<p><img src="./../images/SAD/cortafuegos1/tarea4-1.png" alt="image"></p>
-<p>Tampoco podemos acceder a fp.josedomingo.org, ya que tiene la misma ip, y la tenemos bloqueada:</p>
-<p><img src="./../images/SAD/cortafuegos1/tarea4-2.png" alt="image"></p>
-<p>Sin embargo, si que podemos acceder a otros dominios que no tengan esa ip:</p>
-<p><img src="./../images/SAD/cortafuegos1/tarea4-3.png" alt="image"></p>
-<p>Como vemos, la regla funciona bien, pero debemos tener cuidado al bloquear ciertas ips, ya que podríamos estar bloqueando más servicios de los que queremos.</p>
-<p><strong>5. Permite mandar un correo usando nuestro servidor de correo: babuino-smtp. Para probarlo ejecuta un telnet bubuino-smtp.gonzalonazareno.org 25.</strong></p>
-<p>Lo primero que haremos será crear las reglas Iptables:</p>
-<div><pre><code>iptables -A OUTPUT -d 192.168.203.3 -p tcp --dport 25 -j ACCEPT
-iptables -A INPUT -s 192.168.203.3 -p tcp --sport 25 -j ACCEPT
+</div><p>Reinicio el servicio y ejecuto algunas sentencias de prueba:</p>
+<div><pre><code>sudo systemctl restart mariadb
 </code></pre>
-</div><p>Pruebo que funciona con telnet:</p>
-<div><pre><code>telnet babuino-smtp.gonzalonazareno.org 25
+</div><hr>
+<div><pre><code>mysql -u scott -p
+use scott
+
+insert into dept values(50, 'DH', 'Dos Hermanas');
+update dept set loc = 'Sevilla' where deptno = 50;
+delete from dept where deptno = 50;
 </code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/tarea5-1.png" alt="image"></p>
-<p><strong>6. Instala un servidor mariadb, y permite los accesos desde la ip de tu cliente. Comprueba que desde otro cliente no se puede acceder.</strong></p>
-<p>Instalamos mariadb-server y permitimos conexiones remotas:</p>
-<div><pre><code>apt install mariadb-server
+</div><p><img src="./../images/ABD/auditoria/3-8.png" alt="image"></p>
+<p>Se revisa el archivo de auditoría y se observa que las operaciones se han registrado correctamente.</p>
+<div><pre><code>sudo tail /var/log/mysql/audit.log -n 10
 </code></pre>
-</div><p>Editamos el siguiente fichero <code>/etc/mysql/mariadb.conf.d/50-server.cnf</code>:</p>
-<div><pre><code>bind-address            = 0.0.0.0
+</div><p><img src="./../images/ABD/auditoria/4-8.png" alt="image"></p>
+<p><em>ejer 4. Realiza una auditoría de grano fino para almacenar información sobre la inserción de empleados con sueldo superior a 2000 en la tabla emp de scott.</em></p>
+<p>Siguiendo el enfoque utilizado en PostgreSQL, se debe crear un trigger que se ejecute cada vez que se inserte un nuevo registro en la tabla &quot;emp&quot;. El trigger debe registrar esta operación en la tabla &quot;emp_audit&quot; para permitir una auditoría más detallada.</p>
+<p>Creo la tabla:</p>
+<div><pre><code>create table emp_audit (
+    id serial primary key,
+    empno int,
+    tarea varchar(20),
+    sal decimal(7,2)
+);
 </code></pre>
-</div><p>Reiniciamos mariadb:</p>
-<div><pre><code>systemctl restart mariadb
+</div><p><img src="./../images/ABD/auditoria/5-8.png" alt="image"></p>
+<p>Creo el trigger para los inserts:</p>
+<p>delimiter //</p>
+<p>create trigger emp_audit_insert
+after insert on emp
+for each row
+begin
+if new.sal &gt; 2000 then
+insert into emp_audit (empno, tarea, sal) values (new.empno, 'insert', new.sal);
+end if;
+end //</p>
+<p>delimiter ;</p>
+<p><img src="./../images/ABD/auditoria/6-8.png" alt="image"></p>
+<p>Para probar el disparador, realizaré las siguientes acciones:</p>
+<ol>
+<li>
+<p>Insertaré un empleado en la tabla &quot;EMP&quot; con un salario superior a 2000.</p>
+</li>
+<li>
+<p>Insertaré otro empleado en la tabla &quot;EMP&quot; con un salario superior a 2000.</p>
+</li>
+<li>
+<p>Insertaré otro empleado en la tabla &quot;EMP&quot; con un salario inferior a 2000.</p>
+</li>
+</ol>
+<hr>
+<div><pre><code>insert into emp values(7940, 'MARK', 'CARRIER', null, str_to_date('01/01/2023', '%d/%m/%Y'), 3000, null, 10);
+insert into emp values(7941, 'RICK', 'CARRIER', null, str_to_date('01/02/2023', '%d/%m/%Y'), 2001, null, 20);
+insert into emp values(7942, 'RICK', 'CARRIER', null, str_to_date('01/03/2023', '%d/%m/%Y'), 500, null, 20);
 </code></pre>
-</div><p>A continuación, habilitamos el tráfico entrante desde mi máquina host:</p>
-<div><pre><code>iptables -A INPUT -s 10.0.0.180 -p tcp --dport 3306 -j ACCEPT
-iptables -A OUTPUT -d 10.0.0.180 -p tcp --sport 3306 -j ACCEPT
-</code></pre>
-</div><p>Creo un usuario en la maquina para despues comprobar el funcionamiento:</p>
-<p><img src="./../images/SAD/cortafuegos1/tarea6-1.png" alt="image"></p>
-<p>Probamos que funciona:</p>
-<div><pre><code>mariadb -u cortafuegos -h 10.0.0.72 -p
-</code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/tarea6-2.png" alt="image"></p>
-<p>Verificamos que el tráfico se bloquea desde otro cliente:</p>
-<div><pre><code>mariadb -u cortafuegos -h 10.0.0.72 -p
-</code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/tarea6-3.png" alt="image"></p>
+</div><p>Si consulto la tabla de auditoría en este momento, podré observar que las operaciones se han registrado correctamente.</p>
+<p>select * from emp_audit;</p>
+<p><img src="./../images/ABD/auditoria/7-8.png" alt="image"></p>
+<h2 id="_9-averigua-las-posibilidades-que-ofrece-mongodb-para-auditar-los-cambios-que-va-sufriendo-un-documento-demuestra-su-funcionamiento"> <strong>9. Averigua las posibilidades que ofrece MongoDB para auditar los cambios que va sufriendo un documento. Demuestra su funcionamiento.</strong></h2>
+<h2 id="_10-averigua-si-en-mongodb-se-pueden-auditar-los-accesos-a-una-coleccion-concreta-demuestra-su-funcionamiento"> <strong>10. Averigua si en MongoDB se pueden auditar los accesos a una colección concreta. Demuestra su funcionamiento.</strong></h2>
 ]]></content:encoded>
     </item>
     <item>
@@ -5575,6 +5894,7 @@ systemctl start mnt-nfs.mount
       <link>https://github.com/oscarlucas22/practicas/ldaps/</link>
       <guid>https://github.com/oscarlucas22/practicas/ldaps/</guid>
       <source url="https://github.com/oscarlucas22/rss.xml">LDAPs</source>
+      <category>practicas</category>
       <content:encoded><![CDATA[<h1 id="ldaps"> LDAPs</h1>
 <p><strong>Configura el servidor LDAP de alfa para que utilice el protocolo ldaps:// a la vez que el ldap:// utilizando el certificado x509 de la práctica de https o solicitando el correspondiente a través de gestiona. Realiza las modificaciones adecuadas en los clientes ldap de alfa para que todas las consultas se realicen por defecto utilizando ldaps://</strong></p>
 <p>Para empezar, crearemos el directorio que usaremos para almacenar las claves SSL y le otorgaremos los permisos adecuados. Luego, procederemos a generar la clave RSA.</p>
@@ -5679,59 +5999,47 @@ URI ldaps://alfa.olucas.gonzalonazareno.org
 </code></pre>
 </div><p><img src="./../images/ASO/ldaps/2-rocky.png" alt="image"></p>
 <p>Como podemos ver, funciona correctamente.</p>
-<p>Ahora vamos a comprobar que funciona correctamente al loguearnos con el usuario prueba:</p>
-<p>![image]</p>
-<p>Hasta aquí la configuración del cliente Rocky.</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Movimiento de datos</title>
-      <link>https://github.com/oscarlucas22/practicas/movdatos/</link>
-      <guid>https://github.com/oscarlucas22/practicas/movdatos/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">Movimiento de datos</source>
-      <content:encoded><![CDATA[<h1 id="movimiento-de-datos"> Movimiento de datos</h1>
-<p><strong>1. Realiza una exportación del esquema de SCOTT usando Oracle Data Pump con las siguientes condiciones:</strong></p>
-<p>Primero nos conectaremos al usuario sysdba. Creamos un directorio de Oracle Data Pump donde se alnacenará el archivo de exportación. Por ejemplo, puedes ejecutar el siguiente comando SQL para crear un directorio llamado &quot;dmp_dir&quot;:</p>
-<div><pre><code>CREATE DIRECTORY dmp_dir AS '/ruta/al/directorio';
+<p>Creamos el directorio de montaje:</p>
+<div><pre><code>mkdir /home/nfs
+mkdir /home/nfs/prueba
+chown 2001:2001 /home/nfs/prueba
 </code></pre>
-</div><p>Y con esto los que exportemos se guardara en la ruta que hemos especificado.</p>
-<ul>
-<li>
-<p><strong>Exporta tanto la estructura de las tablas como los datos de las mismas.</strong></p>
-<p>expdp scott/tiger DIRECTORY=dmp_dir DUMPFILE=scott.dmp CONTENT=ALL</p>
-</li>
-</ul>
-<p><img src="./../images/ABD/movdatos/1-1.png" alt="image"></p>
-<ul>
-<li>
-<p><strong>Excluye la tabla BONUS y los departamentos con menos de dos empleados.</strong></p>
-<p>expdp scott/tiger DIRECTORY=dmp_dir DUMPFILE=scott.dmp CONTENT=ALL EXCLUDE=TABLE:&quot;IN('BONUS')&quot; QUERY=DEPT:'&quot;where deptno in (select deptno from emp group by deptno having count(*) &gt; 2)&quot;'</p>
-</li>
-</ul>
-<p><img src="./../images/ABD/movdatos/2-1.png" alt="image"></p>
-<ul>
-<li>
-<p><strong>Realiza una estimación previa del tamaño necesario para el fichero de exportación.</strong></p>
-<p>expdp scott/tiger DIRECTORY=dmp_dir CONTENT=ALL EXCLUDE=TABLE:&quot;IN('BONUS')&quot; ESTIMATE_ONLY=YES</p>
-</li>
-</ul>
-<p><img src="./../images/ABD/movdatos/3-1.png" alt="image"></p>
-<ul>
-<li>
-<p><strong>Programa la operación para dentro de 2 minutos.</strong></p>
-</li>
-<li>
-<p><strong>Genera un archivo de log en el directorio raíz.</strong></p>
-<p>expdp scott/tiger DIRECTORY=dmp_dir DUMPFILE=scott.dmp CONTENT=ALL EXCLUDE=TABLE:&quot;IN('BONUS')&quot; LOGFILE=/var/log/oracle/export.log</p>
-</li>
-</ul>
-<p>![image]</p>
-<p><strong>2. Importa el fichero obtenido anteriormente usando Oracle Data Pump pero en un usuario distinto de la misma base de datos.</strong></p>
-<p><strong>3. Realiza una exportación de la estructura de todas las tablas de la base de datos usando el comando expdp de Oracle Data Pump probando al menos cinco de las posibles opciones que ofrece dicho comando y documentándolas adecuadamente.</strong></p>
-<p><strong>4. Intenta realizar operaciones similares de importación y exportación con las herramientas proporcionadas con MySQL desde línea de comandos, documentando el proceso.</strong></p>
-<p><strong>5. Intenta realizar operaciones similares de importación y exportación con las herramientas proporcionadas con Postgres desde línea de comandos, documentando el proceso.</strong></p>
-<p><strong>6. Exporta los documentos de una colección de MongoDB que cumplan una determinada condición e impórtalos en otra base de datos.</strong></p>
-<p><strong>7. SQL<em>Loader es una herramienta que sirve para cargar grandes volúmenes de datos en una instancia de ORACLE. Exportad los datos de una base de datos completa desde Postgres a texto plano con delimitadores y emplead SQL</em>Loader para realizar el proceso de carga de dichos datos a una instancia ORACLE. Debéis documentar todo el proceso, explicando los distintos ficheros de configuración y de log que tiene SQL*Loader.</strong></p>
+</div><p>Para solucionar el problema de no visualizar los cambios en la carpeta de inicio del usuario prueba, debemos montarla a través de NFS. De esta manera, podremos acceder a los cambios realizados desde cualquier cliente conectado.</p>
+<p>Cargamos el módulo:</p>
+<div><pre><code>modprobe nfs
+</code></pre>
+</div><p>Ejecutamos lo siguiente para que se cargue el modulo automáticamente:</p>
+<div><pre><code>echo NFS | tee -a /etc/modules
+</code></pre>
+</div><p>Lo montamos mediante systemd:</p>
+<div><pre><code>nano /etc/systemd/system/home-nfs.mount
+</code></pre>
+</div><p>Añadimos las siguientes líneas:</p>
+<div><pre><code>[Unit]
+Description=script de montaje NFS
+Requires=NetworkManager.service
+After=NetworkManager.service
+[Mount]
+What=172.16.0.1:/home/nfs
+Where=/home/nfs
+Options=_netdev,auto
+Type=nfs
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+</div><p>Reiniciamos el servicio:</p>
+<div><pre><code>systemctl daemon-reload
+systemctl start home-nfs.mount
+systemctl enable home-nfs.mount
+</code></pre>
+</div><hr>
+<div><pre><code>systemctl status home-nfs.mount
+</code></pre>
+</div><p><img src="./../images/ASO/ldaps/3-rocky.png" alt="image"></p>
+<p><img src="./../images/ASO/ldaps/4-rocky.png" alt="image"></p>
+<p>Ahora vamos a comprobar que funciona correctamente al loguearnos con el usuario prueba:</p>
+<p><img src="./../images/ASO/ldaps/5-rocky.png" alt="image"></p>
+<p>Hasta aquí la configuración del cliente Rocky.</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -5788,14 +6096,8 @@ URI ldaps://alfa.olucas.gonzalonazareno.org
 </li>
 </ul>
 <hr>
-<p><em>Creación del contenedor MariaDB</em></p>
-<p>Primero creamos un contenedor con la imagen mariadb y que tenga las variables de entorno que nos han indicado. También crearemos una nueva red para la aplicación web.</p>
-<div><pre><code>docker network create red_bookmedik
-</code></pre>
-</div><hr>
-<div><pre><code>docker run -d --name db-mariadb -v bookmedik_vol:/var/lib/mysql --network red_bookmedik -e MARIADB_ROOT_PASSWORD=root -e MARIADB_DATABASE=bookmedik -e MARIADB_USER=admin -e MARIADB_PASSWORD=admin mariadb
-</code></pre>
-</div><p>Esto será para realizar las pruebas necesarias y comprobar que la imagen de la aplicación funcione como es debido.</p>
+<p>Clonamos el repositorio de la aplicación web:</p>
+<p>[Cloname](git clone https://github.com/evilnapsis/bookmedik.git)</p>
 <h2 id="tarea-1-creacion-de-una-imagen-docker-con-una-aplicacion-web-desde-una-imagen-base"> Tarea 1: Creación de una imagen docker con una aplicación web desde una imagen base</h2>
 <ul>
 <li>
@@ -5840,7 +6142,7 @@ class Database {
 </div><hr>
 <div><pre><code>FROM debian:bullseye
 MAINTAINER oscarlucas &quot;oscarlucasleo124@gmail.com&quot;
-RUN apt update &amp;&amp; apt upgrade -y &amp;&amp; apt install apache2 libapache2-mod-php php php-mysql mariadb-client -y &amp;&amp; apt clean &amp;&amp; rm -rf /var/lib/apt/lists/*
+RUN apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; apt-get install apache2 libapache2-mod-php php php-mysql mariadb-client -y &amp;&amp; apt-get clean &amp;&amp; rm -rf /var/lib/apt/lists/*
 ADD bookmedik /var/www/html/
 ADD script.sh /opt/
 RUN chmod +x /opt/script.sh &amp;&amp; rm /var/www/html/index.html
@@ -5853,7 +6155,7 @@ ENTRYPOINT [&quot;/opt/script.sh&quot;]
 <div><pre><code>#! /bin/sh
 
 while ! mysql -u ${USER_BOOKMEDIK} -p${PASSWD_BOOKMEDIK} -h ${DB_HOST}  -e &quot;;&quot; ; do
-        sleep 1
+sleep 1
 done
 mysql -u $USER_BOOKMEDIK --password=$PASSWD_BOOKMEDIK -h $DB_HOST $NOMBRE_DB &lt; /var/www/html/schema.sql
 /usr/sbin/apache2ctl -D FOREGROUND
@@ -5879,20 +6181,20 @@ mysql -u $USER_BOOKMEDIK --password=$PASSWD_BOOKMEDIK -h $DB_HOST $NOMBRE_DB &lt
 <div><pre><code>version: '3.1'
 services:
   bookmedik:
-    container_name: cont-bookmedik
+    container_name: cont-bookmedikv1
     image: oscarlucas/bookmedik:v1
     restart: always
     environment:
       USER_BOOKMEDIK: admin
       PASSWD_BOOKMEDIK: admin
-      DB_HOST: db-mariadb
+      DB_HOST: db-mariadbv1
       NOMBRE_DB: bookmedik
     ports:
-      - 8082:80
+      - 8081:80
     depends_on:
       - db
   db:
-    container_name: db-mariadb
+    container_name: db-mariadbv1
     image: mariadb
     restart: always
     environment:
@@ -5924,6 +6226,52 @@ volumes:
 <p><strong>Modifica el fichero docker-compose.yml` para probar esta imagen.</strong></p>
 </li>
 </ul>
+<p>Ahora le toca el turno a la imagen de PHP. Para ello, crearemos un fichero llamado Dockerfile en la raíz del proyecto y añadiremos el siguiente contenido:</p>
+<div><pre><code>FROM php:7.4-apache-bullseye
+MAINTAINER oscarlucas &quot;oscarlucasleo124@gmail.com&quot;
+RUN apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; docker-php-ext-install mysqli pdo pdo_mysql &amp;&amp; apt-get install mariadb-client -y &amp;&amp; apt-get clean &amp;&amp; rm -rf /var/lib/apt/lists/*
+ADD bookmedik /var/www/html/
+ADD script.sh /opt/
+RUN chmod +x /opt/script.sh
+ENTRYPOINT [&quot;/opt/script.sh&quot;]
+</code></pre>
+</div><p>Y creamos una nueva imagen:</p>
+<div><pre><code>docker build -t oscarlucas/bookmedik:v2 .
+</code></pre>
+</div><p>EL fichero docker-compose.yaml quedaría de la siguiente forma:</p>
+<div><pre><code>version: '3.1'
+services:
+  bookmedik:
+    container_name: cont-bookmedikv2
+    image: oscarlucas/bookmedik:v2
+    restart: always
+    environment:
+      USER_BOOKMEDIK: bookmedik
+      PASSWD_BOOKMEDIK: bookmedik
+      DB_HOST: db-mariadbv2
+      NOMBRE_DB: bookmedik
+    ports:
+      - 8082:80
+    depends_on:
+      - db
+  db:
+    container_name: db-mariadbv2
+    image: mariadb
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: bookmedik
+      MARIADB_USER: bookmedik
+      MARIADB_PASSWORD: bookmedik
+    volumes:
+      - mariadb_data:/var/lib/mysql
+volumes:
+    mariadb_data:
+</code></pre>
+</div><p>Realizamos el despliegue con docker-compose up -d y como vemos en la imagen anterior, ambos contenedores se están ejecutando y en la siguiente, comprobamos que la imagen se ha creado correctamente:</p>
+<p>![image]</p>
+<p>Si accedemos a la aplicación, podremos ver que funciona correctamente:</p>
+<p>![image]</p>
 <h2 id="tarea-4-ejecucion-de-una-aplicacion-php-en-docker-con-nginx-optativa"> Tarea 4: Ejecución de una aplicación PHP en docker con nginx (OPTATIVA)</h2>
 <ul>
 <li>
@@ -5946,6 +6294,133 @@ volumes:
 </li>
 </ul>
 <p><strong>A lo mejor te puede ayudar el siguiente enlace: Dockerise your PHP application with Nginx and PHP7-FPM</strong></p>
+<p>En esta tarea, vamos a tener que crear dos imágenes:</p>
+<ul>
+<li>
+<p>Una que contrendrá la aplicación PHP y será nginx la encargada de servirla.</p>
+</li>
+<li>
+<p>Otra que tendrá los modulos de PHP necesarios para que la aplicación funcione.</p>
+</li>
+</ul>
+<p>Creamos el Dockerfile con php-fpm y sus correspondientes modulos:</p>
+<div><pre><code>FROM php:7.4-fpm
+MAINTAINER oscarlucas &quot;oscarlucasleo124@gmail.com&quot;
+RUN docker-php-ext-install mysqli
+</code></pre>
+</div><p>Creamos la imagen:</p>
+<div><pre><code>docker build -t oscarlucas/php-fpm-mysql:v1 .
+</code></pre>
+</div><p>![image]</p>
+<p>Para crear el dockerfile con la aplicación y nginx como servidor web, añadimos el siguiente contenido:</p>
+<div><pre><code>FROM nginx
+MAINTAINER oscarlucas &quot;oscarlucasleo124@gmail.com&quot;
+RUN apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; apt-get install mariadb-client -y &amp;&amp; apt-get clean &amp;&amp; rm -rf /var/lib/apt/lists/*
+ADD default.conf /etc/nginx/conf.d/
+ADD bookmedik /usr/share/nginx/html
+ADD script.sh /opt/
+RUN chmod +x /opt/script.sh &amp;&amp; rm /usr/share/nginx/html/index.html
+ENTRYPOINT [&quot;/opt/script.sh&quot;]
+</code></pre>
+</div><p>En el docker file anterior, hemos establecido el fichero default.conf como el fichero de configuración de nginx. Este fichero contendrá la siguiente información:</p>
+<div><pre><code>nano default.conf
+</code></pre>
+</div><hr>
+<div><pre><code>server {
+    listen       80;
+    listen  [::]:80;
+    server_name  localhost;
+    error_log  /var/log/nginx/error-nignx.log;
+    access_log /var/log/nginx/access-nginx.log;
+    root   /usr/share/nginx/html;
+    index  index.php index.html;
+
+    location ~ \.php$ {
+        try_files $uri =404;
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        fastcgi_pass book_php:9000;
+        fastcgi_index index.php;
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param PATH_INFO $fastcgi_path_info;
+    }
+}
+</code></pre>
+</div><p>Y también deberemos modificar script.sh para adaptarlo a nginx:</p>
+<div><pre><code>#! /bin/sh
+
+while ! mysql -u ${USER_BOOKMEDIK} -p${PASSWD_BOOKMEDIK} -h ${DB_HOST}  -e &quot;;&quot; ; do
+sleep 1
+done
+mysql -u $USER_BOOKMEDIK --password=$PASSWD_BOOKMEDIK -h $DB_HOST $NOMBRE_DB &lt; /var/www/html/schema.sql
+/usr/sbin/apache2ctl -D FOREGROUND
+
+nginx -g &quot;daemon off;&quot;
+</code></pre>
+</div><p>Creamos la imagen:</p>
+<div><pre><code>docker build -t oscarlucas/bookmedik:v3 .
+</code></pre>
+</div><p>![image]</p>
+<p>Antes de modificar el docker-compose.yaml debemos tener en cuenta que:</p>
+<ul>
+<li>
+<p>Los contenedores que tienen php-fpm y nginx, deben estar en la misma ruta.</p>
+</li>
+<li>
+<p>Las variables de entorno que se pasan al contenedor de nginx, deben también estar en el contenedor de php-fpm.</p>
+</li>
+</ul>
+<p>Por lo que el fichero docker-compose.yaml quedaría de la siguiente forma:</p>
+<div><pre><code>version: '3.1'
+services:
+  bookmedik:
+    container_name: cont-bookmedikv3
+    image: oscarlucas/bookmedik:v3
+    restart: always
+    environment:
+      USER_BOOKMEDIK: bookmedik
+      PASSWD_BOOKMEDIK: bookmedik
+      DB_HOST: db-mariadbv3
+      NOMBRE_DB: bookmedik
+    ports:
+      - 8083:80
+    depends_on:
+      - db
+      - php
+    volumes:
+      - phpdocs:/usr/share/nginx/html/
+db:
+  container_name: db-mariadbv3
+  image: mariadb
+  restart: always
+  environment:
+    MARIADB_ROOT_PASSWORD: root
+    MARIADB_DATABASE: bookmedik
+    MARIADB_USER: bookmedik
+    MARIADB_PASSWORD: bookmedik
+  volumes:
+    - mariadb_data:/var/lib/mysql
+php:
+  container_name: cont-php
+  image: oscarlucas/php-fpm-mysql:v1
+  restart: always
+  environment:
+    USER_BOOKMEDIK: bookmedik
+    PASSWD_BOOKMEDIK: bookmedik
+    DB_HOST: db-mariadbv3
+    NOMBRE_DB: bookmedik
+  volumes:
+    - phpdocs:/usr/share/nginx/html/
+
+volumes:
+    mariadb_data:
+    phpdocs:
+</code></pre>
+</div><p>Tras todos los pasos anteriores, podemos cerciorarnos en la imagen anterior, que las imágenes que hemos confeccionado se han creado correctamente.</p>
+<p>Ahora, ejecutamos el docker compose.yaml:</p>
+<div><pre><code>docker-compose up -d
+</code></pre>
+</div><p>![image]</p>
 <h2 id="tarea-5-puesta-en-produccion-de-nuestra-aplicacion"> Tarea 5: Puesta en producción de nuestra aplicación</h2>
 <ul>
 <li>
@@ -5958,6 +6433,76 @@ volumes:
 <p><strong>Configura el nginx de tu VPS para que haga de proxy inverso y nos permita acceder a la aplicación con https://bookmedik.tudominio.xxx</strong></p>
 </li>
 </ul>
+<p>Vamos a poner en producción la aplicación a través de nuestro VPS, por lo que lo primero que deberemo de hacer es crear un registro CNAME en nuestro DNS para que apunte a la IP de nuestro VPS.</p>
+<p>bookmedik.olucass.com CNAME olucass.com</p>
+<p>Y le generamos un certificado de Let's Encrypt:</p>
+<div><pre><code>certbot certonly --standalone -d bookmedik.olucass.com
+</code></pre>
+</div><p>Instalamos docker y docker-compose en nuestro VPS:</p>
+<div><pre><code>sudo apt update &amp;&amp; sudo apt upgrade -y &amp;&amp; sudo apt install docker.io docker-compose-plugin -y
+</code></pre>
+</div><p>Al tener las imágenes creadas subidas a Docker Hub, podemos descargarlas en nuestro VPS:</p>
+<div><pre><code>docker pull oscarlucas/bookmedik:v2
+</code></pre>
+</div><p>En mi caso he elegido la versión 2, ya que es la que tiene el fichero docker-compose.yaml adaptado para el VPS.</p>
+<p>Creamos el virtualhost en nginx para que actúe de proxy inverso:</p>
+<div><pre><code>nano /etc/nginx/sites-available/bookmedik.olucass.com
+</code></pre>
+</div><hr>
+<div><pre><code>server {
+        listen 80;
+        listen [::]:80;
+
+        server_name bookmedik.olucass.com;
+
+        return 301 https://$host$request_uri;
+}
+
+server {
+        listen 443 ssl http2;
+        listen [::]:443 ssl http2;
+
+        ssl    on;
+        ssl_certificate /etc/letsencrypt/live/bookmedik.olucass.com/fullchain.pem;
+        ssl_certificate_key     /etc/letsencrypt/live/bookmedik.olucass.com/privkey.pem;
+
+        index index.html index.php index.htm index.nginx-debian.html;
+
+        server_name bookmedik.olucass.com;
+
+        location / {
+                proxy_pass http://localhost:8084;
+                include proxy_params;
+        }
+
+}
+</code></pre>
+</div><p>Creamos el enlace simbólico y reiniciamos nginx:</p>
+<div><pre><code>ln -s /etc/nginx/sites-available/bookmedik.olucass.com /etc/nginx/sites-enabled/
+systemctl restart nginx
+</code></pre>
+</div><p>En mi caso, he subido los ficheros a github, por lo que he clonado el repositorio y el repositorio de Bookmedik en mi VPS, dejando la estructura de carpetas de la siguiente forma:</p>
+<div><pre><code>├── Bookmedik
+│   ├── docker-compose.yaml
+│   ├── Dockerfile
+│   ├── scripts
+│   ├── bookmedik
+│   │   ├── PhpWord
+│   │   ├── core
+│   │   ├── assets
+│   │   ├── report
+│   │   ├── index.php
+│   │   ├── instalation.txt
+│   │   ├── schema.sql
+│   │   ├── logout.php
+│   │   ├── README.md
+</code></pre>
+</div><p>Realizamos la ejecución del comando docker-compose up -d y comprobamos que todo funciona correctamente:</p>
+<p>![image]</p>
+<p>Y como podemos comprobar en la siguiente imagen, la aplicación funciona correctamente.</p>
+<p>![image]</p>
+<p>NOTA: A la hora de hacer el despliegue, debemos cerciorarnos de cambiar el puerto de escucha, dado que puede caber la posibilidad (o que sea muy probable) de que el puerto 8080 esté ocupado. En mi caso, he puesto el puerto de escucha en el 8083 debido a que ya tengo aplicaciones desplegadas en mi VPS.</p>
+<p>![image]</p>
 <h2 id="tarea-6-modificacion-de-la-aplicacion"> Tarea 6: Modificación de la aplicación</h2>
 <ul>
 <li>
@@ -5973,6 +6518,249 @@ volumes:
 <p><strong>Modifica la aplicación en producción.</strong></p>
 </li>
 </ul>
+<p>Vamos a modificar la aplicación para que nos muestre nuestro nombre en la línea &quot;h4&quot;.</p>
+<p>Para ello, vamos a utilizar la imagen de legnakra/bookmedik:v1 que ya tiene el fichero docker-compose.yaml para generar la nueva imagen.</p>
+<p>![image]</p>
+<p>Creamos la nueva imagen</p>
+<div><pre><code>docker build -t oscarlucas/bookmedik:v1_2 .
+</code></pre>
+</div><p>La resubimos a DockerHub:</p>
+<div><pre><code>docker push oscarlucas/bookmedik:v1_2
+</code></pre>
+</div><p>Eliminamos los contenedores que están en ejecución, modificamos el fichero docker-compose.yaml para que descargue la nueva imagen y ejecutamos el docker-compose.yaml:</p>
+<div><pre><code>docker-compose down
+</code></pre>
+</div><hr>
+<div><pre><code>nano docker-compose.yaml
+</code></pre>
+</div><hr>
+<div><pre><code>version: '3.1'
+services:
+  bookmedik:
+    container_name: cont-bookmedik
+    image: oscarlucas/bookmedik:v1_2
+    restart: always
+    environment:
+      USER_BOOKMEDIK: admin
+      PASSWD_BOOKMEDIK: admin
+      DB_HOST: db-mariadb
+      NOMBRE_DB: bookmedik
+    ports:
+      - 8082:80
+    depends_on:
+      - db
+  db:
+    container_name: db-mariadb
+    image: mariadb
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: bookmedik
+      MARIADB_USER: admin
+      MARIADB_PASSWORD: admin
+    volumes:
+      - mariadb_data:/var/lib/mysql
+volumes:
+    mariadb_data:
+</code></pre>
+</div><hr>
+<div><pre><code>docker-compose up -d
+</code></pre>
+</div><p>![image]</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Movimiento de datos</title>
+      <link>https://github.com/oscarlucas22/practicas/movdatos/</link>
+      <guid>https://github.com/oscarlucas22/practicas/movdatos/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">Movimiento de datos</source>
+      <category>practicas</category>
+      <content:encoded><![CDATA[<h1 id="movimiento-de-datos"> Movimiento de datos</h1>
+<p><strong>1. Realiza una exportación del esquema de SCOTT usando Oracle Data Pump con las siguientes condiciones:</strong></p>
+<p>Primero nos crearemos un directorio donde almacenaremos los archivos de explotacion en mi caso creare un directorio en la ruta <code>/home/oracle</code>, el cual se llamara &quot;dir&quot;</p>
+<p>Despues nos conectaremos al usuario a la base de datos y  crearemos un directorio en el que se almacenaran los archivos de exportacion, al que le asignamos los permisos necesarios para que el usuario pueda acceder a el.</p>
+<div><pre><code>create directory dmp_dir AS '/ruta/al/directorio';
+grant read, write on directory dmp_dir to SCOTT;
+</code></pre>
+</div><p>Le daremos tambien permisos para que pueda exportar datos:</p>
+<div><pre><code>grant datapump_exp_full_database to SCOTT;
+</code></pre>
+</div><p>Y con esto los que exportemos se guardara en la ruta que hemos especificado.</p>
+<ul>
+<li>
+<p><strong>Exporta tanto la estructura de las tablas como los datos de las mismas.</strong></p>
+<p>expdp scott/tiger DIRECTORY=dmp_dir DUMPFILE=scott.dmp CONTENT=ALL</p>
+</li>
+</ul>
+<p><img src="./../images/ABD/movdatos/1-1.png" alt="image"></p>
+<ul>
+<li>
+<p><strong>Excluye la tabla BONUS y los departamentos con menos de dos empleados.</strong></p>
+<p>expdp scott/tiger DIRECTORY=dmp_dir DUMPFILE=scott.dmp CONTENT=ALL EXCLUDE=TABLE:&quot;IN('BONUS')&quot; QUERY=DEPT:'&quot;where deptno in (select deptno from emp group by deptno having count(*) &gt; 2)&quot;'</p>
+</li>
+</ul>
+<p><img src="./../images/ABD/movdatos/2-1.png" alt="image"></p>
+<ul>
+<li>
+<p><strong>Realiza una estimación previa del tamaño necesario para el fichero de exportación.</strong></p>
+<p>expdp scott/tiger DIRECTORY=dmp_dir CONTENT=ALL EXCLUDE=TABLE:&quot;IN('BONUS')&quot; ESTIMATE_ONLY=YES</p>
+</li>
+</ul>
+<p><img src="./../images/ABD/movdatos/3-1.png" alt="image"></p>
+<ul>
+<li><strong>Programa la operación para dentro de 2 minutos.</strong></li>
+</ul>
+<p>Para hacer este apartado haré un script que ejecutará la exportación tras 2 min</p>
+<div><pre><code>nano script.sh
+
+#!/bin/bash
+echo &quot;Ejecutando la exportación de esquema scott, esto tardará unos 2 min&quot;
+sleep 120
+echo &quot;&quot;
+expdp scott/tiger DIRECTORY=dmp_dir DUMPFILE=scott.dmp CONTENT=ALL EXCLUDE=TABLE:&quot;IN('BONUS')&quot; QUERY=DEPT:'&quot;where deptno in (select deptno from emp group by deptno having count(*) &gt; 2)&quot;'
+</code></pre>
+</div><p>Le daremos permisos de ejecución</p>
+<div><pre><code>sudo chmod +x script.sh
+</code></pre>
+</div><p>Y lo ejecutamos:</p>
+<div><pre><code>./script.sh
+</code></pre>
+</div><p><img src="./../images/ABD/movdatos/4-1.png" alt="image"></p>
+<ul>
+<li><strong>Genera un archivo de log en el directorio raíz.</strong></li>
+</ul>
+<hr>
+<div><pre><code>expdp scott/tiger DIRECTORY=dmp_dir DUMPFILE=scott.dmp CONTENT=ALL EXCLUDE=TABLE:&quot;IN('BONUS')&quot; LOGFILE=/var/log/oracle/export.log
+</code></pre>
+</div><p>![image]</p>
+<p><strong>2. Importa el fichero obtenido anteriormente usando Oracle Data Pump pero en un usuario distinto de la misma base de datos.</strong></p>
+<p>Para realizar la importación, deberemos darle permisos de lectura y escritura al usuario al que importaremos la base de datos, al directorio donde se almacenarán los archivos de importación.</p>
+<div><pre><code>grant read, write on directory dmp_dir to LUCAS;
+</code></pre>
+</div><p>Le concedemos también los permisos necesarios para realizar la importación.</p>
+<div><pre><code>grant imp_full_database to LUCAS;
+</code></pre>
+</div><p>E importamos la base de datos.</p>
+<div><pre><code>impdp lucas/admin schemas=scott directory=dmp_dir dumpfile=scott.dmp logfile=impdb.log
+</code></pre>
+</div><p><strong>3. Realiza una exportación de la estructura de todas las tablas de la base de datos usando el comando expdp de Oracle Data Pump probando al menos cinco de las posibles opciones que ofrece dicho comando y documentándolas adecuadamente.</strong></p>
+<div><pre><code>expdp scott/tiger schemas=scott dumpfile=scottall.dmp logfile=scottall.log directory=dmp_dir CONTENT=METADATA_ONLY
+</code></pre>
+</div><p><img src="./../images/ABD/movdatos/1-3.png" alt="image"></p>
+<p><strong>4. Intenta realizar operaciones similares de importación y exportación con las herramientas proporcionadas con MySQL desde línea de comandos, documentando el proceso.</strong></p>
+<p>Vamos a utilizar la misma base de datos que hemos empleado en Oracle, la base de datos scott. Para realizar la importación, lo haremos con el siguiente comando:</p>
+<div><pre><code>mysql -u scott -p scott &lt; scott-mysql.sql
+</code></pre>
+</div><hr>
+<div><pre><code>mysqldump -u scott -p scott &gt; scottexport.sql
+</code></pre>
+</div><p><img src="./../images/ABD/movdatos/1-4.png" alt="image"></p>
+<p>Como podemos observar, el fichero se ha creado correctamente.</p>
+<p>Para asegurarnos de que la importación se realiza correctamente, contruiré una base de datos limpia para realizar la importación y comparar los resultados.</p>
+<div><pre><code>create database scottimport;
+</code></pre>
+</div><p><img src="./../images/ABD/movdatos/2-4.png" alt="image"></p>
+<p><img src="./../images/ABD/movdatos/3-4.png" alt="image"></p>
+<p><strong>5. Intenta realizar operaciones similares de importación y exportación con las herramientas proporcionadas con Postgres desde línea de comandos, documentando el proceso.</strong></p>
+<p>Vamos a utilizar la base de datos scott. Para realizar la importación, lo haremos con el siguiente comando:</p>
+<div><pre><code>pg_dump -U postgres scott &gt; scott_import.sql
+</code></pre>
+</div><p><strong>6. Exporta los documentos de una colección de MongoDB que cumplan una determinada condición e impórtalos en otra base de datos.</strong></p>
+<p><strong>7. SQL<em>Loader es una herramienta que sirve para cargar grandes volúmenes de datos en una instancia de ORACLE. Exportad los datos de una base de datos completa desde Postgres a texto plano con delimitadores y emplead SQL</em>Loader para realizar el proceso de carga de dichos datos a una instancia ORACLE. Debéis documentar todo el proceso, explicando los distintos ficheros de configuración y de log que tiene SQL*Loader.</strong></p>
+<p>En mi situación, utilizaré la base de datos SCOTT que tengo en postgres de ejercicios previos para llevar a cabo este proceso. Primero, exportaré estos datos a un archivo csv y luego procederé a importarlos en una base de datos de Oracle.</p>
+<p>Función exportación a csv</p>
+<p>Con el fin de lograrlo, es necesario crear una función en PGSQL que permita la exportación de los datos a un archivo csv. La función que deberíamos crear tendría el siguiente aspecto:</p>
+<div><pre><code>create or replace function exportcsv(name_tab varchar, ruta varchar)
+returns void as $$
+declare
+    name_tab varchar;
+begin
+    for name_tab in select table_name from information_schema.tables where table_schema = 'public' and table_type = 'BASE TABLE' loop
+        execute format ( 'copy %I to %L with (format csv, delimiter '','', header true)', name_tab, ruta || name_tab || '.csv' );
+    end loop;
+end;
+$$ language plpgsql;
+</code></pre>
+</div><p>En este momento, procederemos a ejecutar la función para exportar los datos a un archivo csv.</p>
+<div><pre><code>select exportcsv('scott', '/home/postgres/');
+</code></pre>
+</div><p>Podemos notar que los datos han sido exportados correctamente a un archivo csv.</p>
+<div><pre><code>scp
+</code></pre>
+</div><p>Y los pasamos por scp a la máquina de Oracle.</p>
+<p>Creación de ficheros de control</p>
+<p>En este punto, crearemos los archivos de control que se requieren para la importación de los datos a Oracle. Es necesario crear un archivo de control para cada tabla que se va a importar. En mi caso, las tablas DEPT y EMP serán importadas.</p>
+<p>Fichero de control para la tabla DEPT</p>
+<div><pre><code>nano dept.ctl
+</code></pre>
+</div><hr>
+<div><pre><code>OPTIONS (SKIP=1)
+LOAD DATA
+INFILE '/home/postgres/dept.csv'
+APPEND
+INTO TABLE dept
+FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '&quot;'
+TRAILING NULLCOLS
+(deptno, dname, loc)
+</code></pre>
+</div><p>Fichero de control para la tabla EMP</p>
+<div><pre><code>nano emp.ctl
+</code></pre>
+</div><hr>
+<div><pre><code>OPTIONS (SKIP=1)
+LOAD DATA
+INFILE '/home/oracle/emp.csv'
+APPEND
+INTO TABLE emp
+FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '&quot;'
+TRAILING NULLCOLS
+(
+    empno, 
+    ename,
+    job,
+    mgr,
+    hiredate date &quot;YYYY-MM-DD HH24:MI:SS&quot;,
+    sal decimal (7,2),
+    comm decimal (7,2),
+    deptno
+)
+</code></pre>
+</div><p>Creamos un nuevo usuario en Oracle para poder importar los datos.</p>
+<div><pre><code>create user importdt identified by root
+defaut tablespace users 
+tempory tablespace temp
+profile default;
+
+grant connect, resource to importdt;
+</code></pre>
+</div><p>Y creamos también las tablas en Oracle.</p>
+<div><pre><code>create table dept (
+        deptno number(2) constraint pk_dept PRIMARY KEY,
+        dname varchar2(14),
+        loc varchar2(13));
+
+create table emp (
+        empno number(4) constraint pk_emp PRIMARY KEY,
+        ename varchar2(10),
+        job varchar2(9),
+        mgr number(4),
+        hiredate date,
+        sal number(7,2),
+        comm number(7,2),
+        deptno number(2) constraint fk_deptno references dept);
+</code></pre>
+</div><p>Ahora vamos a importar los datos a Oracle. Para ello, vamos a ejecutar los siguientes comandos:</p>
+<div><pre><code>sqlldr mov/admin control=/home/oracle/dept.ctl log=/home/oracle/dept.log
+</code></pre>
+</div><p>![image]</p>
+<div><pre><code>qlldr mov/admin control=/home/oracle/emp.ctl log=/home/oracle/emp.log
+</code></pre>
+</div><p>![image]</p>
+<p>Y sus respectivos ficheros de log.</p>
+<p>![image]</p>
+<p>![image]</p>
+<p>Cabe destacar, que durante el testeo de este último ejercicio, he obtenido la ayuda de mi compañero Alejandro Montes.</p>
+<p>Como podemos comprobar, se ha realizado correctamente la importación de los datos a Oracle desde una base de datos Postgres.</p>
 ]]></content:encoded>
     </item>
     <item>
