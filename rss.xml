@@ -6,8 +6,8 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Sat, 04 Mar 2023 09:18:36 GMT</pubDate>
-    <lastBuildDate>Sat, 04 Mar 2023 09:18:36 GMT</lastBuildDate>
+    <pubDate>Sat, 04 Mar 2023 09:22:14 GMT</pubDate>
+    <lastBuildDate>Sat, 04 Mar 2023 09:22:14 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
@@ -6119,8 +6119,12 @@ grant imp_full_database to importar;
 </div><p><img src="./../images/ABD/movdatos/4-2.png" alt="image"></p>
 <p>Verificamos que los datos de la tabla BONUS no han sido importados.:</p>
 <div><pre><code>select * from importar.bonus;
-select * from scott.bonus;
-select * from bonus;
+</code></pre>
+</div><hr>
+<div><pre><code>select * from scott.bonus;
+</code></pre>
+</div><hr>
+<div><pre><code>select * from bonus;
 </code></pre>
 </div><p><img src="./../images/ABD/movdatos/5-2.png" alt="image"></p>
 <p><strong>3. Realiza una exportación de la estructura de todas las tablas de la base de datos usando el comando expdp de Oracle Data Pump probando al menos cinco de las posibles opciones que ofrece dicho comando y documentándolas adecuadamente.</strong></p>
@@ -6134,8 +6138,9 @@ alter user SCOTTFALSE account unlock;
 alter user SCOTTFALSE default tablespace users;
 alter user SCOTTFALSE temporary tablespace temp;
 connect SCOTTFALSE/tiger;
-
-create table filiales (
+</code></pre>
+</div><hr>
+<div><pre><code>create table filiales (
     id NUMBER(10) PRIMARY KEY,
     nombre VARCHAR2(50) NOT NULL,
     direccion VARCHAR2(100) NOT NULL,
@@ -6278,8 +6283,12 @@ grant all privileges on database scottimportado to postgres;
 </div><p><img src="./../images/ABD/movdatos/8-5.png" alt="image"></p>
 <p>Para verificar que la importación de datos se ha realizado correctamente, vamos a realizar una consulta:</p>
 <div><pre><code>select * from dept;
-select * from emp;
-select * from salgrade;
+</code></pre>
+</div><hr>
+<div><pre><code>select * from emp;
+</code></pre>
+</div><hr>
+<div><pre><code>select * from salgrade;
 </code></pre>
 </div><p><img src="./../images/ABD/movdatos/9-5.png" alt="image"></p>
 <p><strong>6. Exporta los documentos de una colección de MongoDB que cumplan una determinada condición e impórtalos en otra base de datos.</strong></p>
@@ -6288,10 +6297,12 @@ select * from salgrade;
 <p>Esta base de datos es la que he usado:</p>
 <div><pre><code>mongosh -u olucas -p root --authenticationDatabase admin
 use Prueba
-
-db.createCollection(&quot;prueba1&quot;)
-
-db.prueba1.insertMany( [
+</code></pre>
+</div><hr>
+<div><pre><code>db.createCollection(&quot;prueba1&quot;)
+</code></pre>
+</div><hr>
+<div><pre><code>db.prueba1.insertMany( [
 { nombre: &quot;Angel&quot;, sal: 2000 },
 { nombre: &quot;Paco&quot;, sal: 3000 },
 { nombre: &quot;Oscar&quot;, sal: 4000 },
