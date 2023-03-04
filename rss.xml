@@ -6,8 +6,8 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Sat, 04 Mar 2023 22:54:54 GMT</pubDate>
-    <lastBuildDate>Sat, 04 Mar 2023 22:54:54 GMT</lastBuildDate>
+    <pubDate>Sat, 04 Mar 2023 22:55:21 GMT</pubDate>
+    <lastBuildDate>Sat, 04 Mar 2023 22:55:21 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
@@ -88,7 +88,7 @@
 <p><a href="/practicas/java.html">Despliegue de aplicaciones Java</a></p>
 </li>
 <li>
-<p><a href="">Implantación de aplicaciones web PHP en docker</a></p>
+<p><a href="/noacabado/noacabado.html">Implantación de aplicaciones web PHP en docker</a></p>
 </li>
 <li>
 <p><a href="/practicas/python-docker.html">Implantación de aplicaciones web Python en docker</a></p>
