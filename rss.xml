@@ -6,8 +6,8 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Sat, 04 Mar 2023 09:09:35 GMT</pubDate>
-    <lastBuildDate>Sat, 04 Mar 2023 09:09:35 GMT</lastBuildDate>
+    <pubDate>Sat, 04 Mar 2023 09:14:12 GMT</pubDate>
+    <lastBuildDate>Sat, 04 Mar 2023 09:14:12 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
@@ -6071,7 +6071,7 @@ systemctl enable home-nfs.mount
 <div><pre><code>mkdir /home/oracle/dir
 </code></pre>
 </div><p>Accedemos a SQL*Plus para crear un directorio en la base de datos mediante la ejecución del siguiente comando:</p>
-<div><pre><code>create directory dmp_dir AS '/home/oracle/dir';
+<div><pre><code>create directory dmp_dir as '/home/oracle/dir';
 </code></pre>
 </div><p>Para que el usuario SCOTT pueda leer y escribir en el directorio que creamos, es necesario asignarle los permisos correspondientes. Es crucial asegurarnos de que estos permisos sean otorgados para garantizar el correcto funcionamiento del sistema.</p>
 <div><pre><code>grant read, write on directory dmp_dir to SCOTT;
