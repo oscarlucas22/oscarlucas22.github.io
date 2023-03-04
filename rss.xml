@@ -6,8 +6,8 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Sat, 04 Mar 2023 09:01:06 GMT</pubDate>
-    <lastBuildDate>Sat, 04 Mar 2023 09:01:06 GMT</lastBuildDate>
+    <pubDate>Sat, 04 Mar 2023 09:04:10 GMT</pubDate>
+    <lastBuildDate>Sat, 04 Mar 2023 09:04:10 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
@@ -6155,41 +6155,41 @@ insert into filiales values (3, 'Filiales Chile Ltda', '789 Avenida Central', 'S
 <p><img src="./../images/ABD/movdatos/2-3.png" alt="image"></p>
 <p>Observamos que se han exportado correctamente los datos de la tabla &quot;filiales&quot; y los datos del usuario &quot;scott&quot;.</p>
 <ul>
-<li>
-<p><strong>INCLUDE</strong> se emplea para definir qué tipos de objetos deben ser incluidos en el proceso de exportación. Por ejemplo, si se desea exportar únicamente las restricciones, se puede utilizar el comando siguiente:</p>
-<p>expdp scott/tiger DIRECTORY=dmp_dir SCHEMAS=SCOTT INCLUDE=CONSTRAINT DUMPFILE=exportado2.dmp LOGFILE=exportado2.log</p>
-</li>
+<li><strong>INCLUDE</strong> se emplea para definir qué tipos de objetos deben ser incluidos en el proceso de exportación. Por ejemplo, si se desea exportar únicamente las restricciones, se puede utilizar el comando siguiente:</li>
 </ul>
-<p><img src="./../images/ABD/movdatos/3-3.png" alt="image"></p>
+<hr>
+<div><pre><code>expdp scott/tiger DIRECTORY=dmp_dir SCHEMAS=SCOTT INCLUDE=CONSTRAINT DUMPFILE=exportado2.dmp LOGFILE=exportado2.log
+</code></pre>
+</div><p><img src="./../images/ABD/movdatos/3-3.png" alt="image"></p>
 <p>Vamos a mirar el contenido del fichero de log de exportación:</p>
 <p><img src="./../images/ABD/movdatos/4-3.png" alt="image"></p>
 <ul>
-<li>
-<p><strong>EXCLUDE</strong> se usa para indicar qué tipos de objetos deben ser excluidos del proceso de exportación. Por ejemplo, si se desea excluir la tabla &quot;DEPT&quot; y las restricciones almacenadas de la exportación, se puede emplear el siguiente comando:</p>
-<p>expdp scott/tiger DIRECTORY=dmp_dir SCHEMAS=SCOTT EXCLUDE=TABLE:&quot;IN('DEPT')&quot;,CONSTRAINT DUMPFILE=exportado3.dmp LOGFILE=exportado3.log</p>
-</li>
+<li><strong>EXCLUDE</strong> se usa para indicar qué tipos de objetos deben ser excluidos del proceso de exportación. Por ejemplo, si se desea excluir la tabla &quot;DEPT&quot; y las restricciones almacenadas de la exportación, se puede emplear el siguiente comando:</li>
 </ul>
-<p><img src="./../images/ABD/movdatos/5-3.png" alt="image"></p>
+<hr>
+<div><pre><code>expdp scott/tiger DIRECTORY=dmp_dir SCHEMAS=SCOTT EXCLUDE=TABLE:&quot;IN('DEPT')&quot;,CONSTRAINT DUMPFILE=exportado3.dmp LOGFILE=exportado3.log
+</code></pre>
+</div><p><img src="./../images/ABD/movdatos/5-3.png" alt="image"></p>
 <p>Vamos a mirar el contenido del fichero de log de exportación:</p>
 <p><img src="./../images/ABD/movdatos/6-3.png" alt="image"></p>
 <ul>
-<li>
-<p><strong>COMPRESSION</strong> se usa para determinar el grado de compresión que se aplicará a los datos que se exporten. Se pueden emplear los valores ALL (compresión máxima), METADATA_ONLY (sin compresión) y un número del 1 al 9 que indica el nivel de compresión deseado. Por ejemplo, si se desea utilizar la máxima compresión, se puede utilizar el siguiente comando:</p>
-<p>expdp scott/tiger DIRECTORY=dmp_dir SCHEMAS=SCOTT COMPRESSION=ALL DUMPFILE=exportado4.dmp LOGFILE=exportado4.log</p>
-</li>
+<li><strong>COMPRESSION</strong> se usa para determinar el grado de compresión que se aplicará a los datos que se exporten. Se pueden emplear los valores ALL (compresión máxima), METADATA_ONLY (sin compresión) y un número del 1 al 9 que indica el nivel de compresión deseado. Por ejemplo, si se desea utilizar la máxima compresión, se puede utilizar el siguiente comando:</li>
 </ul>
-<p><img src="./../images/ABD/movdatos/7-3.png" alt="image"></p>
+<hr>
+<div><pre><code>expdp scott/tiger DIRECTORY=dmp_dir SCHEMAS=SCOTT COMPRESSION=ALL DUMPFILE=exportado4.dmp LOGFILE=exportado4.log
+</code></pre>
+</div><p><img src="./../images/ABD/movdatos/7-3.png" alt="image"></p>
 <p>Podemos ver que el archivo de exportación es mucho más pequeño que otros que no han sido comprimidos.</p>
 <p><img src="./../images/ABD/movdatos/8-3.png" alt="image"></p>
 <p>Vamos a mirar el contenido del fichero de log de exportación:</p>
 <p><img src="./../images/ABD/movdatos/9-3.png" alt="image"></p>
 <ul>
-<li>
-<p><strong>ENCRYPTION_PASSWORD</strong> se usa para establecer la contraseña que se empleará para cifrar los datos que se exporten. Por ejemplo, si se desea utilizar la contraseña &quot;sql&quot;, se puede utilizar el siguiente comando:</p>
-<p>expdp scott/tiger DIRECTORY=dmp_dir SCHEMAS=SCOTT ENCRYPTION_PASSWORD=sql DUMPFILE=exportado5.dmp LOGFILE=exportado5.log</p>
-</li>
+<li><strong>ENCRYPTION_PASSWORD</strong> se usa para establecer la contraseña que se empleará para cifrar los datos que se exporten. Por ejemplo, si se desea utilizar la contraseña &quot;sql&quot;, se puede utilizar el siguiente comando:</li>
 </ul>
-<p><img src="./../images/ABD/movdatos/10-3.png" alt="image"></p>
+<hr>
+<div><pre><code>expdp scott/tiger DIRECTORY=dmp_dir SCHEMAS=SCOTT ENCRYPTION_PASSWORD=sql DUMPFILE=exportado5.dmp LOGFILE=exportado5.log
+</code></pre>
+</div><p><img src="./../images/ABD/movdatos/10-3.png" alt="image"></p>
 <p>Vamos a mirar el contenido del fichero de log de exportación:</p>
 <p><img src="./../images/ABD/movdatos/11-3.png" alt="image"></p>
 <p>Voy a generar el usuario de destino en la base de datos y le asignaré los permisos adecuados.</p>
