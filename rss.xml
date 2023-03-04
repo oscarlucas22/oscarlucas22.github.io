@@ -6,8 +6,8 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Sat, 04 Mar 2023 09:07:16 GMT</pubDate>
-    <lastBuildDate>Sat, 04 Mar 2023 09:07:16 GMT</lastBuildDate>
+    <pubDate>Sat, 04 Mar 2023 09:09:35 GMT</pubDate>
+    <lastBuildDate>Sat, 04 Mar 2023 09:09:35 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
@@ -73,6 +73,27 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>IAW</title>
+      <link>https://github.com/oscarlucas22/category/IAW/</link>
+      <guid>https://github.com/oscarlucas22/category/IAW/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">IAW</source>
+      <category>categorías</category>
+      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="iaw"> IAW</h1>
+<ul>
+<li>
+<p><a href="/practicas/django.html">Instalación/migración de aplicaciones web Python</a></p>
+</li>
+<li>
+<p><a href="/practicas/java.html">Despliegue de aplicaciones Java</a></p>
+</li>
+<li>
+<p><a href="/practicas/phpdocker.html">Implantación de aplicaciones web PHP en docker</a></p>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
       <title>SAD</title>
       <link>https://github.com/oscarlucas22/category/SAD/</link>
       <guid>https://github.com/oscarlucas22/category/SAD/</guid>
@@ -104,27 +125,6 @@
 </li>
 <li>
 <p><a href="/practicas/cortafuegoII.html">Cortafuegos II: Perimetral con nftables</a></p>
-</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>IAW</title>
-      <link>https://github.com/oscarlucas22/category/IAW/</link>
-      <guid>https://github.com/oscarlucas22/category/IAW/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">IAW</source>
-      <category>categorías</category>
-      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="iaw"> IAW</h1>
-<ul>
-<li>
-<p><a href="/practicas/django.html">Instalación/migración de aplicaciones web Python</a></p>
-</li>
-<li>
-<p><a href="/practicas/java.html">Despliegue de aplicaciones Java</a></p>
-</li>
-<li>
-<p><a href="/practicas/phpdocker.html">Implantación de aplicaciones web PHP en docker</a></p>
 </li>
 </ul>
 ]]></content:encoded>
@@ -6389,12 +6389,12 @@ TRAILING NULLCOLS
 <div><pre><code>sqlldr scott2/tiger control=/home/oracle/control/dept.ctl log=/home/oracle/log/dept.log
 sqlldr scott2/tiger control=/home/oracle/control/salgrade.ctl log=/home/oracle/log/salgrade.log
 </code></pre>
-</div><p><em>Prueba de la tabla dept.</em></p>
+</div><p><em>Prueba de la tabla &quot;dept&quot;.</em></p>
 <p>Tras ejecutar el comando correspondiente, se mostrará en pantalla un mensaje informativo.</p>
 <p><img src="./../images/ABD/movdatos/4-7.png" alt="image"></p>
 <p>Es posible observar en la carpeta de logs la creación de un archivo que contiene información detallada sobre la carga de datos realizada mediante SQL*Loader.</p>
 <p><img src="./../images/ABD/movdatos/5-7.png" alt="image"></p>
-<p><em>Prueba de la tabla salgrade.</em></p>
+<p><em>Prueba de la tabla &quot;salgrade&quot;.</em></p>
 <p><img src="./../images/ABD/movdatos/6-7.png" alt="image"></p>
 <p><img src="./../images/ABD/movdatos/7-7.png" alt="image"></p>
 <p>Acto seguido accederé a la base de datos y comprobaré que se han cargado los datos correctamente.</p>
