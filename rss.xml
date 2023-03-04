@@ -6,8 +6,8 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Sat, 04 Mar 2023 09:14:12 GMT</pubDate>
-    <lastBuildDate>Sat, 04 Mar 2023 09:14:12 GMT</lastBuildDate>
+    <pubDate>Sat, 04 Mar 2023 09:18:36 GMT</pubDate>
+    <lastBuildDate>Sat, 04 Mar 2023 09:18:36 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
@@ -6087,7 +6087,7 @@ systemctl enable home-nfs.mount
 <div><pre><code>expdp scott/tiger DIRECTORY=dmp_dir DUMPFILE=scott.dmp CONTENT=ALL LOGFILE=scott.log SCHEMAS=SCOTT EXCLUDE=TABLE:&quot;IN('BONUS')&quot; QUERY=DEPT:'&quot;where deptno in (select deptno from emp group by deptno having count(*) &gt; 2)&quot;' JOB_NAME=scott_exportado
 </code></pre>
 </div><p><img src="./../images/ABD/movdatos/2-1.png" alt="image"></p>
-<p>Esperaremos a que se complete el trabajo de exportación. El archivo de exportación y el archivo de registro se almacenarán en el directorio <code>dir</code>.</p>
+<p>El archivo de exportación y el archivo de registro se almacenarán en el directorio <code>dir</code>.</p>
 <p><img src="./../images/ABD/movdatos/3-1.png" alt="image"></p>
 <p>Contenido del fichero de log de la estimación:</p>
 <p><img src="./../images/ABD/movdatos/4-1.png" alt="image"></p>

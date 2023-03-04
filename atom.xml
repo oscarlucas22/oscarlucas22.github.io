@@ -5,7 +5,7 @@
   <author>
     <name>Óscar Lucas</name>
   </author>
-  <updated>2023-03-04T09:14:12.813Z</updated>
+  <updated>2023-03-04T09:18:36.184Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://github.com/oscarlucas22/atom.xml"/>
   <link rel="alternate" href="https://github.com/oscarlucas22/"/>
@@ -3366,7 +3366,7 @@ fetch first 1 row only;
     <title type="html">Almacenamiento</title>
     <id>https://github.com/oscarlucas22/practicas/almacenamiento/</id>
     <link href="https://github.com/oscarlucas22/practicas/almacenamiento/"/>
-    <updated>2023-03-04T09:14:12.882Z</updated>
+    <updated>2023-03-04T09:18:36.241Z</updated>
     <content type="html"><![CDATA[<h1 id="almacenamiento"> Almacenamiento</h1>
 <h2 id="alumno-3"> Alumno 3:</h2>
 <p><em><strong>orACLE:</strong></em></p>
@@ -3933,7 +3933,7 @@ DROP USER JAIME cascade;
     <title type="html">Auditoría</title>
     <id>https://github.com/oscarlucas22/practicas/auditoria/</id>
     <link href="https://github.com/oscarlucas22/practicas/auditoria/"/>
-    <updated>2023-03-04T09:14:12.884Z</updated>
+    <updated>2023-03-04T09:18:36.244Z</updated>
     <content type="html"><![CDATA[<h1 id="auditoria"> Auditoría</h1>
 <h2 id="_1-activa-desde-sql-plus-la-auditoria-de-los-intentos-de-acceso-exitosos-al-sistema-comprueba-su-funcionamiento"> <strong>1. Activa desde SQL*Plus la auditoría de los intentos de acceso exitosos al sistema. Comprueba su funcionamiento.</strong></h2>
 <p>Visualizaremos los parametros de auditorias:</p>
@@ -4374,7 +4374,7 @@ insert into emp values(7942, 'RICK', 'CARRIER', null, str_to_date('01/03/2023', 
     <title type="html">Instalación y configuración de un servidor de correos en el VPS</title>
     <id>https://github.com/oscarlucas22/practicas/correos/</id>
     <link href="https://github.com/oscarlucas22/practicas/correos/"/>
-    <updated>2023-03-04T09:14:12.888Z</updated>
+    <updated>2023-03-04T09:18:36.252Z</updated>
     <content type="html"><![CDATA[<h1 id="instalacion-y-configuracion-de-un-servidor-de-correos-en-el-vps"> Instalación y configuración de un servidor de correos en el VPS</h1>
 <h2 id="practica-servidor-de-correos"> Práctica: Servidor de correos</h2>
 <p><strong>Instala y configura de manera adecuada el servidor de correos en tu VPS. El nombre del servidor de correo será mail.tudominio.es (Este es el nombre que deberá aparecer en el registro MX).</strong></p>
@@ -4898,7 +4898,7 @@ server {
     <title type="html">Cortafuegos I: De nodo con iptables</title>
     <id>https://github.com/oscarlucas22/practicas/cortafuegoI/</id>
     <link href="https://github.com/oscarlucas22/practicas/cortafuegoI/"/>
-    <updated>2023-03-04T09:14:12.891Z</updated>
+    <updated>2023-03-04T09:18:36.255Z</updated>
     <content type="html"><![CDATA[<h1 id="cortafuegos-i-de-nodo-con-iptables"> Cortafuegos I: De nodo con iptables</h1>
 <p>Página de la <a href="https://fp.josedomingo.org/seguridadgs/u03/ejercicio1.html" target="_blank" rel="noopener noreferrer">practica<i>Content not supported</i></a></p>
 <hr>
@@ -5085,7 +5085,7 @@ iptables -A OUTPUT -d 10.0.0.180 -p tcp --sport 3306 -j ACCEPT
     <title type="html">Cortafuegos II: Perimetral con nftables</title>
     <id>https://github.com/oscarlucas22/practicas/cortafuegoII/</id>
     <link href="https://github.com/oscarlucas22/practicas/cortafuegoII/"/>
-    <updated>2023-03-04T09:14:12.900Z</updated>
+    <updated>2023-03-04T09:18:36.259Z</updated>
     <content type="html"><![CDATA[<h1 id="cortafuegos-ii-perimetral-con-nftables"> Cortafuegos II: Perimetral con nftables</h1>
 <p><strong>Realiza con nftables el ejercicio de la <a href="https://fp.josedomingo.org/seguridadgs/u03/perimetral_iptables.html" target="_blank" rel="noopener noreferrer">página<i>Content not supported</i></a> documentando las pruebas de funcionamiento realizadas.</strong></p>
 <p><strong>Debes añadir después las reglas necesarias para que se permitan las siguientes operaciones:</strong></p>
@@ -5408,7 +5408,7 @@ sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens
     <title type="html">Informática Forense</title>
     <id>https://github.com/oscarlucas22/practicas/forense/</id>
     <link href="https://github.com/oscarlucas22/practicas/forense/"/>
-    <updated>2023-03-04T09:14:12.902Z</updated>
+    <updated>2023-03-04T09:18:36.262Z</updated>
     <content type="html"><![CDATA[<h1 id="informatica-forense"> Informática Forense</h1>
 <p><strong>La informática forense es el conjunto de técnicas que nos permite obtener la máxima información posible tras un incidente o delito informático.</strong></p>
 <p><strong>En esta práctica, realizarás la fase de toma de evidencias y análisis de las mismas sobre una máquina Linux y otra Windows. Supondremos que pillamos al delincuente in fraganti y las máquinas se encontraban encendidas. Opcionalmente, podéis realizar el análisis de un dispositivo Android.</strong></p>
@@ -5489,7 +5489,7 @@ sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens
     <title type="html">Poblar un directorio LDAP desde un fichero CSV</title>
     <id>https://github.com/oscarlucas22/practicas/ldap-csv/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldap-csv/"/>
-    <updated>2023-03-04T09:14:12.903Z</updated>
+    <updated>2023-03-04T09:18:36.263Z</updated>
     <content type="html"><![CDATA[<h1 id="poblar-un-directorio-ldap-desde-un-fichero-csv"> Poblar un directorio LDAP desde un fichero CSV</h1>
 <ul>
 <li>
@@ -5745,7 +5745,7 @@ AuthorizedKeysCommandUser nobody
     <title type="html">Instalación y configuración inicial de OpenLDAP</title>
     <id>https://github.com/oscarlucas22/practicas/ldap/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldap/"/>
-    <updated>2023-03-04T09:14:12.905Z</updated>
+    <updated>2023-03-04T09:18:36.265Z</updated>
     <content type="html"><![CDATA[<h1 id="instalacion-y-configuracion-inicial-de-openldap"> Instalación y configuración inicial de OpenLDAP</h1>
 <p><strong>Realiza la instalación y configuración básica de OpenLDAP en alfa, utilizando como base el nombre DNS asignado. Deberás crear un usuario llamado prueba y configurar una máquina cliente basada en Debian y Rocky para que pueda validarse en servidor ldap configurado anteriormente con el usuario prueba.</strong></p>
 <p><font color="#FFFF00"><strong>Paso 1</strong></font> Configuración de OpenLDAP en el servidor: Instalación y configuración de OpenLDAP.Instalación y configuración de OpenLDAP en el Servidor</p>
@@ -6105,7 +6105,7 @@ systemctl start mnt-nfs.mount
     <title type="html">LDAPs</title>
     <id>https://github.com/oscarlucas22/practicas/ldaps/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldaps/"/>
-    <updated>2023-03-04T09:14:12.906Z</updated>
+    <updated>2023-03-04T09:18:36.265Z</updated>
     <content type="html"><![CDATA[<h1 id="ldaps"> LDAPs</h1>
 <p><strong>Configura el servidor LDAP de alfa para que utilice el protocolo ldaps:// a la vez que el ldap:// utilizando el certificado x509 de la práctica de https o solicitando el correspondiente a través de gestiona. Realiza las modificaciones adecuadas en los clientes ldap de alfa para que todas las consultas se realicen por defecto utilizando ldaps://</strong></p>
 <p>Para empezar, crearemos el directorio que usaremos para almacenar las claves SSL y le otorgaremos los permisos adecuados. Luego, procederemos a generar la clave RSA.</p>
@@ -6265,7 +6265,7 @@ systemctl enable home-nfs.mount
     <title type="html">Movimiento de datos</title>
     <id>https://github.com/oscarlucas22/practicas/movdatos/</id>
     <link href="https://github.com/oscarlucas22/practicas/movdatos/"/>
-    <updated>2023-03-04T09:14:12.912Z</updated>
+    <updated>2023-03-04T09:18:36.270Z</updated>
     <content type="html"><![CDATA[<h1 id="movimiento-de-datos"> Movimiento de datos</h1>
 <p><strong>1. Realiza una exportación del esquema de SCOTT usando Oracle Data Pump con las siguientes condiciones:</strong></p>
 <ul>
@@ -6305,7 +6305,7 @@ systemctl enable home-nfs.mount
 <div><pre><code>expdp scott/tiger DIRECTORY=dmp_dir DUMPFILE=scott.dmp CONTENT=ALL LOGFILE=scott.log SCHEMAS=SCOTT EXCLUDE=TABLE:&quot;IN('BONUS')&quot; QUERY=DEPT:'&quot;where deptno in (select deptno from emp group by deptno having count(*) &gt; 2)&quot;' JOB_NAME=scott_exportado
 </code></pre>
 </div><p><img src="./../images/ABD/movdatos/2-1.png" alt="image"></p>
-<p>Esperaremos a que se complete el trabajo de exportación. El archivo de exportación y el archivo de registro se almacenarán en el directorio <code>dir</code>.</p>
+<p>El archivo de exportación y el archivo de registro se almacenarán en el directorio <code>dir</code>.</p>
 <p><img src="./../images/ABD/movdatos/3-1.png" alt="image"></p>
 <p>Contenido del fichero de log de la estimación:</p>
 <p><img src="./../images/ABD/movdatos/4-1.png" alt="image"></p>
@@ -6632,7 +6632,7 @@ sqlldr scott2/tiger control=/home/oracle/control/salgrade.ctl log=/home/oracle/l
     <title type="html">Implantación de aplicaciones web PHP en docker</title>
     <id>https://github.com/oscarlucas22/practicas/phpdocker/</id>
     <link href="https://github.com/oscarlucas22/practicas/phpdocker/"/>
-    <updated>2023-03-04T09:14:12.918Z</updated>
+    <updated>2023-03-04T09:18:36.274Z</updated>
     <content type="html"><![CDATA[<h1 id="implantacion-de-aplicaciones-web-php-en-docker"> Implantación de aplicaciones web PHP en docker</h1>
 <p><strong>Imaginemos que el equipo de desarrollo de nuestra empresa ha desarrollado una aplicación PHP que se llama <a href="https://github.com/evilnapsis/bookmedik" target="_blank" rel="noopener noreferrer">BookMedik<i>Content not supported</i></a>.</strong></p>
 <p><strong>Queremos crear una imagen Docker para implantar dicha aplicación.</strong></p>
@@ -7166,7 +7166,7 @@ volumes:
     <title type="html">VPN</title>
     <id>https://github.com/oscarlucas22/practicas/vpn/</id>
     <link href="https://github.com/oscarlucas22/practicas/vpn/"/>
-    <updated>2023-03-04T09:14:12.924Z</updated>
+    <updated>2023-03-04T09:18:36.278Z</updated>
     <content type="html"><![CDATA[<h1 id="vpn"> VPN</h1>
 <h2 id="a-vpn-de-acceso-remoto-con-openvpn-y-certificados-x509-5-puntos"> A) VPN de acceso remoto con OpenVPN y certificados x509 (5 puntos)</h2>
 <p><strong>Configura una conexión VPN de acceso remoto entre dos equipos del cloud:</strong></p>
