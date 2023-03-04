@@ -6,8 +6,8 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Sat, 04 Mar 2023 09:04:10 GMT</pubDate>
-    <lastBuildDate>Sat, 04 Mar 2023 09:04:10 GMT</lastBuildDate>
+    <pubDate>Sat, 04 Mar 2023 09:07:16 GMT</pubDate>
+    <lastBuildDate>Sat, 04 Mar 2023 09:07:16 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
@@ -73,27 +73,6 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>IAW</title>
-      <link>https://github.com/oscarlucas22/category/IAW/</link>
-      <guid>https://github.com/oscarlucas22/category/IAW/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">IAW</source>
-      <category>categorías</category>
-      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="iaw"> IAW</h1>
-<ul>
-<li>
-<p><a href="/practicas/django.html">Instalación/migración de aplicaciones web Python</a></p>
-</li>
-<li>
-<p><a href="/practicas/java.html">Despliegue de aplicaciones Java</a></p>
-</li>
-<li>
-<p><a href="/practicas/phpdocker.html">Implantación de aplicaciones web PHP en docker</a></p>
-</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
       <title>SAD</title>
       <link>https://github.com/oscarlucas22/category/SAD/</link>
       <guid>https://github.com/oscarlucas22/category/SAD/</guid>
@@ -125,6 +104,27 @@
 </li>
 <li>
 <p><a href="/practicas/cortafuegoII.html">Cortafuegos II: Perimetral con nftables</a></p>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>IAW</title>
+      <link>https://github.com/oscarlucas22/category/IAW/</link>
+      <guid>https://github.com/oscarlucas22/category/IAW/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">IAW</source>
+      <category>categorías</category>
+      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="iaw"> IAW</h1>
+<ul>
+<li>
+<p><a href="/practicas/django.html">Instalación/migración de aplicaciones web Python</a></p>
+</li>
+<li>
+<p><a href="/practicas/java.html">Despliegue de aplicaciones Java</a></p>
+</li>
+<li>
+<p><a href="/practicas/phpdocker.html">Implantación de aplicaciones web PHP en docker</a></p>
 </li>
 </ul>
 ]]></content:encoded>
@@ -6232,7 +6232,6 @@ grant imp_full_database to importar2;
 <p>Al ejecutar el comando anterior se generará un archivo llamado <code>ScottExportado2.sql</code> que incluirá solamente las instrucciones SQL requeridas para recrear la tabla <code>dept</code> y sus datos correspondientes.</p>
 <p><img src="./../images/ABD/movdatos/6-4.png" alt="image"></p>
 <p><em><strong>Importación de datos con mysql</strong></em></p>
-<p>En esta ocasión utilizaremos el comando <code>mysql</code>.</p>
 <p>Vamos a crear un usuario nuevo y una base de datos en MySQL. El usuario se llamará <code>scottimportado</code> y tendrá los permisos necesarios para importar datos a la base de datos <code>scott</code>.</p>
 <div><pre><code>create database scottimportado;
 create user scottimportado;
@@ -6268,7 +6267,6 @@ flush privileges;
 <p>En el archivo <code>ScottExportado2.sql</code> solo se incluirá la estructura y los datos correspondientes a la tabla <code>dept</code>.</p>
 <p><img src="./../images/ABD/movdatos/6-5.png" alt="image"></p>
 <p><em><strong>Importación de datos con PostgreSQL</strong></em></p>
-<p>En esta ocasión utilizaremos el comando <code>psql</code>.</p>
 <p>Crearemos una nueva base de datos llamada <code>scottimportado</code>.</p>
 <div><pre><code>create database scottimportado with owner postgres;
 grant all privileges on database scottimportado to postgres;
@@ -6402,7 +6400,6 @@ sqlldr scott2/tiger control=/home/oracle/control/salgrade.ctl log=/home/oracle/l
 <p>Acto seguido accederé a la base de datos y comprobaré que se han cargado los datos correctamente.</p>
 <p><img src="./../images/ABD/movdatos/8-7.png" alt="image"></p>
 <p>La herramienta SQL*Loader es muy útil porque nos permite cargar datos de manera eficiente y simple. Podemos cargar datos desde archivos de texto y trabajar con datos de diferentes orígenes. Además, podemos cargar datos en tablas que contienen claves foráneas y relaciones, lo que nos brinda mayor flexibilidad. En resumen, esta herramienta es una excelente opción para aquellos que necesitan cargar grandes cantidades de datos en sus bases de datos de manera eficiente y rápida.</p>
-<p>Después de haber pasado por el proceso manual de carga de datos con SQL*Loader, he reflexionado sobre la posibilidad de que existan formas más eficientes y automatizadas de realizar este proceso. Tal vez mediante el uso de procedimientos o funciones predefinidas en el motor de base de datos, o incluso mediante la creación de scripts bash que permitan la automatización de las tareas necesarias.</p>
 ]]></content:encoded>
     </item>
     <item>

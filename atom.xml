@@ -5,7 +5,7 @@
   <author>
     <name>Óscar Lucas</name>
   </author>
-  <updated>2023-03-04T09:04:10.438Z</updated>
+  <updated>2023-03-04T09:07:16.142Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://github.com/oscarlucas22/atom.xml"/>
   <link rel="alternate" href="https://github.com/oscarlucas22/"/>
@@ -89,34 +89,6 @@
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
-    <title type="html">IAW</title>
-    <id>https://github.com/oscarlucas22/category/IAW/</id>
-    <link href="https://github.com/oscarlucas22/category/IAW/"/>
-    <updated>2023-01-19T12:13:11.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="iaw"> IAW</h1>
-<ul>
-<li>
-<p><a href="/practicas/django.html">Instalación/migración de aplicaciones web Python</a></p>
-</li>
-<li>
-<p><a href="/practicas/java.html">Despliegue de aplicaciones Java</a></p>
-</li>
-<li>
-<p><a href="/practicas/phpdocker.html">Implantación de aplicaciones web PHP en docker</a></p>
-</li>
-</ul>
-]]></content>
-    <author>
-      <name>Óscar Lucas</name>
-    </author>
-    <category term="categorías" scheme=""/>
-    <contributor>
-      <name>Óscar Lucas</name>
-    </contributor>
-    <published>2023-01-19T12:13:11.000Z</published>
-    <rights>Copyright by Óscar Lucas</rights>
-  </entry>
-  <entry>
     <title type="html">SAD</title>
     <id>https://github.com/oscarlucas22/category/SAD/</id>
     <link href="https://github.com/oscarlucas22/category/SAD/"/>
@@ -146,6 +118,34 @@
 </li>
 <li>
 <p><a href="/practicas/cortafuegoII.html">Cortafuegos II: Perimetral con nftables</a></p>
+</li>
+</ul>
+]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
+    <category term="categorías" scheme=""/>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <published>2023-01-19T12:13:11.000Z</published>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
+    <title type="html">IAW</title>
+    <id>https://github.com/oscarlucas22/category/IAW/</id>
+    <link href="https://github.com/oscarlucas22/category/IAW/"/>
+    <updated>2023-01-19T12:13:11.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="iaw"> IAW</h1>
+<ul>
+<li>
+<p><a href="/practicas/django.html">Instalación/migración de aplicaciones web Python</a></p>
+</li>
+<li>
+<p><a href="/practicas/java.html">Despliegue de aplicaciones Java</a></p>
+</li>
+<li>
+<p><a href="/practicas/phpdocker.html">Implantación de aplicaciones web PHP en docker</a></p>
 </li>
 </ul>
 ]]></content>
@@ -3366,7 +3366,7 @@ fetch first 1 row only;
     <title type="html">Almacenamiento</title>
     <id>https://github.com/oscarlucas22/practicas/almacenamiento/</id>
     <link href="https://github.com/oscarlucas22/practicas/almacenamiento/"/>
-    <updated>2023-03-04T09:04:10.508Z</updated>
+    <updated>2023-03-04T09:07:16.206Z</updated>
     <content type="html"><![CDATA[<h1 id="almacenamiento"> Almacenamiento</h1>
 <h2 id="alumno-3"> Alumno 3:</h2>
 <p><em><strong>orACLE:</strong></em></p>
@@ -3933,7 +3933,7 @@ DROP USER JAIME cascade;
     <title type="html">Auditoría</title>
     <id>https://github.com/oscarlucas22/practicas/auditoria/</id>
     <link href="https://github.com/oscarlucas22/practicas/auditoria/"/>
-    <updated>2023-03-04T09:04:10.510Z</updated>
+    <updated>2023-03-04T09:07:16.209Z</updated>
     <content type="html"><![CDATA[<h1 id="auditoria"> Auditoría</h1>
 <h2 id="_1-activa-desde-sql-plus-la-auditoria-de-los-intentos-de-acceso-exitosos-al-sistema-comprueba-su-funcionamiento"> <strong>1. Activa desde SQL*Plus la auditoría de los intentos de acceso exitosos al sistema. Comprueba su funcionamiento.</strong></h2>
 <p>Visualizaremos los parametros de auditorias:</p>
@@ -4374,7 +4374,7 @@ insert into emp values(7942, 'RICK', 'CARRIER', null, str_to_date('01/03/2023', 
     <title type="html">Instalación y configuración de un servidor de correos en el VPS</title>
     <id>https://github.com/oscarlucas22/practicas/correos/</id>
     <link href="https://github.com/oscarlucas22/practicas/correos/"/>
-    <updated>2023-03-04T09:04:10.517Z</updated>
+    <updated>2023-03-04T09:07:16.218Z</updated>
     <content type="html"><![CDATA[<h1 id="instalacion-y-configuracion-de-un-servidor-de-correos-en-el-vps"> Instalación y configuración de un servidor de correos en el VPS</h1>
 <h2 id="practica-servidor-de-correos"> Práctica: Servidor de correos</h2>
 <p><strong>Instala y configura de manera adecuada el servidor de correos en tu VPS. El nombre del servidor de correo será mail.tudominio.es (Este es el nombre que deberá aparecer en el registro MX).</strong></p>
@@ -4898,7 +4898,7 @@ server {
     <title type="html">Cortafuegos I: De nodo con iptables</title>
     <id>https://github.com/oscarlucas22/practicas/cortafuegoI/</id>
     <link href="https://github.com/oscarlucas22/practicas/cortafuegoI/"/>
-    <updated>2023-03-04T09:04:10.521Z</updated>
+    <updated>2023-03-04T09:07:16.221Z</updated>
     <content type="html"><![CDATA[<h1 id="cortafuegos-i-de-nodo-con-iptables"> Cortafuegos I: De nodo con iptables</h1>
 <p>Página de la <a href="https://fp.josedomingo.org/seguridadgs/u03/ejercicio1.html" target="_blank" rel="noopener noreferrer">practica<i>Content not supported</i></a></p>
 <hr>
@@ -5085,7 +5085,7 @@ iptables -A OUTPUT -d 10.0.0.180 -p tcp --sport 3306 -j ACCEPT
     <title type="html">Cortafuegos II: Perimetral con nftables</title>
     <id>https://github.com/oscarlucas22/practicas/cortafuegoII/</id>
     <link href="https://github.com/oscarlucas22/practicas/cortafuegoII/"/>
-    <updated>2023-03-04T09:04:10.524Z</updated>
+    <updated>2023-03-04T09:07:16.226Z</updated>
     <content type="html"><![CDATA[<h1 id="cortafuegos-ii-perimetral-con-nftables"> Cortafuegos II: Perimetral con nftables</h1>
 <p><strong>Realiza con nftables el ejercicio de la <a href="https://fp.josedomingo.org/seguridadgs/u03/perimetral_iptables.html" target="_blank" rel="noopener noreferrer">página<i>Content not supported</i></a> documentando las pruebas de funcionamiento realizadas.</strong></p>
 <p><strong>Debes añadir después las reglas necesarias para que se permitan las siguientes operaciones:</strong></p>
@@ -5408,7 +5408,7 @@ sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens
     <title type="html">Informática Forense</title>
     <id>https://github.com/oscarlucas22/practicas/forense/</id>
     <link href="https://github.com/oscarlucas22/practicas/forense/"/>
-    <updated>2023-03-04T09:04:10.528Z</updated>
+    <updated>2023-03-04T09:07:16.230Z</updated>
     <content type="html"><![CDATA[<h1 id="informatica-forense"> Informática Forense</h1>
 <p><strong>La informática forense es el conjunto de técnicas que nos permite obtener la máxima información posible tras un incidente o delito informático.</strong></p>
 <p><strong>En esta práctica, realizarás la fase de toma de evidencias y análisis de las mismas sobre una máquina Linux y otra Windows. Supondremos que pillamos al delincuente in fraganti y las máquinas se encontraban encendidas. Opcionalmente, podéis realizar el análisis de un dispositivo Android.</strong></p>
@@ -5489,7 +5489,7 @@ sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens
     <title type="html">Poblar un directorio LDAP desde un fichero CSV</title>
     <id>https://github.com/oscarlucas22/practicas/ldap-csv/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldap-csv/"/>
-    <updated>2023-03-04T09:04:10.529Z</updated>
+    <updated>2023-03-04T09:07:16.232Z</updated>
     <content type="html"><![CDATA[<h1 id="poblar-un-directorio-ldap-desde-un-fichero-csv"> Poblar un directorio LDAP desde un fichero CSV</h1>
 <ul>
 <li>
@@ -5745,7 +5745,7 @@ AuthorizedKeysCommandUser nobody
     <title type="html">Instalación y configuración inicial de OpenLDAP</title>
     <id>https://github.com/oscarlucas22/practicas/ldap/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldap/"/>
-    <updated>2023-03-04T09:04:10.531Z</updated>
+    <updated>2023-03-04T09:07:16.234Z</updated>
     <content type="html"><![CDATA[<h1 id="instalacion-y-configuracion-inicial-de-openldap"> Instalación y configuración inicial de OpenLDAP</h1>
 <p><strong>Realiza la instalación y configuración básica de OpenLDAP en alfa, utilizando como base el nombre DNS asignado. Deberás crear un usuario llamado prueba y configurar una máquina cliente basada en Debian y Rocky para que pueda validarse en servidor ldap configurado anteriormente con el usuario prueba.</strong></p>
 <p><font color="#FFFF00"><strong>Paso 1</strong></font> Configuración de OpenLDAP en el servidor: Instalación y configuración de OpenLDAP.Instalación y configuración de OpenLDAP en el Servidor</p>
@@ -6105,7 +6105,7 @@ systemctl start mnt-nfs.mount
     <title type="html">LDAPs</title>
     <id>https://github.com/oscarlucas22/practicas/ldaps/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldaps/"/>
-    <updated>2023-03-04T09:04:10.533Z</updated>
+    <updated>2023-03-04T09:07:16.234Z</updated>
     <content type="html"><![CDATA[<h1 id="ldaps"> LDAPs</h1>
 <p><strong>Configura el servidor LDAP de alfa para que utilice el protocolo ldaps:// a la vez que el ldap:// utilizando el certificado x509 de la práctica de https o solicitando el correspondiente a través de gestiona. Realiza las modificaciones adecuadas en los clientes ldap de alfa para que todas las consultas se realicen por defecto utilizando ldaps://</strong></p>
 <p>Para empezar, crearemos el directorio que usaremos para almacenar las claves SSL y le otorgaremos los permisos adecuados. Luego, procederemos a generar la clave RSA.</p>
@@ -6265,7 +6265,7 @@ systemctl enable home-nfs.mount
     <title type="html">Movimiento de datos</title>
     <id>https://github.com/oscarlucas22/practicas/movdatos/</id>
     <link href="https://github.com/oscarlucas22/practicas/movdatos/"/>
-    <updated>2023-03-04T09:04:10.540Z</updated>
+    <updated>2023-03-04T09:07:16.240Z</updated>
     <content type="html"><![CDATA[<h1 id="movimiento-de-datos"> Movimiento de datos</h1>
 <p><strong>1. Realiza una exportación del esquema de SCOTT usando Oracle Data Pump con las siguientes condiciones:</strong></p>
 <ul>
@@ -6450,7 +6450,6 @@ grant imp_full_database to importar2;
 <p>Al ejecutar el comando anterior se generará un archivo llamado <code>ScottExportado2.sql</code> que incluirá solamente las instrucciones SQL requeridas para recrear la tabla <code>dept</code> y sus datos correspondientes.</p>
 <p><img src="./../images/ABD/movdatos/6-4.png" alt="image"></p>
 <p><em><strong>Importación de datos con mysql</strong></em></p>
-<p>En esta ocasión utilizaremos el comando <code>mysql</code>.</p>
 <p>Vamos a crear un usuario nuevo y una base de datos en MySQL. El usuario se llamará <code>scottimportado</code> y tendrá los permisos necesarios para importar datos a la base de datos <code>scott</code>.</p>
 <div><pre><code>create database scottimportado;
 create user scottimportado;
@@ -6486,7 +6485,6 @@ flush privileges;
 <p>En el archivo <code>ScottExportado2.sql</code> solo se incluirá la estructura y los datos correspondientes a la tabla <code>dept</code>.</p>
 <p><img src="./../images/ABD/movdatos/6-5.png" alt="image"></p>
 <p><em><strong>Importación de datos con PostgreSQL</strong></em></p>
-<p>En esta ocasión utilizaremos el comando <code>psql</code>.</p>
 <p>Crearemos una nueva base de datos llamada <code>scottimportado</code>.</p>
 <div><pre><code>create database scottimportado with owner postgres;
 grant all privileges on database scottimportado to postgres;
@@ -6620,7 +6618,6 @@ sqlldr scott2/tiger control=/home/oracle/control/salgrade.ctl log=/home/oracle/l
 <p>Acto seguido accederé a la base de datos y comprobaré que se han cargado los datos correctamente.</p>
 <p><img src="./../images/ABD/movdatos/8-7.png" alt="image"></p>
 <p>La herramienta SQL*Loader es muy útil porque nos permite cargar datos de manera eficiente y simple. Podemos cargar datos desde archivos de texto y trabajar con datos de diferentes orígenes. Además, podemos cargar datos en tablas que contienen claves foráneas y relaciones, lo que nos brinda mayor flexibilidad. En resumen, esta herramienta es una excelente opción para aquellos que necesitan cargar grandes cantidades de datos en sus bases de datos de manera eficiente y rápida.</p>
-<p>Después de haber pasado por el proceso manual de carga de datos con SQL*Loader, he reflexionado sobre la posibilidad de que existan formas más eficientes y automatizadas de realizar este proceso. Tal vez mediante el uso de procedimientos o funciones predefinidas en el motor de base de datos, o incluso mediante la creación de scripts bash que permitan la automatización de las tareas necesarias.</p>
 ]]></content>
     <author>
       <name>Óscar Lucas</name>
@@ -6635,7 +6632,7 @@ sqlldr scott2/tiger control=/home/oracle/control/salgrade.ctl log=/home/oracle/l
     <title type="html">Implantación de aplicaciones web PHP en docker</title>
     <id>https://github.com/oscarlucas22/practicas/phpdocker/</id>
     <link href="https://github.com/oscarlucas22/practicas/phpdocker/"/>
-    <updated>2023-03-04T09:04:10.542Z</updated>
+    <updated>2023-03-04T09:07:16.247Z</updated>
     <content type="html"><![CDATA[<h1 id="implantacion-de-aplicaciones-web-php-en-docker"> Implantación de aplicaciones web PHP en docker</h1>
 <p><strong>Imaginemos que el equipo de desarrollo de nuestra empresa ha desarrollado una aplicación PHP que se llama <a href="https://github.com/evilnapsis/bookmedik" target="_blank" rel="noopener noreferrer">BookMedik<i>Content not supported</i></a>.</strong></p>
 <p><strong>Queremos crear una imagen Docker para implantar dicha aplicación.</strong></p>
@@ -7169,7 +7166,7 @@ volumes:
     <title type="html">VPN</title>
     <id>https://github.com/oscarlucas22/practicas/vpn/</id>
     <link href="https://github.com/oscarlucas22/practicas/vpn/"/>
-    <updated>2023-03-04T09:04:10.548Z</updated>
+    <updated>2023-03-04T09:07:16.253Z</updated>
     <content type="html"><![CDATA[<h1 id="vpn"> VPN</h1>
 <h2 id="a-vpn-de-acceso-remoto-con-openvpn-y-certificados-x509-5-puntos"> A) VPN de acceso remoto con OpenVPN y certificados x509 (5 puntos)</h2>
 <p><strong>Configura una conexión VPN de acceso remoto entre dos equipos del cloud:</strong></p>
