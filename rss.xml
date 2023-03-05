@@ -6,36 +6,12 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Sun, 05 Mar 2023 17:06:53 GMT</pubDate>
-    <lastBuildDate>Sun, 05 Mar 2023 17:06:53 GMT</lastBuildDate>
+    <pubDate>Sun, 05 Mar 2023 17:12:47 GMT</pubDate>
+    <lastBuildDate>Sun, 05 Mar 2023 17:12:47 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
     <category>practicas</category>
-    <item>
-      <title>IAW</title>
-      <link>https://github.com/oscarlucas22/category/IAW/</link>
-      <guid>https://github.com/oscarlucas22/category/IAW/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">IAW</source>
-      <category>categorías</category>
-      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="iaw"> IAW</h1>
-<ul>
-<li>
-<p><a href="/practicas/django.html">Instalación/migración de aplicaciones web Python</a></p>
-</li>
-<li>
-<p><a href="/practicas/java.html">Despliegue de aplicaciones Java</a></p>
-</li>
-<li>
-<p><a href="/noacabado/noacabado.html">Implantación de aplicaciones web PHP en docker</a></p>
-</li>
-<li>
-<p><a href="/practicas/python-docker.html">Implantación de aplicaciones web Python en docker</a></p>
-</li>
-</ul>
-]]></content:encoded>
-    </item>
     <item>
       <title>ASO</title>
       <link>https://github.com/oscarlucas22/category/ASO/</link>
@@ -62,6 +38,30 @@
 </li>
 <li>
 <p><a href="/practicas/ldaps.html">LDAPs</a></p>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>IAW</title>
+      <link>https://github.com/oscarlucas22/category/IAW/</link>
+      <guid>https://github.com/oscarlucas22/category/IAW/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">IAW</source>
+      <category>categorías</category>
+      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="iaw"> IAW</h1>
+<ul>
+<li>
+<p><a href="/practicas/django.html">Instalación/migración de aplicaciones web Python</a></p>
+</li>
+<li>
+<p><a href="/practicas/java.html">Despliegue de aplicaciones Java</a></p>
+</li>
+<li>
+<p><a href="/noacabado/noacabado.html">Implantación de aplicaciones web PHP en docker</a></p>
+</li>
+<li>
+<p><a href="/practicas/python-docker.html">Implantación de aplicaciones web Python en docker</a></p>
 </li>
 </ul>
 ]]></content:encoded>
@@ -6094,7 +6094,7 @@ grant read, write on directory dmp_dir to SCOTT;
 <p>Contenido del fichero de log de la exportación:</p>
 <p><img src="./../images/ABD/movdatos/5-1.png" alt="image"></p>
 <h3 id="_2-importa-el-fichero-obtenido-anteriormente-usando-oracle-data-pump-pero-en-un-usuario-distinto-de-la-misma-base-de-datos"> 2. Importa el fichero obtenido anteriormente usando Oracle Data Pump pero en un usuario distinto de la misma base de datos.</h3>
-<p>Voy a establecer el perfil del usuario objetivo en la base de datos, asignándole los permisos correspondientes (lectura y escritura, y permisos necesarios para realizar la importación).</p>
+<p>Voy a establecer el perfil del usuario objetivo en la base de datos, asignándole los permisos correspondientes.</p>
 <div><pre><code>create user importar identified by passwd;
 alter user importar account unlock;
 grant connect, resource to importar;
