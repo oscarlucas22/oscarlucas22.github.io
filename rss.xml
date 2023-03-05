@@ -6,38 +6,32 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Sat, 04 Mar 2023 22:55:21 GMT</pubDate>
-    <lastBuildDate>Sat, 04 Mar 2023 22:55:21 GMT</lastBuildDate>
+    <pubDate>Sun, 05 Mar 2023 17:06:53 GMT</pubDate>
+    <lastBuildDate>Sun, 05 Mar 2023 17:06:53 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
     <category>practicas</category>
     <item>
-      <title>ABD</title>
-      <link>https://github.com/oscarlucas22/category/ABD/</link>
-      <guid>https://github.com/oscarlucas22/category/ABD/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">ABD</source>
+      <title>IAW</title>
+      <link>https://github.com/oscarlucas22/category/IAW/</link>
+      <guid>https://github.com/oscarlucas22/category/IAW/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">IAW</source>
       <category>categorías</category>
       <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="abd"> ABD</h1>
+      <content:encoded><![CDATA[<h1 id="iaw"> IAW</h1>
 <ul>
 <li>
-<p><a href="/practicas/BD.html">Servidores y Clientes de Base de Datos</a></p>
+<p><a href="/practicas/django.html">Instalación/migración de aplicaciones web Python</a></p>
 </li>
 <li>
-<p><a href="/practicas/orcl-psql.html">Interconexión Servidores</a></p>
+<p><a href="/practicas/java.html">Despliegue de aplicaciones Java</a></p>
 </li>
 <li>
-<p><a href="/practicas/usuarios.html">Usuarios</a></p>
+<p><a href="/noacabado/noacabado.html">Implantación de aplicaciones web PHP en docker</a></p>
 </li>
 <li>
-<p><a href="/practicas/almacenamiento.html">Almacenamiento</a></p>
-</li>
-<li>
-<p><a href="/practicas/auditoria.html">Auditoría</a></p>
-</li>
-<li>
-<p><a href="/practicas/movdatos.html">Movimiento de datos</a></p>
+<p><a href="/practicas/python-docker.html">Implantación de aplicaciones web Python en docker</a></p>
 </li>
 </ul>
 ]]></content:encoded>
@@ -73,25 +67,49 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>IAW</title>
-      <link>https://github.com/oscarlucas22/category/IAW/</link>
-      <guid>https://github.com/oscarlucas22/category/IAW/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">IAW</source>
+      <title>ABD</title>
+      <link>https://github.com/oscarlucas22/category/ABD/</link>
+      <guid>https://github.com/oscarlucas22/category/ABD/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">ABD</source>
       <category>categorías</category>
       <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="iaw"> IAW</h1>
+      <content:encoded><![CDATA[<h1 id="abd"> ABD</h1>
 <ul>
 <li>
-<p><a href="/practicas/django.html">Instalación/migración de aplicaciones web Python</a></p>
+<p><a href="/practicas/BD.html">Servidores y Clientes de Base de Datos</a></p>
 </li>
 <li>
-<p><a href="/practicas/java.html">Despliegue de aplicaciones Java</a></p>
+<p><a href="/practicas/orcl-psql.html">Interconexión Servidores</a></p>
 </li>
 <li>
-<p><a href="/noacabado/noacabado.html">Implantación de aplicaciones web PHP en docker</a></p>
+<p><a href="/practicas/usuarios.html">Usuarios</a></p>
 </li>
 <li>
-<p><a href="/practicas/python-docker.html">Implantación de aplicaciones web Python en docker</a></p>
+<p><a href="/practicas/almacenamiento.html">Almacenamiento</a></p>
+</li>
+<li>
+<p><a href="/practicas/auditoria.html">Auditoría</a></p>
+</li>
+<li>
+<p><a href="/practicas/movdatos.html">Movimiento de datos</a></p>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>SRI</title>
+      <link>https://github.com/oscarlucas22/category/SRI/</link>
+      <guid>https://github.com/oscarlucas22/category/SRI/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">SRI</source>
+      <category>categorías</category>
+      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="sri"> SRI</h1>
+<ul>
+<li>
+<p><a href="/practicas/openstack.html">Práctica: Escenario en OpenStack</a></p>
+</li>
+<li>
+<p><a href="/practicas/correos.html">Instalación y configuración de un servidor de correos en el VPS</a></p>
 </li>
 </ul>
 ]]></content:encoded>
@@ -128,24 +146,6 @@
 </li>
 <li>
 <p><a href="/practicas/cortafuegoII.html">Cortafuegos II: Perimetral con nftables</a></p>
-</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>SRI</title>
-      <link>https://github.com/oscarlucas22/category/SRI/</link>
-      <guid>https://github.com/oscarlucas22/category/SRI/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">SRI</source>
-      <category>categorías</category>
-      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="sri"> SRI</h1>
-<ul>
-<li>
-<p><a href="/practicas/openstack.html">Práctica: Escenario en OpenStack</a></p>
-</li>
-<li>
-<p><a href="/practicas/correos.html">Instalación y configuración de un servidor de correos en el VPS</a></p>
 </li>
 </ul>
 ]]></content:encoded>
@@ -1542,109 +1542,6 @@ sudo make uninstall
 ]]></content:encoded>
     </item>
     <item>
-      <title>MariaDB en Debian 11 Bullseye</title>
-      <link>https://github.com/oscarlucas22/practicas/mariadb/</link>
-      <guid>https://github.com/oscarlucas22/practicas/mariadb/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">MariaDB en Debian 11 Bullseye</source>
-      <category>practicas</category>
-      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="mariadb-en-debian-11-bullseye"> MariaDB en Debian 11 Bullseye</h1>
-<p><img src="./../images/ABD/mariadb.png" alt="image"></p>
-<p>Para conseguir una instalación correcta debemos cumplir los siguientes requisitos:</p>
-<p><input type="checkbox" name="vehicle" value="Bike"> Tener una máquina Debian 11 actualizada</p>
-<p><input type="checkbox" name="vehicle" value="Bike"> Tener un usuario con privilegios de sudo</p>
-<p><input type="checkbox" name="vehicle" value="Bike"> Tener acceso a internet</p>
-<p>Antes de comenzar con la instalación actualizaremos nuestra máquina</p>
-<div><pre><code>sudo apt update &amp;&amp; sudo apt upgrade
-</code></pre>
-</div><p>Una vez completada la actualización del sistema, ejecuta el siguiente comando para instalr los paquetes necesarios</p>
-<div><pre><code>sudo apt-get install software-properties-common dirmngr gnupg2 -y
-</code></pre>
-</div><hr>
-<div><pre><code>sudo apt-get install apt-transport-https wget curl -y
-</code></pre>
-</div><h2 id="instalar-mariadb-en-debian-11"> Instalar MariaDB en Debian 11</h2>
-<p>Para comenzar con la instalación ejecuta el siguiente comando:</p>
-<div><pre><code>sudo apt install mariadb-server -y
-</code></pre>
-</div><p>Para iniciar, detener y reiniciar el servidor de bases de datos MariaDB, utiliza los siguientes comandos:</p>
-<p>Iniciar</p>
-<div><pre><code>sudo systemctl start mariadb
-</code></pre>
-</div><p>Detener</p>
-<div><pre><code>sudo systemctl stop mariadb
-</code></pre>
-</div><p>Reiniciar</p>
-<div><pre><code>sudo systemctl restart mariadb
-</code></pre>
-</div><p>Para que MariaDB se inicie automáticamente al arrancar el sistema, ejecuta el siguiente comando:</p>
-<div><pre><code>sudo systemctl enable mariadb
-</code></pre>
-</div><p>MariaDB debería estar en marcha en este momento. Puedes comprobar si se esta ejecutando, ejecutando el siguiente comando:</p>
-<div><pre><code>sudo systemctl status mariadb
-</code></pre>
-</div><p>Ejemplo de salida:</p>
-<p><img src="./../images/ABD/1-mariadb.png" alt="image"></p>
-<p><code>Ctrl + C</code> para salir del fichero</p>
-<p>Y con esto ya tendriamos instalado MariaDB y para ejecutarlo, ejecutaremos el siguiente comando:</p>
-<div><pre><code>sudo mysql
-</code></pre>
-</div><h2 id="creacion-de-usuario"> Creación de usuario</h2>
-<p>Los siguientes pasos que vas a ver se ejecutan dentro de MariaDB (cambia el usuario y la contraseña por los tuyos)</p>
-<div><pre><code>create user lucas;
-</code></pre>
-</div><hr>
-<div><pre><code>grant all privileges on *.* to 'lucas'@'%' identified by 'root' with grant option;
-</code></pre>
-</div><hr>
-<div><pre><code>FLUSH PRIVILEGES;
-</code></pre>
-</div><p><img src="./../images/ABD/2-mariadb.png" alt="image"></p>
-<p>Y una vez ya creado el usuario salimos de MariaDB ejecutando <code>exit;</code>
-Y para conectarnos a nuestro usuario ejecutaremos el siguiente comando:</p>
-<div><pre><code>mysql -u lucas -p
-</code></pre>
-</div><p><img src="./../images/ABD/5-mariadb.png" alt="image"></p>
-<h3 id="creacion-de-base-de-datos"> Creación de base de datos</h3>
-<p>Para ejecutar una base de datos ejecutaremos el siguiente comando:</p>
-<div><pre><code>mysql&gt; CREATE DATABASE nombre-db;
-</code></pre>
-</div><p><img src="./../images/ABD/6-mariadb.png" alt="image"></p>
-<p>Para meternos en una base de datos ejecutaremos el siguiente comando:</p>
-<div><pre><code>mysql&gt; use nombre-db;
-</code></pre>
-</div><p>Para crear una tabla ejecutaremos el siguiente comando:</p>
-<div><pre><code>mysql&gt; CREATE TABLE NOMBRE (
-    -&gt;     DATO,
-    -&gt;     DATO,
-    -&gt;     DATO
-    -&gt; );
-</code></pre>
-</div><p>Para ejecutar los insert dentro de la table ejecutaremos el siguiente comando:</p>
-<div><pre><code>mysql&gt; INSERT INTO NOMBRE VALUES ('DATO','DATO','DATO');
-</code></pre>
-</div><p>Ejemplo práctico:</p>
-<p><img src="./../images/ABD/7-mariadb.png" alt="image"></p>
-<h2 id="acceso-remoto"> Acceso remoto</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font> Modificamos el fichero <code>50-server.conf</code></p>
-<div><pre><code>sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
-</code></pre>
-</div><p>Y editamos la linea donde pone <code>bind-address</code> y lo dejaremos como se muestra en la imagen:</p>
-<p><img src="./../images/ABD/3-mariadb.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 2</strong></font> Reiniciamos el servicio mariadb</p>
-<div><pre><code>sudo service mariadb restart
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font> Nos iremos al cliente e instalaremos mariadb-client</p>
-<div><pre><code>sudo apt install mariadb-client
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 4</strong></font> Nos conectamos</p>
-<div><pre><code>mariadb -u lucas -h ip-servidor -p 
-</code></pre>
-</div><p><img src="./../images/ABD/4-mariadb.png" alt="image"></p>
-<p>¡Gracias!</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Migrar Centos 8 a Rocky Linux 8</title>
       <link>https://github.com/oscarlucas22/practicas/migracionrocky/</link>
       <guid>https://github.com/oscarlucas22/practicas/migracionrocky/</guid>
@@ -1692,6 +1589,180 @@ Podemos descargar los paquetes del repositorio con programas como wget.</p>
 <div><pre><code>cat /etc/redhat-release
 </code></pre>
 </div>]]></content:encoded>
+    </item>
+    <item>
+      <title>Oracle en Debian 11 Bullseye</title>
+      <link>https://github.com/oscarlucas22/practicas/oracle/</link>
+      <guid>https://github.com/oscarlucas22/practicas/oracle/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">Oracle en Debian 11 Bullseye</source>
+      <category>practicas</category>
+      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="oracle-en-debian-11-bullseye"> Oracle en Debian 11 Bullseye</h1>
+<p><img src="./../images/ABD/oracle.png" alt="image"></p>
+<h2 id="instalacion-de-oracle-en-debian-11-bullseye"> Instalación de Oracle en Debian 11 Bullseye</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font></p>
+<p>Antes de instalar el paquete, tenemos que configurar algunas cosas. Empezaremos creando el script:</p>
+<div><pre><code>sudo nano /sbin/chkconfig
+</code></pre>
+</div><p>Y copiamos estas líneas en el archivo:</p>
+<div><pre><code>#!/bin/bash
+# Oracle XE installer chkconfig hack for Ubuntu
+file=/etc/init.d/oracle-xe
+if [[ ! `tail -n1 $file | grep INIT` ]]; then
+echo &gt;&gt; $file
+echo '### BEGIN INIT INFO' &gt;&gt; $file
+echo '# Provides: OracleXE' &gt;&gt; $file
+echo '# Required-Start: $remote_fs $syslog' &gt;&gt; $file
+echo '# Required-Stop: $remote_fs $syslog' &gt;&gt; $file
+echo '# Default-Start: 2 3 4 5' &gt;&gt; $file
+echo '# Default-Stop: 0 1 6' &gt;&gt; $file
+echo '# Short-Description: Oracle 19c Express Edition' &gt;&gt; $file
+echo '### END INIT INFO' &gt;&gt; $file
+fi
+update-rc.d oracle-xe defaults 80 01
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 2</strong></font></p>
+<p>Damos los permisos necesarios al archivo:</p>
+<div><pre><code>sudo chmod 755 /sbin/chkconfig
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 3</strong></font></p>
+<p>Oracle 19c XE requiere de una configuración especial en kernel para funcionar. Por eso necesitamos añadir algunos parámetros al mismo.</p>
+<div><pre><code>sudo nano /etc/sysctl.d/60-oracle.conf
+</code></pre>
+</div><p>Copiamos lo siguiente y guardamos.</p>
+<div><pre><code>fs.file-max=6815744
+net.ipv4.ip_local_port_range=9000 65000
+kernel.sem=250 32000 100 128
+kernel.shmmax=536870912
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 4</strong></font></p>
+<p>Para cargar los parámetros del kernel sin reiniciar:</p>
+<div><pre><code>sudo service procps start
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 5</strong></font> <strong>Comienzo de la instalación</strong></p>
+<p>Y ahora sí, instalamos el paquete <a href="https://www.dropbox.com/s/p1vhrnjw73fdc70/oracle-database-ee-19c_1.0-2_amd64.deb?dl=0" target="_blank" rel="noopener noreferrer">.deb<i>Content not supported</i></a>:</p>
+<div><pre><code>sudo dpkg -i oracle-database-ee-19c_1.0-2_amd64.deb
+</code></pre>
+</div><p>Después de unos 10 minutos el proceso terminará. Ejecutamos el siguiente comando para configurar la contraseña de administrador de la base de datos y demás cosas:</p>
+<div><pre><code>sudo /etc/init.d/oracledb_ORCLCDB-19c configure
+</code></pre>
+</div><p>Veremos que da error. Eso se debe a que en al script de configuración le hace falta un parámetro. Para añadirlo entramos en el script con:</p>
+<div><pre><code>sudo nano /etc/init.d/oracledb_ORCLCDB-19c
+</code></pre>
+</div><p>Y buscamos(Ctrl + W) en la línea donde pone &quot;Configuring&quot;</p>
+<p><img src="./../images/ABD/1-oracle.png" alt="image"></p>
+<p>Borramos la línea que se ve marcada en la imagen y copiamos en su lugar la siguiente:</p>
+<div><pre><code>$SU -s /bin/bash  $ORACLE_OWNER -c &quot;$DBCA -silent -createDatabase -gdbName $ORACLE_SID -templateName $TEMPLATE_NAME -characterSet $CHARSET -createAsContainerDatabase $CREATE_AS_CDB -numberOfPDBs $NUMBER_OF_PDBS -pdbName $PDB_NAME -createListener $LISTENER_NAME:$LISTENER_PORT -datafileDestination $ORACLE_DATA_LOCATION -sid $ORACLE_SID -autoGeneratePasswords -emConfiguration DBEXPRESS -emExpressPort $EM_EXPRESS_PORT -J-Doracle.assistants.dbca.validate.ConfigurationParams=false&quot;
+</code></pre>
+</div><p>Ahora lo intentamos de nuevo:</p>
+<div><pre><code>sudo /etc/init.d/oracledb_ORCLCDB-19c configure
+</code></pre>
+</div><p><code>Nota: Si nos salta un error de netstat tendremos que instalarlo sudo apt install net-tools</code></p>
+<p><code>Nota: Si nos sigue saliendo un error instalaremos lo siguiente sudo apt install libaio1 unixodbc</code></p>
+<p>Si te sale este error:</p>
+<p><img src="./../images/ABD/2-oracle.png" alt="image"></p>
+<p>Sigue estos pasos:</p>
+<div><pre><code>sudo nano /etc/hosts
+</code></pre>
+</div><p>Dentro del fichero escribe tu ip seguido del nombre de tu máquina dos veces, como se muestra en la siguiente imagen:</p>
+<p><img src="./../images/ABD/3-oracle.png" alt="image"></p>
+<p>Y después de esto ejecutaremos de nuevo el comando y ya debería de ir sino reinicia la máquina (<em>sudo reboot</em>) y vuélvelo a probar</p>
+<p><font color="#800080"><strong>Paso 6</strong></font></p>
+<p>Añadimos las variables de entorno a bash:</p>
+<div><pre><code>nano ~/.bashrc
+</code></pre>
+</div><p>Copiamos las siguientes líneas al final del fichero:</p>
+<div><pre><code>export ORACLE_HOME=/opt/oracle/product/19c/dbhome_1
+export ORACLE_SID=ORCLCDB
+export ORACLE_BASE=/opt/oracle
+export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
+export PATH=$ORACLE_HOME/bin:$PATH
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 7</strong></font></p>
+<p>Para finalizar reiniciamos el servicio de Oracle 19c:</p>
+<div><pre><code>sudo service oracledb_ORCLCDB-19c restart
+</code></pre>
+</div><p>Para iniciar Oracle ejecutaremos una serie de pasos:</p>
+<p><strong>Primero pondremos una contraseña</strong></p>
+<div><pre><code>passwd oracle
+</code></pre>
+</div><p><strong>Segundo entrasemos en oracle</strong></p>
+<div><pre><code>su oracle
+</code></pre>
+</div><p>Seguramente te salga un <code>$</code>, si es así eso es que no tienes shell. Para solucionarlo ejecutaremos</p>
+<div><pre><code>sudo usermod -s /bin/bash oracle
+</code></pre>
+</div><p>Y probaremos de nuevo:</p>
+<div><pre><code>su oracle
+</code></pre>
+</div><p>Una vez dentro ya tendras shell y dentro ejecutaremos:</p>
+<div><pre><code>sqlplus / as sysdba
+</code></pre>
+</div><p>Si esto no te va reinicia la maquina <code>sudo reboot</code> y prueba de nuevo</p>
+<p>Bien, una vez echo esto si al iniciar te sale algo asi:</p>
+<p><img src="./../images/ABD/4-oracle.png" alt="image"></p>
+<p>Ejecuta lo siguiente</p>
+<div><pre><code>SQL&gt; shutdown abort
+</code></pre>
+</div><hr>
+<div><pre><code>SQL&gt; startup
+</code></pre>
+</div><p>Y ya estaría sal y entra de nuevo y te deberia salir algo así:</p>
+<p><img src="./../images/ABD/5-oracle.png" alt="image"></p>
+<p>Acto seguido cambiaremos la contraseña del user SYS y SYSTEM</p>
+<div><pre><code>SQL&gt; alter user sys identified by TU_PASSWD;
+</code></pre>
+</div><hr>
+<div><pre><code>SQL&gt; alter user system identified by TU_PASSWD;
+</code></pre>
+</div><h2 id="creacion-de-usuario"> Creación de usuario</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font></p>
+<p>Ejecutamos el siguiente comando para activar _ORACLE_SCRIPT para que se puedan ejecutar sin errores los siguientes comandos:</p>
+<div><pre><code>SQL&gt; alter session set &quot;_ORACLE_SCRIPT&quot;=true;
+</code></pre>
+</div><p>Y luego nos dejara crear el usuario</p>
+<div><pre><code>SQL&gt; create user lucas identified by admin;
+</code></pre>
+</div><p>Si le queremos dar prvilegios ejecutaremos el siguiente comando(en este caso le daremos todos los privilegios):</p>
+<div><pre><code>SQL&gt; grant all privileges to lucas;
+</code></pre>
+</div><p>Una vez hecho esto pasos ya estaria el usuario creato y nos podremos conectar con el siguiente comando:</p>
+<div><pre><code>sqlplus lucas/admin
+</code></pre>
+</div><p><img src="./../images/ABD/6-oracle.png" alt="image"></p>
+<p>Para crear la base de datos y las tablas con sus respectivos inserts aqui os muestro como se hace:</p>
+<p><a href="https://github.com/oscarlucas22/Proyecto-DDL-y-DML_BD/tree/main/Oracle" target="_blank" rel="noopener noreferrer">Como crear base de datos y tablas en Oracle<i>Content not supported</i></a></p>
+<h2 id="cliente-remoto-oracle"> Cliente remoto Oracle</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font> Activaremos listener y habilitaremos el pueto 1521/tcp</p>
+<p>Antes de comenzar tenemos que activar el listener:</p>
+<div><pre><code>lsnrclt start
+</code></pre>
+</div><p>Despues de eso habilitaremos el puerto 1521 del firewall, pero antes si no tenemos instalado firewalld lo instalaremos:</p>
+<div><pre><code>sudo apt install firewalld
+</code></pre>
+</div><p>Y ahora si habilitaremos el puerto 1521:</p>
+<div><pre><code>sudo firewall-cmd --permanent --add-port=1521/tcp
+</code></pre>
+</div><hr>
+<div><pre><code>sudo firewall-cmd --reload
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 2</strong></font> Instalaremos los clientes</p>
+<p>Una vez hecho esto instalaremos los clientes de Oracle</p>
+<ul>
+<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-basic-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">basic<i>Content not supported</i></a></li>
+<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-devel-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">devel<i>Content not supported</i></a></li>
+<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-sqlplus-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">sqlplus<i>Content not supported</i></a></li>
+</ul>
+<p>Una vez descargados los instalaremos en mi caso como lo voy a instalar en un Debian utilizaremos el comando <code>alien</code></p>
+<div><pre><code>sudo alien -i --scripts oracle-instantclient-*
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 3</strong></font> Acceso desde el cliente</p>
+<p>Una vez instalados los clientes ya podremos acceder</p>
+<div><pre><code>sqlplus lucas/admin@ip-server/ORCLCDB
+</code></pre>
+</div><p><img src="./../images/ABD/7-oracle.png" alt="image"></p>
+<p>¡Gracias!</p>
+]]></content:encoded>
     </item>
     <item>
       <title>MongoDB en Debian 11 Bullseye</title>
@@ -1826,6 +1897,109 @@ Podemos descargar los paquetes del repositorio con programas como wget.</p>
 <div><pre><code>mongosh -u nombre-user -p password ip-server
 </code></pre>
 </div><p><img src="./../images/ABD/5-mongo.png" alt="image"></p>
+<p>¡Gracias!</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>MariaDB en Debian 11 Bullseye</title>
+      <link>https://github.com/oscarlucas22/practicas/mariadb/</link>
+      <guid>https://github.com/oscarlucas22/practicas/mariadb/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">MariaDB en Debian 11 Bullseye</source>
+      <category>practicas</category>
+      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="mariadb-en-debian-11-bullseye"> MariaDB en Debian 11 Bullseye</h1>
+<p><img src="./../images/ABD/mariadb.png" alt="image"></p>
+<p>Para conseguir una instalación correcta debemos cumplir los siguientes requisitos:</p>
+<p><input type="checkbox" name="vehicle" value="Bike"> Tener una máquina Debian 11 actualizada</p>
+<p><input type="checkbox" name="vehicle" value="Bike"> Tener un usuario con privilegios de sudo</p>
+<p><input type="checkbox" name="vehicle" value="Bike"> Tener acceso a internet</p>
+<p>Antes de comenzar con la instalación actualizaremos nuestra máquina</p>
+<div><pre><code>sudo apt update &amp;&amp; sudo apt upgrade
+</code></pre>
+</div><p>Una vez completada la actualización del sistema, ejecuta el siguiente comando para instalr los paquetes necesarios</p>
+<div><pre><code>sudo apt-get install software-properties-common dirmngr gnupg2 -y
+</code></pre>
+</div><hr>
+<div><pre><code>sudo apt-get install apt-transport-https wget curl -y
+</code></pre>
+</div><h2 id="instalar-mariadb-en-debian-11"> Instalar MariaDB en Debian 11</h2>
+<p>Para comenzar con la instalación ejecuta el siguiente comando:</p>
+<div><pre><code>sudo apt install mariadb-server -y
+</code></pre>
+</div><p>Para iniciar, detener y reiniciar el servidor de bases de datos MariaDB, utiliza los siguientes comandos:</p>
+<p>Iniciar</p>
+<div><pre><code>sudo systemctl start mariadb
+</code></pre>
+</div><p>Detener</p>
+<div><pre><code>sudo systemctl stop mariadb
+</code></pre>
+</div><p>Reiniciar</p>
+<div><pre><code>sudo systemctl restart mariadb
+</code></pre>
+</div><p>Para que MariaDB se inicie automáticamente al arrancar el sistema, ejecuta el siguiente comando:</p>
+<div><pre><code>sudo systemctl enable mariadb
+</code></pre>
+</div><p>MariaDB debería estar en marcha en este momento. Puedes comprobar si se esta ejecutando, ejecutando el siguiente comando:</p>
+<div><pre><code>sudo systemctl status mariadb
+</code></pre>
+</div><p>Ejemplo de salida:</p>
+<p><img src="./../images/ABD/1-mariadb.png" alt="image"></p>
+<p><code>Ctrl + C</code> para salir del fichero</p>
+<p>Y con esto ya tendriamos instalado MariaDB y para ejecutarlo, ejecutaremos el siguiente comando:</p>
+<div><pre><code>sudo mysql
+</code></pre>
+</div><h2 id="creacion-de-usuario"> Creación de usuario</h2>
+<p>Los siguientes pasos que vas a ver se ejecutan dentro de MariaDB (cambia el usuario y la contraseña por los tuyos)</p>
+<div><pre><code>create user lucas;
+</code></pre>
+</div><hr>
+<div><pre><code>grant all privileges on *.* to 'lucas'@'%' identified by 'root' with grant option;
+</code></pre>
+</div><hr>
+<div><pre><code>FLUSH PRIVILEGES;
+</code></pre>
+</div><p><img src="./../images/ABD/2-mariadb.png" alt="image"></p>
+<p>Y una vez ya creado el usuario salimos de MariaDB ejecutando <code>exit;</code>
+Y para conectarnos a nuestro usuario ejecutaremos el siguiente comando:</p>
+<div><pre><code>mysql -u lucas -p
+</code></pre>
+</div><p><img src="./../images/ABD/5-mariadb.png" alt="image"></p>
+<h3 id="creacion-de-base-de-datos"> Creación de base de datos</h3>
+<p>Para ejecutar una base de datos ejecutaremos el siguiente comando:</p>
+<div><pre><code>mysql&gt; CREATE DATABASE nombre-db;
+</code></pre>
+</div><p><img src="./../images/ABD/6-mariadb.png" alt="image"></p>
+<p>Para meternos en una base de datos ejecutaremos el siguiente comando:</p>
+<div><pre><code>mysql&gt; use nombre-db;
+</code></pre>
+</div><p>Para crear una tabla ejecutaremos el siguiente comando:</p>
+<div><pre><code>mysql&gt; CREATE TABLE NOMBRE (
+    -&gt;     DATO,
+    -&gt;     DATO,
+    -&gt;     DATO
+    -&gt; );
+</code></pre>
+</div><p>Para ejecutar los insert dentro de la table ejecutaremos el siguiente comando:</p>
+<div><pre><code>mysql&gt; INSERT INTO NOMBRE VALUES ('DATO','DATO','DATO');
+</code></pre>
+</div><p>Ejemplo práctico:</p>
+<p><img src="./../images/ABD/7-mariadb.png" alt="image"></p>
+<h2 id="acceso-remoto"> Acceso remoto</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font> Modificamos el fichero <code>50-server.conf</code></p>
+<div><pre><code>sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
+</code></pre>
+</div><p>Y editamos la linea donde pone <code>bind-address</code> y lo dejaremos como se muestra en la imagen:</p>
+<p><img src="./../images/ABD/3-mariadb.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 2</strong></font> Reiniciamos el servicio mariadb</p>
+<div><pre><code>sudo service mariadb restart
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 3</strong></font> Nos iremos al cliente e instalaremos mariadb-client</p>
+<div><pre><code>sudo apt install mariadb-client
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 4</strong></font> Nos conectamos</p>
+<div><pre><code>mariadb -u lucas -h ip-servidor -p 
+</code></pre>
+</div><p><img src="./../images/ABD/4-mariadb.png" alt="image"></p>
 <p>¡Gracias!</p>
 ]]></content:encoded>
     </item>
@@ -2075,180 +2249,6 @@ down iptables -t nat -D POSTROUTING -s 192.168.0.0/16 -o ens3 -j MASQUERADE
 <p><strong>Cambia la contraseña al usuario root</strong></p>
 </li>
 </ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Oracle en Debian 11 Bullseye</title>
-      <link>https://github.com/oscarlucas22/practicas/oracle/</link>
-      <guid>https://github.com/oscarlucas22/practicas/oracle/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">Oracle en Debian 11 Bullseye</source>
-      <category>practicas</category>
-      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="oracle-en-debian-11-bullseye"> Oracle en Debian 11 Bullseye</h1>
-<p><img src="./../images/ABD/oracle.png" alt="image"></p>
-<h2 id="instalacion-de-oracle-en-debian-11-bullseye"> Instalación de Oracle en Debian 11 Bullseye</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font></p>
-<p>Antes de instalar el paquete, tenemos que configurar algunas cosas. Empezaremos creando el script:</p>
-<div><pre><code>sudo nano /sbin/chkconfig
-</code></pre>
-</div><p>Y copiamos estas líneas en el archivo:</p>
-<div><pre><code>#!/bin/bash
-# Oracle XE installer chkconfig hack for Ubuntu
-file=/etc/init.d/oracle-xe
-if [[ ! `tail -n1 $file | grep INIT` ]]; then
-echo &gt;&gt; $file
-echo '### BEGIN INIT INFO' &gt;&gt; $file
-echo '# Provides: OracleXE' &gt;&gt; $file
-echo '# Required-Start: $remote_fs $syslog' &gt;&gt; $file
-echo '# Required-Stop: $remote_fs $syslog' &gt;&gt; $file
-echo '# Default-Start: 2 3 4 5' &gt;&gt; $file
-echo '# Default-Stop: 0 1 6' &gt;&gt; $file
-echo '# Short-Description: Oracle 19c Express Edition' &gt;&gt; $file
-echo '### END INIT INFO' &gt;&gt; $file
-fi
-update-rc.d oracle-xe defaults 80 01
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 2</strong></font></p>
-<p>Damos los permisos necesarios al archivo:</p>
-<div><pre><code>sudo chmod 755 /sbin/chkconfig
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font></p>
-<p>Oracle 19c XE requiere de una configuración especial en kernel para funcionar. Por eso necesitamos añadir algunos parámetros al mismo.</p>
-<div><pre><code>sudo nano /etc/sysctl.d/60-oracle.conf
-</code></pre>
-</div><p>Copiamos lo siguiente y guardamos.</p>
-<div><pre><code>fs.file-max=6815744
-net.ipv4.ip_local_port_range=9000 65000
-kernel.sem=250 32000 100 128
-kernel.shmmax=536870912
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 4</strong></font></p>
-<p>Para cargar los parámetros del kernel sin reiniciar:</p>
-<div><pre><code>sudo service procps start
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 5</strong></font> <strong>Comienzo de la instalación</strong></p>
-<p>Y ahora sí, instalamos el paquete <a href="https://www.dropbox.com/s/p1vhrnjw73fdc70/oracle-database-ee-19c_1.0-2_amd64.deb?dl=0" target="_blank" rel="noopener noreferrer">.deb<i>Content not supported</i></a>:</p>
-<div><pre><code>sudo dpkg -i oracle-database-ee-19c_1.0-2_amd64.deb
-</code></pre>
-</div><p>Después de unos 10 minutos el proceso terminará. Ejecutamos el siguiente comando para configurar la contraseña de administrador de la base de datos y demás cosas:</p>
-<div><pre><code>sudo /etc/init.d/oracledb_ORCLCDB-19c configure
-</code></pre>
-</div><p>Veremos que da error. Eso se debe a que en al script de configuración le hace falta un parámetro. Para añadirlo entramos en el script con:</p>
-<div><pre><code>sudo nano /etc/init.d/oracledb_ORCLCDB-19c
-</code></pre>
-</div><p>Y buscamos(Ctrl + W) en la línea donde pone &quot;Configuring&quot;</p>
-<p><img src="./../images/ABD/1-oracle.png" alt="image"></p>
-<p>Borramos la línea que se ve marcada en la imagen y copiamos en su lugar la siguiente:</p>
-<div><pre><code>$SU -s /bin/bash  $ORACLE_OWNER -c &quot;$DBCA -silent -createDatabase -gdbName $ORACLE_SID -templateName $TEMPLATE_NAME -characterSet $CHARSET -createAsContainerDatabase $CREATE_AS_CDB -numberOfPDBs $NUMBER_OF_PDBS -pdbName $PDB_NAME -createListener $LISTENER_NAME:$LISTENER_PORT -datafileDestination $ORACLE_DATA_LOCATION -sid $ORACLE_SID -autoGeneratePasswords -emConfiguration DBEXPRESS -emExpressPort $EM_EXPRESS_PORT -J-Doracle.assistants.dbca.validate.ConfigurationParams=false&quot;
-</code></pre>
-</div><p>Ahora lo intentamos de nuevo:</p>
-<div><pre><code>sudo /etc/init.d/oracledb_ORCLCDB-19c configure
-</code></pre>
-</div><p><code>Nota: Si nos salta un error de netstat tendremos que instalarlo sudo apt install net-tools</code></p>
-<p><code>Nota: Si nos sigue saliendo un error instalaremos lo siguiente sudo apt install libaio1 unixodbc</code></p>
-<p>Si te sale este error:</p>
-<p><img src="./../images/ABD/2-oracle.png" alt="image"></p>
-<p>Sigue estos pasos:</p>
-<div><pre><code>sudo nano /etc/hosts
-</code></pre>
-</div><p>Dentro del fichero escribe tu ip seguido del nombre de tu máquina dos veces, como se muestra en la siguiente imagen:</p>
-<p><img src="./../images/ABD/3-oracle.png" alt="image"></p>
-<p>Y después de esto ejecutaremos de nuevo el comando y ya debería de ir sino reinicia la máquina (<em>sudo reboot</em>) y vuélvelo a probar</p>
-<p><font color="#800080"><strong>Paso 6</strong></font></p>
-<p>Añadimos las variables de entorno a bash:</p>
-<div><pre><code>nano ~/.bashrc
-</code></pre>
-</div><p>Copiamos las siguientes líneas al final del fichero:</p>
-<div><pre><code>export ORACLE_HOME=/opt/oracle/product/19c/dbhome_1
-export ORACLE_SID=ORCLCDB
-export ORACLE_BASE=/opt/oracle
-export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
-export PATH=$ORACLE_HOME/bin:$PATH
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 7</strong></font></p>
-<p>Para finalizar reiniciamos el servicio de Oracle 19c:</p>
-<div><pre><code>sudo service oracledb_ORCLCDB-19c restart
-</code></pre>
-</div><p>Para iniciar Oracle ejecutaremos una serie de pasos:</p>
-<p><strong>Primero pondremos una contraseña</strong></p>
-<div><pre><code>passwd oracle
-</code></pre>
-</div><p><strong>Segundo entrasemos en oracle</strong></p>
-<div><pre><code>su oracle
-</code></pre>
-</div><p>Seguramente te salga un <code>$</code>, si es así eso es que no tienes shell. Para solucionarlo ejecutaremos</p>
-<div><pre><code>sudo usermod -s /bin/bash oracle
-</code></pre>
-</div><p>Y probaremos de nuevo:</p>
-<div><pre><code>su oracle
-</code></pre>
-</div><p>Una vez dentro ya tendras shell y dentro ejecutaremos:</p>
-<div><pre><code>sqlplus / as sysdba
-</code></pre>
-</div><p>Si esto no te va reinicia la maquina <code>sudo reboot</code> y prueba de nuevo</p>
-<p>Bien, una vez echo esto si al iniciar te sale algo asi:</p>
-<p><img src="./../images/ABD/4-oracle.png" alt="image"></p>
-<p>Ejecuta lo siguiente</p>
-<div><pre><code>SQL&gt; shutdown abort
-</code></pre>
-</div><hr>
-<div><pre><code>SQL&gt; startup
-</code></pre>
-</div><p>Y ya estaría sal y entra de nuevo y te deberia salir algo así:</p>
-<p><img src="./../images/ABD/5-oracle.png" alt="image"></p>
-<p>Acto seguido cambiaremos la contraseña del user SYS y SYSTEM</p>
-<div><pre><code>SQL&gt; alter user sys identified by TU_PASSWD;
-</code></pre>
-</div><hr>
-<div><pre><code>SQL&gt; alter user system identified by TU_PASSWD;
-</code></pre>
-</div><h2 id="creacion-de-usuario"> Creación de usuario</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font></p>
-<p>Ejecutamos el siguiente comando para activar _ORACLE_SCRIPT para que se puedan ejecutar sin errores los siguientes comandos:</p>
-<div><pre><code>SQL&gt; alter session set &quot;_ORACLE_SCRIPT&quot;=true;
-</code></pre>
-</div><p>Y luego nos dejara crear el usuario</p>
-<div><pre><code>SQL&gt; create user lucas identified by admin;
-</code></pre>
-</div><p>Si le queremos dar prvilegios ejecutaremos el siguiente comando(en este caso le daremos todos los privilegios):</p>
-<div><pre><code>SQL&gt; grant all privileges to lucas;
-</code></pre>
-</div><p>Una vez hecho esto pasos ya estaria el usuario creato y nos podremos conectar con el siguiente comando:</p>
-<div><pre><code>sqlplus lucas/admin
-</code></pre>
-</div><p><img src="./../images/ABD/6-oracle.png" alt="image"></p>
-<p>Para crear la base de datos y las tablas con sus respectivos inserts aqui os muestro como se hace:</p>
-<p><a href="https://github.com/oscarlucas22/Proyecto-DDL-y-DML_BD/tree/main/Oracle" target="_blank" rel="noopener noreferrer">Como crear base de datos y tablas en Oracle<i>Content not supported</i></a></p>
-<h2 id="cliente-remoto-oracle"> Cliente remoto Oracle</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font> Activaremos listener y habilitaremos el pueto 1521/tcp</p>
-<p>Antes de comenzar tenemos que activar el listener:</p>
-<div><pre><code>lsnrclt start
-</code></pre>
-</div><p>Despues de eso habilitaremos el puerto 1521 del firewall, pero antes si no tenemos instalado firewalld lo instalaremos:</p>
-<div><pre><code>sudo apt install firewalld
-</code></pre>
-</div><p>Y ahora si habilitaremos el puerto 1521:</p>
-<div><pre><code>sudo firewall-cmd --permanent --add-port=1521/tcp
-</code></pre>
-</div><hr>
-<div><pre><code>sudo firewall-cmd --reload
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 2</strong></font> Instalaremos los clientes</p>
-<p>Una vez hecho esto instalaremos los clientes de Oracle</p>
-<ul>
-<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-basic-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">basic<i>Content not supported</i></a></li>
-<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-devel-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">devel<i>Content not supported</i></a></li>
-<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-sqlplus-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">sqlplus<i>Content not supported</i></a></li>
-</ul>
-<p>Una vez descargados los instalaremos en mi caso como lo voy a instalar en un Debian utilizaremos el comando <code>alien</code></p>
-<div><pre><code>sudo alien -i --scripts oracle-instantclient-*
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font> Acceso desde el cliente</p>
-<p>Una vez instalados los clientes ya podremos acceder</p>
-<div><pre><code>sqlplus lucas/admin@ip-server/ORCLCDB
-</code></pre>
-</div><p><img src="./../images/ABD/7-oracle.png" alt="image"></p>
-<p>¡Gracias!</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -6052,17 +6052,35 @@ systemctl enable home-nfs.mount
       <source url="https://github.com/oscarlucas22/rss.xml">Movimiento de datos</source>
       <category>practicas</category>
       <content:encoded><![CDATA[<h1 id="movimiento-de-datos"> Movimiento de datos</h1>
-<p><strong>1. Realiza una exportación del esquema de SCOTT usando Oracle Data Pump con las siguientes condiciones:</strong></p>
+<h3 id="_1-realiza-una-exportacion-del-esquema-de-scott-usando-oracle-data-pump-con-las-siguientes-condiciones"> 1. Realiza una exportación del esquema de SCOTT usando Oracle Data Pump con las siguientes condiciones:</h3>
 <ul>
-<li>
-<p><strong>Exporta tanto la estructura de las tablas como los datos de las mismas.</strong></p>
-</li>
-<li>
-<p><strong>Excluye la tabla BONUS y los departamentos con menos de dos empleados.</strong></p>
-</li>
-<li>
-<p><strong>Realiza una estimación previa del tamaño necesario para el fichero de exportación.</strong></p>
-</li>
+<li><strong>Exporta tanto la estructura de las tablas como los datos de las mismas.</strong></li>
+</ul>
+<p>Para almacenar el archivo de exportación y el archivo de registro, creamos un directorio donde se van a almacenar todos los archivos de esportación.</p>
+<div><pre><code>mkdir /home/oracle/dir
+</code></pre>
+</div><p>Accedemos a la base de datos para crear un directorio mediante la ejecución del siguiente comando, al que le asignaremos los permisos necesarios:</p>
+<div><pre><code>create directory dmp_dir as '/home/oracle/dir';
+grant read, write on directory dmp_dir to SCOTT;
+</code></pre>
+</div><p>Y le daremos tambien permisos para que pueda exportar todo los datos:</p>
+<div><pre><code>grant datapump_exp_full_database to SCOTT;
+</code></pre>
+</div><ul>
+<li><strong>Excluye la tabla BONUS y los departamentos con menos de dos empleados.</strong></li>
+</ul>
+<hr>
+<div><pre><code>expdp scott/tiger DIRECTORY=dmp_dir DUMPFILE=scott.dmp LOGFILE=scott.log SCHEMAS=SCOTT EXCLUDE=TABLE:&quot;IN('BONUS')&quot; QUERY=DEPT:'&quot;where deptno in (select deptno from emp group by deptno having count(*) &gt; 2)&quot;'
+</code></pre>
+</div><p><img src="./../images/ABD/movdatos/2-1.png" alt="image"></p>
+<ul>
+<li><strong>Realiza una estimación previa del tamaño necesario para el fichero de exportación.</strong></li>
+</ul>
+<hr>
+<div><pre><code>expdp scott/tiger DIRECTORY=dmp_dir CONTENT=ALL LOGFILE=exportado.log SCHEMAS=SCOTT ESTIMATE_ONLY=y
+</code></pre>
+</div><p><img src="./../images/ABD/movdatos/1-1.png" alt="image"></p>
+<ul>
 <li>
 <p><strong>Programa la operación para dentro de 2 minutos.</strong></p>
 </li>
@@ -6070,36 +6088,13 @@ systemctl enable home-nfs.mount
 <p><strong>Genera un archivo de log en el directorio raíz.</strong></p>
 </li>
 </ul>
-<p>Para almacenar el archivo de exportación y el archivo de registro, creamos un directorio en el sistema de archivos de Linux.</p>
-<div><pre><code>mkdir /home/oracle/dir
-</code></pre>
-</div><p>Accedemos a SQL*Plus para crear un directorio en la base de datos mediante la ejecución del siguiente comando:</p>
-<div><pre><code>create directory dmp_dir as '/home/oracle/dir';
-</code></pre>
-</div><p>Para que el usuario SCOTT pueda leer y escribir en el directorio que creamos, es necesario asignarle los permisos correspondientes. Es crucial asegurarnos de que estos permisos sean otorgados para garantizar el correcto funcionamiento del sistema.</p>
-<div><pre><code>grant read, write on directory dmp_dir to SCOTT;
-</code></pre>
-</div><p>Además, es imprescindible conceder permisos al usuario SCOTT para realizar una exportación completa. Esto permitirá que SCOTT tenga los privilegios necesarios para exportar datos y garantizar el correcto funcionamiento del sistema.</p>
-<div><pre><code>grant datapump_exp_full_database to SCOTT;
-</code></pre>
-</div><p>Antes de exportar los datos, realizaremos una estimación aproximada del tamaño necesario para el archivo de exportación. Para ello, utilizamos el comando <code>expdp</code> junto con la opción <code>ESTIMATE_ONLY=y</code>. Este comando nos permitirá calcular el tamaño aproximado del archivo de exportación y planificar adecuadamente la cantidad de espacio de almacenamiento que necesitaremos.</p>
-<div><pre><code>expdp scott/tiger DIRECTORY=dmp_dir CONTENT=ALL LOGFILE=exportado.log SCHEMAS=SCOTT ESTIMATE_ONLY=y
-</code></pre>
-</div><p><img src="./../images/ABD/movdatos/1-1.png" alt="image"></p>
-<p>A continuación, procedemos a utilizar el comando <code>expdp</code> para exportar el esquema SCOTT con las condiciones específicas solicitadas. Este comando nos permitirá crear un archivo de exportación con todos los datos del esquema SCOTT, siguiendo las condiciones especificadas previamente.</p>
-<div><pre><code>expdp scott/tiger DIRECTORY=dmp_dir DUMPFILE=scott.dmp CONTENT=ALL LOGFILE=scott.log SCHEMAS=SCOTT EXCLUDE=TABLE:&quot;IN('BONUS')&quot; QUERY=DEPT:'&quot;where deptno in (select deptno from emp group by deptno having count(*) &gt; 2)&quot;' JOB_NAME=scott_exportado
-</code></pre>
-</div><p><img src="./../images/ABD/movdatos/2-1.png" alt="image"></p>
-<p>El archivo de exportación y el archivo de registro se almacenarán en el directorio <code>dir</code>.</p>
-<p><img src="./../images/ABD/movdatos/3-1.png" alt="image"></p>
+<p>Como hemos visto anteriormente la opción de &quot;LOGFILE&quot; hemos expecificado el nombre del fichero de log que se guardara en el directorio que hemos expecificado en la opcion &quot;DIRECTORY&quot;, que sera el directorio raiz.</p>
 <p>Contenido del fichero de log de la estimación:</p>
 <p><img src="./../images/ABD/movdatos/4-1.png" alt="image"></p>
 <p>Contenido del fichero de log de la exportación:</p>
 <p><img src="./../images/ABD/movdatos/5-1.png" alt="image"></p>
-<p>Contenido del fichero de exportación:</p>
-<p><img src="./../images/ABD/movdatos/6-1.png" alt="image"></p>
-<p><strong>2. Importa el fichero obtenido anteriormente usando Oracle Data Pump pero en un usuario distinto de la misma base de datos.</strong></p>
-<p>Voy a establecer el perfil del usuario objetivo en la base de datos, asignándole los permisos correspondientes.</p>
+<h3 id="_2-importa-el-fichero-obtenido-anteriormente-usando-oracle-data-pump-pero-en-un-usuario-distinto-de-la-misma-base-de-datos"> 2. Importa el fichero obtenido anteriormente usando Oracle Data Pump pero en un usuario distinto de la misma base de datos.</h3>
+<p>Voy a establecer el perfil del usuario objetivo en la base de datos, asignándole los permisos correspondientes (lectura y escritura, y permisos necesarios para realizar la importación).</p>
 <div><pre><code>create user importar identified by passwd;
 alter user importar account unlock;
 grant connect, resource to importar;
@@ -6109,9 +6104,8 @@ alter user importar temporary tablespace temp;
 grant read, write on directory dmp_dir to importar;
 grant imp_full_database to importar;
 </code></pre>
-</div><p><img src="./../images/ABD/movdatos/1-2.png" alt="image"></p>
-<p>Utilizaremos el comando <code>impdp</code> para llevar a cabo la importación.</p>
-<div><pre><code>impdp importar/passwd DIRECTORY=dmp_dir DUMPFILE=scott.dmp LOGFILE=ScottImportado.log SCHEMAS=SCOTT REMAP_SCHEMA=SCOTT:importar
+</div><p>Utilizaremos el comando <code>impdp</code> para llevar a cabo la importación.</p>
+<div><pre><code>impdp importar/passwd DIRECTORY=dmp_dir DUMPFILE=scott.dmp LOGFILE=ScottImportado.log
 </code></pre>
 </div><p><img src="./../images/ABD/movdatos/2-2.png" alt="image"></p>
 <p>Contenido del fichero de log de la importación:</p>
@@ -6130,124 +6124,65 @@ grant imp_full_database to importar;
 <div><pre><code>select * from bonus;
 </code></pre>
 </div><p><img src="./../images/ABD/movdatos/5-2.png" alt="image"></p>
-<p><strong>3. Realiza una exportación de la estructura de todas las tablas de la base de datos usando el comando expdp de Oracle Data Pump probando al menos cinco de las posibles opciones que ofrece dicho comando y documentándolas adecuadamente.</strong></p>
+<h3 id="_3-realiza-una-exportacion-de-la-estructura-de-todas-las-tablas-de-la-base-de-datos-usando-el-comando-expdp-de-oracle-data-pump-probando-al-menos-cinco-de-las-posibles-opciones-que-ofrece-dicho-comando-y-documentandolas-adecuadamente"> 3. Realiza una exportación de la estructura de todas las tablas de la base de datos usando el comando expdp de Oracle Data Pump probando al menos cinco de las posibles opciones que ofrece dicho comando y documentándolas adecuadamente.</h3>
 <p>Oracle Data Pump cuenta con el comando <code>expdp</code> que permite exportar objetos y datos en una base de datos Oracle. A continuación, presentaré cinco de las opciones disponibles en expdp que se pueden emplear:</p>
 <ul>
-<li><strong>SCHEMAS</strong> se utiliza para indicar los esquemas que deben ser exportados.</li>
+<li>
+<p><strong>SCHEMAS</strong>: Con esta opción, se especifican los esquemas que se van a exportar.</p>
+</li>
+<li>
+<p><strong>DIRECTORY</strong>: Esta opción especifica el directorio de destino para el archivo de exportación.</p>
+</li>
+<li>
+<p><strong>LOGFILE</strong>: Con esta opción, se especifica el archivo de registro para la exportación.</p>
+</li>
+<li>
+<p><strong>EXCLUDE</strong>: Con esta opción, se especifica qué objetos se deben excluir de la exportación.</p>
+</li>
+<li>
+<p><strong>QUERY</strong>: Esta opción nos permite especificar una consulta SQL para seleccionar los datos que queremos exportar</p>
+</li>
 </ul>
-<p>Antes de ejecutar el comando, crearé el nuevo esquema:</p>
-<div><pre><code>grant connect, resource, unlimited tablespace to SCOTTFALSE identified by tiger;
-alter user SCOTTFALSE account unlock;
-alter user SCOTTFALSE default tablespace users;
-alter user SCOTTFALSE temporary tablespace temp;
-connect SCOTTFALSE/tiger;
-</code></pre>
-</div><hr>
-<div><pre><code>create table filiales (
-    id NUMBER(10) PRIMARY KEY,
-    nombre VARCHAR2(50) NOT NULL,
-    direccion VARCHAR2(100) NOT NULL,
-    ciudad VARCHAR2(50) NOT NULL,
-    pais VARCHAR2(50) NOT NULL
-);
-
-insert into filiales values (1, 'Filiales Corporation', '123 Main St', 'Ciudad de Mexico', 'Mexico');
-insert into filiales values (2, 'Filiales SA de CV', '456 Calle Principal', 'Guadalajara', 'Mexico');
-insert into filiales values (3, 'Filiales Chile Ltda', '789 Avenida Central', 'Santiago', 'Chile');
-</code></pre>
-</div><p>Puedes emplear el siguiente comando para exportar solamente los esquemas HR y SCOTT:</p>
-<div><pre><code>expdp scott/tiger DIRECTORY=dmp_dir SCHEMAS=SCOTTFALSE,SCOTT DUMPFILE=exportado1.dmp LOGFILE=exportado1.log
+<hr>
+<p>Supongamos que queremos exportar los datos y metadatos del esquema SCOTT y guardar el archivo de exportación en el directorio que cree en el ejer 1 (dmp_dir = /home/oracle/dir). Además, queremos incluir solo los salarios de la tabla EMP que son mayores que &quot;1500&quot;, y excluir la tabla BONUS. También queremos guardar los mensajes de registro en el archivo /home/oracle/dir/logfile.log. Podemos ejecutar el siguiente comando:</p>
+<div><pre><code>expdp scott/tiger SCHEMAS=SCOTT DIRECTORY=dmp_dir DUMPFILE=scott_export.dmp LOGFILE=logfile.log EXCLUDE=TABLE:&quot;IN('BONUS')&quot; QUERY=EMP:'&quot;where sal &gt; 1500&quot;'
 </code></pre>
 </div><p><img src="./../images/ABD/movdatos/1-3.png" alt="image"></p>
-<p>Vamos a mirar el contenido del fichero de log de exportación:</p>
+<p>Veremos el contenido de &quot;logfile.log&quot;</p>
 <p><img src="./../images/ABD/movdatos/2-3.png" alt="image"></p>
-<p>Observamos que se han exportado correctamente los datos de la tabla &quot;filiales&quot; y los datos del usuario &quot;scott&quot;.</p>
-<ul>
-<li><strong>INCLUDE</strong> se emplea para definir qué tipos de objetos deben ser incluidos en el proceso de exportación. Por ejemplo, si se desea exportar únicamente las restricciones, se puede utilizar el comando siguiente:</li>
-</ul>
-<hr>
-<div><pre><code>expdp scott/tiger DIRECTORY=dmp_dir SCHEMAS=SCOTT INCLUDE=CONSTRAINT DUMPFILE=exportado2.dmp LOGFILE=exportado2.log
+<p>Para ver el funcionamiento de este crearé un nuevo usuario al que le importaré la expotación en el que hemos hecho:</p>
+<div><pre><code>create user ejer3 identified by root;
+alter user ejer3 account unlock;
+grant connect, resource to ejer3;
+grant unlimited tablespace to ejer3;
+alter user ejer3 default tablespace users;
+alter user ejer3 temporary tablespace temp;
+grant read, write on directory dmp_dir to ejer3;
+grant imp_full_database to ejer3;
+</code></pre>
+</div><hr>
+<div><pre><code>impdp ejer3/root DIRECTORY=dmp_dir DUMPFILE=scott_export.dmp LOGFILE=logimport.log SCHEMAS=SCOTT REMAP_SCHEMA=SCOTT:ejer3
 </code></pre>
 </div><p><img src="./../images/ABD/movdatos/3-3.png" alt="image"></p>
-<p>Vamos a mirar el contenido del fichero de log de exportación:</p>
+<p>Comprobación:</p>
 <p><img src="./../images/ABD/movdatos/4-3.png" alt="image"></p>
-<ul>
-<li><strong>EXCLUDE</strong> se usa para indicar qué tipos de objetos deben ser excluidos del proceso de exportación. Por ejemplo, si se desea excluir la tabla &quot;DEPT&quot; y las restricciones almacenadas de la exportación, se puede emplear el siguiente comando:</li>
-</ul>
-<hr>
-<div><pre><code>expdp scott/tiger DIRECTORY=dmp_dir SCHEMAS=SCOTT EXCLUDE=TABLE:&quot;IN('DEPT')&quot;,CONSTRAINT DUMPFILE=exportado3.dmp LOGFILE=exportado3.log
-</code></pre>
-</div><p><img src="./../images/ABD/movdatos/5-3.png" alt="image"></p>
-<p>Vamos a mirar el contenido del fichero de log de exportación:</p>
-<p><img src="./../images/ABD/movdatos/6-3.png" alt="image"></p>
-<ul>
-<li><strong>COMPRESSION</strong> se usa para determinar el grado de compresión que se aplicará a los datos que se exporten. Se pueden emplear los valores ALL (compresión máxima), METADATA_ONLY (sin compresión) y un número del 1 al 9 que indica el nivel de compresión deseado. Por ejemplo, si se desea utilizar la máxima compresión, se puede utilizar el siguiente comando:</li>
-</ul>
-<hr>
-<div><pre><code>expdp scott/tiger DIRECTORY=dmp_dir SCHEMAS=SCOTT COMPRESSION=ALL DUMPFILE=exportado4.dmp LOGFILE=exportado4.log
-</code></pre>
-</div><p><img src="./../images/ABD/movdatos/7-3.png" alt="image"></p>
-<p>Podemos ver que el archivo de exportación es mucho más pequeño que otros que no han sido comprimidos.</p>
-<p><img src="./../images/ABD/movdatos/8-3.png" alt="image"></p>
-<p>Vamos a mirar el contenido del fichero de log de exportación:</p>
-<p><img src="./../images/ABD/movdatos/9-3.png" alt="image"></p>
-<ul>
-<li><strong>ENCRYPTION_PASSWORD</strong> se usa para establecer la contraseña que se empleará para cifrar los datos que se exporten. Por ejemplo, si se desea utilizar la contraseña &quot;sql&quot;, se puede utilizar el siguiente comando:</li>
-</ul>
-<hr>
-<div><pre><code>expdp scott/tiger DIRECTORY=dmp_dir SCHEMAS=SCOTT ENCRYPTION_PASSWORD=sql DUMPFILE=exportado5.dmp LOGFILE=exportado5.log
-</code></pre>
-</div><p><img src="./../images/ABD/movdatos/10-3.png" alt="image"></p>
-<p>Vamos a mirar el contenido del fichero de log de exportación:</p>
-<p><img src="./../images/ABD/movdatos/11-3.png" alt="image"></p>
-<p>Voy a generar el usuario de destino en la base de datos y le asignaré los permisos adecuados.</p>
-<div><pre><code>create user importar2 identified by passwd;
-alter user importar2 account unlock;
-grant connect, resource to importar2;
-grant unlimited tablespace to importar2;
-alter user importar2 default tablespace users;
-alter user importar2 temporary tablespace temp;
-grant read, write on directory dmp_dir to importar2;
-grant imp_full_database to importar2;
-</code></pre>
-</div><p>En este momento, procederemos a importar el archivo de exportación que hemos creado previamente.</p>
-<div><pre><code>impdp importar2/passwd DIRECTORY=dmp_dir DUMPFILE=exportado5.dmp LOGFILE=importado5.log
-</code></pre>
-</div><p><img src="./../images/ABD/movdatos/12-3.png" alt="image"></p>
-<p>Como podemos observar, es necesario proporcionar un parámetro que contenga la contraseña para descifrar los datos. De no hacerlo, se mostrará el mismo error que hemos visto antes.</p>
-<div><pre><code>impdp importar2/passwd DIRECTORY=dmp_dir DUMPFILE=exportado5.dmp LOGFILE=importado5.log ENCRYPTION_PASSWORD=sql
-</code></pre>
-</div><p><img src="./../images/ABD/movdatos/13-3.png" alt="image"></p>
-<p>Podemos verificar que el archivo de exportación ha sido importado con éxito.</p>
-<p>Estos ejemplos que hemos visto son solo una muestra de las opciones que <code>expdp</code> ofrece. Es crucial revisar la documentación de Oracle para conocer todas las opciones y cómo aplicarlas según las necesidades específicas de cada caso de uso. Lo que hemos explicado aquí solo representa una fracción de las capacidades que expdp ofrece.</p>
-<p>Otra manera de conocer las opciones disponibles en expdp es mediante la salida del comando <code>expdp help=y</code>. Esto nos mostrará una lista completa de las opciones disponibles junto con su descripción correspondiente.</p>
-<p><strong>4. Intenta realizar operaciones similares de importación y exportación con las herramientas proporcionadas con MySQL desde línea de comandos, documentando el proceso.</strong></p>
-<p>MySQL ofrece una herramienta llamada mysqldump que permite exportar datos desde la línea de comandos.</p>
-<p><em><strong>Exportación de datos con <code>mysqldump</code></strong></em></p>
-<p><code>mysqldump</code> es una herramienta útil en MySQL que permite crear copias de seguridad de bases de datos. Con <code>mysqldump</code>, se pueden exportar todas las tablas, vistas o rutinas almacenadas de una base de datos o simplemente una selección de ellas. Si se desea exportar completamente una base de datos, se puede emplear el siguiente comando:</p>
+<h3 id="_4-intenta-realizar-operaciones-similares-de-importacion-y-exportacion-con-las-herramientas-proporcionadas-con-mysql-desde-linea-de-comandos-documentando-el-proceso"> 4. Intenta realizar operaciones similares de importación y exportación con las herramientas proporcionadas con MySQL desde línea de comandos, documentando el proceso.</h3>
+<p>Para exportar completamente una base de datos, se puede emplear el siguiente comando:</p>
 <div><pre><code>mysqldump -u scott -p scott &gt; ScottExportado.sql
 </code></pre>
 </div><p><img src="./../images/ABD/movdatos/1-4.png" alt="image"></p>
-<p>Al ejecutar este comando se generará un archivo denominado <code>ScottExportado.sql</code> que incluirá todas las instrucciones SQL necesarias para recrear tanto la base de datos como sus datos.</p>
-<p>Vamos a ver el contenido del archivo <code>ScottExportado.sql</code>:</p>
+<p>A continuación muestro el contenido del archivo <code>ScottExportado.sql</code>:</p>
 <p><img src="./../images/ABD/movdatos/2-4.png" alt="image"></p>
 <p><img src="./../images/ABD/movdatos/3-4.png" alt="image"></p>
 <p><img src="./../images/ABD/movdatos/4-4.png" alt="image"></p>
-<p>Además, es factible exportar solamente una selección de tablas mediante la opción <code>--tables</code>. Por ejemplo, si solo se desea exportar la tabla <code>dept</code>, se podría emplear el comando siguiente:</p>
-<div><pre><code>mysqldump -u scott -p --tables scott dept &gt; ScottExportado2.sql
-</code></pre>
-</div><p><img src="./../images/ABD/movdatos/5-4.png" alt="image"></p>
-<p>Al ejecutar el comando anterior se generará un archivo llamado <code>ScottExportado2.sql</code> que incluirá solamente las instrucciones SQL requeridas para recrear la tabla <code>dept</code> y sus datos correspondientes.</p>
-<p><img src="./../images/ABD/movdatos/6-4.png" alt="image"></p>
-<p><em><strong>Importación de datos con mysql</strong></em></p>
-<p>Vamos a crear un usuario nuevo y una base de datos en MySQL. El usuario se llamará <code>scottimportado</code> y tendrá los permisos necesarios para importar datos a la base de datos <code>scott</code>.</p>
+<p>Para asegurarnos de que la importación ha sido realizada con exito vamos a crear un usuario nuevo y una base de datos en MySQL. El usuario se llamará <code>scottimportado</code> y tendrá los permisos necesarios para importar datos a la base de datos <code>scott</code>.</p>
 <div><pre><code>create database scottimportado;
 create user scottimportado;
 grant all privileges on *.* to 'scottimportado'@'localhost' identified by 'passwd' with grant option;
 flush privileges;
 </code></pre>
 </div><p><img src="./../images/ABD/movdatos/7-4.png" alt="image"></p>
-<p>A fin de importar el archivo <code>ScottExportado.sql</code> que generamos previamente, podemos ejecutar el comando siguiente:</p>
+<p>Para realizar la importació podemos ejecutar el comando siguiente:</p>
 <div><pre><code>mysql -u scottimportado -p scottimportado &lt; ScottExportado.sql
 </code></pre>
 </div><p><img src="./../images/ABD/movdatos/8-4.png" alt="image"></p>
@@ -6255,11 +6190,9 @@ flush privileges;
 <div><pre><code>select * from dept;
 </code></pre>
 </div><p><img src="./../images/ABD/movdatos/9-4.png" alt="image"></p>
-<p><strong>5. Intenta realizar operaciones similares de importación y exportación con las herramientas proporcionadas con Postgres desde línea de comandos, documentando el proceso.</strong></p>
-<p>En PostgreSQL, existe una herramienta denominada <code>pg_dump</code> que facilita la exportación de datos desde la línea de comandos.</p>
-<p><em><strong>Exportación de datos con pg_dump</strong></em></p>
-<p>La herramienta <code>pg_dump</code> se emplea para generar copias de seguridad de bases de datos PostgreSQL. Con ella, es posible exportar la totalidad de la base de datos o solo algunos objetos específicos, como tablas, vistas o funciones. Para llevar a cabo una exportación completa de una base de datos, es posible usar el siguiente comando:</p>
-<div><pre><code>pg_dump -U postgres -d scott &gt; /var/lib/postgres/ejer5/ScottExportado.sql
+<h3 id="_5-intenta-realizar-operaciones-similares-de-importacion-y-exportacion-con-las-herramientas-proporcionadas-con-postgres-desde-linea-de-comandos-documentando-el-proceso"> 5. Intenta realizar operaciones similares de importación y exportación con las herramientas proporcionadas con Postgres desde línea de comandos, documentando el proceso.</h3>
+<p>Para llevar a cabo una exportación completa de una base de datos, ejecutaremos el siguiente comando:</p>
+<div><pre><code>pg_dump -U postgres -d scott &gt; /var/lib/postgresql/ejer5/ScottExportado.sql
 </code></pre>
 </div><p><img src="./../images/ABD/movdatos/1-5.png" alt="image"></p>
 <p>Este comando creará un fichero llamado <code>ScottExportado.sql</code> que contiene toda la estructura y los datos de la base de datos.</p>
@@ -6267,21 +6200,14 @@ flush privileges;
 <p><img src="./../images/ABD/movdatos/2-5.png" alt="image"></p>
 <p><img src="./../images/ABD/movdatos/3-5.png" alt="image"></p>
 <p><img src="./../images/ABD/movdatos/4-5.png" alt="image"></p>
-<p>Observamos que incluso se exportaron las tablas creadas para fines de auditoría.</p>
-<p>Otra opción disponible es exportar únicamente un conjunto específico de tablas mediante la opción <code>--table</code>. Por ejemplo, si deseas exportar solo la tabla <code>dept</code>, puedes utilizar el siguiente comando:</p>
-<div><pre><code>pg_dump -U postgres --table scott.dept &gt; /var/lib/postgres/ejer5/ScottExportado2.sql
-</code></pre>
-</div><p><img src="./../images/ABD/movdatos/5-5.png" alt="image"></p>
-<p>En el archivo <code>ScottExportado2.sql</code> solo se incluirá la estructura y los datos correspondientes a la tabla <code>dept</code>.</p>
-<p><img src="./../images/ABD/movdatos/6-5.png" alt="image"></p>
-<p><em><strong>Importación de datos con PostgreSQL</strong></em></p>
+<p>Para realizar la importación lo haremos de la siguiente manera:</p>
 <p>Crearemos una nueva base de datos llamada <code>scottimportado</code>.</p>
 <div><pre><code>create database scottimportado with owner postgres;
 grant all privileges on database scottimportado to postgres;
 </code></pre>
 </div><p><img src="./../images/ABD/movdatos/7-5.png" alt="image"></p>
-<p>Una vez finalizado el proceso de exportación, se procede a la importación del archivo <code>ScottExportado.sql</code> recién creado, para lo cual se puede ejecutar el siguiente comando:</p>
-<div><pre><code>psql -U postgres -d scottimportado -f /var/lib/postgres/ejer5/ScottExportado.sql
+<p>Importamos la base de datos:</p>
+<div><pre><code>psql -U postgres -d scottimportado &lt; /var/lib/postgresql/ejer5/ScottExportado.sql
 </code></pre>
 </div><p><img src="./../images/ABD/movdatos/8-5.png" alt="image"></p>
 <p>Para verificar que la importación de datos se ha realizado correctamente, vamos a realizar una consulta:</p>
@@ -6294,9 +6220,8 @@ grant all privileges on database scottimportado to postgres;
 <div><pre><code>select * from salgrade;
 </code></pre>
 </div><p><img src="./../images/ABD/movdatos/9-5.png" alt="image"></p>
-<p><strong>6. Exporta los documentos de una colección de MongoDB que cumplan una determinada condición e impórtalos en otra base de datos.</strong></p>
-<p>Si necesitas exportar documentos de una colección en MongoDB que cumplan con ciertos criterios, puedes utilizar el comando <code>mongoexport</code> junto con algunas opciones adicionales.</p>
-<p>Imaginemos que disponemos de una colección llamada <code>prueba1</code> en la base de datos <code>Prueba</code>, y deseamos exportar todos aquellos documentos que presenten un valor de salario superior a 3000. Para llevar a cabo esta tarea, podemos emplear el siguiente comando:</p>
+<h3 id="_6-exporta-los-documentos-de-una-coleccion-de-mongodb-que-cumplan-una-determinada-condicion-e-importalos-en-otra-base-de-datos"> 6. Exporta los documentos de una colección de MongoDB que cumplan una determinada condición e impórtalos en otra base de datos.</h3>
+<p>Vamos a exportar los datos de una colección llamada <code>prueba1</code> en la base de datos <code>Prueba</code>, y solo vamos a exportar todos aquellos documentos que presenten un valor de salario superior a 3000. Para llevar a cabo esta tarea, podemos emplear el siguiente comando:</p>
 <p>Esta base de datos es la que he usado:</p>
 <div><pre><code>mongosh -u olucas -p root --authenticationDatabase admin
 use Prueba
@@ -6332,11 +6257,10 @@ use Prueba
 <div><pre><code>mongoexport -u olucas -p root --db Prueba --collection prueba1 --query '{ &quot;sal&quot;: { &quot;$gt&quot;: 3000 } }' --out exportacion.json --authenticationDatabase admin
 </code></pre>
 </div><p><img src="./../images/ABD/movdatos/1-6.png" alt="image"></p>
-<p>Mediante la ejecución de este comando, se generará una copia de seguridad en el directorio actual de la terminal. El nombre del archivo resultante se establecerá en función de la fecha y hora de la exportación, y los datos se almacenarán en formato JSON.</p>
-<p>Vamos a ver el contenido del archivo <code>exportacion.json</code>:</p>
+<p>Ahora mostraré el contenido del archivo <code>exportacion.json</code>:</p>
 <p><img src="./../images/ABD/movdatos/2-6.png" alt="image"></p>
-<p>Si necesitas importar los datos previamente exportados en otra base de datos, puedes recurrir al uso del comando <code>mongoimport</code>. Por ejemplo, si deseas importar los datos en una nueva base de datos denominada <code>Prueba2</code>, puedes ejecutar el siguiente comando:</p>
-<p>Antes crearé la base de datos <code>Prueba2</code>:</p>
+<p>Para importar los datos previamente exportados en otra base de datos, puedes recurrir al uso del comando <code>mongoimport</code>. Importaremos los datos en la base de datos denominada <code>Prueba2</code>, puedes ejecutar el siguiente comando:</p>
+<p>Crearé la base de datos <code>Prueba2</code>:</p>
 <div><pre><code>mongosh -u olucas -p root --authenticationDatabase admin
 use Prueba2
 </code></pre>
@@ -6344,15 +6268,13 @@ use Prueba2
 <div><pre><code>mongoimport -u olucas -p root --db Prueba2 --collection prueba2 --type json --file exportacion.json --authenticationDatabase admin
 </code></pre>
 </div><p><img src="./../images/ABD/movdatos/3-6.png" alt="image"></p>
-<p>Mediante la utilización de este comando, se procederá a importar los datos en la colección de la base de datos <code>Prueba2</code>, y se creará la colección indicada en caso de que no exista previamente. Es fundamental asegurarse de indicar la ruta completa hacia el archivo JSON generado durante el proceso de exportación.</p>
-<p>Vamos a ver el contenido de la colección <code>prueba2</code>:</p>
+<p>Mostraré el contenido de la colección <code>prueba2</code>:</p>
 <div><pre><code>mongosh -u olucas -p root --authenticationDatabase admin
 use Prueba2
 db.prueba2.find()
 </code></pre>
 </div><p><img src="./../images/ABD/movdatos/4-6.png" alt="image"></p>
-<p>Se puede observar que los primeros registros que no satisfacían la condición especificada en la consulta, no se han importado.</p>
-<p><strong>7. SQL<em>Loader es una herramienta que sirve para cargar grandes volúmenes de datos en una instancia de ORACLE. Exportad los datos de una base de datos completa desde Postgres a texto plano con delimitadores y emplead SQL</em>Loader para realizar el proceso de carga de dichos datos a una instancia ORACLE. Debéis documentar todo el proceso, explicando los distintos ficheros de configuración y de log que tiene SQL*Loader.</strong></p>
+<h3 id="_7-sqlloader-es-una-herramienta-que-sirve-para-cargar-grandes-volumenes-de-datos-en-una-instancia-de-oracle-exportad-los-datos-de-una-base-de-datos-completa-desde-postgres-a-texto-plano-con-delimitadores-y-emplead-sqlloader-para-realizar-el-proceso-de-carga-de-dichos-datos-a-una-instancia-oracle-debeis-documentar-todo-el-proceso-explicando-los-distintos-ficheros-de-configuracion-y-de-log-que-tiene-sql-loader"> 7. SQL<em>Loader es una herramienta que sirve para cargar grandes volúmenes de datos en una instancia de ORACLE. Exportad los datos de una base de datos completa desde Postgres a texto plano con delimitadores y emplead SQL</em>Loader para realizar el proceso de carga de dichos datos a una instancia ORACLE. Debéis documentar todo el proceso, explicando los distintos ficheros de configuración y de log que tiene SQL*Loader.</h3>
 <p>Si se necesita exportar los datos de una base de datos completa de Postgres en un archivo de texto plano con delimitadores, es posible utilizar el siguiente comando (en este ejemplo he elegido las tablas <code>dept</code> y <code>salgrade</code> del esquema <code>scott</code>):</p>
 <div><pre><code>COPY dept TO '/var/lib/postgresql/scott/dept.csv' DELIMITERS',';
 COPY salgrade TO '/var/lib/postgresql/scott/salgrade.csv' DELIMITERS',';
@@ -6360,8 +6282,7 @@ COPY salgrade TO '/var/lib/postgresql/scott/salgrade.csv' DELIMITERS',';
 </div><p><img src="./../images/ABD/movdatos/1-7.png" alt="image"></p>
 <p>Una vez obtenido el archivo de texto plano que contiene los datos, es posible emplear <code>SQL*Loader</code> para cargarlos en una instancia de Oracle.</p>
 <p><img src="./../images/ABD/movdatos/2-7.png" alt="image"></p>
-<p><code>SQL*Loader</code> es una herramienta que se utiliza mediante la línea de comandos, y que requiere de archivos de configuración para especificar los detalles de la carga de datos. A continuación se detalla el proceso completo para configurar y utilizar <code>SQL*Loader</code> con el fin de cargar los datos exportados desde Postgres en una instancia de Oracle, empleando el esquema <code>scott</code>.</p>
-<p>Para poder llevar a cabo la carga de datos desde Postgres hacia Oracle mediante <code>SQL*Loader</code>, resulta necesario crear previamente en Oracle aquellas tablas que se correspondan con las estructuras de las tablas de Postgres. Es crucial asegurarse de que los nombres de las columnas sean idénticos y que los tipos de datos sean compatibles.</p>
+<p><strong>Nota</strong>: Es crucial asegurarse de que los nombres de las columnas sean idénticos y que los tipos de datos sean compatibles.</p>
 <div><pre><code>create table dept (
         deptno number(2) constraint pk_dept PRIMARY KEY,
         dname varchar2(14),
@@ -6413,7 +6334,6 @@ sqlldr scott2/tiger control=/home/oracle/control/salgrade.ctl log=/home/oracle/l
 <p><img src="./../images/ABD/movdatos/7-7.png" alt="image"></p>
 <p>Acto seguido accederé a la base de datos y comprobaré que se han cargado los datos correctamente.</p>
 <p><img src="./../images/ABD/movdatos/8-7.png" alt="image"></p>
-<p>La herramienta SQL*Loader es muy útil porque nos permite cargar datos de manera eficiente y simple. Podemos cargar datos desde archivos de texto y trabajar con datos de diferentes orígenes. Además, podemos cargar datos en tablas que contienen claves foráneas y relaciones, lo que nos brinda mayor flexibilidad. En resumen, esta herramienta es una excelente opción para aquellos que necesitan cargar grandes cantidades de datos en sus bases de datos de manera eficiente y rápida.</p>
 ]]></content:encoded>
     </item>
     <item>
