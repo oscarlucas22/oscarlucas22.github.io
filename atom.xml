@@ -5,7 +5,7 @@
   <author>
     <name>Óscar Lucas</name>
   </author>
-  <updated>2023-06-11T18:19:06.278Z</updated>
+  <updated>2023-06-11T18:25:49.603Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://github.com/oscarlucas22/atom.xml"/>
   <link rel="alternate" href="https://github.com/oscarlucas22/"/>
@@ -1751,6 +1751,62 @@ Y para conectarnos a nuestro usuario ejecutaremos el siguiente comando:</p>
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
+    <title type="html">Migrar Centos 8 a Rocky Linux 8</title>
+    <id>https://github.com/oscarlucas22/practicas/migracionrocky/</id>
+    <link href="https://github.com/oscarlucas22/practicas/migracionrocky/"/>
+    <updated>2023-01-19T12:13:11.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="migrar-centos-8-a-rocky-linux-8"> Migrar Centos 8 a Rocky Linux 8</h1>
+<p><img src="./../images/ASO/rocky.png" alt="image"></p>
+<p>Para conseguir este fin se nos ofrece un script llamado <strong>migrate2rocky.sh</strong>. Este script se encargará de cambiar los repositorios del sistemas por los de Rocky Linux. Los paquetes se instalarán y actualizarán, para finalmente cambiar todo el sistema operativo.</p>
+<p><font color="#FFFF00"><strong>Paso 1</strong></font> Actualizamos el sistema.</p>
+<div><pre><code>sudo dnf -y upgrade
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 2</strong></font> Reiniciamos.</p>
+<div><pre><code>sudo reboot 
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 3</strong></font> Actualizar el sistema.</p>
+<div><pre><code>dnf update
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 4</strong></font> Descargar repositorio.</p>
+<p>Una vez hecho esto nos iremos al repositorio donde se encuentra dicho script, en este caso en Github.
+Podemos descargar los paquetes del repositorio con programas como wget.</p>
+<div><pre><code>wget https://github.com/rocky-linux/rocky-tools/archive/refs/heads/main.zip
+</code></pre>
+</div><p>O bien, si solo deseamos descargar el script:</p>
+<div><pre><code>wget https://raw.githubusercontent.com/rocky-linux/rocky-tools/main/migrate2rocky/migrate2rocky.sh
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 5</strong></font> Le asignamos permisos de ejecución.</p>
+<div><pre><code>chmod +x migrate2rocky.sh
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 6</strong></font> Lo ejecutamos.</p>
+<p>Con el parámetro <strong>-r</strong> indicamos que siga adelante e instale todo.</p>
+<div><pre><code>./migrate2rocky.sh -r
+</code></pre>
+</div><p>El proceso puede tardar un rato, según la capacidad del equipo y la conexión a Internet.</p>
+<p>Después:</p>
+<div><pre><code>sudo dnf distro-sync -y
+</code></pre>
+</div><hr>
+<div><pre><code>sudo reboot
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 7</strong></font> Comprobación.</p>
+<div><pre><code>cat /etc/os-release
+</code></pre>
+</div><p>Podemos consultar ficheros como <strong>/etc/os-release</strong> o bien <strong>/etc/redhat-release</strong>, o lanzar el comando <strong>hostnamectl</strong></p>
+<div><pre><code>cat /etc/redhat-release
+</code></pre>
+</div>]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
+    <category term="practicas" scheme=""/>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <published>2023-01-19T12:13:11.000Z</published>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
     <title type="html">MongoDB en Debian 11 Bullseye</title>
     <id>https://github.com/oscarlucas22/practicas/mongo/</id>
     <link href="https://github.com/oscarlucas22/practicas/mongo/"/>
@@ -1883,62 +1939,6 @@ Y para conectarnos a nuestro usuario ejecutaremos el siguiente comando:</p>
 </div><p><img src="./../images/ABD/5-mongo.png" alt="image"></p>
 <p>¡Gracias!</p>
 ]]></content>
-    <author>
-      <name>Óscar Lucas</name>
-    </author>
-    <category term="practicas" scheme=""/>
-    <contributor>
-      <name>Óscar Lucas</name>
-    </contributor>
-    <published>2023-01-19T12:13:11.000Z</published>
-    <rights>Copyright by Óscar Lucas</rights>
-  </entry>
-  <entry>
-    <title type="html">Migrar Centos 8 a Rocky Linux 8</title>
-    <id>https://github.com/oscarlucas22/practicas/migracionrocky/</id>
-    <link href="https://github.com/oscarlucas22/practicas/migracionrocky/"/>
-    <updated>2023-01-19T12:13:11.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="migrar-centos-8-a-rocky-linux-8"> Migrar Centos 8 a Rocky Linux 8</h1>
-<p><img src="./../images/ASO/rocky.png" alt="image"></p>
-<p>Para conseguir este fin se nos ofrece un script llamado <strong>migrate2rocky.sh</strong>. Este script se encargará de cambiar los repositorios del sistemas por los de Rocky Linux. Los paquetes se instalarán y actualizarán, para finalmente cambiar todo el sistema operativo.</p>
-<p><font color="#FFFF00"><strong>Paso 1</strong></font> Actualizamos el sistema.</p>
-<div><pre><code>sudo dnf -y upgrade
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 2</strong></font> Reiniciamos.</p>
-<div><pre><code>sudo reboot 
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 3</strong></font> Actualizar el sistema.</p>
-<div><pre><code>dnf update
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 4</strong></font> Descargar repositorio.</p>
-<p>Una vez hecho esto nos iremos al repositorio donde se encuentra dicho script, en este caso en Github.
-Podemos descargar los paquetes del repositorio con programas como wget.</p>
-<div><pre><code>wget https://github.com/rocky-linux/rocky-tools/archive/refs/heads/main.zip
-</code></pre>
-</div><p>O bien, si solo deseamos descargar el script:</p>
-<div><pre><code>wget https://raw.githubusercontent.com/rocky-linux/rocky-tools/main/migrate2rocky/migrate2rocky.sh
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 5</strong></font> Le asignamos permisos de ejecución.</p>
-<div><pre><code>chmod +x migrate2rocky.sh
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 6</strong></font> Lo ejecutamos.</p>
-<p>Con el parámetro <strong>-r</strong> indicamos que siga adelante e instale todo.</p>
-<div><pre><code>./migrate2rocky.sh -r
-</code></pre>
-</div><p>El proceso puede tardar un rato, según la capacidad del equipo y la conexión a Internet.</p>
-<p>Después:</p>
-<div><pre><code>sudo dnf distro-sync -y
-</code></pre>
-</div><hr>
-<div><pre><code>sudo reboot
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 7</strong></font> Comprobación.</p>
-<div><pre><code>cat /etc/os-release
-</code></pre>
-</div><p>Podemos consultar ficheros como <strong>/etc/os-release</strong> o bien <strong>/etc/redhat-release</strong>, o lanzar el comando <strong>hostnamectl</strong></p>
-<div><pre><code>cat /etc/redhat-release
-</code></pre>
-</div>]]></content>
     <author>
       <name>Óscar Lucas</name>
     </author>
@@ -3384,7 +3384,7 @@ fetch first 1 row only;
     <title type="html">Almacenamiento</title>
     <id>https://github.com/oscarlucas22/practicas/almacenamiento/</id>
     <link href="https://github.com/oscarlucas22/practicas/almacenamiento/"/>
-    <updated>2023-06-11T18:19:06.334Z</updated>
+    <updated>2023-06-11T18:25:49.668Z</updated>
     <content type="html"><![CDATA[<h1 id="almacenamiento"> Almacenamiento</h1>
 <h2 id="alumno-3"> Alumno 3:</h2>
 <p><em><strong>orACLE:</strong></em></p>
@@ -3951,7 +3951,7 @@ DROP USER JAIME cascade;
     <title type="html">Auditoría</title>
     <id>https://github.com/oscarlucas22/practicas/auditoria/</id>
     <link href="https://github.com/oscarlucas22/practicas/auditoria/"/>
-    <updated>2023-06-11T18:19:06.337Z</updated>
+    <updated>2023-06-11T18:25:49.670Z</updated>
     <content type="html"><![CDATA[<h1 id="auditoria"> Auditoría</h1>
 <h2 id="_1-activa-desde-sql-plus-la-auditoria-de-los-intentos-de-acceso-exitosos-al-sistema-comprueba-su-funcionamiento"> <strong>1. Activa desde SQL*Plus la auditoría de los intentos de acceso exitosos al sistema. Comprueba su funcionamiento.</strong></h2>
 <p>Visualizaremos los parametros de auditorias:</p>
@@ -4392,7 +4392,7 @@ insert into emp values(7942, 'RICK', 'CARRIER', null, str_to_date('01/03/2023', 
     <title type="html">Copias de Seguridad y Restauración</title>
     <id>https://github.com/oscarlucas22/practicas/copias-seg-y-rest/</id>
     <link href="https://github.com/oscarlucas22/practicas/copias-seg-y-rest/"/>
-    <updated>2023-06-11T18:19:06.341Z</updated>
+    <updated>2023-06-11T18:25:49.674Z</updated>
     <content type="html"><![CDATA[<h1 id="copias-de-seguridad-y-restauracion"> Copias de Seguridad y Restauración</h1>
 <h3 id="_1-realiza-una-copia-de-seguridad-logica-de-tu-base-de-datos-completa-teniendo-en-cuenta-los-siguientes-requisitos"> 1. Realiza una copia de seguridad lógica de tu base de datos completa, teniendo en cuenta los siguientes requisitos:</h3>
 <ul>
@@ -4804,7 +4804,7 @@ mysql -u root -p proyecto &lt; copiadb.sql
     <title type="html">Instalación y configuración de un servidor de correos en el VPS</title>
     <id>https://github.com/oscarlucas22/practicas/correos/</id>
     <link href="https://github.com/oscarlucas22/practicas/correos/"/>
-    <updated>2023-06-11T18:19:06.352Z</updated>
+    <updated>2023-06-11T18:25:49.679Z</updated>
     <content type="html"><![CDATA[<h1 id="instalacion-y-configuracion-de-un-servidor-de-correos-en-el-vps"> Instalación y configuración de un servidor de correos en el VPS</h1>
 <h2 id="practica-servidor-de-correos"> Práctica: Servidor de correos</h2>
 <p><strong>Instala y configura de manera adecuada el servidor de correos en tu VPS. El nombre del servidor de correo será mail.tudominio.es (Este es el nombre que deberá aparecer en el registro MX).</strong></p>
@@ -5328,7 +5328,7 @@ server {
     <title type="html">Cortafuegos I: De nodo con iptables</title>
     <id>https://github.com/oscarlucas22/practicas/cortafuegoI/</id>
     <link href="https://github.com/oscarlucas22/practicas/cortafuegoI/"/>
-    <updated>2023-06-11T18:19:06.354Z</updated>
+    <updated>2023-06-11T18:25:49.681Z</updated>
     <content type="html"><![CDATA[<h1 id="cortafuegos-i-de-nodo-con-iptables"> Cortafuegos I: De nodo con iptables</h1>
 <p>Página de la <a href="https://fp.josedomingo.org/seguridadgs/u03/ejercicio1.html" target="_blank" rel="noopener noreferrer">practica<i>Content not supported</i></a></p>
 <hr>
@@ -5515,7 +5515,7 @@ iptables -A OUTPUT -d 10.0.0.180 -p tcp --sport 3306 -j ACCEPT
     <title type="html">Cortafuegos II: Perimetral con nftables</title>
     <id>https://github.com/oscarlucas22/practicas/cortafuegoII/</id>
     <link href="https://github.com/oscarlucas22/practicas/cortafuegoII/"/>
-    <updated>2023-06-11T18:19:06.357Z</updated>
+    <updated>2023-06-11T18:25:49.685Z</updated>
     <content type="html"><![CDATA[<h1 id="cortafuegos-ii-perimetral-con-nftables"> Cortafuegos II: Perimetral con nftables</h1>
 <p><strong>Realiza con nftables el ejercicio de la <a href="https://fp.josedomingo.org/seguridadgs/u03/perimetral_iptables.html" target="_blank" rel="noopener noreferrer">página<i>Content not supported</i></a> documentando las pruebas de funcionamiento realizadas.</strong></p>
 <p><strong>Debes añadir después las reglas necesarias para que se permitan las siguientes operaciones:</strong></p>
@@ -5838,7 +5838,7 @@ sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens
     <title type="html">Informática Forense</title>
     <id>https://github.com/oscarlucas22/practicas/forense/</id>
     <link href="https://github.com/oscarlucas22/practicas/forense/"/>
-    <updated>2023-06-11T18:19:06.358Z</updated>
+    <updated>2023-06-11T18:25:49.686Z</updated>
     <content type="html"><![CDATA[<h1 id="informatica-forense"> Informática Forense</h1>
 <p><strong>La informática forense es el conjunto de técnicas que nos permite obtener la máxima información posible tras un incidente o delito informático.</strong></p>
 <p><strong>En esta práctica, realizarás la fase de toma de evidencias y análisis de las mismas sobre una máquina Linux y otra Windows. Supondremos que pillamos al delincuente in fraganti y las máquinas se encontraban encendidas. Opcionalmente, podéis realizar el análisis de un dispositivo Android.</strong></p>
@@ -5919,7 +5919,7 @@ sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens
     <title type="html">Práctica: IC/DC con Jenkins</title>
     <id>https://github.com/oscarlucas22/practicas/ic/dc-jenkins/</id>
     <link href="https://github.com/oscarlucas22/practicas/ic/dc-jenkins/"/>
-    <updated>2023-06-11T18:19:06.358Z</updated>
+    <updated>2023-06-11T18:25:49.687Z</updated>
     <content type="html"><![CDATA[<h1 id="practica-ic-dc-con-jenkins"> Práctica: IC/DC con Jenkins</h1>
 <p><strong>El objetivo de esta práctica es el desarrollo gradual de un Pipeline que vaya realizando tareas sobre el repositorio de una aplicación.</strong></p>
 <p><strong>La aplicación con la que vamos a trabajar será tu fork de la aplicación django Polls. Como hemos visto esta aplicación que implementa el tutorial de Django tiene implementado un módulo de pruebas.</strong></p>
@@ -6036,7 +6036,7 @@ sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens
     <title type="html">Kubernetes</title>
     <id>https://github.com/oscarlucas22/practicas/kubernetes/</id>
     <link href="https://github.com/oscarlucas22/practicas/kubernetes/"/>
-    <updated>2023-06-11T18:19:06.363Z</updated>
+    <updated>2023-06-11T18:25:49.690Z</updated>
     <content type="html"><![CDATA[<h1 id="kubernetes"> Kubernetes</h1>
 <p><strong>En IAW has creado dos imágenes de dos aplicaciones: bookmedik (php) y polls (python django). Elige una de ellas y despliégala en kubernetes. Para ello vamos a hacer dos ejercicios:</strong></p>
 <p>En este <a href="./../practicas/python-docker.html">post</a> realizamos la implantación de una aplicación en Docker. En este post vamos a realizar el despliegue de la misma aplicación en Kubernetes.</p>
@@ -6466,7 +6466,7 @@ kubectl create secret generic secret-mariadb --from-literal=password=bookmedik -
     <title type="html">Poblar un directorio LDAP desde un fichero CSV</title>
     <id>https://github.com/oscarlucas22/practicas/ldap-csv/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldap-csv/"/>
-    <updated>2023-06-11T18:19:06.364Z</updated>
+    <updated>2023-06-11T18:25:49.692Z</updated>
     <content type="html"><![CDATA[<h1 id="poblar-un-directorio-ldap-desde-un-fichero-csv"> Poblar un directorio LDAP desde un fichero CSV</h1>
 <ul>
 <li>
@@ -6722,7 +6722,7 @@ AuthorizedKeysCommandUser nobody
     <title type="html">Instalación y configuración inicial de OpenLDAP</title>
     <id>https://github.com/oscarlucas22/practicas/ldap/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldap/"/>
-    <updated>2023-06-11T18:19:06.369Z</updated>
+    <updated>2023-06-11T18:25:49.696Z</updated>
     <content type="html"><![CDATA[<h1 id="instalacion-y-configuracion-inicial-de-openldap"> Instalación y configuración inicial de OpenLDAP</h1>
 <p><strong>Realiza la instalación y configuración básica de OpenLDAP en alfa, utilizando como base el nombre DNS asignado. Deberás crear un usuario llamado prueba y configurar una máquina cliente basada en Debian y Rocky para que pueda validarse en servidor ldap configurado anteriormente con el usuario prueba.</strong></p>
 <p><font color="#FFFF00"><strong>Paso 1</strong></font> Configuración de OpenLDAP en el servidor: Instalación y configuración de OpenLDAP.Instalación y configuración de OpenLDAP en el Servidor</p>
@@ -7082,7 +7082,7 @@ systemctl start mnt-nfs.mount
     <title type="html">LDAPs</title>
     <id>https://github.com/oscarlucas22/practicas/ldaps/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldaps/"/>
-    <updated>2023-06-11T18:19:06.370Z</updated>
+    <updated>2023-06-11T18:25:49.697Z</updated>
     <content type="html"><![CDATA[<h1 id="ldaps"> LDAPs</h1>
 <p><strong>Configura el servidor LDAP de alfa para que utilice el protocolo ldaps:// a la vez que el ldap:// utilizando el certificado x509 de la práctica de https o solicitando el correspondiente a través de gestiona. Realiza las modificaciones adecuadas en los clientes ldap de alfa para que todas las consultas se realicen por defecto utilizando ldaps://</strong></p>
 <p>Para empezar, crearemos el directorio que usaremos para almacenar las claves SSL y le otorgaremos los permisos adecuados. Luego, procederemos a generar la clave RSA.</p>
@@ -7242,7 +7242,7 @@ systemctl enable home-nfs.mount
     <title type="html">Movimiento de datos</title>
     <id>https://github.com/oscarlucas22/practicas/movdatos/</id>
     <link href="https://github.com/oscarlucas22/practicas/movdatos/"/>
-    <updated>2023-06-11T18:19:06.373Z</updated>
+    <updated>2023-06-11T18:25:49.701Z</updated>
     <content type="html"><![CDATA[<h1 id="movimiento-de-datos"> Movimiento de datos</h1>
 <h3 id="_1-realiza-una-exportacion-del-esquema-de-scott-usando-oracle-data-pump-con-las-siguientes-condiciones"> 1. Realiza una exportación del esquema de SCOTT usando Oracle Data Pump con las siguientes condiciones:</h3>
 <ul>
@@ -7538,7 +7538,7 @@ sqlldr scott2/tiger control=/home/oracle/control/salgrade.ctl log=/home/oracle/l
     <title type="html">Implantación de aplicaciones web PHP en docker</title>
     <id>https://github.com/oscarlucas22/practicas/phpdocker/</id>
     <link href="https://github.com/oscarlucas22/practicas/phpdocker/"/>
-    <updated>2023-06-11T18:19:06.374Z</updated>
+    <updated>2023-06-11T18:25:49.703Z</updated>
     <content type="html"><![CDATA[<h1 id="implantacion-de-aplicaciones-web-php-en-docker"> Implantación de aplicaciones web PHP en docker</h1>
 <p><strong>Imaginemos que el equipo de desarrollo de nuestra empresa ha desarrollado una aplicación PHP que se llama <a href="https://github.com/evilnapsis/bookmedik" target="_blank" rel="noopener noreferrer">BookMedik<i>Content not supported</i></a>.</strong></p>
 <p><strong>Queremos crear una imagen Docker para implantar dicha aplicación.</strong></p>
@@ -8058,7 +8058,7 @@ volumes:
     <title type="html">Práctica: Implantación de aplicaciones web Python en docker</title>
     <id>https://github.com/oscarlucas22/practicas/python-docker/</id>
     <link href="https://github.com/oscarlucas22/practicas/python-docker/"/>
-    <updated>2023-06-11T18:19:06.375Z</updated>
+    <updated>2023-06-11T18:25:49.704Z</updated>
     <content type="html"><![CDATA[<h1 id="practica-implantacion-de-aplicaciones-web-python-en-docker"> Práctica: Implantación de aplicaciones web Python en docker</h1>
 <p><strong>Queremos desplegar en docker la aplicación escrita en python django: tutorial de django, que desplegamos en la tarea Despliegue de aplicaciones python.</strong></p>
 <p><strong>Tienes que tener en cuenta los siguientes aspectos:</strong></p>
@@ -8260,7 +8260,7 @@ server {
     <title type="html">Sistema de copias de seguridad</title>
     <id>https://github.com/oscarlucas22/practicas/sistemas-cop-seg/</id>
     <link href="https://github.com/oscarlucas22/practicas/sistemas-cop-seg/"/>
-    <updated>2023-06-11T18:19:06.377Z</updated>
+    <updated>2023-06-11T18:25:49.706Z</updated>
     <content type="html"><![CDATA[<h1 id="sistema-de-copias-de-seguridad"> Sistema de copias de seguridad</h1>
 <h2 id="descripcion"> Descripción</h2>
 <p><strong>Implementar un sistema de copias de seguridad para las instancias del cloud, teniendo en cuenta las siguientes características:</strong></p>
@@ -9163,7 +9163,7 @@ firewall-cmd --reload
     <title type="html">VPN</title>
     <id>https://github.com/oscarlucas22/practicas/vpn/</id>
     <link href="https://github.com/oscarlucas22/practicas/vpn/"/>
-    <updated>2023-06-11T18:19:06.380Z</updated>
+    <updated>2023-06-11T18:25:49.709Z</updated>
     <content type="html"><![CDATA[<h1 id="vpn"> VPN</h1>
 <h2 id="a-vpn-de-acceso-remoto-con-openvpn-y-certificados-x509-5-puntos"> A) VPN de acceso remoto con OpenVPN y certificados x509 (5 puntos)</h2>
 <p><strong>Configura una conexión VPN de acceso remoto entre dos equipos del cloud:</strong></p>
