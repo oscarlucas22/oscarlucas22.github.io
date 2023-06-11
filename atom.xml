@@ -5,7 +5,7 @@
   <author>
     <name>Óscar Lucas</name>
   </author>
-  <updated>2023-03-14T20:09:45.933Z</updated>
+  <updated>2023-06-11T18:19:06.278Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://github.com/oscarlucas22/atom.xml"/>
   <link rel="alternate" href="https://github.com/oscarlucas22/"/>
@@ -1751,62 +1751,6 @@ Y para conectarnos a nuestro usuario ejecutaremos el siguiente comando:</p>
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
-    <title type="html">Migrar Centos 8 a Rocky Linux 8</title>
-    <id>https://github.com/oscarlucas22/practicas/migracionrocky/</id>
-    <link href="https://github.com/oscarlucas22/practicas/migracionrocky/"/>
-    <updated>2023-01-19T12:13:11.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="migrar-centos-8-a-rocky-linux-8"> Migrar Centos 8 a Rocky Linux 8</h1>
-<p><img src="./../images/ASO/rocky.png" alt="image"></p>
-<p>Para conseguir este fin se nos ofrece un script llamado <strong>migrate2rocky.sh</strong>. Este script se encargará de cambiar los repositorios del sistemas por los de Rocky Linux. Los paquetes se instalarán y actualizarán, para finalmente cambiar todo el sistema operativo.</p>
-<p><font color="#FFFF00"><strong>Paso 1</strong></font> Actualizamos el sistema.</p>
-<div><pre><code>sudo dnf -y upgrade
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 2</strong></font> Reiniciamos.</p>
-<div><pre><code>sudo reboot 
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 3</strong></font> Actualizar el sistema.</p>
-<div><pre><code>dnf update
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 4</strong></font> Descargar repositorio.</p>
-<p>Una vez hecho esto nos iremos al repositorio donde se encuentra dicho script, en este caso en Github.
-Podemos descargar los paquetes del repositorio con programas como wget.</p>
-<div><pre><code>wget https://github.com/rocky-linux/rocky-tools/archive/refs/heads/main.zip
-</code></pre>
-</div><p>O bien, si solo deseamos descargar el script:</p>
-<div><pre><code>wget https://raw.githubusercontent.com/rocky-linux/rocky-tools/main/migrate2rocky/migrate2rocky.sh
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 5</strong></font> Le asignamos permisos de ejecución.</p>
-<div><pre><code>chmod +x migrate2rocky.sh
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 6</strong></font> Lo ejecutamos.</p>
-<p>Con el parámetro <strong>-r</strong> indicamos que siga adelante e instale todo.</p>
-<div><pre><code>./migrate2rocky.sh -r
-</code></pre>
-</div><p>El proceso puede tardar un rato, según la capacidad del equipo y la conexión a Internet.</p>
-<p>Después:</p>
-<div><pre><code>sudo dnf distro-sync -y
-</code></pre>
-</div><hr>
-<div><pre><code>sudo reboot
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 7</strong></font> Comprobación.</p>
-<div><pre><code>cat /etc/os-release
-</code></pre>
-</div><p>Podemos consultar ficheros como <strong>/etc/os-release</strong> o bien <strong>/etc/redhat-release</strong>, o lanzar el comando <strong>hostnamectl</strong></p>
-<div><pre><code>cat /etc/redhat-release
-</code></pre>
-</div>]]></content>
-    <author>
-      <name>Óscar Lucas</name>
-    </author>
-    <category term="practicas" scheme=""/>
-    <contributor>
-      <name>Óscar Lucas</name>
-    </contributor>
-    <published>2023-01-19T12:13:11.000Z</published>
-    <rights>Copyright by Óscar Lucas</rights>
-  </entry>
-  <entry>
     <title type="html">MongoDB en Debian 11 Bullseye</title>
     <id>https://github.com/oscarlucas22/practicas/mongo/</id>
     <link href="https://github.com/oscarlucas22/practicas/mongo/"/>
@@ -1939,6 +1883,62 @@ Podemos descargar los paquetes del repositorio con programas como wget.</p>
 </div><p><img src="./../images/ABD/5-mongo.png" alt="image"></p>
 <p>¡Gracias!</p>
 ]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
+    <category term="practicas" scheme=""/>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <published>2023-01-19T12:13:11.000Z</published>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
+    <title type="html">Migrar Centos 8 a Rocky Linux 8</title>
+    <id>https://github.com/oscarlucas22/practicas/migracionrocky/</id>
+    <link href="https://github.com/oscarlucas22/practicas/migracionrocky/"/>
+    <updated>2023-01-19T12:13:11.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="migrar-centos-8-a-rocky-linux-8"> Migrar Centos 8 a Rocky Linux 8</h1>
+<p><img src="./../images/ASO/rocky.png" alt="image"></p>
+<p>Para conseguir este fin se nos ofrece un script llamado <strong>migrate2rocky.sh</strong>. Este script se encargará de cambiar los repositorios del sistemas por los de Rocky Linux. Los paquetes se instalarán y actualizarán, para finalmente cambiar todo el sistema operativo.</p>
+<p><font color="#FFFF00"><strong>Paso 1</strong></font> Actualizamos el sistema.</p>
+<div><pre><code>sudo dnf -y upgrade
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 2</strong></font> Reiniciamos.</p>
+<div><pre><code>sudo reboot 
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 3</strong></font> Actualizar el sistema.</p>
+<div><pre><code>dnf update
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 4</strong></font> Descargar repositorio.</p>
+<p>Una vez hecho esto nos iremos al repositorio donde se encuentra dicho script, en este caso en Github.
+Podemos descargar los paquetes del repositorio con programas como wget.</p>
+<div><pre><code>wget https://github.com/rocky-linux/rocky-tools/archive/refs/heads/main.zip
+</code></pre>
+</div><p>O bien, si solo deseamos descargar el script:</p>
+<div><pre><code>wget https://raw.githubusercontent.com/rocky-linux/rocky-tools/main/migrate2rocky/migrate2rocky.sh
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 5</strong></font> Le asignamos permisos de ejecución.</p>
+<div><pre><code>chmod +x migrate2rocky.sh
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 6</strong></font> Lo ejecutamos.</p>
+<p>Con el parámetro <strong>-r</strong> indicamos que siga adelante e instale todo.</p>
+<div><pre><code>./migrate2rocky.sh -r
+</code></pre>
+</div><p>El proceso puede tardar un rato, según la capacidad del equipo y la conexión a Internet.</p>
+<p>Después:</p>
+<div><pre><code>sudo dnf distro-sync -y
+</code></pre>
+</div><hr>
+<div><pre><code>sudo reboot
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 7</strong></font> Comprobación.</p>
+<div><pre><code>cat /etc/os-release
+</code></pre>
+</div><p>Podemos consultar ficheros como <strong>/etc/os-release</strong> o bien <strong>/etc/redhat-release</strong>, o lanzar el comando <strong>hostnamectl</strong></p>
+<div><pre><code>cat /etc/redhat-release
+</code></pre>
+</div>]]></content>
     <author>
       <name>Óscar Lucas</name>
     </author>
@@ -3369,7 +3369,8 @@ fetch first 1 row only;
 <p>Bienvenidos a mi blog personal al blog de <a href="./../home.html">Óscar Lucas</a>. Soy un alumno del IES Gonzalo Nazareno y resido en Dos Hermanas (Sevilla).</p>
 <p>La idea principal de este blog es subir algunas de las tareas que vaya realizando a lo largo de mi curso de ASIR.</p>
 <p>Espero que os guste y os sirva de ayuda para algunos. Un saludo.</p>
-<center><i>Content not supported</i></center>]]></content>
+<center><i>Content not supported</i></center>
+]]></content>
     <author>
       <name>Óscar Lucas</name>
     </author>
@@ -3383,7 +3384,7 @@ fetch first 1 row only;
     <title type="html">Almacenamiento</title>
     <id>https://github.com/oscarlucas22/practicas/almacenamiento/</id>
     <link href="https://github.com/oscarlucas22/practicas/almacenamiento/"/>
-    <updated>2023-03-14T20:09:45.994Z</updated>
+    <updated>2023-06-11T18:19:06.334Z</updated>
     <content type="html"><![CDATA[<h1 id="almacenamiento"> Almacenamiento</h1>
 <h2 id="alumno-3"> Alumno 3:</h2>
 <p><em><strong>orACLE:</strong></em></p>
@@ -3950,7 +3951,7 @@ DROP USER JAIME cascade;
     <title type="html">Auditoría</title>
     <id>https://github.com/oscarlucas22/practicas/auditoria/</id>
     <link href="https://github.com/oscarlucas22/practicas/auditoria/"/>
-    <updated>2023-03-14T20:09:45.998Z</updated>
+    <updated>2023-06-11T18:19:06.337Z</updated>
     <content type="html"><![CDATA[<h1 id="auditoria"> Auditoría</h1>
 <h2 id="_1-activa-desde-sql-plus-la-auditoria-de-los-intentos-de-acceso-exitosos-al-sistema-comprueba-su-funcionamiento"> <strong>1. Activa desde SQL*Plus la auditoría de los intentos de acceso exitosos al sistema. Comprueba su funcionamiento.</strong></h2>
 <p>Visualizaremos los parametros de auditorias:</p>
@@ -4391,7 +4392,7 @@ insert into emp values(7942, 'RICK', 'CARRIER', null, str_to_date('01/03/2023', 
     <title type="html">Copias de Seguridad y Restauración</title>
     <id>https://github.com/oscarlucas22/practicas/copias-seg-y-rest/</id>
     <link href="https://github.com/oscarlucas22/practicas/copias-seg-y-rest/"/>
-    <updated>2023-03-14T20:09:46.002Z</updated>
+    <updated>2023-06-11T18:19:06.341Z</updated>
     <content type="html"><![CDATA[<h1 id="copias-de-seguridad-y-restauracion"> Copias de Seguridad y Restauración</h1>
 <h3 id="_1-realiza-una-copia-de-seguridad-logica-de-tu-base-de-datos-completa-teniendo-en-cuenta-los-siguientes-requisitos"> 1. Realiza una copia de seguridad lógica de tu base de datos completa, teniendo en cuenta los siguientes requisitos:</h3>
 <ul>
@@ -4800,197 +4801,10 @@ mysql -u root -p proyecto &lt; copiadb.sql
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
-    <title type="html">Cortafuegos I: De nodo con iptables</title>
-    <id>https://github.com/oscarlucas22/practicas/cortafuegoI/</id>
-    <link href="https://github.com/oscarlucas22/practicas/cortafuegoI/"/>
-    <updated>2023-03-14T20:09:46.003Z</updated>
-    <content type="html"><![CDATA[<h1 id="cortafuegos-i-de-nodo-con-iptables"> Cortafuegos I: De nodo con iptables</h1>
-<p>Página de la <a href="https://fp.josedomingo.org/seguridadgs/u03/ejercicio1.html" target="_blank" rel="noopener noreferrer">practica<i>Content not supported</i></a></p>
-<hr>
-<p>Vamos a crear nuestra maquina sobre la que vamos a trabajar</p>
-<p><a href="https://pastebin.com/xJ6NjdGT" target="_blank" rel="noopener noreferrer">fichero<i>Content not supported</i></a></p>
-<p>Cuando tengamos el fichero nos hiremos a Openstack e iniciaremos la maquina a traves de este fichero, sigue los siguientes pasos para crearla:</p>
-<p><img src="./../images/SAD/cortafuegos1/creacion1.png" alt="image"></p>
-<p><img src="./../images/SAD/cortafuegos1/creacion2.png" alt="image"></p>
-<p>Importamos el fichero</p>
-<p><img src="./../images/SAD/cortafuegos1/creacion3.png" alt="image"></p>
-<p>Le daremos a &quot;Siguiente&quot; y rellenaremos las siguientes casillas:</p>
-<p><img src="./../images/SAD/cortafuegos1/creacion4.png" alt="image"></p>
-<p>Y ya comenzaria a instalarse. Una vez instalada nos saldria en la sección de &quot;Instancias&quot;</p>
-<hr>
-<p>Vamos a realizar los primeros pasos para implementar un cortafuegos en un nodo de una red, aquel que se ejecuta en el propio equipo que trata de proteger, lo que a veces se denomina un cortafuegos personal.</p>
-<h2 id="limpieza-de-las-reglas-previas"> Limpieza de las reglas previas</h2>
-<div><pre><code>iptables -F
-iptables -t nat -F
-iptables -Z
-iptables -t nat -Z
-</code></pre>
-</div><h2 id="vamos-a-permitir-ssh"> Vamos a permitir ssh</h2>
-<p>Cómo estamos conectado a la máquina por ssh, vamos a permitir la conexión ssh desde la red 172.22.0.0/16, antes de cambiar las políticas por defecto a DROP, para no perder la conexión:</p>
-<div><pre><code>iptables -A INPUT -s 172.22.0.0/16 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
-iptables -A OUTPUT -d 172.22.0.0/16 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
-
-iptables -A INPUT -s 172.29.0.0/16 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
-iptables -A OUTPUT -d 172.29.0.0/16 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
-</code></pre>
-</div><h2 id="politica-por-defecto"> Política por defecto</h2>
-<div><pre><code>iptables -P INPUT DROP
-iptables -P OUTPUT DROP
-</code></pre>
-</div><p>Comprobamos que el equipo no puede acceder a ningún servicio ni de Internet ni de la red local, ya que la política lo impide.</p>
-<p><img src="./../images/SAD/cortafuegos1/1.png" alt="image"></p>
-<p><img src="./../images/SAD/cortafuegos1/1.1.png" alt="image"></p>
-<h2 id="permitimos-trafico-para-la-interfaz-loopback"> Permitimos tráfico para la interfaz loopback</h2>
-<div><pre><code>iptables -A INPUT -i lo -p icmp -j ACCEPT
-iptables -A OUTPUT -o lo -p icmp -j ACCEPT
-</code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/2.png" alt="image"></p>
-<h2 id="peticiones-y-respuestas-protocolo-icmp"> Peticiones y respuestas protocolo ICMP</h2>
-<div><pre><code>iptables -A INPUT -i ens3 -p icmp --icmp-type echo-reply -j ACCEPT
-iptables -A OUTPUT -o ens3 -p icmp --icmp-type echo-request -j ACCEPT
-</code></pre>
-</div><p>Comprobamos su funcionamiento haciendo ping a una IP pública:</p>
-<p><img src="./../images/SAD/cortafuegos1/3.png" alt="image"></p>
-<h2 id="consultas-y-respuestas-dns"> Consultas y respuestas DNS</h2>
-<div><pre><code>iptables -A OUTPUT -o ens3 -p udp --dport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
-iptables -A INPUT -i ens3 -p udp --sport 53 -m state --state ESTABLISHED -j ACCEPT
-</code></pre>
-</div><p>Comprobamos su funcionamiento con una consulta DNS:</p>
-<p><img src="./../images/SAD/cortafuegos1/4.png" alt="image"></p>
-<h2 id="trafico-http-que-la-maquina-pueda-navegar"> Tráfico http (que la máquina pueda navegar)</h2>
-<div><pre><code>iptables -A OUTPUT -o ens3 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
-iptables -A INPUT -i ens3 -p tcp --sport 80 -m state --state ESTABLISHED -j ACCEPT
-</code></pre>
-</div><p>Comprobamos que funciona accediendo a un servicio http (!no https)</p>
-<p><img src="./../images/SAD/cortafuegos1/5.png" alt="image"></p>
-<h2 id="trafico-https"> Tráfico https</h2>
-<div><pre><code>iptables -A OUTPUT -o ens3 -p tcp --dport 443 -m state --state NEW,ESTABLISHED -j ACCEPT
-iptables -A INPUT -i ens3 -p tcp --sport 443 -m state --state ESTABLISHED -j ACCEPT
-</code></pre>
-</div><p>Comprobamos que funciona abriendo un navegador y accediendo a cualquier sitio web (hoy en día la mayoría son https). En mi caso lo he hecho con lynx:</p>
-<div><pre><code>apt install lynx
-</code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/6.png" alt="image"></p>
-<h2 id="permitimos-el-acceso-a-nuestro-servidor-web"> Permitimos el acceso a nuestro servidor web</h2>
-<div><pre><code>iptables -A INPUT -i ens3 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
-iptables -A OUTPUT -o ens3 -p tcp --sport 80 -m state --state ESTABLISHED -j ACCEPT
-</code></pre>
-</div><p>En mi caso he vuelto a hacer la comprobación por lynx (lynx &quot;mi-ip-flotante&quot;)</p>
-<p><img src="./../images/SAD/cortafuegos1/7.png" alt="image"></p>
-<hr>
-<h2 id="ejercicios"> Ejercicios</h2>
-<p><strong>1. Permite poder hacer conexiones ssh al exterior.</strong></p>
-<p>Vamos a añadir las reglas que permitan realizar conexiones ssh al exterior:</p>
-<div><pre><code>iptables -A INPUT -i ens3 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
-iptables -A OUTPUT -o ens3 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
-</code></pre>
-</div><p>Probemos si podemos conectarnos por ssh a otra máquina:</p>
-<p><img src="./../images/SAD/cortafuegos1/tarea1-1.png" alt="image"></p>
-<p>Efectivamente, podemos conectarnos, por lo que podemos decir que la regla funciona correctamente.</p>
-<p><strong>2. Deniega el acceso a tu servidor web desde una ip concreta.</strong></p>
-<p>Antes de agregar la regla de bloqueo, es importante considerar las reglas de INPUT que ya tenemos establecidas:</p>
-<div><pre><code>iptables -L -v -n
-</code></pre>
-</div><p>Si agregamos la regla de bloqueo al final, no sería efectiva, ya que siempre se superpondría con la regla previa que permite todo el tráfico HTTP entrante.</p>
-<p>Para solucionarlo, añadimos por encima la nueva regla.</p>
-<p>Necesitamos saber el número de línea específico, así que ejecutamos el siguiente comando:</p>
-<div><pre><code>iptables -L -v -n --line-numbers
-</code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/tarea2-0.png" alt="image"></p>
-<p>Vamos a añadir la regla de bloqueo en la posición marcada para que funcione:</p>
-<div><pre><code>iptables -I INPUT 6 -s 10.0.0.216/32 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j DROP
-</code></pre>
-</div><p>Esta regla permitirá el acceso a nuestro servidor web desde cualquier máquina que no tenga la dirección IP especificada. Verifiquemos si funciona:</p>
-<ul>
-<li>Desde otra ip que no es la bloqueada:</li>
-</ul>
-<p><img src="./../images/SAD/cortafuegos1/tarea2-1.png" alt="image"></p>
-<ul>
-<li>Desde la ip bloqueda:</li>
-</ul>
-<p><img src="./../images/SAD/cortafuegos1/tarea2-2.png" alt="image"></p>
-<p>Como vemos, podemos acceder desde cualquier máquina que no sea la que tenga la ip que tenemos bloqueada.</p>
-<p><strong>3. Permite hacer consultas DNS sólo al servidor 192.168.202.2. Comprueba que no puedes hacer un dig @1.1.1.1.</strong></p>
-<p>En esta situación, estamos enfrentando un problema similar al del ejercicio anterior. Sin embargo, en este caso necesitamos eliminar dos reglas antiguas que permitían todo el tráfico DNS saliente.</p>
-<div><pre><code>iptables -L -v -n --line-numbers
-</code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/tarea3-0.png" alt="image"></p>
-<p>Aun si añadiéramos las nuevas reglas por encima de estas, si ejecutamos el comando <code>dig</code> a 1.1.1.1, se produciría una coincidencia con estas reglas, lo que permitiría el tráfico. Esto no es lo que buscamos.</p>
-<p>Primero, borramos las reglas antiguas:</p>
-<div><pre><code>iptables -D INPUT 5
-iptables -D OUTPUT 5
-</code></pre>
-</div><p>Despues añadimos las siguientes reglas:</p>
-<div><pre><code>iptables -A INPUT -s 192.168.202.2/32 -p udp --sport 53 -m state --state ESTABLISHED -j ACCEPT
-iptables -A OUTPUT -d 192.168.202.2/32 -p udp --dport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
-</code></pre>
-</div><p>Vemos que no podemos hacer un dig @1.1.1.1:</p>
-<p><img src="./../images/SAD/cortafuegos1/tarea3-1.png" alt="image"></p>
-<p>Pero si podemos usar el servidor dns que hay en “192.168.202.2”:</p>
-<p><img src="./../images/SAD/cortafuegos1/tarea3-2.png" alt="image"></p>
-<p><strong>4. No permitir el acceso al servidor web de www.josedomingo.org (Tienes que utilizar la ip). ¿Puedes acceder a fp.josedomingo.org?</strong></p>
-<p>Una vez más, si agregamos la siguiente regla al final, tendremos un conflicto de reglas, ya que antes tenemos una que permite todo el tráfico HTTP de salida. Los emparejamientos siempre se detendrían ahí.</p>
-<div><pre><code>iptables -L -v -n --line-numbers
-</code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/tarea4-0.png" alt="image"></p>
-<p>Es necesario agregar la regla de bloqueo por encima de la regla previamente mostrada:</p>
-<div><pre><code>iptables -I OUTPUT 5 -d 37.187.119.60/32 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j DROP
-</code></pre>
-</div><p>Ahora no podemos acceder a esa url desde esta máquina debido a la regla del cortafuegos:</p>
-<p><img src="./../images/SAD/cortafuegos1/tarea4-1.png" alt="image"></p>
-<p>Tampoco podemos acceder a fp.josedomingo.org, ya que tiene la misma ip, y la tenemos bloqueada:</p>
-<p><img src="./../images/SAD/cortafuegos1/tarea4-2.png" alt="image"></p>
-<p>Sin embargo, si que podemos acceder a otros dominios que no tengan esa ip:</p>
-<p><img src="./../images/SAD/cortafuegos1/tarea4-3.png" alt="image"></p>
-<p>Como vemos, la regla funciona bien, pero debemos tener cuidado al bloquear ciertas ips, ya que podríamos estar bloqueando más servicios de los que queremos.</p>
-<p><strong>5. Permite mandar un correo usando nuestro servidor de correo: babuino-smtp. Para probarlo ejecuta un telnet bubuino-smtp.gonzalonazareno.org 25.</strong></p>
-<p>Lo primero que haremos será crear las reglas Iptables:</p>
-<div><pre><code>iptables -A OUTPUT -d 192.168.203.3 -p tcp --dport 25 -j ACCEPT
-iptables -A INPUT -s 192.168.203.3 -p tcp --sport 25 -j ACCEPT
-</code></pre>
-</div><p>Pruebo que funciona con telnet:</p>
-<div><pre><code>telnet babuino-smtp.gonzalonazareno.org 25
-</code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/tarea5-1.png" alt="image"></p>
-<p><strong>6. Instala un servidor mariadb, y permite los accesos desde la ip de tu cliente. Comprueba que desde otro cliente no se puede acceder.</strong></p>
-<p>Instalamos mariadb-server y permitimos conexiones remotas:</p>
-<div><pre><code>apt install mariadb-server
-</code></pre>
-</div><p>Editamos el siguiente fichero <code>/etc/mysql/mariadb.conf.d/50-server.cnf</code>:</p>
-<div><pre><code>bind-address            = 0.0.0.0
-</code></pre>
-</div><p>Reiniciamos mariadb:</p>
-<div><pre><code>systemctl restart mariadb
-</code></pre>
-</div><p>A continuación, habilitamos el tráfico entrante desde mi máquina host:</p>
-<div><pre><code>iptables -A INPUT -s 10.0.0.180 -p tcp --dport 3306 -j ACCEPT
-iptables -A OUTPUT -d 10.0.0.180 -p tcp --sport 3306 -j ACCEPT
-</code></pre>
-</div><p>Creo un usuario en la maquina para despues comprobar el funcionamiento:</p>
-<p><img src="./../images/SAD/cortafuegos1/tarea6-1.png" alt="image"></p>
-<p>Probamos que funciona:</p>
-<div><pre><code>mariadb -u cortafuegos -h 10.0.0.72 -p
-</code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/tarea6-2.png" alt="image"></p>
-<p>Verificamos que el tráfico se bloquea desde otro cliente:</p>
-<div><pre><code>mariadb -u cortafuegos -h 10.0.0.72 -p
-</code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/tarea6-3.png" alt="image"></p>
-]]></content>
-    <author>
-      <name>Óscar Lucas</name>
-    </author>
-    <category term="practicas" scheme=""/>
-    <contributor>
-      <name>Óscar Lucas</name>
-    </contributor>
-    <rights>Copyright by Óscar Lucas</rights>
-  </entry>
-  <entry>
     <title type="html">Instalación y configuración de un servidor de correos en el VPS</title>
     <id>https://github.com/oscarlucas22/practicas/correos/</id>
     <link href="https://github.com/oscarlucas22/practicas/correos/"/>
-    <updated>2023-03-14T20:09:46.009Z</updated>
+    <updated>2023-06-11T18:19:06.352Z</updated>
     <content type="html"><![CDATA[<h1 id="instalacion-y-configuracion-de-un-servidor-de-correos-en-el-vps"> Instalación y configuración de un servidor de correos en el VPS</h1>
 <h2 id="practica-servidor-de-correos"> Práctica: Servidor de correos</h2>
 <p><strong>Instala y configura de manera adecuada el servidor de correos en tu VPS. El nombre del servidor de correo será mail.tudominio.es (Este es el nombre que deberá aparecer en el registro MX).</strong></p>
@@ -5511,10 +5325,197 @@ server {
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
+    <title type="html">Cortafuegos I: De nodo con iptables</title>
+    <id>https://github.com/oscarlucas22/practicas/cortafuegoI/</id>
+    <link href="https://github.com/oscarlucas22/practicas/cortafuegoI/"/>
+    <updated>2023-06-11T18:19:06.354Z</updated>
+    <content type="html"><![CDATA[<h1 id="cortafuegos-i-de-nodo-con-iptables"> Cortafuegos I: De nodo con iptables</h1>
+<p>Página de la <a href="https://fp.josedomingo.org/seguridadgs/u03/ejercicio1.html" target="_blank" rel="noopener noreferrer">practica<i>Content not supported</i></a></p>
+<hr>
+<p>Vamos a crear nuestra maquina sobre la que vamos a trabajar</p>
+<p><a href="https://pastebin.com/xJ6NjdGT" target="_blank" rel="noopener noreferrer">fichero<i>Content not supported</i></a></p>
+<p>Cuando tengamos el fichero nos hiremos a Openstack e iniciaremos la maquina a traves de este fichero, sigue los siguientes pasos para crearla:</p>
+<p><img src="./../images/SAD/cortafuegos1/creacion1.png" alt="image"></p>
+<p><img src="./../images/SAD/cortafuegos1/creacion2.png" alt="image"></p>
+<p>Importamos el fichero</p>
+<p><img src="./../images/SAD/cortafuegos1/creacion3.png" alt="image"></p>
+<p>Le daremos a &quot;Siguiente&quot; y rellenaremos las siguientes casillas:</p>
+<p><img src="./../images/SAD/cortafuegos1/creacion4.png" alt="image"></p>
+<p>Y ya comenzaria a instalarse. Una vez instalada nos saldria en la sección de &quot;Instancias&quot;</p>
+<hr>
+<p>Vamos a realizar los primeros pasos para implementar un cortafuegos en un nodo de una red, aquel que se ejecuta en el propio equipo que trata de proteger, lo que a veces se denomina un cortafuegos personal.</p>
+<h2 id="limpieza-de-las-reglas-previas"> Limpieza de las reglas previas</h2>
+<div><pre><code>iptables -F
+iptables -t nat -F
+iptables -Z
+iptables -t nat -Z
+</code></pre>
+</div><h2 id="vamos-a-permitir-ssh"> Vamos a permitir ssh</h2>
+<p>Cómo estamos conectado a la máquina por ssh, vamos a permitir la conexión ssh desde la red 172.22.0.0/16, antes de cambiar las políticas por defecto a DROP, para no perder la conexión:</p>
+<div><pre><code>iptables -A INPUT -s 172.22.0.0/16 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -d 172.22.0.0/16 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
+
+iptables -A INPUT -s 172.29.0.0/16 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -d 172.29.0.0/16 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
+</code></pre>
+</div><h2 id="politica-por-defecto"> Política por defecto</h2>
+<div><pre><code>iptables -P INPUT DROP
+iptables -P OUTPUT DROP
+</code></pre>
+</div><p>Comprobamos que el equipo no puede acceder a ningún servicio ni de Internet ni de la red local, ya que la política lo impide.</p>
+<p><img src="./../images/SAD/cortafuegos1/1.png" alt="image"></p>
+<p><img src="./../images/SAD/cortafuegos1/1.1.png" alt="image"></p>
+<h2 id="permitimos-trafico-para-la-interfaz-loopback"> Permitimos tráfico para la interfaz loopback</h2>
+<div><pre><code>iptables -A INPUT -i lo -p icmp -j ACCEPT
+iptables -A OUTPUT -o lo -p icmp -j ACCEPT
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/2.png" alt="image"></p>
+<h2 id="peticiones-y-respuestas-protocolo-icmp"> Peticiones y respuestas protocolo ICMP</h2>
+<div><pre><code>iptables -A INPUT -i ens3 -p icmp --icmp-type echo-reply -j ACCEPT
+iptables -A OUTPUT -o ens3 -p icmp --icmp-type echo-request -j ACCEPT
+</code></pre>
+</div><p>Comprobamos su funcionamiento haciendo ping a una IP pública:</p>
+<p><img src="./../images/SAD/cortafuegos1/3.png" alt="image"></p>
+<h2 id="consultas-y-respuestas-dns"> Consultas y respuestas DNS</h2>
+<div><pre><code>iptables -A OUTPUT -o ens3 -p udp --dport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A INPUT -i ens3 -p udp --sport 53 -m state --state ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>Comprobamos su funcionamiento con una consulta DNS:</p>
+<p><img src="./../images/SAD/cortafuegos1/4.png" alt="image"></p>
+<h2 id="trafico-http-que-la-maquina-pueda-navegar"> Tráfico http (que la máquina pueda navegar)</h2>
+<div><pre><code>iptables -A OUTPUT -o ens3 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A INPUT -i ens3 -p tcp --sport 80 -m state --state ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>Comprobamos que funciona accediendo a un servicio http (!no https)</p>
+<p><img src="./../images/SAD/cortafuegos1/5.png" alt="image"></p>
+<h2 id="trafico-https"> Tráfico https</h2>
+<div><pre><code>iptables -A OUTPUT -o ens3 -p tcp --dport 443 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A INPUT -i ens3 -p tcp --sport 443 -m state --state ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>Comprobamos que funciona abriendo un navegador y accediendo a cualquier sitio web (hoy en día la mayoría son https). En mi caso lo he hecho con lynx:</p>
+<div><pre><code>apt install lynx
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/6.png" alt="image"></p>
+<h2 id="permitimos-el-acceso-a-nuestro-servidor-web"> Permitimos el acceso a nuestro servidor web</h2>
+<div><pre><code>iptables -A INPUT -i ens3 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -o ens3 -p tcp --sport 80 -m state --state ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>En mi caso he vuelto a hacer la comprobación por lynx (lynx &quot;mi-ip-flotante&quot;)</p>
+<p><img src="./../images/SAD/cortafuegos1/7.png" alt="image"></p>
+<hr>
+<h2 id="ejercicios"> Ejercicios</h2>
+<p><strong>1. Permite poder hacer conexiones ssh al exterior.</strong></p>
+<p>Vamos a añadir las reglas que permitan realizar conexiones ssh al exterior:</p>
+<div><pre><code>iptables -A INPUT -i ens3 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -o ens3 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>Probemos si podemos conectarnos por ssh a otra máquina:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea1-1.png" alt="image"></p>
+<p>Efectivamente, podemos conectarnos, por lo que podemos decir que la regla funciona correctamente.</p>
+<p><strong>2. Deniega el acceso a tu servidor web desde una ip concreta.</strong></p>
+<p>Antes de agregar la regla de bloqueo, es importante considerar las reglas de INPUT que ya tenemos establecidas:</p>
+<div><pre><code>iptables -L -v -n
+</code></pre>
+</div><p>Si agregamos la regla de bloqueo al final, no sería efectiva, ya que siempre se superpondría con la regla previa que permite todo el tráfico HTTP entrante.</p>
+<p>Para solucionarlo, añadimos por encima la nueva regla.</p>
+<p>Necesitamos saber el número de línea específico, así que ejecutamos el siguiente comando:</p>
+<div><pre><code>iptables -L -v -n --line-numbers
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/tarea2-0.png" alt="image"></p>
+<p>Vamos a añadir la regla de bloqueo en la posición marcada para que funcione:</p>
+<div><pre><code>iptables -I INPUT 6 -s 10.0.0.216/32 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j DROP
+</code></pre>
+</div><p>Esta regla permitirá el acceso a nuestro servidor web desde cualquier máquina que no tenga la dirección IP especificada. Verifiquemos si funciona:</p>
+<ul>
+<li>Desde otra ip que no es la bloqueada:</li>
+</ul>
+<p><img src="./../images/SAD/cortafuegos1/tarea2-1.png" alt="image"></p>
+<ul>
+<li>Desde la ip bloqueda:</li>
+</ul>
+<p><img src="./../images/SAD/cortafuegos1/tarea2-2.png" alt="image"></p>
+<p>Como vemos, podemos acceder desde cualquier máquina que no sea la que tenga la ip que tenemos bloqueada.</p>
+<p><strong>3. Permite hacer consultas DNS sólo al servidor 192.168.202.2. Comprueba que no puedes hacer un dig @1.1.1.1.</strong></p>
+<p>En esta situación, estamos enfrentando un problema similar al del ejercicio anterior. Sin embargo, en este caso necesitamos eliminar dos reglas antiguas que permitían todo el tráfico DNS saliente.</p>
+<div><pre><code>iptables -L -v -n --line-numbers
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/tarea3-0.png" alt="image"></p>
+<p>Aun si añadiéramos las nuevas reglas por encima de estas, si ejecutamos el comando <code>dig</code> a 1.1.1.1, se produciría una coincidencia con estas reglas, lo que permitiría el tráfico. Esto no es lo que buscamos.</p>
+<p>Primero, borramos las reglas antiguas:</p>
+<div><pre><code>iptables -D INPUT 5
+iptables -D OUTPUT 5
+</code></pre>
+</div><p>Despues añadimos las siguientes reglas:</p>
+<div><pre><code>iptables -A INPUT -s 192.168.202.2/32 -p udp --sport 53 -m state --state ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -d 192.168.202.2/32 -p udp --dport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>Vemos que no podemos hacer un dig @1.1.1.1:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea3-1.png" alt="image"></p>
+<p>Pero si podemos usar el servidor dns que hay en “192.168.202.2”:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea3-2.png" alt="image"></p>
+<p><strong>4. No permitir el acceso al servidor web de www.josedomingo.org (Tienes que utilizar la ip). ¿Puedes acceder a fp.josedomingo.org?</strong></p>
+<p>Una vez más, si agregamos la siguiente regla al final, tendremos un conflicto de reglas, ya que antes tenemos una que permite todo el tráfico HTTP de salida. Los emparejamientos siempre se detendrían ahí.</p>
+<div><pre><code>iptables -L -v -n --line-numbers
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/tarea4-0.png" alt="image"></p>
+<p>Es necesario agregar la regla de bloqueo por encima de la regla previamente mostrada:</p>
+<div><pre><code>iptables -I OUTPUT 5 -d 37.187.119.60/32 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j DROP
+</code></pre>
+</div><p>Ahora no podemos acceder a esa url desde esta máquina debido a la regla del cortafuegos:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea4-1.png" alt="image"></p>
+<p>Tampoco podemos acceder a fp.josedomingo.org, ya que tiene la misma ip, y la tenemos bloqueada:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea4-2.png" alt="image"></p>
+<p>Sin embargo, si que podemos acceder a otros dominios que no tengan esa ip:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea4-3.png" alt="image"></p>
+<p>Como vemos, la regla funciona bien, pero debemos tener cuidado al bloquear ciertas ips, ya que podríamos estar bloqueando más servicios de los que queremos.</p>
+<p><strong>5. Permite mandar un correo usando nuestro servidor de correo: babuino-smtp. Para probarlo ejecuta un telnet bubuino-smtp.gonzalonazareno.org 25.</strong></p>
+<p>Lo primero que haremos será crear las reglas Iptables:</p>
+<div><pre><code>iptables -A OUTPUT -d 192.168.203.3 -p tcp --dport 25 -j ACCEPT
+iptables -A INPUT -s 192.168.203.3 -p tcp --sport 25 -j ACCEPT
+</code></pre>
+</div><p>Pruebo que funciona con telnet:</p>
+<div><pre><code>telnet babuino-smtp.gonzalonazareno.org 25
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/tarea5-1.png" alt="image"></p>
+<p><strong>6. Instala un servidor mariadb, y permite los accesos desde la ip de tu cliente. Comprueba que desde otro cliente no se puede acceder.</strong></p>
+<p>Instalamos mariadb-server y permitimos conexiones remotas:</p>
+<div><pre><code>apt install mariadb-server
+</code></pre>
+</div><p>Editamos el siguiente fichero <code>/etc/mysql/mariadb.conf.d/50-server.cnf</code>:</p>
+<div><pre><code>bind-address            = 0.0.0.0
+</code></pre>
+</div><p>Reiniciamos mariadb:</p>
+<div><pre><code>systemctl restart mariadb
+</code></pre>
+</div><p>A continuación, habilitamos el tráfico entrante desde mi máquina host:</p>
+<div><pre><code>iptables -A INPUT -s 10.0.0.180 -p tcp --dport 3306 -j ACCEPT
+iptables -A OUTPUT -d 10.0.0.180 -p tcp --sport 3306 -j ACCEPT
+</code></pre>
+</div><p>Creo un usuario en la maquina para despues comprobar el funcionamiento:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea6-1.png" alt="image"></p>
+<p>Probamos que funciona:</p>
+<div><pre><code>mariadb -u cortafuegos -h 10.0.0.72 -p
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/tarea6-2.png" alt="image"></p>
+<p>Verificamos que el tráfico se bloquea desde otro cliente:</p>
+<div><pre><code>mariadb -u cortafuegos -h 10.0.0.72 -p
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/tarea6-3.png" alt="image"></p>
+]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
+    <category term="practicas" scheme=""/>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
     <title type="html">Cortafuegos II: Perimetral con nftables</title>
     <id>https://github.com/oscarlucas22/practicas/cortafuegoII/</id>
     <link href="https://github.com/oscarlucas22/practicas/cortafuegoII/"/>
-    <updated>2023-03-14T20:09:46.012Z</updated>
+    <updated>2023-06-11T18:19:06.357Z</updated>
     <content type="html"><![CDATA[<h1 id="cortafuegos-ii-perimetral-con-nftables"> Cortafuegos II: Perimetral con nftables</h1>
 <p><strong>Realiza con nftables el ejercicio de la <a href="https://fp.josedomingo.org/seguridadgs/u03/perimetral_iptables.html" target="_blank" rel="noopener noreferrer">página<i>Content not supported</i></a> documentando las pruebas de funcionamiento realizadas.</strong></p>
 <p><strong>Debes añadir después las reglas necesarias para que se permitan las siguientes operaciones:</strong></p>
@@ -5837,7 +5838,7 @@ sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens
     <title type="html">Informática Forense</title>
     <id>https://github.com/oscarlucas22/practicas/forense/</id>
     <link href="https://github.com/oscarlucas22/practicas/forense/"/>
-    <updated>2023-03-14T20:09:46.012Z</updated>
+    <updated>2023-06-11T18:19:06.358Z</updated>
     <content type="html"><![CDATA[<h1 id="informatica-forense"> Informática Forense</h1>
 <p><strong>La informática forense es el conjunto de técnicas que nos permite obtener la máxima información posible tras un incidente o delito informático.</strong></p>
 <p><strong>En esta práctica, realizarás la fase de toma de evidencias y análisis de las mismas sobre una máquina Linux y otra Windows. Supondremos que pillamos al delincuente in fraganti y las máquinas se encontraban encendidas. Opcionalmente, podéis realizar el análisis de un dispositivo Android.</strong></p>
@@ -5918,7 +5919,7 @@ sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens
     <title type="html">Práctica: IC/DC con Jenkins</title>
     <id>https://github.com/oscarlucas22/practicas/ic/dc-jenkins/</id>
     <link href="https://github.com/oscarlucas22/practicas/ic/dc-jenkins/"/>
-    <updated>2023-03-14T20:09:46.015Z</updated>
+    <updated>2023-06-11T18:19:06.358Z</updated>
     <content type="html"><![CDATA[<h1 id="practica-ic-dc-con-jenkins"> Práctica: IC/DC con Jenkins</h1>
 <p><strong>El objetivo de esta práctica es el desarrollo gradual de un Pipeline que vaya realizando tareas sobre el repositorio de una aplicación.</strong></p>
 <p><strong>La aplicación con la que vamos a trabajar será tu fork de la aplicación django Polls. Como hemos visto esta aplicación que implementa el tutorial de Django tiene implementado un módulo de pruebas.</strong></p>
@@ -6035,7 +6036,7 @@ sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens
     <title type="html">Kubernetes</title>
     <id>https://github.com/oscarlucas22/practicas/kubernetes/</id>
     <link href="https://github.com/oscarlucas22/practicas/kubernetes/"/>
-    <updated>2023-03-14T20:09:46.016Z</updated>
+    <updated>2023-06-11T18:19:06.363Z</updated>
     <content type="html"><![CDATA[<h1 id="kubernetes"> Kubernetes</h1>
 <p><strong>En IAW has creado dos imágenes de dos aplicaciones: bookmedik (php) y polls (python django). Elige una de ellas y despliégala en kubernetes. Para ello vamos a hacer dos ejercicios:</strong></p>
 <p>En este <a href="./../practicas/python-docker.html">post</a> realizamos la implantación de una aplicación en Docker. En este post vamos a realizar el despliegue de la misma aplicación en Kubernetes.</p>
@@ -6465,7 +6466,7 @@ kubectl create secret generic secret-mariadb --from-literal=password=bookmedik -
     <title type="html">Poblar un directorio LDAP desde un fichero CSV</title>
     <id>https://github.com/oscarlucas22/practicas/ldap-csv/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldap-csv/"/>
-    <updated>2023-03-14T20:09:46.019Z</updated>
+    <updated>2023-06-11T18:19:06.364Z</updated>
     <content type="html"><![CDATA[<h1 id="poblar-un-directorio-ldap-desde-un-fichero-csv"> Poblar un directorio LDAP desde un fichero CSV</h1>
 <ul>
 <li>
@@ -6721,7 +6722,7 @@ AuthorizedKeysCommandUser nobody
     <title type="html">Instalación y configuración inicial de OpenLDAP</title>
     <id>https://github.com/oscarlucas22/practicas/ldap/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldap/"/>
-    <updated>2023-03-14T20:09:46.022Z</updated>
+    <updated>2023-06-11T18:19:06.369Z</updated>
     <content type="html"><![CDATA[<h1 id="instalacion-y-configuracion-inicial-de-openldap"> Instalación y configuración inicial de OpenLDAP</h1>
 <p><strong>Realiza la instalación y configuración básica de OpenLDAP en alfa, utilizando como base el nombre DNS asignado. Deberás crear un usuario llamado prueba y configurar una máquina cliente basada en Debian y Rocky para que pueda validarse en servidor ldap configurado anteriormente con el usuario prueba.</strong></p>
 <p><font color="#FFFF00"><strong>Paso 1</strong></font> Configuración de OpenLDAP en el servidor: Instalación y configuración de OpenLDAP.Instalación y configuración de OpenLDAP en el Servidor</p>
@@ -7081,7 +7082,7 @@ systemctl start mnt-nfs.mount
     <title type="html">LDAPs</title>
     <id>https://github.com/oscarlucas22/practicas/ldaps/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldaps/"/>
-    <updated>2023-03-14T20:09:46.023Z</updated>
+    <updated>2023-06-11T18:19:06.370Z</updated>
     <content type="html"><![CDATA[<h1 id="ldaps"> LDAPs</h1>
 <p><strong>Configura el servidor LDAP de alfa para que utilice el protocolo ldaps:// a la vez que el ldap:// utilizando el certificado x509 de la práctica de https o solicitando el correspondiente a través de gestiona. Realiza las modificaciones adecuadas en los clientes ldap de alfa para que todas las consultas se realicen por defecto utilizando ldaps://</strong></p>
 <p>Para empezar, crearemos el directorio que usaremos para almacenar las claves SSL y le otorgaremos los permisos adecuados. Luego, procederemos a generar la clave RSA.</p>
@@ -7241,7 +7242,7 @@ systemctl enable home-nfs.mount
     <title type="html">Movimiento de datos</title>
     <id>https://github.com/oscarlucas22/practicas/movdatos/</id>
     <link href="https://github.com/oscarlucas22/practicas/movdatos/"/>
-    <updated>2023-03-14T20:09:46.025Z</updated>
+    <updated>2023-06-11T18:19:06.373Z</updated>
     <content type="html"><![CDATA[<h1 id="movimiento-de-datos"> Movimiento de datos</h1>
 <h3 id="_1-realiza-una-exportacion-del-esquema-de-scott-usando-oracle-data-pump-con-las-siguientes-condiciones"> 1. Realiza una exportación del esquema de SCOTT usando Oracle Data Pump con las siguientes condiciones:</h3>
 <ul>
@@ -7537,7 +7538,7 @@ sqlldr scott2/tiger control=/home/oracle/control/salgrade.ctl log=/home/oracle/l
     <title type="html">Implantación de aplicaciones web PHP en docker</title>
     <id>https://github.com/oscarlucas22/practicas/phpdocker/</id>
     <link href="https://github.com/oscarlucas22/practicas/phpdocker/"/>
-    <updated>2023-03-14T20:09:46.026Z</updated>
+    <updated>2023-06-11T18:19:06.374Z</updated>
     <content type="html"><![CDATA[<h1 id="implantacion-de-aplicaciones-web-php-en-docker"> Implantación de aplicaciones web PHP en docker</h1>
 <p><strong>Imaginemos que el equipo de desarrollo de nuestra empresa ha desarrollado una aplicación PHP que se llama <a href="https://github.com/evilnapsis/bookmedik" target="_blank" rel="noopener noreferrer">BookMedik<i>Content not supported</i></a>.</strong></p>
 <p><strong>Queremos crear una imagen Docker para implantar dicha aplicación.</strong></p>
@@ -8057,7 +8058,7 @@ volumes:
     <title type="html">Práctica: Implantación de aplicaciones web Python en docker</title>
     <id>https://github.com/oscarlucas22/practicas/python-docker/</id>
     <link href="https://github.com/oscarlucas22/practicas/python-docker/"/>
-    <updated>2023-03-14T20:09:46.027Z</updated>
+    <updated>2023-06-11T18:19:06.375Z</updated>
     <content type="html"><![CDATA[<h1 id="practica-implantacion-de-aplicaciones-web-python-en-docker"> Práctica: Implantación de aplicaciones web Python en docker</h1>
 <p><strong>Queremos desplegar en docker la aplicación escrita en python django: tutorial de django, que desplegamos en la tarea Despliegue de aplicaciones python.</strong></p>
 <p><strong>Tienes que tener en cuenta los siguientes aspectos:</strong></p>
@@ -8259,7 +8260,7 @@ server {
     <title type="html">Sistema de copias de seguridad</title>
     <id>https://github.com/oscarlucas22/practicas/sistemas-cop-seg/</id>
     <link href="https://github.com/oscarlucas22/practicas/sistemas-cop-seg/"/>
-    <updated>2023-03-14T20:09:46.029Z</updated>
+    <updated>2023-06-11T18:19:06.377Z</updated>
     <content type="html"><![CDATA[<h1 id="sistema-de-copias-de-seguridad"> Sistema de copias de seguridad</h1>
 <h2 id="descripcion"> Descripción</h2>
 <p><strong>Implementar un sistema de copias de seguridad para las instancias del cloud, teniendo en cuenta las siguientes características:</strong></p>
@@ -9162,7 +9163,7 @@ firewall-cmd --reload
     <title type="html">VPN</title>
     <id>https://github.com/oscarlucas22/practicas/vpn/</id>
     <link href="https://github.com/oscarlucas22/practicas/vpn/"/>
-    <updated>2023-03-14T20:09:46.032Z</updated>
+    <updated>2023-06-11T18:19:06.380Z</updated>
     <content type="html"><![CDATA[<h1 id="vpn"> VPN</h1>
 <h2 id="a-vpn-de-acceso-remoto-con-openvpn-y-certificados-x509-5-puntos"> A) VPN de acceso remoto con OpenVPN y certificados x509 (5 puntos)</h2>
 <p><strong>Configura una conexión VPN de acceso remoto entre dos equipos del cloud:</strong></p>
