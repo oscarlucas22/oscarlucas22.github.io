@@ -5,92 +5,16 @@
   <author>
     <name>Óscar Lucas</name>
   </author>
-  <updated>2023-11-08T11:14:12.895Z</updated>
+  <updated>2023-11-08T11:35:30.317Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://github.com/oscarlucas22/atom.xml"/>
   <link rel="alternate" href="https://github.com/oscarlucas22/"/>
   <category term="categorías"/>
   <category term="practicas"/>
+  <category term="proyectos"/>
   <contributor>
     <name>Óscar Lucas</name>
   </contributor>
-  <entry>
-    <title type="html">ASO</title>
-    <id>https://github.com/oscarlucas22/category/ASO/</id>
-    <link href="https://github.com/oscarlucas22/category/ASO/"/>
-    <updated>2023-01-19T12:13:11.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="aso"> ASO</h1>
-<ul>
-<li>
-<p><a href="/practicas/makefile.html">Compilación de un programa en C utilizando un Makefile</a></p>
-</li>
-<li>
-<p><a href="/practicas/migracionrocky.html">Migración de CentOS Stream 8 a Rocky Linux</a></p>
-</li>
-<li>
-<p><a href="/practicas/logs.html">Recolección centralizada de logs de sistema, mediante journald.</a></p>
-</li>
-<li>
-<p><a href="/practicas/ldap.html">Instalación y configuración inicial de OpenLDAP</a></p>
-</li>
-<li>
-<p><a href="/practicas/ldap-csv.html">Poblar un directorio LDAP desde un fichero CSV</a></p>
-</li>
-<li>
-<p><a href="/practicas/ldaps.html">LDAPs</a></p>
-</li>
-</ul>
-]]></content>
-    <author>
-      <name>Óscar Lucas</name>
-    </author>
-    <category term="categorías" scheme=""/>
-    <contributor>
-      <name>Óscar Lucas</name>
-    </contributor>
-    <published>2023-01-19T12:13:11.000Z</published>
-    <rights>Copyright by Óscar Lucas</rights>
-  </entry>
-  <entry>
-    <title type="html">ABD</title>
-    <id>https://github.com/oscarlucas22/category/ABD/</id>
-    <link href="https://github.com/oscarlucas22/category/ABD/"/>
-    <updated>2023-01-19T12:13:11.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="abd"> ABD</h1>
-<ul>
-<li>
-<p><a href="/practicas/BD.html">Servidores y Clientes de Base de Datos</a></p>
-</li>
-<li>
-<p><a href="/practicas/orcl-psql.html">Interconexión Servidores</a></p>
-</li>
-<li>
-<p><a href="/practicas/usuarios.html">Usuarios</a></p>
-</li>
-<li>
-<p><a href="/practicas/almacenamiento.html">Almacenamiento</a></p>
-</li>
-<li>
-<p><a href="/practicas/auditoria.html">Auditoría</a></p>
-</li>
-<li>
-<p><a href="/practicas/movdatos.html">Movimiento de datos</a></p>
-</li>
-<li>
-<p><a href="/practicas/copias-seg-y-rest.html">Copias de Seguridad y Restauración</a></p>
-</li>
-</ul>
-]]></content>
-    <author>
-      <name>Óscar Lucas</name>
-    </author>
-    <category term="categorías" scheme=""/>
-    <contributor>
-      <name>Óscar Lucas</name>
-    </contributor>
-    <published>2023-01-19T12:13:11.000Z</published>
-    <rights>Copyright by Óscar Lucas</rights>
-  </entry>
   <entry>
     <title type="html">IAW</title>
     <id>https://github.com/oscarlucas22/category/IAW/</id>
@@ -123,20 +47,29 @@
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
-    <title type="html">SRI</title>
-    <id>https://github.com/oscarlucas22/category/SRI/</id>
-    <link href="https://github.com/oscarlucas22/category/SRI/"/>
+    <title type="html">ASO</title>
+    <id>https://github.com/oscarlucas22/category/ASO/</id>
+    <link href="https://github.com/oscarlucas22/category/ASO/"/>
     <updated>2023-01-19T12:13:11.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="sri"> SRI</h1>
+    <content type="html"><![CDATA[<h1 id="aso"> ASO</h1>
 <ul>
 <li>
-<p><a href="/practicas/openstack.html">Práctica: Escenario en OpenStack</a></p>
+<p><a href="/practicas/makefile.html">Compilación de un programa en C utilizando un Makefile</a></p>
 </li>
 <li>
-<p><a href="/practicas/correos.html">Instalación y configuración de un servidor de correos en el VPS</a></p>
+<p><a href="/practicas/migracionrocky.html">Migración de CentOS Stream 8 a Rocky Linux</a></p>
 </li>
 <li>
-<p><a href="/practicas/kubernetes.html">Práctica: Kubernetes</a></p>
+<p><a href="/practicas/logs.html">Recolección centralizada de logs de sistema, mediante journald.</a></p>
+</li>
+<li>
+<p><a href="/practicas/ldap.html">Instalación y configuración inicial de OpenLDAP</a></p>
+</li>
+<li>
+<p><a href="/practicas/ldap-csv.html">Poblar un directorio LDAP desde un fichero CSV</a></p>
+</li>
+<li>
+<p><a href="/practicas/ldaps.html">LDAPs</a></p>
 </li>
 </ul>
 ]]></content>
@@ -194,6 +127,34 @@
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
+    <title type="html">SRI</title>
+    <id>https://github.com/oscarlucas22/category/SRI/</id>
+    <link href="https://github.com/oscarlucas22/category/SRI/"/>
+    <updated>2023-01-19T12:13:11.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="sri"> SRI</h1>
+<ul>
+<li>
+<p><a href="/practicas/openstack.html">Práctica: Escenario en OpenStack</a></p>
+</li>
+<li>
+<p><a href="/practicas/correos.html">Instalación y configuración de un servidor de correos en el VPS</a></p>
+</li>
+<li>
+<p><a href="/practicas/kubernetes.html">Práctica: Kubernetes</a></p>
+</li>
+</ul>
+]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
+    <category term="categorías" scheme=""/>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <published>2023-01-19T12:13:11.000Z</published>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
     <title type="html">Servidores y Clientes de Base de Datos</title>
     <id>https://github.com/oscarlucas22/practicas/BD/</id>
     <link href="https://github.com/oscarlucas22/practicas/BD/"/>
@@ -218,6 +179,46 @@
       <name>Óscar Lucas</name>
     </author>
     <category term="practicas" scheme=""/>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <published>2023-01-19T12:13:11.000Z</published>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
+    <title type="html">ABD</title>
+    <id>https://github.com/oscarlucas22/category/ABD/</id>
+    <link href="https://github.com/oscarlucas22/category/ABD/"/>
+    <updated>2023-01-19T12:13:11.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="abd"> ABD</h1>
+<ul>
+<li>
+<p><a href="/practicas/BD.html">Servidores y Clientes de Base de Datos</a></p>
+</li>
+<li>
+<p><a href="/practicas/orcl-psql.html">Interconexión Servidores</a></p>
+</li>
+<li>
+<p><a href="/practicas/usuarios.html">Usuarios</a></p>
+</li>
+<li>
+<p><a href="/practicas/almacenamiento.html">Almacenamiento</a></p>
+</li>
+<li>
+<p><a href="/practicas/auditoria.html">Auditoría</a></p>
+</li>
+<li>
+<p><a href="/practicas/movdatos.html">Movimiento de datos</a></p>
+</li>
+<li>
+<p><a href="/practicas/copias-seg-y-rest.html">Copias de Seguridad y Restauración</a></p>
+</li>
+</ul>
+]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
+    <category term="categorías" scheme=""/>
     <contributor>
       <name>Óscar Lucas</name>
     </contributor>
@@ -601,6 +602,394 @@ De manera que tendremos que verificar la firma con el uso de la opcion '--verify
       <name>Óscar Lucas</name>
     </author>
     <category term="practicas" scheme=""/>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <published>2023-01-19T12:13:11.000Z</published>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
+    <title type="html">Criptografía III. Certificados Digitales. HTTPS</title>
+    <id>https://github.com/oscarlucas22/practicas/criptografia3/</id>
+    <link href="https://github.com/oscarlucas22/practicas/criptografia3/"/>
+    <updated>2023-01-19T18:58:40.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="criptografia-iii-certificados-digitales-https"> Criptografía III. Certificados Digitales. HTTPS</h1>
+<h3 id="tarea-1-instalacion-del-certificado"> Tarea 1: Instalación del certificado</h3>
+<p><font color="#00ff00"><strong>1.</strong></font> <strong>Una vez que hayas obtenido tu certificado, explica brevemente como se instala en tu navegador favorito.</strong></p>
+<p>En mi caso lo hare en Firefox.
+Nos iremos a los 3 puntos o las 3 rayas que nos aparecen en el firefox y ahi pincharemos en &quot;Ajustes&quot;</p>
+<p><img src="./../images/SAD/cripto III/1-1.png" alt="image"></p>
+<p>Luego nos iremos a la parte de &quot;Privacidad y Seguridad&quot; y nos iremos alfinal del todo donde se encuentra los certificados.</p>
+<p><img src="./../images/SAD/cripto III/1.1-1.png" alt="image"></p>
+<p>Picharemos en &quot;Ver certificados&quot;, nos iremos a &quot;Sus Certificados&quot;, y le daremos a &quot;Importar&quot; importaremos nuestro certificado, nos pedira nuestra contraseña y una vez hecho esto ya estaria instalado.</p>
+<p><img src="./../images/SAD/cripto III/1.2-1.png" alt="image"></p>
+<p><img src="./../images/SAD/cripto III/1.3-1.png" alt="image"></p>
+<p><font color="#00ff00"><strong>2.</strong></font> <strong>Muestra una captura de pantalla donde se vea las preferencias del navegador donde se ve instalado tu certificado.</strong></p>
+<p><img src="./../images/SAD/cripto III/2-1.png" alt="image"></p>
+<p><font color="#00ff00"><strong>3.</strong></font> <strong>¿Cómo puedes hacer una copia de tu certificado?, ¿Como vas a realizar la copia de seguridad de tu certificado?. Razona la respuesta.</strong></p>
+<p>Nos hiremos a la misma parte donde hemos importado nuestro certificado y le daremos donde pone &quot;Hacer una copia...&quot;. Nos pedira una conyraseña y una ruta donde guardarlo.</p>
+<p><img src="./../images/SAD/cripto III/3-1.png" alt="image"></p>
+<p><font color="#00ff00"><strong>4.</strong></font> <strong>Investiga como exportar la clave pública de tu certificado.</strong></p>
+<p>Nos iremos a la parte donde hemos importado nuestro certificado, le daremos doble click a nuestro certificado y nos iremos donde pone &quot;PEM (cert)&quot; que es nustra clave publica.</p>
+<p><img src="./../images/SAD/cripto III/4-1.png" alt="image"></p>
+<h3 id="tarea-2-validacion-del-certificado"> Tarea 2: Validación del certificado</h3>
+<p><font color="#00ff00"><strong>1.</strong></font> <strong>Instala en tu ordenador el software autofirma y desde la página de VALIDe valida tu certificado. Muestra capturas de pantalla donde se comprueba la validación.</strong></p>
+<p><img src="./../images/SAD/cripto III/1-2.png" alt="image"></p>
+<h3 id="tarea-3-firma-electronica"> Tarea 3: Firma electrónica</h3>
+<p><font color="#00ff00"><strong>1.</strong></font> <strong>Utilizando la página VALIDe y el programa autofirma, firma un documento con tu certificado y envíalo por correo a un compañero.</strong></p>
+<p><font color="#00ff00"><strong>2.</strong></font> <strong>Tu debes recibir otro documento firmado por un compañero y utilizando las herramientas anteriores debes visualizar la firma (Visualizar Firma) y (Verificar Firma). ¿Puedes verificar la firma aunque no tengas la clave pública de tu compañero?, ¿Es necesario estar conectado a internet para hacer la validación de la firma?. Razona tus respuestas.</strong></p>
+<p><em><strong>VALIDe</strong></em></p>
+<p><img src="./../images/SAD/cripto III/2-3.png" alt="image"></p>
+<p><img src="./../images/SAD/cripto III/2.1-3.png" alt="image"></p>
+<p><em><strong>AutoFirma</strong></em></p>
+<p><img src="./../images/SAD/cripto III/2.2-3.png" alt="image"></p>
+<p><em><strong>¿Puedes verificar la firma aunque no tengas la clave pública de tu compañero?</strong></em></p>
+<p>Si se puede ya que cuando la introduces se exporta la clave publica automaticamente para saber quien es.</p>
+<p><em><strong>Pueba de Sin internet</strong></em></p>
+<p><img src="./../images/SAD/cripto III/2.3-3.png" alt="image"></p>
+<p>Como podemos ver si se puede acceder sin internet</p>
+<p><font color="#00ff00"><strong>3.</strong></font> <strong>Entre dos compañeros, firmar los dos un documento, verificar la firma para comprobar que está firmado por los dos.</strong></p>
+<p><img src="./../images/SAD/cripto III/3-3.png" alt="image"></p>
+<h3 id="tarea-4-autentificacion"> Tarea 4: Autentificación</h3>
+<p><font color="#00ff00"><strong>1.</strong></font> <strong>Utilizando tu certificado accede a alguna página de la administración pública )cita médica, becas, puntos del carnet,…). Entrega capturas de pantalla donde se demuestre el acceso a ellas.</strong></p>
+<p><img src="./../images/SAD/cripto III/1-4.png" alt="image"></p>
+<p><img src="./../images/SAD/cripto III/1.1-4.png" alt="image"></p>
+<h3 id="tarea-1-certificado-autofirmado"> Tarea 1: Certificado autofirmado</h3>
+<p><font color="#00ff00"><strong>1.</strong></font> <strong>Crear su autoridad certificadora (generar el certificado digital de la CA). Mostrar el fichero de configuración de la AC.</strong></p>
+<p>Para este paso, generaré varias carpetas para ordenar los archivos de la Autoridad Certificadora y algunos archivos necesarios:</p>
+<div><pre><code>mkdir CA/
+cd CA/
+mkdir certs csr crl newcerts private
+chmod 700 private
+touch index.txt
+touch index.txt.attr
+echo 1000 &gt; serial
+</code></pre>
+</div><p>Creo las variables de entorno necesarias:</p>
+<div><pre><code>countryName_default=&quot;ES&quot;
+stateOrProvinceName_default=&quot;Sevilla&quot;
+localityName_default=&quot;Dos Hermanas&quot;
+organizationName_default=&quot;GonzaloNazareno&quot;
+organizationalUnitName_default=&quot;Informatica&quot;
+emailAddress_default=&quot;oscarlucasleo124@gmail.com&quot;
+DIR_CA=&quot;./&quot;
+</code></pre>
+</div><p>Creo el archivo openssl.conf ejecutando lo siguiente:</p>
+<div><pre><code>cat &lt;&lt;EOF&gt;$DIR_CA/openssl.conf
+[ ca ]
+# man ca
+default_ca = CA_default
+
+[ CA_default ]
+# Directory and file locations.
+dir = ${DIR_CA}
+certs = ${DIR_CA}certs
+crl_dir = ${DIR_CA}crl
+new_certs_dir = ${DIR_CA}newcerts
+database = ${DIR_CA}index.txt
+serial = ${DIR_CA}serial
+RANDFILE = ${DIR_CA}private/.rand
+
+# The root key and root certificate.
+private_key = ${DIR_CA}private/private.key
+certificate = ${DIR_CA}certs/cacert.crt
+
+# For certificate revocation lists.
+crlnumber = ${DIR_CA}crlnumber
+crl = ${DIR_CA}crl/ca.crl.pem
+crl_extensions = crl_ext
+default_crl_days = 30
+
+# SHA-1 is deprecated, so use SHA-2 instead.
+default_md = sha256
+
+name_opt = ca_default
+cert_opt = ca_default
+default_days = 375
+preserve = no
+policy = policy_strict
+
+[ policy_strict ]
+# The root CA should only sign intermediate certificates that match.
+# See the POLICY FORMAT section of man ca.
+countryName = match
+stateOrProvinceName = match
+organizationName = match
+organizationalUnitName = optional
+commonName = supplied
+emailAddress = optional
+
+[ policy_loose ]
+# Allow the intermediate CA to sign a more diverse range of certificates.
+# See the POLICY FORMAT section of the ca man page.
+countryName = optional
+stateOrProvinceName = optional
+localityName = optional
+organizationName = optional
+organizationalUnitName = optional
+commonName = supplied
+emailAddress = optional
+
+[ req ]
+# Options for the req tool (man req).
+default_bits = 2048
+distinguished_name = req_distinguished_name
+string_mask = utf8only
+# SHA-1 is deprecated, so use SHA-2 instead.
+default_md = sha256
+# Extension to add when the -x509 option is used.
+x509_extensions = v3_ca
+# Extension for SANs
+req_extensions = v3_req
+
+[ v3_req ]
+# Extensions to add to a certificate request
+# Before invoke openssl use: export SAN=DNS:value1,DNS:value2
+basicConstraints = CA:FALSE
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+xxxsubjectAltNamexxx =
+
+[ req_distinguished_name ]
+# See &lt;https://en.wikipedia.org/wiki/Certificate_signing_request&gt;.
+countryName = Country Name (2 letter code)
+stateOrProvinceName = State or Province Name
+localityName = Locality Name
+0.organizationName = Organization Name
+organizationalUnitName = Organizational Unit Name
+commonName = Common Name
+emailAddress = Email Address
+
+# Optionally, specify some defaults.
+countryName_default = $countryName_default
+stateOrProvinceName_default = $stateOrProvinceName_default
+localityName_default = $localityName_default
+0.organizationName_default = $organizationName_default
+organizationalUnitName_default = $organizationalUnitName_default
+emailAddress_default = $emailAddress_default
+
+[ v3_ca ]
+# Extensions for a typical CA (man x509v3_config).
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid:always,issuer
+basicConstraints = critical, CA:true
+keyUsage = critical, digitalSignature, cRLSign, keyCertSign
+
+[ v3_intermediate_ca ]
+# Extensions for a typical intermediate CA (man x509v3_config).
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid:always,issuer
+basicConstraints = critical, CA:true, pathlen:0
+keyUsage = critical, digitalSignature, cRLSign, keyCertSign
+
+[ usr_cert ]
+# Extensions for client certificates (man x509v3_config).
+basicConstraints = CA:FALSE
+nsCertType = client, email
+nsComment = &quot;OpenSSL Generated Client Certificate&quot;
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid,issuer
+keyUsage = critical, nonRepudiation, digitalSignature, keyEncipherment
+extendedKeyUsage = clientAuth, emailProtection
+
+[ server_cert ]
+# Extensions for server certificates (man x509v3_config).
+basicConstraints = CA:FALSE
+nsCertType = server
+nsComment = &quot;OpenSSL Generated Server Certificate&quot;
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid,issuer:always
+keyUsage = critical, digitalSignature, keyEncipherment
+extendedKeyUsage = serverAuth
+
+[ crl_ext ]
+# Extension for CRLs (man x509v3_config).
+authorityKeyIdentifier=keyid:always
+
+[ ocsp ]
+# Extension for OCSP signing certificates (man ocsp).
+basicConstraints = CA:FALSE
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid,issuer
+keyUsage = critical, digitalSignature
+extendedKeyUsage = critical, OCSPSigning
+EOF
+</code></pre>
+</div><p>Ahora genero la clave privada:</p>
+<div><pre><code>openssl genrsa -aes256 -out private/private.key 4096
+</code></pre>
+</div><p>Cambio los permisos de la clave privada:</p>
+<div><pre><code>chmod 400 private/private.key
+</code></pre>
+</div><p>Edito el fichero openssl.conf con el siguiente comando:</p>
+<div><pre><code>sed -i 's|xxxsubjectAltNamexxx =|subjectAltName = ${ENV::SAN}|g' openssl.conf
+</code></pre>
+</div><p>Y por último creo el certificado autofirmado para la CA ejecutando lo siguiente:</p>
+<div><pre><code>URL=alfonso.iesgn.org
+export SAN=DNS:$URL
+</code></pre>
+</div><hr>
+<div><pre><code>openssl req -config openssl.conf -key private/private.key -new -x509 -days 3650 -sha256 -extensions v3_ca -out certs/cacert.crt
+</code></pre>
+</div><p><img src="./../images/SAD/cripto III/1-1-ssl.png" alt="image"></p>
+<p><font color="#00ff00"><strong>2.</strong></font> <strong>Debe recibir el fichero CSR (Solicitud de Firmar un Certificado) de su compañero, debe firmarlo y enviar el certificado generado a su compañero.</strong></p>
+<p>Alfonso me ha enviado su fichero CSR. Lo coloco en el directorio csr.</p>
+<p><img src="./../images/SAD/cripto III/2-1-ssl.png" alt="image"></p>
+<p>Ahora firmo el certificado:</p>
+<div><pre><code>openssl ca -config openssl.conf -extensions v3_req -days 3650 -notext -md sha256 -in csr/alfonso.csr -out certs/alfonso.crt
+</code></pre>
+</div><p><img src="./../images/SAD/cripto III/2.1-1-ssl.png" alt="image"></p>
+<p>Para permitir a Alfonso utilizar el certificado, debo enviarle los archivos cacert.crt e alfonso.crt.</p>
+<p><font color="#00ff00"><strong>3.</strong></font> <strong>¿Qué otra información debes aportar a tu compañero para que éste configure de forma adecuada su servidor web con el certificado generado?</strong></p>
+<p>Alfonso requerirá el archivo cacert.crt para verificar la firma del certificado que se le ha enviado, ya que de manera predeterminada, su certificado no se encuentra incluido en los navegadores web.</p>
+<p>Después de esto, si se añade el certificado de la autoridad de certificación (CA) al navegador, se podrá acceder al sitio web de Alfonso y comprobar que su certificado es válido.</p>
+<p><img src="./../images/SAD/cripto III/3-1-ssl.png" alt="image"></p>
+<hr>
+<p>Antes de empezar este tema, configuré un servidor web Apache2 en Proxmox con una página de prueba que utiliza el virtualhost olucas.iesgn.org.</p>
+<div><pre><code>sudo apt update
+sudo apt install apache2
+sudo a2dissite 000-default.conf
+sudo nano -cl /etc/apache2/sites-available/olucas.iesgn.org.conf
+</code></pre>
+</div><p>Contenido del fichero olucas.iesgn.org.conf:</p>
+<div><pre><code>&lt;VirtualHost *:80&gt;
+    ServerName olucas.iesgn.org
+    DocumentRoot /var/www/html/olucas.iesgn.org
+
+    ErrorLog ${APACHE_LOG_DIR}/error-olucas.log
+    CustomLog ${APACHE_LOG_DIR}/access-olucas.log combined
+&lt;/VirtualHost&gt;
+</code></pre>
+</div><p>Para la web de prueba, me he descargado una plantilla html y la he colocado en la ruta /var/www/html/olucas.iesgn.org:</p>
+<p>Ahora activo el virtualhost:</p>
+<div><pre><code>sudo a2ensite olucas.iesgn.org.conf
+sudo systemctl reload apache2
+</code></pre>
+</div><p>En mi máquina cliente, agrego la IP de la máquina servidor en el fichero /etc/hosts:</p>
+<div><pre><code>172.22.2.141 olucas.iesgn.org
+</code></pre>
+</div><p>Y compruebo que puedo acceder a la web:</p>
+<p><img src="./../images/SAD/cripto III/0-https.png" alt="image"></p>
+<p><font color="#00ff00"><strong>1.</strong></font> <strong>Crea una clave privada RSA de 4096 bits para identificar el servidor.</strong></p>
+<div><pre><code>sudo openssl genrsa -aes256 -out /etc/ssl/private/olucas-privada.key 4096
+sudo chmod 400 /etc/ssl/private/olucas-privada.key
+</code></pre>
+</div><p><img src="./../images/SAD/cripto III/1-2-https.png" alt="image"></p>
+<p><font color="#00ff00"><strong>2.</strong></font> <strong>Utiliza la clave anterior para generar un CSR, considerando que deseas acceder al servidor con el FQDN (tunombre.iesgn.org).</strong></p>
+<div><pre><code>sudo openssl req -new -sha256 -key /etc/ssl/private/olucas-privada.key -out olucas.csr
+</code></pre>
+</div><p><img src="./../images/SAD/cripto III/2-2-https.png" alt="image"></p>
+<p><font color="#00ff00"><strong>3.</strong></font> <strong>Envía la solicitud de firma a la entidad certificadora (su compañero).</strong></p>
+<p>Le envio el fichero <strong>.csr</strong> a Alfonso</p>
+<p><font color="#00ff00"><strong>4.</strong></font> <strong>Recibe como respuesta un certificado X.509 para el servidor firmado y el certificado de la autoridad certificadora.</strong></p>
+<p>Alfonso me ha enviado los ficheros olucas.crt y cacert.crt, esto son mi certificado firmado por su CA y el certificado autofirmado de su CA</p>
+<p><img src="./../images/SAD/cripto III/4-2-https.png" alt="image"></p>
+<p><font color="#00ff00"><strong>5.</strong></font> <strong>Configura tu servidor web con https en el puerto 443, haciendo que las peticiones http se redireccionen a https (forzar https).</strong></p>
+<p>El primer paso es crear el VirtualHost para el puerto 443:</p>
+<div><pre><code>sudo nano -cl /etc/apache2/sites-available/ssl-olucas.iesgn.org.conf
+</code></pre>
+</div><p>Contenido del fichero ssl-olucas.iesgn.org.conf:</p>
+<div><pre><code>&lt;IfModule mod_ssl.c&gt;
+    &lt;VirtualHost *:443&gt;
+        ServerName olucas.iesgn.org
+        DocumentRoot /var/www/html/olucas.iesgn.org
+
+        ErrorLog ${APACHE_LOG_DIR}/error-ssl-olucas.log
+        CustomLog ${APACHE_LOG_DIR}/access-ssl-olucas.log combined
+
+        SSLEngine on
+        SSLCertificateFile /etc/ssl/certs/olucas.crt
+        SSLCertificateKeyFile /etc/ssl/private/privada-olucas.key
+        SSLCACertificateFile /etc/ssl/certs/cacert.crt
+
+        &lt;Directory /var/www/html/olucas.iesgn.org&gt;
+            Options Indexes FollowSymLinks
+            AllowOverride None
+            Require all granted
+        &lt;/Directory&gt;
+    &lt;/VirtualHost&gt;
+&lt;/IfModule&gt;
+</code></pre>
+</div><p>Ahora coloco los archivos olucas.crt y cacert.crt en los directorios correspondientes. El fichero olucas-
+privada.key ya estaba en su sitio.</p>
+<div><pre><code>sudo mv olucas.crt /etc/ssl/certs/
+sudo mv cacert.crt /etc/ssl/certs/
+sudo chown root:root /etc/ssl/certs/olucas.crt
+sudo chown root:root /etc/ssl/certs/cacert.crt
+sudo chmod 644 /etc/ssl/certs/olucas.crt
+sudo chmod 644 /etc/ssl/certs/cacert.crt
+</code></pre>
+</div><p>Ahora activo el módulo &quot;ssl&quot; de Apache, el VirtualHost nuevo y reinicio el servicio:</p>
+<div><pre><code>sudo a2enmod ssl
+sudo a2ensite ssl-olucas.iesgn.org.conf
+sudo systemctl reload apache2
+</code></pre>
+</div><p>Durante el proceso, debemos de introducir la contraseña de la clave RSA.</p>
+<p>Ahora para habilitar una redirección automática hacia https, modificaremos el fichero
+olucas.iesgn.org.conf. Y añadiremos la línea correspondiente para la redirección y el fichero quedaria asi:</p>
+<div><pre><code>&lt;VirtualHost *:80&gt;
+    ServerName olucas.iesgn.org
+    DocumentRoot /var/www/html/olucas.iesgn.org
+
+    ErrorLog ${APACHE_LOG_DIR}/error-olucas.log
+    CustomLog ${APACHE_LOG_DIR}/access-olucas.log combined
+
+    redirect 301 / https://olucas.iesgn.org/
+&lt;/VirtualHost&gt;
+</code></pre>
+</div><p>Y volvemos a reiniciar apache</p>
+<div><pre><code>sudo systemcl restart apache2
+</code></pre>
+</div><p><font color="#00ff00"><strong>6.</strong></font> <strong>Instala ahora un servidor nginx, y realiza la misma configuración que anteriormente para que se sirva la página con HTTPS.</strong></p>
+<p>Antes que nada, vamos a deshabilitar apache para que no entre en conflicto con el nginx.</p>
+<div><pre><code>sudo systemctl disable --now apache2
+</code></pre>
+</div><p>Despues instalamos nginx:</p>
+<div><pre><code>sudo apt install nginx
+</code></pre>
+</div><p>A continuación creamos el virtualhost para la página web.</p>
+<div><pre><code>sudo nano /etc/nginx/sites-available/olucas.iesgn.org.conf
+</code></pre>
+</div><p>Y el fichero quedaria asi:</p>
+<div><pre><code>server {
+        listen 80;
+        listen [::]:80;
+        server_name olucas.iesgn.org;
+        return 301 https://$server_name$request_uri;
+}
+
+server {
+        listen 443 ssl http2;
+        listen [::]:443 ssl http2;
+        server_name olucas.iesgn.org;
+        ssl_certificate /etc/ssl/certs/olucas.iesgn.crt;
+        ssl_certificate_key /etc/ssl/private/privada-olucas.key;
+        ssl_trusted_certificate /etc/ssl/certs/cacert.crt;
+        root /var/www/html/olucas.iesgn.org;
+        index index.html;
+        location / {
+                try_files $uri $uri/ =404;
+        }
+}
+</code></pre>
+</div><p>Guardamos el fichero y habilitamos el virtualhost. Para ello creamos un enlace simbólico
+en /etc/nginx/sites-enabled.</p>
+<div><pre><code>ln -s /etc/nginx/sites-available/olucas.iesgn.org.conf /etc/nginx/sites-enabled/
+</code></pre>
+</div><p>Reiniciamos nginx:</p>
+<div><pre><code>sudo systemctl restart nginx
+</code></pre>
+</div><p>Al reiniciar nginx a diferencia de apache, nos reporta un fallo, ya que no puede cargar la frase de paso.</p>
+<p>Para solucionarlo, podemos agregar la línea en el virtualhost:</p>
+<div><pre><code>ssl_password_file /etc/keys/global.pass;
+</code></pre>
+</div><p>Y volvemos a reiniciar nginx:</p>
+<div><pre><code>sudo systemctl restart nginx
+</code></pre>
+</div><p>Y ya nos deberia dejar acceder a nuestra pagina y podriamos acceder con https</p>
+]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
     <contributor>
       <name>Óscar Lucas</name>
     </contributor>
@@ -1131,387 +1520,53 @@ snap install core; sudo snap refresh core
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
-    <title type="html">Criptografía III. Certificados Digitales. HTTPS</title>
-    <id>https://github.com/oscarlucas22/practicas/criptografia3/</id>
-    <link href="https://github.com/oscarlucas22/practicas/criptografia3/"/>
-    <updated>2023-01-19T18:58:40.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="criptografia-iii-certificados-digitales-https"> Criptografía III. Certificados Digitales. HTTPS</h1>
-<h3 id="tarea-1-instalacion-del-certificado"> Tarea 1: Instalación del certificado</h3>
-<p><font color="#00ff00"><strong>1.</strong></font> <strong>Una vez que hayas obtenido tu certificado, explica brevemente como se instala en tu navegador favorito.</strong></p>
-<p>En mi caso lo hare en Firefox.
-Nos iremos a los 3 puntos o las 3 rayas que nos aparecen en el firefox y ahi pincharemos en &quot;Ajustes&quot;</p>
-<p><img src="./../images/SAD/cripto III/1-1.png" alt="image"></p>
-<p>Luego nos iremos a la parte de &quot;Privacidad y Seguridad&quot; y nos iremos alfinal del todo donde se encuentra los certificados.</p>
-<p><img src="./../images/SAD/cripto III/1.1-1.png" alt="image"></p>
-<p>Picharemos en &quot;Ver certificados&quot;, nos iremos a &quot;Sus Certificados&quot;, y le daremos a &quot;Importar&quot; importaremos nuestro certificado, nos pedira nuestra contraseña y una vez hecho esto ya estaria instalado.</p>
-<p><img src="./../images/SAD/cripto III/1.2-1.png" alt="image"></p>
-<p><img src="./../images/SAD/cripto III/1.3-1.png" alt="image"></p>
-<p><font color="#00ff00"><strong>2.</strong></font> <strong>Muestra una captura de pantalla donde se vea las preferencias del navegador donde se ve instalado tu certificado.</strong></p>
-<p><img src="./../images/SAD/cripto III/2-1.png" alt="image"></p>
-<p><font color="#00ff00"><strong>3.</strong></font> <strong>¿Cómo puedes hacer una copia de tu certificado?, ¿Como vas a realizar la copia de seguridad de tu certificado?. Razona la respuesta.</strong></p>
-<p>Nos hiremos a la misma parte donde hemos importado nuestro certificado y le daremos donde pone &quot;Hacer una copia...&quot;. Nos pedira una conyraseña y una ruta donde guardarlo.</p>
-<p><img src="./../images/SAD/cripto III/3-1.png" alt="image"></p>
-<p><font color="#00ff00"><strong>4.</strong></font> <strong>Investiga como exportar la clave pública de tu certificado.</strong></p>
-<p>Nos iremos a la parte donde hemos importado nuestro certificado, le daremos doble click a nuestro certificado y nos iremos donde pone &quot;PEM (cert)&quot; que es nustra clave publica.</p>
-<p><img src="./../images/SAD/cripto III/4-1.png" alt="image"></p>
-<h3 id="tarea-2-validacion-del-certificado"> Tarea 2: Validación del certificado</h3>
-<p><font color="#00ff00"><strong>1.</strong></font> <strong>Instala en tu ordenador el software autofirma y desde la página de VALIDe valida tu certificado. Muestra capturas de pantalla donde se comprueba la validación.</strong></p>
-<p><img src="./../images/SAD/cripto III/1-2.png" alt="image"></p>
-<h3 id="tarea-3-firma-electronica"> Tarea 3: Firma electrónica</h3>
-<p><font color="#00ff00"><strong>1.</strong></font> <strong>Utilizando la página VALIDe y el programa autofirma, firma un documento con tu certificado y envíalo por correo a un compañero.</strong></p>
-<p><font color="#00ff00"><strong>2.</strong></font> <strong>Tu debes recibir otro documento firmado por un compañero y utilizando las herramientas anteriores debes visualizar la firma (Visualizar Firma) y (Verificar Firma). ¿Puedes verificar la firma aunque no tengas la clave pública de tu compañero?, ¿Es necesario estar conectado a internet para hacer la validación de la firma?. Razona tus respuestas.</strong></p>
-<p><em><strong>VALIDe</strong></em></p>
-<p><img src="./../images/SAD/cripto III/2-3.png" alt="image"></p>
-<p><img src="./../images/SAD/cripto III/2.1-3.png" alt="image"></p>
-<p><em><strong>AutoFirma</strong></em></p>
-<p><img src="./../images/SAD/cripto III/2.2-3.png" alt="image"></p>
-<p><em><strong>¿Puedes verificar la firma aunque no tengas la clave pública de tu compañero?</strong></em></p>
-<p>Si se puede ya que cuando la introduces se exporta la clave publica automaticamente para saber quien es.</p>
-<p><em><strong>Pueba de Sin internet</strong></em></p>
-<p><img src="./../images/SAD/cripto III/2.3-3.png" alt="image"></p>
-<p>Como podemos ver si se puede acceder sin internet</p>
-<p><font color="#00ff00"><strong>3.</strong></font> <strong>Entre dos compañeros, firmar los dos un documento, verificar la firma para comprobar que está firmado por los dos.</strong></p>
-<p><img src="./../images/SAD/cripto III/3-3.png" alt="image"></p>
-<h3 id="tarea-4-autentificacion"> Tarea 4: Autentificación</h3>
-<p><font color="#00ff00"><strong>1.</strong></font> <strong>Utilizando tu certificado accede a alguna página de la administración pública )cita médica, becas, puntos del carnet,…). Entrega capturas de pantalla donde se demuestre el acceso a ellas.</strong></p>
-<p><img src="./../images/SAD/cripto III/1-4.png" alt="image"></p>
-<p><img src="./../images/SAD/cripto III/1.1-4.png" alt="image"></p>
-<h3 id="tarea-1-certificado-autofirmado"> Tarea 1: Certificado autofirmado</h3>
-<p><font color="#00ff00"><strong>1.</strong></font> <strong>Crear su autoridad certificadora (generar el certificado digital de la CA). Mostrar el fichero de configuración de la AC.</strong></p>
-<p>Para este paso, generaré varias carpetas para ordenar los archivos de la Autoridad Certificadora y algunos archivos necesarios:</p>
-<div><pre><code>mkdir CA/
-cd CA/
-mkdir certs csr crl newcerts private
-chmod 700 private
-touch index.txt
-touch index.txt.attr
-echo 1000 &gt; serial
+    <title type="html">Compilación de un programa en C utilizando un Makefile</title>
+    <id>https://github.com/oscarlucas22/practicas/makefile/</id>
+    <link href="https://github.com/oscarlucas22/practicas/makefile/"/>
+    <updated>2023-01-19T12:13:11.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="compilacion-de-un-programa-en-c-utilizando-un-makefile"> Compilación de un programa en C utilizando un Makefile</h1>
+<p>Aqui dejo la url de la web de <a href="https://packages.debian.org/bullseye/imagination" target="_blank" rel="noopener noreferrer">Debian<i>Content not supported</i></a> donde se encuentra la compilación del paquete imagination.</p>
+<p><font color="#FFFF00"><strong>Paso 1</strong></font> Descarga del código fuente</p>
+<p>Primero instalaremos dpkg-dev</p>
+<div><pre><code>sudo apt install dpkg-dev
 </code></pre>
-</div><p>Creo las variables de entorno necesarias:</p>
-<div><pre><code>countryName_default=&quot;ES&quot;
-stateOrProvinceName_default=&quot;Sevilla&quot;
-localityName_default=&quot;Dos Hermanas&quot;
-organizationName_default=&quot;GonzaloNazareno&quot;
-organizationalUnitName_default=&quot;Informatica&quot;
-emailAddress_default=&quot;oscarlucasleo124@gmail.com&quot;
-DIR_CA=&quot;./&quot;
+</div><p>Despues instalaremos imagination con el comando <code>apt source</code></p>
+<div><pre><code>apt source imagination
 </code></pre>
-</div><p>Creo el archivo openssl.conf ejecutando lo siguiente:</p>
-<div><pre><code>cat &lt;&lt;EOF&gt;$DIR_CA/openssl.conf
-[ ca ]
-# man ca
-default_ca = CA_default
+</div><p><img src="./../images/ASO/1-ASO.png" alt="image"></p>
+<p><img src="./../images/ASO/2-ASO.png" alt="image"></p>
+<p><font color="#FFFF00"><strong>Paso 2</strong></font> Instalación dependencias</p>
+<p>Para instalar las dependencias utilizaremos el comando <code>apt build-dep</code></p>
+<div><pre><code>sudo apt build-dep imagination
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 3</strong></font> Compilación del paquete</p>
+<p>Para poder compilar el paquete nos moveremos a la carpeta descomprimida</p>
+<div><pre><code>cd imagination-3.6/
 
-[ CA_default ]
-# Directory and file locations.
-dir = ${DIR_CA}
-certs = ${DIR_CA}certs
-crl_dir = ${DIR_CA}crl
-new_certs_dir = ${DIR_CA}newcerts
-database = ${DIR_CA}index.txt
-serial = ${DIR_CA}serial
-RANDFILE = ${DIR_CA}private/.rand
+./configure
+</code></pre>
+</div><p><img src="./../images/ASO/3-ASO.png" alt="image"></p>
+<p><img src="./../images/ASO/4-ASO.png" alt="image"></p>
+<p>Y despues de esto ejecutaremos el comando <code>make</code></p>
+<div><pre><code>make
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 4</strong></font> Instalación del paquete</p>
+<p>Una vez ya este compilado ejecutaremos:</p>
+<div><pre><code>sudo make install
+</code></pre>
+</div><p>Y con esto ya tendriamos instalado el paquete</p>
+<p><font color="#FFFF00"><strong>Paso 5</strong></font> Desinstalación del paquete</p>
+<p>Para poder desinstalar el paquete debemos ejecutar:</p>
+<div><pre><code>cd imagination-3.6/
 
-# The root key and root certificate.
-private_key = ${DIR_CA}private/private.key
-certificate = ${DIR_CA}certs/cacert.crt
-
-# For certificate revocation lists.
-crlnumber = ${DIR_CA}crlnumber
-crl = ${DIR_CA}crl/ca.crl.pem
-crl_extensions = crl_ext
-default_crl_days = 30
-
-# SHA-1 is deprecated, so use SHA-2 instead.
-default_md = sha256
-
-name_opt = ca_default
-cert_opt = ca_default
-default_days = 375
-preserve = no
-policy = policy_strict
-
-[ policy_strict ]
-# The root CA should only sign intermediate certificates that match.
-# See the POLICY FORMAT section of man ca.
-countryName = match
-stateOrProvinceName = match
-organizationName = match
-organizationalUnitName = optional
-commonName = supplied
-emailAddress = optional
-
-[ policy_loose ]
-# Allow the intermediate CA to sign a more diverse range of certificates.
-# See the POLICY FORMAT section of the ca man page.
-countryName = optional
-stateOrProvinceName = optional
-localityName = optional
-organizationName = optional
-organizationalUnitName = optional
-commonName = supplied
-emailAddress = optional
-
-[ req ]
-# Options for the req tool (man req).
-default_bits = 2048
-distinguished_name = req_distinguished_name
-string_mask = utf8only
-# SHA-1 is deprecated, so use SHA-2 instead.
-default_md = sha256
-# Extension to add when the -x509 option is used.
-x509_extensions = v3_ca
-# Extension for SANs
-req_extensions = v3_req
-
-[ v3_req ]
-# Extensions to add to a certificate request
-# Before invoke openssl use: export SAN=DNS:value1,DNS:value2
-basicConstraints = CA:FALSE
-keyUsage = nonRepudiation, digitalSignature, keyEncipherment
-xxxsubjectAltNamexxx =
-
-[ req_distinguished_name ]
-# See &lt;https://en.wikipedia.org/wiki/Certificate_signing_request&gt;.
-countryName = Country Name (2 letter code)
-stateOrProvinceName = State or Province Name
-localityName = Locality Name
-0.organizationName = Organization Name
-organizationalUnitName = Organizational Unit Name
-commonName = Common Name
-emailAddress = Email Address
-
-# Optionally, specify some defaults.
-countryName_default = $countryName_default
-stateOrProvinceName_default = $stateOrProvinceName_default
-localityName_default = $localityName_default
-0.organizationName_default = $organizationName_default
-organizationalUnitName_default = $organizationalUnitName_default
-emailAddress_default = $emailAddress_default
-
-[ v3_ca ]
-# Extensions for a typical CA (man x509v3_config).
-subjectKeyIdentifier = hash
-authorityKeyIdentifier = keyid:always,issuer
-basicConstraints = critical, CA:true
-keyUsage = critical, digitalSignature, cRLSign, keyCertSign
-
-[ v3_intermediate_ca ]
-# Extensions for a typical intermediate CA (man x509v3_config).
-subjectKeyIdentifier = hash
-authorityKeyIdentifier = keyid:always,issuer
-basicConstraints = critical, CA:true, pathlen:0
-keyUsage = critical, digitalSignature, cRLSign, keyCertSign
-
-[ usr_cert ]
-# Extensions for client certificates (man x509v3_config).
-basicConstraints = CA:FALSE
-nsCertType = client, email
-nsComment = &quot;OpenSSL Generated Client Certificate&quot;
-subjectKeyIdentifier = hash
-authorityKeyIdentifier = keyid,issuer
-keyUsage = critical, nonRepudiation, digitalSignature, keyEncipherment
-extendedKeyUsage = clientAuth, emailProtection
-
-[ server_cert ]
-# Extensions for server certificates (man x509v3_config).
-basicConstraints = CA:FALSE
-nsCertType = server
-nsComment = &quot;OpenSSL Generated Server Certificate&quot;
-subjectKeyIdentifier = hash
-authorityKeyIdentifier = keyid,issuer:always
-keyUsage = critical, digitalSignature, keyEncipherment
-extendedKeyUsage = serverAuth
-
-[ crl_ext ]
-# Extension for CRLs (man x509v3_config).
-authorityKeyIdentifier=keyid:always
-
-[ ocsp ]
-# Extension for OCSP signing certificates (man ocsp).
-basicConstraints = CA:FALSE
-subjectKeyIdentifier = hash
-authorityKeyIdentifier = keyid,issuer
-keyUsage = critical, digitalSignature
-extendedKeyUsage = critical, OCSPSigning
-EOF
+sudo make uninstall
 </code></pre>
-</div><p>Ahora genero la clave privada:</p>
-<div><pre><code>openssl genrsa -aes256 -out private/private.key 4096
-</code></pre>
-</div><p>Cambio los permisos de la clave privada:</p>
-<div><pre><code>chmod 400 private/private.key
-</code></pre>
-</div><p>Edito el fichero openssl.conf con el siguiente comando:</p>
-<div><pre><code>sed -i 's|xxxsubjectAltNamexxx =|subjectAltName = ${ENV::SAN}|g' openssl.conf
-</code></pre>
-</div><p>Y por último creo el certificado autofirmado para la CA ejecutando lo siguiente:</p>
-<div><pre><code>URL=alfonso.iesgn.org
-export SAN=DNS:$URL
-</code></pre>
-</div><hr>
-<div><pre><code>openssl req -config openssl.conf -key private/private.key -new -x509 -days 3650 -sha256 -extensions v3_ca -out certs/cacert.crt
-</code></pre>
-</div><p><img src="./../images/SAD/cripto III/1-1-ssl.png" alt="image"></p>
-<p><font color="#00ff00"><strong>2.</strong></font> <strong>Debe recibir el fichero CSR (Solicitud de Firmar un Certificado) de su compañero, debe firmarlo y enviar el certificado generado a su compañero.</strong></p>
-<p>Alfonso me ha enviado su fichero CSR. Lo coloco en el directorio csr.</p>
-<p><img src="./../images/SAD/cripto III/2-1-ssl.png" alt="image"></p>
-<p>Ahora firmo el certificado:</p>
-<div><pre><code>openssl ca -config openssl.conf -extensions v3_req -days 3650 -notext -md sha256 -in csr/alfonso.csr -out certs/alfonso.crt
-</code></pre>
-</div><p><img src="./../images/SAD/cripto III/2.1-1-ssl.png" alt="image"></p>
-<p>Para permitir a Alfonso utilizar el certificado, debo enviarle los archivos cacert.crt e alfonso.crt.</p>
-<p><font color="#00ff00"><strong>3.</strong></font> <strong>¿Qué otra información debes aportar a tu compañero para que éste configure de forma adecuada su servidor web con el certificado generado?</strong></p>
-<p>Alfonso requerirá el archivo cacert.crt para verificar la firma del certificado que se le ha enviado, ya que de manera predeterminada, su certificado no se encuentra incluido en los navegadores web.</p>
-<p>Después de esto, si se añade el certificado de la autoridad de certificación (CA) al navegador, se podrá acceder al sitio web de Alfonso y comprobar que su certificado es válido.</p>
-<p><img src="./../images/SAD/cripto III/3-1-ssl.png" alt="image"></p>
-<hr>
-<p>Antes de empezar este tema, configuré un servidor web Apache2 en Proxmox con una página de prueba que utiliza el virtualhost olucas.iesgn.org.</p>
-<div><pre><code>sudo apt update
-sudo apt install apache2
-sudo a2dissite 000-default.conf
-sudo nano -cl /etc/apache2/sites-available/olucas.iesgn.org.conf
-</code></pre>
-</div><p>Contenido del fichero olucas.iesgn.org.conf:</p>
-<div><pre><code>&lt;VirtualHost *:80&gt;
-    ServerName olucas.iesgn.org
-    DocumentRoot /var/www/html/olucas.iesgn.org
-
-    ErrorLog ${APACHE_LOG_DIR}/error-olucas.log
-    CustomLog ${APACHE_LOG_DIR}/access-olucas.log combined
-&lt;/VirtualHost&gt;
-</code></pre>
-</div><p>Para la web de prueba, me he descargado una plantilla html y la he colocado en la ruta /var/www/html/olucas.iesgn.org:</p>
-<p>Ahora activo el virtualhost:</p>
-<div><pre><code>sudo a2ensite olucas.iesgn.org.conf
-sudo systemctl reload apache2
-</code></pre>
-</div><p>En mi máquina cliente, agrego la IP de la máquina servidor en el fichero /etc/hosts:</p>
-<div><pre><code>172.22.2.141 olucas.iesgn.org
-</code></pre>
-</div><p>Y compruebo que puedo acceder a la web:</p>
-<p><img src="./../images/SAD/cripto III/0-https.png" alt="image"></p>
-<p><font color="#00ff00"><strong>1.</strong></font> <strong>Crea una clave privada RSA de 4096 bits para identificar el servidor.</strong></p>
-<div><pre><code>sudo openssl genrsa -aes256 -out /etc/ssl/private/olucas-privada.key 4096
-sudo chmod 400 /etc/ssl/private/olucas-privada.key
-</code></pre>
-</div><p><img src="./../images/SAD/cripto III/1-2-https.png" alt="image"></p>
-<p><font color="#00ff00"><strong>2.</strong></font> <strong>Utiliza la clave anterior para generar un CSR, considerando que deseas acceder al servidor con el FQDN (tunombre.iesgn.org).</strong></p>
-<div><pre><code>sudo openssl req -new -sha256 -key /etc/ssl/private/olucas-privada.key -out olucas.csr
-</code></pre>
-</div><p><img src="./../images/SAD/cripto III/2-2-https.png" alt="image"></p>
-<p><font color="#00ff00"><strong>3.</strong></font> <strong>Envía la solicitud de firma a la entidad certificadora (su compañero).</strong></p>
-<p>Le envio el fichero <strong>.csr</strong> a Alfonso</p>
-<p><font color="#00ff00"><strong>4.</strong></font> <strong>Recibe como respuesta un certificado X.509 para el servidor firmado y el certificado de la autoridad certificadora.</strong></p>
-<p>Alfonso me ha enviado los ficheros olucas.crt y cacert.crt, esto son mi certificado firmado por su CA y el certificado autofirmado de su CA</p>
-<p><img src="./../images/SAD/cripto III/4-2-https.png" alt="image"></p>
-<p><font color="#00ff00"><strong>5.</strong></font> <strong>Configura tu servidor web con https en el puerto 443, haciendo que las peticiones http se redireccionen a https (forzar https).</strong></p>
-<p>El primer paso es crear el VirtualHost para el puerto 443:</p>
-<div><pre><code>sudo nano -cl /etc/apache2/sites-available/ssl-olucas.iesgn.org.conf
-</code></pre>
-</div><p>Contenido del fichero ssl-olucas.iesgn.org.conf:</p>
-<div><pre><code>&lt;IfModule mod_ssl.c&gt;
-    &lt;VirtualHost *:443&gt;
-        ServerName olucas.iesgn.org
-        DocumentRoot /var/www/html/olucas.iesgn.org
-
-        ErrorLog ${APACHE_LOG_DIR}/error-ssl-olucas.log
-        CustomLog ${APACHE_LOG_DIR}/access-ssl-olucas.log combined
-
-        SSLEngine on
-        SSLCertificateFile /etc/ssl/certs/olucas.crt
-        SSLCertificateKeyFile /etc/ssl/private/privada-olucas.key
-        SSLCACertificateFile /etc/ssl/certs/cacert.crt
-
-        &lt;Directory /var/www/html/olucas.iesgn.org&gt;
-            Options Indexes FollowSymLinks
-            AllowOverride None
-            Require all granted
-        &lt;/Directory&gt;
-    &lt;/VirtualHost&gt;
-&lt;/IfModule&gt;
-</code></pre>
-</div><p>Ahora coloco los archivos olucas.crt y cacert.crt en los directorios correspondientes. El fichero olucas-
-privada.key ya estaba en su sitio.</p>
-<div><pre><code>sudo mv olucas.crt /etc/ssl/certs/
-sudo mv cacert.crt /etc/ssl/certs/
-sudo chown root:root /etc/ssl/certs/olucas.crt
-sudo chown root:root /etc/ssl/certs/cacert.crt
-sudo chmod 644 /etc/ssl/certs/olucas.crt
-sudo chmod 644 /etc/ssl/certs/cacert.crt
-</code></pre>
-</div><p>Ahora activo el módulo &quot;ssl&quot; de Apache, el VirtualHost nuevo y reinicio el servicio:</p>
-<div><pre><code>sudo a2enmod ssl
-sudo a2ensite ssl-olucas.iesgn.org.conf
-sudo systemctl reload apache2
-</code></pre>
-</div><p>Durante el proceso, debemos de introducir la contraseña de la clave RSA.</p>
-<p>Ahora para habilitar una redirección automática hacia https, modificaremos el fichero
-olucas.iesgn.org.conf. Y añadiremos la línea correspondiente para la redirección y el fichero quedaria asi:</p>
-<div><pre><code>&lt;VirtualHost *:80&gt;
-    ServerName olucas.iesgn.org
-    DocumentRoot /var/www/html/olucas.iesgn.org
-
-    ErrorLog ${APACHE_LOG_DIR}/error-olucas.log
-    CustomLog ${APACHE_LOG_DIR}/access-olucas.log combined
-
-    redirect 301 / https://olucas.iesgn.org/
-&lt;/VirtualHost&gt;
-</code></pre>
-</div><p>Y volvemos a reiniciar apache</p>
-<div><pre><code>sudo systemcl restart apache2
-</code></pre>
-</div><p><font color="#00ff00"><strong>6.</strong></font> <strong>Instala ahora un servidor nginx, y realiza la misma configuración que anteriormente para que se sirva la página con HTTPS.</strong></p>
-<p>Antes que nada, vamos a deshabilitar apache para que no entre en conflicto con el nginx.</p>
-<div><pre><code>sudo systemctl disable --now apache2
-</code></pre>
-</div><p>Despues instalamos nginx:</p>
-<div><pre><code>sudo apt install nginx
-</code></pre>
-</div><p>A continuación creamos el virtualhost para la página web.</p>
-<div><pre><code>sudo nano /etc/nginx/sites-available/olucas.iesgn.org.conf
-</code></pre>
-</div><p>Y el fichero quedaria asi:</p>
-<div><pre><code>server {
-        listen 80;
-        listen [::]:80;
-        server_name olucas.iesgn.org;
-        return 301 https://$server_name$request_uri;
-}
-
-server {
-        listen 443 ssl http2;
-        listen [::]:443 ssl http2;
-        server_name olucas.iesgn.org;
-        ssl_certificate /etc/ssl/certs/olucas.iesgn.crt;
-        ssl_certificate_key /etc/ssl/private/privada-olucas.key;
-        ssl_trusted_certificate /etc/ssl/certs/cacert.crt;
-        root /var/www/html/olucas.iesgn.org;
-        index index.html;
-        location / {
-                try_files $uri $uri/ =404;
-        }
-}
-</code></pre>
-</div><p>Guardamos el fichero y habilitamos el virtualhost. Para ello creamos un enlace simbólico
-en /etc/nginx/sites-enabled.</p>
-<div><pre><code>ln -s /etc/nginx/sites-available/olucas.iesgn.org.conf /etc/nginx/sites-enabled/
-</code></pre>
-</div><p>Reiniciamos nginx:</p>
-<div><pre><code>sudo systemctl restart nginx
-</code></pre>
-</div><p>Al reiniciar nginx a diferencia de apache, nos reporta un fallo, ya que no puede cargar la frase de paso.</p>
-<p>Para solucionarlo, podemos agregar la línea en el virtualhost:</p>
-<div><pre><code>ssl_password_file /etc/keys/global.pass;
-</code></pre>
-</div><p>Y volvemos a reiniciar nginx:</p>
-<div><pre><code>sudo systemctl restart nginx
-</code></pre>
-</div><p>Y ya nos deberia dejar acceder a nuestra pagina y podriamos acceder con https</p>
+</div><p>Y con esto ya estaría desinstalado</p>
 ]]></content>
     <author>
       <name>Óscar Lucas</name>
     </author>
+    <category term="practicas" scheme=""/>
     <contributor>
       <name>Óscar Lucas</name>
     </contributor>
@@ -1575,60 +1630,6 @@ en /etc/nginx/sites-enabled.</p>
 <p><strong>Delta</strong>
 <img src="./../images/ASO/10-logs.png" alt="image"></p>
 <p>Se puede observar que los logs estan llegando correctamente a Alfa por lo que el sistema de recoleccion de logs esta funcionando perfectamente.</p>
-]]></content>
-    <author>
-      <name>Óscar Lucas</name>
-    </author>
-    <category term="practicas" scheme=""/>
-    <contributor>
-      <name>Óscar Lucas</name>
-    </contributor>
-    <published>2023-01-19T12:13:11.000Z</published>
-    <rights>Copyright by Óscar Lucas</rights>
-  </entry>
-  <entry>
-    <title type="html">Compilación de un programa en C utilizando un Makefile</title>
-    <id>https://github.com/oscarlucas22/practicas/makefile/</id>
-    <link href="https://github.com/oscarlucas22/practicas/makefile/"/>
-    <updated>2023-01-19T12:13:11.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="compilacion-de-un-programa-en-c-utilizando-un-makefile"> Compilación de un programa en C utilizando un Makefile</h1>
-<p>Aqui dejo la url de la web de <a href="https://packages.debian.org/bullseye/imagination" target="_blank" rel="noopener noreferrer">Debian<i>Content not supported</i></a> donde se encuentra la compilación del paquete imagination.</p>
-<p><font color="#FFFF00"><strong>Paso 1</strong></font> Descarga del código fuente</p>
-<p>Primero instalaremos dpkg-dev</p>
-<div><pre><code>sudo apt install dpkg-dev
-</code></pre>
-</div><p>Despues instalaremos imagination con el comando <code>apt source</code></p>
-<div><pre><code>apt source imagination
-</code></pre>
-</div><p><img src="./../images/ASO/1-ASO.png" alt="image"></p>
-<p><img src="./../images/ASO/2-ASO.png" alt="image"></p>
-<p><font color="#FFFF00"><strong>Paso 2</strong></font> Instalación dependencias</p>
-<p>Para instalar las dependencias utilizaremos el comando <code>apt build-dep</code></p>
-<div><pre><code>sudo apt build-dep imagination
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 3</strong></font> Compilación del paquete</p>
-<p>Para poder compilar el paquete nos moveremos a la carpeta descomprimida</p>
-<div><pre><code>cd imagination-3.6/
-
-./configure
-</code></pre>
-</div><p><img src="./../images/ASO/3-ASO.png" alt="image"></p>
-<p><img src="./../images/ASO/4-ASO.png" alt="image"></p>
-<p>Y despues de esto ejecutaremos el comando <code>make</code></p>
-<div><pre><code>make
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 4</strong></font> Instalación del paquete</p>
-<p>Una vez ya este compilado ejecutaremos:</p>
-<div><pre><code>sudo make install
-</code></pre>
-</div><p>Y con esto ya tendriamos instalado el paquete</p>
-<p><font color="#FFFF00"><strong>Paso 5</strong></font> Desinstalación del paquete</p>
-<p>Para poder desinstalar el paquete debemos ejecutar:</p>
-<div><pre><code>cd imagination-3.6/
-
-sudo make uninstall
-</code></pre>
-</div><p>Y con esto ya estaría desinstalado</p>
 ]]></content>
     <author>
       <name>Óscar Lucas</name>
@@ -2394,6 +2395,246 @@ export PATH=$ORACLE_HOME/bin:$PATH
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
+    <title type="html">PostgreSQL en Debian 11 Bullseye</title>
+    <id>https://github.com/oscarlucas22/practicas/postgresql/</id>
+    <link href="https://github.com/oscarlucas22/practicas/postgresql/"/>
+    <updated>2023-01-19T12:13:11.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="postgresql-en-debian-11-bullseye"> PostgreSQL en Debian 11 Bullseye</h1>
+<p><img src="./../images/ABD/postgresql.png" alt="image"></p>
+<h2 id="instalacion-de-postgresql-en-debian-11-bullseye"> Instalación de PostgreSQL en Debian 11 Bullseye</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font> Actualizar el sistema</p>
+<div><pre><code>sudo apt update &amp;&amp; sudo apt upgrade -y
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 2</strong></font> Instalamos postgresql</p>
+<div><pre><code>sudo apt install -y postgresql*
+</code></pre>
+</div><p>Esto tardará un poco</p>
+<p><font color="#800080"><strong>Paso 3</strong></font> Comprobamos el estado del servicio</p>
+<div><pre><code>systemctl status postgresql
+</code></pre>
+</div><p><img src="./../images/ABD/1-postgre.png" alt="image"></p>
+<p>En el caso que no estuviera iniciado lo iniciaremos</p>
+<div><pre><code>systemctl start postgresql
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 4</strong></font> Instalamos el cliente</p>
+<div><pre><code>sudo apt install -y postgresql-client
+</code></pre>
+</div><h3 id="comandos-de-navegacion-y-consulta-de-informacion"> Comandos de navegación y consulta de información</h3>
+<ul>
+<li>
+<p><code>\c</code> Saltar entre bases de datos</p>
+</li>
+<li>
+<p><code>\l</code> Listar base de datos disponibles</p>
+</li>
+<li>
+<p><code>\dt</code> Listar las tablas de la base de datos</p>
+</li>
+<li>
+<p><code>\d &lt;nombre_tabla&gt;</code> Describir una tabla</p>
+</li>
+<li>
+<p><code>\dn</code> Listar los esquemas de la base de datos actual</p>
+</li>
+<li>
+<p><code>\df</code> Listar las funciones disponibles de la base de datos actual</p>
+</li>
+<li>
+<p><code>\dv</code> Listar las vistas de la base de datos actual</p>
+</li>
+<li>
+<p><code>\du</code> Listar los usuarios y sus roles de la base de datos actual</p>
+</li>
+</ul>
+<h3 id="comandos-de-inspeccion-y-ejecucion"> Comandos de inspección y ejecución</h3>
+<ul>
+<li>
+<p><code>\g</code> Volver a ejecutar el comando ejecutando justo antes</p>
+</li>
+<li>
+<p><code>\s</code> Ver el historial de comandos ejecutados</p>
+</li>
+<li>
+<p><code>\s &lt;nombre_archivo&gt;</code> Si se quiere guardar la lista de comandos ejecutados en un archivo de texto plano</p>
+</li>
+<li>
+<p><code>\i &lt;nombre_archivo&gt;</code> Ejecutar los comandos desde un archivo</p>
+</li>
+<li>
+<p><code>\e</code> Permite abrir un editor de texto plano, escribir comandos y ejecutar en lote. \e abre el editor de texto, escribir allí todos los comandos, luego guardar los cambios y cerrar, al cerrar se ejecutarán todos los comandos guardados.</p>
+</li>
+<li>
+<p><code>\ef</code> Equivalente al comando anterior pero permite editar también funciones en PostgreSQL</p>
+</li>
+</ul>
+<h3 id="comandos-para-debug-y-optimizacion"> Comandos para debug y optimización</h3>
+<ul>
+<li><code>\timing</code> Activar <code>/</code> Desactivar el contador de tiempo por consulta</li>
+</ul>
+<h3 id="comandos-para-cerrar-la-consola"> Comandos para cerrar la consola</h3>
+<ul>
+<li><code>\q</code> Cerrar la consola</li>
+</ul>
+<h2 id="creacion-de-usuario"> Creación de usuario</h2>
+<p>Para crear el usuario ingresamos primero a postgres:</p>
+<div><pre><code>sudo -u postgres psql
+</code></pre>
+</div><p><strong>Crearemos el usuario:</strong></p>
+<div><pre><code>CREATE USER lucas PASSWORD 'TU_PASSWORD';
+</code></pre>
+</div><p><strong>Asignar permisos de superusuario a un usuario</strong></p>
+<div><pre><code>ALTER ROLE lucas WITH SUPERUSER;
+</code></pre>
+</div><p><strong>Cambiar la contraseña de un usuario</strong></p>
+<div><pre><code>ALTER ROLE lucas WITH PASSWORD 'NUEVO_PASSWORD';
+</code></pre>
+</div><p><strong>Crear una base de datos con un usuario específico como propietario</strong></p>
+<div><pre><code>CREATE DATABASE lucas_db WITH OWNER lucas;
+</code></pre>
+</div><p><strong>Asignar todos los permisos a un usuario a una base de datos existente</strong></p>
+<div><pre><code>GRANT ALL PRIVILEGES ON DATABASE lucas_db TO lucas;
+</code></pre>
+</div><p>Ejemplo práctico:</p>
+<p><img src="./../images/ABD/23-postgre.png" alt="image"></p>
+<h2 id="borrar-usuario"> Borrar usuario</h2>
+<div><pre><code>su - postgres
+</code></pre>
+</div><p>En el caso que queramos borrar solo el usuario antes debemos revocarle los permisos sobre la base de datos</p>
+<div><pre><code>revoke all on database nombre-db from nombre-user;
+</code></pre>
+</div><hr>
+<div><pre><code>drop user nombre-user;
+</code></pre>
+</div><h2 id="acceso-remoto"> Acceso remoto</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font> Acceso remoto</p>
+<div><pre><code>sudo nano /etc/postgresql/13/main/postgresql.conf
+</code></pre>
+</div><p>Busca la siguiente línea:</p>
+<p><code>#listen_addresses = 'localhost' # what IP address(es) to listen on;</code></p>
+<p>Y sustituye 'localhost' por '*':</p>
+<p><img src="./../images/ABD/2-postgre.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 2</strong></font> Activamos contraseñas de red</p>
+<p>El siguiente paso es configurar el fichero &quot;pg_hba.conf&quot; para permitir el acceso remoto desde cualquier dirección. Para ello ejecuta lo siguiente:</p>
+<div><pre><code>sudo nano /etc/postgresql/13/main/pg_hba.conf
+</code></pre>
+</div><p>Añade al final del fichero las siguientes líneas:</p>
+<div><pre><code>host    all      all              0.0.0.0/0                    md5
+host    all      all              ::/0                         md5
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 3</strong></font> Reiniciamos el servicio</p>
+<div><pre><code>sudo systemctl restart postgresql.service
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 4</strong></font> Añadimos regla de firewall</p>
+<div><pre><code>sudo ufw allow postgresql
+</code></pre>
+</div><hr>
+<p><font color="#800080"><strong>Paso 5</strong></font> Nos conectamos</p>
+<div><pre><code>psql -h ip-server -U nombre-user -p nombre-db
+</code></pre>
+</div><p>Ejemplo:</p>
+<p><img src="./../images/ABD/3-postgre.png" alt="image"></p>
+<h2 id="instalacion-herramienta-de-administracion-web"> Instalación herramienta de administración web</h2>
+<p>En mi caso vamos a instalar la herramienta <code>pgadmin4</code></p>
+<p><font color="#800080"><strong>Paso 1</strong></font> Instala el paquete gnupg2 mediante el comando apt que aparece a continuación</p>
+<div><pre><code>apt install gnupg gnupg2
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 2</strong></font> A continuación, ejecuta el siguiente comando para añadir el repositorio de pgAdmin para el sistema Debian.</p>
+<div><pre><code>echo &quot;deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main&quot;\ | sudo tee /etc/apt/sources.list.d/pgadmin4.list
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 3</strong></font> Añade la clave gpg del repositorio pgAdmin utilizando el siguiente comando</p>
+<div><pre><code>curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 4</strong></font> Refresca y actualiza todos los repositorios utilizando el siguiente comando</p>
+<div><pre><code>sudo apt update
+</code></pre>
+</div><p>Ahora estás listo para instalar pgAdmin en el sistema Debian.</p>
+<h3 id="instalacion-y-configuracion-de-pgadmin4-en-debian-11"> Instalación y configuración de pgAdmin4 en Debian 11</h3>
+<p><font color="#800080"><strong>Paso 1</strong></font> Para instalar pgAdmin en modo servidor, instala el paquete ‘pgadmin4-web’ utilizando el comando apt que aparece a continuación.</p>
+<div><pre><code>apt install pgadmin4-web
+</code></pre>
+</div><p>Escribe <code>y</code> y pulsa <code>Enter</code> para continuar la instalación.</p>
+<p><font color="#800080"><strong>Paso 2</strong></font> Si la instalación se ha completado, ejecuta el siguiente comando para configurar la cuenta de usuario de pgAdmin4 y la configuración del host virtual de apache.</p>
+<div><pre><code>/usr/pgadmin4/bin/setup-web.sh
+</code></pre>
+</div><p>Escribe el correo electrónico y la contraseña del usuario para crear un nuevo usuario pgAdmin, y luego pulsa <code>Enter</code>.</p>
+<p><img src="./../images/ABD/4-postgre.png" alt="image"></p>
+<p>Después, se te pedirá que configures el servidor web Apache, escribe <code>y</code>, y pulsa <code>Enter</code>.</p>
+<p>Ahora la instalación de pgAdmin es accesible en la ruta URL <code>/pgadmin4</code>.</p>
+<p>El script de instalación <code>setup-web.sh</code> creará y activará automáticamente la configuración de apache en el directorio <code>/etc/apache2/conf-enabled</code>. Puedes comprobarlo con el siguiente comando.</p>
+<p>A continuación se muestra la configuración que verás.</p>
+<p><img src="./../images/ABD/5-postgre.png" alt="image"></p>
+<h3 id="verificar-la-instalacion-de-pgadmin"> Verificar la instalación de pgAdmin</h3>
+<p><font color="#800080"><strong>Paso 1</strong></font> Abre tu navegador web y escribe la dirección IP del servidor o el nombre del dominio seguido de la ruta ‘/pgadmin4’ como se indica a continuación.</p>
+<div><pre><code>tu-ip/pgadmin4
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 2</strong></font> Si la instalación se ha realizado correctamente, verás la página de inicio de sesión de pgadmin4 como se indica a continuación.</p>
+<p><img src="./../images/ABD/6-postgre.png" alt="image"></p>
+<p>Escribe tu usuario de acceso y tu correo electrónico, y luego haz clic en el botón <code>Login</code>.</p>
+<p>Ahora verás el panel de control de pgadmin4 como se indica a continuación.</p>
+<p><img src="./../images/ABD/7-postgre.png" alt="image"></p>
+<h3 id="conectar-con-el-servidor-postgresql-con-pgadmin4"> Conectar con el servidor PostgreSQL con pgAdmin4</h3>
+<p>Después de entrar en el tablero de pgAdmin, añadirás una nueva conexión a tu servidor PostgreSQL.</p>
+<p><font color="#800080"><strong>Paso 1</strong></font> En el tablero de pgAdmin, haz clic en el icono <code>Añadir nuevo servidor</code></p>
+<p><font color="#800080"><strong>Paso 2</strong></font> Aparecerá una pequeña ventana emergente.</p>
+<p>En la pestaña <code>General</code>, escribe un nuevo <code>Nombre</code> de tu conexión.</p>
+<p><img src="./../images/ABD/8-postgre.png" alt="image"></p>
+<p>Para esta guía, daremos a la nueva conexión el nombre de <code>local</code>.</p>
+<p><font color="#800080"><strong>Paso 3</strong></font> Pasa a la pestaña <code>Conexión</code> y escribe tus datos de host PostgreSQL, base de datos, usuario y contraseña.</p>
+<p>Para este ejemplo, utilizaremos el servidor PostgreSQL local con el usuario <code>lucas</code> para gestionar una base de datos predeterminada <code>postgres</code>.</p>
+<p><img src="./../images/ABD/9-postgre.png" alt="image"></p>
+<p>Después, haz clic en el botón <code>Guardar</code> para guardar una nueva conexión.</p>
+<p><font color="#800080"><strong>Paso 4</strong></font> Si la conexión se realiza con éxito, verás una página similar a la siguiente. En caso contrario, verás un error</p>
+<p><img src="./../images/ABD/10-postgre.png" alt="image"></p>
+<p>Como puedes ver en la parte inferior de la captura de pantalla, el usuario <code>lucas</code> está conectado a la base de datos <code>postgres</code> con la aplicación <code>pgAdmin4</code>, y el estado de la conexión es <code>activò</code>.</p>
+<h3 id="creacion-de-un-nuevo-usuario-en-pgadmin4"> Creación de un nuevo usuario en pgAdmin4</h3>
+<p>En esta etapa, vas a crear un nuevo usuario de PostgreSQL utilizando la herramienta pgAdmin4.</p>
+<p><font color="#800080"><strong>Paso 1</strong></font> Haz clic con el botón derecho del ratón sobre el nombre de la conexión en el menú <code>local =&gt; Crear =&gt; Rol de inicio de sesión/grupo..</code>.</p>
+<p><img src="./../images/ABD/11-postgre.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 2</strong></font> En la pestaña <code>General</code>, escribe el nuevo usuario que quieres crear. Para este ejemplo, crearás un nuevo usuario <code>prueba</code>.</p>
+<p><img src="./../images/ABD/12-postgre.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 3</strong></font> Pasa a la pestaña <code>Definición</code> y escribe la contraseña de tu usuario.</p>
+<p><img src="./../images/ABD/13-postgre.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 4</strong></font> Ve a la pestaña <strong>«Privilegios»</strong> y activa los privilegios que necesites.</p>
+<p><img src="./../images/ABD/14-postgre.png" alt="image"></p>
+<p>Ahora haz clic en el botón <code>Guardar</code>.</p>
+<p><font color="#800080"><strong>Paso 5</strong></font> Para verificar tu nuevo usuario, haz clic en el menú <code>Roles de inicio de sesión/grupo</code> de la izquierda, y luego haz clic en el <code>prueba</code> que acabas de crear.</p>
+<p><img src="./../images/ABD/15-postgre.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 6</strong></font> Haz clic en la pestaña<code>Propiedades</code> de la página y obtendrás detalles del usuario como en la captura de pantalla superior.</p>
+<h3 id="creacion-de-una-nueva-base-de-datos-en-pgadmin4"> Creación de una nueva base de datos en pgAdmin4</h3>
+<p>En esta etapa, crearás una nueva base de datos desde el panel de control de pgAdmin.</p>
+<p><font color="#800080"><strong>Paso 1</strong></font> Haz clic con el botón derecho del ratón en el menú del nombre de la conexión <code>local =&gt; Crear =&gt; Base de datos..</code>.</p>
+<p><img src="./../images/ABD/16-postgre.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 2</strong></font> En la pestaña <code>General</code>, escribe el nombre de tu nueva base de datos y elige el usuario propietario de la misma. Para este ejemplo, crearás una nueva base de datos <code>pruebadb</code> y harás al usuario <code>prueba</code> como propietario.</p>
+<p><img src="./../images/ABD/17-postgre.png" alt="image"></p>
+<p>Ahora haz clic en el botón <code>Guardar</code>.</p>
+<p><font color="#800080"><strong>Paso 3</strong></font> Para verificar tu nueva base de datos, haz clic en el menú <code>Bases de datos</code> de la izquierda, y luego haz clic en la base de datos <code>pruebadb</code> que acabas de crear.</p>
+<p><img src="./../images/ABD/18-postgre.png" alt="image"></p>
+<p>Haz clic en la pestaña <code>Propiedades</code> de la página y obtendrás los detalles de la base de datos <code>pruebadb</code> como en la captura de pantalla superior.</p>
+<h3 id="verificar-la-conexion-del-usuario"> Verificar la conexión del usuario</h3>
+<p>Después de crear un nuevo usuario y una base de datos utilizando el pgAdmin4, crearás una nueva conexión PostgreSQL en el pgAdmin4 utilizando el usuario <code>prueba</code> y la base de datos <code>pruebadb</code>.</p>
+<p><font color="#800080"><strong>Paso 1</strong></font> Vuelve al panel de control de pgAdmin4 y haz clic en el icono <code>Añadir nuevo servidor</code>.</p>
+<p><img src="./../images/ABD/19-postgre.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 2</strong></font> En la pestaña <code>General</code>, escribe el nombre de la nueva conexión como <code>prueba-connection</code>, como se indica a continuación.</p>
+<p><img src="./../images/ABD/20-postgre.png" alt="image"></p>
+<p><font color="#800080"><strong>Paso 3</strong></font> Pasa a la pestaña <code>Conexión</code> y escribe los detalles de la nueva conexión. El host es <code>127.0.0.1</code> con el usuario <code>prueba</code>, y gestionará la base de datos <code>pruebadb</code>, y no olvides escribir la contraseña del usuario <code>prueba</code>.</p>
+<p><img src="./../images/ABD/21-postgre.png" alt="image"></p>
+<p>Ahora haz clic en el botón <code>Guardar</code>.</p>
+<p><font color="#800080"><strong>Paso 4</strong></font> Si tus credenciales de la base de datos son correctas, verás una página similar a la siguiente.</p>
+<p><img src="./../images/ABD/22-postgre.png" alt="image"></p>
+<p>Como puedes ver en la parte inferior de la captura de pantalla, el usuario <code>prueba</code> está conectado a la base de datos <code>pruebadb</code> con la aplicación <code>pgAdmin4</code>, y el estado de la conexión es <code>activo</code>.</p>
+<p>¡Gracias!</p>
+]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
+    <category term="practicas" scheme=""/>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <published>2023-01-19T12:13:11.000Z</published>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
     <title type="html">Interconexión Servidores</title>
     <id>https://github.com/oscarlucas22/practicas/orcl-psql/</id>
     <link href="https://github.com/oscarlucas22/practicas/orcl-psql/"/>
@@ -2812,246 +3053,6 @@ set ODBCINI=/etc/odbc.ini
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
-    <title type="html">PostgreSQL en Debian 11 Bullseye</title>
-    <id>https://github.com/oscarlucas22/practicas/postgresql/</id>
-    <link href="https://github.com/oscarlucas22/practicas/postgresql/"/>
-    <updated>2023-01-19T12:13:11.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="postgresql-en-debian-11-bullseye"> PostgreSQL en Debian 11 Bullseye</h1>
-<p><img src="./../images/ABD/postgresql.png" alt="image"></p>
-<h2 id="instalacion-de-postgresql-en-debian-11-bullseye"> Instalación de PostgreSQL en Debian 11 Bullseye</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font> Actualizar el sistema</p>
-<div><pre><code>sudo apt update &amp;&amp; sudo apt upgrade -y
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 2</strong></font> Instalamos postgresql</p>
-<div><pre><code>sudo apt install -y postgresql*
-</code></pre>
-</div><p>Esto tardará un poco</p>
-<p><font color="#800080"><strong>Paso 3</strong></font> Comprobamos el estado del servicio</p>
-<div><pre><code>systemctl status postgresql
-</code></pre>
-</div><p><img src="./../images/ABD/1-postgre.png" alt="image"></p>
-<p>En el caso que no estuviera iniciado lo iniciaremos</p>
-<div><pre><code>systemctl start postgresql
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 4</strong></font> Instalamos el cliente</p>
-<div><pre><code>sudo apt install -y postgresql-client
-</code></pre>
-</div><h3 id="comandos-de-navegacion-y-consulta-de-informacion"> Comandos de navegación y consulta de información</h3>
-<ul>
-<li>
-<p><code>\c</code> Saltar entre bases de datos</p>
-</li>
-<li>
-<p><code>\l</code> Listar base de datos disponibles</p>
-</li>
-<li>
-<p><code>\dt</code> Listar las tablas de la base de datos</p>
-</li>
-<li>
-<p><code>\d &lt;nombre_tabla&gt;</code> Describir una tabla</p>
-</li>
-<li>
-<p><code>\dn</code> Listar los esquemas de la base de datos actual</p>
-</li>
-<li>
-<p><code>\df</code> Listar las funciones disponibles de la base de datos actual</p>
-</li>
-<li>
-<p><code>\dv</code> Listar las vistas de la base de datos actual</p>
-</li>
-<li>
-<p><code>\du</code> Listar los usuarios y sus roles de la base de datos actual</p>
-</li>
-</ul>
-<h3 id="comandos-de-inspeccion-y-ejecucion"> Comandos de inspección y ejecución</h3>
-<ul>
-<li>
-<p><code>\g</code> Volver a ejecutar el comando ejecutando justo antes</p>
-</li>
-<li>
-<p><code>\s</code> Ver el historial de comandos ejecutados</p>
-</li>
-<li>
-<p><code>\s &lt;nombre_archivo&gt;</code> Si se quiere guardar la lista de comandos ejecutados en un archivo de texto plano</p>
-</li>
-<li>
-<p><code>\i &lt;nombre_archivo&gt;</code> Ejecutar los comandos desde un archivo</p>
-</li>
-<li>
-<p><code>\e</code> Permite abrir un editor de texto plano, escribir comandos y ejecutar en lote. \e abre el editor de texto, escribir allí todos los comandos, luego guardar los cambios y cerrar, al cerrar se ejecutarán todos los comandos guardados.</p>
-</li>
-<li>
-<p><code>\ef</code> Equivalente al comando anterior pero permite editar también funciones en PostgreSQL</p>
-</li>
-</ul>
-<h3 id="comandos-para-debug-y-optimizacion"> Comandos para debug y optimización</h3>
-<ul>
-<li><code>\timing</code> Activar <code>/</code> Desactivar el contador de tiempo por consulta</li>
-</ul>
-<h3 id="comandos-para-cerrar-la-consola"> Comandos para cerrar la consola</h3>
-<ul>
-<li><code>\q</code> Cerrar la consola</li>
-</ul>
-<h2 id="creacion-de-usuario"> Creación de usuario</h2>
-<p>Para crear el usuario ingresamos primero a postgres:</p>
-<div><pre><code>sudo -u postgres psql
-</code></pre>
-</div><p><strong>Crearemos el usuario:</strong></p>
-<div><pre><code>CREATE USER lucas PASSWORD 'TU_PASSWORD';
-</code></pre>
-</div><p><strong>Asignar permisos de superusuario a un usuario</strong></p>
-<div><pre><code>ALTER ROLE lucas WITH SUPERUSER;
-</code></pre>
-</div><p><strong>Cambiar la contraseña de un usuario</strong></p>
-<div><pre><code>ALTER ROLE lucas WITH PASSWORD 'NUEVO_PASSWORD';
-</code></pre>
-</div><p><strong>Crear una base de datos con un usuario específico como propietario</strong></p>
-<div><pre><code>CREATE DATABASE lucas_db WITH OWNER lucas;
-</code></pre>
-</div><p><strong>Asignar todos los permisos a un usuario a una base de datos existente</strong></p>
-<div><pre><code>GRANT ALL PRIVILEGES ON DATABASE lucas_db TO lucas;
-</code></pre>
-</div><p>Ejemplo práctico:</p>
-<p><img src="./../images/ABD/23-postgre.png" alt="image"></p>
-<h2 id="borrar-usuario"> Borrar usuario</h2>
-<div><pre><code>su - postgres
-</code></pre>
-</div><p>En el caso que queramos borrar solo el usuario antes debemos revocarle los permisos sobre la base de datos</p>
-<div><pre><code>revoke all on database nombre-db from nombre-user;
-</code></pre>
-</div><hr>
-<div><pre><code>drop user nombre-user;
-</code></pre>
-</div><h2 id="acceso-remoto"> Acceso remoto</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font> Acceso remoto</p>
-<div><pre><code>sudo nano /etc/postgresql/13/main/postgresql.conf
-</code></pre>
-</div><p>Busca la siguiente línea:</p>
-<p><code>#listen_addresses = 'localhost' # what IP address(es) to listen on;</code></p>
-<p>Y sustituye 'localhost' por '*':</p>
-<p><img src="./../images/ABD/2-postgre.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 2</strong></font> Activamos contraseñas de red</p>
-<p>El siguiente paso es configurar el fichero &quot;pg_hba.conf&quot; para permitir el acceso remoto desde cualquier dirección. Para ello ejecuta lo siguiente:</p>
-<div><pre><code>sudo nano /etc/postgresql/13/main/pg_hba.conf
-</code></pre>
-</div><p>Añade al final del fichero las siguientes líneas:</p>
-<div><pre><code>host    all      all              0.0.0.0/0                    md5
-host    all      all              ::/0                         md5
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font> Reiniciamos el servicio</p>
-<div><pre><code>sudo systemctl restart postgresql.service
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 4</strong></font> Añadimos regla de firewall</p>
-<div><pre><code>sudo ufw allow postgresql
-</code></pre>
-</div><hr>
-<p><font color="#800080"><strong>Paso 5</strong></font> Nos conectamos</p>
-<div><pre><code>psql -h ip-server -U nombre-user -p nombre-db
-</code></pre>
-</div><p>Ejemplo:</p>
-<p><img src="./../images/ABD/3-postgre.png" alt="image"></p>
-<h2 id="instalacion-herramienta-de-administracion-web"> Instalación herramienta de administración web</h2>
-<p>En mi caso vamos a instalar la herramienta <code>pgadmin4</code></p>
-<p><font color="#800080"><strong>Paso 1</strong></font> Instala el paquete gnupg2 mediante el comando apt que aparece a continuación</p>
-<div><pre><code>apt install gnupg gnupg2
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 2</strong></font> A continuación, ejecuta el siguiente comando para añadir el repositorio de pgAdmin para el sistema Debian.</p>
-<div><pre><code>echo &quot;deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main&quot;\ | sudo tee /etc/apt/sources.list.d/pgadmin4.list
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font> Añade la clave gpg del repositorio pgAdmin utilizando el siguiente comando</p>
-<div><pre><code>curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 4</strong></font> Refresca y actualiza todos los repositorios utilizando el siguiente comando</p>
-<div><pre><code>sudo apt update
-</code></pre>
-</div><p>Ahora estás listo para instalar pgAdmin en el sistema Debian.</p>
-<h3 id="instalacion-y-configuracion-de-pgadmin4-en-debian-11"> Instalación y configuración de pgAdmin4 en Debian 11</h3>
-<p><font color="#800080"><strong>Paso 1</strong></font> Para instalar pgAdmin en modo servidor, instala el paquete ‘pgadmin4-web’ utilizando el comando apt que aparece a continuación.</p>
-<div><pre><code>apt install pgadmin4-web
-</code></pre>
-</div><p>Escribe <code>y</code> y pulsa <code>Enter</code> para continuar la instalación.</p>
-<p><font color="#800080"><strong>Paso 2</strong></font> Si la instalación se ha completado, ejecuta el siguiente comando para configurar la cuenta de usuario de pgAdmin4 y la configuración del host virtual de apache.</p>
-<div><pre><code>/usr/pgadmin4/bin/setup-web.sh
-</code></pre>
-</div><p>Escribe el correo electrónico y la contraseña del usuario para crear un nuevo usuario pgAdmin, y luego pulsa <code>Enter</code>.</p>
-<p><img src="./../images/ABD/4-postgre.png" alt="image"></p>
-<p>Después, se te pedirá que configures el servidor web Apache, escribe <code>y</code>, y pulsa <code>Enter</code>.</p>
-<p>Ahora la instalación de pgAdmin es accesible en la ruta URL <code>/pgadmin4</code>.</p>
-<p>El script de instalación <code>setup-web.sh</code> creará y activará automáticamente la configuración de apache en el directorio <code>/etc/apache2/conf-enabled</code>. Puedes comprobarlo con el siguiente comando.</p>
-<p>A continuación se muestra la configuración que verás.</p>
-<p><img src="./../images/ABD/5-postgre.png" alt="image"></p>
-<h3 id="verificar-la-instalacion-de-pgadmin"> Verificar la instalación de pgAdmin</h3>
-<p><font color="#800080"><strong>Paso 1</strong></font> Abre tu navegador web y escribe la dirección IP del servidor o el nombre del dominio seguido de la ruta ‘/pgadmin4’ como se indica a continuación.</p>
-<div><pre><code>tu-ip/pgadmin4
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 2</strong></font> Si la instalación se ha realizado correctamente, verás la página de inicio de sesión de pgadmin4 como se indica a continuación.</p>
-<p><img src="./../images/ABD/6-postgre.png" alt="image"></p>
-<p>Escribe tu usuario de acceso y tu correo electrónico, y luego haz clic en el botón <code>Login</code>.</p>
-<p>Ahora verás el panel de control de pgadmin4 como se indica a continuación.</p>
-<p><img src="./../images/ABD/7-postgre.png" alt="image"></p>
-<h3 id="conectar-con-el-servidor-postgresql-con-pgadmin4"> Conectar con el servidor PostgreSQL con pgAdmin4</h3>
-<p>Después de entrar en el tablero de pgAdmin, añadirás una nueva conexión a tu servidor PostgreSQL.</p>
-<p><font color="#800080"><strong>Paso 1</strong></font> En el tablero de pgAdmin, haz clic en el icono <code>Añadir nuevo servidor</code></p>
-<p><font color="#800080"><strong>Paso 2</strong></font> Aparecerá una pequeña ventana emergente.</p>
-<p>En la pestaña <code>General</code>, escribe un nuevo <code>Nombre</code> de tu conexión.</p>
-<p><img src="./../images/ABD/8-postgre.png" alt="image"></p>
-<p>Para esta guía, daremos a la nueva conexión el nombre de <code>local</code>.</p>
-<p><font color="#800080"><strong>Paso 3</strong></font> Pasa a la pestaña <code>Conexión</code> y escribe tus datos de host PostgreSQL, base de datos, usuario y contraseña.</p>
-<p>Para este ejemplo, utilizaremos el servidor PostgreSQL local con el usuario <code>lucas</code> para gestionar una base de datos predeterminada <code>postgres</code>.</p>
-<p><img src="./../images/ABD/9-postgre.png" alt="image"></p>
-<p>Después, haz clic en el botón <code>Guardar</code> para guardar una nueva conexión.</p>
-<p><font color="#800080"><strong>Paso 4</strong></font> Si la conexión se realiza con éxito, verás una página similar a la siguiente. En caso contrario, verás un error</p>
-<p><img src="./../images/ABD/10-postgre.png" alt="image"></p>
-<p>Como puedes ver en la parte inferior de la captura de pantalla, el usuario <code>lucas</code> está conectado a la base de datos <code>postgres</code> con la aplicación <code>pgAdmin4</code>, y el estado de la conexión es <code>activò</code>.</p>
-<h3 id="creacion-de-un-nuevo-usuario-en-pgadmin4"> Creación de un nuevo usuario en pgAdmin4</h3>
-<p>En esta etapa, vas a crear un nuevo usuario de PostgreSQL utilizando la herramienta pgAdmin4.</p>
-<p><font color="#800080"><strong>Paso 1</strong></font> Haz clic con el botón derecho del ratón sobre el nombre de la conexión en el menú <code>local =&gt; Crear =&gt; Rol de inicio de sesión/grupo..</code>.</p>
-<p><img src="./../images/ABD/11-postgre.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 2</strong></font> En la pestaña <code>General</code>, escribe el nuevo usuario que quieres crear. Para este ejemplo, crearás un nuevo usuario <code>prueba</code>.</p>
-<p><img src="./../images/ABD/12-postgre.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 3</strong></font> Pasa a la pestaña <code>Definición</code> y escribe la contraseña de tu usuario.</p>
-<p><img src="./../images/ABD/13-postgre.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 4</strong></font> Ve a la pestaña <strong>«Privilegios»</strong> y activa los privilegios que necesites.</p>
-<p><img src="./../images/ABD/14-postgre.png" alt="image"></p>
-<p>Ahora haz clic en el botón <code>Guardar</code>.</p>
-<p><font color="#800080"><strong>Paso 5</strong></font> Para verificar tu nuevo usuario, haz clic en el menú <code>Roles de inicio de sesión/grupo</code> de la izquierda, y luego haz clic en el <code>prueba</code> que acabas de crear.</p>
-<p><img src="./../images/ABD/15-postgre.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 6</strong></font> Haz clic en la pestaña<code>Propiedades</code> de la página y obtendrás detalles del usuario como en la captura de pantalla superior.</p>
-<h3 id="creacion-de-una-nueva-base-de-datos-en-pgadmin4"> Creación de una nueva base de datos en pgAdmin4</h3>
-<p>En esta etapa, crearás una nueva base de datos desde el panel de control de pgAdmin.</p>
-<p><font color="#800080"><strong>Paso 1</strong></font> Haz clic con el botón derecho del ratón en el menú del nombre de la conexión <code>local =&gt; Crear =&gt; Base de datos..</code>.</p>
-<p><img src="./../images/ABD/16-postgre.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 2</strong></font> En la pestaña <code>General</code>, escribe el nombre de tu nueva base de datos y elige el usuario propietario de la misma. Para este ejemplo, crearás una nueva base de datos <code>pruebadb</code> y harás al usuario <code>prueba</code> como propietario.</p>
-<p><img src="./../images/ABD/17-postgre.png" alt="image"></p>
-<p>Ahora haz clic en el botón <code>Guardar</code>.</p>
-<p><font color="#800080"><strong>Paso 3</strong></font> Para verificar tu nueva base de datos, haz clic en el menú <code>Bases de datos</code> de la izquierda, y luego haz clic en la base de datos <code>pruebadb</code> que acabas de crear.</p>
-<p><img src="./../images/ABD/18-postgre.png" alt="image"></p>
-<p>Haz clic en la pestaña <code>Propiedades</code> de la página y obtendrás los detalles de la base de datos <code>pruebadb</code> como en la captura de pantalla superior.</p>
-<h3 id="verificar-la-conexion-del-usuario"> Verificar la conexión del usuario</h3>
-<p>Después de crear un nuevo usuario y una base de datos utilizando el pgAdmin4, crearás una nueva conexión PostgreSQL en el pgAdmin4 utilizando el usuario <code>prueba</code> y la base de datos <code>pruebadb</code>.</p>
-<p><font color="#800080"><strong>Paso 1</strong></font> Vuelve al panel de control de pgAdmin4 y haz clic en el icono <code>Añadir nuevo servidor</code>.</p>
-<p><img src="./../images/ABD/19-postgre.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 2</strong></font> En la pestaña <code>General</code>, escribe el nombre de la nueva conexión como <code>prueba-connection</code>, como se indica a continuación.</p>
-<p><img src="./../images/ABD/20-postgre.png" alt="image"></p>
-<p><font color="#800080"><strong>Paso 3</strong></font> Pasa a la pestaña <code>Conexión</code> y escribe los detalles de la nueva conexión. El host es <code>127.0.0.1</code> con el usuario <code>prueba</code>, y gestionará la base de datos <code>pruebadb</code>, y no olvides escribir la contraseña del usuario <code>prueba</code>.</p>
-<p><img src="./../images/ABD/21-postgre.png" alt="image"></p>
-<p>Ahora haz clic en el botón <code>Guardar</code>.</p>
-<p><font color="#800080"><strong>Paso 4</strong></font> Si tus credenciales de la base de datos son correctas, verás una página similar a la siguiente.</p>
-<p><img src="./../images/ABD/22-postgre.png" alt="image"></p>
-<p>Como puedes ver en la parte inferior de la captura de pantalla, el usuario <code>prueba</code> está conectado a la base de datos <code>pruebadb</code> con la aplicación <code>pgAdmin4</code>, y el estado de la conexión es <code>activo</code>.</p>
-<p>¡Gracias!</p>
-]]></content>
-    <author>
-      <name>Óscar Lucas</name>
-    </author>
-    <category term="practicas" scheme=""/>
-    <contributor>
-      <name>Óscar Lucas</name>
-    </contributor>
-    <published>2023-01-19T12:13:11.000Z</published>
-    <rights>Copyright by Óscar Lucas</rights>
-  </entry>
-  <entry>
     <title type="html">USUARIOS</title>
     <id>https://github.com/oscarlucas22/practicas/usuarios/</id>
     <link href="https://github.com/oscarlucas22/practicas/usuarios/"/>
@@ -3381,441 +3382,10 @@ fetch first 1 row only;
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
-    <title type="html">Proyecto Integrado final del curso</title>
-    <id>https://github.com/oscarlucas22/category/PI/</id>
-    <link href="https://github.com/oscarlucas22/category/PI/"/>
-    <updated>2023-11-08T11:14:12.991Z</updated>
-    <content type="html"><![CDATA[<h1 id="proyecto-integrado-final-del-curso"> Proyecto Integrado final del curso</h1>
-<ul>
-<li><a href="/practicas/PI.html">Implementación de un Service Mesh con k8s y Linkerd</a></li>
-</ul>
-]]></content>
-    <author>
-      <name>Óscar Lucas</name>
-    </author>
-    <category term="categorías" scheme=""/>
-    <contributor>
-      <name>Óscar Lucas</name>
-    </contributor>
-    <rights>Copyright by Óscar Lucas</rights>
-  </entry>
-  <entry>
-    <title type="html">Copias de Seguridad y Restauración</title>
-    <id>https://github.com/oscarlucas22/practicas/copias-seg-y-rest/</id>
-    <link href="https://github.com/oscarlucas22/practicas/copias-seg-y-rest/"/>
-    <updated>2023-11-08T11:14:12.993Z</updated>
-    <content type="html"><![CDATA[<h1 id="copias-de-seguridad-y-restauracion"> Copias de Seguridad y Restauración</h1>
-<h3 id="_1-realiza-una-copia-de-seguridad-logica-de-tu-base-de-datos-completa-teniendo-en-cuenta-los-siguientes-requisitos"> 1. Realiza una copia de seguridad lógica de tu base de datos completa, teniendo en cuenta los siguientes requisitos:</h3>
-<ul>
-<li>
-<p><strong>La copia debe estar encriptada y comprimida.</strong></p>
-<ul>
-<li>
-<p><em><strong>COMPRESSION</strong></em> = Sirve para comprimir el fichero de exportación.</p>
-</li>
-<li>
-<p><em><strong>ENCRYPTION_PASSWORD</strong></em> = Sirve para encriptar el fichero, indicandole una contraseña.</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Debe realizarse en un conjunto de ficheros con un tamaño máximo de 60 MB.</strong></p>
-<ul>
-<li><em><strong>FILESIZE</strong></em> = Sirve para indicar un tamaño maximo al fichero.</li>
-</ul>
-</li>
-</ul>
-<p>Utilizaremos la herramienta <code>expdp</code> para hacer una copia de seguridad completa.</p>
-<p>Antes de realizar la exportación, crearemos una carpeta para almacenar los archivos exportados.</p>
-<p>Luego, se debe registrar la ubicación de la carpeta donde se guardarán los archivos de exportación completos:</p>
-<div><pre><code>create directory copiadb as '/home/oracle/copiadb';
-</code></pre>
-</div><p>Voy a crear un usuario con permisos de administrador.</p>
-<div><pre><code>create user admin identified by &quot;root&quot;;
-grant dba to admin;
-</code></pre>
-</div><p>Para iniciar la exportación, se debe ejecutar el siguiente comando:</p>
-<div><pre><code>expdp admin/root DIRECTORY=copiadb DUMPFILE=copiadb.dmp FULL=YES LOGFILE=copiadb.log COMPRESSION=ALL DUMPFILE=compress.dmp ENCRYPTION_PASSWORD=passwd FILESIZE=60M
-</code></pre>
-</div><p><img src="./../images/ABD/copias/1-1.png" alt="image"></p>
-<p>Aquí se pueden ver los archivos que han sido creados.</p>
-<p><img src="./../images/ABD/copias/2-1.png" alt="image"></p>
-<ul>
-<li><strong>Programa la operación para que se repita cada día a una hora determinada.</strong></li>
-</ul>
-<p>Para programar la exportación, crearemos un script con el siguiente contenido:</p>
-<div><pre><code>nano copiadb.sh
-</code></pre>
-</div><hr>
-<div><pre><code>#!/bin/bash
-
-expdp admin/root DIRECTORY=copiadb DUMPFILE=copiadb.dmp FULL=YES LOGFILE=copiadb.log COMPRESSION=ALL DUMPFILE=compress.dmp ENCRYPTION_PASSWORD=passwd FILESIZE=60M
-</code></pre>
-</div><p>Es necesario otorgar permisos de ejecución al script.</p>
-<div><pre><code>chmod +x copiadb.sh
-</code></pre>
-</div><p>Para ejecutar manualmente el script, se debe ejecutar lo siguiente:</p>
-<div><pre><code>./copiadb.sh
-</code></pre>
-</div><p>Programaremos la ejecución del script de copia de seguridad para que se ejecute todos los días a las 00:00 horas utilizando la herramienta <code>crontab</code>.</p>
-<div><pre><code>crontab -e
-</code></pre>
-</div><hr>
-<div><pre><code>0 0 * * * sleep 180; /home/oracle/copiadb.sh
-</code></pre>
-</div><h3 id="_2-restaura-la-copia-de-seguridad-logica-creada-en-el-punto-anterior"> 2. Restaura la copia de seguridad lógica creada en el punto anterior.</h3>
-<p>Eliminaremos tablas de las bases de datos &quot;scott&quot; y &quot;prueba&quot; y posteriormente las restauraremos.</p>
-<p><img src="./../images/ABD/copias/3-1.png" alt="image"></p>
-<p>Una vez completada la eliminación de las tablas, procederemos a realizar la importación mediante el comando <code>impdp</code>.</p>
-<div><pre><code>impdp admin/root DIRECTORY=copiadb DUMPFILE=copiadb.dmp FULL=YES ENCRYPTION_PASSWORD=passwd
-</code></pre>
-</div><p><img src="./../images/ABD/copias/4-1.png" alt="image"></p>
-<p><img src="./../images/ABD/copias/5-1.png" alt="image"></p>
-<p><img src="./../images/ABD/copias/6-1.png" alt="image"></p>
-<h3 id="_3-pon-tu-base-de-datos-en-modo-archivelog-y-realiza-con-rman-una-copia-de-seguridad-fisica-en-caliente"> 3. Pon tu base de datos en modo ArchiveLog y realiza con RMAN una copia de seguridad física en caliente.</h3>
-<ol>
-<li>Para verificar si la base de datos se encuentra en modo ArchiveLog, se debe ejecutar la siguiente consulta:</li>
-</ol>
-<hr>
-<div><pre><code>select log_mode from v$database;
-</code></pre>
-</div><ol start="2">
-<li>Si, al ejecutar la consulta, se muestra que el valor de <code>log_mode</code> es <code>ARCHIVELOG</code>, significa que la base de datos ya está en modo ArchiveLog.</li>
-</ol>
-<p>En caso de que la base de datos no se encuentre en modo ArchiveLog, se debe cambiar el modo de registro mediante la siguiente consulta:</p>
-<div><pre><code>shutdown immediate;
-startup mount;
-alter database archivelog;
-alter database open;
-</code></pre>
-</div><p><img src="./../images/ABD/copias/1-3.png" alt="image"></p>
-<ol start="3">
-<li>Ahora crearemos un tablespace donde se almacenarán todos los archivos necesarios para la gestión de la restauración con RMAN.</li>
-</ol>
-<hr>
-<div><pre><code>create tablespace TS_RMAN datafile '/opt/oracle/oradata/ORCLCDB/TS_RAMN.dbf' size 300M;
-create user user_rman identified by root default tablespace TS_RMAN quota unlimited on TS_RMAN;
-</code></pre>
-</div><ol start="4">
-<li>Asignaremos los permisos necesarios al usuario recién creado.</li>
-</ol>
-<hr>
-<div><pre><code>grant recovery_catalog_owner to user_rman;
-grant connect, resource to user_rman;
-</code></pre>
-</div><ol start="5">
-<li>Es momento de ejecutar RMAN.</li>
-</ol>
-<hr>
-<div><pre><code>rman
-connect catalog user_rman
-</code></pre>
-</div><p><img src="./../images/ABD/copias/2-3.png" alt="image"></p>
-<ol start="6">
-<li>Vamos a crear el catálogo que hemos registrado previamente en el tablespace TS_RMAN.</li>
-</ol>
-<hr>
-<div><pre><code>create catalog tablespace TS_RMAN;
-</code></pre>
-</div><ol start="7">
-<li>A continuación, nos conectaremos al catálogo que acabamos de crear.</li>
-</ol>
-<hr>
-<div><pre><code>rman target=/ catalog user_rman
-</code></pre>
-</div><p><img src="./../images/ABD/copias/3-3.png" alt="image"></p>
-<ol start="8">
-<li>Vamos a registrar nuestra base de datos.</li>
-</ol>
-<hr>
-<div><pre><code>register database;
-</code></pre>
-</div><p><img src="./../images/ABD/copias/4-3.png" alt="image"></p>
-<ol start="9">
-<li>Iniciaremos el proceso de backup en caliente.</li>
-</ol>
-<hr>
-<div><pre><code>backup database;
-</code></pre>
-</div><p><img src="./../images/ABD/copias/5-3.png" alt="image"></p>
-<h3 id="_4-borra-un-fichero-de-datos-de-un-tablespace-e-intenta-recuperar-la-instancia-de-la-base-de-datos-a-partir-de-la-copia-de-seguridad-creada-en-el-punto-anterior"> 4. Borra un fichero de datos de un tablespace e intenta recuperar la instancia de la base de datos a partir de la copia de seguridad creada en el punto anterior.</h3>
-<p>Eliminaré un archivo de un tablespace. Entre los tablespaces más comunes se encuentran:</p>
-<ol>
-<li>
-<p><em><strong>SYSTEM</strong></em> tablespace: este es el tablespace predeterminado y contiene objetos del sistema y metadata importantes para el funcionamiento de la base de datos. No se recomienda almacenar objetos de usuario en este tablespace.</p>
-</li>
-<li>
-<p><em><strong>SYSAUX</strong></em> tablespace: este tablespace se utiliza para almacenar datos y metadata de componentes de la base de datos opcionales, como Oracle Text y Oracle Spatial.</p>
-</li>
-<li>
-<p><em><strong>USERS</strong></em> tablespace: este tablespace se utiliza para almacenar objetos de usuario, como tablas, índices y vistas.</p>
-</li>
-<li>
-<p><em><strong>TEMP</strong></em> tablespace: este tablespace se utiliza para almacenar datos temporales generados por la base de datos durante la ejecución de consultas y otras operaciones.</p>
-</li>
-<li>
-<p><em><strong>UNDO</strong></em> tablespace: este tablespace se utiliza para almacenar información de undo, que se utiliza para revertir transacciones y deshacer cambios en la base de datos.</p>
-</li>
-<li>
-<p><em><strong>INDEX</strong></em> tablespace: este tablespace se utiliza para almacenar índices, que son objetos que se utilizan para acelerar la búsqueda de datos en la base de datos.</p>
-</li>
-</ol>
-<p>En mi caso como voy a hacer pruebas con las tablas de los usuario voy a borrar el fichero del tablespace USERS, ya que es el que se encarga de almacenar los objetos de usuarios, tablas, vistas...</p>
-<ol>
-<li>Para descubrir el archivo del tablespace &quot;USERS&quot;, procedí a ejecutar lo siguiente:</li>
-</ol>
-<hr>
-<div><pre><code>select file_name from dba_data_files where tablespace_name = 'USERS';
-</code></pre>
-</div><p><img src="./../images/ABD/copias/1-4.png" alt="image"></p>
-<ol start="2">
-<li>Borraremos el fichero</li>
-</ol>
-<hr>
-<div><pre><code>rm /opt/oracle/oradata/ORCLCDB/users01.dbf
-</code></pre>
-</div><p>Planeo verificar que se ha eliminado de manera efectiva, consultando las tablas que se encontraban en ese tablespace.</p>
-<p><img src="./../images/ABD/copias/2-4.png" alt="image"></p>
-<ol start="3">
-<li>Vamos a intentar recuperar el archivo del tablespace utilizando RMAN.</li>
-</ol>
-<hr>
-<div><pre><code>rman target=/ catalog user_rman
-</code></pre>
-</div><ol start="4">
-<li>Antes de realizar la restauración, es necesario desactivar el tablespace correspondiente.</li>
-</ol>
-<hr>
-<div><pre><code>SQL &quot;alter tablespace USERS offline immediate&quot;;
-</code></pre>
-</div><p><img src="./../images/ABD/copias/3-4.png" alt="image"></p>
-<ol start="5">
-<li>Ahora sí, procederemos a restaurar el tablespace USERS.</li>
-</ol>
-<hr>
-<div><pre><code>restore tablespace USERS;
-</code></pre>
-</div><p><img src="./../images/ABD/copias/4-4.png" alt="image"></p>
-<ol start="6">
-<li>Luego de finalizar la restauración, activaremos nuevamente el tablespace.</li>
-</ol>
-<hr>
-<div><pre><code>recover tablespace USERS;
-</code></pre>
-</div><p><img src="./../images/ABD/copias/5-4.png" alt="image"></p>
-<div><pre><code>SQL &quot;alter tablespace USERS online&quot;;
-</code></pre>
-</div><p><img src="./../images/ABD/copias/6-4.png" alt="image"></p>
-<p>Finalmente, verificaremos que todo se encuentra en orden.</p>
-<p><img src="./../images/ABD/copias/7-4.png" alt="image"></p>
-<h3 id="_5-borra-un-fichero-de-control-e-intenta-recuperar-la-base-de-datos-a-partir-de-la-copia-de-seguridad-creada-en-el-punto-anterior"> 5. Borra un fichero de control e intenta recuperar la base de datos a partir de la copia de seguridad creada en el punto anterior.</h3>
-<ol>
-<li>Borramos un fichero de control</li>
-</ol>
-<hr>
-<div><pre><code>rm /opt/oracle/oradata/ORCLCDB/control02.ctl
-</code></pre>
-</div><p><img src="./../images/ABD/copias/1-5.png" alt="image"></p>
-<ol start="2">
-<li>Forzaremos el apagado de la base de datos, y la pondremos en modo no montada.</li>
-</ol>
-<hr>
-<div><pre><code>shutdown abort
-startup nomount
-</code></pre>
-</div><p><img src="./../images/ABD/copias/2-5.png" alt="image"></p>
-<ol start="3">
-<li>Accederemos a rman manualmente desde el fichero backup, puesto que la base de datos ya no esta montada.</li>
-</ol>
-<hr>
-<div><pre><code>rman
-connect target
-</code></pre>
-</div><p><img src="./../images/ABD/copias/3-5.png" alt="image"></p>
-<ol start="3">
-<li>Restauraremos el fichero de control</li>
-</ol>
-<hr>
-<div><pre><code>restore controlfile from '/opt/oracle/product/19c/dbhome_1/dbs/c-2890428600-20230306-01';
-</code></pre>
-</div><p><img src="./../images/ABD/copias/4-5.png" alt="image"></p>
-<ol start="4">
-<li>Volvemos a montar la base de datos</li>
-</ol>
-<hr>
-<div><pre><code>alter database mount;
-</code></pre>
-</div><p><img src="./../images/ABD/copias/5-5.png" alt="image"></p>
-<ol start="5">
-<li>Reseteamos los logs</li>
-</ol>
-<hr>
-<div><pre><code>alter database open resetlogs;
-</code></pre>
-</div><ol start="6">
-<li>Abrimos la base de datos</li>
-</ol>
-<hr>
-<div><pre><code>alter database open;
-</code></pre>
-</div><ol start="7">
-<li>Hacemos las comprobaciones</li>
-</ol>
-<p><img src="./../images/ABD/copias/6-5.png" alt="image"></p>
-<h3 id="_6-documenta-el-empleo-de-las-herramientas-de-copia-de-seguridad-y-restauracion-de-postgres"> 6. Documenta el empleo de las herramientas de copia de seguridad y restauración de Postgres.</h3>
-<p>Existen varias herramientas de copia de seguridad de PostgreSQL, cada una con sus propias ventajas y desventajas. Algunas de las más comunes son:</p>
-<ol>
-<li>
-<p><em><strong>pg_dump</strong></em>: es una herramienta de línea de comandos que se incluye con PostgreSQL y que permite hacer copias de seguridad de una base de datos completa o de una selección de tablas. Puede ser utilizado para hacer copias de seguridad de una base de datos en un archivo, en una secuencia de comandos SQL o en una salida binaria.</p>
-</li>
-<li>
-<p><em><strong>pg_dumpall</strong></em>: es una herramienta de línea de comandos que se utiliza para hacer una copia de seguridad de todas las bases de datos en un servidor PostgreSQL. Esto incluye todas las bases de datos de usuario, así como las bases de datos del sistema.</p>
-</li>
-<li>
-<p><em><strong>Barman</strong></em>: es una herramienta de copia de seguridad y recuperación de bases de datos PostgreSQL de código abierto. Ofrece una solución de copia de seguridad para bases de datos PostgreSQL, incluyendo soporte para copias de seguridad remotas y restauración automatizada.</p>
-</li>
-<li>
-<p><em><strong>pgBackRest</strong></em>: es una herramienta de copia de seguridad y restauración de bases de datos PostgreSQL de alto rendimiento y escalable. Se centra en la velocidad de copia de seguridad y recuperación, y ofrece opciones avanzadas de compresión, encriptación y almacenamiento.</p>
-</li>
-<li>
-<p><em><strong>WAL-E</strong></em>: es una herramienta de copia de seguridad y recuperación de bases de datos PostgreSQL que se enfoca en la protección de datos en tiempo real. Utiliza los archivos de registro de transacciones (WAL) para crear copias de seguridad incrementales de una base de datos PostgreSQL y para recuperar una base de datos hasta un punto específico en el tiempo.</p>
-</li>
-</ol>
-<p>Cada herramienta de copia de seguridad de PostgreSQL tiene sus propias características únicas y puede ser más adecuada para ciertas situaciones. Por lo tanto, es importante considerar cuidadosamente qué herramienta se utilizará para hacer una copia de seguridad de la base de datos.</p>
-<p>A continuación mostreré un ejemplo de <code>pg_dump</code> sobre la tabla &quot;scott&quot;:</p>
-<ol>
-<li>Crearé un directorio para guardar los ficheros:</li>
-</ol>
-<hr>
-<div><pre><code>mkdir /var/lib/postgresql/copiadb
-</code></pre>
-</div><ol start="2">
-<li>Ejecutamos el comando:</li>
-</ol>
-<hr>
-<div><pre><code>pg_dump -U postgres -d scott &gt; /var/lib/postgresql/copiadb/CopiaScott.sql
-</code></pre>
-</div><ol start="3">
-<li>Creare una nueva base de datos para restaurar la base de datos:</li>
-</ol>
-<hr>
-<div><pre><code>create database copiascott with owner postgres;
-grant all privileges on database copiascott to postgres;
-</code></pre>
-</div><p><img src="./../images/ABD/copias/1-6.png" alt="image"></p>
-<ol start="4">
-<li>Importamos la base de datos</li>
-</ol>
-<hr>
-<div><pre><code>psql -U postgres -d copiascott &lt; /var/lib/postgresql/copiadb/CopiaScott.sql
-</code></pre>
-</div><p><img src="./../images/ABD/copias/2-6.png" alt="image"></p>
-<p>Y una vez finalizado comprobaremos que la base de datos se ha restaurado completamente:</p>
-<p><img src="./../images/ABD/copias/3-6.png" alt="image"></p>
-<h3 id="_7-documenta-el-empleo-de-las-herramientas-de-copia-de-seguridad-y-restauracion-de-mysql"> 7. Documenta el empleo de las herramientas de copia de seguridad y restauración de MySQL.</h3>
-<p>El comando mysqldump proporciona varias opciones que se pueden utilizar para personalizar la copia de seguridad. Algunas de estas opciones son:</p>
-<ul>
-<li>
-<p><code>--user</code>: especifica el nombre de usuario que se utilizará para conectarse a la base de datos.</p>
-</li>
-<li>
-<p><code>--password</code>: proporciona la contraseña correspondiente al usuario.</p>
-</li>
-<li>
-<p><code>--host</code>: indica el servidor donde se encuentra la base de datos.</p>
-</li>
-<li>
-<p><code>--port</code>: especifica el número de puerto que se utilizará para la conexión.</p>
-</li>
-<li>
-<p><code>--single-transaction</code>: realiza la copia de seguridad dentro de una única transacción, lo que asegura que se copie una imagen consistente de la base de datos.</p>
-</li>
-<li>
-<p><code>--add-drop-database</code>: agrega una instrucción &quot;DROP DATABASE&quot; antes de crear cada base de datos, lo que permite que la copia de seguridad pueda ser utilizada para recrear toda la base de datos.</p>
-</li>
-<li>
-<p><code>--compress</code>: comprime la copia de seguridad mientras se está generando.</p>
-</li>
-<li>
-<p><code>--result-file</code>: permite especificar el nombre y la ruta del archivo de salida para la copia de seguridad.</p>
-</li>
-<li>
-<p><code>--tables</code>: permite especificar las tablas que se desean incluir en la copia de seguridad.</p>
-</li>
-<li>
-<p><code>--databases</code>: permite especificar las bases de datos que se desean incluir en la copia de seguridad.</p>
-</li>
-<li>
-<p><code>--lock-tables</code>: bloquea las tablas mientras se realiza la copia de seguridad, lo que garantiza que no se realicen cambios en las tablas mientras se está copiando.</p>
-</li>
-<li>
-<p><code>--ignore-table</code>: permite excluir tablas específicas de la copia de seguridad.</p>
-</li>
-<li>
-<p><code>--routines</code>: incluye las rutinas almacenadas en la base de datos (procedimientos almacenados, funciones, etc.).</p>
-</li>
-<li>
-<p><code>--triggers</code>: incluye los triggers definidos en la base de datos.</p>
-</li>
-<li>
-<p><code>--skip-comments</code>: omite los comentarios en la copia de seguridad.</p>
-</li>
-</ul>
-<p>Para llevar a cabo una copia completa de la base de datos de MySQL, utilizaremos nuevamente la herramienta <code>mysqldump</code>, pero esta vez agregaremos el parámetro <code>--all-databases</code>.</p>
-<div><pre><code>mysqldump -u root -p --all-databases &gt; copiadb.sql
-</code></pre>
-</div><p><img src="./../images/ABD/copias/1-7.png" alt="image"></p>
-<p>A continuación, eliminaré algunas tablas de la base de datos &quot;proyecto&quot; y otras de la base de datos &quot;scott&quot;.</p>
-<p><img src="./../images/ABD/copias/2-7.png" alt="image"></p>
-<p>Ahora procederemos a restaurar las tablas.</p>
-<div><pre><code>mysql -u root -p scott &lt; copiadb.sql
-mysql -u root -p proyecto &lt; copiadb.sql
-</code></pre>
-</div><p>Luego, verificaremos las bases de datos para asegurarnos de que las tablas se hayan restaurado correctamente.</p>
-<p><img src="./../images/ABD/copias/3-7.png" alt="image"></p>
-<h3 id="_8-documenta-el-empleo-de-las-herramientas-de-copia-de-seguridad-y-restauracion-de-mongodb"> 8. Documenta el empleo de las herramientas de copia de seguridad y restauración de MongoDB.</h3>
-<p>Podemos utilizar la herramienta <code>mongodump</code> para realizar copias de seguridad en MongoDB. Esta herramienta nos permite hacer una copia de seguridad de la base de datos completa o de una colección específica.</p>
-<p>Primero crearemos un directorio donde se almacenarán las copias de seguridad que realizaremos de las bases de datos.</p>
-<div><pre><code>mkdir -p /var/backups/copiasdb
-</code></pre>
-</div><p>Ejecutamos el comando de <code>mongodump</code>.</p>
-<div><pre><code>mongodump -u olucas -p root -d Prueba -o /var/backups/copiasdb/Prueba --authenticationDatabase admin
-</code></pre>
-</div><p><img src="./../images/ABD/copias/1-8.png" alt="image"></p>
-<p>Para restaurar una copia de seguridad en MongoDB, podemos utilizar la herramienta <code>mongorestore</code>. Con esta herramienta, podemos restaurar la base de datos completa o una colección específica.</p>
-<ol>
-<li>Para restaurar una base de datos completa, ejecutaremos el siguiente comando:</li>
-</ol>
-<hr>
-<div><pre><code>mongorestore -u olucas -p root --db Prueba2 /var/backups/copiasdb/Prueba/Prueba/ --authenticationDatabase admin
-</code></pre>
-</div><p><img src="./../images/ABD/copias/2-8.png" alt="image"></p>
-<p>Como podemos observar, la base de datos Prueba2 se ha restaurado correctamente.</p>
-<p><img src="./../images/ABD/copias/3-8.png" alt="image"></p>
-<ol start="2">
-<li>Para restaurar una colección en concreto, ejecutaremos el siguiente comando:</li>
-</ol>
-<hr>
-<div><pre><code>mongorestore -u olucas -p root --db Prueba3 --collection prueba1 /var/backups/copiasdb/Prueba/Prueba/prueba1.bson --authenticationDatabase admin
-</code></pre>
-</div><p><img src="./../images/ABD/copias/4-8.png" alt="image"></p>
-<p>Como podemos observar, la colección prueba1 de la base de datos Prueba3 se ha restaurado correctamente.</p>
-<p><img src="./../images/ABD/copias/5-8.png" alt="image"></p>
-]]></content>
-    <author>
-      <name>Óscar Lucas</name>
-    </author>
-    <category term="practicas" scheme=""/>
-    <contributor>
-      <name>Óscar Lucas</name>
-    </contributor>
-    <rights>Copyright by Óscar Lucas</rights>
-  </entry>
-  <entry>
     <title type="html">Almacenamiento</title>
     <id>https://github.com/oscarlucas22/practicas/almacenamiento/</id>
     <link href="https://github.com/oscarlucas22/practicas/almacenamiento/"/>
-    <updated>2023-11-08T11:14:12.995Z</updated>
+    <updated>2023-11-08T11:35:30.426Z</updated>
     <content type="html"><![CDATA[<h1 id="almacenamiento"> Almacenamiento</h1>
 <h2 id="alumno-3"> Alumno 3:</h2>
 <p><em><strong>orACLE:</strong></em></p>
@@ -4382,7 +3952,7 @@ DROP USER JAIME cascade;
     <title type="html">Auditoría</title>
     <id>https://github.com/oscarlucas22/practicas/auditoria/</id>
     <link href="https://github.com/oscarlucas22/practicas/auditoria/"/>
-    <updated>2023-11-08T11:14:13.002Z</updated>
+    <updated>2023-11-08T11:35:30.431Z</updated>
     <content type="html"><![CDATA[<h1 id="auditoria"> Auditoría</h1>
 <h2 id="_1-activa-desde-sql-plus-la-auditoria-de-los-intentos-de-acceso-exitosos-al-sistema-comprueba-su-funcionamiento"> <strong>1. Activa desde SQL*Plus la auditoría de los intentos de acceso exitosos al sistema. Comprueba su funcionamiento.</strong></h2>
 <p>Visualizaremos los parametros de auditorias:</p>
@@ -4820,10 +4390,422 @@ insert into emp values(7942, 'RICK', 'CARRIER', null, str_to_date('01/03/2023', 
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
+    <title type="html">Copias de Seguridad y Restauración</title>
+    <id>https://github.com/oscarlucas22/practicas/copias-seg-y-rest/</id>
+    <link href="https://github.com/oscarlucas22/practicas/copias-seg-y-rest/"/>
+    <updated>2023-11-08T11:35:30.433Z</updated>
+    <content type="html"><![CDATA[<h1 id="copias-de-seguridad-y-restauracion"> Copias de Seguridad y Restauración</h1>
+<h3 id="_1-realiza-una-copia-de-seguridad-logica-de-tu-base-de-datos-completa-teniendo-en-cuenta-los-siguientes-requisitos"> 1. Realiza una copia de seguridad lógica de tu base de datos completa, teniendo en cuenta los siguientes requisitos:</h3>
+<ul>
+<li>
+<p><strong>La copia debe estar encriptada y comprimida.</strong></p>
+<ul>
+<li>
+<p><em><strong>COMPRESSION</strong></em> = Sirve para comprimir el fichero de exportación.</p>
+</li>
+<li>
+<p><em><strong>ENCRYPTION_PASSWORD</strong></em> = Sirve para encriptar el fichero, indicandole una contraseña.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Debe realizarse en un conjunto de ficheros con un tamaño máximo de 60 MB.</strong></p>
+<ul>
+<li><em><strong>FILESIZE</strong></em> = Sirve para indicar un tamaño maximo al fichero.</li>
+</ul>
+</li>
+</ul>
+<p>Utilizaremos la herramienta <code>expdp</code> para hacer una copia de seguridad completa.</p>
+<p>Antes de realizar la exportación, crearemos una carpeta para almacenar los archivos exportados.</p>
+<p>Luego, se debe registrar la ubicación de la carpeta donde se guardarán los archivos de exportación completos:</p>
+<div><pre><code>create directory copiadb as '/home/oracle/copiadb';
+</code></pre>
+</div><p>Voy a crear un usuario con permisos de administrador.</p>
+<div><pre><code>create user admin identified by &quot;root&quot;;
+grant dba to admin;
+</code></pre>
+</div><p>Para iniciar la exportación, se debe ejecutar el siguiente comando:</p>
+<div><pre><code>expdp admin/root DIRECTORY=copiadb DUMPFILE=copiadb.dmp FULL=YES LOGFILE=copiadb.log COMPRESSION=ALL DUMPFILE=compress.dmp ENCRYPTION_PASSWORD=passwd FILESIZE=60M
+</code></pre>
+</div><p><img src="./../images/ABD/copias/1-1.png" alt="image"></p>
+<p>Aquí se pueden ver los archivos que han sido creados.</p>
+<p><img src="./../images/ABD/copias/2-1.png" alt="image"></p>
+<ul>
+<li><strong>Programa la operación para que se repita cada día a una hora determinada.</strong></li>
+</ul>
+<p>Para programar la exportación, crearemos un script con el siguiente contenido:</p>
+<div><pre><code>nano copiadb.sh
+</code></pre>
+</div><hr>
+<div><pre><code>#!/bin/bash
+
+expdp admin/root DIRECTORY=copiadb DUMPFILE=copiadb.dmp FULL=YES LOGFILE=copiadb.log COMPRESSION=ALL DUMPFILE=compress.dmp ENCRYPTION_PASSWORD=passwd FILESIZE=60M
+</code></pre>
+</div><p>Es necesario otorgar permisos de ejecución al script.</p>
+<div><pre><code>chmod +x copiadb.sh
+</code></pre>
+</div><p>Para ejecutar manualmente el script, se debe ejecutar lo siguiente:</p>
+<div><pre><code>./copiadb.sh
+</code></pre>
+</div><p>Programaremos la ejecución del script de copia de seguridad para que se ejecute todos los días a las 00:00 horas utilizando la herramienta <code>crontab</code>.</p>
+<div><pre><code>crontab -e
+</code></pre>
+</div><hr>
+<div><pre><code>0 0 * * * sleep 180; /home/oracle/copiadb.sh
+</code></pre>
+</div><h3 id="_2-restaura-la-copia-de-seguridad-logica-creada-en-el-punto-anterior"> 2. Restaura la copia de seguridad lógica creada en el punto anterior.</h3>
+<p>Eliminaremos tablas de las bases de datos &quot;scott&quot; y &quot;prueba&quot; y posteriormente las restauraremos.</p>
+<p><img src="./../images/ABD/copias/3-1.png" alt="image"></p>
+<p>Una vez completada la eliminación de las tablas, procederemos a realizar la importación mediante el comando <code>impdp</code>.</p>
+<div><pre><code>impdp admin/root DIRECTORY=copiadb DUMPFILE=copiadb.dmp FULL=YES ENCRYPTION_PASSWORD=passwd
+</code></pre>
+</div><p><img src="./../images/ABD/copias/4-1.png" alt="image"></p>
+<p><img src="./../images/ABD/copias/5-1.png" alt="image"></p>
+<p><img src="./../images/ABD/copias/6-1.png" alt="image"></p>
+<h3 id="_3-pon-tu-base-de-datos-en-modo-archivelog-y-realiza-con-rman-una-copia-de-seguridad-fisica-en-caliente"> 3. Pon tu base de datos en modo ArchiveLog y realiza con RMAN una copia de seguridad física en caliente.</h3>
+<ol>
+<li>Para verificar si la base de datos se encuentra en modo ArchiveLog, se debe ejecutar la siguiente consulta:</li>
+</ol>
+<hr>
+<div><pre><code>select log_mode from v$database;
+</code></pre>
+</div><ol start="2">
+<li>Si, al ejecutar la consulta, se muestra que el valor de <code>log_mode</code> es <code>ARCHIVELOG</code>, significa que la base de datos ya está en modo ArchiveLog.</li>
+</ol>
+<p>En caso de que la base de datos no se encuentre en modo ArchiveLog, se debe cambiar el modo de registro mediante la siguiente consulta:</p>
+<div><pre><code>shutdown immediate;
+startup mount;
+alter database archivelog;
+alter database open;
+</code></pre>
+</div><p><img src="./../images/ABD/copias/1-3.png" alt="image"></p>
+<ol start="3">
+<li>Ahora crearemos un tablespace donde se almacenarán todos los archivos necesarios para la gestión de la restauración con RMAN.</li>
+</ol>
+<hr>
+<div><pre><code>create tablespace TS_RMAN datafile '/opt/oracle/oradata/ORCLCDB/TS_RAMN.dbf' size 300M;
+create user user_rman identified by root default tablespace TS_RMAN quota unlimited on TS_RMAN;
+</code></pre>
+</div><ol start="4">
+<li>Asignaremos los permisos necesarios al usuario recién creado.</li>
+</ol>
+<hr>
+<div><pre><code>grant recovery_catalog_owner to user_rman;
+grant connect, resource to user_rman;
+</code></pre>
+</div><ol start="5">
+<li>Es momento de ejecutar RMAN.</li>
+</ol>
+<hr>
+<div><pre><code>rman
+connect catalog user_rman
+</code></pre>
+</div><p><img src="./../images/ABD/copias/2-3.png" alt="image"></p>
+<ol start="6">
+<li>Vamos a crear el catálogo que hemos registrado previamente en el tablespace TS_RMAN.</li>
+</ol>
+<hr>
+<div><pre><code>create catalog tablespace TS_RMAN;
+</code></pre>
+</div><ol start="7">
+<li>A continuación, nos conectaremos al catálogo que acabamos de crear.</li>
+</ol>
+<hr>
+<div><pre><code>rman target=/ catalog user_rman
+</code></pre>
+</div><p><img src="./../images/ABD/copias/3-3.png" alt="image"></p>
+<ol start="8">
+<li>Vamos a registrar nuestra base de datos.</li>
+</ol>
+<hr>
+<div><pre><code>register database;
+</code></pre>
+</div><p><img src="./../images/ABD/copias/4-3.png" alt="image"></p>
+<ol start="9">
+<li>Iniciaremos el proceso de backup en caliente.</li>
+</ol>
+<hr>
+<div><pre><code>backup database;
+</code></pre>
+</div><p><img src="./../images/ABD/copias/5-3.png" alt="image"></p>
+<h3 id="_4-borra-un-fichero-de-datos-de-un-tablespace-e-intenta-recuperar-la-instancia-de-la-base-de-datos-a-partir-de-la-copia-de-seguridad-creada-en-el-punto-anterior"> 4. Borra un fichero de datos de un tablespace e intenta recuperar la instancia de la base de datos a partir de la copia de seguridad creada en el punto anterior.</h3>
+<p>Eliminaré un archivo de un tablespace. Entre los tablespaces más comunes se encuentran:</p>
+<ol>
+<li>
+<p><em><strong>SYSTEM</strong></em> tablespace: este es el tablespace predeterminado y contiene objetos del sistema y metadata importantes para el funcionamiento de la base de datos. No se recomienda almacenar objetos de usuario en este tablespace.</p>
+</li>
+<li>
+<p><em><strong>SYSAUX</strong></em> tablespace: este tablespace se utiliza para almacenar datos y metadata de componentes de la base de datos opcionales, como Oracle Text y Oracle Spatial.</p>
+</li>
+<li>
+<p><em><strong>USERS</strong></em> tablespace: este tablespace se utiliza para almacenar objetos de usuario, como tablas, índices y vistas.</p>
+</li>
+<li>
+<p><em><strong>TEMP</strong></em> tablespace: este tablespace se utiliza para almacenar datos temporales generados por la base de datos durante la ejecución de consultas y otras operaciones.</p>
+</li>
+<li>
+<p><em><strong>UNDO</strong></em> tablespace: este tablespace se utiliza para almacenar información de undo, que se utiliza para revertir transacciones y deshacer cambios en la base de datos.</p>
+</li>
+<li>
+<p><em><strong>INDEX</strong></em> tablespace: este tablespace se utiliza para almacenar índices, que son objetos que se utilizan para acelerar la búsqueda de datos en la base de datos.</p>
+</li>
+</ol>
+<p>En mi caso como voy a hacer pruebas con las tablas de los usuario voy a borrar el fichero del tablespace USERS, ya que es el que se encarga de almacenar los objetos de usuarios, tablas, vistas...</p>
+<ol>
+<li>Para descubrir el archivo del tablespace &quot;USERS&quot;, procedí a ejecutar lo siguiente:</li>
+</ol>
+<hr>
+<div><pre><code>select file_name from dba_data_files where tablespace_name = 'USERS';
+</code></pre>
+</div><p><img src="./../images/ABD/copias/1-4.png" alt="image"></p>
+<ol start="2">
+<li>Borraremos el fichero</li>
+</ol>
+<hr>
+<div><pre><code>rm /opt/oracle/oradata/ORCLCDB/users01.dbf
+</code></pre>
+</div><p>Planeo verificar que se ha eliminado de manera efectiva, consultando las tablas que se encontraban en ese tablespace.</p>
+<p><img src="./../images/ABD/copias/2-4.png" alt="image"></p>
+<ol start="3">
+<li>Vamos a intentar recuperar el archivo del tablespace utilizando RMAN.</li>
+</ol>
+<hr>
+<div><pre><code>rman target=/ catalog user_rman
+</code></pre>
+</div><ol start="4">
+<li>Antes de realizar la restauración, es necesario desactivar el tablespace correspondiente.</li>
+</ol>
+<hr>
+<div><pre><code>SQL &quot;alter tablespace USERS offline immediate&quot;;
+</code></pre>
+</div><p><img src="./../images/ABD/copias/3-4.png" alt="image"></p>
+<ol start="5">
+<li>Ahora sí, procederemos a restaurar el tablespace USERS.</li>
+</ol>
+<hr>
+<div><pre><code>restore tablespace USERS;
+</code></pre>
+</div><p><img src="./../images/ABD/copias/4-4.png" alt="image"></p>
+<ol start="6">
+<li>Luego de finalizar la restauración, activaremos nuevamente el tablespace.</li>
+</ol>
+<hr>
+<div><pre><code>recover tablespace USERS;
+</code></pre>
+</div><p><img src="./../images/ABD/copias/5-4.png" alt="image"></p>
+<div><pre><code>SQL &quot;alter tablespace USERS online&quot;;
+</code></pre>
+</div><p><img src="./../images/ABD/copias/6-4.png" alt="image"></p>
+<p>Finalmente, verificaremos que todo se encuentra en orden.</p>
+<p><img src="./../images/ABD/copias/7-4.png" alt="image"></p>
+<h3 id="_5-borra-un-fichero-de-control-e-intenta-recuperar-la-base-de-datos-a-partir-de-la-copia-de-seguridad-creada-en-el-punto-anterior"> 5. Borra un fichero de control e intenta recuperar la base de datos a partir de la copia de seguridad creada en el punto anterior.</h3>
+<ol>
+<li>Borramos un fichero de control</li>
+</ol>
+<hr>
+<div><pre><code>rm /opt/oracle/oradata/ORCLCDB/control02.ctl
+</code></pre>
+</div><p><img src="./../images/ABD/copias/1-5.png" alt="image"></p>
+<ol start="2">
+<li>Forzaremos el apagado de la base de datos, y la pondremos en modo no montada.</li>
+</ol>
+<hr>
+<div><pre><code>shutdown abort
+startup nomount
+</code></pre>
+</div><p><img src="./../images/ABD/copias/2-5.png" alt="image"></p>
+<ol start="3">
+<li>Accederemos a rman manualmente desde el fichero backup, puesto que la base de datos ya no esta montada.</li>
+</ol>
+<hr>
+<div><pre><code>rman
+connect target
+</code></pre>
+</div><p><img src="./../images/ABD/copias/3-5.png" alt="image"></p>
+<ol start="3">
+<li>Restauraremos el fichero de control</li>
+</ol>
+<hr>
+<div><pre><code>restore controlfile from '/opt/oracle/product/19c/dbhome_1/dbs/c-2890428600-20230306-01';
+</code></pre>
+</div><p><img src="./../images/ABD/copias/4-5.png" alt="image"></p>
+<ol start="4">
+<li>Volvemos a montar la base de datos</li>
+</ol>
+<hr>
+<div><pre><code>alter database mount;
+</code></pre>
+</div><p><img src="./../images/ABD/copias/5-5.png" alt="image"></p>
+<ol start="5">
+<li>Reseteamos los logs</li>
+</ol>
+<hr>
+<div><pre><code>alter database open resetlogs;
+</code></pre>
+</div><ol start="6">
+<li>Abrimos la base de datos</li>
+</ol>
+<hr>
+<div><pre><code>alter database open;
+</code></pre>
+</div><ol start="7">
+<li>Hacemos las comprobaciones</li>
+</ol>
+<p><img src="./../images/ABD/copias/6-5.png" alt="image"></p>
+<h3 id="_6-documenta-el-empleo-de-las-herramientas-de-copia-de-seguridad-y-restauracion-de-postgres"> 6. Documenta el empleo de las herramientas de copia de seguridad y restauración de Postgres.</h3>
+<p>Existen varias herramientas de copia de seguridad de PostgreSQL, cada una con sus propias ventajas y desventajas. Algunas de las más comunes son:</p>
+<ol>
+<li>
+<p><em><strong>pg_dump</strong></em>: es una herramienta de línea de comandos que se incluye con PostgreSQL y que permite hacer copias de seguridad de una base de datos completa o de una selección de tablas. Puede ser utilizado para hacer copias de seguridad de una base de datos en un archivo, en una secuencia de comandos SQL o en una salida binaria.</p>
+</li>
+<li>
+<p><em><strong>pg_dumpall</strong></em>: es una herramienta de línea de comandos que se utiliza para hacer una copia de seguridad de todas las bases de datos en un servidor PostgreSQL. Esto incluye todas las bases de datos de usuario, así como las bases de datos del sistema.</p>
+</li>
+<li>
+<p><em><strong>Barman</strong></em>: es una herramienta de copia de seguridad y recuperación de bases de datos PostgreSQL de código abierto. Ofrece una solución de copia de seguridad para bases de datos PostgreSQL, incluyendo soporte para copias de seguridad remotas y restauración automatizada.</p>
+</li>
+<li>
+<p><em><strong>pgBackRest</strong></em>: es una herramienta de copia de seguridad y restauración de bases de datos PostgreSQL de alto rendimiento y escalable. Se centra en la velocidad de copia de seguridad y recuperación, y ofrece opciones avanzadas de compresión, encriptación y almacenamiento.</p>
+</li>
+<li>
+<p><em><strong>WAL-E</strong></em>: es una herramienta de copia de seguridad y recuperación de bases de datos PostgreSQL que se enfoca en la protección de datos en tiempo real. Utiliza los archivos de registro de transacciones (WAL) para crear copias de seguridad incrementales de una base de datos PostgreSQL y para recuperar una base de datos hasta un punto específico en el tiempo.</p>
+</li>
+</ol>
+<p>Cada herramienta de copia de seguridad de PostgreSQL tiene sus propias características únicas y puede ser más adecuada para ciertas situaciones. Por lo tanto, es importante considerar cuidadosamente qué herramienta se utilizará para hacer una copia de seguridad de la base de datos.</p>
+<p>A continuación mostreré un ejemplo de <code>pg_dump</code> sobre la tabla &quot;scott&quot;:</p>
+<ol>
+<li>Crearé un directorio para guardar los ficheros:</li>
+</ol>
+<hr>
+<div><pre><code>mkdir /var/lib/postgresql/copiadb
+</code></pre>
+</div><ol start="2">
+<li>Ejecutamos el comando:</li>
+</ol>
+<hr>
+<div><pre><code>pg_dump -U postgres -d scott &gt; /var/lib/postgresql/copiadb/CopiaScott.sql
+</code></pre>
+</div><ol start="3">
+<li>Creare una nueva base de datos para restaurar la base de datos:</li>
+</ol>
+<hr>
+<div><pre><code>create database copiascott with owner postgres;
+grant all privileges on database copiascott to postgres;
+</code></pre>
+</div><p><img src="./../images/ABD/copias/1-6.png" alt="image"></p>
+<ol start="4">
+<li>Importamos la base de datos</li>
+</ol>
+<hr>
+<div><pre><code>psql -U postgres -d copiascott &lt; /var/lib/postgresql/copiadb/CopiaScott.sql
+</code></pre>
+</div><p><img src="./../images/ABD/copias/2-6.png" alt="image"></p>
+<p>Y una vez finalizado comprobaremos que la base de datos se ha restaurado completamente:</p>
+<p><img src="./../images/ABD/copias/3-6.png" alt="image"></p>
+<h3 id="_7-documenta-el-empleo-de-las-herramientas-de-copia-de-seguridad-y-restauracion-de-mysql"> 7. Documenta el empleo de las herramientas de copia de seguridad y restauración de MySQL.</h3>
+<p>El comando mysqldump proporciona varias opciones que se pueden utilizar para personalizar la copia de seguridad. Algunas de estas opciones son:</p>
+<ul>
+<li>
+<p><code>--user</code>: especifica el nombre de usuario que se utilizará para conectarse a la base de datos.</p>
+</li>
+<li>
+<p><code>--password</code>: proporciona la contraseña correspondiente al usuario.</p>
+</li>
+<li>
+<p><code>--host</code>: indica el servidor donde se encuentra la base de datos.</p>
+</li>
+<li>
+<p><code>--port</code>: especifica el número de puerto que se utilizará para la conexión.</p>
+</li>
+<li>
+<p><code>--single-transaction</code>: realiza la copia de seguridad dentro de una única transacción, lo que asegura que se copie una imagen consistente de la base de datos.</p>
+</li>
+<li>
+<p><code>--add-drop-database</code>: agrega una instrucción &quot;DROP DATABASE&quot; antes de crear cada base de datos, lo que permite que la copia de seguridad pueda ser utilizada para recrear toda la base de datos.</p>
+</li>
+<li>
+<p><code>--compress</code>: comprime la copia de seguridad mientras se está generando.</p>
+</li>
+<li>
+<p><code>--result-file</code>: permite especificar el nombre y la ruta del archivo de salida para la copia de seguridad.</p>
+</li>
+<li>
+<p><code>--tables</code>: permite especificar las tablas que se desean incluir en la copia de seguridad.</p>
+</li>
+<li>
+<p><code>--databases</code>: permite especificar las bases de datos que se desean incluir en la copia de seguridad.</p>
+</li>
+<li>
+<p><code>--lock-tables</code>: bloquea las tablas mientras se realiza la copia de seguridad, lo que garantiza que no se realicen cambios en las tablas mientras se está copiando.</p>
+</li>
+<li>
+<p><code>--ignore-table</code>: permite excluir tablas específicas de la copia de seguridad.</p>
+</li>
+<li>
+<p><code>--routines</code>: incluye las rutinas almacenadas en la base de datos (procedimientos almacenados, funciones, etc.).</p>
+</li>
+<li>
+<p><code>--triggers</code>: incluye los triggers definidos en la base de datos.</p>
+</li>
+<li>
+<p><code>--skip-comments</code>: omite los comentarios en la copia de seguridad.</p>
+</li>
+</ul>
+<p>Para llevar a cabo una copia completa de la base de datos de MySQL, utilizaremos nuevamente la herramienta <code>mysqldump</code>, pero esta vez agregaremos el parámetro <code>--all-databases</code>.</p>
+<div><pre><code>mysqldump -u root -p --all-databases &gt; copiadb.sql
+</code></pre>
+</div><p><img src="./../images/ABD/copias/1-7.png" alt="image"></p>
+<p>A continuación, eliminaré algunas tablas de la base de datos &quot;proyecto&quot; y otras de la base de datos &quot;scott&quot;.</p>
+<p><img src="./../images/ABD/copias/2-7.png" alt="image"></p>
+<p>Ahora procederemos a restaurar las tablas.</p>
+<div><pre><code>mysql -u root -p scott &lt; copiadb.sql
+mysql -u root -p proyecto &lt; copiadb.sql
+</code></pre>
+</div><p>Luego, verificaremos las bases de datos para asegurarnos de que las tablas se hayan restaurado correctamente.</p>
+<p><img src="./../images/ABD/copias/3-7.png" alt="image"></p>
+<h3 id="_8-documenta-el-empleo-de-las-herramientas-de-copia-de-seguridad-y-restauracion-de-mongodb"> 8. Documenta el empleo de las herramientas de copia de seguridad y restauración de MongoDB.</h3>
+<p>Podemos utilizar la herramienta <code>mongodump</code> para realizar copias de seguridad en MongoDB. Esta herramienta nos permite hacer una copia de seguridad de la base de datos completa o de una colección específica.</p>
+<p>Primero crearemos un directorio donde se almacenarán las copias de seguridad que realizaremos de las bases de datos.</p>
+<div><pre><code>mkdir -p /var/backups/copiasdb
+</code></pre>
+</div><p>Ejecutamos el comando de <code>mongodump</code>.</p>
+<div><pre><code>mongodump -u olucas -p root -d Prueba -o /var/backups/copiasdb/Prueba --authenticationDatabase admin
+</code></pre>
+</div><p><img src="./../images/ABD/copias/1-8.png" alt="image"></p>
+<p>Para restaurar una copia de seguridad en MongoDB, podemos utilizar la herramienta <code>mongorestore</code>. Con esta herramienta, podemos restaurar la base de datos completa o una colección específica.</p>
+<ol>
+<li>Para restaurar una base de datos completa, ejecutaremos el siguiente comando:</li>
+</ol>
+<hr>
+<div><pre><code>mongorestore -u olucas -p root --db Prueba2 /var/backups/copiasdb/Prueba/Prueba/ --authenticationDatabase admin
+</code></pre>
+</div><p><img src="./../images/ABD/copias/2-8.png" alt="image"></p>
+<p>Como podemos observar, la base de datos Prueba2 se ha restaurado correctamente.</p>
+<p><img src="./../images/ABD/copias/3-8.png" alt="image"></p>
+<ol start="2">
+<li>Para restaurar una colección en concreto, ejecutaremos el siguiente comando:</li>
+</ol>
+<hr>
+<div><pre><code>mongorestore -u olucas -p root --db Prueba3 --collection prueba1 /var/backups/copiasdb/Prueba/Prueba/prueba1.bson --authenticationDatabase admin
+</code></pre>
+</div><p><img src="./../images/ABD/copias/4-8.png" alt="image"></p>
+<p>Como podemos observar, la colección prueba1 de la base de datos Prueba3 se ha restaurado correctamente.</p>
+<p><img src="./../images/ABD/copias/5-8.png" alt="image"></p>
+]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
+    <category term="practicas" scheme=""/>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
     <title type="html">Instalación y configuración de un servidor de correos en el VPS</title>
     <id>https://github.com/oscarlucas22/practicas/correos/</id>
     <link href="https://github.com/oscarlucas22/practicas/correos/"/>
-    <updated>2023-11-08T11:14:13.007Z</updated>
+    <updated>2023-11-08T11:35:30.439Z</updated>
     <content type="html"><![CDATA[<h1 id="instalacion-y-configuracion-de-un-servidor-de-correos-en-el-vps"> Instalación y configuración de un servidor de correos en el VPS</h1>
 <h2 id="practica-servidor-de-correos"> Práctica: Servidor de correos</h2>
 <p><strong>Instala y configura de manera adecuada el servidor de correos en tu VPS. El nombre del servidor de correo será mail.tudominio.es (Este es el nombre que deberá aparecer en el registro MX).</strong></p>
@@ -5347,7 +5329,7 @@ server {
     <title type="html">Cortafuegos I: De nodo con iptables</title>
     <id>https://github.com/oscarlucas22/practicas/cortafuegoI/</id>
     <link href="https://github.com/oscarlucas22/practicas/cortafuegoI/"/>
-    <updated>2023-11-08T11:14:13.009Z</updated>
+    <updated>2023-11-08T11:35:30.440Z</updated>
     <content type="html"><![CDATA[<h1 id="cortafuegos-i-de-nodo-con-iptables"> Cortafuegos I: De nodo con iptables</h1>
 <p>Página de la <a href="https://fp.josedomingo.org/seguridadgs/u03/ejercicio1.html" target="_blank" rel="noopener noreferrer">practica<i>Content not supported</i></a></p>
 <hr>
@@ -5534,7 +5516,7 @@ iptables -A OUTPUT -d 10.0.0.180 -p tcp --sport 3306 -j ACCEPT
     <title type="html">Cortafuegos II: Perimetral con nftables</title>
     <id>https://github.com/oscarlucas22/practicas/cortafuegoII/</id>
     <link href="https://github.com/oscarlucas22/practicas/cortafuegoII/"/>
-    <updated>2023-11-08T11:14:13.012Z</updated>
+    <updated>2023-11-08T11:35:30.456Z</updated>
     <content type="html"><![CDATA[<h1 id="cortafuegos-ii-perimetral-con-nftables"> Cortafuegos II: Perimetral con nftables</h1>
 <p><strong>Realiza con nftables el ejercicio de la <a href="https://fp.josedomingo.org/seguridadgs/u03/perimetral_iptables.html" target="_blank" rel="noopener noreferrer">página<i>Content not supported</i></a> documentando las pruebas de funcionamiento realizadas.</strong></p>
 <p><strong>Debes añadir después las reglas necesarias para que se permitan las siguientes operaciones:</strong></p>
@@ -5857,7 +5839,7 @@ sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens
     <title type="html">Informática Forense</title>
     <id>https://github.com/oscarlucas22/practicas/forense/</id>
     <link href="https://github.com/oscarlucas22/practicas/forense/"/>
-    <updated>2023-11-08T11:14:13.013Z</updated>
+    <updated>2023-11-08T11:35:30.469Z</updated>
     <content type="html"><![CDATA[<h1 id="informatica-forense"> Informática Forense</h1>
 <p><strong>La informática forense es el conjunto de técnicas que nos permite obtener la máxima información posible tras un incidente o delito informático.</strong></p>
 <p><strong>En esta práctica, realizarás la fase de toma de evidencias y análisis de las mismas sobre una máquina Linux y otra Windows. Supondremos que pillamos al delincuente in fraganti y las máquinas se encontraban encendidas. Opcionalmente, podéis realizar el análisis de un dispositivo Android.</strong></p>
@@ -5935,127 +5917,10 @@ sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
-    <title type="html">Práctica: IC/DC con Jenkins</title>
-    <id>https://github.com/oscarlucas22/practicas/ic/dc-jenkins/</id>
-    <link href="https://github.com/oscarlucas22/practicas/ic/dc-jenkins/"/>
-    <updated>2023-11-08T11:14:13.014Z</updated>
-    <content type="html"><![CDATA[<h1 id="practica-ic-dc-con-jenkins"> Práctica: IC/DC con Jenkins</h1>
-<p><strong>El objetivo de esta práctica es el desarrollo gradual de un Pipeline que vaya realizando tareas sobre el repositorio de una aplicación.</strong></p>
-<p><strong>La aplicación con la que vamos a trabajar será tu fork de la aplicación django Polls. Como hemos visto esta aplicación que implementa el tutorial de Django tiene implementado un módulo de pruebas.</strong></p>
-<p><strong>Vamos a construir el Pipeline en varias fases:</strong></p>
-<h2 id="ejercicio-1-construccion-de-una-imagen-docker"> Ejercicio 1: Construcción de una imagen docker</h2>
-<p><strong>Partimos del pipeline que hemos desarrollado en el <a href="https://fp.josedomingo.org/iaw2223/7_ic/t3.html" target="_blank" rel="noopener noreferrer">Taller 3: Integración continua de aplicación django (Test)<i>Content not supported</i></a>, donde hemos automatizado el test de la aplicación.</strong></p>
-<p><strong>Modifica el pipeline para que después de hacer el test sobre la aplicación, genere una imagen docker. tienes que tener en cuenta que los pasos para generar la imagen lo tienes que realizar en la máquina donde está instalado Jenkins. Tendrás que añadir las siguientes acciones:</strong></p>
-<ol>
-<li>
-<p><strong>Construir la imagen con el Dockerfile que tengas en el repositorio.</strong></p>
-</li>
-<li>
-<p><strong>Subir la imagen a tu cuenta de Docker Hub.</strong></p>
-</li>
-<li>
-<p><strong>Borrar la imagen que se ha creado.</strong></p>
-</li>
-</ol>
-<p><strong>Por lo tanto tienes que estudiar el apartado <a href="https://fp.josedomingo.org/iaw2223/7_ic/jenkins/runner.html" target="_blank" rel="noopener noreferrer">Ejecución de un pipeline en varios runner<i>Content not supported</i></a> para ejecutar el pipeline en dos runner:</strong></p>
-<ul>
-<li>
-<p><strong>En el contenedor docker a partir de la imagen python:3 los pasos del taller 3.</strong></p>
-</li>
-<li>
-<p><strong>En la máquina de Jenkins los pasos de este ejercicio.</strong></p>
-</li>
-</ul>
-<p><strong>Otras consideraciones:</strong></p>
-<ul>
-<li>
-<p><strong>Cuando termine de ejecutar el pipeline te mandará un correo de notificación.</strong></p>
-</li>
-<li>
-<p><strong>El pipeline se guardará en un fichero Jenkinsfile en tu repositorio, y la configuración del pipeline hará referencia a él.</strong></p>
-</li>
-</ul>
-<hr>
-<p>Vamos a comenzar a crear un pipeline, que realice las siguientes tareas:</p>
-<ul>
-<li>
-<p>Clone el repositorio.</p>
-</li>
-<li>
-<p>Instale los requerimientos python.</p>
-</li>
-<li>
-<p>Realice los tests al programa.</p>
-</li>
-</ul>
-<p>Este pipeline se tiene que ejecutar sobre la imagen python:3. Otras consideraciones:</p>
-<ul>
-<li>Este pipeline se disparará cuando observe un cambio en el repositorio. Esta comprobación se hará cada minuto.</li>
-</ul>
-<p>Para ello creamos en Jenkins el siguiente pipeline:</p>
-<div><pre><code>pipeline {
-    agent {
-        docker { image 'python:3'
-        args '-u root:root'
-        }
-    }
-    stages {
-        stage('Clone') {
-            steps {
-                git branch:'main',url:'https://github.com/oscarlucas22/django_tutorial_docker.git'
-            }
-        }
-        stage('Install') {
-            steps {
-                sh 'pip install -r requirements.txt'
-            }
-        }
-        stage('Test')
-        {
-            steps {
-                sh 'python3 manage.py test'
-            }
-        }
-    }
-}
-</code></pre>
-</div><hr>
-<h2 id="ejercicio-2-despliegue-de-la-aplicacion"> Ejercicio 2: Despliegue de la aplicación</h2>
-<p><strong>Amplía el pipeline anterior para que tenga una última etapa donde se haga el despliegue de la imagen que se ha subido a Docker Hub en tu entorno de producción (VPS). Algunas pistas:</strong></p>
-<ul>
-<li>
-<p><strong>Busca información de cómo hacer el despliegue a un servidor remoto (ssh, buscando algún plugin con esa funcionalidad,…)</strong></p>
-</li>
-<li>
-<p><strong>Si vas a hacer conexiones por ssh, tendrás que guardar una credencial en tu Jenkins con el nombre de usuario y contraseña.</strong></p>
-</li>
-<li>
-<p><strong>Para el despliegue deberá usar el fichero docker-compose.yaml que has generado en otras prácticas.</strong></p>
-</li>
-<li>
-<p><strong>Se deberá borrar el contenedor con la versión anterior, descargar la nueva imagen y crear un nuevo contenedor.</strong></p>
-</li>
-</ul>
-<p><strong>Otras consideraciones:</strong></p>
-<ul>
-<li><strong>Cambia el disparador del pipeline. Configúralo con un webhook de github, para que cada vez que se produce un push se ejecute el pipeline. Para que el webhook pueda acceder a tu Jenkins puedes usar <a href="https://ngrok.com/" target="_blank" rel="noopener noreferrer">ngrok<i>Content not supported</i></a>.</strong></li>
-</ul>
-<hr>
-]]></content>
-    <author>
-      <name>Óscar Lucas</name>
-    </author>
-    <category term="practicas" scheme=""/>
-    <contributor>
-      <name>Óscar Lucas</name>
-    </contributor>
-    <rights>Copyright by Óscar Lucas</rights>
-  </entry>
-  <entry>
     <title type="html">Kubernetes</title>
     <id>https://github.com/oscarlucas22/practicas/kubernetes/</id>
     <link href="https://github.com/oscarlucas22/practicas/kubernetes/"/>
-    <updated>2023-11-08T11:14:13.017Z</updated>
+    <updated>2023-11-08T11:35:30.471Z</updated>
     <content type="html"><![CDATA[<h1 id="kubernetes"> Kubernetes</h1>
 <p><strong>En IAW has creado dos imágenes de dos aplicaciones: bookmedik (php) y polls (python django). Elige una de ellas y despliégala en kubernetes. Para ello vamos a hacer dos ejercicios:</strong></p>
 <p>En este <a href="./../practicas/python-docker.html">post</a> realizamos la implantación de una aplicación en Docker. En este post vamos a realizar el despliegue de la misma aplicación en Kubernetes.</p>
@@ -6482,266 +6347,10 @@ kubectl create secret generic secret-mariadb --from-literal=password=bookmedik -
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
-    <title type="html">Poblar un directorio LDAP desde un fichero CSV</title>
-    <id>https://github.com/oscarlucas22/practicas/ldap-csv/</id>
-    <link href="https://github.com/oscarlucas22/practicas/ldap-csv/"/>
-    <updated>2023-11-08T11:14:13.018Z</updated>
-    <content type="html"><![CDATA[<h1 id="poblar-un-directorio-ldap-desde-un-fichero-csv"> Poblar un directorio LDAP desde un fichero CSV</h1>
-<ul>
-<li>
-<p><strong>Crear entre todos los alumnos de la clase que vayan a hacer esta tarea un fichero CSV que incluya información personal de cada uno incluyendo los siguientes datos:</strong></p>
-<ul>
-<li>
-<p><strong>Nombre</strong></p>
-</li>
-<li>
-<p><strong>Apellidos</strong></p>
-</li>
-<li>
-<p><strong>Dirección de correo electrónico</strong></p>
-</li>
-<li>
-<p><strong>Nombre de usuario</strong></p>
-</li>
-<li>
-<p><strong>Clave pública ssh</strong></p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Añadir otro fichero con la información de las máquinas de los alumnos (solo informativo) :</strong></p>
-<ul>
-<li>
-<p><strong>Hostname</strong></p>
-</li>
-<li>
-<p><strong>IPv4</strong></p>
-</li>
-<li>
-<p><strong>clave pública ssh de la máquina</strong></p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Añadir el esquema openssh-lpk al directorio para poder incluir claves públicas ssh en un directorio LDAP.</strong></p>
-</li>
-<li>
-<p><strong>Hacer un script en bash o en python que utilice el fichero como entrada y pueble el directorio LDAP con un objeto para cada alumno utilizando los ObjectClass posixAccount e inetOrgPerson.</strong></p>
-</li>
-<li>
-<p><strong>Configurar el sistema para que sean válidos los usuarios del LDAP.</strong></p>
-</li>
-<li>
-<p><strong>Configurar el servicio ssh para que permita acceder a los usuarios del LDAP utilizando las claves públicas que hay allí, en lugar de almacenarlas en <code>.ssh/authorized_keys</code>, que sólo permita acceder a los equipos que estén en el LDAP en lugar del fichero .ssh/known_hosts y que se cree el directorio &quot;home&quot; al vuelo.</strong></p>
-</li>
-</ul>
-<hr>
-<h3 id="crear-entre-todos-los-alumnos-de-la-clase-que-vayan-a-hacer-esta-tarea-un-fichero-csv-que-incluya-informacion-personal-de-cada-uno-incluyendo-los-siguientes-datos"> Crear entre todos los alumnos de la clase que vayan a hacer esta tarea un fichero CSV que incluya información personal de cada uno incluyendo los siguientes datos:</h3>
-<p>Avanzamos con la creación del archivo en cuestión.</p>
-<div><pre><code>nano usuarios.csv
-</code></pre>
-</div><p>El fichero quedaría de la siguiente forma:</p>
-<div><pre><code>nombre,apellidos,correo,usuario,clave_pública
-</code></pre>
-</div><h3 id="anadir-el-esquema-openssh-lpk-al-directorio-para-poder-incluir-claves-publicas-ssh-en-un-directorio-ldap"> Añadir el esquema openssh-lpk al directorio para poder incluir claves públicas ssh en un directorio LDAP.</h3>
-<p>Una vez completada la creación de estos dos archivos, debemos agregar el esquema openssh-lpk. Para ello, generaremos un archivo ldif con la definición del esquema en <code>/etc/ldap/schema/</code>.</p>
-<div><pre><code>nano /etc/ldap/schema/openssh-lpk.ldif
-</code></pre>
-</div><hr>
-<div><pre><code>dn: cn=openssh-lpk,cn=schema,cn=config
-objectClass: olcSchemaConfig
-cn: openssh-lpk
-olcAttributeTypes: ( 1.3.6.1.4.1.24552.500.1.1.1.13 NAME 'sshPublicKey'
-DESC 'MANDATORY: OpenSSH Public key'
-EQUALITY octetStringMatch
-SYNTAX 1.3.6.1.4.1.1466.115.121.1.40 )
-olcObjectClasses: ( 1.3.6.1.4.1.24552.500.1.1.2.0 NAME 'ldapPublicKey' SUP top AUXILIARY
-DESC 'MANDATORY: OpenSSH LPK objectclass'
-MAY ( sshPublicKey $ uid )
-)
-</code></pre>
-</div><p>Y lo importamos con el siguiente comando:</p>
-<div><pre><code>ldapadd -Y EXTERNAL -H ldapi:/// -f openssh-lpk.ldif
-</code></pre>
-</div><h3 id="hacer-un-script-en-bash-o-en-python-que-utilice-el-fichero-como-entrada-y-pueble-el-directorio-ldap-con-un-objeto-para-cada-alumno-utilizando-los-objectclass-posixaccount-e-inetorgperson"> Hacer un script en bash o en python que utilice el fichero como entrada y pueble el directorio LDAP con un objeto para cada alumno utilizando los ObjectClass posixAccount e inetOrgPerson.</h3>
-<p>Ahora, centrémonos en el script que agregará los usuarios al directorio LDAP a partir del archivo CSV. He elegido usar Python y un módulo llamado &quot;python3-ldap&quot;. Para evitar problemas de compatibilidad con otras versiones de paquetes, es recomendable crear un entorno virtual y instalar el módulo en él. Por lo tanto, creemos el entorno virtual:</p>
-<div><pre><code>apt install python3-venv
-
-python3 -m venv ldap
-</code></pre>
-</div><p>A continuación, instalemos el módulo necesario. Hay que tener en cuenta que algunas versiones del módulo pueden presentar errores, por lo que es recomendable descargar y utilizar una versión comprobada y que funcione correctamente.</p>
-<div><pre><code>pip install python3-ldap
-
-pip install ldap3==2.6
-</code></pre>
-</div><p>Ahora vayamos al script en cuestión:</p>
-<div><pre><code>nano poblarusuarios.py 
-</code></pre>
-</div><hr>
-<div><pre><code>#!/usr/bin/env python
-
-import ldap3
-from ldap3 import Connection, ALL
-from getpass import getpass
-from sys import exit
-
-#### VARIABLES
-
-# Shell que se le asigna a los usuarios
-shell = '/bin/bash'
-
-# Ruta absoluta del directorio que contiene los directorios personales de los usuarios. Terminado en &quot;/&quot;
-home_dir = '/home/'
-
-# El valor inicial para los UID que se asignan al insertar usuarios. 
-uid_number = 5000
-
-# El GID que se le asigna a los usuarios. Si no se manda al anadir el usuario da error.
-gid = 5000
-
-#### VARIABLES
-
-# Leemos el fichero .csv de los usuarios y guardamos cada linea en una lista.
-with open('user.csv', 'r') as usuarios:
-usuarios = usuarios.readlines()
-
-
-#### Parametros para la conexion
-ldap_ip = 'ldaps://localhost:389'
-dominio_base = 'dc=olucas,dc=gonzalonazareno,dc=org'
-user_admin = 'admin' 
-contrasena = getpass('Contrasena: ')
-
-# Intenta realizar la conexion.
-conn = Connection(ldap_ip, 'cn={},{}'.format(user_admin, dominio_base),contrasena)
-
-# conn.bind() devuelve &quot;True&quot; si se ha establecido la conexion y &quot;False&quot; en caso contrario.
-
-# Si no se establece la conexion imprime por pantalla un error de conexion.
-if not conn.bind():
-print('No se ha podido conectar con ldap') 
-if conn.result['description'] == 'invalidCredentials':
-    print('Credenciales no validas.')
-# Termina el script.
-exit(0)
-
-# Recorre la lista de usuarios
-for user in usuarios:
-# Separa los valores del usuario usando como delimitador &quot;,&quot;, y asigna cada valor a la variable correspondiente.
-user = user.split(',')
-cn = user[0]
-sn = user[1]
-mail = user[2]
-uid = user[3]
-ssh = user[4]
-
-#Anade el usuario.
-conn.add(
-    'uid={},ou=Personas,{}'.format(uid, dominio_base),
-    object_class = 
-    [
-    'inetOrgPerson',
-    'posixAccount', 
-    'ldapPublicKey'
-    ],
-    attributes =
-    {
-    'cn': cn,
-    'sn': sn,
-    'mail': mail,
-    'uid': uid,
-    'uidNumber': str(uid_number),
-    'gidNumber': str(gid),
-    'homeDirectory': '{}{}'.format(home_dir,uid),
-    'loginShell': shell,
-    'sshPublicKey': str(ssh)
-    })
-
-if conn.result['description'] == 'entryAlreadyExists':
-    print('El usuario {} ya existe.'.format(uid))
-
-# Aumenta el contador para asignar un UID diferente a cada usuario (cada vez que ejecutemos el script debemos asegurarnos de ante mano que no existe dicho uid en el directorio ldap, o se solaparian los datos)
-uid_number += 1
-
-#Cierra la conexion.
-conn.unbind()
-</code></pre>
-</div><p>Y vemos si funciona con el archivo anterior:</p>
-<p><img src="./../images/ASO/ldap-csv/1.png" alt="image"></p>
-<p>Comprobamos si se han añadido los usuarios indicados:</p>
-<p><img src="./../images/ASO/ldap-csv/2.png" alt="image"></p>
-<h3 id="configurar-el-sistema-para-que-sean-validos-los-usuarios-del-ldap"> Configurar el sistema para que sean válidos los usuarios del LDAP.</h3>
-<p>Para ello, debemos modificar el archivo <code>/etc/ldap/ldap.conf</code> en el cliente y realizar los siguientes cambios:</p>
-<div><pre><code>nano /etc/ldap/ldap.conf
-
-BASE dc=olucas,dc=gonzalonazareno,dc=org
-URI ldap://localhost
-</code></pre>
-</div><p>Además, debemos ajustar la configuración del NSS (Name Service Switch) para que el sistema pueda verificar los UID y GID en el directorio LDAP.</p>
-<div><pre><code>nano /etc/nsswitch.conf
-
-passwd:         files systemd ldap
-group:          files systemd ldap
-shadow:         files ldap
-</code></pre>
-</div><p>Para que esto funcione, es necesario instalar y configurar correctamente el siguiente paquete:</p>
-<div><pre><code>apt install libnss-ldap
-</code></pre>
-</div><p>Ahora podemos iniciar sesión en la máquina con los usuarios que se encuentran en el directorio LDAP (por ejemplo, usaré el usuario &quot;impmon&quot; que creé en un ejercicio anterior).</p>
-<p><img src="./../images/ASO/ldap-csv/3.png" alt="image"></p>
-<h3 id="configurar-el-servicio-ssh-para-que-permita-acceder-a-los-usuarios-del-ldap-utilizando-las-claves-publicas-que-hay-alli-en-lugar-de-almacenarlas-en-ssh-authorized-keys-y-que-se-cree-el-directorio-home-al-vuelo"> Configurar el servicio ssh para que permita acceder a los usuarios del LDAP utilizando las claves públicas que hay allí, en lugar de almacenarlas en .ssh/authorized_keys y que se cree el directorio “home” al vuelo.</h3>
-<p>Para que al acceder con dichos usuarios se cree el directorio home del usuario, debemos ejecutar lo siguiente:</p>
-<div><pre><code>echo &quot;session    required        pam_mkhomedir.so&quot; &gt;&gt; /etc/pam.d/common-session
-</code></pre>
-</div><p>Ahora volvemos a entrar con el usuario anterior y vemos si se ha creado su directorio home:</p>
-<p><img src="./../images/ASO/ldap-csv/3.png" alt="image"></p>
-<p>Pasemos a configurar el sistema para que acepte el acceso por ssh a los usuarios que tengan sus claves públicas en el directorio de ldap.</p>
-<p>Para comenzar, debemos crear un script que busque las claves públicas registradas para el usuario especificado. Debido a ciertos parámetros de seguridad de SSH, se requiere que el script se encuentre en un directorio propiedad de root y que tenga permisos específicos. Por lo tanto, he decidido crear el script en <code>/opt</code>:</p>
-<div><pre><code>nano /opt/buscarclave.sh 
-
-#!/bin/bash
-
-ldapsearch -x -u -LLL -o ldif-wrap=no '(&amp;(objectClass=posixAccount)(uid='&quot;$1&quot;'))' 'sshPublicKey' | sed -n 's/^[ \t]*sshPublicKey::[ \t]*\(.*\)/\1/p' | base64 -d
-</code></pre>
-</div><p>Y cambiamos los permisos del script:</p>
-<div><pre><code>chmod 755 /opt/buscarclave.sh 
-</code></pre>
-</div><p>Podemos ver que el script encuentra las claves de forma adecuada:</p>
-<p><img src="./../images/ASO/ldap-csv/4.png" alt="image"></p>
-<p>Ahora añadimos las siguientes líneas al fichero /etc/ssh/sshd_config:</p>
-<div><pre><code>nano /etc/ssh/sshd_config
-
-AuthorizedKeysCommand /opt/buscarclave.sh
-AuthorizedKeysCommandUser nobody
-</code></pre>
-</div><p>Y reiniciamos el servicio de ssh para aplicar los cambios:</p>
-<div><pre><code>systemctl restart sshd
-</code></pre>
-</div><p>Verifiquemos si es posible acceder a través de SSH usando los usuarios de LDAP que tengan sus claves en el directorio:</p>
-<p><em>Comprobacion de mi usuario</em></p>
-<p><img src="./../images/ASO/ldap-csv/5.png" alt="image"></p>
-<p><em>Comprobación de usuario de Angel</em></p>
-<p><img src="./../images/ASO/ldap-csv/6.png" alt="image"></p>
-<p><img src="./../images/ASO/ldap-csv/7.png" alt="image"></p>
-<p><em>Comprobación del usuario de Alfonso</em></p>
-<p><img src="./../images/ASO/ldap-csv/8.png" alt="image"></p>
-<p><img src="./../images/ASO/ldap-csv/9.png" alt="image"></p>
-<p>¡Gracias!</p>
-]]></content>
-    <author>
-      <name>Óscar Lucas</name>
-    </author>
-    <category term="practicas" scheme=""/>
-    <contributor>
-      <name>Óscar Lucas</name>
-    </contributor>
-    <rights>Copyright by Óscar Lucas</rights>
-  </entry>
-  <entry>
     <title type="html">Instalación y configuración inicial de OpenLDAP</title>
     <id>https://github.com/oscarlucas22/practicas/ldap/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldap/"/>
-    <updated>2023-11-08T11:14:13.021Z</updated>
+    <updated>2023-11-08T11:35:30.474Z</updated>
     <content type="html"><![CDATA[<h1 id="instalacion-y-configuracion-inicial-de-openldap"> Instalación y configuración inicial de OpenLDAP</h1>
 <p><strong>Realiza la instalación y configuración básica de OpenLDAP en alfa, utilizando como base el nombre DNS asignado. Deberás crear un usuario llamado prueba y configurar una máquina cliente basada en Debian y Rocky para que pueda validarse en servidor ldap configurado anteriormente con el usuario prueba.</strong></p>
 <p><font color="#FFFF00"><strong>Paso 1</strong></font> Configuración de OpenLDAP en el servidor: Instalación y configuración de OpenLDAP.Instalación y configuración de OpenLDAP en el Servidor</p>
@@ -7098,10 +6707,266 @@ systemctl start mnt-nfs.mount
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
+    <title type="html">Poblar un directorio LDAP desde un fichero CSV</title>
+    <id>https://github.com/oscarlucas22/practicas/ldap-csv/</id>
+    <link href="https://github.com/oscarlucas22/practicas/ldap-csv/"/>
+    <updated>2023-11-08T11:35:30.475Z</updated>
+    <content type="html"><![CDATA[<h1 id="poblar-un-directorio-ldap-desde-un-fichero-csv"> Poblar un directorio LDAP desde un fichero CSV</h1>
+<ul>
+<li>
+<p><strong>Crear entre todos los alumnos de la clase que vayan a hacer esta tarea un fichero CSV que incluya información personal de cada uno incluyendo los siguientes datos:</strong></p>
+<ul>
+<li>
+<p><strong>Nombre</strong></p>
+</li>
+<li>
+<p><strong>Apellidos</strong></p>
+</li>
+<li>
+<p><strong>Dirección de correo electrónico</strong></p>
+</li>
+<li>
+<p><strong>Nombre de usuario</strong></p>
+</li>
+<li>
+<p><strong>Clave pública ssh</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Añadir otro fichero con la información de las máquinas de los alumnos (solo informativo) :</strong></p>
+<ul>
+<li>
+<p><strong>Hostname</strong></p>
+</li>
+<li>
+<p><strong>IPv4</strong></p>
+</li>
+<li>
+<p><strong>clave pública ssh de la máquina</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Añadir el esquema openssh-lpk al directorio para poder incluir claves públicas ssh en un directorio LDAP.</strong></p>
+</li>
+<li>
+<p><strong>Hacer un script en bash o en python que utilice el fichero como entrada y pueble el directorio LDAP con un objeto para cada alumno utilizando los ObjectClass posixAccount e inetOrgPerson.</strong></p>
+</li>
+<li>
+<p><strong>Configurar el sistema para que sean válidos los usuarios del LDAP.</strong></p>
+</li>
+<li>
+<p><strong>Configurar el servicio ssh para que permita acceder a los usuarios del LDAP utilizando las claves públicas que hay allí, en lugar de almacenarlas en <code>.ssh/authorized_keys</code>, que sólo permita acceder a los equipos que estén en el LDAP en lugar del fichero .ssh/known_hosts y que se cree el directorio &quot;home&quot; al vuelo.</strong></p>
+</li>
+</ul>
+<hr>
+<h3 id="crear-entre-todos-los-alumnos-de-la-clase-que-vayan-a-hacer-esta-tarea-un-fichero-csv-que-incluya-informacion-personal-de-cada-uno-incluyendo-los-siguientes-datos"> Crear entre todos los alumnos de la clase que vayan a hacer esta tarea un fichero CSV que incluya información personal de cada uno incluyendo los siguientes datos:</h3>
+<p>Avanzamos con la creación del archivo en cuestión.</p>
+<div><pre><code>nano usuarios.csv
+</code></pre>
+</div><p>El fichero quedaría de la siguiente forma:</p>
+<div><pre><code>nombre,apellidos,correo,usuario,clave_pública
+</code></pre>
+</div><h3 id="anadir-el-esquema-openssh-lpk-al-directorio-para-poder-incluir-claves-publicas-ssh-en-un-directorio-ldap"> Añadir el esquema openssh-lpk al directorio para poder incluir claves públicas ssh en un directorio LDAP.</h3>
+<p>Una vez completada la creación de estos dos archivos, debemos agregar el esquema openssh-lpk. Para ello, generaremos un archivo ldif con la definición del esquema en <code>/etc/ldap/schema/</code>.</p>
+<div><pre><code>nano /etc/ldap/schema/openssh-lpk.ldif
+</code></pre>
+</div><hr>
+<div><pre><code>dn: cn=openssh-lpk,cn=schema,cn=config
+objectClass: olcSchemaConfig
+cn: openssh-lpk
+olcAttributeTypes: ( 1.3.6.1.4.1.24552.500.1.1.1.13 NAME 'sshPublicKey'
+DESC 'MANDATORY: OpenSSH Public key'
+EQUALITY octetStringMatch
+SYNTAX 1.3.6.1.4.1.1466.115.121.1.40 )
+olcObjectClasses: ( 1.3.6.1.4.1.24552.500.1.1.2.0 NAME 'ldapPublicKey' SUP top AUXILIARY
+DESC 'MANDATORY: OpenSSH LPK objectclass'
+MAY ( sshPublicKey $ uid )
+)
+</code></pre>
+</div><p>Y lo importamos con el siguiente comando:</p>
+<div><pre><code>ldapadd -Y EXTERNAL -H ldapi:/// -f openssh-lpk.ldif
+</code></pre>
+</div><h3 id="hacer-un-script-en-bash-o-en-python-que-utilice-el-fichero-como-entrada-y-pueble-el-directorio-ldap-con-un-objeto-para-cada-alumno-utilizando-los-objectclass-posixaccount-e-inetorgperson"> Hacer un script en bash o en python que utilice el fichero como entrada y pueble el directorio LDAP con un objeto para cada alumno utilizando los ObjectClass posixAccount e inetOrgPerson.</h3>
+<p>Ahora, centrémonos en el script que agregará los usuarios al directorio LDAP a partir del archivo CSV. He elegido usar Python y un módulo llamado &quot;python3-ldap&quot;. Para evitar problemas de compatibilidad con otras versiones de paquetes, es recomendable crear un entorno virtual y instalar el módulo en él. Por lo tanto, creemos el entorno virtual:</p>
+<div><pre><code>apt install python3-venv
+
+python3 -m venv ldap
+</code></pre>
+</div><p>A continuación, instalemos el módulo necesario. Hay que tener en cuenta que algunas versiones del módulo pueden presentar errores, por lo que es recomendable descargar y utilizar una versión comprobada y que funcione correctamente.</p>
+<div><pre><code>pip install python3-ldap
+
+pip install ldap3==2.6
+</code></pre>
+</div><p>Ahora vayamos al script en cuestión:</p>
+<div><pre><code>nano poblarusuarios.py 
+</code></pre>
+</div><hr>
+<div><pre><code>#!/usr/bin/env python
+
+import ldap3
+from ldap3 import Connection, ALL
+from getpass import getpass
+from sys import exit
+
+#### VARIABLES
+
+# Shell que se le asigna a los usuarios
+shell = '/bin/bash'
+
+# Ruta absoluta del directorio que contiene los directorios personales de los usuarios. Terminado en &quot;/&quot;
+home_dir = '/home/'
+
+# El valor inicial para los UID que se asignan al insertar usuarios. 
+uid_number = 5000
+
+# El GID que se le asigna a los usuarios. Si no se manda al anadir el usuario da error.
+gid = 5000
+
+#### VARIABLES
+
+# Leemos el fichero .csv de los usuarios y guardamos cada linea en una lista.
+with open('user.csv', 'r') as usuarios:
+usuarios = usuarios.readlines()
+
+
+#### Parametros para la conexion
+ldap_ip = 'ldaps://localhost:389'
+dominio_base = 'dc=olucas,dc=gonzalonazareno,dc=org'
+user_admin = 'admin' 
+contrasena = getpass('Contrasena: ')
+
+# Intenta realizar la conexion.
+conn = Connection(ldap_ip, 'cn={},{}'.format(user_admin, dominio_base),contrasena)
+
+# conn.bind() devuelve &quot;True&quot; si se ha establecido la conexion y &quot;False&quot; en caso contrario.
+
+# Si no se establece la conexion imprime por pantalla un error de conexion.
+if not conn.bind():
+print('No se ha podido conectar con ldap') 
+if conn.result['description'] == 'invalidCredentials':
+    print('Credenciales no validas.')
+# Termina el script.
+exit(0)
+
+# Recorre la lista de usuarios
+for user in usuarios:
+# Separa los valores del usuario usando como delimitador &quot;,&quot;, y asigna cada valor a la variable correspondiente.
+user = user.split(',')
+cn = user[0]
+sn = user[1]
+mail = user[2]
+uid = user[3]
+ssh = user[4]
+
+#Anade el usuario.
+conn.add(
+    'uid={},ou=Personas,{}'.format(uid, dominio_base),
+    object_class = 
+    [
+    'inetOrgPerson',
+    'posixAccount', 
+    'ldapPublicKey'
+    ],
+    attributes =
+    {
+    'cn': cn,
+    'sn': sn,
+    'mail': mail,
+    'uid': uid,
+    'uidNumber': str(uid_number),
+    'gidNumber': str(gid),
+    'homeDirectory': '{}{}'.format(home_dir,uid),
+    'loginShell': shell,
+    'sshPublicKey': str(ssh)
+    })
+
+if conn.result['description'] == 'entryAlreadyExists':
+    print('El usuario {} ya existe.'.format(uid))
+
+# Aumenta el contador para asignar un UID diferente a cada usuario (cada vez que ejecutemos el script debemos asegurarnos de ante mano que no existe dicho uid en el directorio ldap, o se solaparian los datos)
+uid_number += 1
+
+#Cierra la conexion.
+conn.unbind()
+</code></pre>
+</div><p>Y vemos si funciona con el archivo anterior:</p>
+<p><img src="./../images/ASO/ldap-csv/1.png" alt="image"></p>
+<p>Comprobamos si se han añadido los usuarios indicados:</p>
+<p><img src="./../images/ASO/ldap-csv/2.png" alt="image"></p>
+<h3 id="configurar-el-sistema-para-que-sean-validos-los-usuarios-del-ldap"> Configurar el sistema para que sean válidos los usuarios del LDAP.</h3>
+<p>Para ello, debemos modificar el archivo <code>/etc/ldap/ldap.conf</code> en el cliente y realizar los siguientes cambios:</p>
+<div><pre><code>nano /etc/ldap/ldap.conf
+
+BASE dc=olucas,dc=gonzalonazareno,dc=org
+URI ldap://localhost
+</code></pre>
+</div><p>Además, debemos ajustar la configuración del NSS (Name Service Switch) para que el sistema pueda verificar los UID y GID en el directorio LDAP.</p>
+<div><pre><code>nano /etc/nsswitch.conf
+
+passwd:         files systemd ldap
+group:          files systemd ldap
+shadow:         files ldap
+</code></pre>
+</div><p>Para que esto funcione, es necesario instalar y configurar correctamente el siguiente paquete:</p>
+<div><pre><code>apt install libnss-ldap
+</code></pre>
+</div><p>Ahora podemos iniciar sesión en la máquina con los usuarios que se encuentran en el directorio LDAP (por ejemplo, usaré el usuario &quot;impmon&quot; que creé en un ejercicio anterior).</p>
+<p><img src="./../images/ASO/ldap-csv/3.png" alt="image"></p>
+<h3 id="configurar-el-servicio-ssh-para-que-permita-acceder-a-los-usuarios-del-ldap-utilizando-las-claves-publicas-que-hay-alli-en-lugar-de-almacenarlas-en-ssh-authorized-keys-y-que-se-cree-el-directorio-home-al-vuelo"> Configurar el servicio ssh para que permita acceder a los usuarios del LDAP utilizando las claves públicas que hay allí, en lugar de almacenarlas en .ssh/authorized_keys y que se cree el directorio “home” al vuelo.</h3>
+<p>Para que al acceder con dichos usuarios se cree el directorio home del usuario, debemos ejecutar lo siguiente:</p>
+<div><pre><code>echo &quot;session    required        pam_mkhomedir.so&quot; &gt;&gt; /etc/pam.d/common-session
+</code></pre>
+</div><p>Ahora volvemos a entrar con el usuario anterior y vemos si se ha creado su directorio home:</p>
+<p><img src="./../images/ASO/ldap-csv/3.png" alt="image"></p>
+<p>Pasemos a configurar el sistema para que acepte el acceso por ssh a los usuarios que tengan sus claves públicas en el directorio de ldap.</p>
+<p>Para comenzar, debemos crear un script que busque las claves públicas registradas para el usuario especificado. Debido a ciertos parámetros de seguridad de SSH, se requiere que el script se encuentre en un directorio propiedad de root y que tenga permisos específicos. Por lo tanto, he decidido crear el script en <code>/opt</code>:</p>
+<div><pre><code>nano /opt/buscarclave.sh 
+
+#!/bin/bash
+
+ldapsearch -x -u -LLL -o ldif-wrap=no '(&amp;(objectClass=posixAccount)(uid='&quot;$1&quot;'))' 'sshPublicKey' | sed -n 's/^[ \t]*sshPublicKey::[ \t]*\(.*\)/\1/p' | base64 -d
+</code></pre>
+</div><p>Y cambiamos los permisos del script:</p>
+<div><pre><code>chmod 755 /opt/buscarclave.sh 
+</code></pre>
+</div><p>Podemos ver que el script encuentra las claves de forma adecuada:</p>
+<p><img src="./../images/ASO/ldap-csv/4.png" alt="image"></p>
+<p>Ahora añadimos las siguientes líneas al fichero /etc/ssh/sshd_config:</p>
+<div><pre><code>nano /etc/ssh/sshd_config
+
+AuthorizedKeysCommand /opt/buscarclave.sh
+AuthorizedKeysCommandUser nobody
+</code></pre>
+</div><p>Y reiniciamos el servicio de ssh para aplicar los cambios:</p>
+<div><pre><code>systemctl restart sshd
+</code></pre>
+</div><p>Verifiquemos si es posible acceder a través de SSH usando los usuarios de LDAP que tengan sus claves en el directorio:</p>
+<p><em>Comprobacion de mi usuario</em></p>
+<p><img src="./../images/ASO/ldap-csv/5.png" alt="image"></p>
+<p><em>Comprobación de usuario de Angel</em></p>
+<p><img src="./../images/ASO/ldap-csv/6.png" alt="image"></p>
+<p><img src="./../images/ASO/ldap-csv/7.png" alt="image"></p>
+<p><em>Comprobación del usuario de Alfonso</em></p>
+<p><img src="./../images/ASO/ldap-csv/8.png" alt="image"></p>
+<p><img src="./../images/ASO/ldap-csv/9.png" alt="image"></p>
+<p>¡Gracias!</p>
+]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
+    <category term="practicas" scheme=""/>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
     <title type="html">LDAPs</title>
     <id>https://github.com/oscarlucas22/practicas/ldaps/</id>
     <link href="https://github.com/oscarlucas22/practicas/ldaps/"/>
-    <updated>2023-11-08T11:14:13.022Z</updated>
+    <updated>2023-11-08T11:35:30.478Z</updated>
     <content type="html"><![CDATA[<h1 id="ldaps"> LDAPs</h1>
 <p><strong>Configura el servidor LDAP de alfa para que utilice el protocolo ldaps:// a la vez que el ldap:// utilizando el certificado x509 de la práctica de https o solicitando el correspondiente a través de gestiona. Realiza las modificaciones adecuadas en los clientes ldap de alfa para que todas las consultas se realicen por defecto utilizando ldaps://</strong></p>
 <p>Para empezar, crearemos el directorio que usaremos para almacenar las claves SSL y le otorgaremos los permisos adecuados. Luego, procederemos a generar la clave RSA.</p>
@@ -7258,10 +7123,127 @@ systemctl enable home-nfs.mount
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
+    <title type="html">Práctica: IC/DC con Jenkins</title>
+    <id>https://github.com/oscarlucas22/practicas/ic/dc-jenkins/</id>
+    <link href="https://github.com/oscarlucas22/practicas/ic/dc-jenkins/"/>
+    <updated>2023-11-08T11:35:30.479Z</updated>
+    <content type="html"><![CDATA[<h1 id="practica-ic-dc-con-jenkins"> Práctica: IC/DC con Jenkins</h1>
+<p><strong>El objetivo de esta práctica es el desarrollo gradual de un Pipeline que vaya realizando tareas sobre el repositorio de una aplicación.</strong></p>
+<p><strong>La aplicación con la que vamos a trabajar será tu fork de la aplicación django Polls. Como hemos visto esta aplicación que implementa el tutorial de Django tiene implementado un módulo de pruebas.</strong></p>
+<p><strong>Vamos a construir el Pipeline en varias fases:</strong></p>
+<h2 id="ejercicio-1-construccion-de-una-imagen-docker"> Ejercicio 1: Construcción de una imagen docker</h2>
+<p><strong>Partimos del pipeline que hemos desarrollado en el <a href="https://fp.josedomingo.org/iaw2223/7_ic/t3.html" target="_blank" rel="noopener noreferrer">Taller 3: Integración continua de aplicación django (Test)<i>Content not supported</i></a>, donde hemos automatizado el test de la aplicación.</strong></p>
+<p><strong>Modifica el pipeline para que después de hacer el test sobre la aplicación, genere una imagen docker. tienes que tener en cuenta que los pasos para generar la imagen lo tienes que realizar en la máquina donde está instalado Jenkins. Tendrás que añadir las siguientes acciones:</strong></p>
+<ol>
+<li>
+<p><strong>Construir la imagen con el Dockerfile que tengas en el repositorio.</strong></p>
+</li>
+<li>
+<p><strong>Subir la imagen a tu cuenta de Docker Hub.</strong></p>
+</li>
+<li>
+<p><strong>Borrar la imagen que se ha creado.</strong></p>
+</li>
+</ol>
+<p><strong>Por lo tanto tienes que estudiar el apartado <a href="https://fp.josedomingo.org/iaw2223/7_ic/jenkins/runner.html" target="_blank" rel="noopener noreferrer">Ejecución de un pipeline en varios runner<i>Content not supported</i></a> para ejecutar el pipeline en dos runner:</strong></p>
+<ul>
+<li>
+<p><strong>En el contenedor docker a partir de la imagen python:3 los pasos del taller 3.</strong></p>
+</li>
+<li>
+<p><strong>En la máquina de Jenkins los pasos de este ejercicio.</strong></p>
+</li>
+</ul>
+<p><strong>Otras consideraciones:</strong></p>
+<ul>
+<li>
+<p><strong>Cuando termine de ejecutar el pipeline te mandará un correo de notificación.</strong></p>
+</li>
+<li>
+<p><strong>El pipeline se guardará en un fichero Jenkinsfile en tu repositorio, y la configuración del pipeline hará referencia a él.</strong></p>
+</li>
+</ul>
+<hr>
+<p>Vamos a comenzar a crear un pipeline, que realice las siguientes tareas:</p>
+<ul>
+<li>
+<p>Clone el repositorio.</p>
+</li>
+<li>
+<p>Instale los requerimientos python.</p>
+</li>
+<li>
+<p>Realice los tests al programa.</p>
+</li>
+</ul>
+<p>Este pipeline se tiene que ejecutar sobre la imagen python:3. Otras consideraciones:</p>
+<ul>
+<li>Este pipeline se disparará cuando observe un cambio en el repositorio. Esta comprobación se hará cada minuto.</li>
+</ul>
+<p>Para ello creamos en Jenkins el siguiente pipeline:</p>
+<div><pre><code>pipeline {
+    agent {
+        docker { image 'python:3'
+        args '-u root:root'
+        }
+    }
+    stages {
+        stage('Clone') {
+            steps {
+                git branch:'main',url:'https://github.com/oscarlucas22/django_tutorial_docker.git'
+            }
+        }
+        stage('Install') {
+            steps {
+                sh 'pip install -r requirements.txt'
+            }
+        }
+        stage('Test')
+        {
+            steps {
+                sh 'python3 manage.py test'
+            }
+        }
+    }
+}
+</code></pre>
+</div><hr>
+<h2 id="ejercicio-2-despliegue-de-la-aplicacion"> Ejercicio 2: Despliegue de la aplicación</h2>
+<p><strong>Amplía el pipeline anterior para que tenga una última etapa donde se haga el despliegue de la imagen que se ha subido a Docker Hub en tu entorno de producción (VPS). Algunas pistas:</strong></p>
+<ul>
+<li>
+<p><strong>Busca información de cómo hacer el despliegue a un servidor remoto (ssh, buscando algún plugin con esa funcionalidad,…)</strong></p>
+</li>
+<li>
+<p><strong>Si vas a hacer conexiones por ssh, tendrás que guardar una credencial en tu Jenkins con el nombre de usuario y contraseña.</strong></p>
+</li>
+<li>
+<p><strong>Para el despliegue deberá usar el fichero docker-compose.yaml que has generado en otras prácticas.</strong></p>
+</li>
+<li>
+<p><strong>Se deberá borrar el contenedor con la versión anterior, descargar la nueva imagen y crear un nuevo contenedor.</strong></p>
+</li>
+</ul>
+<p><strong>Otras consideraciones:</strong></p>
+<ul>
+<li><strong>Cambia el disparador del pipeline. Configúralo con un webhook de github, para que cada vez que se produce un push se ejecute el pipeline. Para que el webhook pueda acceder a tu Jenkins puedes usar <a href="https://ngrok.com/" target="_blank" rel="noopener noreferrer">ngrok<i>Content not supported</i></a>.</strong></li>
+</ul>
+<hr>
+]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
+    <category term="practicas" scheme=""/>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
     <title type="html">Movimiento de datos</title>
     <id>https://github.com/oscarlucas22/practicas/movdatos/</id>
     <link href="https://github.com/oscarlucas22/practicas/movdatos/"/>
-    <updated>2023-11-08T11:14:13.025Z</updated>
+    <updated>2023-11-08T11:35:30.484Z</updated>
     <content type="html"><![CDATA[<h1 id="movimiento-de-datos"> Movimiento de datos</h1>
 <h3 id="_1-realiza-una-exportacion-del-esquema-de-scott-usando-oracle-data-pump-con-las-siguientes-condiciones"> 1. Realiza una exportación del esquema de SCOTT usando Oracle Data Pump con las siguientes condiciones:</h3>
 <ul>
@@ -7554,10 +7536,212 @@ sqlldr scott2/tiger control=/home/oracle/control/salgrade.ctl log=/home/oracle/l
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
+    <title type="html">Práctica: Implantación de aplicaciones web Python en docker</title>
+    <id>https://github.com/oscarlucas22/practicas/python-docker/</id>
+    <link href="https://github.com/oscarlucas22/practicas/python-docker/"/>
+    <updated>2023-11-08T11:35:30.487Z</updated>
+    <content type="html"><![CDATA[<h1 id="practica-implantacion-de-aplicaciones-web-python-en-docker"> Práctica: Implantación de aplicaciones web Python en docker</h1>
+<p><strong>Queremos desplegar en docker la aplicación escrita en python django: tutorial de django, que desplegamos en la tarea Despliegue de aplicaciones python.</strong></p>
+<p><strong>Tienes que tener en cuenta los siguientes aspectos:</strong></p>
+<ul>
+<li>
+<p><strong>La aplicación debe guardar los datos en una base de datos mariadb.</strong></p>
+</li>
+<li>
+<p><strong>La aplicación se podrá configurar para indicar los parámetros de conexión a la base de datos: usuario, contraseña, host y base de datos.</strong></p>
+</li>
+<li>
+<p><strong>La aplicación deberá tener creado un usuario administrador para el acceso.</strong></p>
+</li>
+</ul>
+<hr>
+<h2 id="entorno-de-desarrollo"> Entorno de desarrollo</h2>
+<p>Procederemos a establecer un ambiente de desarrollo que nos permitirá llevar a cabo todas las pruebas requeridas antes de desplegar nuestra aplicación en producción. De esta manera, podremos asegurarnos de que se encuentre en óptimas condiciones antes de su lanzamiento oficial.</p>
+<p>Además, generaremos dos contenedores que se conectarán en la misma red. Una vez que hayamos verificado el correcto funcionamiento de la aplicación, avanzaremos en la creación del archivo docker-compose para implementarla en producción.</p>
+<h3 id="creacion-de-la-red"> Creación de la red</h3>
+<p>Para crear la red, ejecutamos el siguiente comando:</p>
+<div><pre><code>docker network create django-network
+</code></pre>
+</div><h3 id="creacion-del-contenedor-de-la-base-de-datos"> Creación del contenedor de la base de datos</h3>
+<p>Creamos el contenedor de mariadb con las siguientes variables</p>
+<div><pre><code>docker run -d --name mariadb -v vol-polls:/var/lib/mysql --network django-network -e MARIADB_ROOT_PASSWORD=admin -e MARIADB_USER=django -e MARIADB_PASSWORD=admin -e MARIADB_DATABASE=django mariadb
+</code></pre>
+</div><p>Realizamos una modificación al archivo <code>settings.py</code> para que pueda leer las variables de entorno. Para ello, agregamos o actualizamos la siguiente información:</p>
+<div><pre><code>import os
+</code></pre>
+</div><hr>
+<div><pre><code>ALLOWED_HOSTS = [os.environ.get(&quot;ALLOWED_HOSTS&quot;)]
+</code></pre>
+</div><hr>
+<div><pre><code>DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': os.environ.get(&quot;DB&quot;),
+        'USER': os.environ.get('USER'),
+        'PASSWORD': os.environ.get(&quot;PASSWD&quot;),
+        'HOST': os.environ.get('HOST'),
+        'PORT': '3306',
+    }
+}
+</code></pre>
+</div><hr>
+<div><pre><code>STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = '/static/'
+
+CSRF_TRUSTED_ORIGINS = ['http://*.olucass.com','http://*.127.0.0.1','https://*.olucass.com','https://*.127.0.0.1']
+</code></pre>
+</div><p>Creamos el Dockerfile a partir de la imagen de python:</p>
+<div><pre><code>nano Dockerfile
+</code></pre>
+</div><hr>
+<div><pre><code>FROM python:3
+WORKDIR /usr/src/app
+MAINTAINER oscarlucas 'oscarlucasleo124@gmail.com'
+RUN apt-get install git &amp;&amp; pip install --root-user-action=ignore --upgrade pip &amp;&amp; pip install --root-user-action=ignore django mysqlclient
+RUN git clone https://github.com/oscarlucas22/django_tutorial_docker /usr/src/app &amp;&amp; mkdir static
+ADD ./script.sh /usr/src/app/
+RUN chmod +x /usr/src/app/script.sh
+ENV ALLOWED_HOSTS=*
+ENV HOST=mariadb
+ENV USER=django
+ENV PASSWD=django
+ENV DB=django
+ENV DJANGO_SUPERUSER_PASSWORD=admin
+ENV DJANGO_SUPERUSER_USERNAME=admin
+ENV DJANGO_SUPERUSER_EMAIL=admin@example.org
+ENTRYPOINT [&quot;/usr/src/app/script.sh&quot;]
+</code></pre>
+</div><p>Al final del Dockerfile hacemos referencia a un script. Dicho script es el siguiente:</p>
+<div><pre><code>nano script.sh
+</code></pre>
+</div><hr>
+<div><pre><code>#! /bin/sh
+
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py createsuperuser --noinput
+python3 manage.py collectstatic --noinput
+python3 manage.py runserver 0.0.0.0:8006
+</code></pre>
+</div><p>Creamos la imagen de Docker:</p>
+<div><pre><code>docker build -t oscarlucas/django:v1 .
+</code></pre>
+</div><p>Antes de crear el archivo docker-compose para implementar la imagen, realizamos una prueba de ésta mediante la creación de un contenedor adicional en la misma red que el contenedor de mariadb:</p>
+<div><pre><code>docker run -d --name polls --network django-network -p 8080:8006 oscarlucas/django:v1
+</code></pre>
+</div><p>Después de comprobar que todo funciona correctamente en la imagen anterior, procedemos a crear el archivo docker-compose que iniciará los dos contenedores previamente generados.</p>
+<div><pre><code>nano docker-compose.yml
+</code></pre>
+</div><hr>
+<div><pre><code>version: '3.1'
+services:
+  django-tutorial:
+    container_name: django-tutorial
+    image: oscarlucas/django:v1
+    restart: always
+    environment:
+      ALLOWED_HOSTS: &quot;*&quot;
+      HOST: bd_mariadb_django
+      USER: django
+      PASSWD: django
+      DB: django
+      DJANGO_SUPERUSER_PASSWORD: admin
+      DJANGO_SUPERUSER_USERNAME: admin
+      DJANGO_SUPERUSER_EMAIL: admin@admin.org
+    ports:
+      - 8084:8006
+    depends_on:
+      - db_django
+  db_django:
+    container_name: bd_mariadb_django
+    image: mariadb
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: django
+      MARIADB_USER: django
+      MARIADB_PASSWORD: django
+    volumes:
+      - mariadb_data_django:/var/lib/mysql
+volumes:
+    mariadb_data_django:
+</code></pre>
+</div><p>Intentemos ejecutar el entorno de desarrollo mediante el uso del archivo docker-compose:</p>
+<div><pre><code>docker-compose up -d
+</code></pre>
+</div><p><img src="./../images/IAW/php-docker/1.png" alt="image"></p>
+<p>Tratamos de acceder al panel de administración utilizando las credenciales que establecimos en el archivo docker-compose:</p>
+<p><img src="./../images/IAW/php-docker/2.png" alt="image"></p>
+<h2 id="entorno-de-produccion"> Entorno de producción</h2>
+<p>Como podemos observar, todo parece estar funcionando correctamente. Ahora nos dirigimos al entorno de producción para ejecutar el archivo docker-compose correspondiente:</p>
+<div><pre><code>docker-compose up -d
+</code></pre>
+</div><p>Vemos que se han creado ambos contenedores:</p>
+<p><img src="./../images/IAW/php-docker/3.png" alt="image"></p>
+<p>Ahora debemos crear un nuevo registro CNAME en nuestro servidor DNS:</p>
+<p><img src="./../images/IAW/php-docker/4.png" alt="image"></p>
+<p>Una vez completado este paso, estaremos listos para solicitar los certificados de &quot;Let's Encrypt&quot; correspondientes al nuevo dominio:</p>
+<div><pre><code>certbot certonly --standalone -d django.olucass.com
+</code></pre>
+</div><p>Una vez generados, solo tenemos que crear el proxy en nginx para que nos permita acceder al contenedor:</p>
+<div><pre><code>nano /etc/nginx/sites-available/django.olucass.com
+</code></pre>
+</div><hr>
+<div><pre><code>server {
+        listen 80;
+        listen [::]:80;
+
+        server_name django.olucass.com;
+
+        return 301 https://$host$request_uri;
+}
+
+server {
+        listen 443 ssl http2;
+        listen [::]:443 ssl http2;
+
+        ssl    on;
+        ssl_certificate /etc/letsencrypt/live/django.olucass.com/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/django.olucass.com/privkey.pem;
+
+        index index.html index.php index.htm index.nginx-debian.html;
+
+        server_name django.olucass.com;
+
+        location / {
+                proxy_pass http://localhost:8084;
+                include proxy_params;
+        }
+}
+</code></pre>
+</div><p>Generamos un enlace simbólico para que nginx pueda cargar la configuración y procedemos a reiniciar el servicio correspondiente:</p>
+<div><pre><code>ln -s /etc/nginx/sites-available/django.olucass.com /etc/nginx/sites-enabled/
+</code></pre>
+</div><hr>
+<div><pre><code>systemctl restart nginx
+</code></pre>
+</div><p>Si accedemos desde nuestro navegador a la dirección <a href="https://django.olucass.com" target="_blank" rel="noopener noreferrer">django.olucass.com<i>Content not supported</i></a> podemos ver que accedemos a la aplicación.</p>
+<p><img src="./../images/IAW/php-docker/5.png" alt="image"></p>
+<p>Y que podemos acceder a la zona de administración.</p>
+<p><img src="./../images/IAW/php-docker/6.png" alt="image"></p>
+<p><img src="./../images/IAW/php-docker/7.png" alt="image"></p>
+<p><img src="./../images/IAW/php-docker/8.png" alt="image"></p>
+<p><img src="./../images/IAW/php-docker/9.png" alt="image"></p>
+]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
+    <category term="practicas" scheme=""/>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
     <title type="html">Implantación de aplicaciones web PHP en docker</title>
     <id>https://github.com/oscarlucas22/practicas/phpdocker/</id>
     <link href="https://github.com/oscarlucas22/practicas/phpdocker/"/>
-    <updated>2023-11-08T11:14:13.027Z</updated>
+    <updated>2023-11-08T11:35:30.490Z</updated>
     <content type="html"><![CDATA[<h1 id="implantacion-de-aplicaciones-web-php-en-docker"> Implantación de aplicaciones web PHP en docker</h1>
 <p><strong>Imaginemos que el equipo de desarrollo de nuestra empresa ha desarrollado una aplicación PHP que se llama <a href="https://github.com/evilnapsis/bookmedik" target="_blank" rel="noopener noreferrer">BookMedik<i>Content not supported</i></a>.</strong></p>
 <p><strong>Queremos crear una imagen Docker para implantar dicha aplicación.</strong></p>
@@ -8074,10 +8258,26 @@ volumes:
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
+    <title type="html">Proyecto Integrado final del curso</title>
+    <id>https://github.com/oscarlucas22/proyectos/PI/</id>
+    <link href="https://github.com/oscarlucas22/proyectos/PI/"/>
+    <updated>2023-11-08T11:35:30.490Z</updated>
+    <content type="html"><![CDATA[<h1 id="proyecto-integrado-final-del-curso"> Proyecto Integrado final del curso</h1>
+]]></content>
+    <author>
+      <name>Óscar Lucas</name>
+    </author>
+    <category term="proyectos" scheme=""/>
+    <contributor>
+      <name>Óscar Lucas</name>
+    </contributor>
+    <rights>Copyright by Óscar Lucas</rights>
+  </entry>
+  <entry>
     <title type="html">Sistema de copias de seguridad</title>
     <id>https://github.com/oscarlucas22/practicas/sistemas-cop-seg/</id>
     <link href="https://github.com/oscarlucas22/practicas/sistemas-cop-seg/"/>
-    <updated>2023-11-08T11:14:13.028Z</updated>
+    <updated>2023-11-08T11:35:30.493Z</updated>
     <content type="html"><![CDATA[<h1 id="sistema-de-copias-de-seguridad"> Sistema de copias de seguridad</h1>
 <h2 id="descripcion"> Descripción</h2>
 <p><strong>Implementar un sistema de copias de seguridad para las instancias del cloud, teniendo en cuenta las siguientes características:</strong></p>
@@ -8977,212 +9177,10 @@ firewall-cmd --reload
     <rights>Copyright by Óscar Lucas</rights>
   </entry>
   <entry>
-    <title type="html">Práctica: Implantación de aplicaciones web Python en docker</title>
-    <id>https://github.com/oscarlucas22/practicas/python-docker/</id>
-    <link href="https://github.com/oscarlucas22/practicas/python-docker/"/>
-    <updated>2023-11-08T11:14:13.029Z</updated>
-    <content type="html"><![CDATA[<h1 id="practica-implantacion-de-aplicaciones-web-python-en-docker"> Práctica: Implantación de aplicaciones web Python en docker</h1>
-<p><strong>Queremos desplegar en docker la aplicación escrita en python django: tutorial de django, que desplegamos en la tarea Despliegue de aplicaciones python.</strong></p>
-<p><strong>Tienes que tener en cuenta los siguientes aspectos:</strong></p>
-<ul>
-<li>
-<p><strong>La aplicación debe guardar los datos en una base de datos mariadb.</strong></p>
-</li>
-<li>
-<p><strong>La aplicación se podrá configurar para indicar los parámetros de conexión a la base de datos: usuario, contraseña, host y base de datos.</strong></p>
-</li>
-<li>
-<p><strong>La aplicación deberá tener creado un usuario administrador para el acceso.</strong></p>
-</li>
-</ul>
-<hr>
-<h2 id="entorno-de-desarrollo"> Entorno de desarrollo</h2>
-<p>Procederemos a establecer un ambiente de desarrollo que nos permitirá llevar a cabo todas las pruebas requeridas antes de desplegar nuestra aplicación en producción. De esta manera, podremos asegurarnos de que se encuentre en óptimas condiciones antes de su lanzamiento oficial.</p>
-<p>Además, generaremos dos contenedores que se conectarán en la misma red. Una vez que hayamos verificado el correcto funcionamiento de la aplicación, avanzaremos en la creación del archivo docker-compose para implementarla en producción.</p>
-<h3 id="creacion-de-la-red"> Creación de la red</h3>
-<p>Para crear la red, ejecutamos el siguiente comando:</p>
-<div><pre><code>docker network create django-network
-</code></pre>
-</div><h3 id="creacion-del-contenedor-de-la-base-de-datos"> Creación del contenedor de la base de datos</h3>
-<p>Creamos el contenedor de mariadb con las siguientes variables</p>
-<div><pre><code>docker run -d --name mariadb -v vol-polls:/var/lib/mysql --network django-network -e MARIADB_ROOT_PASSWORD=admin -e MARIADB_USER=django -e MARIADB_PASSWORD=admin -e MARIADB_DATABASE=django mariadb
-</code></pre>
-</div><p>Realizamos una modificación al archivo <code>settings.py</code> para que pueda leer las variables de entorno. Para ello, agregamos o actualizamos la siguiente información:</p>
-<div><pre><code>import os
-</code></pre>
-</div><hr>
-<div><pre><code>ALLOWED_HOSTS = [os.environ.get(&quot;ALLOWED_HOSTS&quot;)]
-</code></pre>
-</div><hr>
-<div><pre><code>DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get(&quot;DB&quot;),
-        'USER': os.environ.get('USER'),
-        'PASSWORD': os.environ.get(&quot;PASSWD&quot;),
-        'HOST': os.environ.get('HOST'),
-        'PORT': '3306',
-    }
-}
-</code></pre>
-</div><hr>
-<div><pre><code>STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATIC_URL = '/static/'
-
-CSRF_TRUSTED_ORIGINS = ['http://*.olucass.com','http://*.127.0.0.1','https://*.olucass.com','https://*.127.0.0.1']
-</code></pre>
-</div><p>Creamos el Dockerfile a partir de la imagen de python:</p>
-<div><pre><code>nano Dockerfile
-</code></pre>
-</div><hr>
-<div><pre><code>FROM python:3
-WORKDIR /usr/src/app
-MAINTAINER oscarlucas 'oscarlucasleo124@gmail.com'
-RUN apt-get install git &amp;&amp; pip install --root-user-action=ignore --upgrade pip &amp;&amp; pip install --root-user-action=ignore django mysqlclient
-RUN git clone https://github.com/oscarlucas22/django_tutorial_docker /usr/src/app &amp;&amp; mkdir static
-ADD ./script.sh /usr/src/app/
-RUN chmod +x /usr/src/app/script.sh
-ENV ALLOWED_HOSTS=*
-ENV HOST=mariadb
-ENV USER=django
-ENV PASSWD=django
-ENV DB=django
-ENV DJANGO_SUPERUSER_PASSWORD=admin
-ENV DJANGO_SUPERUSER_USERNAME=admin
-ENV DJANGO_SUPERUSER_EMAIL=admin@example.org
-ENTRYPOINT [&quot;/usr/src/app/script.sh&quot;]
-</code></pre>
-</div><p>Al final del Dockerfile hacemos referencia a un script. Dicho script es el siguiente:</p>
-<div><pre><code>nano script.sh
-</code></pre>
-</div><hr>
-<div><pre><code>#! /bin/sh
-
-python3 manage.py makemigrations
-python3 manage.py migrate
-python3 manage.py createsuperuser --noinput
-python3 manage.py collectstatic --noinput
-python3 manage.py runserver 0.0.0.0:8006
-</code></pre>
-</div><p>Creamos la imagen de Docker:</p>
-<div><pre><code>docker build -t oscarlucas/django:v1 .
-</code></pre>
-</div><p>Antes de crear el archivo docker-compose para implementar la imagen, realizamos una prueba de ésta mediante la creación de un contenedor adicional en la misma red que el contenedor de mariadb:</p>
-<div><pre><code>docker run -d --name polls --network django-network -p 8080:8006 oscarlucas/django:v1
-</code></pre>
-</div><p>Después de comprobar que todo funciona correctamente en la imagen anterior, procedemos a crear el archivo docker-compose que iniciará los dos contenedores previamente generados.</p>
-<div><pre><code>nano docker-compose.yml
-</code></pre>
-</div><hr>
-<div><pre><code>version: '3.1'
-services:
-  django-tutorial:
-    container_name: django-tutorial
-    image: oscarlucas/django:v1
-    restart: always
-    environment:
-      ALLOWED_HOSTS: &quot;*&quot;
-      HOST: bd_mariadb_django
-      USER: django
-      PASSWD: django
-      DB: django
-      DJANGO_SUPERUSER_PASSWORD: admin
-      DJANGO_SUPERUSER_USERNAME: admin
-      DJANGO_SUPERUSER_EMAIL: admin@admin.org
-    ports:
-      - 8084:8006
-    depends_on:
-      - db_django
-  db_django:
-    container_name: bd_mariadb_django
-    image: mariadb
-    restart: always
-    environment:
-      MARIADB_ROOT_PASSWORD: root
-      MARIADB_DATABASE: django
-      MARIADB_USER: django
-      MARIADB_PASSWORD: django
-    volumes:
-      - mariadb_data_django:/var/lib/mysql
-volumes:
-    mariadb_data_django:
-</code></pre>
-</div><p>Intentemos ejecutar el entorno de desarrollo mediante el uso del archivo docker-compose:</p>
-<div><pre><code>docker-compose up -d
-</code></pre>
-</div><p><img src="./../images/IAW/php-docker/1.png" alt="image"></p>
-<p>Tratamos de acceder al panel de administración utilizando las credenciales que establecimos en el archivo docker-compose:</p>
-<p><img src="./../images/IAW/php-docker/2.png" alt="image"></p>
-<h2 id="entorno-de-produccion"> Entorno de producción</h2>
-<p>Como podemos observar, todo parece estar funcionando correctamente. Ahora nos dirigimos al entorno de producción para ejecutar el archivo docker-compose correspondiente:</p>
-<div><pre><code>docker-compose up -d
-</code></pre>
-</div><p>Vemos que se han creado ambos contenedores:</p>
-<p><img src="./../images/IAW/php-docker/3.png" alt="image"></p>
-<p>Ahora debemos crear un nuevo registro CNAME en nuestro servidor DNS:</p>
-<p><img src="./../images/IAW/php-docker/4.png" alt="image"></p>
-<p>Una vez completado este paso, estaremos listos para solicitar los certificados de &quot;Let's Encrypt&quot; correspondientes al nuevo dominio:</p>
-<div><pre><code>certbot certonly --standalone -d django.olucass.com
-</code></pre>
-</div><p>Una vez generados, solo tenemos que crear el proxy en nginx para que nos permita acceder al contenedor:</p>
-<div><pre><code>nano /etc/nginx/sites-available/django.olucass.com
-</code></pre>
-</div><hr>
-<div><pre><code>server {
-        listen 80;
-        listen [::]:80;
-
-        server_name django.olucass.com;
-
-        return 301 https://$host$request_uri;
-}
-
-server {
-        listen 443 ssl http2;
-        listen [::]:443 ssl http2;
-
-        ssl    on;
-        ssl_certificate /etc/letsencrypt/live/django.olucass.com/fullchain.pem;
-        ssl_certificate_key /etc/letsencrypt/live/django.olucass.com/privkey.pem;
-
-        index index.html index.php index.htm index.nginx-debian.html;
-
-        server_name django.olucass.com;
-
-        location / {
-                proxy_pass http://localhost:8084;
-                include proxy_params;
-        }
-}
-</code></pre>
-</div><p>Generamos un enlace simbólico para que nginx pueda cargar la configuración y procedemos a reiniciar el servicio correspondiente:</p>
-<div><pre><code>ln -s /etc/nginx/sites-available/django.olucass.com /etc/nginx/sites-enabled/
-</code></pre>
-</div><hr>
-<div><pre><code>systemctl restart nginx
-</code></pre>
-</div><p>Si accedemos desde nuestro navegador a la dirección <a href="https://django.olucass.com" target="_blank" rel="noopener noreferrer">django.olucass.com<i>Content not supported</i></a> podemos ver que accedemos a la aplicación.</p>
-<p><img src="./../images/IAW/php-docker/5.png" alt="image"></p>
-<p>Y que podemos acceder a la zona de administración.</p>
-<p><img src="./../images/IAW/php-docker/6.png" alt="image"></p>
-<p><img src="./../images/IAW/php-docker/7.png" alt="image"></p>
-<p><img src="./../images/IAW/php-docker/8.png" alt="image"></p>
-<p><img src="./../images/IAW/php-docker/9.png" alt="image"></p>
-]]></content>
-    <author>
-      <name>Óscar Lucas</name>
-    </author>
-    <category term="practicas" scheme=""/>
-    <contributor>
-      <name>Óscar Lucas</name>
-    </contributor>
-    <rights>Copyright by Óscar Lucas</rights>
-  </entry>
-  <entry>
     <title type="html">VPN</title>
     <id>https://github.com/oscarlucas22/practicas/vpn/</id>
     <link href="https://github.com/oscarlucas22/practicas/vpn/"/>
-    <updated>2023-11-08T11:14:13.032Z</updated>
+    <updated>2023-11-08T11:35:30.497Z</updated>
     <content type="html"><![CDATA[<h1 id="vpn"> VPN</h1>
 <h2 id="a-vpn-de-acceso-remoto-con-openvpn-y-certificados-x509-5-puntos"> A) VPN de acceso remoto con OpenVPN y certificados x509 (5 puntos)</h2>
 <p><strong>Configura una conexión VPN de acceso remoto entre dos equipos del cloud:</strong></p>
