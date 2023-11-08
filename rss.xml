@@ -6,8 +6,8 @@
     <link>https://github.com/oscarlucas22/</link>
     <description></description>
     <language>en-US</language>
-    <pubDate>Wed, 08 Nov 2023 11:56:04 GMT</pubDate>
-    <lastBuildDate>Wed, 08 Nov 2023 11:56:04 GMT</lastBuildDate>
+    <pubDate>Wed, 08 Nov 2023 12:04:24 GMT</pubDate>
+    <lastBuildDate>Wed, 08 Nov 2023 12:04:24 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>categorías</category>
@@ -47,6 +47,30 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>IAW</title>
+      <link>https://github.com/oscarlucas22/category/IAW/</link>
+      <guid>https://github.com/oscarlucas22/category/IAW/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">IAW</source>
+      <category>categorías</category>
+      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="iaw"> IAW</h1>
+<ul>
+<li>
+<p><a href="/practicas/django.html">Instalación/migración de aplicaciones web Python</a></p>
+</li>
+<li>
+<p><a href="/practicas/java.html">Despliegue de aplicaciones Java</a></p>
+</li>
+<li>
+<p><a href="/noacabado/noacabado.html">Implantación de aplicaciones web PHP en docker</a></p>
+</li>
+<li>
+<p><a href="/practicas/python-docker.html">Implantación de aplicaciones web Python en docker</a></p>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
       <title>ASO</title>
       <link>https://github.com/oscarlucas22/category/ASO/</link>
       <guid>https://github.com/oscarlucas22/category/ASO/</guid>
@@ -72,6 +96,27 @@
 </li>
 <li>
 <p><a href="/practicas/ldaps.html">LDAPs</a></p>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>SRI</title>
+      <link>https://github.com/oscarlucas22/category/SRI/</link>
+      <guid>https://github.com/oscarlucas22/category/SRI/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">SRI</source>
+      <category>categorías</category>
+      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="sri"> SRI</h1>
+<ul>
+<li>
+<p><a href="/practicas/openstack.html">Práctica: Escenario en OpenStack</a></p>
+</li>
+<li>
+<p><a href="/practicas/correos.html">Instalación y configuración de un servidor de correos en el VPS</a></p>
+</li>
+<li>
+<p><a href="/practicas/kubernetes.html">Práctica: Kubernetes</a></p>
 </li>
 </ul>
 ]]></content:encoded>
@@ -113,30 +158,6 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>IAW</title>
-      <link>https://github.com/oscarlucas22/category/IAW/</link>
-      <guid>https://github.com/oscarlucas22/category/IAW/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">IAW</source>
-      <category>categorías</category>
-      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="iaw"> IAW</h1>
-<ul>
-<li>
-<p><a href="/practicas/django.html">Instalación/migración de aplicaciones web Python</a></p>
-</li>
-<li>
-<p><a href="/practicas/java.html">Despliegue de aplicaciones Java</a></p>
-</li>
-<li>
-<p><a href="/noacabado/noacabado.html">Implantación de aplicaciones web PHP en docker</a></p>
-</li>
-<li>
-<p><a href="/practicas/python-docker.html">Implantación de aplicaciones web Python en docker</a></p>
-</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Servidores y Clientes de Base de Datos</title>
       <link>https://github.com/oscarlucas22/practicas/BD/</link>
       <guid>https://github.com/oscarlucas22/practicas/BD/</guid>
@@ -156,27 +177,6 @@
 </li>
 <li>
 <p><a href="./mongo.html">MongoDB</a></p>
-</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>SRI</title>
-      <link>https://github.com/oscarlucas22/category/SRI/</link>
-      <guid>https://github.com/oscarlucas22/category/SRI/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">SRI</source>
-      <category>categorías</category>
-      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="sri"> SRI</h1>
-<ul>
-<li>
-<p><a href="/practicas/openstack.html">Práctica: Escenario en OpenStack</a></p>
-</li>
-<li>
-<p><a href="/practicas/correos.html">Instalación y configuración de un servidor de correos en el VPS</a></p>
-</li>
-<li>
-<p><a href="/practicas/kubernetes.html">Práctica: Kubernetes</a></p>
 </li>
 </ul>
 ]]></content:encoded>
@@ -264,6 +264,165 @@
 </code></pre>
 </div><p>Y despues ejecutare el comando &quot;cat&quot; para ver el interior del fichero.</p>
 <p><img src="./../images/SAD/cripto I/5-4.png" alt="image"></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Criptografía II: Integridad, firmas y autenticación</title>
+      <link>https://github.com/oscarlucas22/practicas/criptografia2/</link>
+      <guid>https://github.com/oscarlucas22/practicas/criptografia2/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">Criptografía II: Integridad, firmas y autenticación</source>
+      <category>practicas</category>
+      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="criptografia-ii-integridad-firmas-y-autenticacion"> Criptografía II: Integridad, firmas y autenticación</h1>
+<h3 id="tarea-1-firmas-electronicas"> Tarea 1: Firmas electrónicas</h3>
+<p><font color="#00ff00"><strong>1.</strong></font> <strong>Manda un documento y la firma electrónica del mismo a un compañero. Verifica la firma que tu has recibido.</strong></p>
+<p>He creado un documento y lo he firmado con el comando:</p>
+<div><pre><code>gpg --detach-sign &quot;nombre-del-fichero&quot;
+</code></pre>
+</div><p>Y verifico la firma con el siguiente comando:</p>
+<div><pre><code>gpg --verify &quot;nombre-del-fichero-del-compañero&quot; &quot;nombre-del-documento-firmado-del-compañero&quot;
+</code></pre>
+</div><p><font color="#00ff00"><strong>2.</strong></font> <strong>¿Qué significa el mensaje que aparece en el momento de verificar la firma?</strong></p>
+<p><img src="./../images/SAD/cripto II/2-1.png" alt="image"></p>
+<p>El mensaje que aparece es que no puedo acceder a el ya que no he firmado yo el mismo documento</p>
+<p><font color="#00ff00"><strong>3.</strong></font> <strong>Vamos a crear un anillo de confianza entre los miembros de nuestra clase, para ello.</strong></p>
+<ul>
+<li>
+<p>Tu clave pública debe estar en un servidor de claves</p>
+</li>
+<li>
+<p>Escribe tu fingerprint en un papel y dárselo a tu compañero, para que puede descargarse tu clave pública.</p>
+</li>
+<li>
+<p>Te debes bajar al menos tres claves públicas de compañeros. Firma estas claves.</p>
+</li>
+<li>
+<p>Tu te debes asegurar que tu clave pública es firmada por al menos tres compañeros de la clase.</p>
+</li>
+<li>
+<p>Una vez que firmes una clave se la tendrás que devolver a su dueño, para que otra persona se la firme.</p>
+</li>
+<li>
+<p>Cuando tengas las tres firmas sube la clave al servidor de claves y rellena tus datos en la tabla Claves públicas PGP 2020-2021</p>
+</li>
+<li>
+<p>Asegurate que te vuelves a bajar las claves públicas de tus compañeros que tengan las tres firmas.</p>
+</li>
+</ul>
+<p><font color="#00ff00"><strong>4.</strong></font> <strong>Muestra las firmas que tiene tu clave pública.</strong></p>
+<p><img src="./../images/SAD/cripto II/4-1.png" alt="image"></p>
+<p><font color="#00ff00"><strong>5.</strong></font> <strong>Comprueba que ya puedes verificar sin “problemas” una firma recibida por una persona en la que confías.</strong></p>
+<p><img src="./../images/SAD/cripto II/5-1.png" alt="image"></p>
+<p><font color="#00ff00"><strong>6.</strong></font> <strong>Comprueba que puedes verificar con confianza una firma de una persona en las que no confías, pero sin embargo si confía otra persona en la que tu tienes confianza total.</strong></p>
+<h3 id="tarea-2-correo-seguro-con-evolution-thunderbird"> Tarea 2: Correo seguro con evolution/thunderbird</h3>
+<p><font color="#00ff00"><strong>1.</strong></font> <strong>Configura el cliente de correo evolution con tu cuenta de correo habitual</strong></p>
+<p>En mi caso he usado el cliente de correos thuderbird, para configurar este he tenido que introducir un nombre de usuario y mi correo electronico con mi correspondiente contraseña. Una vez que ya estan vinculados los dos a traves de un mensaje que me ha llegado a mi telefono movil para poder identificar de que era yo.</p>
+<p><font color="#00ff00"><strong>2.</strong></font> <strong>Añade a la cuenta las opciones de seguridad para poder enviar correos firmados con tu clave privada o cifrar los mensajes para otros destinatarios.</strong></p>
+<p>Para confirurar esta parte, nos iremos a donde pone &quot;Edit&quot; y nos iremos a la parte donde pone &quot;End-To-End Encryption&quot; y ahi añadire mi clave privada dandole a la opcion de &quot;Add Key&quot;:</p>
+<p><img src="./../images/SAD/cripto II/2-2.png" alt="image"></p>
+<p>Luego para a la hora de enviar un mensaje le daremos a la opcion de &quot;Encrypt&quot; que nos aparece arriba para insertar la clave publica del destinatario para que el mensaje enviado este encriptado y solo lo prodra desencriptar el destinatario ya que el tiene su clave privada:</p>
+<p><img src="./../images/SAD/cripto II/2.1-2.png" alt="image"></p>
+<p>Pasos a seguir:</p>
+<ul>
+<li>Introducimos el correo del destinatario:</li>
+</ul>
+<p><img src="./../images/SAD/cripto II/2.2-2.png" alt="image"></p>
+<ul>
+<li>Importamos la clave publica del destinatario cuando le demos al boton de &quot;Resolve&quot; que aparece abajo:</li>
+</ul>
+<p><img src="./../images/SAD/cripto II/2.3-2.png" alt="image"></p>
+<ul>
+<li>Le damos a aceptar para verificar la clave que hemos importado:</li>
+</ul>
+<p><img src="./../images/SAD/cripto II/2.4-2.png" alt="image"></p>
+<ul>
+<li>Cerraremos la centana que nos aparece cuando terminamos dandole al boton &quot;Close&quot;:</li>
+</ul>
+<p><img src="./../images/SAD/cripto II/2.5-2.png" alt="image"></p>
+<ul>
+<li>Ya habremos finalizado solo hara falta enviar el mensaje dandole al boton &quot;Send&quot; y le daremos a enviar:</li>
+</ul>
+<p><img src="./../images/SAD/cripto II/2.6-2.png" alt="image"></p>
+<p><font color="#00ff00"><strong>3.</strong></font> <strong>Envía y recibe varios mensajes con tus compañeros y comprueba el funcionamiento adecuado de GPG.</strong></p>
+<p>Le envio un correo a Angel desde thuderbird:</p>
+<p>Como vemos en la siguiente imagen accedemos al correo a traves de thuderbird y veremos que podemos ver el interior del archivo:</p>
+<p><img src="./../images/SAD/cripto II/3-2.png" alt="image"></p>
+<p>Como vemos en la siguiente imagen accedemos a traves de Gmail y veremos los fichero que estan encriptados:</p>
+<p><img src="./../images/SAD/cripto II/3.1-2.png" alt="image"></p>
+<p>Recibo un envio a Angel:</p>
+<p>Como vemos en la siguiente imagen accedemos a traves de thuderbird y veremos que podemos ver el interior del archivo:</p>
+<p><img src="./../images/SAD/cripto II/3.2-2.png" alt="image"></p>
+<p>Como vemos en la siguiente imagen accedemos a traves de Gmail y veremos los ficheros que estan encriptados:</p>
+<p><img src="./../images/SAD/cripto II/3.3-2.png" alt="image"></p>
+<h3 id="tarea-3-integridad-de-ficheros"> Tarea 3: Integridad de ficheros</h3>
+<p><font color="#00ff00"><strong>1.</strong></font> <strong>Para validar el contenido de la imagen CD, solo asegúrese de usar la herramienta apropiada para sumas de verificación. Para cada versión publicada existen archivos de suma de comprobación con algoritmos fuertes (SHA256 y SHA512); debería usar las herramientas sha256sum o sha512sum para trabajar con ellos.</strong></p>
+<p>En primer lugar me he instalado las imagenes CD del link que habia en la pagina.</p>
+<p><img src="./../images/SAD/cripto II/1-3.png" alt="image"></p>
+<p>Primero obtendremos la clave publica de Debian, con la que verificaremos la firma realizada con su clave privada:</p>
+<div><pre><code>gpg --keyserver keyring.debian.org --recv-keys 6294BE9B
+</code></pre>
+</div><p><img src="./../images/SAD/cripto II/1.1-3.png" alt="image"></p>
+<p>Veremos que contienen los ficheros:</p>
+<p><img src="./../images/SAD/cripto II/1.2-3.png" alt="image"></p>
+<p>De las cuatro lineas que nos aparecen nos interesa la primera ya que esa es la que voy a comprobar.
+Para verificar el hash tendremos que hacer uso de las utilidades <code>sha256sum</code> y <code>sha512sum</code> que reciben un fichero y calculan su hash:</p>
+<p><img src="./../images/SAD/cripto II/1.3-3.png" alt="image"></p>
+<p><font color="#00ff00"><strong>2.</strong></font> <strong>Verifica que el contenido del hash que has utilizado no ha sido manipulado, usando la firma digital que encontrarás en el repositorio. Puedes encontrar una guía para realizarlo en este artículo: How to verify an authenticity of downloaded Debian ISO images.</strong></p>
+<p>En este caso utilizaremos en el comando la opcion '-c' que ira recorriendo de forma automatica el resultado en el fichero origen:</p>
+<p><img src="./../images/SAD/cripto II/2-3.png" alt="image"></p>
+<p>Esto que acababo de hacer no te da la garantia de que los ficheros no hayan sido manipulados, ya que el suplantador podria haber modificado tambien el fichero en el que se muestra el resumen de los hash.
+De manera que tendremos que verificar la firma con el uso de la opcion '--verify':</p>
+<p><img src="./../images/SAD/cripto II/2.1-3.png" alt="image"></p>
+<h3 id="tarea-4-integridad-y-autenticidad-apt-secure"> Tarea 4: Integridad y autenticidad (apt secure)</h3>
+<p><strong>Busca información sobre apt secure y responde las siguientes preguntas:</strong></p>
+<ul>
+<li>1.¿Qué software utiliza apt secure para realizar la criptografía asimétrica?</li>
+</ul>
+<p>La herramienta que utiliza apt-secure para firmar y comprobar sus firmas es GPG</p>
+<ul>
+<li>2.¿Para que sirve el comando apt-key? ¿Qué muestra el comando apt-key list?</li>
+</ul>
+<p>El comando apt-key sirve para permitir gestionar la lista de claves que utiliza 'apt' para autenticar paquetes.</p>
+<p>El comando apt-key-list nos mostrara todas las claves consideradas de confianza para 'apt'</p>
+<ul>
+<li>3.En que fichero se guarda el anillo de claves que guarda la herramienta apt-key?</li>
+</ul>
+<p>El anillo de claves que gestiona apt-key se encuentra en '/etc/apt/trusted.gpg' de forma que las nuevas claves se iran añadiendo a dicho fichero.</p>
+<ul>
+<li>4.y 5.¿Qué contiene el archivo Release de un repositorio de paquetes?. ¿Y el archivo Release.gpg? Explica el proceso por el cual el sistema nos asegura que los ficheros que estamos descargando son legítimos.</li>
+</ul>
+<p>El archivo Release contiene una lista de los archivos Packages (incluyendo Packages.gz y Packages.xz) junto con sus hash MD5, SHA1, SHA256. Gracias a esto podremos comprobar que los ficheros Packages no han sido manipulados llevando a acabo una comprobacion del hash.</p>
+<p>Por razones obvias, de nada servira este metodo si el posible impostor lograse modificar tambien el fichero Release, haciendonos creer que dado que los hash coincidan, no ha habido manipulacion de los mismos, de manera uqe para ello se llava a cabo un proceso de firmado del hash del fichero Release.</p>
+<p>Cuando llevamos a cabo un apt update, se descargan los ficheros Packages.gz, Release y Release.gpg, ficheros que son necesarios para la hora de la descarga del paquete, puesto que lo primero que se hace es comprobar que el hash del paquete .deb coinciden con el indicado en el fichero Packages.gz, comprobando a su vez que coincide con el fichero Release, comprobando que dicho fichero se encuentra contenido en el fichero Release.gpg.</p>
+<ul>
+<li>6.añade de forma correcta el repositorio de virtualbox añadiendo la clave pública de virtualbox como se indica en la documentación.</li>
+</ul>
+<p>En primer lugar lo que haremos es tratar de instalar VirtualBox, para asi demostrar que no se encuentran en los repositorios oficiales de Debian:</p>
+<p><img src="./../images/SAD/cripto II/6-4.png" alt="image"></p>
+<p>Para poder instalarlo necesitamos añadir los repositorios de VirtualBox al fichero en el que se encuentran reflejados los repositorios disponibles (/etc/apt/sources.list):</p>
+<div><pre><code>echo &quot;deb https://download.virtualbox.org/virtualbox/debian buster contrib&quot; &gt;&gt; /etc/apt/sources.list
+</code></pre>
+</div><p><img src="./../images/SAD/cripto II/6.1-4.png" alt="image"></p>
+<p>Tras hacer esto necesitamos añadir la clave publica de VirtualBox a nuestro anillo de claves de apt-key, ya que de lo contrario no podria verificar la firma del fichero Release que descargara de dicho repositorio:</p>
+<p><img src="./../images/SAD/cripto II/6.2-4.png" alt="image"></p>
+<p><img src="./../images/SAD/cripto II/6.3-4.png" alt="image"></p>
+<p>Y una vez finalizado esto ya podremos instalar VirtualBox.</p>
+<h3 id="tarea-5-autentificacion-ejemplo-ssh"> Tarea 5: Autentificación: ejemplo SSH</h3>
+<p><font color="#00ff00"><strong>1.</strong></font> <strong>Explica los pasos que se producen entre el cliente y el servidor para que el protocolo cifre la información que se transmite? ¿Para qué se utiliza la criptografía simétrica? ¿Y la asimétrica?</strong></p>
+<p>Cuando un cliente se intenta conectar al servidor por medio de tcp, el servidor presenta los protocolos de cicfrado y las respectivas versiones que soporta. Si el cliente tiene un par similar de protocolo y version, se alcanza un acuerdo y se inicia la conexion con el protocolo aceptado. El cliente ha de autentificar al servidor, comprobando el host key que ha recibido, preguntando al usuario si confia en el mismo si es la primera vez que se conecta.</p>
+<p>Una vez que esto se establece, las dos partes usan lo que se conoce como Algoritmo de Intercambio de Claves Diffie-Hellman para crear una clave simetrica. Este algoritmo permite que tanto el cliente como el servidor lleguen a una clave de cifrado compartida que se utilizara en adelante para cifrar toda la sesión de comunicacion.</p>
+<p>Una vez establecido el cifrado simétrico para asegurar las comunicaciones entre el servidor y el cliente, el cliente debe autenticarse para permitir el acceso.</p>
+<p><font color="#00ff00"><strong>2.</strong></font> <strong>Explica los dos métodos principales de autentificación: por contraseña y utilizando un par de claves públicas y privadas.</strong></p>
+<p>Por contraseña: Se le pide la contraseña al usuario asociada al usuario al que esta tratando de conectarse. Estas credenciales pasan a travex del tunel cifrado simetricamente con seguridad.</p>
+<p>Par de claves: El usuario tiene su clave publica almacenada en el servidor de manera que a la hora de realizar la conexion, el usuario se presenta y le indica al servidor que es el dueño de dica clave. El servidor desconfia, por lo que le plantea un desafio que consiste en encriptar un mensaje con dicha clave publica, enviandoselo encriptado al usuario que trata de acceder el cual debe descrifrarlo haciendo uso de la clave privada asociada a dicha clave publica.</p>
+<p><font color="#00ff00"><strong>3.</strong></font> <strong>En el cliente para que sirve el contenido que se guarda en el fichero ~/.ssh/know_hosts?</strong></p>
+<p>El contenido que se guarda en el fichero sirve si en el caso de que al saltar el primer mensaje de la conexion la respuesta sea afirmativa es decir, que confia en el otro extremo (servidor) se añadira el host key al fichero '~/.ssh/know_hosts', de manera que para la siguiente ocasion no se le preguntara al cliente si confia, sino que mirara en dicho fichero para comprobar su previa existencia.</p>
+<p><font color="#00ff00"><strong>4.</strong></font> <strong>¿Qué significa este mensaje que aparece la primera vez que nos conectamos a un servidor?</strong></p>
+<p>Cuando el cliente lleva a cabo la conexion tcp con el servidor, este debe ser autenticado por el cliente. Si es la primera vez que se llava a cabo dicha conexion, se mostrara el mensaje que se menciona.</p>
+<p><font color="#00ff00"><strong>5.</strong></font> <strong>En ocasiones cuando estamos trabajando en el cloud, y reutilizamos una ip flotante nos aparece este mensaje:</strong></p>
+<p>Para solucionar este problema tendriamos que borrar la linea correspondiente a dicho host en el fichero ~/.ssh/known_hosts. Normalmente, en el propio mensaje de advertencia te dice explicitamente el comando a ejecutar para borrar dicha linea.</p>
+<p><font color="#00ff00"><strong>6.</strong></font> <strong>¿Qué guardamos y para qué sirve el fichero en el servidor ~/.ssh/authorized_keys?</strong></p>
+<p>En el guardaremos nuestra clave publica para asi poder acceder al servidor por medio de nuestra clave privada</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -1390,6 +1549,55 @@ sudo make uninstall
 ]]></content:encoded>
     </item>
     <item>
+      <title>Migrar Centos 8 a Rocky Linux 8</title>
+      <link>https://github.com/oscarlucas22/practicas/migracionrocky/</link>
+      <guid>https://github.com/oscarlucas22/practicas/migracionrocky/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">Migrar Centos 8 a Rocky Linux 8</source>
+      <category>practicas</category>
+      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="migrar-centos-8-a-rocky-linux-8"> Migrar Centos 8 a Rocky Linux 8</h1>
+<p><img src="./../images/ASO/rocky.png" alt="image"></p>
+<p>Para conseguir este fin se nos ofrece un script llamado <strong>migrate2rocky.sh</strong>. Este script se encargará de cambiar los repositorios del sistemas por los de Rocky Linux. Los paquetes se instalarán y actualizarán, para finalmente cambiar todo el sistema operativo.</p>
+<p><font color="#FFFF00"><strong>Paso 1</strong></font> Actualizamos el sistema.</p>
+<div><pre><code>sudo dnf -y upgrade
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 2</strong></font> Reiniciamos.</p>
+<div><pre><code>sudo reboot 
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 3</strong></font> Actualizar el sistema.</p>
+<div><pre><code>dnf update
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 4</strong></font> Descargar repositorio.</p>
+<p>Una vez hecho esto nos iremos al repositorio donde se encuentra dicho script, en este caso en Github.
+Podemos descargar los paquetes del repositorio con programas como wget.</p>
+<div><pre><code>wget https://github.com/rocky-linux/rocky-tools/archive/refs/heads/main.zip
+</code></pre>
+</div><p>O bien, si solo deseamos descargar el script:</p>
+<div><pre><code>wget https://raw.githubusercontent.com/rocky-linux/rocky-tools/main/migrate2rocky/migrate2rocky.sh
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 5</strong></font> Le asignamos permisos de ejecución.</p>
+<div><pre><code>chmod +x migrate2rocky.sh
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 6</strong></font> Lo ejecutamos.</p>
+<p>Con el parámetro <strong>-r</strong> indicamos que siga adelante e instale todo.</p>
+<div><pre><code>./migrate2rocky.sh -r
+</code></pre>
+</div><p>El proceso puede tardar un rato, según la capacidad del equipo y la conexión a Internet.</p>
+<p>Después:</p>
+<div><pre><code>sudo dnf distro-sync -y
+</code></pre>
+</div><hr>
+<div><pre><code>sudo reboot
+</code></pre>
+</div><p><font color="#FFFF00"><strong>Paso 7</strong></font> Comprobación.</p>
+<div><pre><code>cat /etc/os-release
+</code></pre>
+</div><p>Podemos consultar ficheros como <strong>/etc/os-release</strong> o bien <strong>/etc/redhat-release</strong>, o lanzar el comando <strong>hostnamectl</strong></p>
+<div><pre><code>cat /etc/redhat-release
+</code></pre>
+</div>]]></content:encoded>
+    </item>
+    <item>
       <title>MariaDB en Debian 11 Bullseye</title>
       <link>https://github.com/oscarlucas22/practicas/mariadb/</link>
       <guid>https://github.com/oscarlucas22/practicas/mariadb/</guid>
@@ -1490,214 +1698,6 @@ Y para conectarnos a nuestro usuario ejecutaremos el siguiente comando:</p>
 </code></pre>
 </div><p><img src="./../images/ABD/4-mariadb.png" alt="image"></p>
 <p>¡Gracias!</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Migrar Centos 8 a Rocky Linux 8</title>
-      <link>https://github.com/oscarlucas22/practicas/migracionrocky/</link>
-      <guid>https://github.com/oscarlucas22/practicas/migracionrocky/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">Migrar Centos 8 a Rocky Linux 8</source>
-      <category>practicas</category>
-      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="migrar-centos-8-a-rocky-linux-8"> Migrar Centos 8 a Rocky Linux 8</h1>
-<p><img src="./../images/ASO/rocky.png" alt="image"></p>
-<p>Para conseguir este fin se nos ofrece un script llamado <strong>migrate2rocky.sh</strong>. Este script se encargará de cambiar los repositorios del sistemas por los de Rocky Linux. Los paquetes se instalarán y actualizarán, para finalmente cambiar todo el sistema operativo.</p>
-<p><font color="#FFFF00"><strong>Paso 1</strong></font> Actualizamos el sistema.</p>
-<div><pre><code>sudo dnf -y upgrade
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 2</strong></font> Reiniciamos.</p>
-<div><pre><code>sudo reboot 
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 3</strong></font> Actualizar el sistema.</p>
-<div><pre><code>dnf update
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 4</strong></font> Descargar repositorio.</p>
-<p>Una vez hecho esto nos iremos al repositorio donde se encuentra dicho script, en este caso en Github.
-Podemos descargar los paquetes del repositorio con programas como wget.</p>
-<div><pre><code>wget https://github.com/rocky-linux/rocky-tools/archive/refs/heads/main.zip
-</code></pre>
-</div><p>O bien, si solo deseamos descargar el script:</p>
-<div><pre><code>wget https://raw.githubusercontent.com/rocky-linux/rocky-tools/main/migrate2rocky/migrate2rocky.sh
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 5</strong></font> Le asignamos permisos de ejecución.</p>
-<div><pre><code>chmod +x migrate2rocky.sh
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 6</strong></font> Lo ejecutamos.</p>
-<p>Con el parámetro <strong>-r</strong> indicamos que siga adelante e instale todo.</p>
-<div><pre><code>./migrate2rocky.sh -r
-</code></pre>
-</div><p>El proceso puede tardar un rato, según la capacidad del equipo y la conexión a Internet.</p>
-<p>Después:</p>
-<div><pre><code>sudo dnf distro-sync -y
-</code></pre>
-</div><hr>
-<div><pre><code>sudo reboot
-</code></pre>
-</div><p><font color="#FFFF00"><strong>Paso 7</strong></font> Comprobación.</p>
-<div><pre><code>cat /etc/os-release
-</code></pre>
-</div><p>Podemos consultar ficheros como <strong>/etc/os-release</strong> o bien <strong>/etc/redhat-release</strong>, o lanzar el comando <strong>hostnamectl</strong></p>
-<div><pre><code>cat /etc/redhat-release
-</code></pre>
-</div>]]></content:encoded>
-    </item>
-    <item>
-      <title>Criptografía II: Integridad, firmas y autenticación</title>
-      <link>https://github.com/oscarlucas22/practicas/criptografia2/</link>
-      <guid>https://github.com/oscarlucas22/practicas/criptografia2/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">Criptografía II: Integridad, firmas y autenticación</source>
-      <category>practicas</category>
-      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="criptografia-ii-integridad-firmas-y-autenticacion"> Criptografía II: Integridad, firmas y autenticación</h1>
-<h3 id="tarea-1-firmas-electronicas"> Tarea 1: Firmas electrónicas</h3>
-<p><font color="#00ff00"><strong>1.</strong></font> <strong>Manda un documento y la firma electrónica del mismo a un compañero. Verifica la firma que tu has recibido.</strong></p>
-<p>He creado un documento y lo he firmado con el comando:</p>
-<div><pre><code>gpg --detach-sign &quot;nombre-del-fichero&quot;
-</code></pre>
-</div><p>Y verifico la firma con el siguiente comando:</p>
-<div><pre><code>gpg --verify &quot;nombre-del-fichero-del-compañero&quot; &quot;nombre-del-documento-firmado-del-compañero&quot;
-</code></pre>
-</div><p><font color="#00ff00"><strong>2.</strong></font> <strong>¿Qué significa el mensaje que aparece en el momento de verificar la firma?</strong></p>
-<p><img src="./../images/SAD/cripto II/2-1.png" alt="image"></p>
-<p>El mensaje que aparece es que no puedo acceder a el ya que no he firmado yo el mismo documento</p>
-<p><font color="#00ff00"><strong>3.</strong></font> <strong>Vamos a crear un anillo de confianza entre los miembros de nuestra clase, para ello.</strong></p>
-<ul>
-<li>
-<p>Tu clave pública debe estar en un servidor de claves</p>
-</li>
-<li>
-<p>Escribe tu fingerprint en un papel y dárselo a tu compañero, para que puede descargarse tu clave pública.</p>
-</li>
-<li>
-<p>Te debes bajar al menos tres claves públicas de compañeros. Firma estas claves.</p>
-</li>
-<li>
-<p>Tu te debes asegurar que tu clave pública es firmada por al menos tres compañeros de la clase.</p>
-</li>
-<li>
-<p>Una vez que firmes una clave se la tendrás que devolver a su dueño, para que otra persona se la firme.</p>
-</li>
-<li>
-<p>Cuando tengas las tres firmas sube la clave al servidor de claves y rellena tus datos en la tabla Claves públicas PGP 2020-2021</p>
-</li>
-<li>
-<p>Asegurate que te vuelves a bajar las claves públicas de tus compañeros que tengan las tres firmas.</p>
-</li>
-</ul>
-<p><font color="#00ff00"><strong>4.</strong></font> <strong>Muestra las firmas que tiene tu clave pública.</strong></p>
-<p><img src="./../images/SAD/cripto II/4-1.png" alt="image"></p>
-<p><font color="#00ff00"><strong>5.</strong></font> <strong>Comprueba que ya puedes verificar sin “problemas” una firma recibida por una persona en la que confías.</strong></p>
-<p><img src="./../images/SAD/cripto II/5-1.png" alt="image"></p>
-<p><font color="#00ff00"><strong>6.</strong></font> <strong>Comprueba que puedes verificar con confianza una firma de una persona en las que no confías, pero sin embargo si confía otra persona en la que tu tienes confianza total.</strong></p>
-<h3 id="tarea-2-correo-seguro-con-evolution-thunderbird"> Tarea 2: Correo seguro con evolution/thunderbird</h3>
-<p><font color="#00ff00"><strong>1.</strong></font> <strong>Configura el cliente de correo evolution con tu cuenta de correo habitual</strong></p>
-<p>En mi caso he usado el cliente de correos thuderbird, para configurar este he tenido que introducir un nombre de usuario y mi correo electronico con mi correspondiente contraseña. Una vez que ya estan vinculados los dos a traves de un mensaje que me ha llegado a mi telefono movil para poder identificar de que era yo.</p>
-<p><font color="#00ff00"><strong>2.</strong></font> <strong>Añade a la cuenta las opciones de seguridad para poder enviar correos firmados con tu clave privada o cifrar los mensajes para otros destinatarios.</strong></p>
-<p>Para confirurar esta parte, nos iremos a donde pone &quot;Edit&quot; y nos iremos a la parte donde pone &quot;End-To-End Encryption&quot; y ahi añadire mi clave privada dandole a la opcion de &quot;Add Key&quot;:</p>
-<p><img src="./../images/SAD/cripto II/2-2.png" alt="image"></p>
-<p>Luego para a la hora de enviar un mensaje le daremos a la opcion de &quot;Encrypt&quot; que nos aparece arriba para insertar la clave publica del destinatario para que el mensaje enviado este encriptado y solo lo prodra desencriptar el destinatario ya que el tiene su clave privada:</p>
-<p><img src="./../images/SAD/cripto II/2.1-2.png" alt="image"></p>
-<p>Pasos a seguir:</p>
-<ul>
-<li>Introducimos el correo del destinatario:</li>
-</ul>
-<p><img src="./../images/SAD/cripto II/2.2-2.png" alt="image"></p>
-<ul>
-<li>Importamos la clave publica del destinatario cuando le demos al boton de &quot;Resolve&quot; que aparece abajo:</li>
-</ul>
-<p><img src="./../images/SAD/cripto II/2.3-2.png" alt="image"></p>
-<ul>
-<li>Le damos a aceptar para verificar la clave que hemos importado:</li>
-</ul>
-<p><img src="./../images/SAD/cripto II/2.4-2.png" alt="image"></p>
-<ul>
-<li>Cerraremos la centana que nos aparece cuando terminamos dandole al boton &quot;Close&quot;:</li>
-</ul>
-<p><img src="./../images/SAD/cripto II/2.5-2.png" alt="image"></p>
-<ul>
-<li>Ya habremos finalizado solo hara falta enviar el mensaje dandole al boton &quot;Send&quot; y le daremos a enviar:</li>
-</ul>
-<p><img src="./../images/SAD/cripto II/2.6-2.png" alt="image"></p>
-<p><font color="#00ff00"><strong>3.</strong></font> <strong>Envía y recibe varios mensajes con tus compañeros y comprueba el funcionamiento adecuado de GPG.</strong></p>
-<p>Le envio un correo a Angel desde thuderbird:</p>
-<p>Como vemos en la siguiente imagen accedemos al correo a traves de thuderbird y veremos que podemos ver el interior del archivo:</p>
-<p><img src="./../images/SAD/cripto II/3-2.png" alt="image"></p>
-<p>Como vemos en la siguiente imagen accedemos a traves de Gmail y veremos los fichero que estan encriptados:</p>
-<p><img src="./../images/SAD/cripto II/3.1-2.png" alt="image"></p>
-<p>Recibo un envio a Angel:</p>
-<p>Como vemos en la siguiente imagen accedemos a traves de thuderbird y veremos que podemos ver el interior del archivo:</p>
-<p><img src="./../images/SAD/cripto II/3.2-2.png" alt="image"></p>
-<p>Como vemos en la siguiente imagen accedemos a traves de Gmail y veremos los ficheros que estan encriptados:</p>
-<p><img src="./../images/SAD/cripto II/3.3-2.png" alt="image"></p>
-<h3 id="tarea-3-integridad-de-ficheros"> Tarea 3: Integridad de ficheros</h3>
-<p><font color="#00ff00"><strong>1.</strong></font> <strong>Para validar el contenido de la imagen CD, solo asegúrese de usar la herramienta apropiada para sumas de verificación. Para cada versión publicada existen archivos de suma de comprobación con algoritmos fuertes (SHA256 y SHA512); debería usar las herramientas sha256sum o sha512sum para trabajar con ellos.</strong></p>
-<p>En primer lugar me he instalado las imagenes CD del link que habia en la pagina.</p>
-<p><img src="./../images/SAD/cripto II/1-3.png" alt="image"></p>
-<p>Primero obtendremos la clave publica de Debian, con la que verificaremos la firma realizada con su clave privada:</p>
-<div><pre><code>gpg --keyserver keyring.debian.org --recv-keys 6294BE9B
-</code></pre>
-</div><p><img src="./../images/SAD/cripto II/1.1-3.png" alt="image"></p>
-<p>Veremos que contienen los ficheros:</p>
-<p><img src="./../images/SAD/cripto II/1.2-3.png" alt="image"></p>
-<p>De las cuatro lineas que nos aparecen nos interesa la primera ya que esa es la que voy a comprobar.
-Para verificar el hash tendremos que hacer uso de las utilidades <code>sha256sum</code> y <code>sha512sum</code> que reciben un fichero y calculan su hash:</p>
-<p><img src="./../images/SAD/cripto II/1.3-3.png" alt="image"></p>
-<p><font color="#00ff00"><strong>2.</strong></font> <strong>Verifica que el contenido del hash que has utilizado no ha sido manipulado, usando la firma digital que encontrarás en el repositorio. Puedes encontrar una guía para realizarlo en este artículo: How to verify an authenticity of downloaded Debian ISO images.</strong></p>
-<p>En este caso utilizaremos en el comando la opcion '-c' que ira recorriendo de forma automatica el resultado en el fichero origen:</p>
-<p><img src="./../images/SAD/cripto II/2-3.png" alt="image"></p>
-<p>Esto que acababo de hacer no te da la garantia de que los ficheros no hayan sido manipulados, ya que el suplantador podria haber modificado tambien el fichero en el que se muestra el resumen de los hash.
-De manera que tendremos que verificar la firma con el uso de la opcion '--verify':</p>
-<p><img src="./../images/SAD/cripto II/2.1-3.png" alt="image"></p>
-<h3 id="tarea-4-integridad-y-autenticidad-apt-secure"> Tarea 4: Integridad y autenticidad (apt secure)</h3>
-<p><strong>Busca información sobre apt secure y responde las siguientes preguntas:</strong></p>
-<ul>
-<li>1.¿Qué software utiliza apt secure para realizar la criptografía asimétrica?</li>
-</ul>
-<p>La herramienta que utiliza apt-secure para firmar y comprobar sus firmas es GPG</p>
-<ul>
-<li>2.¿Para que sirve el comando apt-key? ¿Qué muestra el comando apt-key list?</li>
-</ul>
-<p>El comando apt-key sirve para permitir gestionar la lista de claves que utiliza 'apt' para autenticar paquetes.</p>
-<p>El comando apt-key-list nos mostrara todas las claves consideradas de confianza para 'apt'</p>
-<ul>
-<li>3.En que fichero se guarda el anillo de claves que guarda la herramienta apt-key?</li>
-</ul>
-<p>El anillo de claves que gestiona apt-key se encuentra en '/etc/apt/trusted.gpg' de forma que las nuevas claves se iran añadiendo a dicho fichero.</p>
-<ul>
-<li>4.y 5.¿Qué contiene el archivo Release de un repositorio de paquetes?. ¿Y el archivo Release.gpg? Explica el proceso por el cual el sistema nos asegura que los ficheros que estamos descargando son legítimos.</li>
-</ul>
-<p>El archivo Release contiene una lista de los archivos Packages (incluyendo Packages.gz y Packages.xz) junto con sus hash MD5, SHA1, SHA256. Gracias a esto podremos comprobar que los ficheros Packages no han sido manipulados llevando a acabo una comprobacion del hash.</p>
-<p>Por razones obvias, de nada servira este metodo si el posible impostor lograse modificar tambien el fichero Release, haciendonos creer que dado que los hash coincidan, no ha habido manipulacion de los mismos, de manera uqe para ello se llava a cabo un proceso de firmado del hash del fichero Release.</p>
-<p>Cuando llevamos a cabo un apt update, se descargan los ficheros Packages.gz, Release y Release.gpg, ficheros que son necesarios para la hora de la descarga del paquete, puesto que lo primero que se hace es comprobar que el hash del paquete .deb coinciden con el indicado en el fichero Packages.gz, comprobando a su vez que coincide con el fichero Release, comprobando que dicho fichero se encuentra contenido en el fichero Release.gpg.</p>
-<ul>
-<li>6.añade de forma correcta el repositorio de virtualbox añadiendo la clave pública de virtualbox como se indica en la documentación.</li>
-</ul>
-<p>En primer lugar lo que haremos es tratar de instalar VirtualBox, para asi demostrar que no se encuentran en los repositorios oficiales de Debian:</p>
-<p><img src="./../images/SAD/cripto II/6-4.png" alt="image"></p>
-<p>Para poder instalarlo necesitamos añadir los repositorios de VirtualBox al fichero en el que se encuentran reflejados los repositorios disponibles (/etc/apt/sources.list):</p>
-<div><pre><code>echo &quot;deb https://download.virtualbox.org/virtualbox/debian buster contrib&quot; &gt;&gt; /etc/apt/sources.list
-</code></pre>
-</div><p><img src="./../images/SAD/cripto II/6.1-4.png" alt="image"></p>
-<p>Tras hacer esto necesitamos añadir la clave publica de VirtualBox a nuestro anillo de claves de apt-key, ya que de lo contrario no podria verificar la firma del fichero Release que descargara de dicho repositorio:</p>
-<p><img src="./../images/SAD/cripto II/6.2-4.png" alt="image"></p>
-<p><img src="./../images/SAD/cripto II/6.3-4.png" alt="image"></p>
-<p>Y una vez finalizado esto ya podremos instalar VirtualBox.</p>
-<h3 id="tarea-5-autentificacion-ejemplo-ssh"> Tarea 5: Autentificación: ejemplo SSH</h3>
-<p><font color="#00ff00"><strong>1.</strong></font> <strong>Explica los pasos que se producen entre el cliente y el servidor para que el protocolo cifre la información que se transmite? ¿Para qué se utiliza la criptografía simétrica? ¿Y la asimétrica?</strong></p>
-<p>Cuando un cliente se intenta conectar al servidor por medio de tcp, el servidor presenta los protocolos de cicfrado y las respectivas versiones que soporta. Si el cliente tiene un par similar de protocolo y version, se alcanza un acuerdo y se inicia la conexion con el protocolo aceptado. El cliente ha de autentificar al servidor, comprobando el host key que ha recibido, preguntando al usuario si confia en el mismo si es la primera vez que se conecta.</p>
-<p>Una vez que esto se establece, las dos partes usan lo que se conoce como Algoritmo de Intercambio de Claves Diffie-Hellman para crear una clave simetrica. Este algoritmo permite que tanto el cliente como el servidor lleguen a una clave de cifrado compartida que se utilizara en adelante para cifrar toda la sesión de comunicacion.</p>
-<p>Una vez establecido el cifrado simétrico para asegurar las comunicaciones entre el servidor y el cliente, el cliente debe autenticarse para permitir el acceso.</p>
-<p><font color="#00ff00"><strong>2.</strong></font> <strong>Explica los dos métodos principales de autentificación: por contraseña y utilizando un par de claves públicas y privadas.</strong></p>
-<p>Por contraseña: Se le pide la contraseña al usuario asociada al usuario al que esta tratando de conectarse. Estas credenciales pasan a travex del tunel cifrado simetricamente con seguridad.</p>
-<p>Par de claves: El usuario tiene su clave publica almacenada en el servidor de manera que a la hora de realizar la conexion, el usuario se presenta y le indica al servidor que es el dueño de dica clave. El servidor desconfia, por lo que le plantea un desafio que consiste en encriptar un mensaje con dicha clave publica, enviandoselo encriptado al usuario que trata de acceder el cual debe descrifrarlo haciendo uso de la clave privada asociada a dicha clave publica.</p>
-<p><font color="#00ff00"><strong>3.</strong></font> <strong>En el cliente para que sirve el contenido que se guarda en el fichero ~/.ssh/know_hosts?</strong></p>
-<p>El contenido que se guarda en el fichero sirve si en el caso de que al saltar el primer mensaje de la conexion la respuesta sea afirmativa es decir, que confia en el otro extremo (servidor) se añadira el host key al fichero '~/.ssh/know_hosts', de manera que para la siguiente ocasion no se le preguntara al cliente si confia, sino que mirara en dicho fichero para comprobar su previa existencia.</p>
-<p><font color="#00ff00"><strong>4.</strong></font> <strong>¿Qué significa este mensaje que aparece la primera vez que nos conectamos a un servidor?</strong></p>
-<p>Cuando el cliente lleva a cabo la conexion tcp con el servidor, este debe ser autenticado por el cliente. Si es la primera vez que se llava a cabo dicha conexion, se mostrara el mensaje que se menciona.</p>
-<p><font color="#00ff00"><strong>5.</strong></font> <strong>En ocasiones cuando estamos trabajando en el cloud, y reutilizamos una ip flotante nos aparece este mensaje:</strong></p>
-<p>Para solucionar este problema tendriamos que borrar la linea correspondiente a dicho host en el fichero ~/.ssh/known_hosts. Normalmente, en el propio mensaje de advertencia te dice explicitamente el comando a ejecutar para borrar dicha linea.</p>
-<p><font color="#00ff00"><strong>6.</strong></font> <strong>¿Qué guardamos y para qué sirve el fichero en el servidor ~/.ssh/authorized_keys?</strong></p>
-<p>En el guardaremos nuestra clave publica para asi poder acceder al servidor por medio de nuestra clave privada</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -2082,6 +2082,188 @@ down iptables -t nat -D POSTROUTING -s 192.168.0.0/16 -o ens3 -j MASQUERADE
 <p><strong>Cambia la contraseña al usuario root</strong></p>
 </li>
 </ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Oracle en Debian 11 Bullseye</title>
+      <link>https://github.com/oscarlucas22/practicas/oracle/</link>
+      <guid>https://github.com/oscarlucas22/practicas/oracle/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">Oracle en Debian 11 Bullseye</source>
+      <category>practicas</category>
+      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="oracle-en-debian-11-bullseye"> Oracle en Debian 11 Bullseye</h1>
+<p><img src="./../images/ABD/oracle.png" alt="image"></p>
+<h2 id="instalacion-de-oracle-en-debian-11-bullseye"> Instalación de Oracle en Debian 11 Bullseye</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font></p>
+<p>Antes de instalar el paquete, tenemos que configurar algunas cosas. Empezaremos creando el script:</p>
+<div><pre><code>sudo nano /sbin/chkconfig
+</code></pre>
+</div><p>Y copiamos estas líneas en el archivo:</p>
+<div><pre><code>#!/bin/bash
+# Oracle XE installer chkconfig hack for Ubuntu
+file=/etc/init.d/oracle-xe
+if [[ ! `tail -n1 $file | grep INIT` ]]; then
+echo &gt;&gt; $file
+echo '### BEGIN INIT INFO' &gt;&gt; $file
+echo '# Provides: OracleXE' &gt;&gt; $file
+echo '# Required-Start: $remote_fs $syslog' &gt;&gt; $file
+echo '# Required-Stop: $remote_fs $syslog' &gt;&gt; $file
+echo '# Default-Start: 2 3 4 5' &gt;&gt; $file
+echo '# Default-Stop: 0 1 6' &gt;&gt; $file
+echo '# Short-Description: Oracle 19c Express Edition' &gt;&gt; $file
+echo '### END INIT INFO' &gt;&gt; $file
+fi
+update-rc.d oracle-xe defaults 80 01
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 2</strong></font></p>
+<p>Damos los permisos necesarios al archivo:</p>
+<div><pre><code>sudo chmod 755 /sbin/chkconfig
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 3</strong></font></p>
+<p>Oracle 19c XE requiere de una configuración especial en kernel para funcionar. Por eso necesitamos añadir algunos parámetros al mismo.</p>
+<div><pre><code>sudo nano /etc/sysctl.d/60-oracle.conf
+</code></pre>
+</div><p>Copiamos lo siguiente y guardamos.</p>
+<div><pre><code>fs.file-max=6815744
+net.ipv4.ip_local_port_range=9000 65000
+kernel.sem=250 32000 100 128
+kernel.shmmax=536870912
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 4</strong></font></p>
+<p>Para cargar los parámetros del kernel sin reiniciar:</p>
+<div><pre><code>sudo service procps start
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 5</strong></font> <strong>Comienzo de la instalación</strong></p>
+<p>Comenzaremos descargando el .rpm de la <a href="https://download.oracle.com/otn/linux/oracle19c/190000/oracle-database-ee-19c-1.0-1.x86_64.rpm" target="_blank" rel="noopener noreferrer">pagina oficial de Oracle<i>Content not supported</i></a></p>
+<p>Despues cambiaremos el .rpm a .deb:</p>
+<div><pre><code>sudo apt install alien libaio1 unixodbc
+</code></pre>
+</div><hr>
+<div><pre><code>sudo alien --scripts -d &lt;&lt;paquete.rpm&gt;&gt;
+</code></pre>
+</div><p>Esta operación tardará mucho (al rededor de 1h y pico).</p>
+<p>Y ahora instalamos el paquete .deb:</p>
+<div><pre><code>sudo dpkg -i oracle-database-ee-19c_1.0-2_amd64.deb
+</code></pre>
+</div><p>Después de unos 10 minutos el proceso terminará. Ejecutamos el siguiente comando para configurar la contraseña de administrador de la base de datos y demás cosas:</p>
+<div><pre><code>sudo /etc/init.d/oracledb_ORCLCDB-19c configure
+</code></pre>
+</div><p>Veremos que da error. Eso se debe a que en al script de configuración le hace falta un parámetro. Para añadirlo entramos en el script con:</p>
+<div><pre><code>sudo nano /etc/init.d/oracledb_ORCLCDB-19c
+</code></pre>
+</div><p>Y buscamos(Ctrl + W) en la línea donde pone &quot;Configuring&quot;</p>
+<p><img src="./../images/ABD/1-oracle.png" alt="image"></p>
+<p>Borramos la línea que se ve marcada en la imagen y copiamos en su lugar la siguiente:</p>
+<div><pre><code>$SU -s /bin/bash  $ORACLE_OWNER -c &quot;$DBCA -silent -createDatabase -gdbName $ORACLE_SID -templateName $TEMPLATE_NAME -characterSet $CHARSET -createAsContainerDatabase $CREATE_AS_CDB -numberOfPDBs $NUMBER_OF_PDBS -pdbName $PDB_NAME -createListener $LISTENER_NAME:$LISTENER_PORT -datafileDestination $ORACLE_DATA_LOCATION -sid $ORACLE_SID -autoGeneratePasswords -emConfiguration DBEXPRESS -emExpressPort $EM_EXPRESS_PORT -J-Doracle.assistants.dbca.validate.ConfigurationParams=false&quot;
+</code></pre>
+</div><p>Ahora lo intentamos de nuevo:</p>
+<div><pre><code>sudo /etc/init.d/oracledb_ORCLCDB-19c configure
+</code></pre>
+</div><p><code>Nota: Si nos salta un error de netstat tendremos que instalarlo sudo apt install net-tools</code></p>
+<p><code>Nota: Si nos sigue saliendo un error instalaremos lo siguiente sudo apt install libaio1 unixodbc</code></p>
+<p>Si te sale este error:</p>
+<p><img src="./../images/ABD/2-oracle.png" alt="image"></p>
+<p>Sigue estos pasos:</p>
+<div><pre><code>sudo nano /etc/hosts
+</code></pre>
+</div><p>Dentro del fichero escribe tu ip seguido del nombre de tu máquina dos veces, como se muestra en la siguiente imagen:</p>
+<p><img src="./../images/ABD/3-oracle.png" alt="image"></p>
+<p>Y después de esto ejecutaremos de nuevo el comando y ya debería de ir sino reinicia la máquina (<em>sudo reboot</em>) y vuélvelo a probar</p>
+<p><font color="#800080"><strong>Paso 6</strong></font></p>
+<p>Añadimos las variables de entorno a bash:</p>
+<div><pre><code>nano ~/.bashrc
+</code></pre>
+</div><p>Copiamos las siguientes líneas al final del fichero:</p>
+<div><pre><code>export ORACLE_HOME=/opt/oracle/product/19c/dbhome_1
+export ORACLE_SID=ORCLCDB
+export ORACLE_BASE=/opt/oracle
+export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
+export PATH=$ORACLE_HOME/bin:$PATH
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 7</strong></font></p>
+<p>Para finalizar reiniciamos el servicio de Oracle 19c:</p>
+<div><pre><code>sudo service oracledb_ORCLCDB-19c restart
+</code></pre>
+</div><p>Para iniciar Oracle ejecutaremos una serie de pasos:</p>
+<p><strong>Primero pondremos una contraseña</strong></p>
+<div><pre><code>passwd oracle
+</code></pre>
+</div><p><strong>Segundo entrasemos en oracle</strong></p>
+<div><pre><code>su oracle
+</code></pre>
+</div><p>Seguramente te salga un <code>$</code>, si es así eso es que no tienes shell. Para solucionarlo ejecutaremos</p>
+<div><pre><code>sudo usermod -s /bin/bash oracle
+</code></pre>
+</div><p>Y probaremos de nuevo:</p>
+<div><pre><code>su oracle
+</code></pre>
+</div><p>Una vez dentro ya tendras shell y dentro ejecutaremos:</p>
+<div><pre><code>sqlplus / as sysdba
+</code></pre>
+</div><p>Si esto no te va reinicia la maquina <code>sudo reboot</code> y prueba de nuevo</p>
+<p>Bien, una vez echo esto si al iniciar te sale algo asi:</p>
+<p><img src="./../images/ABD/4-oracle.png" alt="image"></p>
+<p>Ejecuta lo siguiente</p>
+<div><pre><code>SQL&gt; shutdown abort
+</code></pre>
+</div><hr>
+<div><pre><code>SQL&gt; startup
+</code></pre>
+</div><p>Y ya estaría sal y entra de nuevo y te deberia salir algo así:</p>
+<p><img src="./../images/ABD/5-oracle.png" alt="image"></p>
+<p>Acto seguido cambiaremos la contraseña del user SYS y SYSTEM</p>
+<div><pre><code>SQL&gt; alter user sys identified by TU_PASSWD;
+</code></pre>
+</div><hr>
+<div><pre><code>SQL&gt; alter user system identified by TU_PASSWD;
+</code></pre>
+</div><h2 id="creacion-de-usuario"> Creación de usuario</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font></p>
+<p>Ejecutamos el siguiente comando para activar _ORACLE_SCRIPT para que se puedan ejecutar sin errores los siguientes comandos:</p>
+<div><pre><code>SQL&gt; alter session set &quot;_ORACLE_SCRIPT&quot;=true;
+</code></pre>
+</div><p>Y luego nos dejara crear el usuario</p>
+<div><pre><code>SQL&gt; create user lucas identified by admin;
+</code></pre>
+</div><p>Si le queremos dar prvilegios ejecutaremos el siguiente comando(en este caso le daremos todos los privilegios):</p>
+<div><pre><code>SQL&gt; grant all privileges to lucas;
+</code></pre>
+</div><p>Una vez hecho esto pasos ya estaria el usuario creato y nos podremos conectar con el siguiente comando:</p>
+<div><pre><code>sqlplus lucas/admin
+</code></pre>
+</div><p><img src="./../images/ABD/6-oracle.png" alt="image"></p>
+<p>Para crear la base de datos y las tablas con sus respectivos inserts aqui os muestro como se hace:</p>
+<p><a href="https://github.com/oscarlucas22/Proyecto-DDL-y-DML_BD/tree/main/Oracle" target="_blank" rel="noopener noreferrer">Como crear base de datos y tablas en Oracle<i>Content not supported</i></a></p>
+<h2 id="cliente-remoto-oracle"> Cliente remoto Oracle</h2>
+<p><font color="#800080"><strong>Paso 1</strong></font> Activaremos listener y habilitaremos el pueto 1521/tcp</p>
+<p>Antes de comenzar tenemos que activar el listener:</p>
+<div><pre><code>lsnrclt start
+</code></pre>
+</div><p>Despues de eso habilitaremos el puerto 1521 del firewall, pero antes si no tenemos instalado firewalld lo instalaremos:</p>
+<div><pre><code>sudo apt install firewalld
+</code></pre>
+</div><p>Y ahora si habilitaremos el puerto 1521:</p>
+<div><pre><code>sudo firewall-cmd --permanent --add-port=1521/tcp
+</code></pre>
+</div><hr>
+<div><pre><code>sudo firewall-cmd --reload
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 2</strong></font> Instalaremos los clientes</p>
+<p>Una vez hecho esto instalaremos los clientes de Oracle</p>
+<ul>
+<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-basic-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">basic<i>Content not supported</i></a></li>
+<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-devel-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">devel<i>Content not supported</i></a></li>
+<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-sqlplus-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">sqlplus<i>Content not supported</i></a></li>
+</ul>
+<p>Una vez descargados los instalaremos en mi caso como lo voy a instalar en un Debian utilizaremos el comando <code>alien</code></p>
+<div><pre><code>sudo alien -i --scripts oracle-instantclient-*
+</code></pre>
+</div><p><font color="#800080"><strong>Paso 3</strong></font> Acceso desde el cliente</p>
+<p>Una vez instalados los clientes ya podremos acceder</p>
+<div><pre><code>sqlplus lucas/admin@ip-server/ORCLCDB
+</code></pre>
+</div><p><img src="./../images/ABD/7-oracle.png" alt="image"></p>
+<p>¡Gracias!</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -2492,188 +2674,6 @@ set ODBCINI=/etc/odbc.ini
 <p><img src="./../images/orcl-psql/9-psql-orcl.png" alt="image"></p>
 <p>Y hacemos la prueba del funcionamiento:</p>
 <p><img src="./../images/orcl-psql/10-psql-orcl.png" alt="image"></p>
-<p>¡Gracias!</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Oracle en Debian 11 Bullseye</title>
-      <link>https://github.com/oscarlucas22/practicas/oracle/</link>
-      <guid>https://github.com/oscarlucas22/practicas/oracle/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">Oracle en Debian 11 Bullseye</source>
-      <category>practicas</category>
-      <pubDate>Thu, 19 Jan 2023 12:13:11 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="oracle-en-debian-11-bullseye"> Oracle en Debian 11 Bullseye</h1>
-<p><img src="./../images/ABD/oracle.png" alt="image"></p>
-<h2 id="instalacion-de-oracle-en-debian-11-bullseye"> Instalación de Oracle en Debian 11 Bullseye</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font></p>
-<p>Antes de instalar el paquete, tenemos que configurar algunas cosas. Empezaremos creando el script:</p>
-<div><pre><code>sudo nano /sbin/chkconfig
-</code></pre>
-</div><p>Y copiamos estas líneas en el archivo:</p>
-<div><pre><code>#!/bin/bash
-# Oracle XE installer chkconfig hack for Ubuntu
-file=/etc/init.d/oracle-xe
-if [[ ! `tail -n1 $file | grep INIT` ]]; then
-echo &gt;&gt; $file
-echo '### BEGIN INIT INFO' &gt;&gt; $file
-echo '# Provides: OracleXE' &gt;&gt; $file
-echo '# Required-Start: $remote_fs $syslog' &gt;&gt; $file
-echo '# Required-Stop: $remote_fs $syslog' &gt;&gt; $file
-echo '# Default-Start: 2 3 4 5' &gt;&gt; $file
-echo '# Default-Stop: 0 1 6' &gt;&gt; $file
-echo '# Short-Description: Oracle 19c Express Edition' &gt;&gt; $file
-echo '### END INIT INFO' &gt;&gt; $file
-fi
-update-rc.d oracle-xe defaults 80 01
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 2</strong></font></p>
-<p>Damos los permisos necesarios al archivo:</p>
-<div><pre><code>sudo chmod 755 /sbin/chkconfig
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font></p>
-<p>Oracle 19c XE requiere de una configuración especial en kernel para funcionar. Por eso necesitamos añadir algunos parámetros al mismo.</p>
-<div><pre><code>sudo nano /etc/sysctl.d/60-oracle.conf
-</code></pre>
-</div><p>Copiamos lo siguiente y guardamos.</p>
-<div><pre><code>fs.file-max=6815744
-net.ipv4.ip_local_port_range=9000 65000
-kernel.sem=250 32000 100 128
-kernel.shmmax=536870912
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 4</strong></font></p>
-<p>Para cargar los parámetros del kernel sin reiniciar:</p>
-<div><pre><code>sudo service procps start
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 5</strong></font> <strong>Comienzo de la instalación</strong></p>
-<p>Comenzaremos descargando el .rpm de la <a href="https://download.oracle.com/otn/linux/oracle19c/190000/oracle-database-ee-19c-1.0-1.x86_64.rpm" target="_blank" rel="noopener noreferrer">pagina oficial de Oracle<i>Content not supported</i></a></p>
-<p>Despues cambiaremos el .rpm a .deb:</p>
-<div><pre><code>sudo apt install alien libaio1 unixodbc
-</code></pre>
-</div><hr>
-<div><pre><code>sudo alien --scripts -d &lt;&lt;paquete.rpm&gt;&gt;
-</code></pre>
-</div><p>Esta operación tardará mucho (al rededor de 1h y pico).</p>
-<p>Y ahora instalamos el paquete .deb:</p>
-<div><pre><code>sudo dpkg -i oracle-database-ee-19c_1.0-2_amd64.deb
-</code></pre>
-</div><p>Después de unos 10 minutos el proceso terminará. Ejecutamos el siguiente comando para configurar la contraseña de administrador de la base de datos y demás cosas:</p>
-<div><pre><code>sudo /etc/init.d/oracledb_ORCLCDB-19c configure
-</code></pre>
-</div><p>Veremos que da error. Eso se debe a que en al script de configuración le hace falta un parámetro. Para añadirlo entramos en el script con:</p>
-<div><pre><code>sudo nano /etc/init.d/oracledb_ORCLCDB-19c
-</code></pre>
-</div><p>Y buscamos(Ctrl + W) en la línea donde pone &quot;Configuring&quot;</p>
-<p><img src="./../images/ABD/1-oracle.png" alt="image"></p>
-<p>Borramos la línea que se ve marcada en la imagen y copiamos en su lugar la siguiente:</p>
-<div><pre><code>$SU -s /bin/bash  $ORACLE_OWNER -c &quot;$DBCA -silent -createDatabase -gdbName $ORACLE_SID -templateName $TEMPLATE_NAME -characterSet $CHARSET -createAsContainerDatabase $CREATE_AS_CDB -numberOfPDBs $NUMBER_OF_PDBS -pdbName $PDB_NAME -createListener $LISTENER_NAME:$LISTENER_PORT -datafileDestination $ORACLE_DATA_LOCATION -sid $ORACLE_SID -autoGeneratePasswords -emConfiguration DBEXPRESS -emExpressPort $EM_EXPRESS_PORT -J-Doracle.assistants.dbca.validate.ConfigurationParams=false&quot;
-</code></pre>
-</div><p>Ahora lo intentamos de nuevo:</p>
-<div><pre><code>sudo /etc/init.d/oracledb_ORCLCDB-19c configure
-</code></pre>
-</div><p><code>Nota: Si nos salta un error de netstat tendremos que instalarlo sudo apt install net-tools</code></p>
-<p><code>Nota: Si nos sigue saliendo un error instalaremos lo siguiente sudo apt install libaio1 unixodbc</code></p>
-<p>Si te sale este error:</p>
-<p><img src="./../images/ABD/2-oracle.png" alt="image"></p>
-<p>Sigue estos pasos:</p>
-<div><pre><code>sudo nano /etc/hosts
-</code></pre>
-</div><p>Dentro del fichero escribe tu ip seguido del nombre de tu máquina dos veces, como se muestra en la siguiente imagen:</p>
-<p><img src="./../images/ABD/3-oracle.png" alt="image"></p>
-<p>Y después de esto ejecutaremos de nuevo el comando y ya debería de ir sino reinicia la máquina (<em>sudo reboot</em>) y vuélvelo a probar</p>
-<p><font color="#800080"><strong>Paso 6</strong></font></p>
-<p>Añadimos las variables de entorno a bash:</p>
-<div><pre><code>nano ~/.bashrc
-</code></pre>
-</div><p>Copiamos las siguientes líneas al final del fichero:</p>
-<div><pre><code>export ORACLE_HOME=/opt/oracle/product/19c/dbhome_1
-export ORACLE_SID=ORCLCDB
-export ORACLE_BASE=/opt/oracle
-export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
-export PATH=$ORACLE_HOME/bin:$PATH
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 7</strong></font></p>
-<p>Para finalizar reiniciamos el servicio de Oracle 19c:</p>
-<div><pre><code>sudo service oracledb_ORCLCDB-19c restart
-</code></pre>
-</div><p>Para iniciar Oracle ejecutaremos una serie de pasos:</p>
-<p><strong>Primero pondremos una contraseña</strong></p>
-<div><pre><code>passwd oracle
-</code></pre>
-</div><p><strong>Segundo entrasemos en oracle</strong></p>
-<div><pre><code>su oracle
-</code></pre>
-</div><p>Seguramente te salga un <code>$</code>, si es así eso es que no tienes shell. Para solucionarlo ejecutaremos</p>
-<div><pre><code>sudo usermod -s /bin/bash oracle
-</code></pre>
-</div><p>Y probaremos de nuevo:</p>
-<div><pre><code>su oracle
-</code></pre>
-</div><p>Una vez dentro ya tendras shell y dentro ejecutaremos:</p>
-<div><pre><code>sqlplus / as sysdba
-</code></pre>
-</div><p>Si esto no te va reinicia la maquina <code>sudo reboot</code> y prueba de nuevo</p>
-<p>Bien, una vez echo esto si al iniciar te sale algo asi:</p>
-<p><img src="./../images/ABD/4-oracle.png" alt="image"></p>
-<p>Ejecuta lo siguiente</p>
-<div><pre><code>SQL&gt; shutdown abort
-</code></pre>
-</div><hr>
-<div><pre><code>SQL&gt; startup
-</code></pre>
-</div><p>Y ya estaría sal y entra de nuevo y te deberia salir algo así:</p>
-<p><img src="./../images/ABD/5-oracle.png" alt="image"></p>
-<p>Acto seguido cambiaremos la contraseña del user SYS y SYSTEM</p>
-<div><pre><code>SQL&gt; alter user sys identified by TU_PASSWD;
-</code></pre>
-</div><hr>
-<div><pre><code>SQL&gt; alter user system identified by TU_PASSWD;
-</code></pre>
-</div><h2 id="creacion-de-usuario"> Creación de usuario</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font></p>
-<p>Ejecutamos el siguiente comando para activar _ORACLE_SCRIPT para que se puedan ejecutar sin errores los siguientes comandos:</p>
-<div><pre><code>SQL&gt; alter session set &quot;_ORACLE_SCRIPT&quot;=true;
-</code></pre>
-</div><p>Y luego nos dejara crear el usuario</p>
-<div><pre><code>SQL&gt; create user lucas identified by admin;
-</code></pre>
-</div><p>Si le queremos dar prvilegios ejecutaremos el siguiente comando(en este caso le daremos todos los privilegios):</p>
-<div><pre><code>SQL&gt; grant all privileges to lucas;
-</code></pre>
-</div><p>Una vez hecho esto pasos ya estaria el usuario creato y nos podremos conectar con el siguiente comando:</p>
-<div><pre><code>sqlplus lucas/admin
-</code></pre>
-</div><p><img src="./../images/ABD/6-oracle.png" alt="image"></p>
-<p>Para crear la base de datos y las tablas con sus respectivos inserts aqui os muestro como se hace:</p>
-<p><a href="https://github.com/oscarlucas22/Proyecto-DDL-y-DML_BD/tree/main/Oracle" target="_blank" rel="noopener noreferrer">Como crear base de datos y tablas en Oracle<i>Content not supported</i></a></p>
-<h2 id="cliente-remoto-oracle"> Cliente remoto Oracle</h2>
-<p><font color="#800080"><strong>Paso 1</strong></font> Activaremos listener y habilitaremos el pueto 1521/tcp</p>
-<p>Antes de comenzar tenemos que activar el listener:</p>
-<div><pre><code>lsnrclt start
-</code></pre>
-</div><p>Despues de eso habilitaremos el puerto 1521 del firewall, pero antes si no tenemos instalado firewalld lo instalaremos:</p>
-<div><pre><code>sudo apt install firewalld
-</code></pre>
-</div><p>Y ahora si habilitaremos el puerto 1521:</p>
-<div><pre><code>sudo firewall-cmd --permanent --add-port=1521/tcp
-</code></pre>
-</div><hr>
-<div><pre><code>sudo firewall-cmd --reload
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 2</strong></font> Instalaremos los clientes</p>
-<p>Una vez hecho esto instalaremos los clientes de Oracle</p>
-<ul>
-<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-basic-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">basic<i>Content not supported</i></a></li>
-<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-devel-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">devel<i>Content not supported</i></a></li>
-<li><a href="https://download.oracle.com/otn_software/linux/instantclient/218000/oracle-instantclient-sqlplus-21.8.0.0.0-1.el8.x86_64.rpm" target="_blank" rel="noopener noreferrer">sqlplus<i>Content not supported</i></a></li>
-</ul>
-<p>Una vez descargados los instalaremos en mi caso como lo voy a instalar en un Debian utilizaremos el comando <code>alien</code></p>
-<div><pre><code>sudo alien -i --scripts oracle-instantclient-*
-</code></pre>
-</div><p><font color="#800080"><strong>Paso 3</strong></font> Acceso desde el cliente</p>
-<p>Una vez instalados los clientes ya podremos acceder</p>
-<div><pre><code>sqlplus lucas/admin@ip-server/ORCLCDB
-</code></pre>
-</div><p><img src="./../images/ABD/7-oracle.png" alt="image"></p>
 <p>¡Gracias!</p>
 ]]></content:encoded>
     </item>
@@ -4625,6 +4625,186 @@ mysql -u root -p proyecto &lt; copiadb.sql
 ]]></content:encoded>
     </item>
     <item>
+      <title>Cortafuegos I: De nodo con iptables</title>
+      <link>https://github.com/oscarlucas22/practicas/cortafuegoI/</link>
+      <guid>https://github.com/oscarlucas22/practicas/cortafuegoI/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">Cortafuegos I: De nodo con iptables</source>
+      <category>practicas</category>
+      <content:encoded><![CDATA[<h1 id="cortafuegos-i-de-nodo-con-iptables"> Cortafuegos I: De nodo con iptables</h1>
+<p>Página de la <a href="https://fp.josedomingo.org/seguridadgs/u03/ejercicio1.html" target="_blank" rel="noopener noreferrer">practica<i>Content not supported</i></a></p>
+<hr>
+<p>Vamos a crear nuestra maquina sobre la que vamos a trabajar</p>
+<p><a href="https://pastebin.com/xJ6NjdGT" target="_blank" rel="noopener noreferrer">fichero<i>Content not supported</i></a></p>
+<p>Cuando tengamos el fichero nos hiremos a Openstack e iniciaremos la maquina a traves de este fichero, sigue los siguientes pasos para crearla:</p>
+<p><img src="./../images/SAD/cortafuegos1/creacion1.png" alt="image"></p>
+<p><img src="./../images/SAD/cortafuegos1/creacion2.png" alt="image"></p>
+<p>Importamos el fichero</p>
+<p><img src="./../images/SAD/cortafuegos1/creacion3.png" alt="image"></p>
+<p>Le daremos a &quot;Siguiente&quot; y rellenaremos las siguientes casillas:</p>
+<p><img src="./../images/SAD/cortafuegos1/creacion4.png" alt="image"></p>
+<p>Y ya comenzaria a instalarse. Una vez instalada nos saldria en la sección de &quot;Instancias&quot;</p>
+<hr>
+<p>Vamos a realizar los primeros pasos para implementar un cortafuegos en un nodo de una red, aquel que se ejecuta en el propio equipo que trata de proteger, lo que a veces se denomina un cortafuegos personal.</p>
+<h2 id="limpieza-de-las-reglas-previas"> Limpieza de las reglas previas</h2>
+<div><pre><code>iptables -F
+iptables -t nat -F
+iptables -Z
+iptables -t nat -Z
+</code></pre>
+</div><h2 id="vamos-a-permitir-ssh"> Vamos a permitir ssh</h2>
+<p>Cómo estamos conectado a la máquina por ssh, vamos a permitir la conexión ssh desde la red 172.22.0.0/16, antes de cambiar las políticas por defecto a DROP, para no perder la conexión:</p>
+<div><pre><code>iptables -A INPUT -s 172.22.0.0/16 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -d 172.22.0.0/16 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
+
+iptables -A INPUT -s 172.29.0.0/16 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -d 172.29.0.0/16 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
+</code></pre>
+</div><h2 id="politica-por-defecto"> Política por defecto</h2>
+<div><pre><code>iptables -P INPUT DROP
+iptables -P OUTPUT DROP
+</code></pre>
+</div><p>Comprobamos que el equipo no puede acceder a ningún servicio ni de Internet ni de la red local, ya que la política lo impide.</p>
+<p><img src="./../images/SAD/cortafuegos1/1.png" alt="image"></p>
+<p><img src="./../images/SAD/cortafuegos1/1.1.png" alt="image"></p>
+<h2 id="permitimos-trafico-para-la-interfaz-loopback"> Permitimos tráfico para la interfaz loopback</h2>
+<div><pre><code>iptables -A INPUT -i lo -p icmp -j ACCEPT
+iptables -A OUTPUT -o lo -p icmp -j ACCEPT
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/2.png" alt="image"></p>
+<h2 id="peticiones-y-respuestas-protocolo-icmp"> Peticiones y respuestas protocolo ICMP</h2>
+<div><pre><code>iptables -A INPUT -i ens3 -p icmp --icmp-type echo-reply -j ACCEPT
+iptables -A OUTPUT -o ens3 -p icmp --icmp-type echo-request -j ACCEPT
+</code></pre>
+</div><p>Comprobamos su funcionamiento haciendo ping a una IP pública:</p>
+<p><img src="./../images/SAD/cortafuegos1/3.png" alt="image"></p>
+<h2 id="consultas-y-respuestas-dns"> Consultas y respuestas DNS</h2>
+<div><pre><code>iptables -A OUTPUT -o ens3 -p udp --dport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A INPUT -i ens3 -p udp --sport 53 -m state --state ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>Comprobamos su funcionamiento con una consulta DNS:</p>
+<p><img src="./../images/SAD/cortafuegos1/4.png" alt="image"></p>
+<h2 id="trafico-http-que-la-maquina-pueda-navegar"> Tráfico http (que la máquina pueda navegar)</h2>
+<div><pre><code>iptables -A OUTPUT -o ens3 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A INPUT -i ens3 -p tcp --sport 80 -m state --state ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>Comprobamos que funciona accediendo a un servicio http (!no https)</p>
+<p><img src="./../images/SAD/cortafuegos1/5.png" alt="image"></p>
+<h2 id="trafico-https"> Tráfico https</h2>
+<div><pre><code>iptables -A OUTPUT -o ens3 -p tcp --dport 443 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A INPUT -i ens3 -p tcp --sport 443 -m state --state ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>Comprobamos que funciona abriendo un navegador y accediendo a cualquier sitio web (hoy en día la mayoría son https). En mi caso lo he hecho con lynx:</p>
+<div><pre><code>apt install lynx
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/6.png" alt="image"></p>
+<h2 id="permitimos-el-acceso-a-nuestro-servidor-web"> Permitimos el acceso a nuestro servidor web</h2>
+<div><pre><code>iptables -A INPUT -i ens3 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -o ens3 -p tcp --sport 80 -m state --state ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>En mi caso he vuelto a hacer la comprobación por lynx (lynx &quot;mi-ip-flotante&quot;)</p>
+<p><img src="./../images/SAD/cortafuegos1/7.png" alt="image"></p>
+<hr>
+<h2 id="ejercicios"> Ejercicios</h2>
+<p><strong>1. Permite poder hacer conexiones ssh al exterior.</strong></p>
+<p>Vamos a añadir las reglas que permitan realizar conexiones ssh al exterior:</p>
+<div><pre><code>iptables -A INPUT -i ens3 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -o ens3 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>Probemos si podemos conectarnos por ssh a otra máquina:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea1-1.png" alt="image"></p>
+<p>Efectivamente, podemos conectarnos, por lo que podemos decir que la regla funciona correctamente.</p>
+<p><strong>2. Deniega el acceso a tu servidor web desde una ip concreta.</strong></p>
+<p>Antes de agregar la regla de bloqueo, es importante considerar las reglas de INPUT que ya tenemos establecidas:</p>
+<div><pre><code>iptables -L -v -n
+</code></pre>
+</div><p>Si agregamos la regla de bloqueo al final, no sería efectiva, ya que siempre se superpondría con la regla previa que permite todo el tráfico HTTP entrante.</p>
+<p>Para solucionarlo, añadimos por encima la nueva regla.</p>
+<p>Necesitamos saber el número de línea específico, así que ejecutamos el siguiente comando:</p>
+<div><pre><code>iptables -L -v -n --line-numbers
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/tarea2-0.png" alt="image"></p>
+<p>Vamos a añadir la regla de bloqueo en la posición marcada para que funcione:</p>
+<div><pre><code>iptables -I INPUT 6 -s 10.0.0.216/32 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j DROP
+</code></pre>
+</div><p>Esta regla permitirá el acceso a nuestro servidor web desde cualquier máquina que no tenga la dirección IP especificada. Verifiquemos si funciona:</p>
+<ul>
+<li>Desde otra ip que no es la bloqueada:</li>
+</ul>
+<p><img src="./../images/SAD/cortafuegos1/tarea2-1.png" alt="image"></p>
+<ul>
+<li>Desde la ip bloqueda:</li>
+</ul>
+<p><img src="./../images/SAD/cortafuegos1/tarea2-2.png" alt="image"></p>
+<p>Como vemos, podemos acceder desde cualquier máquina que no sea la que tenga la ip que tenemos bloqueada.</p>
+<p><strong>3. Permite hacer consultas DNS sólo al servidor 192.168.202.2. Comprueba que no puedes hacer un dig @1.1.1.1.</strong></p>
+<p>En esta situación, estamos enfrentando un problema similar al del ejercicio anterior. Sin embargo, en este caso necesitamos eliminar dos reglas antiguas que permitían todo el tráfico DNS saliente.</p>
+<div><pre><code>iptables -L -v -n --line-numbers
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/tarea3-0.png" alt="image"></p>
+<p>Aun si añadiéramos las nuevas reglas por encima de estas, si ejecutamos el comando <code>dig</code> a 1.1.1.1, se produciría una coincidencia con estas reglas, lo que permitiría el tráfico. Esto no es lo que buscamos.</p>
+<p>Primero, borramos las reglas antiguas:</p>
+<div><pre><code>iptables -D INPUT 5
+iptables -D OUTPUT 5
+</code></pre>
+</div><p>Despues añadimos las siguientes reglas:</p>
+<div><pre><code>iptables -A INPUT -s 192.168.202.2/32 -p udp --sport 53 -m state --state ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -d 192.168.202.2/32 -p udp --dport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
+</code></pre>
+</div><p>Vemos que no podemos hacer un dig @1.1.1.1:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea3-1.png" alt="image"></p>
+<p>Pero si podemos usar el servidor dns que hay en “192.168.202.2”:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea3-2.png" alt="image"></p>
+<p><strong>4. No permitir el acceso al servidor web de www.josedomingo.org (Tienes que utilizar la ip). ¿Puedes acceder a fp.josedomingo.org?</strong></p>
+<p>Una vez más, si agregamos la siguiente regla al final, tendremos un conflicto de reglas, ya que antes tenemos una que permite todo el tráfico HTTP de salida. Los emparejamientos siempre se detendrían ahí.</p>
+<div><pre><code>iptables -L -v -n --line-numbers
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/tarea4-0.png" alt="image"></p>
+<p>Es necesario agregar la regla de bloqueo por encima de la regla previamente mostrada:</p>
+<div><pre><code>iptables -I OUTPUT 5 -d 37.187.119.60/32 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j DROP
+</code></pre>
+</div><p>Ahora no podemos acceder a esa url desde esta máquina debido a la regla del cortafuegos:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea4-1.png" alt="image"></p>
+<p>Tampoco podemos acceder a fp.josedomingo.org, ya que tiene la misma ip, y la tenemos bloqueada:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea4-2.png" alt="image"></p>
+<p>Sin embargo, si que podemos acceder a otros dominios que no tengan esa ip:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea4-3.png" alt="image"></p>
+<p>Como vemos, la regla funciona bien, pero debemos tener cuidado al bloquear ciertas ips, ya que podríamos estar bloqueando más servicios de los que queremos.</p>
+<p><strong>5. Permite mandar un correo usando nuestro servidor de correo: babuino-smtp. Para probarlo ejecuta un telnet bubuino-smtp.gonzalonazareno.org 25.</strong></p>
+<p>Lo primero que haremos será crear las reglas Iptables:</p>
+<div><pre><code>iptables -A OUTPUT -d 192.168.203.3 -p tcp --dport 25 -j ACCEPT
+iptables -A INPUT -s 192.168.203.3 -p tcp --sport 25 -j ACCEPT
+</code></pre>
+</div><p>Pruebo que funciona con telnet:</p>
+<div><pre><code>telnet babuino-smtp.gonzalonazareno.org 25
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/tarea5-1.png" alt="image"></p>
+<p><strong>6. Instala un servidor mariadb, y permite los accesos desde la ip de tu cliente. Comprueba que desde otro cliente no se puede acceder.</strong></p>
+<p>Instalamos mariadb-server y permitimos conexiones remotas:</p>
+<div><pre><code>apt install mariadb-server
+</code></pre>
+</div><p>Editamos el siguiente fichero <code>/etc/mysql/mariadb.conf.d/50-server.cnf</code>:</p>
+<div><pre><code>bind-address            = 0.0.0.0
+</code></pre>
+</div><p>Reiniciamos mariadb:</p>
+<div><pre><code>systemctl restart mariadb
+</code></pre>
+</div><p>A continuación, habilitamos el tráfico entrante desde mi máquina host:</p>
+<div><pre><code>iptables -A INPUT -s 10.0.0.180 -p tcp --dport 3306 -j ACCEPT
+iptables -A OUTPUT -d 10.0.0.180 -p tcp --sport 3306 -j ACCEPT
+</code></pre>
+</div><p>Creo un usuario en la maquina para despues comprobar el funcionamiento:</p>
+<p><img src="./../images/SAD/cortafuegos1/tarea6-1.png" alt="image"></p>
+<p>Probamos que funciona:</p>
+<div><pre><code>mariadb -u cortafuegos -h 10.0.0.72 -p
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/tarea6-2.png" alt="image"></p>
+<p>Verificamos que el tráfico se bloquea desde otro cliente:</p>
+<div><pre><code>mariadb -u cortafuegos -h 10.0.0.72 -p
+</code></pre>
+</div><p><img src="./../images/SAD/cortafuegos1/tarea6-3.png" alt="image"></p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>Instalación y configuración de un servidor de correos en el VPS</title>
       <link>https://github.com/oscarlucas22/practicas/correos/</link>
       <guid>https://github.com/oscarlucas22/practicas/correos/</guid>
@@ -5458,183 +5638,77 @@ sudo nft add rule inet filter forward iifname &quot;ens3&quot; oifname &quot;ens
 ]]></content:encoded>
     </item>
     <item>
-      <title>Cortafuegos I: De nodo con iptables</title>
-      <link>https://github.com/oscarlucas22/practicas/cortafuegoI/</link>
-      <guid>https://github.com/oscarlucas22/practicas/cortafuegoI/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">Cortafuegos I: De nodo con iptables</source>
-      <category>practicas</category>
-      <content:encoded><![CDATA[<h1 id="cortafuegos-i-de-nodo-con-iptables"> Cortafuegos I: De nodo con iptables</h1>
-<p>Página de la <a href="https://fp.josedomingo.org/seguridadgs/u03/ejercicio1.html" target="_blank" rel="noopener noreferrer">practica<i>Content not supported</i></a></p>
-<hr>
-<p>Vamos a crear nuestra maquina sobre la que vamos a trabajar</p>
-<p><a href="https://pastebin.com/xJ6NjdGT" target="_blank" rel="noopener noreferrer">fichero<i>Content not supported</i></a></p>
-<p>Cuando tengamos el fichero nos hiremos a Openstack e iniciaremos la maquina a traves de este fichero, sigue los siguientes pasos para crearla:</p>
-<p><img src="./../images/SAD/cortafuegos1/creacion1.png" alt="image"></p>
-<p><img src="./../images/SAD/cortafuegos1/creacion2.png" alt="image"></p>
-<p>Importamos el fichero</p>
-<p><img src="./../images/SAD/cortafuegos1/creacion3.png" alt="image"></p>
-<p>Le daremos a &quot;Siguiente&quot; y rellenaremos las siguientes casillas:</p>
-<p><img src="./../images/SAD/cortafuegos1/creacion4.png" alt="image"></p>
-<p>Y ya comenzaria a instalarse. Una vez instalada nos saldria en la sección de &quot;Instancias&quot;</p>
-<hr>
-<p>Vamos a realizar los primeros pasos para implementar un cortafuegos en un nodo de una red, aquel que se ejecuta en el propio equipo que trata de proteger, lo que a veces se denomina un cortafuegos personal.</p>
-<h2 id="limpieza-de-las-reglas-previas"> Limpieza de las reglas previas</h2>
-<div><pre><code>iptables -F
-iptables -t nat -F
-iptables -Z
-iptables -t nat -Z
-</code></pre>
-</div><h2 id="vamos-a-permitir-ssh"> Vamos a permitir ssh</h2>
-<p>Cómo estamos conectado a la máquina por ssh, vamos a permitir la conexión ssh desde la red 172.22.0.0/16, antes de cambiar las políticas por defecto a DROP, para no perder la conexión:</p>
-<div><pre><code>iptables -A INPUT -s 172.22.0.0/16 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
-iptables -A OUTPUT -d 172.22.0.0/16 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
-
-iptables -A INPUT -s 172.29.0.0/16 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
-iptables -A OUTPUT -d 172.29.0.0/16 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
-</code></pre>
-</div><h2 id="politica-por-defecto"> Política por defecto</h2>
-<div><pre><code>iptables -P INPUT DROP
-iptables -P OUTPUT DROP
-</code></pre>
-</div><p>Comprobamos que el equipo no puede acceder a ningún servicio ni de Internet ni de la red local, ya que la política lo impide.</p>
-<p><img src="./../images/SAD/cortafuegos1/1.png" alt="image"></p>
-<p><img src="./../images/SAD/cortafuegos1/1.1.png" alt="image"></p>
-<h2 id="permitimos-trafico-para-la-interfaz-loopback"> Permitimos tráfico para la interfaz loopback</h2>
-<div><pre><code>iptables -A INPUT -i lo -p icmp -j ACCEPT
-iptables -A OUTPUT -o lo -p icmp -j ACCEPT
-</code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/2.png" alt="image"></p>
-<h2 id="peticiones-y-respuestas-protocolo-icmp"> Peticiones y respuestas protocolo ICMP</h2>
-<div><pre><code>iptables -A INPUT -i ens3 -p icmp --icmp-type echo-reply -j ACCEPT
-iptables -A OUTPUT -o ens3 -p icmp --icmp-type echo-request -j ACCEPT
-</code></pre>
-</div><p>Comprobamos su funcionamiento haciendo ping a una IP pública:</p>
-<p><img src="./../images/SAD/cortafuegos1/3.png" alt="image"></p>
-<h2 id="consultas-y-respuestas-dns"> Consultas y respuestas DNS</h2>
-<div><pre><code>iptables -A OUTPUT -o ens3 -p udp --dport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
-iptables -A INPUT -i ens3 -p udp --sport 53 -m state --state ESTABLISHED -j ACCEPT
-</code></pre>
-</div><p>Comprobamos su funcionamiento con una consulta DNS:</p>
-<p><img src="./../images/SAD/cortafuegos1/4.png" alt="image"></p>
-<h2 id="trafico-http-que-la-maquina-pueda-navegar"> Tráfico http (que la máquina pueda navegar)</h2>
-<div><pre><code>iptables -A OUTPUT -o ens3 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
-iptables -A INPUT -i ens3 -p tcp --sport 80 -m state --state ESTABLISHED -j ACCEPT
-</code></pre>
-</div><p>Comprobamos que funciona accediendo a un servicio http (!no https)</p>
-<p><img src="./../images/SAD/cortafuegos1/5.png" alt="image"></p>
-<h2 id="trafico-https"> Tráfico https</h2>
-<div><pre><code>iptables -A OUTPUT -o ens3 -p tcp --dport 443 -m state --state NEW,ESTABLISHED -j ACCEPT
-iptables -A INPUT -i ens3 -p tcp --sport 443 -m state --state ESTABLISHED -j ACCEPT
-</code></pre>
-</div><p>Comprobamos que funciona abriendo un navegador y accediendo a cualquier sitio web (hoy en día la mayoría son https). En mi caso lo he hecho con lynx:</p>
-<div><pre><code>apt install lynx
-</code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/6.png" alt="image"></p>
-<h2 id="permitimos-el-acceso-a-nuestro-servidor-web"> Permitimos el acceso a nuestro servidor web</h2>
-<div><pre><code>iptables -A INPUT -i ens3 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
-iptables -A OUTPUT -o ens3 -p tcp --sport 80 -m state --state ESTABLISHED -j ACCEPT
-</code></pre>
-</div><p>En mi caso he vuelto a hacer la comprobación por lynx (lynx &quot;mi-ip-flotante&quot;)</p>
-<p><img src="./../images/SAD/cortafuegos1/7.png" alt="image"></p>
-<hr>
-<h2 id="ejercicios"> Ejercicios</h2>
-<p><strong>1. Permite poder hacer conexiones ssh al exterior.</strong></p>
-<p>Vamos a añadir las reglas que permitan realizar conexiones ssh al exterior:</p>
-<div><pre><code>iptables -A INPUT -i ens3 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
-iptables -A OUTPUT -o ens3 -p tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
-</code></pre>
-</div><p>Probemos si podemos conectarnos por ssh a otra máquina:</p>
-<p><img src="./../images/SAD/cortafuegos1/tarea1-1.png" alt="image"></p>
-<p>Efectivamente, podemos conectarnos, por lo que podemos decir que la regla funciona correctamente.</p>
-<p><strong>2. Deniega el acceso a tu servidor web desde una ip concreta.</strong></p>
-<p>Antes de agregar la regla de bloqueo, es importante considerar las reglas de INPUT que ya tenemos establecidas:</p>
-<div><pre><code>iptables -L -v -n
-</code></pre>
-</div><p>Si agregamos la regla de bloqueo al final, no sería efectiva, ya que siempre se superpondría con la regla previa que permite todo el tráfico HTTP entrante.</p>
-<p>Para solucionarlo, añadimos por encima la nueva regla.</p>
-<p>Necesitamos saber el número de línea específico, así que ejecutamos el siguiente comando:</p>
-<div><pre><code>iptables -L -v -n --line-numbers
-</code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/tarea2-0.png" alt="image"></p>
-<p>Vamos a añadir la regla de bloqueo en la posición marcada para que funcione:</p>
-<div><pre><code>iptables -I INPUT 6 -s 10.0.0.216/32 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j DROP
-</code></pre>
-</div><p>Esta regla permitirá el acceso a nuestro servidor web desde cualquier máquina que no tenga la dirección IP especificada. Verifiquemos si funciona:</p>
-<ul>
-<li>Desde otra ip que no es la bloqueada:</li>
-</ul>
-<p><img src="./../images/SAD/cortafuegos1/tarea2-1.png" alt="image"></p>
-<ul>
-<li>Desde la ip bloqueda:</li>
-</ul>
-<p><img src="./../images/SAD/cortafuegos1/tarea2-2.png" alt="image"></p>
-<p>Como vemos, podemos acceder desde cualquier máquina que no sea la que tenga la ip que tenemos bloqueada.</p>
-<p><strong>3. Permite hacer consultas DNS sólo al servidor 192.168.202.2. Comprueba que no puedes hacer un dig @1.1.1.1.</strong></p>
-<p>En esta situación, estamos enfrentando un problema similar al del ejercicio anterior. Sin embargo, en este caso necesitamos eliminar dos reglas antiguas que permitían todo el tráfico DNS saliente.</p>
-<div><pre><code>iptables -L -v -n --line-numbers
-</code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/tarea3-0.png" alt="image"></p>
-<p>Aun si añadiéramos las nuevas reglas por encima de estas, si ejecutamos el comando <code>dig</code> a 1.1.1.1, se produciría una coincidencia con estas reglas, lo que permitiría el tráfico. Esto no es lo que buscamos.</p>
-<p>Primero, borramos las reglas antiguas:</p>
-<div><pre><code>iptables -D INPUT 5
-iptables -D OUTPUT 5
-</code></pre>
-</div><p>Despues añadimos las siguientes reglas:</p>
-<div><pre><code>iptables -A INPUT -s 192.168.202.2/32 -p udp --sport 53 -m state --state ESTABLISHED -j ACCEPT
-iptables -A OUTPUT -d 192.168.202.2/32 -p udp --dport 53 -m state --state NEW,ESTABLISHED -j ACCEPT
-</code></pre>
-</div><p>Vemos que no podemos hacer un dig @1.1.1.1:</p>
-<p><img src="./../images/SAD/cortafuegos1/tarea3-1.png" alt="image"></p>
-<p>Pero si podemos usar el servidor dns que hay en “192.168.202.2”:</p>
-<p><img src="./../images/SAD/cortafuegos1/tarea3-2.png" alt="image"></p>
-<p><strong>4. No permitir el acceso al servidor web de www.josedomingo.org (Tienes que utilizar la ip). ¿Puedes acceder a fp.josedomingo.org?</strong></p>
-<p>Una vez más, si agregamos la siguiente regla al final, tendremos un conflicto de reglas, ya que antes tenemos una que permite todo el tráfico HTTP de salida. Los emparejamientos siempre se detendrían ahí.</p>
-<div><pre><code>iptables -L -v -n --line-numbers
-</code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/tarea4-0.png" alt="image"></p>
-<p>Es necesario agregar la regla de bloqueo por encima de la regla previamente mostrada:</p>
-<div><pre><code>iptables -I OUTPUT 5 -d 37.187.119.60/32 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j DROP
-</code></pre>
-</div><p>Ahora no podemos acceder a esa url desde esta máquina debido a la regla del cortafuegos:</p>
-<p><img src="./../images/SAD/cortafuegos1/tarea4-1.png" alt="image"></p>
-<p>Tampoco podemos acceder a fp.josedomingo.org, ya que tiene la misma ip, y la tenemos bloqueada:</p>
-<p><img src="./../images/SAD/cortafuegos1/tarea4-2.png" alt="image"></p>
-<p>Sin embargo, si que podemos acceder a otros dominios que no tengan esa ip:</p>
-<p><img src="./../images/SAD/cortafuegos1/tarea4-3.png" alt="image"></p>
-<p>Como vemos, la regla funciona bien, pero debemos tener cuidado al bloquear ciertas ips, ya que podríamos estar bloqueando más servicios de los que queremos.</p>
-<p><strong>5. Permite mandar un correo usando nuestro servidor de correo: babuino-smtp. Para probarlo ejecuta un telnet bubuino-smtp.gonzalonazareno.org 25.</strong></p>
-<p>Lo primero que haremos será crear las reglas Iptables:</p>
-<div><pre><code>iptables -A OUTPUT -d 192.168.203.3 -p tcp --dport 25 -j ACCEPT
-iptables -A INPUT -s 192.168.203.3 -p tcp --sport 25 -j ACCEPT
-</code></pre>
-</div><p>Pruebo que funciona con telnet:</p>
-<div><pre><code>telnet babuino-smtp.gonzalonazareno.org 25
-</code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/tarea5-1.png" alt="image"></p>
-<p><strong>6. Instala un servidor mariadb, y permite los accesos desde la ip de tu cliente. Comprueba que desde otro cliente no se puede acceder.</strong></p>
-<p>Instalamos mariadb-server y permitimos conexiones remotas:</p>
-<div><pre><code>apt install mariadb-server
-</code></pre>
-</div><p>Editamos el siguiente fichero <code>/etc/mysql/mariadb.conf.d/50-server.cnf</code>:</p>
-<div><pre><code>bind-address            = 0.0.0.0
-</code></pre>
-</div><p>Reiniciamos mariadb:</p>
-<div><pre><code>systemctl restart mariadb
-</code></pre>
-</div><p>A continuación, habilitamos el tráfico entrante desde mi máquina host:</p>
-<div><pre><code>iptables -A INPUT -s 10.0.0.180 -p tcp --dport 3306 -j ACCEPT
-iptables -A OUTPUT -d 10.0.0.180 -p tcp --sport 3306 -j ACCEPT
-</code></pre>
-</div><p>Creo un usuario en la maquina para despues comprobar el funcionamiento:</p>
-<p><img src="./../images/SAD/cortafuegos1/tarea6-1.png" alt="image"></p>
-<p>Probamos que funciona:</p>
-<div><pre><code>mariadb -u cortafuegos -h 10.0.0.72 -p
-</code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/tarea6-2.png" alt="image"></p>
-<p>Verificamos que el tráfico se bloquea desde otro cliente:</p>
-<div><pre><code>mariadb -u cortafuegos -h 10.0.0.72 -p
-</code></pre>
-</div><p><img src="./../images/SAD/cortafuegos1/tarea6-3.png" alt="image"></p>
+      <title>Informática Forense</title>
+      <link>https://github.com/oscarlucas22/practicas/forense/</link>
+      <guid>https://github.com/oscarlucas22/practicas/forense/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">Informática Forense</source>
+      <content:encoded><![CDATA[<h1 id="informatica-forense"> Informática Forense</h1>
+<p><strong>La informática forense es el conjunto de técnicas que nos permite obtener la máxima información posible tras un incidente o delito informático.</strong></p>
+<p><strong>En esta práctica, realizarás la fase de toma de evidencias y análisis de las mismas sobre una máquina Linux y otra Windows. Supondremos que pillamos al delincuente in fraganti y las máquinas se encontraban encendidas. Opcionalmente, podéis realizar el análisis de un dispositivo Android.</strong></p>
+<p><strong>Sobre cada una de las máquinas debes realizar un volcado de memoria y otro de disco duro, tomando las medidas necesarias para certificar posteriormente la cadena de custodia.</strong></p>
+<p><strong>Debes tratar de obtener las siguientes informaciones:</strong></p>
+<p><strong>Apartado A) Máquina Windows.</strong></p>
+<p><strong>Por comandos:</strong></p>
+<p><strong>1. Procesos en ejecución.</strong></p>
+<p><strong>2. Servicios en ejecución.</strong></p>
+<p><strong>3. Puertos abiertos.</strong></p>
+<p><strong>4. Conexiones establecidas por la máquina.</strong></p>
+<p><strong>5. Sesiones de usuario establecidas remotamente.</strong></p>
+<p><strong>6. Ficheros transferidos recientemente por NetBios.</strong></p>
+<p><strong>7. Contenido de la caché DNS.</strong></p>
+<p><strong>8. Variables de entorno.</strong></p>
+<p><strong>Analizando el Registro de Windows:</strong></p>
+<p><strong>9. Dispositivos USB conectados</strong></p>
+<p><strong>10. Redes wifi utilizadas recientemente.</strong></p>
+<p><strong>11. Configuración del firewall de nodo.</strong></p>
+<p><strong>12. Programas que se ejecutan en el Inicio.</strong></p>
+<p><strong>13. Asociación de extensiones de ficheros y aplicaciones.</strong></p>
+<p><strong>14. Aplicaciones usadas recientemente.</strong></p>
+<p><strong>15. Ficheros abiertos recientemente.</strong></p>
+<p><strong>16. Software Instalado.</strong></p>
+<p><strong>17. Contraseñas guardadas.</strong></p>
+<p><strong>18. Cuentas de Usuario</strong></p>
+<p><strong>Con Aplicaciones de terceros:</strong></p>
+<p><strong>19. Historial de navegación y descargas. Cookies.</strong></p>
+<p><strong>20. Volúmenes cifrados</strong></p>
+<p><strong>Sobre la imagen del disco:</strong></p>
+<p><strong>21. Archivos con extensión cambiada.</strong></p>
+<p><strong>22. Archivos eliminados.</strong></p>
+<p><strong>23. Archivos Ocultos.</strong></p>
+<p><strong>24. Archivos que contienen una cadena determinada.</strong></p>
+<p><strong>25. Búsqueda de imágenes por ubicación.</strong></p>
+<p><strong>26. Búsqueda de archivos por autor.</strong></p>
+<p><strong>Apartado B) Máquina Linux.</strong></p>
+<p><strong>Intenta realizar las mismas operaciones en una máquina Linux para aquellos apartados que tengan sentido y no se realicen de manera idéntica a Windows.</strong></p>
+<p><strong>Apartado C)</strong></p>
+<p><strong>En un dispositivo Android, trata de hacer un volcado de memoria y recuperar información de ubicación, llamadas, mensajes, aplicaciones de mensajería, perfiles en redes sociales, etc...</strong></p>
+<p><strong>Algunos kits de herramientas forenses open-source:</strong></p>
+<p><strong>Caine</strong>
+<strong>DFF (Digital Forensics Framework)</strong>
+<strong>The Sleuth Kit</strong>
+<strong>Helix Live CD</strong>
+<strong>Digital Evidence and Forensics Toolkit (DEFT)</strong></p>
+<p><strong>Para análisis de memoria:</strong></p>
+<p><strong>Volatility</strong>
+<strong>Access Data FTK Imager</strong>
+<strong>MDD</strong></p>
+<p><strong>Para análisis de registro de Windows:</strong></p>
+<p><strong>AccessData Registry Viewer</strong>
+<strong>Kape</strong>
+<strong>Fred (Forensic Registry Editor)</strong></p>
+<p><strong>Para análisis de discos duros:</strong></p>
+<p><strong>Autopsy</strong></p>
+<p><strong>Herramientas gratuitas para Android:</strong></p>
+<p><strong>AFLogical OSE</strong>
+<strong>OSAF (Open Source Android Forensics)</strong>
+<strong>Andriller</strong>
+<strong>ADEL (Android Data Extractor Lite)</strong>
+<strong>WhatsApp Xtract</strong>
+<strong>Skype Xtractor</strong>
+<strong>Android Pattern Lock Cracker</strong></p>
+<p><strong>Para saber algo más:</strong></p>
+<p><strong>Cursos básicos de Análisis Forense Linux y Windows en OpenWebinars.</strong>
+**Cursos gratuitos en TryHackMe.**AD</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -5745,80 +5819,6 @@ iptables -A OUTPUT -d 10.0.0.180 -p tcp --sport 3306 -j ACCEPT
 <li><strong>Cambia el disparador del pipeline. Configúralo con un webhook de github, para que cada vez que se produce un push se ejecute el pipeline. Para que el webhook pueda acceder a tu Jenkins puedes usar <a href="https://ngrok.com/" target="_blank" rel="noopener noreferrer">ngrok<i>Content not supported</i></a>.</strong></li>
 </ul>
 <hr>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Informática Forense</title>
-      <link>https://github.com/oscarlucas22/practicas/forense/</link>
-      <guid>https://github.com/oscarlucas22/practicas/forense/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">Informática Forense</source>
-      <content:encoded><![CDATA[<h1 id="informatica-forense"> Informática Forense</h1>
-<p><strong>La informática forense es el conjunto de técnicas que nos permite obtener la máxima información posible tras un incidente o delito informático.</strong></p>
-<p><strong>En esta práctica, realizarás la fase de toma de evidencias y análisis de las mismas sobre una máquina Linux y otra Windows. Supondremos que pillamos al delincuente in fraganti y las máquinas se encontraban encendidas. Opcionalmente, podéis realizar el análisis de un dispositivo Android.</strong></p>
-<p><strong>Sobre cada una de las máquinas debes realizar un volcado de memoria y otro de disco duro, tomando las medidas necesarias para certificar posteriormente la cadena de custodia.</strong></p>
-<p><strong>Debes tratar de obtener las siguientes informaciones:</strong></p>
-<p><strong>Apartado A) Máquina Windows.</strong></p>
-<p><strong>Por comandos:</strong></p>
-<p><strong>1. Procesos en ejecución.</strong></p>
-<p><strong>2. Servicios en ejecución.</strong></p>
-<p><strong>3. Puertos abiertos.</strong></p>
-<p><strong>4. Conexiones establecidas por la máquina.</strong></p>
-<p><strong>5. Sesiones de usuario establecidas remotamente.</strong></p>
-<p><strong>6. Ficheros transferidos recientemente por NetBios.</strong></p>
-<p><strong>7. Contenido de la caché DNS.</strong></p>
-<p><strong>8. Variables de entorno.</strong></p>
-<p><strong>Analizando el Registro de Windows:</strong></p>
-<p><strong>9. Dispositivos USB conectados</strong></p>
-<p><strong>10. Redes wifi utilizadas recientemente.</strong></p>
-<p><strong>11. Configuración del firewall de nodo.</strong></p>
-<p><strong>12. Programas que se ejecutan en el Inicio.</strong></p>
-<p><strong>13. Asociación de extensiones de ficheros y aplicaciones.</strong></p>
-<p><strong>14. Aplicaciones usadas recientemente.</strong></p>
-<p><strong>15. Ficheros abiertos recientemente.</strong></p>
-<p><strong>16. Software Instalado.</strong></p>
-<p><strong>17. Contraseñas guardadas.</strong></p>
-<p><strong>18. Cuentas de Usuario</strong></p>
-<p><strong>Con Aplicaciones de terceros:</strong></p>
-<p><strong>19. Historial de navegación y descargas. Cookies.</strong></p>
-<p><strong>20. Volúmenes cifrados</strong></p>
-<p><strong>Sobre la imagen del disco:</strong></p>
-<p><strong>21. Archivos con extensión cambiada.</strong></p>
-<p><strong>22. Archivos eliminados.</strong></p>
-<p><strong>23. Archivos Ocultos.</strong></p>
-<p><strong>24. Archivos que contienen una cadena determinada.</strong></p>
-<p><strong>25. Búsqueda de imágenes por ubicación.</strong></p>
-<p><strong>26. Búsqueda de archivos por autor.</strong></p>
-<p><strong>Apartado B) Máquina Linux.</strong></p>
-<p><strong>Intenta realizar las mismas operaciones en una máquina Linux para aquellos apartados que tengan sentido y no se realicen de manera idéntica a Windows.</strong></p>
-<p><strong>Apartado C)</strong></p>
-<p><strong>En un dispositivo Android, trata de hacer un volcado de memoria y recuperar información de ubicación, llamadas, mensajes, aplicaciones de mensajería, perfiles en redes sociales, etc...</strong></p>
-<p><strong>Algunos kits de herramientas forenses open-source:</strong></p>
-<p><strong>Caine</strong>
-<strong>DFF (Digital Forensics Framework)</strong>
-<strong>The Sleuth Kit</strong>
-<strong>Helix Live CD</strong>
-<strong>Digital Evidence and Forensics Toolkit (DEFT)</strong></p>
-<p><strong>Para análisis de memoria:</strong></p>
-<p><strong>Volatility</strong>
-<strong>Access Data FTK Imager</strong>
-<strong>MDD</strong></p>
-<p><strong>Para análisis de registro de Windows:</strong></p>
-<p><strong>AccessData Registry Viewer</strong>
-<strong>Kape</strong>
-<strong>Fred (Forensic Registry Editor)</strong></p>
-<p><strong>Para análisis de discos duros:</strong></p>
-<p><strong>Autopsy</strong></p>
-<p><strong>Herramientas gratuitas para Android:</strong></p>
-<p><strong>AFLogical OSE</strong>
-<strong>OSAF (Open Source Android Forensics)</strong>
-<strong>Andriller</strong>
-<strong>ADEL (Android Data Extractor Lite)</strong>
-<strong>WhatsApp Xtract</strong>
-<strong>Skype Xtractor</strong>
-<strong>Android Pattern Lock Cracker</strong></p>
-<p><strong>Para saber algo más:</strong></p>
-<p><strong>Cursos básicos de Análisis Forense Linux y Windows en OpenWebinars.</strong>
-**Cursos gratuitos en TryHackMe.**AD</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -7997,15 +7997,6 @@ server {
 ]]></content:encoded>
     </item>
     <item>
-      <title>Proyecto Integrado final de curso</title>
-      <link>https://github.com/oscarlucas22/proyectos/PI/</link>
-      <guid>https://github.com/oscarlucas22/proyectos/PI/</guid>
-      <source url="https://github.com/oscarlucas22/rss.xml">Proyecto Integrado final de curso</source>
-      <category>proyectos</category>
-      <content:encoded><![CDATA[<h1 id="proyecto-integrado-final-de-curso"> Proyecto Integrado final de curso</h1>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Sistema de copias de seguridad</title>
       <link>https://github.com/oscarlucas22/practicas/sistemas-cop-seg/</link>
       <guid>https://github.com/oscarlucas22/practicas/sistemas-cop-seg/</guid>
@@ -8899,6 +8890,15 @@ firewall-cmd --reload
 <div><pre><code>slapcat -n 0 -l config_slapd.ldif
 </code></pre>
 </div><p>Dicho fichero contiene toda la configuración de LDAP, por lo que al restaurar Apolo, solo tendremos que reinsertar la configuración a mano y reiniciar el servicio. Con esto podemos dar por finalizada la explicación de como realizar las copias y restaurarlas. Sin embargo, queda la problemática del almacenamiento de las copias a largo plazo. Actualmente tenemos hechas muchas copias, ya la mayoría son muy parecidas, ya que no hemos implementado nuevas funciones en nuestro escenario. No obstante, y con una previsión de futuro, habrá que guardar de forma permanente algunas copias, para poder restaurar el escenario si es necesario. Las copias que se guardarán de forma permanente serán aquellas que se realicen tras una implementación de un nuevo servicio en el escenario, además de una copia completa cada 3 meses que se guardará de forma permanente, para que podamos recuperar los datos de las aplicaciones de forma trimestral.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Proyecto Integrado final de curso</title>
+      <link>https://github.com/oscarlucas22/proyectos/PI/</link>
+      <guid>https://github.com/oscarlucas22/proyectos/PI/</guid>
+      <source url="https://github.com/oscarlucas22/rss.xml">Proyecto Integrado final de curso</source>
+      <category>proyectos</category>
+      <content:encoded><![CDATA[<h1 id="proyecto-integrado-final-de-curso"> Proyecto Integrado final de curso</h1>
 ]]></content:encoded>
     </item>
     <item>
